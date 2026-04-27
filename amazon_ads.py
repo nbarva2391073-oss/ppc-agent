@@ -30,7 +30,7 @@ def headers(token: str, profile_id: str) -> dict:
     return {
         "Authorization": f"Bearer {token}",
         "Amazon-Advertising-API-ClientId": ADS_CLIENT_ID,
-        "Amazon-Advertising-API-Scope": profile_id,
+        "Amazon-Advertising-API-Scope": str(profile_id),
         "Content-Type": "application/json",
     }
 
@@ -38,24 +38,83 @@ def headers(token: str, profile_id: str) -> dict:
 # ── Кампанії та біди ─────────────────────────────────────────
 
 def get_campaigns(token: str, profile_id: str) -> list[dict]:
-    """Отримати всі кампанії з бідами і adjustments."""
+    """
+    Отримати всі кампанії з бідами і adjustments.
+    БАГ ВИПРАВЛЕНО: підтримка обох форматів відповіді (v2 і v3 API).
+    БАГ ВИПРАВЛЕНО: нормалізація полів budget (v2=dailyBudget, v3=budget.budget).
+    """
     url = f"{ADS_BASE_URL}/sp/campaigns"
     r = requests.get(url, headers=headers(token, profile_id),
                      params={"stateFilter": "enabled,paused", "count": 100})
     r.raise_for_status()
-    campaigns = r.json().get("campaigns", [])
-    print(f"  ✅ Кампанії: {len(campaigns)}")
-    return campaigns
+
+    data = r.json()
+
+    # API може повернути або {"campaigns": [...]} або список напряму
+    if isinstance(data, list):
+        campaigns = data
+    elif isinstance(data, dict):
+        campaigns = data.get("campaigns", [])
+    else:
+        campaigns = []
+
+    # Нормалізуємо поля — приводимо v2 і v3 до єдиного формату
+    normalized = []
+    for c in campaigns:
+        # Budget: v2 має dailyBudget (число), v3 має budget.budget (об'єкт)
+        if "dailyBudget" in c and "budget" not in c:
+            c["budget"] = {"budget": c["dailyBudget"],
+                           "budgetType": "DAILY"}
+
+        # Bidding: v2 має bidding.strategy, v3 має dynamicBidding
+        if "dynamicBidding" in c and "bidding" not in c:
+            dynamic = c["dynamicBidding"]
+            adjustments = []
+            for adj in dynamic.get("placementBidding", []):
+                adjustments.append({
+                    "placement": adj.get("placement", ""),
+                    "percentage": adj.get("percentage", 0),
+                })
+            c["bidding"] = {
+                "strategy": dynamic.get("strategy", ""),
+                "adjustments": adjustments,
+            }
+
+        normalized.append(c)
+
+    print(f"  ✅ Кампанії: {len(normalized)}")
+    return normalized
 
 
 def get_keywords(token: str, profile_id: str) -> list[dict]:
-    """Отримати всі ключові слова з бідами."""
+    """
+    Отримати всі ключові слова з бідами.
+    БАГ ВИПРАВЛЕНО: спроба v3 endpoint, fallback на v2.
+    """
+    # Спочатку пробуємо v3 (POST /sp/keywords/list)
+    try:
+        url = f"{ADS_BASE_URL}/sp/keywords/list"
+        payload = {
+            "stateFilter": {"include": ["ENABLED"]},
+            "maxResults": 1000,
+        }
+        r = requests.post(url, headers=headers(token, profile_id),
+                          json=payload)
+        if r.status_code == 200:
+            data = r.json()
+            keywords = data.get("keywords", data if isinstance(data, list) else [])
+            print(f"  ✅ Ключові слова (v3): {len(keywords)}")
+            return keywords
+    except Exception:
+        pass
+
+    # Fallback на v2 (GET /sp/keywords)
     url = f"{ADS_BASE_URL}/sp/keywords"
     r = requests.get(url, headers=headers(token, profile_id),
                      params={"stateFilter": "enabled", "count": 1000})
     r.raise_for_status()
     keywords = r.json().get("keywords", [])
-    print(f"  ✅ Ключові слова: {len(keywords)}")
+    print(f"  ✅ Ключові слова (v2): {len(keywords)}")
     return keywords
 
 
@@ -107,7 +166,6 @@ def wait_and_download(token: str, profile_id: str,
         data = r.json()
         status = data.get("status")
         if status == "COMPLETED":
-            # Завантажити і розпакувати
             resp = requests.get(data["url"])
             with gzip.GzipFile(fileobj=io.BytesIO(resp.content)) as f:
                 result = json.loads(f.read().decode("utf-8"))
@@ -123,7 +181,6 @@ def wait_and_download(token: str, profile_id: str,
 
 def get_search_term_report(token: str, profile_id: str,
                            start_date: str, end_date: str) -> list[dict]:
-    """Search Term Report — по яких словах купують."""
     rid = _request_report(
         token, profile_id,
         f"SearchTerm {start_date}",
@@ -140,7 +197,6 @@ def get_search_term_report(token: str, profile_id: str,
 
 def get_campaign_report(token: str, profile_id: str,
                         start_date: str, end_date: str) -> list[dict]:
-    """Campaign Performance Report."""
     rid = _request_report(
         token, profile_id,
         f"Campaign {start_date}",
@@ -156,7 +212,6 @@ def get_campaign_report(token: str, profile_id: str,
 
 def get_placement_report(token: str, profile_id: str,
                          start_date: str, end_date: str) -> list[dict]:
-    """Placement Report — де показуються оголошення."""
     rid = _request_report(
         token, profile_id,
         f"Placement {start_date}",
@@ -171,7 +226,6 @@ def get_placement_report(token: str, profile_id: str,
 
 def get_targeting_report(token: str, profile_id: str,
                          start_date: str, end_date: str) -> list[dict]:
-    """Targeting Report — по кожному ключовому слову."""
     rid = _request_report(
         token, profile_id,
         f"Targeting {start_date}",
@@ -190,7 +244,6 @@ def get_targeting_report(token: str, profile_id: str,
 
 def calculate_metrics(campaign_data: list[dict],
                       margin: float) -> dict:
-    """Розрахувати зведені метрики тижня."""
     if not campaign_data:
         return {}
 
@@ -202,21 +255,19 @@ def calculate_metrics(campaign_data: list[dict],
     roas  = (total_sales / total_spend) if total_spend > 0 else 0
     tacos = (total_spend / total_sales) if total_sales > 0 else 0
 
-    # Оцінюємо прибуток
     gross_profit = total_sales * margin
     net_profit   = gross_profit - total_spend
 
-    # Групуємо по кампаніях
     by_campaign = {}
     for row in campaign_data:
         name = row.get("campaignName", "Unknown")
         if name not in by_campaign:
             by_campaign[name] = {"spend": 0, "sales": 0, "orders": 0,
                                   "impressions": 0}
-        by_campaign[name]["spend"]      += float(row.get("spend", 0))
-        by_campaign[name]["sales"]      += float(row.get("sales7d", 0))
-        by_campaign[name]["orders"]     += int(row.get("purchases7d", 0))
-        by_campaign[name]["impressions"]+= int(row.get("impressions", 0))
+        by_campaign[name]["spend"]       += float(row.get("spend", 0))
+        by_campaign[name]["sales"]       += float(row.get("sales7d", 0))
+        by_campaign[name]["orders"]      += int(row.get("purchases7d", 0))
+        by_campaign[name]["impressions"] += int(row.get("impressions", 0))
 
     campaign_acos = {}
     for name, vals in by_campaign.items():
@@ -226,7 +277,6 @@ def calculate_metrics(campaign_data: list[dict],
     top   = min(campaign_acos, key=campaign_acos.get) if campaign_acos else ""
     worst = max(campaign_acos, key=campaign_acos.get) if campaign_acos else ""
 
-    # Перевірка бюджет пейсинг
     budget_issues = []
     for row in campaign_data:
         budget = float(row.get("campaignBudgetAmount", 0))
@@ -253,13 +303,8 @@ def calculate_metrics(campaign_data: list[dict],
 
 def analyze_placement_issues(placement_data: list[dict],
                               campaigns: list[dict]) -> list[dict]:
-    """
-    Аналіз placement проблем:
-    Де кампанія орієнтована на ToS але показується на PP.
-    """
     issues = []
 
-    # Групуємо placement дані по кампаніях
     by_campaign = {}
     for row in placement_data:
         name = row.get("campaignName", "")
@@ -272,7 +317,6 @@ def analyze_placement_issues(placement_data: list[dict],
             "sales":       float(row.get("sales7d", 0)),
         }
 
-    # Знаходимо кампанії де PP > ToS (підозра на проблему)
     for camp_name, placements in by_campaign.items():
         tos_imp = placements.get("Top of Search on-Amazon",
                   {}).get("impressions", 0)
@@ -287,7 +331,6 @@ def analyze_placement_issues(placement_data: list[dict],
         tos_pct = tos_imp / total * 100
         pp_pct  = pp_imp  / total * 100
 
-        # Знаходимо bid adjustments для цієї кампанії
         camp_data = next(
             (c for c in campaigns if c.get("name") == camp_name), {})
         bidding = camp_data.get("bidding", {})
@@ -296,24 +339,23 @@ def analyze_placement_issues(placement_data: list[dict],
         tos_adj = adj.get("PLACEMENT_TOP", 0)
         pp_adj  = adj.get("PLACEMENT_PRODUCT_PAGE", 0)
 
-        # Проблема: висока ToS adjustment але мало ToS показів
         if tos_adj >= 50 and tos_pct < 30 and pp_pct > 40:
-            pp_spend  = placements.get(
+            pp_spend = placements.get(
                 "Detail Page on-Amazon", {}).get("spend", 0)
-            pp_sales  = placements.get(
+            pp_sales = placements.get(
                 "Detail Page on-Amazon", {}).get("sales", 0)
-            pp_acos   = (pp_spend / pp_sales * 100
-                         if pp_sales > 0 else 999)
+            pp_acos  = (pp_spend / pp_sales * 100
+                        if pp_sales > 0 else 999)
 
             issues.append({
-                "campaign":    camp_name,
-                "tos_pct":     round(tos_pct, 1),
-                "pp_pct":      round(pp_pct, 1),
-                "tos_adj":     tos_adj,
-                "pp_adj":      pp_adj,
-                "pp_spend":    round(pp_spend, 2),
-                "pp_acos":     round(pp_acos, 1),
-                "base_bid":    camp_data.get("budget", {}).get("budget", 0),
+                "campaign":  camp_name,
+                "tos_pct":   round(tos_pct, 1),
+                "pp_pct":    round(pp_pct, 1),
+                "tos_adj":   tos_adj,
+                "pp_adj":    pp_adj,
+                "pp_spend":  round(pp_spend, 2),
+                "pp_acos":   round(pp_acos, 1),
+                "base_bid":  camp_data.get("budget", {}).get("budget", 0),
             })
 
     return issues
