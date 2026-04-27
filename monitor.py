@@ -1,6 +1,5 @@
 # ============================================================
 # ЩОДЕННИЙ МОНІТОРИНГ — Рівень 2
-# Запускається щодня о 9:00
 # ============================================================
 
 import json
@@ -16,7 +15,6 @@ from telegram_bot import send_alert, send_daily_ok
 
 
 def run_daily_monitor():
-    """Щоденна перевірка аномалій і сповіщення."""
     print("=" * 60)
     print(f"📱 ЩОДЕННИЙ МОНІТОРИНГ: {datetime.now()}")
     print("=" * 60)
@@ -36,7 +34,8 @@ def run_daily_monitor():
             continue
 
         print(f"\n🔍 Перевіряємо {market}...")
-        alerts = check_market(token, profile_id, market, start, end)
+        alerts, today_data = check_market(
+            token, profile_id, market, start, end)
 
         if alerts:
             any_alerts = True
@@ -50,14 +49,16 @@ def run_daily_monitor():
                     action=alert["action"],
                 )
         else:
-            send_daily_ok(market)
+            # БАГ ВИПРАВЛЕНО: передаємо campaign_data для деталізації
+            margin = MARGIN.get(market, 0.25)
+            send_daily_ok(market, today_data, margin * 100)
 
     if not any_alerts:
         print("✅ Все в нормі")
 
 
-def check_market(token: str, profile_id: str,
-                 market: str, start: str, end: str) -> list[dict]:
+def check_market(token, profile_id, market, start, end):
+    """Повертає (alerts, today_data)."""
     alerts = []
     margin = MARGIN.get(market, 0.25)
     breakeven = margin * 100
@@ -66,12 +67,17 @@ def check_market(token: str, profile_id: str,
         today_data = get_campaign_report(token, profile_id, start, end)
     except Exception as e:
         print(f"  ⚠️ Не вдалось завантажити дані: {e}")
-        return []
+        return [], []
 
-    history = get_full_history(market)
-    # БАГ ВИПРАВЛЕНО: передаємо market для правильної фільтрації
+    history  = get_full_history(market)
     prev_week = _get_previous_week_data(history, market)
-    campaigns = get_campaigns(token, profile_id)
+
+    # Намагаємось отримати кампанії для bid info
+    try:
+        campaigns = get_campaigns(token, profile_id)
+    except Exception as e:
+        print(f"  ⚠️ Кампанії не завантажились: {e}")
+        campaigns = []
 
     impr_alerts   = check_impressions(today_data, prev_week, market, campaigns)
     acos_alerts   = check_acos(today_data, breakeven, market)
@@ -83,7 +89,7 @@ def check_market(token: str, profile_id: str,
     alerts.extend(budget_alerts)
     alerts.extend(tacos_alerts)
 
-    return alerts
+    return alerts, today_data
 
 
 def check_impressions(today_data, prev_week, market, campaigns):
@@ -99,7 +105,6 @@ def check_impressions(today_data, prev_week, market, campaigns):
         prev_impr = prev_week.get(camp_name, {}).get("impressions", 0)
         if prev_impr == 0:
             continue
-
         drop = (prev_impr - today_impr) / prev_impr
         if drop <= 0:
             continue
@@ -117,11 +122,9 @@ def check_impressions(today_data, prev_week, market, campaigns):
         if drop >= ALERTS["impressions_drop_critical"]:
             alerts.append({
                 "level": "critical",
-                "problem": (
-                    f"Impressions впали на {drop*100:.0f}%!\n"
-                    f"Кампанія: {camp_name}\n"
-                    f"Вчора: {prev_impr} → Сьогодні: {today_impr}"
-                ),
+                "problem": (f"Impressions впали на {drop*100:.0f}%!\n"
+                            f"Кампанія: {camp_name}\n"
+                            f"Вчора: {prev_impr} → Сьогодні: {today_impr}"),
                 "diagnosis": diagnosis,
                 "action": action,
                 "expected_result": expected,
@@ -130,27 +133,22 @@ def check_impressions(today_data, prev_week, market, campaigns):
         elif drop >= ALERTS["impressions_drop_warning"]:
             alerts.append({
                 "level": "warning",
-                "problem": (
-                    f"Impressions впали на {drop*100:.0f}%\n"
-                    f"Кампанія: {camp_name}"
-                ),
+                "problem": (f"Impressions впали на {drop*100:.0f}%\n"
+                            f"Кампанія: {camp_name}"),
                 "diagnosis": diagnosis,
                 "action": action,
                 "expected_result": expected,
             })
-
     return alerts
 
 
 def _diagnose_impression_drop(camp_name, drop, today, prev, tos_adj):
     ai_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
-    prompt = f"""Ти Amazon PPC експерт. Кампанія "{camp_name}" втратила 
-{drop*100:.0f}% impressions (було {prev}, стало {today}).
-Top of Search adjustment: {tos_adj}%. Bidding strategy: Down Only.
-
-Визнач причину і дай відповідь ТІЛЬКИ JSON (без markdown):
-{{"diagnosis": "одне речення", "action": "кроки 1-2-3", "expected": "результат"}}"""
-
+    prompt = (f'Ти Amazon PPC експерт. Кампанія "{camp_name}" втратила '
+              f'{drop*100:.0f}% impressions (було {prev}, стало {today}). '
+              f'ToS adj: {tos_adj}%. Down Only. '
+              f'Відповідь ТІЛЬКИ JSON без markdown: '
+              f'{{"diagnosis":"...","action":"...","expected":"..."}}')
     try:
         r = ai_client.messages.create(
             model=CLAUDE_MODEL, max_tokens=300,
@@ -160,9 +158,9 @@ Top of Search adjustment: {tos_adj}%. Bidding strategy: Down Only.
     except Exception:
         if tos_adj >= 100 and today < 50:
             return (
-                "Базовий bid занадто низький для входу в аукціон ToS",
-                "1. Підвищ базовий bid на 30-50%\n2. Або знизь ToS adj до 50-100%",
-                "Impressions відновляться за 24-48 годин",
+                "Базовий bid занадто низький для ToS",
+                "1. Підвищ базовий bid на 30-50%\n2. Або знизь ToS adj",
+                "Impressions відновляться за 24-48 год",
             )
         return (
             "Можливе підвищення ставок конкурентів",
@@ -184,38 +182,38 @@ def check_acos(today_data, breakeven, market):
     for camp_name, vals in by_camp.items():
         spend = vals["spend"]
         sales = vals["sales"]
-        if spend < 5:
+        # БАГ ВИПРАВЛЕНО: знижений поріг з $5 до $1
+        if spend < 1:
             continue
         acos = spend / sales * 100 if sales > 0 else 999
 
         if acos > breakeven * ALERTS["acos_critical_multiplier"]:
-            loss = spend - sales * breakeven / 100
+            loss = spend - (sales * breakeven / 100 if sales > 0 else 0)
             alerts.append({
                 "level": "critical",
-                "problem": (
-                    f"ACoS критично високий!\n"
-                    f"Кампанія: {camp_name}\n"
-                    f"ACoS: {acos:.1f}% | Break-even: {breakeven:.1f}%\n"
-                    f"Збиток: ~${loss:.2f}"
-                ),
+                "problem": (f"🔴 ACoS критично високий!\n"
+                            f"Кампанія: {camp_name}\n"
+                            f"ACoS: {acos:.1f}% | Break-even: {breakeven:.1f}%\n"
+                            f"Витрачено: ${spend:.2f} | Продажів: ${sales:.2f}\n"
+                            f"Збиток: ~${loss:.2f}"),
                 "diagnosis": f"ACoS перевищує break-even на {acos-breakeven:.1f}%",
-                "action": (
-                    "1. Знайди ключові слова з 0 продажів → негативні\n"
-                    "2. Знизь bid на найдорожчі слова на 20%\n"
-                    "3. Перевір Search Term Report"
-                ),
+                "action": ("1. Знайди ключові слова з 0 продажів → негативні\n"
+                           "2. Знизь bid на 20%\n"
+                           "3. Перевір Search Term Report"),
                 "expected_result": f"ACoS повернеться до {breakeven:.0f}% за 1-2 тижні",
                 "risk": "Можливе зниження обсягу продажів",
             })
         elif acos > breakeven * ALERTS["acos_warning_multiplier"]:
             alerts.append({
                 "level": "warning",
-                "problem": f"ACoS вище норми: {camp_name}\nACoS: {acos:.1f}%",
+                "problem": (f"🟡 ACoS вище норми\n"
+                            f"Кампанія: {camp_name}\n"
+                            f"ACoS: {acos:.1f}% | Break-even: {breakeven:.1f}%\n"
+                            f"Витрачено: ${spend:.2f} | Продажів: ${sales:.2f}"),
                 "diagnosis": f"ACoS перевищує break-even на {acos-breakeven:.1f}%",
                 "action": "Перевір ключові слова з низькою конверсією",
                 "expected_result": "Моніторити 3 дні",
             })
-
     return alerts
 
 
@@ -240,76 +238,58 @@ def check_budget_pacing(today_data, campaigns):
         if current_hour < 14 and pct_used > 80:
             alerts.append({
                 "level": "warning",
-                "problem": (
-                    f"Бюджет майже вичерпано о {current_hour}:00!\n"
-                    f"{camp_name}: ${spend:.2f} з ${budget:.2f} ({pct_used:.0f}%)"
-                ),
+                "problem": (f"Бюджет майже вичерпано о {current_hour}:00!\n"
+                            f"{camp_name}: ${spend:.2f} з ${budget:.2f} "
+                            f"({pct_used:.0f}%)"),
                 "diagnosis": "Бюджет закінчиться до обіду. Втратиш вечірній трафік.",
                 "action": "1. Підвищ бюджет на 30-50%\n   АБО\n2. Знизь ставки",
                 "expected_result": "Рівномірний розподіл витрат",
             })
-
     return alerts
 
 
 def check_tacos_trend(history, market):
     weekly = history.get("weekly_summary", [])
-    market_rows = [r for r in weekly[1:] if len(r) > 8 and r[1] == market]
-
+    market_rows = [r for r in weekly[1:]
+                   if len(r) > 8 and r[1] == market]
     if len(market_rows) < 3:
         return []
-
     try:
         tacos_values = [float(r[8]) for r in market_rows[-3:] if r[8]]
     except (ValueError, IndexError):
         return []
-
     if len(tacos_values) < 3:
         return []
 
     if (tacos_values[2] > tacos_values[1] > tacos_values[0]
             and tacos_values[2] > ALERTS["tacos_warning"] * 100):
-
         trend = tacos_values[2] - tacos_values[0]
-        weeks_to_crisis = int((15 - tacos_values[2]) / (trend / 2)) if trend > 0 else 99
-
+        weeks_to_crisis = int(
+            (15 - tacos_values[2]) / (trend / 2)) if trend > 0 else 99
         return [{
             "level": "warning" if tacos_values[2] < ALERTS["tacos_critical"] * 100
                      else "critical",
-            "problem": (
-                f"TACoS росте 3 тижні!\n"
-                f"{tacos_values[0]:.1f}% → {tacos_values[1]:.1f}% → {tacos_values[2]:.1f}%"
-            ),
-            "diagnosis": (
-                f"При тренді +{trend/2:.1f}%/тиждень — "
-                f"TACoS досягне 15% через ~{weeks_to_crisis} тижнів"
-            ),
-            "action": (
-                "1. Аудит кампаній з ACoS > break-even\n"
-                "2. Зупини збиткові кампанії\n"
-                "3. Додай негативні ключові слова"
-            ),
+            "problem": (f"TACoS росте 3 тижні!\n"
+                        f"{tacos_values[0]:.1f}% → {tacos_values[1]:.1f}%"
+                        f" → {tacos_values[2]:.1f}%"),
+            "diagnosis": (f"При тренді +{trend/2:.1f}%/тиждень TACoS "
+                          f"досягне 15% через ~{weeks_to_crisis} тижнів"),
+            "action": ("1. Аудит кампаній з ACoS > break-even\n"
+                       "2. Зупини збиткові кампанії\n"
+                       "3. Додай негативні ключові слова"),
             "expected_result": "TACoS стабілізується за 2-3 тижні",
             "risk": "Без дій маржа може впасти до критичного рівня",
         }]
-
     return []
 
 
-def _get_previous_week_data(history: dict, market: str) -> dict:
-    """
-    БАГ ВИПРАВЛЕНО: тепер фільтрує по market щоб не змішувати USA і CA дані.
-    """
+def _get_previous_week_data(history, market):
     campaign_hist = history.get("campaign_analysis", [])
-    # Фільтруємо тільки рядки для потрібного market
     market_rows = [r for r in campaign_hist[1:] if len(r) > 1]
-
     if not market_rows:
         return {}
-
+    last_week_label = market_rows[-1][0]
     last_week = {}
-    last_week_label = market_rows[-1][0] if market_rows else ""
-
     for r in market_rows:
         if r[0] == last_week_label and len(r) > 8:
             camp_name = r[1]
@@ -318,5 +298,4 @@ def _get_previous_week_data(history: dict, market: str) -> dict:
             except ValueError:
                 impressions = 0
             last_week[camp_name] = {"impressions": impressions}
-
     return last_week
