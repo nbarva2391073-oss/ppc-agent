@@ -26,47 +26,86 @@ def get_access_token() -> str:
     return r.json()["access_token"]
 
 
-def headers(token: str, profile_id: str) -> dict:
-    return {
+def headers(token: str, profile_id: str, version: str = None) -> dict:
+    h = {
         "Authorization": f"Bearer {token}",
         "Amazon-Advertising-API-ClientId": ADS_CLIENT_ID,
         "Amazon-Advertising-API-Scope": str(profile_id),
         "Content-Type": "application/json",
     }
+    # БАГ ВИПРАВЛЕНО: додаємо версію API для SP endpoints
+    if version:
+        h["Amazon-Advertising-API-Version"] = version
+    return h
 
 
 # ── Кампанії та біди ─────────────────────────────────────────
 
 def get_campaigns(token: str, profile_id: str) -> list[dict]:
     """
-    Отримати всі кампанії з бідами і adjustments.
-    БАГ ВИПРАВЛЕНО: підтримка обох форматів відповіді (v2 і v3 API).
-    БАГ ВИПРАВЛЕНО: нормалізація полів budget (v2=dailyBudget, v3=budget.budget).
+    Отримати всі кампанії.
+    БАГ ВИПРАВЛЕНО: 403 Forbidden — пробуємо різні версії API.
     """
+    # Спочатку пробуємо v3
+    try:
+        url = f"{ADS_BASE_URL}/sp/campaigns/list"
+        payload = {
+            "stateFilter": {"include": ["ENABLED", "PAUSED"]},
+            "maxResults": 100,
+        }
+        r = requests.post(url,
+                          headers=headers(token, profile_id),
+                          json=payload)
+        if r.status_code == 200:
+            data = r.json()
+            campaigns = data.get("campaigns", [])
+            campaigns = _normalize_campaigns(campaigns)
+            print(f"  ✅ Кампанії (v3): {len(campaigns)}")
+            return campaigns
+    except Exception:
+        pass
+
+    # Fallback v2 з version header
+    try:
+        url = f"{ADS_BASE_URL}/sp/campaigns"
+        r = requests.get(url,
+                         headers=headers(token, profile_id, version="2"),
+                         params={"stateFilter": "enabled,paused",
+                                 "count": 100})
+        if r.status_code == 200:
+            data = r.json()
+            if isinstance(data, list):
+                campaigns = data
+            else:
+                campaigns = data.get("campaigns", [])
+            campaigns = _normalize_campaigns(campaigns)
+            print(f"  ✅ Кампанії (v2): {len(campaigns)}")
+            return campaigns
+    except Exception:
+        pass
+
+    # Fallback без version header
     url = f"{ADS_BASE_URL}/sp/campaigns"
-    r = requests.get(url, headers=headers(token, profile_id),
+    r = requests.get(url,
+                     headers=headers(token, profile_id),
                      params={"stateFilter": "enabled,paused", "count": 100})
     r.raise_for_status()
-
     data = r.json()
-
-    # API може повернути або {"campaigns": [...]} або список напряму
     if isinstance(data, list):
         campaigns = data
-    elif isinstance(data, dict):
-        campaigns = data.get("campaigns", [])
     else:
-        campaigns = []
+        campaigns = data.get("campaigns", [])
+    campaigns = _normalize_campaigns(campaigns)
+    print(f"  ✅ Кампанії: {len(campaigns)}")
+    return campaigns
 
-    # Нормалізуємо поля — приводимо v2 і v3 до єдиного формату
+
+def _normalize_campaigns(campaigns: list) -> list:
+    """Нормалізувати поля кампаній між v2 і v3."""
     normalized = []
     for c in campaigns:
-        # Budget: v2 має dailyBudget (число), v3 має budget.budget (об'єкт)
         if "dailyBudget" in c and "budget" not in c:
-            c["budget"] = {"budget": c["dailyBudget"],
-                           "budgetType": "DAILY"}
-
-        # Bidding: v2 має bidding.strategy, v3 має dynamicBidding
+            c["budget"] = {"budget": c["dailyBudget"], "budgetType": "DAILY"}
         if "dynamicBidding" in c and "bidding" not in c:
             dynamic = c["dynamicBidding"]
             adjustments = []
@@ -79,27 +118,16 @@ def get_campaigns(token: str, profile_id: str) -> list[dict]:
                 "strategy": dynamic.get("strategy", ""),
                 "adjustments": adjustments,
             }
-
         normalized.append(c)
-
-    print(f"  ✅ Кампанії: {len(normalized)}")
     return normalized
 
 
 def get_keywords(token: str, profile_id: str) -> list[dict]:
-    """
-    Отримати всі ключові слова з бідами.
-    БАГ ВИПРАВЛЕНО: спроба v3 endpoint, fallback на v2.
-    """
-    # Спочатку пробуємо v3 (POST /sp/keywords/list)
+    """Отримати всі ключові слова."""
     try:
         url = f"{ADS_BASE_URL}/sp/keywords/list"
-        payload = {
-            "stateFilter": {"include": ["ENABLED"]},
-            "maxResults": 1000,
-        }
-        r = requests.post(url, headers=headers(token, profile_id),
-                          json=payload)
+        payload = {"stateFilter": {"include": ["ENABLED"]}, "maxResults": 1000}
+        r = requests.post(url, headers=headers(token, profile_id), json=payload)
         if r.status_code == 200:
             data = r.json()
             keywords = data.get("keywords", data if isinstance(data, list) else [])
@@ -108,7 +136,6 @@ def get_keywords(token: str, profile_id: str) -> list[dict]:
     except Exception:
         pass
 
-    # Fallback на v2 (GET /sp/keywords)
     url = f"{ADS_BASE_URL}/sp/keywords"
     r = requests.get(url, headers=headers(token, profile_id),
                      params={"stateFilter": "enabled", "count": 1000})
@@ -119,7 +146,6 @@ def get_keywords(token: str, profile_id: str) -> list[dict]:
 
 
 def get_negative_keywords(token: str, profile_id: str) -> list[dict]:
-    """Отримати всі негативні ключові слова."""
     url = f"{ADS_BASE_URL}/sp/negativeKeywords"
     r = requests.get(url, headers=headers(token, profile_id),
                      params={"stateFilter": "enabled", "count": 1000})
@@ -133,7 +159,6 @@ def _request_report(token: str, profile_id: str,
                     name: str, report_type: str,
                     columns: list, group_by: list,
                     start_date: str, end_date: str) -> str:
-    """Запросити звіт і повернути reportId."""
     url = f"{ADS_BASE_URL}/reporting/reports"
     payload = {
         "name": name,
@@ -157,7 +182,6 @@ def _request_report(token: str, profile_id: str,
 
 def wait_and_download(token: str, profile_id: str,
                       report_id: str, max_wait: int = 600) -> list[dict]:
-    """Чекати поки звіт готовий і завантажити."""
     url = f"{ADS_BASE_URL}/reporting/reports/{report_id}"
     waited = 0
     while waited < max_wait:
@@ -179,71 +203,48 @@ def wait_and_download(token: str, profile_id: str,
     raise Exception(f"Timeout: звіт {report_id}")
 
 
-def get_search_term_report(token: str, profile_id: str,
-                           start_date: str, end_date: str) -> list[dict]:
-    rid = _request_report(
-        token, profile_id,
-        f"SearchTerm {start_date}",
+def get_search_term_report(token, profile_id, start_date, end_date):
+    rid = _request_report(token, profile_id, f"SearchTerm {start_date}",
         "spSearchTerm",
         ["campaignName", "adGroupName", "keyword", "matchType",
          "searchTerm", "impressions", "clicks", "clickThroughRate",
-         "spend", "sales7d", "purchases7d", "costPerClick",
-         "advertisedAsin"],
-        ["searchTerm"],
-        start_date, end_date,
-    )
+         "spend", "sales7d", "purchases7d", "costPerClick", "advertisedAsin"],
+        ["searchTerm"], start_date, end_date)
     return wait_and_download(token, profile_id, rid)
 
 
-def get_campaign_report(token: str, profile_id: str,
-                        start_date: str, end_date: str) -> list[dict]:
-    rid = _request_report(
-        token, profile_id,
-        f"Campaign {start_date}",
+def get_campaign_report(token, profile_id, start_date, end_date):
+    rid = _request_report(token, profile_id, f"Campaign {start_date}",
         "spCampaigns",
         ["campaignName", "campaignId", "impressions", "clicks",
          "clickThroughRate", "spend", "sales7d", "purchases7d",
          "costPerClick", "campaignBudgetAmount"],
-        ["campaign"],
-        start_date, end_date,
-    )
+        ["campaign"], start_date, end_date)
     return wait_and_download(token, profile_id, rid)
 
 
-def get_placement_report(token: str, profile_id: str,
-                         start_date: str, end_date: str) -> list[dict]:
-    rid = _request_report(
-        token, profile_id,
-        f"Placement {start_date}",
+def get_placement_report(token, profile_id, start_date, end_date):
+    rid = _request_report(token, profile_id, f"Placement {start_date}",
         "spCampaigns",
         ["campaignName", "placement", "impressions", "clicks",
          "spend", "sales7d", "purchases7d", "clickThroughRate"],
-        ["campaign", "placement"],
-        start_date, end_date,
-    )
+        ["campaign", "placement"], start_date, end_date)
     return wait_and_download(token, profile_id, rid)
 
 
-def get_targeting_report(token: str, profile_id: str,
-                         start_date: str, end_date: str) -> list[dict]:
-    rid = _request_report(
-        token, profile_id,
-        f"Targeting {start_date}",
+def get_targeting_report(token, profile_id, start_date, end_date):
+    rid = _request_report(token, profile_id, f"Targeting {start_date}",
         "spTargeting",
         ["campaignName", "adGroupName", "targetingExpression",
          "targetingText", "matchType", "impressions", "clicks",
-         "spend", "sales7d", "purchases7d", "costPerClick",
-         "clickThroughRate"],
-        ["targeting"],
-        start_date, end_date,
-    )
+         "spend", "sales7d", "purchases7d", "costPerClick", "clickThroughRate"],
+        ["targeting"], start_date, end_date)
     return wait_and_download(token, profile_id, rid)
 
 
 # ── Аналітика ────────────────────────────────────────────────
 
-def calculate_metrics(campaign_data: list[dict],
-                      margin: float) -> dict:
+def calculate_metrics(campaign_data: list[dict], margin: float) -> dict:
     if not campaign_data:
         return {}
 
@@ -285,26 +286,24 @@ def calculate_metrics(campaign_data: list[dict],
             budget_issues.append(row.get("campaignName", ""))
 
     return {
-        "total_spend":        round(total_spend, 2),
-        "total_sales":        round(total_sales, 2),
-        "total_orders":       total_orders,
-        "overall_acos":       round(acos, 2),
-        "overall_roas":       round(roas, 2),
-        "tacos":              round(tacos, 4),
-        "net_profit":         round(net_profit, 2),
-        "campaigns_count":    len(by_campaign),
-        "top_campaign":       top,
-        "worst_campaign":     worst,
-        "by_campaign":        by_campaign,
-        "budget_issues":      budget_issues,
-        "breakeven_acos":     round(margin * 100, 1),
+        "total_spend":     round(total_spend, 2),
+        "total_sales":     round(total_sales, 2),
+        "total_orders":    total_orders,
+        "overall_acos":    round(acos, 2),
+        "overall_roas":    round(roas, 2),
+        "tacos":           round(tacos, 4),
+        "net_profit":      round(net_profit, 2),
+        "campaigns_count": len(by_campaign),
+        "top_campaign":    top,
+        "worst_campaign":  worst,
+        "by_campaign":     by_campaign,
+        "budget_issues":   budget_issues,
+        "breakeven_acos":  round(margin * 100, 1),
     }
 
 
-def analyze_placement_issues(placement_data: list[dict],
-                              campaigns: list[dict]) -> list[dict]:
+def analyze_placement_issues(placement_data, campaigns):
     issues = []
-
     by_campaign = {}
     for row in placement_data:
         name = row.get("campaignName", "")
@@ -318,44 +317,32 @@ def analyze_placement_issues(placement_data: list[dict],
         }
 
     for camp_name, placements in by_campaign.items():
-        tos_imp = placements.get("Top of Search on-Amazon",
-                  {}).get("impressions", 0)
-        pp_imp  = placements.get("Detail Page on-Amazon",
-                  {}).get("impressions", 0)
-        total   = tos_imp + pp_imp + placements.get(
-                  "Other on-Amazon", {}).get("impressions", 0)
-
+        tos_imp = placements.get("Top of Search on-Amazon", {}).get("impressions", 0)
+        pp_imp  = placements.get("Detail Page on-Amazon", {}).get("impressions", 0)
+        total   = tos_imp + pp_imp + placements.get("Other on-Amazon", {}).get("impressions", 0)
         if total == 0:
             continue
-
         tos_pct = tos_imp / total * 100
         pp_pct  = pp_imp  / total * 100
 
-        camp_data = next(
-            (c for c in campaigns if c.get("name") == camp_name), {})
+        camp_data = next((c for c in campaigns if c.get("name") == camp_name), {})
         bidding = camp_data.get("bidding", {})
-        adj     = {a["placement"]: a["percentage"]
-                   for a in bidding.get("adjustments", [])}
+        adj = {a["placement"]: a["percentage"] for a in bidding.get("adjustments", [])}
         tos_adj = adj.get("PLACEMENT_TOP", 0)
         pp_adj  = adj.get("PLACEMENT_PRODUCT_PAGE", 0)
 
         if tos_adj >= 50 and tos_pct < 30 and pp_pct > 40:
-            pp_spend = placements.get(
-                "Detail Page on-Amazon", {}).get("spend", 0)
-            pp_sales = placements.get(
-                "Detail Page on-Amazon", {}).get("sales", 0)
-            pp_acos  = (pp_spend / pp_sales * 100
-                        if pp_sales > 0 else 999)
-
+            pp_spend = placements.get("Detail Page on-Amazon", {}).get("spend", 0)
+            pp_sales = placements.get("Detail Page on-Amazon", {}).get("sales", 0)
+            pp_acos  = (pp_spend / pp_sales * 100 if pp_sales > 0 else 999)
             issues.append({
-                "campaign":  camp_name,
-                "tos_pct":   round(tos_pct, 1),
-                "pp_pct":    round(pp_pct, 1),
-                "tos_adj":   tos_adj,
-                "pp_adj":    pp_adj,
-                "pp_spend":  round(pp_spend, 2),
-                "pp_acos":   round(pp_acos, 1),
-                "base_bid":  camp_data.get("budget", {}).get("budget", 0),
+                "campaign": camp_name,
+                "tos_pct":  round(tos_pct, 1),
+                "pp_pct":   round(pp_pct, 1),
+                "tos_adj":  tos_adj,
+                "pp_adj":   pp_adj,
+                "pp_spend": round(pp_spend, 2),
+                "pp_acos":  round(pp_acos, 1),
+                "base_bid": camp_data.get("budget", {}).get("budget", 0),
             })
-
     return issues
