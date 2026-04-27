@@ -14,11 +14,18 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive",
 ]
 
+# БАГ ВИПРАВЛЕНО: кешуємо client щоб не створювати новий при кожному виклику
+_client_cache = None
+
 
 def client():
-    creds = Credentials.from_service_account_info(
-        json.loads(GOOGLE_CREDENTIALS_JSON), scopes=SCOPES)
-    return gspread.authorize(creds)
+    global _client_cache
+    if _client_cache is None:
+        creds = Credentials.from_service_account_info(
+            json.loads(GOOGLE_CREDENTIALS_JSON), scopes=SCOPES)
+        # БАГ ВИПРАВЛЕНО: gspread.authorize() deprecated → використовуємо Client
+        _client_cache = gspread.Client(auth=creds)
+    return _client_cache
 
 
 def get_sheet(name: str):
@@ -97,7 +104,6 @@ def write_bid_snapshot(campaigns: list[dict], keywords: list[dict],
                "Match Type", "KW State"]
     rows = []
 
-    # Маппинг campaign_id → keywords
     kw_by_camp = {}
     for kw in keywords:
         cid = kw.get("campaignId", "")
