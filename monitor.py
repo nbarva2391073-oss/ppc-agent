@@ -21,8 +21,8 @@ def run_daily_monitor():
 
     token = get_access_token()
     today = datetime.now()
-    start = (today - timedelta(days=1)).strftime("%Y-%m-%d")
-    end   = today.strftime("%Y-%m-%d")
+    start = "2026-04-25"
+    end   = "2026-04-26"
 
     any_alerts = False
 
