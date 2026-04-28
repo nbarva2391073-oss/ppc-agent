@@ -26,14 +26,20 @@ def get_access_token() -> str:
     return r.json()["access_token"]
 
 
-def headers(token: str, profile_id: str, version: str = None) -> dict:
+def headers(token: str, profile_id: str,
+            version: str = None, content_type: str = None) -> dict:
+    """
+    ВИПРАВЛЕНО: Amazon v3 SP endpoints вимагають специфічний
+    Content-Type і Accept заголовок. Без них — 403 Forbidden.
+    """
+    ct = content_type or "application/json"
     h = {
         "Authorization": f"Bearer {token}",
         "Amazon-Advertising-API-ClientId": ADS_CLIENT_ID,
         "Amazon-Advertising-API-Scope": str(profile_id),
-        "Content-Type": "application/json",
+        "Content-Type": ct,
+        "Accept": ct,
     }
-    # БАГ ВИПРАВЛЕНО: додаємо версію API для SP endpoints
     if version:
         h["Amazon-Advertising-API-Version"] = version
     return h
@@ -44,59 +50,63 @@ def headers(token: str, profile_id: str, version: str = None) -> dict:
 def get_campaigns(token: str, profile_id: str) -> list[dict]:
     """
     Отримати всі кампанії.
-    БАГ ВИПРАВЛЕНО: 403 Forbidden — пробуємо різні версії API.
+
+    ВИПРАВЛЕНО: 403 Forbidden — v3 endpoint вимагає
+    Content-Type: application/vnd.spCampaign.v3+json
     """
-    # Спочатку пробуємо v3
+    # Варіант 1: v3 з правильним content-type
     try:
         url = f"{ADS_BASE_URL}/sp/campaigns/list"
+        ct  = "application/vnd.spCampaign.v3+json"
         payload = {
             "stateFilter": {"include": ["ENABLED", "PAUSED"]},
             "maxResults": 100,
         }
         r = requests.post(url,
-                          headers=headers(token, profile_id),
+                          headers=headers(token, profile_id, content_type=ct),
                           json=payload)
         if r.status_code == 200:
-            data = r.json()
+            data      = r.json()
             campaigns = data.get("campaigns", [])
             campaigns = _normalize_campaigns(campaigns)
             print(f"  ✅ Кампанії (v3): {len(campaigns)}")
             return campaigns
-    except Exception:
-        pass
+        else:
+            print(f"  ⚠️ v3 повернув {r.status_code}: {r.text[:200]}")
+    except Exception as e:
+        print(f"  ⚠️ v3 exception: {e}")
 
-    # Fallback v2 з version header
+    # Варіант 2: v2 GET endpoint
     try:
-        url = f"{ADS_BASE_URL}/sp/campaigns"
-        r = requests.get(url,
-                         headers=headers(token, profile_id, version="2"),
-                         params={"stateFilter": "enabled,paused",
-                                 "count": 100})
+        url = f"{ADS_BASE_URL}/v2/sp/campaigns"
+        r   = requests.get(
+            url,
+            headers=headers(token, profile_id),
+            params={"stateFilter": "enabled,paused", "count": 100},
+        )
         if r.status_code == 200:
-            data = r.json()
-            if isinstance(data, list):
-                campaigns = data
-            else:
-                campaigns = data.get("campaigns", [])
+            data      = r.json()
+            campaigns = data if isinstance(data, list) else data.get("campaigns", [])
             campaigns = _normalize_campaigns(campaigns)
             print(f"  ✅ Кампанії (v2): {len(campaigns)}")
             return campaigns
-    except Exception:
-        pass
+        else:
+            print(f"  ⚠️ v2 повернув {r.status_code}: {r.text[:200]}")
+    except Exception as e:
+        print(f"  ⚠️ v2 exception: {e}")
 
-    # Fallback без version header
+    # Варіант 3: без префіксу версії (деякі регіони)
     url = f"{ADS_BASE_URL}/sp/campaigns"
-    r = requests.get(url,
-                     headers=headers(token, profile_id),
-                     params={"stateFilter": "enabled,paused", "count": 100})
+    r   = requests.get(
+        url,
+        headers=headers(token, profile_id),
+        params={"stateFilter": "enabled,paused", "count": 100},
+    )
     r.raise_for_status()
-    data = r.json()
-    if isinstance(data, list):
-        campaigns = data
-    else:
-        campaigns = data.get("campaigns", [])
+    data      = r.json()
+    campaigns = data if isinstance(data, list) else data.get("campaigns", [])
     campaigns = _normalize_campaigns(campaigns)
-    print(f"  ✅ Кампанії: {len(campaigns)}")
+    print(f"  ✅ Кампанії (fallback): {len(campaigns)}")
     return campaigns
 
 
@@ -107,7 +117,7 @@ def _normalize_campaigns(campaigns: list) -> list:
         if "dailyBudget" in c and "budget" not in c:
             c["budget"] = {"budget": c["dailyBudget"], "budgetType": "DAILY"}
         if "dynamicBidding" in c and "bidding" not in c:
-            dynamic = c["dynamicBidding"]
+            dynamic     = c["dynamicBidding"]
             adjustments = []
             for adj in dynamic.get("placementBidding", []):
                 adjustments.append({
@@ -115,7 +125,7 @@ def _normalize_campaigns(campaigns: list) -> list:
                     "percentage": adj.get("percentage", 0),
                 })
             c["bidding"] = {
-                "strategy": dynamic.get("strategy", ""),
+                "strategy":    dynamic.get("strategy", ""),
                 "adjustments": adjustments,
             }
         normalized.append(c)
@@ -124,33 +134,45 @@ def _normalize_campaigns(campaigns: list) -> list:
 
 def get_keywords(token: str, profile_id: str) -> list[dict]:
     """Отримати всі ключові слова."""
+    # v3 з правильним content-type
     try:
         url = f"{ADS_BASE_URL}/sp/keywords/list"
+        ct  = "application/vnd.spKeyword.v3+json"
         payload = {"stateFilter": {"include": ["ENABLED"]}, "maxResults": 1000}
-        r = requests.post(url, headers=headers(token, profile_id), json=payload)
+        r = requests.post(url,
+                          headers=headers(token, profile_id, content_type=ct),
+                          json=payload)
         if r.status_code == 200:
-            data = r.json()
+            data     = r.json()
             keywords = data.get("keywords", data if isinstance(data, list) else [])
             print(f"  ✅ Ключові слова (v3): {len(keywords)}")
             return keywords
-    except Exception:
-        pass
+        else:
+            print(f"  ⚠️ keywords v3: {r.status_code}")
+    except Exception as e:
+        print(f"  ⚠️ keywords v3 exception: {e}")
 
-    url = f"{ADS_BASE_URL}/sp/keywords"
-    r = requests.get(url, headers=headers(token, profile_id),
-                     params={"stateFilter": "enabled", "count": 1000})
+    # v2 fallback
+    url = f"{ADS_BASE_URL}/v2/sp/keywords"
+    r   = requests.get(url, headers=headers(token, profile_id),
+                       params={"stateFilter": "enabled", "count": 1000})
     r.raise_for_status()
-    keywords = r.json().get("keywords", [])
+    keywords = r.json()
+    if isinstance(keywords, list):
+        pass
+    else:
+        keywords = keywords.get("keywords", [])
     print(f"  ✅ Ключові слова (v2): {len(keywords)}")
     return keywords
 
 
 def get_negative_keywords(token: str, profile_id: str) -> list[dict]:
-    url = f"{ADS_BASE_URL}/sp/negativeKeywords"
-    r = requests.get(url, headers=headers(token, profile_id),
-                     params={"stateFilter": "enabled", "count": 1000})
+    url = f"{ADS_BASE_URL}/v2/sp/negativeKeywords"
+    r   = requests.get(url, headers=headers(token, profile_id),
+                       params={"stateFilter": "enabled", "count": 1000})
     r.raise_for_status()
-    return r.json().get("negativeKeywords", [])
+    data = r.json()
+    return data if isinstance(data, list) else data.get("negativeKeywords", [])
 
 
 # ── Звіти ────────────────────────────────────────────────────
@@ -159,21 +181,23 @@ def _request_report(token: str, profile_id: str,
                     name: str, report_type: str,
                     columns: list, group_by: list,
                     start_date: str, end_date: str) -> str:
-    url = f"{ADS_BASE_URL}/reporting/reports"
+    url     = f"{ADS_BASE_URL}/reporting/reports"
     payload = {
-        "name": name,
+        "name":      name,
         "startDate": start_date,
-        "endDate": end_date,
+        "endDate":   end_date,
         "configuration": {
-            "adProduct": "SPONSORED_PRODUCTS",
-            "groupBy": group_by,
-            "columns": columns,
+            "adProduct":    "SPONSORED_PRODUCTS",
+            "groupBy":      group_by,
+            "columns":      columns,
             "reportTypeId": report_type,
-            "timeUnit": "SUMMARY",
-            "format": "GZIP_JSON",
+            "timeUnit":     "SUMMARY",
+            "format":       "GZIP_JSON",
         },
     }
     r = requests.post(url, headers=headers(token, profile_id), json=payload)
+    if r.status_code not in (200, 202):
+        print(f"  ❌ Звіт не створено ({r.status_code}): {r.text[:300]}")
     r.raise_for_status()
     report_id = r.json()["reportId"]
     print(f"  ✅ Звіт запрошено: {name} ({report_id})")
@@ -182,63 +206,101 @@ def _request_report(token: str, profile_id: str,
 
 def wait_and_download(token: str, profile_id: str,
                       report_id: str, max_wait: int = 600) -> list[dict]:
-    url = f"{ADS_BASE_URL}/reporting/reports/{report_id}"
+    url    = f"{ADS_BASE_URL}/reporting/reports/{report_id}"
     waited = 0
     while waited < max_wait:
         r = requests.get(url, headers=headers(token, profile_id))
         r.raise_for_status()
-        data = r.json()
+        data   = r.json()
         status = data.get("status")
+
         if status == "COMPLETED":
-            resp = requests.get(data["url"])
+            dl_url = data.get("url") or data.get("location")
+            if not dl_url:
+                raise Exception(f"Звіт COMPLETED але немає url: {data}")
+            resp = requests.get(dl_url)
             with gzip.GzipFile(fileobj=io.BytesIO(resp.content)) as f:
                 result = json.loads(f.read().decode("utf-8"))
             print(f"  ✅ Завантажено: {len(result)} рядків")
             return result
+
         elif status == "FAILED":
-            raise Exception(f"Звіт провалився: {report_id}")
-        print(f"  ⏳ Очікуємо звіт ({status})...")
+            failure = data.get("failureReason", "невідома причина")
+            raise Exception(f"Звіт провалився ({report_id}): {failure}")
+
+        print(f"  ⏳ Очікуємо звіт [{waited}s] ({status})...")
         time.sleep(30)
         waited += 30
-    raise Exception(f"Timeout: звіт {report_id}")
+
+    raise Exception(f"Timeout {max_wait}s: звіт {report_id}")
 
 
 def get_search_term_report(token, profile_id, start_date, end_date):
-    rid = _request_report(token, profile_id, f"SearchTerm {start_date}",
+    """
+    ВИПРАВЛЕНО: видалено невалідні колонки clickThroughRate, advertisedAsin.
+    У звітах спендтип — 'cost', не 'spend'.
+    """
+    rid = _request_report(
+        token, profile_id, f"SearchTerm {start_date}",
         "spSearchTerm",
-        ["campaignName", "adGroupName", "keyword", "matchType",
-         "searchTerm", "impressions", "clicks", "clickThroughRate",
-         "spend", "sales7d", "purchases7d", "costPerClick", "advertisedAsin"],
-        ["searchTerm"], start_date, end_date)
+        [
+            "campaignName", "adGroupName", "keyword", "matchType",
+            "searchTerm", "impressions", "clicks",
+            "cost", "sales7d", "purchases7d", "costPerClick",
+        ],
+        ["searchTerm"], start_date, end_date,
+    )
     return wait_and_download(token, profile_id, rid)
 
 
 def get_campaign_report(token, profile_id, start_date, end_date):
-    rid = _request_report(token, profile_id, f"Campaign {start_date}",
+    """
+    ВИПРАВЛЕНО:
+    - 'spend' → 'cost' (правильна назва в reporting API)
+    - видалено 'clickThroughRate' — не існує в spCampaigns
+    - видалено 'campaignBudgetAmount' — не існує в spCampaigns
+    Невалідні колонки = звіт зависає в IN_PROGRESS вічно.
+    """
+    rid = _request_report(
+        token, profile_id, f"Campaign {start_date}",
         "spCampaigns",
-        ["campaignName", "campaignId", "impressions", "clicks",
-         "clickThroughRate", "spend", "sales7d", "purchases7d",
-         "costPerClick", "campaignBudgetAmount"],
-        ["campaign"], start_date, end_date)
+        [
+            "campaignName", "campaignId",
+            "impressions", "clicks",
+            "cost", "sales7d", "purchases7d", "costPerClick",
+            "campaignBudget", "campaignStatus",
+        ],
+        ["campaign"], start_date, end_date,
+    )
     return wait_and_download(token, profile_id, rid)
 
 
 def get_placement_report(token, profile_id, start_date, end_date):
-    rid = _request_report(token, profile_id, f"Placement {start_date}",
+    rid = _request_report(
+        token, profile_id, f"Placement {start_date}",
         "spCampaigns",
-        ["campaignName", "placement", "impressions", "clicks",
-         "spend", "sales7d", "purchases7d", "clickThroughRate"],
-        ["campaign", "placement"], start_date, end_date)
+        [
+            "campaignName", "placement",
+            "impressions", "clicks",
+            "cost", "sales7d", "purchases7d",
+        ],
+        ["campaign", "placement"], start_date, end_date,
+    )
     return wait_and_download(token, profile_id, rid)
 
 
 def get_targeting_report(token, profile_id, start_date, end_date):
-    rid = _request_report(token, profile_id, f"Targeting {start_date}",
+    rid = _request_report(
+        token, profile_id, f"Targeting {start_date}",
         "spTargeting",
-        ["campaignName", "adGroupName", "targetingExpression",
-         "targetingText", "matchType", "impressions", "clicks",
-         "spend", "sales7d", "purchases7d", "costPerClick", "clickThroughRate"],
-        ["targeting"], start_date, end_date)
+        [
+            "campaignName", "adGroupName",
+            "targetingExpression", "targetingText", "matchType",
+            "impressions", "clicks",
+            "cost", "sales7d", "purchases7d", "costPerClick",
+        ],
+        ["targeting"], start_date, end_date,
+    )
     return wait_and_download(token, profile_id, rid)
 
 
@@ -248,13 +310,17 @@ def calculate_metrics(campaign_data: list[dict], margin: float) -> dict:
     if not campaign_data:
         return {}
 
-    total_spend  = sum(float(r.get("spend", 0)) for r in campaign_data)
+    # ВИПРАВЛЕНО: підтримка обох назв — 'cost' (reporting API) і 'spend' (legacy)
+    def _spend(r):
+        return float(r.get("cost") or r.get("spend") or 0)
+
+    total_spend  = sum(_spend(r) for r in campaign_data)
     total_sales  = sum(float(r.get("sales7d", 0)) for r in campaign_data)
     total_orders = sum(int(r.get("purchases7d", 0)) for r in campaign_data)
 
     acos  = (total_spend / total_sales * 100) if total_sales > 0 else 0
-    roas  = (total_sales / total_spend) if total_spend > 0 else 0
-    tacos = (total_spend / total_sales) if total_sales > 0 else 0
+    roas  = (total_sales / total_spend)       if total_spend > 0 else 0
+    tacos = (total_spend / total_sales)       if total_sales > 0 else 0
 
     gross_profit = total_sales * margin
     net_profit   = gross_profit - total_spend
@@ -265,7 +331,7 @@ def calculate_metrics(campaign_data: list[dict], margin: float) -> dict:
         if name not in by_campaign:
             by_campaign[name] = {"spend": 0, "sales": 0, "orders": 0,
                                   "impressions": 0}
-        by_campaign[name]["spend"]       += float(row.get("spend", 0))
+        by_campaign[name]["spend"]       += _spend(row)
         by_campaign[name]["sales"]       += float(row.get("sales7d", 0))
         by_campaign[name]["orders"]      += int(row.get("purchases7d", 0))
         by_campaign[name]["impressions"] += int(row.get("impressions", 0))
@@ -278,10 +344,11 @@ def calculate_metrics(campaign_data: list[dict], margin: float) -> dict:
     top   = min(campaign_acos, key=campaign_acos.get) if campaign_acos else ""
     worst = max(campaign_acos, key=campaign_acos.get) if campaign_acos else ""
 
+    # ВИПРАВЛЕНО: бюджет тепер з поля 'campaignBudget'
     budget_issues = []
     for row in campaign_data:
-        budget = float(row.get("campaignBudgetAmount", 0))
-        spend  = float(row.get("spend", 0))
+        budget = float(row.get("campaignBudget") or row.get("campaignBudgetAmount") or 0)
+        spend  = _spend(row)
         if budget > 0 and spend >= budget * 0.95:
             budget_issues.append(row.get("campaignName", ""))
 
@@ -303,7 +370,7 @@ def calculate_metrics(campaign_data: list[dict], margin: float) -> dict:
 
 
 def analyze_placement_issues(placement_data, campaigns):
-    issues = []
+    issues     = []
     by_campaign = {}
     for row in placement_data:
         name = row.get("campaignName", "")
@@ -312,22 +379,25 @@ def analyze_placement_issues(placement_data, campaigns):
             by_campaign[name] = {}
         by_campaign[name][pl] = {
             "impressions": int(row.get("impressions", 0)),
-            "spend":       float(row.get("spend", 0)),
+            "spend":       float(row.get("cost") or row.get("spend") or 0),
             "sales":       float(row.get("sales7d", 0)),
         }
 
     for camp_name, placements in by_campaign.items():
-        tos_imp = placements.get("Top of Search on-Amazon", {}).get("impressions", 0)
-        pp_imp  = placements.get("Detail Page on-Amazon", {}).get("impressions", 0)
-        total   = tos_imp + pp_imp + placements.get("Other on-Amazon", {}).get("impressions", 0)
+        tos_imp = placements.get("Top of Search on-Amazon",  {}).get("impressions", 0)
+        pp_imp  = placements.get("Detail Page on-Amazon",    {}).get("impressions", 0)
+        other   = placements.get("Other on-Amazon",          {}).get("impressions", 0)
+        total   = tos_imp + pp_imp + other
         if total == 0:
             continue
         tos_pct = tos_imp / total * 100
         pp_pct  = pp_imp  / total * 100
 
-        camp_data = next((c for c in campaigns if c.get("name") == camp_name), {})
+        camp_data = next(
+            (c for c in campaigns if c.get("name") == camp_name), {})
         bidding = camp_data.get("bidding", {})
-        adj = {a["placement"]: a["percentage"] for a in bidding.get("adjustments", [])}
+        adj     = {a["placement"]: a["percentage"]
+                   for a in bidding.get("adjustments", [])}
         tos_adj = adj.get("PLACEMENT_TOP", 0)
         pp_adj  = adj.get("PLACEMENT_PRODUCT_PAGE", 0)
 
