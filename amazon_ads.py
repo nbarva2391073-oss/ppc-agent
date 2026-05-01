@@ -267,8 +267,7 @@ def get_campaign_report(token, profile_id, start_date, end_date):
         [
             "campaignName", "campaignId",
             "impressions", "clicks",
-            "cost", "sales7d", "purchases7d", "costPerClick",
-            "campaignBudget", "campaignStatus",
+            "spend", "sales7d", "purchases7d", "costPerClick",
         ],
         ["campaign"], start_date, end_date,
     )
