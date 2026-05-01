@@ -48,16 +48,18 @@ def process_market(token: str, profile_id: str,
     campaigns = get_campaigns(token, profile_id)
     keywords  = get_keywords(token, profile_id)
 
-    # ── 2. Звіти ─────────────────────────────────────────────
-    print("\n📋 Завантажуємо звіти...")
-    search_term_data = get_search_term_report(
-        token, profile_id, start, end)
-    campaign_data    = get_campaign_report(
-        token, profile_id, start, end)
-    placement_data   = get_placement_report(
-        token, profile_id, start, end)
-    targeting_data   = get_targeting_report(
-        token, profile_id, start, end)
+    # ── 2. Звіти — паралельний запуск ───────────────────────
+    print("\n📋 Завантажуємо звіти (паралельно)...")
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=4) as ex:
+        f_st = ex.submit(get_search_term_report, token, profile_id, start, end)
+        f_ca = ex.submit(get_campaign_report,    token, profile_id, start, end)
+        f_pl = ex.submit(get_placement_report,   token, profile_id, start, end)
+        f_tg = ex.submit(get_targeting_report,   token, profile_id, start, end)
+    search_term_data = f_st.result()
+    campaign_data    = f_ca.result()
+    placement_data   = f_pl.result()
+    targeting_data   = f_tg.result()
 
     # ── 3. Метрики ───────────────────────────────────────────
     print("\n📊 Розраховуємо метрики...")

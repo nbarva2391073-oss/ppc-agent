@@ -205,7 +205,11 @@ def write_campaign_analysis(metrics: dict, week: str, market: str):
         acos  = spend / sales * 100 if sales > 0 else 0
         roas  = sales / spend if spend > 0 else 0
 
-        if acos <= breakeven * 0.8:
+        if spend > 0 and sales == 0:
+            status = "⚠️ Немає продажів"
+        elif spend == 0:
+            status = "😴 Немає активності"
+        elif acos <= breakeven * 0.8:
             status = "✅ Прибутково"
         elif acos <= breakeven:
             status = "🟡 На межі"
