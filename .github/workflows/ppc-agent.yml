@@ -1,0 +1,47 @@
+name: PPC Agent
+
+on:
+  schedule:
+    # Тижневий звіт — щонеділі о 08:00 Kyiv (06:00 UTC)
+    - cron: '0 6 * * 0'
+    # Щоденний моніторинг — щодня о 09:00 Kyiv (07:00 UTC)
+    - cron: '0 7 * * *'
+  workflow_dispatch:  # ручний запуск
+
+jobs:
+  run-agent:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run weekly or daily
+        env:
+          ADS_CLIENT_ID: ${{ secrets.ADS_CLIENT_ID }}
+          ADS_CLIENT_SECRET: ${{ secrets.ADS_CLIENT_SECRET }}
+          ADS_REFRESH_TOKEN: ${{ secrets.ADS_REFRESH_TOKEN }}
+          ADS_PROFILE_ID_USA: ${{ secrets.ADS_PROFILE_ID_USA }}
+          ADS_PROFILE_ID_CA: ${{ secrets.ADS_PROFILE_ID_CA }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS: ${{ secrets.TELEGRAM_CHAT_IDS }}
+        run: |
+          DAY=$(date +%u)  # 7 = неділя
+          if [ "$DAY" = "7" ]; then
+            echo "Запускаємо тижневий звіт..."
+            python3 main_weekly.py
+          else
+            echo "Запускаємо щоденний моніторинг..."
+            python3 main_daily.py
+          fi
