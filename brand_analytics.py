@@ -41,14 +41,17 @@ def request_search_terms_report(market: str, token: str, weeks_back: int = 1) ->
     base = SP_API_ENDPOINTS[market]
     marketplace_id = MARKETPLACE_IDS[market]
 
-    # Звітний період — минулий тиждень
-    end_date   = datetime.utcnow() - timedelta(days=1)
-    start_date = end_date - timedelta(weeks=weeks_back)
+    # Brand Analytics вимагає точний Monday→Sunday тиждень
+    today = datetime.utcnow()
+    # Знаходимо минулий понеділок
+    days_since_monday = today.weekday()  # 0=Monday
+    last_monday = today - timedelta(days=days_since_monday + 7)
+    last_sunday = last_monday + timedelta(days=6)
 
     payload = {
         "reportType": "GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT",
-        "dataStartTime": start_date.strftime("%Y-%m-%dT00:00:00Z"),
-        "dataEndTime":   end_date.strftime("%Y-%m-%dT23:59:59Z"),
+        "dataStartTime": last_monday.strftime("%Y-%m-%dT00:00:00Z"),
+        "dataEndTime":   last_sunday.strftime("%Y-%m-%dT23:59:59Z"),
         "reportOptions": {
             "reportPeriod": "WEEK"
         },
