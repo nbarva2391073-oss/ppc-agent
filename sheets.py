@@ -3,6 +3,29 @@
 # ============================================================
 
 import json
+import time as _sheets_time
+import random as _sheets_random
+from functools import wraps as _wraps
+
+def _retry_sheets(max_retries=5, base_delay=5):
+    """Exponential backoff для Google Sheets API."""
+    def decorator(func):
+        @_wraps(func)
+        def wrapper(*args, **kwargs):
+            for attempt in range(max_retries):
+                try:
+                    return func(*args, **kwargs)
+                except Exception as e:
+                    if "429" in str(e) or "Quota exceeded" in str(e):
+                        delay = base_delay * (2 ** attempt) + _sheets_random.uniform(0, 2)
+                        print(f"⏳ Sheets 429, чекаємо {delay:.1f}с (спроба {attempt+1}/{max_retries})...")
+                        _sheets_time.sleep(delay)
+                        if attempt == max_retries - 1:
+                            raise
+                    else:
+                        raise
+        return wrapper
+    return decorator
 from datetime import datetime
 import gspread
 from google.oauth2.service_account import Credentials
@@ -28,6 +51,7 @@ def client():
     return _client_cache
 
 
+@_retry_sheets(max_retries=5, base_delay=5)
 def get_sheet(name: str):
     ss = client().open_by_key(SPREADSHEET_ID)
     try:
@@ -36,7 +60,6 @@ def get_sheet(name: str):
         return ss.add_worksheet(title=name, rows=2000, cols=60)
 
 
-import time as _sheets_time
 
 def append(sheet_name: str, rows: list, headers: list = None):
     """Додати рядки в аркуш (з заголовками якщо порожній)."""
@@ -50,9 +73,10 @@ def append(sheet_name: str, rows: list, headers: list = None):
         sh.append_row(headers)
     if rows:
         sh.append_rows(rows)
-        _sheets_time.sleep(2)  # уникаємо Google Sheets rate limit
+        _sheets_time.sleep(5)  # уникаємо Google Sheets rate limit
 
 
+@_retry_sheets(max_retries=5, base_delay=5)
 def read_all(sheet_name: str) -> list[list]:
     """Прочитати всі дані з аркуша."""
     try:
@@ -341,8 +365,8 @@ def get_full_history(market: str) -> dict:
     history = {}
     for key, name in sheets.items():
         history[key] = read_all(name)
-        _sheets_time.sleep(2)  # уникаємо rate limit
+        _sheets_time.sleep(5)  # уникаємо rate limit
     history["weekly_summary"] = read_all(SHEETS_COMMON["weekly_summary"])
-    _sheets_time.sleep(2)
+    _sheets_time.sleep(5)
     history["monthly_summary"] = read_all(SHEETS_COMMON["monthly_summary"])
     return history
