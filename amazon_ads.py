@@ -196,9 +196,9 @@ def _request_report(token: str, profile_id: str,
         },
     }
     r = requests.post(url, headers=headers(token, profile_id), json=payload)
+    print(f"  📡 Звіт {name}: {r.status_code} {r.text[:200]}")
     if r.status_code not in (200, 202):
-        print(f"  ❌ Звіт не створено ({r.status_code}): {r.text[:300]}")
-    r.raise_for_status()
+        raise Exception(f"Звіт не створено ({r.status_code}): {r.text[:300]}")
     report_id = r.json()["reportId"]
     print(f"  ✅ Звіт запрошено: {name} ({report_id})")
     return report_id
