@@ -279,11 +279,11 @@ def get_placement_report(token, profile_id, start_date, end_date):
         token, profile_id, f"Placement {start_date}",
         "spCampaigns",
         [
-            "campaignName", "placement",
+            "campaignName",
             "impressions", "clicks",
-            "cost", "sales7d", "purchases7d",
+            "spend", "sales7d", "purchases7d",
         ],
-        ["campaign", "placement"], start_date, end_date,
+        ["campaignPlacement"], start_date, end_date,
     )
     return wait_and_download(token, profile_id, rid)
 
