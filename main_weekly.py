@@ -48,14 +48,27 @@ def process_market(token: str, profile_id: str,
     campaigns = get_campaigns(token, profile_id)
     keywords  = get_keywords(token, profile_id)
 
-    # ── 2. Звіти — паралельний запуск ───────────────────────
-    print("\n📋 Завантажуємо звіти (паралельно)...")
+    # ── 2. Звіти — запускаємо всі, потім чекаємо ────────────
+    print("\n📋 Завантажуємо звіти...")
+    import time as _time
     from concurrent.futures import ThreadPoolExecutor
+
+    # Спочатку створюємо всі звіти з затримкою
+    from amazon_ads import _request_report, wait_and_download
+    from datetime import datetime as _dt, timedelta as _td
+
+    def _make_report(fn, *args):
+        _time.sleep(5)  # затримка між запитами
+        return fn(*args)
+
     with ThreadPoolExecutor(max_workers=4) as ex:
-        f_st = ex.submit(get_search_term_report, token, profile_id, start, end)
-        f_ca = ex.submit(get_campaign_report,    token, profile_id, start, end)
-        f_pl = ex.submit(get_placement_report,   token, profile_id, start, end)
-        f_tg = ex.submit(get_targeting_report,   token, profile_id, start, end)
+        f_st = ex.submit(_make_report, get_search_term_report, token, profile_id, start, end)
+        _time.sleep(3)
+        f_ca = ex.submit(_make_report, get_campaign_report,    token, profile_id, start, end)
+        _time.sleep(3)
+        f_pl = ex.submit(_make_report, get_placement_report,   token, profile_id, start, end)
+        _time.sleep(3)
+        f_tg = ex.submit(_make_report, get_targeting_report,   token, profile_id, start, end)
     search_term_data = f_st.result()
     campaign_data    = f_ca.result()
     placement_data   = f_pl.result()
