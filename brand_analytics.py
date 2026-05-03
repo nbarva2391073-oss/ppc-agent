@@ -52,7 +52,7 @@ def request_search_terms_report(market: str, token: str, weeks_back: int = 1) ->
 
     payload = {
         "reportType": "GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT",
-        "dataStartTime": last_monday.strftime("%Y-%m-%dT00:00:00Z"),
+        "dataStartTime": last_sunday.strftime("%Y-%m-%dT00:00:00Z"),
         "dataEndTime":   last_sunday.strftime("%Y-%m-%dT23:59:59Z"),
         "reportOptions": {
             "reportPeriod": "WEEK"
