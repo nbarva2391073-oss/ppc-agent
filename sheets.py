@@ -36,6 +36,8 @@ def get_sheet(name: str):
         return ss.add_worksheet(title=name, rows=2000, cols=60)
 
 
+import time as _sheets_time
+
 def append(sheet_name: str, rows: list, headers: list = None):
     """Додати рядки в аркуш (з заголовками якщо порожній)."""
     sh = get_sheet(sheet_name)
@@ -48,6 +50,7 @@ def append(sheet_name: str, rows: list, headers: list = None):
         sh.append_row(headers)
     if rows:
         sh.append_rows(rows)
+        _sheets_time.sleep(2)  # уникаємо Google Sheets rate limit
 
 
 def read_all(sheet_name: str) -> list[list]:
