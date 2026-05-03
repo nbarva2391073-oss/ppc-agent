@@ -246,7 +246,7 @@ def get_search_term_report(token, profile_id, start_date, end_date):
         [
             "campaignName", "adGroupName", "keyword", "matchType",
             "searchTerm", "impressions", "clicks",
-            "cost", "sales7d", "purchases7d", "costPerClick",
+            "spend", "sales7d", "purchases7d", "costPerClick",
         ],
         ["searchTerm"], start_date, end_date,
     )
@@ -294,9 +294,8 @@ def get_targeting_report(token, profile_id, start_date, end_date):
         "spTargeting",
         [
             "campaignName", "adGroupName",
-            "targetingExpression", "targetingText", "matchType",
-            "impressions", "clicks",
-            "cost", "sales7d", "purchases7d", "costPerClick",
+            "matchType", "impressions", "clicks",
+            "spend", "sales7d", "purchases7d", "costPerClick",
         ],
         ["targeting"], start_date, end_date,
     )
