@@ -137,11 +137,26 @@ def download_report(market: str, token: str, document_id: str) -> list[dict]:
     # Парсимо JSON
     try:
         data = json.loads(content)
-        records = data.get("dataByAsin", data) if isinstance(data, dict) else data
+        print(f"🔍 Тип даних: {type(data).__name__}, preview: {str(data)[:300]}")
+        
+        # Brand Analytics може повертати різні структури
+        if isinstance(data, list):
+            records = data
+        elif isinstance(data, dict):
+            # Шукаємо список в різних полях
+            records = (data.get("dataByAsin") or 
+                      data.get("searchTerms") or
+                      data.get("data") or
+                      data.get("records") or
+                      [data])
+        else:
+            records = [data]
+            
         print(f"✅ Завантажено {len(records)} записів [{market}]")
         return records
     except Exception as e:
         print(f"❌ Помилка парсингу звіту [{market}]: {e}")
+        print(f"🔍 Raw content preview: {content[:500]}")
         return []
 
 
