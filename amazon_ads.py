@@ -295,7 +295,7 @@ def get_targeting_report(token, profile_id, start_date, end_date):
         [
             "campaignName", "adGroupName",
             "matchType", "impressions", "clicks",
-            "spend", "sales7d", "purchases7d", "costPerClick",
+            "cost", "sales7d", "purchases7d", "costPerClick",
         ],
         ["targeting"], start_date, end_date,
     )
