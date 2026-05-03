@@ -20,6 +20,7 @@ from sheets import (
     write_weekly_summary, get_full_history,
 )
 from telegram_bot import send_weekly_summary, send_message
+from brand_analytics import get_brand_analytics, format_for_sheets as ba_format
 
 
 def get_week_dates() -> tuple[str, str, str]:
@@ -96,6 +97,16 @@ def process_market(token: str, profile_id: str,
     print(f"  ✅ Ключових слів: {len(keyword_analysis)}")
     print(f"  ⚠️ Кандидатів на негативні: {len(negative_candidates)}")
 
+    # ── 5b. Brand Analytics ─────────────────────────────────
+    print("\n🔍 Завантажуємо Brand Analytics...")
+    ba_records = get_brand_analytics(market)
+    if ba_records:
+        ba_headers, ba_rows = ba_format(ba_records, market)
+        print(f"  ✅ Brand Analytics: {len(ba_rows)} пошукових запитів")
+    else:
+        ba_headers, ba_rows = [], []
+        print("  ⚠️ Brand Analytics: даних немає")
+
     # ── 6. Записуємо в Google Sheets ─────────────────────────
     print("\n📝 Записуємо в Google Sheets...")
     write_raw_data(search_term_data, week_label, market)
@@ -104,6 +115,11 @@ def process_market(token: str, profile_id: str,
                               week_label, market)
     write_campaign_analysis(metrics, week_label, market)
     write_keyword_intelligence(keyword_analysis, week_label, market)
+    if ba_rows:
+        from sheets import append, SHEETS_USA, SHEETS_CA
+        sheets = SHEETS_USA if market == "USA" else SHEETS_CA
+        append(sheets["keyword_intelligence"], ba_rows, ba_headers)
+        print("  ✅ Brand Analytics збережено в Sheets")
 
     # ── 7. AI Аналіз ─────────────────────────────────────────
     print("\n🧠 Запускаємо AI аналіз...")
