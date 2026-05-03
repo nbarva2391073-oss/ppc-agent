@@ -43,12 +43,12 @@ def request_search_terms_report(market: str, token: str, weeks_back: int = 1) ->
 
     # Brand Analytics вимагає точний Monday→Sunday тиждень
     today = datetime.utcnow()
-    # Brand Analytics має затримку ~2 тижні
-    # Запитуємо тиждень який точно вже оброблений
-    days_since_monday = today.weekday()  # 0=Monday
-    last_monday = today - timedelta(days=days_since_monday + 14)
-    last_sunday = last_monday + timedelta(days=6)
-    print(f"📅 Brand Analytics період: {last_monday.strftime('%Y-%m-%d')} → {last_sunday.strftime('%Y-%m-%d')}")
+    # Brand Analytics: тиждень Sunday→Saturday (американський формат)
+    # Затримка ~2 тижні — беремо тиждень що точно оброблений
+    days_since_sunday = (today.weekday() + 1) % 7  # 0=Sunday
+    last_sunday = today - timedelta(days=days_since_sunday + 14)
+    last_saturday = last_sunday + timedelta(days=6)
+    print(f"📅 Brand Analytics період: {last_sunday.strftime('%Y-%m-%d')} (Sun) → {last_saturday.strftime('%Y-%m-%d')} (Sat)")
 
     payload = {
         "reportType": "GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT",
