@@ -205,7 +205,7 @@ def _request_report(token: str, profile_id: str,
 
 
 def wait_and_download(token: str, profile_id: str,
-                      report_id: str, max_wait: int = 600) -> list[dict]:
+                      report_id: str, max_wait: int = 1800) -> list[dict]:
     url    = f"{ADS_BASE_URL}/reporting/reports/{report_id}"
     waited = 0
     while waited < max_wait:
