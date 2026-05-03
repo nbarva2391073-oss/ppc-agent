@@ -93,7 +93,9 @@ def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 120
         if status == "DONE":
             return data.get("reportDocumentId")
         elif status in ("FATAL", "CANCELLED"):
+            # Виводимо повну відповідь щоб зрозуміти причину
             print(f"❌ Звіт [{market}] завершився з помилкою: {status}")
+            print(f"❌ Деталі: {json.dumps(data, indent=2)}")
             return None
 
     print(f"❌ Звіт [{market}] не готовий за {max_wait}с")
