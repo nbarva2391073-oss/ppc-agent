@@ -341,8 +341,8 @@ def get_full_history(market: str) -> dict:
     history = {}
     for key, name in sheets.items():
         history[key] = read_all(name)
-    history["weekly_summary"] = read_all(
-        SHEETS_COMMON["weekly_summary"])
-    history["monthly_summary"] = read_all(
-        SHEETS_COMMON["monthly_summary"])
+        _sheets_time.sleep(2)  # уникаємо rate limit
+    history["weekly_summary"] = read_all(SHEETS_COMMON["weekly_summary"])
+    _sheets_time.sleep(2)
+    history["monthly_summary"] = read_all(SHEETS_COMMON["monthly_summary"])
     return history
