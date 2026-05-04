@@ -74,7 +74,7 @@ def request_sqp_report(market: str, token: str) -> str:
     return report_id
 
 
-def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 300) -> str:
+def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 600) -> str:
     """Чекати поки звіт готовий. Повертає documentId."""
     for attempt in range(max_wait // 10):
         time.sleep(10)
