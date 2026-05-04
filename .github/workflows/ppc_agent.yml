@@ -4,8 +4,8 @@ on:
   schedule:
     # Щотижнево — понеділок 9:00 UTC (12:00 Київ)
     - cron: '0 9 * * 1'
-    # Щоденно — 9:00 UTC (12:00 Київ) крім понеділка
-    - cron: '0 9 * * 0,2,3,4,5,6'
+    # Щоденно — 9:00 UTC (12:00 Київ) вівторок-неділя (крім понеділка)
+    - cron: '0 9 * * 2,3,4,5,6,0'
   workflow_dispatch:
     inputs:
       mode:
@@ -35,7 +35,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run Weekly Agent (Monday)
-        if: github.event.schedule == '0 9 * * 1' || inputs.mode == 'weekly'
+        if: github.event.schedule == '0 9 * * 1' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'weekly')
         env:
           ADS_CLIENT_ID:              ${{ secrets.ADS_CLIENT_ID }}
           ADS_CLIENT_SECRET:          ${{ secrets.ADS_CLIENT_SECRET }}
@@ -53,7 +53,7 @@ jobs:
         run: python main_weekly.py
 
       - name: Run Daily Monitor (Tue-Sun)
-        if: github.event.schedule == '0 9 * * 0,2,3,4,5,6' || inputs.mode == 'daily'
+        if: github.event.schedule == '0 9 * * 2,3,4,5,6,0' || (github.event_name == 'workflow_dispatch' && inputs.mode == 'daily')
         env:
           ADS_CLIENT_ID:              ${{ secrets.ADS_CLIENT_ID }}
           ADS_CLIENT_SECRET:          ${{ secrets.ADS_CLIENT_SECRET }}
