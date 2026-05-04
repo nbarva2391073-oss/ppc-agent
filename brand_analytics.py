@@ -78,7 +78,7 @@ def request_search_terms_report(market: str, token: str, weeks_back: int = 1) ->
     return report_id
 
 
-def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 120) -> str:
+def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 300) -> str:
     """Чекати поки звіт готовий. Повертає documentId."""
     base = SP_API_ENDPOINTS[market]
 
