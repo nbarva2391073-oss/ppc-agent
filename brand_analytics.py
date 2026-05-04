@@ -46,12 +46,19 @@ def request_sqp_report(market: str, token: str) -> str:
 
     print(f"📅 SQP період: {start.strftime('%Y-%m-%d')} (Sun) → {end.strftime('%Y-%m-%d')} (Sat)")
 
+    # Флагманські ASIN для SQP звіту
+    FLAGSHIP_ASINS = {
+        "USA": "B081T6QGD9 B0G5QB4W6N B09NBB4QP7",
+        "CA":  "B081T6QGD9 B0G5QB4W6N B09NBB4QP7",
+    }
+
     payload = {
         "reportType": "GET_BRAND_ANALYTICS_SEARCH_QUERY_PERFORMANCE_REPORT",
         "dataStartTime": start.strftime("%Y-%m-%dT00:00:00Z"),
         "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
         "reportOptions": {
-            "reportPeriod": "WEEK"
+            "reportPeriod": "WEEK",
+            "asin": FLAGSHIP_ASINS[market],
         },
         "marketplaceIds": [marketplace_id],
     }
