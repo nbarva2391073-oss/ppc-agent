@@ -68,8 +68,7 @@ def append(sheet_name: str, rows: list, headers: list = None):
     if not existing:
         if headers:
             sh.append_row(headers)
-    elif headers and existing[0] != headers:
-        sh.clear()
+    elif headers and not existing:
         sh.append_row(headers)
     if rows:
         sh.append_rows(rows)
