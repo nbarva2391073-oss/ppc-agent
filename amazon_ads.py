@@ -204,11 +204,32 @@ def _request_report(token: str, profile_id: str,
     return report_id
 
 
+def submit_report(token: str, profile_id: str,
+                  name: str, report_type: str,
+                  columns: list, group_by: list,
+                  start_date: str, end_date: str = None) -> str:
+    """Запустити звіт і одразу повернути report_id (без очікування)."""
+    if end_date is None:
+        end_date = start_date
+    return _request_report(token, profile_id, name, report_type,
+                           columns, group_by, start_date, end_date)
+
+
 def wait_and_download(token: str, profile_id: str,
-                      report_id: str, max_wait: int = 1800) -> list[dict]:
+                      report_id: str, max_wait: int = 3600,
+                      token_fn=None) -> list[dict]:
+    """
+    Чекає поки звіт готовий і завантажує.
+    token_fn: передай get_access_token — оновлює токен кожні 45 хв.
+    """
     url    = f"{ADS_BASE_URL}/reporting/reports/{report_id}"
     waited = 0
     while waited < max_wait:
+        # Оновлюємо токен кожні 45 хвилин
+        if token_fn and waited > 0 and waited % 2700 == 0:
+            token = token_fn()
+            print(f"  🔄 Токен оновлено ({waited}s)")
+
         r = requests.get(url, headers=headers(token, profile_id))
         r.raise_for_status()
         data   = r.json()
