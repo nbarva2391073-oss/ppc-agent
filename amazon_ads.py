@@ -246,7 +246,7 @@ def get_search_term_report(token, profile_id, start_date, end_date):
         [
             "campaignName", "adGroupName", "keyword", "matchType",
             "searchTerm", "impressions", "clicks",
-            "spend", "sales7d", "purchases7d", "costPerClick",
+            "cost", "sales7d", "purchases7d", "costPerClick",
         ],
         ["searchTerm"], start_date, end_date,
     )
@@ -267,7 +267,7 @@ def get_campaign_report(token, profile_id, start_date, end_date):
         [
             "campaignName", "campaignId",
             "impressions", "clicks",
-            "spend", "sales7d", "purchases7d", "costPerClick",
+            "cost", "sales7d", "purchases7d", "costPerClick",
         ],
         ["campaign"], start_date, end_date,
     )
@@ -281,7 +281,7 @@ def get_placement_report(token, profile_id, start_date, end_date):
         [
             "campaignName",
             "impressions", "clicks",
-            "spend", "sales7d", "purchases7d",
+            "cost", "sales7d", "purchases7d",
         ],
         ["campaignPlacement"], start_date, end_date,
     )

@@ -33,7 +33,6 @@ def run_daily_monitor():
     print(f"📦 ЗБІР ДАНИХ: {datetime.now()}")
     print("=" * 60)
 
-    token = get_access_token()
     today = datetime.now()
     # Збираємо дані за вчора (Amazon не дає сьогоднішній день в повному обсязі)
     date  = (today - timedelta(days=1)).strftime("%Y-%m-%d")
@@ -50,6 +49,8 @@ def run_daily_monitor():
             continue
 
         print(f"\n📊 Збираємо {market}...")
+        # Свіжий токен для кожного маркетплейсу — щоб не протух за 1 годину
+        token = get_access_token()
         metrics = collect_market(token, profile_id, market, date, week)
         all_metrics[market] = metrics
 
