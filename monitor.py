@@ -44,8 +44,10 @@ def run_daily_monitor():
     print("=" * 60)
 
     today = datetime.now()
-    date  = (today - timedelta(days=1)).strftime("%Y-%m-%d")
-    week  = today.strftime("%Y-W%W")
+    # start=вчора end=сьогодні — як в старому коді що працював
+    start_date = (today - timedelta(days=1)).strftime("%Y-%m-%d")
+    end_date   = today.strftime("%Y-%m-%d")
+    week       = today.strftime("%Y-W%W")
 
     all_metrics = {}
 
@@ -81,7 +83,7 @@ def collect_market(token, profile_id, market, date, week):
 
     # ── Крок 1: Запускаємо ВСІ 4 звіти одночасно ─────────────
     # Так Amazon починає обробку всіх звітів паралельно
-    print(f"  → Запускаємо звіти для {date}...")
+    print(f"  → Запускаємо звіти {start_date} → {end_date}...")
     report_ids = {}
 
     for rname, rtype, cols, grp in [
@@ -93,7 +95,7 @@ def collect_market(token, profile_id, market, date, week):
         try:
             rid = submit_report(
                 token, profile_id,
-                f"{rname} {date}", rtype, cols, grp, date,
+                f"{rname} {start_date}", rtype, cols, grp, start_date, end_date,
             )
             report_ids[rname] = rid
             print(f"  📋 {rname}: {rid[:8]}...")
