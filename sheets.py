@@ -74,9 +74,11 @@ def append(sheet_name: str, rows: list, headers: list = None):
         sh.append_row(headers)
     if rows:
         before = len(sh.get_all_values())
-        sh.append_rows(rows)
+        # Пряме оновлення — обходить обмеження append_rows
+        next_row = before + 1
+        sh.update(f"A{next_row}", rows)
         after = len(sh.get_all_values())
-        print(f"  📝 append: рядків до={before}, після={after}, додано={after-before}")
+        print(f"  📝 write: рядків до={before}, після={after}, додано={after-before}")
         _sheets_time.sleep(5)  # уникаємо Google Sheets rate limit
 
 
