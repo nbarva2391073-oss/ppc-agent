@@ -17,7 +17,8 @@ HASHTAGS = [
 SHEETS_MAP = {
     "instagram": {"nano":"Instagram Нано","micro":"Instagram Мікро","macro":"Instagram Макро"},
     "tiktok":    {"nano":"TikTok Нано",   "micro":"TikTok Мікро",   "macro":"TikTok Макро"},
-    "youtube":   {"nano":"YouTube Нано",  "micro":"YouTube Мікро",  "macro":"YouTube Макро"},
+    "youtube":         {"nano":"YouTube Нано",        "micro":"YouTube Мікро",        "macro":"YouTube Макро"},
+    "youtube_shorts":  {"nano":"YouTube Shorts Нано", "micro":"YouTube Shorts Мікро", "macro":"YouTube Shorts Макро"},
 }
 
 HEADERS = [
@@ -26,6 +27,13 @@ HEADERS = [
     "Останній пост","Верифікований","Amazon досвід","Спонсорський %",
     "Скор (1-100)","Рівень","Red Flags","Посилання",
 ]
+
+APIFY_ACTORS = {
+    "Instagram":      "reGe1ST3OBgYZSsZJ",
+    "TikTok":         "clockworks/tiktok-hashtag-scraper",
+    "YouTube":        "streamers/youtube-scraper",
+    "YouTube Shorts": "streamers/youtube-shorts-scraper",
+}
 
 APIFY_BASE = "https://api.apify.com/v2"
 
@@ -65,7 +73,7 @@ def scrape_instagram(hashtags):
     print("\n Instagram...")
     profiles = {}
     for tag in hashtags[:6]:
-        for item in run_actor("apify/instagram-hashtag-scraper", {"hashtags":[tag],"resultsLimit":50}):
+        for item in run_actor(APIFY_ACTORS["Instagram"], {"hashtags":[tag],"resultsLimit":50}):
             u = item.get("ownerUsername") or item.get("owner",{}).get("username","")
             if u and u not in profiles:
                 profiles[u] = {
@@ -85,7 +93,7 @@ def scrape_tiktok(hashtags):
     print("\n TikTok...")
     profiles = {}
     for tag in hashtags[:6]:
-        for item in run_actor("clockworks/free-tiktok-scraper", {"hashtags":[tag],"resultsPerPage":50}):
+        for item in run_actor(APIFY_ACTORS["TikTok"], {"hashtags":[tag],"resultsPerPage":50}):
             a = item.get("authorMeta",{})
             u = a.get("name","")
             if u and u not in profiles:
@@ -106,12 +114,32 @@ def scrape_youtube(hashtags):
     print("\n YouTube...")
     profiles = {}
     for tag in hashtags[:4]:
-        for item in run_actor("streamers/youtube-scraper", {"searchKeywords":tag,"maxResults":30}):
+        for item in run_actor(APIFY_ACTORS["YouTube"], {"searchKeywords":tag,"maxResults":30}):
             cid = item.get("channelId","")
             if cid and cid not in profiles:
                 profiles[cid] = {
                     "username": cid, "full_name": item.get("channelName",""),
                     "platform": "youtube", "followers": item.get("channelSubscriberCount",0),
+                    "following": 0, "avg_likes": item.get("likes",0),
+                    "avg_comments": item.get("commentsCount",0),
+                    "last_post_date": item.get("date",""), "bio": item.get("channelDescription",""),
+                    "verified": item.get("isVerified",False),
+                    "profile_url": item.get("channelUrl", f"https://youtube.com/{cid}"),
+                }
+        time.sleep(3)
+    return list(profiles.values())
+
+
+def scrape_youtube_shorts(hashtags):
+    print("\n YouTube Shorts...")
+    profiles = {}
+    for tag in hashtags[:4]:
+        for item in run_actor(APIFY_ACTORS["YouTube Shorts"], {"searchKeywords":tag,"maxResults":30}):
+            cid = item.get("channelId","")
+            if cid and cid not in profiles:
+                profiles[cid] = {
+                    "username": cid, "full_name": item.get("channelName",""),
+                    "platform": "youtube_shorts", "followers": item.get("channelSubscriberCount",0),
                     "following": 0, "avg_likes": item.get("likes",0),
                     "avg_comments": item.get("commentsCount",0),
                     "last_post_date": item.get("date",""), "bio": item.get("channelDescription",""),
@@ -217,9 +245,9 @@ def main():
     print("="*60)
     print(f"INFLUENCER FINDER: {datetime.now()}")
     print("="*60)
-    all_p = scrape_instagram(HASHTAGS)+scrape_tiktok(HASHTAGS)+scrape_youtube(HASHTAGS)
+    all_p = scrape_instagram(HASHTAGS)+scrape_tiktok(HASHTAGS)+scrape_youtube(HASHTAGS)+scrape_youtube_shorts(HASHTAGS)
     print(f"\nЗнайдено: {len(all_p)}")
-    results = {pl:{t:[] for t in ["nano","micro","macro"]} for pl in ["instagram","tiktok","youtube"]}
+    results = {pl:{t:[] for t in ["nano","micro","macro"]} for pl in ["instagram","tiktok","youtube","youtube_shorts"]}
     passed = 0
     for p in all_p:
         flags = check_red_flags(p)
