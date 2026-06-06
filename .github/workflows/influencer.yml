@@ -27,5 +27,5 @@ jobs:
         env:
           APIFY_TOKEN:             ${{ secrets.APIFY_TOKEN }}
           GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
-          SPREADSHEET_ID:          ${{ secrets.SPREADSHEET_ID }}
+          SPREADSHEET_ID:          ${{ secrets.INFLUENCER_SPREADSHEET_ID }}
         run: python agents/influencer_finder.py
