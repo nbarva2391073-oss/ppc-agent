@@ -62,7 +62,7 @@ def run_daily_monitor():
         print(f"\n📊 Збираємо {market}...")
         # Свіжий токен для кожного маркетплейсу
         token = get_access_token()
-        metrics = collect_market(token, profile_id, market, date, week)
+        metrics = collect_market(token, profile_id, market, start_date, end_date, week)
         all_metrics[market] = metrics
 
     # Weekly Summary
@@ -78,12 +78,12 @@ def run_daily_monitor():
     print("\n✅ Збір завершено")
 
 
-def collect_market(token, profile_id, market, date, week):
+def collect_market(token, profile_id, market, start_date, end_date, week):
     margin = MARGIN.get(market, 0.25)
 
     # ── Крок 1: Запускаємо ВСІ 4 звіти одночасно ─────────────
     # Так Amazon починає обробку всіх звітів паралельно
-    print(f"  → Запускаємо звіти {start_date} → {end_date}...")
+    print(f"  → Запускаємо звіти {start_date}...")
     report_ids = {}
 
     for rname, rtype, cols, grp in [
