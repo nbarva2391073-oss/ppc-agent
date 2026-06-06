@@ -47,7 +47,11 @@ def run_daily_monitor():
     # start=вчора end=сьогодні — як в старому коді що працював
     start_date = (today - timedelta(days=1)).strftime("%Y-%m-%d")
     end_date   = today.strftime("%Y-%m-%d")
-    week       = today.strftime("%Y-W%W")
+    # Формат тижня: DD.MM-DD.MM.YYYY (як в старих даних)
+    from datetime import timedelta as _td
+    monday = today - _td(days=today.weekday())
+    sunday = monday + _td(days=6)
+    week   = f"{monday.strftime('%d.%m')}-{sunday.strftime('%d.%m.%Y')}"
 
     all_metrics = {}
 

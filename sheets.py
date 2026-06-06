@@ -45,9 +45,6 @@ def client():
     global _client_cache
     if _client_cache is None:
         creds_dict = json.loads(GOOGLE_CREDENTIALS_JSON)
-        print(f"  🔑 Sheets: client_email={creds_dict.get('client_email')}")
-        print(f"  🔑 Sheets: private_key_id={creds_dict.get('private_key_id')}")
-        print(f"  🔑 Sheets: SPREADSHEET_ID={SPREADSHEET_ID}")
         creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
         _client_cache = gspread.Client(auth=creds)
     return _client_cache
@@ -78,7 +75,6 @@ def append(sheet_name: str, rows: list, headers: list = None):
         next_row = before + 1
         sh.update(f"A{next_row}", rows)
         after = len(sh.get_all_values())
-        print(f"  📝 write: рядків до={before}, після={after}, додано={after-before}")
         _sheets_time.sleep(5)  # уникаємо Google Sheets rate limit
 
 
