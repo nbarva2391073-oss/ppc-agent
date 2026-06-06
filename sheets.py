@@ -44,9 +44,11 @@ _client_cache = None
 def client():
     global _client_cache
     if _client_cache is None:
-        creds = Credentials.from_service_account_info(
-            json.loads(GOOGLE_CREDENTIALS_JSON), scopes=SCOPES)
-        # БАГ ВИПРАВЛЕНО: gspread.authorize() deprecated → використовуємо Client
+        creds_dict = json.loads(GOOGLE_CREDENTIALS_JSON)
+        print(f"  🔑 Sheets: client_email={creds_dict.get('client_email')}")
+        print(f"  🔑 Sheets: private_key_id={creds_dict.get('private_key_id')}")
+        print(f"  🔑 Sheets: SPREADSHEET_ID={SPREADSHEET_ID}")
+        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
         _client_cache = gspread.Client(auth=creds)
     return _client_cache
 
