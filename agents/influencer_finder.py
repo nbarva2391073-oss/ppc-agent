@@ -75,7 +75,9 @@ def scrape_instagram(hashtags):
     for tag in hashtags[:6]:
         items = run_actor(APIFY_ACTORS["Instagram"], {"hashtags":[tag],"resultsLimit":50})
         if items:
-            print(f"  DEBUG перший запис: {list(items[0].keys())[:15]}")
+            import json as _json
+            print(f"  DEBUG всі поля: {list(items[0].keys())}")
+            print(f"  DEBUG owner: {_json.dumps(items[0].get('owner', items[0].get('ownerUsername','NO_OWNER')), default=str)[:300]}")
         for item in items:
             u = item.get("ownerUsername") or item.get("owner",{}).get("username","")
             if u and u not in profiles:
