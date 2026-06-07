@@ -30,9 +30,9 @@ HEADERS = [
 
 APIFY_ACTORS = {
     "Instagram":      "reGe1ST3OBgYZSsZJ",
-    "TikTok":         "clockworks/tiktok-hashtag-scraper",
-    "YouTube":        "streamers/youtube-scraper",
-    "YouTube Shorts": "streamers/youtube-shorts-scraper",
+    "TikTok":         "clockworks/free-tiktok-scraper",
+    "YouTube":        "bernardo_amc/youtube-scraper",
+    "YouTube Shorts": "bernardo_amc/youtube-shorts-scraper",
 }
 
 APIFY_BASE = "https://api.apify.com/v2"
@@ -73,7 +73,10 @@ def scrape_instagram(hashtags):
     print("\n Instagram...")
     profiles = {}
     for tag in hashtags[:6]:
-        for item in run_actor(APIFY_ACTORS["Instagram"], {"hashtags":[tag],"resultsLimit":50}):
+        items = run_actor(APIFY_ACTORS["Instagram"], {"hashtags":[tag],"resultsLimit":50})
+        if items:
+            print(f"  DEBUG перший запис: {list(items[0].keys())[:15]}")
+        for item in items:
             u = item.get("ownerUsername") or item.get("owner",{}).get("username","")
             if u and u not in profiles:
                 # actor reGe1ST3OBgYZSsZJ може повертати різні поля — перевіряємо всі варіанти
@@ -280,7 +283,7 @@ def write_to_sheets(results):
                 except: sh = ss.add_worksheet(title=name, rows=200, cols=25)
                 sh.clear()
                 top30 = sorted(rows, key=lambda x: x[13], reverse=True)[:30]
-                sh.update("A1", [HEADERS]+top30)
+                sh.update([HEADERS]+top30, "A1")
                 print(f"  {name}: {len(top30)}")
             except Exception as e:
                 print(f"  ERROR {name}: {e}")
@@ -294,16 +297,23 @@ def main():
     print(f"\nЗнайдено: {len(all_p)}")
     results = {pl:{t:[] for t in ["nano","micro","macro"]} for pl in ["instagram","tiktok","youtube","youtube_shorts"]}
     passed = 0
+    filtered_reasons = {}
     for p in all_p:
         flags = check_red_flags(p)
-        if flags: continue
+        if flags:
+            reason = flags[0]
+            filtered_reasons[reason] = filtered_reasons.get(reason, 0) + 1
+            continue
         score = calculate_score(p)
-        if score<20: continue
+        if score<20:
+            filtered_reasons["score<20"] = filtered_reasons.get("score<20", 0) + 1
+            continue
         pl = p.get("platform",""); tier = get_tier(p.get("followers",0))
         if pl in results and tier is not None:
             results[pl][tier].append(profile_to_row(p,flags,score))
             passed+=1
     print(f"Пройшли: {passed}/{len(all_p)}")
+    print(f"Причини фільтрації: {filtered_reasons}")
     write_to_sheets(results)
     print("\nГотово!")
 
