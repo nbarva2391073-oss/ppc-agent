@@ -76,13 +76,24 @@ def scrape_instagram(hashtags):
         for item in run_actor(APIFY_ACTORS["Instagram"], {"hashtags":[tag],"resultsLimit":50}):
             u = item.get("ownerUsername") or item.get("owner",{}).get("username","")
             if u and u not in profiles:
+                # actor reGe1ST3OBgYZSsZJ може повертати різні поля — перевіряємо всі варіанти
+                followers = (
+                    item.get("ownerFollowersCount") or
+                    item.get("followersCount") or
+                    item.get("owner", {}).get("followersCount") or
+                    item.get("authorFollowersCount") or 0
+                )
                 profiles[u] = {
-                    "username": u, "full_name": item.get("ownerFullName",""),
-                    "platform": "instagram", "followers": item.get("ownerFollowersCount",0),
-                    "following": item.get("ownerFollowingCount",0),
-                    "avg_likes": item.get("likesCount",0), "avg_comments": item.get("commentsCount",0),
-                    "last_post_date": item.get("timestamp",""), "bio": item.get("ownerBio",""),
-                    "verified": item.get("ownerVerified",False),
+                    "username": u,
+                    "full_name": (item.get("ownerFullName") or item.get("fullName") or ""),
+                    "platform": "instagram",
+                    "followers": int(followers),
+                    "following": int(item.get("ownerFollowingCount") or item.get("followingCount") or 0),
+                    "avg_likes": int(item.get("likesCount") or item.get("likes") or 0),
+                    "avg_comments": int(item.get("commentsCount") or item.get("comments") or 0),
+                    "last_post_date": item.get("timestamp") or item.get("takenAt") or "",
+                    "bio": item.get("ownerBio") or item.get("biography") or "",
+                    "verified": bool(item.get("ownerVerified") or item.get("verified") or False),
                     "profile_url": f"https://instagram.com/{u}",
                 }
         time.sleep(3)
@@ -150,6 +161,32 @@ def scrape_youtube_shorts(hashtags):
     return list(profiles.values())
 
 
+SPANISH_STOPWORDS = {
+    "de","la","que","el","en","y","a","los","del","se","las","por","un","para",
+    "con","no","una","su","al","lo","como","pero","sus","le","ya","este","soy",
+    "mi","porque","está","entre","cuando","muy","sin","sobre","ser","tiene",
+    "también","fue","hay","si","fue","hola","gracias","aquí","ahora","todo",
+    "bien","más","sólo","años","quiero","puedo","hacer","tengo","cada","vez",
+    "nueva","nuevo","siempre","mundo","amor","vida","trabajo","gente","mujer",
+    "perfume","fragancia","belleza","maquillaje","ropa","moda","estilo",
+}
+
+SPANISH_CHARS = {"ñ","á","é","í","ó","ú","¿","¡"}
+
+def _is_spanish(text: str) -> bool:
+    """Перевіряє чи текст іспанський."""
+    if not text:
+        return False
+    text_lower = text.lower()
+    # Перевірка іспанських символів
+    if any(ch in text_lower for ch in SPANISH_CHARS):
+        return True
+    # Перевірка іспанських стоп-слів
+    words = set(text_lower.split())
+    matches = words & SPANISH_STOPWORDS
+    return len(matches) >= 3
+
+
 def check_red_flags(p):
     flags = []
     f = p.get("followers",0); al = p.get("avg_likes",0); ac = p.get("avg_comments",0)
@@ -164,6 +201,9 @@ def check_red_flags(p):
                 if (datetime.now()-dt).days>60: flags.append("Пост > 60 днів")
         except: pass
     if f<100_000 and p.get("following",0)>f: flags.append("Підписок > підписників")
+    # Перевірка мови — відхиляємо якщо іспанська
+    bio = p.get("bio","") or ""
+    if _is_spanish(bio): flags.append("Іспанська мова")
     return flags
 
 
@@ -198,7 +238,12 @@ def calculate_score(p):
     return min(100,score)
 
 
-def get_tier(f): return "nano" if f<10_000 else ("micro" if f<100_000 else "macro")
+def get_tier(f):
+    if f == 0:
+        return None  # відхиляємо — невідома аудиторія
+    if f < 10_000:  return "nano"
+    if f < 100_000: return "micro"
+    return "macro"
 
 
 def profile_to_row(p, flags, score):
@@ -255,7 +300,7 @@ def main():
         score = calculate_score(p)
         if score<20: continue
         pl = p.get("platform",""); tier = get_tier(p.get("followers",0))
-        if pl in results:
+        if pl in results and tier is not None:
             results[pl][tier].append(profile_to_row(p,flags,score))
             passed+=1
     print(f"Пройшли: {passed}/{len(all_p)}")
