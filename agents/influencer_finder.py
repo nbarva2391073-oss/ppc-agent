@@ -270,7 +270,7 @@ def calculate_score(p: dict) -> int:
 
 
 def get_tier(f: int):
-    if f == 0:      return None
+    if f < 1_000:   return None  # мінімум 1K підписників
     if f < 10_000:  return "nano"
     if f < 100_000: return "micro"
     return "macro"
