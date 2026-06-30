@@ -253,3 +253,93 @@ def check_report_status(market: str, token: str, report_id: str) -> dict:
     document_id = data.get("reportDocumentId")
     print(f"⏳ Статус [{market}] report_id={report_id}: {status}")
     return {"status": status, "document_id": document_id}
+
+
+# ASIN для Search Catalog Performance в USA (щоб не тягнути весь каталог)
+SEARCH_CATALOG_ASINS_USA = (
+    "B0GYSJC1PM B0GYSB85SH B07TJW4Y94 B0G6VRGTPR B09NBB4QP7 "
+    "B07ZTJM5WJ B0GCBCW8RK B0G5QB4W6N B0FGJVGNTK B0FGJST2KJ "
+    "B0DHCR7D4W B09RBGJYXX B081T6QGD9 B07PTQKZ82"
+)
+
+
+def request_search_catalog_report(market: str, token: str) -> str:
+    """Запросити Search Catalog Performance звіт.
+    USA — з конкретним списком ASIN, CA — без ASIN (весь каталог).
+    Повертає reportId."""
+    marketplace_id = MARKETPLACE_IDS[market]
+    start, end = get_week_dates()
+
+    print(f"📅 Search Catalog період: {start.strftime('%Y-%m-%d')} (Sun) → {end.strftime('%Y-%m-%d')} (Sat)")
+
+    report_options = {"reportPeriod": "WEEK"}
+    if market == "USA":
+        report_options["asins"] = SEARCH_CATALOG_ASINS_USA
+        print(f"🎯 USA: запит обмежено {len(SEARCH_CATALOG_ASINS_USA.split())} ASIN")
+    else:
+        print(f"🌐 {market}: запит без обмеження ASIN (увесь каталог)")
+
+    payload = {
+        "reportType": "GET_BRAND_ANALYTICS_SEARCH_CATALOG_PERFORMANCE_REPORT",
+        "dataStartTime": start.strftime("%Y-%m-%dT00:00:00Z"),
+        "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
+        "reportOptions": report_options,
+        "marketplaceIds": [marketplace_id],
+    }
+
+    resp = requests.post(
+        f"{SP_API_BASE}/reports/2021-06-30/reports",
+        headers={
+            "x-amz-access-token": token,
+            "Content-Type": "application/json",
+        },
+        json=payload,
+    )
+
+    if resp.status_code != 202:
+        print(f"❌ Помилка запиту Search Catalog [{market}]: {resp.status_code} {resp.text}")
+        return None
+
+    report_id = resp.json().get("reportId")
+    print(f"📋 Search Catalog звіт запрошено [{market}]: {report_id}")
+    return report_id
+
+
+def format_search_catalog_for_sheets(records: list, market: str) -> tuple:
+    """Форматувати Search Catalog Performance для Google Sheets."""
+    headers = [
+        "Тиждень", "ASIN",
+        "Impressions", "Clicks", "Click Rate",
+        "Cart Adds", "Purchases", "Conversion Rate",
+        "Ринок"
+    ]
+
+    week = datetime.utcnow().strftime("%Y-%W")
+    rows = []
+
+    for r in records:
+        if not isinstance(r, dict):
+            continue
+
+        asin = r.get("asin", "")
+
+        impression_data = r.get("impressionData") or {}
+        click_data       = r.get("clickData") or {}
+        cart_add_data     = r.get("cartAddData") or {}
+        purchase_data     = r.get("purchaseData") or {}
+
+        impressions  = impression_data.get("impressionCount", "")
+        clicks       = click_data.get("clickCount", "")
+        click_rate   = click_data.get("clickRate", "")
+        cart_adds    = cart_add_data.get("cartAddCount", "")
+        purchases    = purchase_data.get("purchaseCount", "")
+        conv_rate    = purchase_data.get("conversionRate", "")
+
+        rows.append([
+            week, asin,
+            impressions, clicks, click_rate,
+            cart_adds, purchases, conv_rate,
+            market
+        ])
+
+    return headers, rows

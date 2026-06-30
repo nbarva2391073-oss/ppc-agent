@@ -1,8 +1,10 @@
 import sys
 from datetime import datetime
 from brand_analytics import (
-    get_access_token, request_sqp_report,
-    check_report_status, download_report, format_for_sheets
+    get_access_token,
+    request_sqp_report, format_for_sheets,
+    request_search_catalog_report, format_search_catalog_for_sheets,
+    check_report_status, download_report
 )
 from sheets import append, get_sheet, SHEETS_USA, SHEETS_CA
 
@@ -10,9 +12,24 @@ PENDING_SHEET = "BA_Pending_Reports"
 MARKETS = ["USA", "CA"]
 SHEETS_BY_MARKET = {"USA": SHEETS_USA, "CA": SHEETS_CA}
 
+SQP_SHEET = "keyword_intelligence"  # старий аркуш для SQP (як і раніше)
+SEARCH_CATALOG_SHEETS = {"USA": "BA_SearchCatalog_USA", "CA": "BA_SearchCatalog_CA"}
+
+# Типи звітів, які ми збираємо. Кожен — окрема функція запиту і форматування.
+REPORT_TYPES = {
+    "SQP": {
+        "request_fn": request_sqp_report,
+        "format_fn": format_for_sheets,
+    },
+    "SEARCH_CATALOG": {
+        "request_fn": request_search_catalog_report,
+        "format_fn": format_search_catalog_for_sheets,
+    },
+}
+
 
 # ============================================================
-# РЕЖИМ 1: --request — тільки запитати звіт, нічого не чекати
+# РЕЖИМ 1: --request — тільки запитати звіти, нічого не чекати
 # ============================================================
 def run_request():
     print("=" * 60)
@@ -24,20 +41,23 @@ def run_request():
     new_rows = []
 
     for market in MARKETS:
-        print(f"\n🌎 {market}...")
-        try:
-            token = get_access_token(market)
-            report_id = request_sqp_report(market, token)
-            if report_id:
-                new_rows.append([today, report_id, market, "очікує", ""])
-                print(f"✅ {market}: звіт запрошено, report_id={report_id}")
-            else:
-                print(f"❌ {market}: не вдалось запросити звіт")
-        except Exception as e:
-            print(f"❌ {market} помилка: {e}")
+        token = None
+        for report_type, funcs in REPORT_TYPES.items():
+            print(f"\n🌎 {market} / {report_type}...")
+            try:
+                if token is None:
+                    token = get_access_token(market)
+                report_id = funcs["request_fn"](market, token)
+                if report_id:
+                    new_rows.append([today, report_id, market, "очікує", "", report_type])
+                    print(f"✅ {market}/{report_type}: звіт запрошено, report_id={report_id}")
+                else:
+                    print(f"❌ {market}/{report_type}: не вдалось запросити звіт")
+            except Exception as e:
+                print(f"❌ {market}/{report_type} помилка: {e}")
 
     if new_rows:
-        headers = ["Дата запиту", "Report ID", "Ринок", "Статус", "Дата виконання"]
+        headers = ["Дата запиту", "Report ID", "Ринок", "Статус", "Дата виконання", "Тип звіту"]
         append(PENDING_SHEET, new_rows, headers)
         print(f"\n✅ Записано {len(new_rows)} рядків у '{PENDING_SHEET}'")
     else:
@@ -67,7 +87,7 @@ def run_fetch():
     missing = [c for c in required_cols if c not in header]
     if missing:
         print(f"❌ В аркуші '{PENDING_SHEET}' немає колонок: {missing}")
-        print(f"   Заголовки мають бути: Дата запиту, Report ID, Ринок, Статус, Дата виконання")
+        print(f"   Заголовки мають бути: Дата запиту, Report ID, Ринок, Статус, Дата виконання, Тип звіту")
         print(f"   Зараз у рядку 1: {header}")
         return
 
@@ -75,11 +95,12 @@ def run_fetch():
     col_report_id = header.index("Report ID")
     col_market = header.index("Ринок")
     col_done_date = header.index("Дата виконання")
+    # "Тип звіту" — необов'язкова колонка для зворотної сумісності зі старими рядками (SQP)
+    col_report_type = header.index("Тип звіту") if "Тип звіту" in header else None
 
     pending_found = 0
-    fetched_count = {"USA": 0, "CA": 0}
+    fetched_count = {}
 
-    # Перебираємо рядки знизу нема значення, але індекс рядка в Sheets = i + 1
     for i, row in enumerate(all_values[1:], start=2):
         status = row[col_status] if len(row) > col_status else ""
         if status != "очікує":
@@ -88,7 +109,9 @@ def run_fetch():
         pending_found += 1
         report_id = row[col_report_id]
         market = row[col_market]
-        print(f"\n🔍 Перевіряю [{market}] report_id={report_id}...")
+        report_type = row[col_report_type] if col_report_type is not None and len(row) > col_report_type and row[col_report_type] else "SQP"
+
+        print(f"\n🔍 Перевіряю [{market}/{report_type}] report_id={report_id}...")
 
         try:
             token = get_access_token(market)
@@ -98,34 +121,45 @@ def run_fetch():
             if report_status == "DONE":
                 doc_id = result["document_id"]
                 records = download_report(market, token, doc_id)
-                if records:
-                    headers, rows = format_for_sheets(records, market)
-                    append(SHEETS_BY_MARKET[market]["keyword_intelligence"], rows, headers)
-                    fetched_count[market] += len(rows)
-                    print(f"✅ {market}: {len(rows)} записів збережено")
-                else:
-                    print(f"⚠️ {market}: звіт готовий, але даних немає")
 
-                # Позначаємо рядок виконаним
+                if records:
+                    if report_type == "SEARCH_CATALOG":
+                        headers, rows = format_search_catalog_for_sheets(records, market)
+                        target_sheet = SEARCH_CATALOG_SHEETS[market]
+                    else:  # SQP
+                        headers, rows = format_for_sheets(records, market)
+                        target_sheet = SHEETS_BY_MARKET[market][SQP_SHEET]
+
+                    append(target_sheet, rows, headers)
+                    key = f"{market}/{report_type}"
+                    fetched_count[key] = fetched_count.get(key, 0) + len(rows)
+                    print(f"✅ {market}/{report_type}: {len(rows)} записів збережено в '{target_sheet}'")
+                else:
+                    print(f"⚠️ {market}/{report_type}: звіт готовий, але даних немає")
+
                 done_date = datetime.utcnow().strftime("%Y-%m-%d %H:%M")
                 sh.update_cell(i, col_status + 1, "виконано")
                 sh.update_cell(i, col_done_date + 1, done_date)
 
             elif report_status in ("FATAL", "CANCELLED"):
                 sh.update_cell(i, col_status + 1, "помилка")
-                print(f"❌ {market}: звіт завершився статусом {report_status}")
+                print(f"❌ {market}/{report_type}: звіт завершився статусом {report_status}")
 
             else:
-                # IN_PROGRESS, IN_QUEUE тощо — лишаємо як є, перевіримо пізніше
-                print(f"⏳ {market}: ще не готовий ({report_status}), чекаємо наступного запуску")
+                print(f"⏳ {market}/{report_type}: ще не готовий ({report_status}), чекаємо наступного запуску")
 
         except Exception as e:
-            print(f"❌ {market} помилка перевірки: {e}")
+            print(f"❌ {market}/{report_type} помилка перевірки: {e}")
 
     if pending_found == 0:
         print("\n✅ Немає звітів зі статусом 'очікує' — перевіряти нічого")
 
-    print(f"\n📊 Підсумок завантаження: USA={fetched_count['USA']}, CA={fetched_count['CA']}")
+    print(f"\n📊 Підсумок завантаження:")
+    for key, count in fetched_count.items():
+        print(f"   {key}: {count} записів")
+    if not fetched_count:
+        print("   (нічого не завантажено)")
+
     print("\n✅ ПЕРЕВІРКА ЗАВЕРШЕНА")
 
 
