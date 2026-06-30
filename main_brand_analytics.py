@@ -63,6 +63,14 @@ def run_fetch():
         return
 
     header = all_values[0]
+    required_cols = ["Статус", "Report ID", "Ринок", "Дата виконання"]
+    missing = [c for c in required_cols if c not in header]
+    if missing:
+        print(f"❌ В аркуші '{PENDING_SHEET}' немає колонок: {missing}")
+        print(f"   Заголовки мають бути: Дата запиту, Report ID, Ринок, Статус, Дата виконання")
+        print(f"   Зараз у рядку 1: {header}")
+        return
+
     col_status = header.index("Статус")
     col_report_id = header.index("Report ID")
     col_market = header.index("Ринок")
