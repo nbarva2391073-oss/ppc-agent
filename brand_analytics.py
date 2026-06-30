@@ -234,3 +234,22 @@ def format_for_sheets(records: list, market: str) -> tuple:
 
     rows.sort(key=lambda x: int(x[2]) if str(x[2]).isdigit() else 999999)
     return headers, rows
+
+
+def check_report_status(market: str, token: str, report_id: str) -> dict:
+    """Перевірити статус звіту ОДИН РАЗ (без очікування).
+    Повертає {"status": "...", "document_id": "..." or None}
+    """
+    resp = requests.get(
+        f"{SP_API_BASE}/reports/2021-06-30/reports/{report_id}",
+        headers={"x-amz-access-token": token},
+    )
+    if resp.status_code != 200:
+        print(f"❌ Помилка перевірки статусу [{market}]: {resp.status_code} {resp.text}")
+        return {"status": "ERROR", "document_id": None}
+
+    data = resp.json()
+    status = data.get("processingStatus")
+    document_id = data.get("reportDocumentId")
+    print(f"⏳ Статус [{market}] report_id={report_id}: {status}")
+    return {"status": status, "document_id": document_id}
