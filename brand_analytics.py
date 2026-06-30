@@ -31,7 +31,7 @@ def get_access_token(market: str) -> str:
 
 
 def get_week_dates():
-    """Повертає Sunday→Saturday 2 тижні назад."""
+    """Залишено для зворотної сумісності (більше не використовується для запитів)."""
     today = datetime.utcnow()
     days_since_sunday = (today.weekday() + 1) % 7
     last_sunday = today - timedelta(days=days_since_sunday + 14)
@@ -39,12 +39,22 @@ def get_week_dates():
     return last_sunday, last_saturday
 
 
+def get_previous_month_dates():
+    """Повертає перший і останній день ПОПЕРЕДНЬОГО місяця.
+    Наприклад, якщо запуск 10 липня — повертає 1-30 червня."""
+    today = datetime.utcnow()
+    first_day_this_month = today.replace(day=1)
+    last_day_prev_month = first_day_this_month - timedelta(days=1)
+    first_day_prev_month = last_day_prev_month.replace(day=1)
+    return first_day_prev_month, last_day_prev_month
+
+
 def request_sqp_report(market: str, token: str) -> str:
     """Запросити Search Query Performance звіт. Повертає reportId."""
     marketplace_id = MARKETPLACE_IDS[market]
-    start, end = get_week_dates()
+    start, end = get_previous_month_dates()
 
-    print(f"📅 SQP період: {start.strftime('%Y-%m-%d')} (Sun) → {end.strftime('%Y-%m-%d')} (Sat)")
+    print(f"📅 SQP період (попередній місяць): {start.strftime('%Y-%m-%d')} → {end.strftime('%Y-%m-%d')}")
 
     # Флагманські ASIN для SQP звіту
     FLAGSHIP_ASINS = {
@@ -57,7 +67,7 @@ def request_sqp_report(market: str, token: str) -> str:
         "dataStartTime": start.strftime("%Y-%m-%dT00:00:00Z"),
         "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
         "reportOptions": {
-            "reportPeriod": "WEEK",
+            "reportPeriod": "MONTH",
             "asin": FLAGSHIP_ASINS[market],
         },
         "marketplaceIds": [marketplace_id],
@@ -181,7 +191,7 @@ def get_brand_analytics(market: str) -> list:
 def format_for_sheets(records: list, market: str) -> tuple:
     """Форматувати для Google Sheets."""
     headers = [
-        "Тиждень", "Search Term", "Search Frequency Rank",
+        "Період", "Search Term", "Search Frequency Rank",
         "Impressions", "Clicks", "Cart Adds", "Purchases",
         "Click Rate", "Purchase Rate",
         "#1 ASIN", "#1 Click Share", "#1 Conv Share",
@@ -190,13 +200,23 @@ def format_for_sheets(records: list, market: str) -> tuple:
         "Ринок"
     ]
 
-    week = datetime.utcnow().strftime("%Y-%W")
+    def format_period(rec):
+        start = rec.get("startDate", "")
+        end = rec.get("endDate", "")
+        try:
+            s = datetime.strptime(start, "%Y-%m-%d").strftime("%d.%m.%Y")
+            e = datetime.strptime(end, "%Y-%m-%d").strftime("%d.%m.%Y")
+            return f"{s}-{e}"
+        except Exception:
+            return f"{start}-{end}"
+
     rows = []
 
     for r in records:
         if not isinstance(r, dict):
             continue
 
+        week = format_period(r)
         search_term = r.get("searchTerm") or r.get("query") or ""
         rank        = r.get("searchFrequencyRank") or r.get("rank") or ""
         impressions = r.get("impressions") or ""
@@ -268,11 +288,11 @@ def request_search_catalog_report(market: str, token: str) -> str:
     USA — з конкретним списком ASIN, CA — без ASIN (весь каталог).
     Повертає reportId."""
     marketplace_id = MARKETPLACE_IDS[market]
-    start, end = get_week_dates()
+    start, end = get_previous_month_dates()
 
-    print(f"📅 Search Catalog період: {start.strftime('%Y-%m-%d')} (Sun) → {end.strftime('%Y-%m-%d')} (Sat)")
+    print(f"📅 Search Catalog період (попередній місяць): {start.strftime('%Y-%m-%d')} → {end.strftime('%Y-%m-%d')}")
 
-    report_options = {"reportPeriod": "WEEK"}
+    report_options = {"reportPeriod": "MONTH"}
     if market == "USA":
         report_options["asins"] = SEARCH_CATALOG_ASINS_USA
         print(f"🎯 USA: запит обмежено {len(SEARCH_CATALOG_ASINS_USA.split())} ASIN")
@@ -308,18 +328,26 @@ def request_search_catalog_report(market: str, token: str) -> str:
 def format_search_catalog_for_sheets(records: list, market: str) -> tuple:
     """Форматувати Search Catalog Performance для Google Sheets."""
     headers = [
-        "Тиждень", "ASIN",
+        "Період", "ASIN",
         "Impressions", "Clicks", "Click Rate",
         "Cart Adds", "Purchases", "Conversion Rate",
         "Ринок"
     ]
 
-    week = datetime.utcnow().strftime("%Y-%W")
     rows = []
 
     for r in records:
         if not isinstance(r, dict):
             continue
+
+        start = r.get("startDate", "")
+        end = r.get("endDate", "")
+        try:
+            s = datetime.strptime(start, "%Y-%m-%d").strftime("%d.%m.%Y")
+            e = datetime.strptime(end, "%Y-%m-%d").strftime("%d.%m.%Y")
+            week = f"{s}-{e}"
+        except Exception:
+            week = f"{start}-{end}"
 
         asin = r.get("asin", "")
 

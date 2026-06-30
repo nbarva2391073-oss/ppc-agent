@@ -8,6 +8,15 @@ from brand_analytics import (
 )
 from sheets import append, get_sheet, SHEETS_USA, SHEETS_CA
 
+
+def ensure_headers(sheet_name: str, headers: list):
+    """Гарантовано додає заголовки в перший рядок, якщо їх там нема."""
+    sh = get_sheet(sheet_name)
+    first_row = sh.row_values(1)
+    if not first_row:
+        sh.update("A1", [headers])
+        print(f"📝 Заголовки додано в '{sheet_name}'")
+
 PENDING_SHEET = "BA_Pending_Reports"
 MARKETS = ["USA", "CA"]
 SHEETS_BY_MARKET = {"USA": SHEETS_USA, "CA": SHEETS_CA}
@@ -130,6 +139,7 @@ def run_fetch():
                         headers, rows = format_for_sheets(records, market)
                         target_sheet = SHEETS_BY_MARKET[market][SQP_SHEET]
 
+                    ensure_headers(target_sheet, headers)
                     append(target_sheet, rows, headers)
                     key = f"{market}/{report_type}"
                     fetched_count[key] = fetched_count.get(key, 0) + len(rows)
