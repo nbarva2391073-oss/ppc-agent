@@ -180,7 +180,7 @@ def ensure_headers(sheet_name: str, headers: list):
     sh = get_sheet(sheet_name)
     first_row = sh.row_values(1)
     if not first_row or first_row[0] != headers[0]:
-        sh.update("A1", [headers])
+        sh.update([headers], "A1")
         print(f"  📝 Заголовки додано в '{sheet_name}'")
 
 

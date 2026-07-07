@@ -61,20 +61,42 @@ def get_sheet(name: str):
 
 
 def _remove_tables(sh):
-    """Видаляє всі TABLE об'єкти з аркуша (вони блокують запис даних)."""
+    """Видаляє всі TABLE об'єкти з аркуша через Google Sheets API v4."""
     try:
-        ss = client().open_by_key(sh.spreadsheet.id)
-        body = ss.fetch_sheet_metadata()
+        import requests as _req
+        creds = client().auth
+        if hasattr(creds, "token") is False or creds.token is None:
+            import google.auth.transport.requests as _tr
+            creds.refresh(_tr.Request())
+        token = creds.token
+        spreadsheet_id = sh.spreadsheet.id
         sheet_id = sh.id
-        tables = []
-        for s in body.get("sheets", []):
+        resp = _req.get(
+            f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}",
+            headers={"Authorization": f"Bearer {token}"},
+            params={"includeGridData": "false"},
+        )
+        data = resp.json()
+        table_ids = []
+        for s in data.get("sheets", []):
             if s["properties"]["sheetId"] == sheet_id:
-                tables = s.get("tables", [])
+                for t in s.get("tables", []):
+                    table_ids.append(t["tableId"])
                 break
-        if tables:
-            requests = [{"deleteTable": {"tableId": t["tableId"]}} for t in tables]
-            ss.batch_update({"requests": requests})
-            print(f"  🗑️ Видалено {len(tables)} TABLE об'єкт(ів) з аркуша")
+        if not table_ids:
+            return
+        batch_resp = _req.post(
+            f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}:batchUpdate",
+            headers={
+                "Authorization": f"Bearer {token}",
+                "Content-Type": "application/json",
+            },
+            json={"requests": [{"deleteTable": {"tableId": tid}} for tid in table_ids]},
+        )
+        if batch_resp.status_code == 200:
+            print(f"  🗑️ Видалено {len(table_ids)} TABLE об'єкт(ів) з '{sh.title}'")
+        else:
+            print(f"  ⚠️ Помилка видалення TABLE: {batch_resp.status_code} {batch_resp.text[:200]}")
     except Exception as e:
         print(f"  ⚠️ Не вдалось видалити TABLE: {e}")
 
