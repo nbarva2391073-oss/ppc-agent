@@ -60,21 +60,40 @@ def get_sheet(name: str):
 
 
 
+def _remove_tables(sh):
+    """Видаляє всі TABLE об'єкти з аркуша (вони блокують запис даних)."""
+    try:
+        ss = client().open_by_key(sh.spreadsheet.id)
+        body = ss.fetch_sheet_metadata()
+        sheet_id = sh.id
+        tables = []
+        for s in body.get("sheets", []):
+            if s["properties"]["sheetId"] == sheet_id:
+                tables = s.get("tables", [])
+                break
+        if tables:
+            requests = [{"deleteTable": {"tableId": t["tableId"]}} for t in tables]
+            ss.batch_update({"requests": requests})
+            print(f"  🗑️ Видалено {len(tables)} TABLE об'єкт(ів) з аркуша")
+    except Exception as e:
+        print(f"  ⚠️ Не вдалось видалити TABLE: {e}")
+
+
 def append(sheet_name: str, rows: list, headers: list = None):
     """Додати рядки в аркуш (з заголовками якщо порожній)."""
     sh = get_sheet(sheet_name)
+
+    # Видаляємо TABLE об'єкти якщо є — вони блокують запис
+    _remove_tables(sh)
+
     existing = sh.get_all_values()
     if not existing:
         if headers:
             sh.append_row(headers)
-    elif headers and not existing:
-        sh.append_row(headers)
     if rows:
         before = len(sh.get_all_values())
-        # Пряме оновлення — обходить обмеження append_rows
         next_row = before + 1
         sh.update(f"A{next_row}", rows)
-        after = len(sh.get_all_values())
         _sheets_time.sleep(5)  # уникаємо Google Sheets rate limit
 
 
@@ -133,6 +152,10 @@ def write_bid_snapshot(campaigns: list[dict], keywords: list[dict],
                "Match Type", "KW State"]
     rows = []
 
+    # Тільки активні кампанії
+    active_campaigns = [c for c in campaigns if str(c.get("state", "")).upper() == "ENABLED"]
+    print(f"  📊 Bid History: {len(active_campaigns)} активних з {len(campaigns)} кампаній")
+
     kw_by_camp = {}
     for kw in keywords:
         cid = kw.get("campaignId", "")
@@ -140,7 +163,7 @@ def write_bid_snapshot(campaigns: list[dict], keywords: list[dict],
             kw_by_camp[cid] = []
         kw_by_camp[cid].append(kw)
 
-    for c in campaigns:
+    for c in active_campaigns:
         bidding = c.get("bidding", {})
         adj = {a["placement"]: a["percentage"]
                for a in bidding.get("adjustments", [])}
