@@ -65,18 +65,18 @@ def _remove_tables(sh):
     try:
         import requests as _req
         import google.auth.transport.requests as _tr
-        creds = client().auth
-        # Service account credentials потребують refresh по-іншому
-        if not hasattr(creds, "token") or not creds.token or not creds.valid:
+        gc = client()
+        creds = getattr(gc, "credentials", None) or getattr(gc, "auth", None)
+        if creds is None:
+            print(f"  ⚠️ _remove_tables: не вдалось отримати credentials")
+            return
+        if not getattr(creds, "valid", True):
+            import google.auth.transport.requests as _tr
             creds.refresh(_tr.Request())
-        token = creds.token
-        spreadsheet_id = sh.spreadsheet.id
-        sheet_id = sh.id
-        resp = _req.get(
-            f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}",
-            headers={"Authorization": f"Bearer {token}"},
-            params={"includeGridData": "false"},
-        )
+        token = getattr(creds, "token", None)
+        if not token:
+            print(f"  ⚠️ _remove_tables: токен порожній")
+            return
         data = resp.json()
         table_ids = []
         for s in data.get("sheets", []):
