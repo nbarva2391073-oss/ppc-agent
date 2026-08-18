@@ -14,7 +14,9 @@ from sheets import (
     write_raw_data, write_campaign_analysis,
     write_bid_snapshot, write_placement_analysis,
     write_keyword_intelligence, write_weekly_summary,
+    cleanup_bid_history, cleanup_raw_data,
 )
+from amazon_ads import get_suggested_bids
 
 # ── Колонки звітів ────────────────────────────────────────────
 COLS_CAMPAIGN = [
@@ -79,6 +81,14 @@ def run_daily_monitor():
     except Exception as e:
         print(f"  ❌ Weekly Summary: {e}")
 
+    # Очищення Bid History раз на тиждень (по понеділках)
+    if datetime.now().weekday() == 0:
+        for market in ["USA", "CA"]:
+            try:
+                cleanup_bid_history(market)
+            except Exception as e:
+                print(f"  ❌ cleanup_bid_history {market}: {e}")
+
     print("\n✅ Збір завершено")
 
 
@@ -131,12 +141,31 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
         except Exception as e:
             print(f"  ❌ Campaign: {e}")
 
-    # Bid Snapshot — не потребує звіту, вже маємо дані
+    # Bid Snapshot — з suggested bids і raw_data для market_shift
     if campaigns:
         try:
-            write_bid_snapshot(campaigns, keywords, week, market)
+            # Отримуємо suggested bids по всіх активних ключах
+            kw_ids = [str(kw.get("keywordId", "")) for kw in keywords if kw.get("keywordId")]
+            suggested = {}
+            if kw_ids:
+                t = get_access_token()
+                suggested = get_suggested_bids(t, profile_id, kw_ids)
+                print(f"  ✅ Suggested bids: {len(suggested)} ключів")
+
+            # raw_data для перевірки market_shift (якщо вже завантажено)
+            write_bid_snapshot(
+                campaigns, keywords, week, market,
+                suggested_bids=suggested,
+                raw_data=metrics.get("_raw_data", []),
+            )
         except Exception as e:
             print(f"  ❌ Bid Snapshot: {e}")
+
+    # Автоочищення
+    try:
+        cleanup_raw_data(market)
+    except Exception as e:
+        print(f"  ❌ cleanup_raw_data: {e}")
 
     # Search Term → Raw Data
     if "search_term" in report_ids:

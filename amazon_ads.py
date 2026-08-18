@@ -435,3 +435,107 @@ def analyze_placement_issues(placement_data, campaigns):
                 "base_bid": camp_data.get("budget", {}).get("budget", 0),
             })
     return issues
+
+
+# ── Suggested Bids ────────────────────────────────────────────
+
+# Конфіг цін і максимальних ставок по ASIN
+ASIN_PRICE_CONFIG = {
+    # ЖІНОЧА OIL
+    "B0GYSJC1PM": {"price": 25.99, "max_cpc": 0.55},
+    "B0GYSB85SH": {"price": 25.99, "max_cpc": 0.55},
+    "B0G6VRGTPR": {"price": 27.90, "max_cpc": 0.50},
+    "B09NBB4QP7": {"price": 24.90, "max_cpc": 0.55},
+    "B07TJW4Y94": {"price": 24.90, "max_cpc": 0.55},
+    "B0G5QB4W6N": {"price": 24.99, "max_cpc": 0.55},
+    # ЖІНОЧА SPRAY
+    "B0FGJST2KJ": {"price": 36.00, "max_cpc": 0.80},
+    "B081T6QGD9": {"price": 36.00, "max_cpc": 0.80},
+    # ЧОЛОВІЧА
+    "B0GCBCW8RK": {"price": 29.99, "max_cpc": 0.50},
+    "B07PTQKZ82": {"price": 27.90, "max_cpc": 0.50},
+    "B0DHCR7D4W": {"price": 29.00, "max_cpc": 0.50},
+    "B07ZTJM5WJ": {"price": 29.99, "max_cpc": 0.50},
+    # MEN SPRAY
+    "B0FGJVGNTK": {"price": 24.99, "max_cpc": 0.55},
+}
+
+# Глобальні ліміти ставок
+BID_CONFIG = {
+    "agent_max_bid":    0.95,  # агент діє самостійно до цієї межі
+    "alert_threshold":  1.20,  # вище — тільки алерт, агент не діє
+    "absolute_ceiling": 1.20,  # ніколи не перевищувати
+}
+
+
+def get_suggested_bids(token: str, profile_id: str,
+                       keyword_ids: list) -> dict:
+    """
+    Отримати suggested bid і bid range по список keyword_id.
+    Повертає {keyword_id: {suggested, min, max}}.
+    Amazon Ads API: POST /sp/keywords/suggestedBids
+    """
+    if not keyword_ids:
+        return {}
+
+    result = {}
+
+    # API приймає max 100 keyword_id за раз
+    chunk_size = 100
+    for i in range(0, len(keyword_ids), chunk_size):
+        chunk = keyword_ids[i:i + chunk_size]
+
+        # v3 endpoint
+        try:
+            url = f"{ADS_BASE_URL}/sp/keywords/suggestedBids"
+            ct  = "application/vnd.spKeyword.v3+json"
+            payload = {
+                "keywordIds": [str(kid) for kid in chunk],
+                "bidding": {"strategy": "MANUAL"},
+            }
+            r = requests.post(
+                url,
+                headers=headers(token, profile_id, content_type=ct),
+                json=payload,
+            )
+            if r.status_code == 200:
+                data = r.json()
+                items = data.get("suggestedBids", data if isinstance(data, list) else [])
+                for item in items:
+                    kid = str(item.get("keywordId", ""))
+                    suggested = item.get("suggestedBid", {})
+                    bid_range = item.get("bidRange", {})
+                    result[kid] = {
+                        "suggested": float(suggested.get("bid", 0)),
+                        "min":       float(bid_range.get("bidRangeMin", 0)),
+                        "max":       float(bid_range.get("bidRangeMax", 0)),
+                    }
+                print(f"  ✅ Suggested bids (v3): {len(result)} ключів")
+                continue
+            else:
+                print(f"  ⚠️ suggestedBids v3: {r.status_code} {r.text[:200]}")
+        except Exception as e:
+            print(f"  ⚠️ suggestedBids v3 exception: {e}")
+
+        # v2 fallback
+        try:
+            url = f"{ADS_BASE_URL}/v2/sp/keywords/suggestedBid"
+            for kid in chunk:
+                r = requests.get(
+                    url,
+                    headers=headers(token, profile_id),
+                    params={"keywordId": str(kid)},
+                )
+                if r.status_code == 200:
+                    data = r.json()
+                    result[str(kid)] = {
+                        "suggested": float(data.get("suggestedBid", 0)),
+                        "min":       float(data.get("suggestedBidRangeStart", 0)),
+                        "max":       float(data.get("suggestedBidRangeEnd", 0)),
+                    }
+                time.sleep(0.2)  # rate limit
+            print(f"  ✅ Suggested bids (v2): {len(result)} ключів")
+        except Exception as e:
+            print(f"  ⚠️ suggestedBids v2 exception: {e}")
+
+    return result

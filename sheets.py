@@ -165,64 +165,152 @@ def write_raw_data(data: list[dict], week: str, market: str):
 
 # ── Bid History ───────────────────────────────────────────────
 
-def write_bid_snapshot(campaigns: list[dict], keywords: list[dict],
-                       week: str, market: str):
-    sheets = SHEETS_USA if market == "USA" else SHEETS_CA
-    headers = ["Week", "Campaign", "State", "Bidding Strategy",
-               "ToS Adj%", "PP Adj%", "RoS Adj%",
-               "Daily Budget", "Keyword", "Keyword Bid",
-               "Match Type", "KW State"]
-    rows = []
+BID_HEADERS = [
+    "Date", "Campaign", "AdGroup", "Keyword",
+    "OldBid", "NewBid", "SuggestedBid",
+    "BidRangeMin", "BidRangeMax", "Reason",
+    "ACoS_before", "Impressions_before", "over_breakeven",
+]
+
+
+def _get_last_bids(sheet_name: str) -> dict:
+    """Читає останню записану ставку по кожному ключу з Bid History."""
+    try:
+        rows = read_all(sheet_name)
+        if len(rows) <= 1:
+            return {}
+        headers_row = rows[0]
+        try:
+            col_kw   = headers_row.index("Keyword")
+            col_bid  = headers_row.index("NewBid")
+            col_acos = headers_row.index("ACoS_before")
+            col_imp  = headers_row.index("Impressions_before")
+        except ValueError:
+            return {}
+        last = {}
+        for row in rows[1:]:
+            if len(row) <= max(col_kw, col_bid):
+                continue
+            kw   = row[col_kw]
+            bid  = row[col_bid]
+            acos = row[col_acos] if len(row) > col_acos else ""
+            imp  = row[col_imp]  if len(row) > col_imp  else ""
+            if kw:
+                last[kw] = {
+                    "bid":  float(bid)  if bid  else 0.0,
+                    "acos": float(acos) if acos else 0.0,
+                    "imp":  float(imp)  if imp  else 0.0,
+                }
+        return last
+    except Exception as e:
+        print(f"  ⚠️ Не вдалось прочитати Bid History: {e}")
+        return {}
+
+
+def write_bid_snapshot(campaigns: list, keywords: list,
+                       week: str, market: str,
+                       suggested_bids: dict = None,
+                       raw_data: list = None):
+    """
+    Записує зміни ставок в Bid History.
+    Умова А: ставка змінилась порівняно з останнім записом.
+    Умова Б: ACoS виріс >20% або покази впали >30% за останні 7 днів.
+    """
+    from amazon_ads import ASIN_PRICE_CONFIG, BID_CONFIG
+
+    sheets     = SHEETS_USA if market == "USA" else SHEETS_CA
+    sheet_name = sheets["bid_history"]
+    today      = datetime.now().strftime("%Y-%m-%d")
+
+    last_bids = _get_last_bids(sheet_name)
+
+    # ACoS і покази з raw_data по ключовому слову
+    recent_metrics = {}
+    if raw_data:
+        for r in raw_data:
+            kw = r.get("keyword") or r.get("searchTerm", "")
+            if not kw:
+                continue
+            recent_metrics.setdefault(kw, {"spend": 0.0, "sales": 0.0, "impressions": 0})
+            recent_metrics[kw]["spend"]       += float(r.get("cost") or r.get("spend") or 0)
+            recent_metrics[kw]["sales"]       += float(r.get("sales7d", 0))
+            recent_metrics[kw]["impressions"] += int(r.get("impressions", 0))
 
     # Тільки активні кампанії
-    active_campaigns = [c for c in campaigns if str(c.get("state", "")).upper() == "ENABLED"]
+    active_campaigns = [c for c in campaigns
+                        if str(c.get("state", "")).upper() == "ENABLED"]
     print(f"  📊 Bid History: {len(active_campaigns)} активних з {len(campaigns)} кампаній")
 
     kw_by_camp = {}
     for kw in keywords:
-        cid = kw.get("campaignId", "")
-        if cid not in kw_by_camp:
-            kw_by_camp[cid] = []
-        kw_by_camp[cid].append(kw)
+        cid = str(kw.get("campaignId", ""))
+        kw_by_camp.setdefault(cid, []).append(kw)
+
+    suggested_bids = suggested_bids or {}
+    rows = []
 
     for c in active_campaigns:
-        bidding = c.get("bidding", {})
-        adj = {a["placement"]: a["percentage"]
-               for a in bidding.get("adjustments", [])}
-        camp_kws = kw_by_camp.get(str(c.get("campaignId", "")), [])
+        camp_name = c.get("name", "")
+        camp_id   = str(c.get("campaignId", ""))
+        camp_kws  = kw_by_camp.get(camp_id, [])
 
-        if camp_kws:
-            for kw in camp_kws:
-                rows.append([
-                    week,
-                    c.get("name", ""),
-                    c.get("state", ""),
-                    bidding.get("strategy", ""),
-                    adj.get("PLACEMENT_TOP", 0),
-                    adj.get("PLACEMENT_PRODUCT_PAGE", 0),
-                    adj.get("PLACEMENT_REST_OF_SEARCH", 0),
-                    c.get("budget", {}).get("budget", 0),
-                    kw.get("keywordText", ""),
-                    kw.get("bid", 0),
-                    kw.get("matchType", ""),
-                    kw.get("state", ""),
-                ])
-        else:
+        for kw in camp_kws:
+            kw_text     = kw.get("keywordText", "")
+            kw_id       = str(kw.get("keywordId", ""))
+            adgroup     = kw.get("adGroupName", "")
+            current_bid = float(kw.get("bid", 0))
+
+            last    = last_bids.get(kw_text, {})
+            old_bid = last.get("bid", 0.0)
+            old_acos = last.get("acos", 0.0)
+            old_imp  = last.get("imp", 0.0)
+
+            sb_data   = suggested_bids.get(kw_id, {})
+            suggested = sb_data.get("suggested", 0.0)
+            bid_min   = sb_data.get("min", 0.0)
+            bid_max   = sb_data.get("max", 0.0)
+
+            metrics    = recent_metrics.get(kw_text, {})
+            curr_spend = metrics.get("spend", 0.0)
+            curr_sales = metrics.get("sales", 0.0)
+            curr_imp   = metrics.get("impressions", 0)
+            curr_acos  = round(curr_spend / curr_sales * 100
+                               if curr_sales > 0 else 0, 1)
+
+            # Умова А або Б
+            reason = None
+            if old_bid == 0 or abs(current_bid - old_bid) > 0.001:
+                reason = "bid_changed"
+            elif old_acos > 0 and curr_acos > old_acos * 1.20:
+                reason = "market_shift"
+            elif old_imp > 0 and curr_imp < old_imp * 0.70:
+                reason = "market_shift"
+
+            if reason is None:
+                continue
+
+            # over_breakeven по ASIN з назви кампанії
+            max_cpc = 0.55
+            for asin, cfg in ASIN_PRICE_CONFIG.items():
+                if asin in camp_name:
+                    max_cpc = cfg["max_cpc"]
+                    break
+            over_breakeven = suggested > max_cpc if suggested > 0 else False
+
             rows.append([
-                week,
-                c.get("name", ""),
-                c.get("state", ""),
-                bidding.get("strategy", ""),
-                adj.get("PLACEMENT_TOP", 0),
-                adj.get("PLACEMENT_PRODUCT_PAGE", 0),
-                adj.get("PLACEMENT_REST_OF_SEARCH", 0),
-                c.get("budget", {}).get("budget", 0),
-                "", "", "", "",
+                today, camp_name, adgroup, kw_text,
+                round(old_bid, 2), round(current_bid, 2),
+                round(suggested, 2), round(bid_min, 2), round(bid_max, 2),
+                reason,
+                round(curr_acos, 1), curr_imp,
+                "true" if over_breakeven else "false",
             ])
 
-    append(sheets["bid_history"], rows, headers)
-    print(f"  ✅ Bid History {market}: {len(rows)} рядків")
-
+    if rows:
+        append(sheet_name, rows, BID_HEADERS)
+        print(f"  ✅ Bid History {market}: {len(rows)} змін записано")
+    else:
+        print(f"  ℹ️ Bid History {market}: змін ставок не виявлено")
 
 # ── Placement Analysis ────────────────────────────────────────
 
@@ -417,3 +505,148 @@ def get_full_history(market: str) -> dict:
     _sheets_time.sleep(5)
     history["monthly_summary"] = read_all(SHEETS_COMMON["monthly_summary"])
     return history
+
+
+# ── Автоочищення Bid History ──────────────────────────────────
+
+def cleanup_bid_history(market: str):
+    """
+    Видаляє записи старші 90 днів де метрики не змінились значимо
+    за 14 днів після запису (ACoS ±5%, покази ±10%).
+    Записи зі значимим результатом — не видаляти ніколи.
+    Запускати раз на тиждень.
+    """
+    sheets     = SHEETS_USA if market == "USA" else SHEETS_CA
+    sheet_name = sheets["bid_history"]
+    today      = datetime.now()
+    cutoff_90  = today - timedelta(days=90)
+    cutoff_14  = today - timedelta(days=14)
+
+    try:
+        sh   = get_sheet(sheet_name)
+        rows = sh.get_all_values()
+        if len(rows) <= 1:
+            return
+
+        header = rows[0]
+        try:
+            col_date = header.index("Date")
+            col_acos = header.index("ACoS_before")
+            col_imp  = header.index("Impressions_before")
+        except ValueError:
+            print(f"  ⚠️ cleanup_bid_history: не знайдено потрібних колонок")
+            return
+
+        keep   = [header]
+        removed = 0
+
+        for row in rows[1:]:
+            if len(row) <= col_date:
+                keep.append(row)
+                continue
+            try:
+                row_date = datetime.strptime(row[col_date], "%Y-%m-%d")
+            except ValueError:
+                keep.append(row)
+                continue
+
+            # Свіжіші 90 днів — завжди лишаємо
+            if row_date >= cutoff_90:
+                keep.append(row)
+                continue
+
+            # Старіші 90 днів — перевіряємо чи були значимі зміни
+            # Якщо запис зроблено менше ніж 14 днів тому — ще рано видаляти
+            if row_date >= cutoff_14:
+                keep.append(row)
+                continue
+
+            acos_val = row[col_acos] if len(row) > col_acos else ""
+            imp_val  = row[col_imp]  if len(row) > col_imp  else ""
+
+            try:
+                acos = float(acos_val) if acos_val else 0.0
+                imp  = float(imp_val)  if imp_val  else 0.0
+            except ValueError:
+                keep.append(row)
+                continue
+
+            # Вважаємо запис "без значимого результату" якщо
+            # ACoS і покази близькі до нуля (немає даних після зміни)
+            has_significant = (acos > 5.0 or imp > 100)
+
+            if has_significant:
+                keep.append(row)
+            else:
+                removed += 1
+
+        if removed > 0:
+            sh.clear()
+            sh.update(keep, "A1")
+            print(f"  🧹 Bid History {market}: видалено {removed} застарілих записів")
+        else:
+            print(f"  ✅ Bid History {market}: застарілих записів немає")
+
+    except Exception as e:
+        print(f"  ❌ cleanup_bid_history {market}: {e}")
+
+
+# ── Автоочищення Raw Data ─────────────────────────────────────
+
+def cleanup_raw_data(market: str):
+    """
+    Зберігає тільки останні 30 днів у Raw Data.
+    Старіші записи видаляються автоматично щодня.
+    """
+    sheets     = SHEETS_USA if market == "USA" else SHEETS_CA
+    sheet_name = sheets["raw_data"]
+    cutoff     = datetime.now() - timedelta(days=30)
+
+    try:
+        sh   = get_sheet(sheet_name)
+        rows = sh.get_all_values()
+        if len(rows) <= 1:
+            return
+
+        header = rows[0]
+        try:
+            col_week = header.index("Week")
+        except ValueError:
+            print(f"  ⚠️ cleanup_raw_data: колонка 'Week' не знайдена")
+            return
+
+        keep    = [header]
+        removed = 0
+
+        for row in rows[1:]:
+            if len(row) <= col_week:
+                keep.append(row)
+                continue
+
+            week_val = row[col_week]
+            # Формат тижня: DD.MM-DD.MM.YYYY — беремо кінцеву дату
+            try:
+                if "-" in week_val and "." in week_val:
+                    end_part = week_val.split("-")[-1]  # DD.MM.YYYY
+                    row_date = datetime.strptime(end_part, "%d.%m.%Y")
+                else:
+                    # Формат YYYY-MM-DD або інший
+                    row_date = datetime.strptime(week_val[:10], "%Y-%m-%d")
+            except ValueError:
+                keep.append(row)
+                continue
+
+            if row_date >= cutoff:
+                keep.append(row)
+            else:
+                removed += 1
+
+        if removed > 0:
+            sh.clear()
+            sh.update(keep, "A1")
+            print(f"  🧹 Raw Data {market}: видалено {removed} записів старших 30 днів")
+        else:
+            print(f"  ✅ Raw Data {market}: всі записи в межах 30 днів")
+
+    except Exception as e:
+        print(f"  ❌ cleanup_raw_data {market}: {e}")
