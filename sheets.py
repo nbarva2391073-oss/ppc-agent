@@ -39,14 +39,15 @@ SCOPES = [
 
 # БАГ ВИПРАВЛЕНО: кешуємо client щоб не створювати новий при кожному виклику
 _client_cache = None
+_creds_cache = None
 
 
 def client():
-    global _client_cache
+    global _client_cache, _creds_cache
     if _client_cache is None:
         creds_dict = json.loads(GOOGLE_CREDENTIALS_JSON)
-        creds = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
-        _client_cache = gspread.Client(auth=creds)
+        _creds_cache = Credentials.from_service_account_info(creds_dict, scopes=SCOPES)
+        _client_cache = gspread.Client(auth=_creds_cache)
     return _client_cache
 
 
@@ -65,18 +66,24 @@ def _remove_tables(sh):
     try:
         import requests as _req
         import google.auth.transport.requests as _tr
-        gc = client()
-        creds = getattr(gc, "credentials", None) or getattr(gc, "auth", None)
-        if creds is None:
-            print(f"  ⚠️ _remove_tables: не вдалось отримати credentials")
+        client()  # ініціалізуємо якщо ще не було
+        if _creds_cache is None:
+            print(f"  ⚠️ _remove_tables: credentials не ініціалізовано")
             return
-        if not getattr(creds, "valid", True):
-            import google.auth.transport.requests as _tr
+        creds = _creds_cache
+        if not creds.valid:
             creds.refresh(_tr.Request())
-        token = getattr(creds, "token", None)
+        token = creds.token
         if not token:
             print(f"  ⚠️ _remove_tables: токен порожній")
             return
+        spreadsheet_id = sh.spreadsheet.id
+        sheet_id = sh.id
+        resp = _req.get(
+            f"https://sheets.googleapis.com/v4/spreadsheets/{spreadsheet_id}",
+            headers={"Authorization": f"Bearer {token}"},
+            params={"includeGridData": "false"},
+        )
         data = resp.json()
         table_ids = []
         for s in data.get("sheets", []):
