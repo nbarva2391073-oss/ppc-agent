@@ -40,7 +40,7 @@ COLS_TARGETING = [
 ]
 
 
-def run_daily_monitor():
+def run_daily_monitor(market_filter: str = None):
     print("=" * 60)
     print(f"📦 ЗБІР ДАНИХ: {datetime.now()}")
     print("=" * 60)
@@ -57,10 +57,11 @@ def run_daily_monitor():
 
     all_metrics = {}
 
-    for market, profile_id in [
-        ("USA", ADS_PROFILE_ID_USA),
-        ("CA",  ADS_PROFILE_ID_CA),
-    ]:
+    markets = [("USA", ADS_PROFILE_ID_USA), ("CA", ADS_PROFILE_ID_CA)]
+    if market_filter:
+        markets = [(m, p) for m, p in markets if m == market_filter]
+
+    for market, profile_id in markets:
         if not profile_id:
             print(f"⏭️  {market}: profile_id не задано, пропускаємо")
             continue
@@ -238,3 +239,8 @@ def _build_keyword_rows(targeting_data: list) -> list:
         e["roas"] = round(e["sales"] / e["spend"]       if e["spend"] > 0 else 0, 2)
         result.append(e)
     return result
+
+if __name__ == "__main__":
+    import sys
+    market_arg = sys.argv[1] if len(sys.argv) > 1 else None
+    run_daily_monitor(market_filter=market_arg)
