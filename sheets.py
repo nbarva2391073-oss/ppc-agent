@@ -197,10 +197,15 @@ def _get_last_bids(sheet_name: str) -> dict:
             acos = row[col_acos] if len(row) > col_acos else ""
             imp  = row[col_imp]  if len(row) > col_imp  else ""
             if kw:
+                def _f(v):
+                    try:
+                        return float(str(v).replace(",", ".")) if v else 0.0
+                    except ValueError:
+                        return 0.0
                 last[kw] = {
-                    "bid":  float(bid)  if bid  else 0.0,
-                    "acos": float(acos) if acos else 0.0,
-                    "imp":  float(imp)  if imp  else 0.0,
+                    "bid":  _f(bid),
+                    "acos": _f(acos),
+                    "imp":  _f(imp),
                 }
         return last
     except Exception as e:
