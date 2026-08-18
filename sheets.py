@@ -26,7 +26,7 @@ def _retry_sheets(max_retries=5, base_delay=5):
                         raise
         return wrapper
     return decorator
-from datetime import datetime
+from datetime import datetime, timedelta
 import gspread
 from google.oauth2.service_account import Credentials
 from config import (SPREADSHEET_ID, SHEETS_USA, SHEETS_CA,
@@ -64,9 +64,10 @@ def _remove_tables(sh):
     """Видаляє всі TABLE об'єкти з аркуша через Google Sheets API v4."""
     try:
         import requests as _req
+        import google.auth.transport.requests as _tr
         creds = client().auth
-        if hasattr(creds, "token") is False or creds.token is None:
-            import google.auth.transport.requests as _tr
+        # Service account credentials потребують refresh по-іншому
+        if not hasattr(creds, "token") or not creds.token or not creds.valid:
             creds.refresh(_tr.Request())
         token = creds.token
         spreadsheet_id = sh.spreadsheet.id

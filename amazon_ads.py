@@ -493,11 +493,14 @@ def get_suggested_bids(token: str, profile_id: str,
                 "keywordIds": [str(kid) for kid in chunk],
                 "bidding": {"strategy": "MANUAL"},
             }
-            r = requests.post(
-                url,
-                headers=headers(token, profile_id, content_type=ct),
-                json=payload,
-            )
+            h = {
+                "Authorization": f"Bearer {token}",
+                "Amazon-Advertising-API-ClientId": ADS_CLIENT_ID,
+                "Amazon-Advertising-API-Scope": str(profile_id),
+                "Content-Type": ct,
+                "Accept": ct,
+            }
+            r = requests.post(url, headers=h, json=payload)
             if r.status_code == 200:
                 data = r.json()
                 items = data.get("suggestedBids", data if isinstance(data, list) else [])
