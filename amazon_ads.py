@@ -469,76 +469,113 @@ BID_CONFIG = {
 
 
 def get_suggested_bids(token: str, profile_id: str,
-                       keyword_ids: list) -> dict:
+                       keywords: list) -> dict:
     """
-    Отримати suggested bid і bid range по список keyword_id.
+    Отримати suggested bid через правильний v3 endpoint.
+    POST /sp/targets/bid/recommendations
+    Приймає повний список keyword об'єктів (не тільки ids).
     Повертає {keyword_id: {suggested, min, max}}.
-    Amazon Ads API: POST /sp/keywords/suggestedBids
     """
-    if not keyword_ids:
+    if not keywords:
         return {}
 
     result = {}
 
-    # API приймає max 100 keyword_id за раз
-    chunk_size = 100
-    for i in range(0, len(keyword_ids), chunk_size):
-        chunk = keyword_ids[i:i + chunk_size]
+    # Групуємо keywords по (adGroupId, campaignId)
+    by_adgroup = {}
+    for kw in keywords:
+        adgroup_id  = str(kw.get("adGroupId", ""))
+        campaign_id = str(kw.get("campaignId", ""))
+        kw_text     = kw.get("keywordText", "")
+        match_type  = str(kw.get("matchType", "EXACT")).upper()
+        kw_id       = str(kw.get("keywordId", ""))
 
-        # v3 endpoint
-        try:
-            url = f"{ADS_BASE_URL}/sp/keywords/suggestedBids"
-            ct  = "application/vnd.spKeyword.v3+json"
+        if not adgroup_id or not kw_text or not kw_id:
+            continue
+
+        type_map = {
+            "EXACT":  "KEYWORD_EXACT_MATCH",
+            "PHRASE": "KEYWORD_PHRASE_MATCH",
+            "BROAD":  "KEYWORD_BROAD_MATCH",
+        }
+        expr_type = type_map.get(match_type, "KEYWORD_EXACT_MATCH")
+
+        key = (adgroup_id, campaign_id)
+        by_adgroup.setdefault(key, []).append({
+            "kw_text":    kw_text,
+            "match_type": match_type,
+            "expr_type":  expr_type,
+            "keyword_id": kw_id,
+        })
+
+    url = f"{ADS_BASE_URL}/sp/targets/bid/recommendations"
+    ct  = "application/vnd.spTargetingRecommendation.v3+json"
+    h   = {
+        "Authorization":                    f"Bearer {token}",
+        "Amazon-Advertising-API-ClientId":  ADS_CLIENT_ID,
+        "Amazon-Advertising-API-Scope":     str(profile_id),
+        "Content-Type":                     ct,
+        "Accept":                           ct,
+    }
+
+    reverse_map = {
+        "KEYWORD_EXACT_MATCH":  "EXACT",
+        "KEYWORD_PHRASE_MATCH": "PHRASE",
+        "KEYWORD_BROAD_MATCH":  "BROAD",
+    }
+
+    total_adgroups = len(by_adgroup)
+    processed = 0
+
+    for (adgroup_id, campaign_id), kw_list in by_adgroup.items():
+        # Максимум 100 targetingExpressions за раз
+        for i in range(0, len(kw_list), 100):
+            chunk = kw_list[i:i + 100]
             payload = {
-                "keywordIds": [str(kid) for kid in chunk],
-                "bidding": {"strategy": "MANUAL"},
+                "campaignId":          campaign_id,
+                "adGroupId":           adgroup_id,
+                "recommendationType":  "BIDS_FOR_EXISTING_AD_GROUP",
+                "targetingExpressions": [
+                    {"type": kw["expr_type"], "value": kw["kw_text"]}
+                    for kw in chunk
+                ],
             }
-            h = {
-                "Authorization": f"Bearer {token}",
-                "Amazon-Advertising-API-ClientId": ADS_CLIENT_ID,
-                "Amazon-Advertising-API-Scope": str(profile_id),
-                "Content-Type": ct,
-                "Accept": ct,
-            }
-            r = requests.post(url, headers=h, json=payload)
-            if r.status_code == 200:
-                data = r.json()
-                items = data.get("suggestedBids", data if isinstance(data, list) else [])
-                for item in items:
-                    kid = str(item.get("keywordId", ""))
-                    suggested = item.get("suggestedBid", {})
-                    bid_range = item.get("bidRange", {})
-                    result[kid] = {
-                        "suggested": float(suggested.get("bid", 0)),
-                        "min":       float(bid_range.get("bidRangeMin", 0)),
-                        "max":       float(bid_range.get("bidRangeMax", 0)),
-                    }
-                print(f"  ✅ Suggested bids (v3): {len(result)} ключів")
-                continue
-            else:
-                print(f"  ⚠️ suggestedBids v3: {r.status_code} {r.text[:200]}")
-        except Exception as e:
-            print(f"  ⚠️ suggestedBids v3 exception: {e}")
-
-        # v2 fallback
-        try:
-            url = f"{ADS_BASE_URL}/v2/sp/keywords/suggestedBid"
-            for kid in chunk:
-                r = requests.get(
-                    url,
-                    headers=headers(token, profile_id),
-                    params={"keywordId": str(kid)},
-                )
+            try:
+                r = requests.post(url, headers=h, json=payload)
                 if r.status_code == 200:
                     data = r.json()
-                    result[str(kid)] = {
-                        "suggested": float(data.get("suggestedBid", 0)),
-                        "min":       float(data.get("suggestedBidRangeStart", 0)),
-                        "max":       float(data.get("suggestedBidRangeEnd", 0)),
-                    }
-                time.sleep(0.2)  # rate limit
-            print(f"  ✅ Suggested bids (v2): {len(result)} ключів")
-        except Exception as e:
-            print(f"  ⚠️ suggestedBids v2 exception: {e}")
+                    for rec in data.get("recommendations", []):
+                        expr       = rec.get("targetingExpression", {})
+                        kw_text    = expr.get("value", "")
+                        expr_type  = expr.get("type", "")
+                        match_type = reverse_map.get(expr_type, "")
 
+                        theme = rec.get("themeBasedBidRecommendation", {})
+                        suggested = float(theme.get("recommendedBid", 0) or 0)
+                        bid_min   = float(theme.get("rangeStart", 0) or 0)
+                        bid_max   = float(theme.get("rangeEnd", 0) or 0)
+
+                        # Зіставляємо з оригінальним keyword_id
+                        for kw in chunk:
+                            if kw["kw_text"] == kw_text and kw["match_type"] == match_type:
+                                result[kw["keyword_id"]] = {
+                                    "suggested": suggested,
+                                    "min":       bid_min,
+                                    "max":       bid_max,
+                                }
+                                break
+                elif r.status_code == 404:
+                    # Ad group не має даних — нормально для нових кампаній
+                    pass
+                else:
+                    print(f"  ⚠️ bid recommendations [{adgroup_id}]: {r.status_code} {r.text[:150]}")
+                time.sleep(0.2)  # rate limit
+            except Exception as e:
+                print(f"  ⚠️ bid recommendations exception: {e}")
+
+        processed += 1
+        if processed % 10 == 0:
+            print(f"  ⏳ Bid recommendations: {processed}/{total_adgroups} ad groups...")
+
+    print(f"  ✅ Suggested bids: {len(result)} ключів з {total_adgroups} ad groups")
     return result
