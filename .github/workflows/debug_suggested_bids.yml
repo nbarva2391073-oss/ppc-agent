@@ -1,0 +1,93 @@
+name: Debug Suggested Bids
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Test suggestedBids endpoint
+        env:
+          ADS_CLIENT_ID:     ${{ secrets.ADS_CLIENT_ID }}
+          ADS_CLIENT_SECRET: ${{ secrets.ADS_CLIENT_SECRET }}
+          ADS_REFRESH_TOKEN: ${{ secrets.ADS_REFRESH_TOKEN }}
+          ADS_PROFILE_ID_USA: ${{ secrets.ADS_PROFILE_ID_USA }}
+        run: |
+          python3 << 'PYEOF'
+          import requests, json, os
+
+          ADS_TOKEN_URL = "https://api.amazon.com/auth/o2/token"
+          ADS_BASE_URL  = "https://advertising-api.amazon.com"
+
+          CLIENT_ID     = os.environ["ADS_CLIENT_ID"]
+          CLIENT_SECRET = os.environ["ADS_CLIENT_SECRET"]
+          REFRESH_TOKEN = os.environ["ADS_REFRESH_TOKEN"]
+          PROFILE_ID    = os.environ["ADS_PROFILE_ID_USA"]
+
+          # Токен
+          r = requests.post(ADS_TOKEN_URL, data={
+              "grant_type": "refresh_token",
+              "refresh_token": REFRESH_TOKEN,
+              "client_id": CLIENT_ID,
+              "client_secret": CLIENT_SECRET,
+          })
+          token = r.json()["access_token"]
+          print(f"✅ Токен отримано")
+
+          ct = "application/vnd.spKeyword.v3+json"
+          h = {
+              "Authorization": f"Bearer {token}",
+              "Amazon-Advertising-API-ClientId": CLIENT_ID,
+              "Amazon-Advertising-API-Scope": PROFILE_ID,
+              "Content-Type": ct,
+              "Accept": ct,
+          }
+
+          # Отримуємо один keyword_id
+          kw_resp = requests.post(
+              f"{ADS_BASE_URL}/sp/keywords/list", headers=h,
+              json={"stateFilter": {"include": ["ENABLED"]}, "maxResults": 1}
+          )
+          kw_data = kw_resp.json()
+          kws = kw_data.get("keywords", [])
+          if not kws:
+              print(f"❌ Немає keywords: {kw_resp.status_code}")
+              print(f"   Body: {kw_resp.text[:300]}")
+              exit(1)
+
+          kw = kws[0]
+          keyword_id = str(kw.get("keywordId", ""))
+          print(f"✅ keyword_id={keyword_id}")
+          print(f"   text='{kw.get('keywordText')}'")
+          print(f"   matchType={kw.get('matchType')}")
+
+          # Тест suggestedBids
+          payload = {"keywordIds": [keyword_id], "bidding": {"strategy": "MANUAL"}}
+          print(f"\n🔍 POST /sp/keywords/suggestedBids")
+          print(f"   Content-Type: {ct}")
+          print(f"   Body: {json.dumps(payload)}")
+
+          resp = requests.post(
+              f"{ADS_BASE_URL}/sp/keywords/suggestedBids",
+              headers=h, json=payload
+          )
+          print(f"\n📥 Status: {resp.status_code}")
+          print(f"   Response Headers:")
+          for k, v in resp.headers.items():
+              print(f"     {k}: {v}")
+          print(f"\n   Body: {resp.text[:1000]}")
+          PYEOF
