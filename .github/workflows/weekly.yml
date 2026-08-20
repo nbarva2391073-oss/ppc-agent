@@ -1,0 +1,40 @@
+name: PPC Agent Weekly
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'
+  workflow_dispatch: {}
+
+jobs:
+  weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Weekly Agent
+        env:
+          ADS_CLIENT_ID:            ${{ secrets.ADS_CLIENT_ID }}
+          ADS_CLIENT_SECRET:        ${{ secrets.ADS_CLIENT_SECRET }}
+          ADS_REFRESH_TOKEN:        ${{ secrets.ADS_REFRESH_TOKEN }}
+          ADS_PROFILE_ID_USA:       ${{ secrets.ADS_PROFILE_ID_USA }}
+          ADS_PROFILE_ID_CA:        ${{ secrets.ADS_PROFILE_ID_CA }}
+          AMAZON_CLIENT_ID:         ${{ secrets.AMAZON_CLIENT_ID }}
+          AMAZON_CLIENT_SECRET:     ${{ secrets.AMAZON_CLIENT_SECRET }}
+          AMAZON_REFRESH_TOKEN_USA: ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
+          AMAZON_REFRESH_TOKEN_CA:  ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
+          ANTHROPIC_API_KEY:        ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_CREDENTIALS_JSON:  ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          TELEGRAM_BOT_TOKEN:       ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS:        ${{ secrets.TELEGRAM_CHAT_IDS }}
+        run: python main_weekly.py
