@@ -509,13 +509,12 @@ def get_suggested_bids(token: str, profile_id: str,
         })
 
     url = f"{ADS_BASE_URL}/sp/targets/bid/recommendations"
-    ct  = "application/vnd.spTargetingRecommendation.v3+json"
     h   = {
         "Authorization":                    f"Bearer {token}",
         "Amazon-Advertising-API-ClientId":  ADS_CLIENT_ID,
         "Amazon-Advertising-API-Scope":     str(profile_id),
-        "Content-Type":                     ct,
-        "Accept":                           ct,
+        "Content-Type":                     "application/json",
+        "Accept":                           "application/json",
     }
 
     reverse_map = {
@@ -569,7 +568,7 @@ def get_suggested_bids(token: str, profile_id: str,
                     pass
                 else:
                     print(f"  ⚠️ bid recommendations [{adgroup_id}]: {r.status_code} {r.text[:150]}")
-                time.sleep(0.2)  # rate limit
+                time.sleep(1.5)  # rate limit — Amazon обмежує цей endpoint
             except Exception as e:
                 print(f"  ⚠️ bid recommendations exception: {e}")
 
