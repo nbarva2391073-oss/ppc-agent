@@ -145,11 +145,8 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
     # Bid Snapshot — з suggested bids і raw_data для market_shift
     if campaigns:
         try:
-            # Отримуємо suggested bids через /sp/targets/bid/recommendations
+            # Suggested bids читаються з Sheets окремим workflow (suggested_bids.yml)
             suggested = {}
-            if keywords:
-                t = get_access_token()
-                suggested = get_suggested_bids(t, profile_id, keywords)
 
             # raw_data для перевірки market_shift (якщо вже завантажено)
             write_bid_snapshot(
