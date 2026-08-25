@@ -52,7 +52,8 @@ def run_daily_monitor(market_filter: str = None):
     end_date   = today.strftime("%Y-%m-%d")
     # Формат тижня: DD.MM-DD.MM.YYYY (як в старих даних)
     from datetime import timedelta as _td
-    monday = today - _td(days=today.weekday())
+    # Попередній завершений тиждень (Mon-Sun) як мітка в Sheets
+    monday = today - _td(days=today.weekday() + 7)
     sunday = monday + _td(days=6)
     week   = f"{monday.strftime('%d.%m')}-{sunday.strftime('%d.%m.%Y')}"
 
