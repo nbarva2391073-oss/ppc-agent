@@ -334,6 +334,7 @@ def write_bid_snapshot(campaigns: list, keywords: list,
             old_imp  = last.get("imp", 0.0)
 
             # Ключ для пошуку: keyword_text|match_type
+            match_type = str(kw.get("matchType", kw.get("match_type", ""))).upper()
             sb_key    = f"{kw_text}|{match_type}"
             sb_data   = suggested_bids.get(sb_key, {})
             suggested = sb_data.get("suggested", 0.0)
