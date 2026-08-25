@@ -132,11 +132,13 @@ def download_and_parse(market: str, token: str, document_id: str) -> list:
     try:
         data = json.loads(content)
         # Звіт повертає {"salesAndTrafficByAsin": [...]}
-        records = (
-            data.get("salesAndTrafficByAsin") or
-            data.get("salesAndTrafficByDate") or
-            []
-        )
+        # НЕ фолбечимо на salesAndTrafficByDate — це інша структура
+        # (без ASIN/traffic/sales по товару), яка ламає format_rows()
+        records = data.get("salesAndTrafficByAsin")
+        if records is None:
+            print(f"  ⚠️ [{market}] Немає ключа 'salesAndTrafficByAsin' в відповіді")
+            print(f"  🔍 Ключі відповіді: {list(data.keys())}")
+            return []
         print(f"  ✅ Завантажено {len(records)} записів [{market}]")
         return records
     except Exception as e:
