@@ -451,7 +451,7 @@ def write_placement_analysis(placement_data: list[dict],
                           f"{issue['tos_adj']}%")
         rows.append([
             week, camp,
-            r.get("placement", ""),
+            r.get("placement") or r.get("campaignPlacement", ""),
             r.get("impressions", 0),
             r.get("clicks", 0),
             round(float(r.get("clickThroughRate", 0)) * 100, 2),
