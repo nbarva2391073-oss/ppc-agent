@@ -385,6 +385,49 @@ def write_bid_snapshot(campaigns: list, keywords: list,
 
 # ── Placement Analysis ────────────────────────────────────────
 
+def _cleanup_placement(sh, headers: list):
+    """Видаляє рядки старші 730 днів і записи з форматом YYYY-W## (некоректні)."""
+    from datetime import datetime, timedelta
+    cutoff = datetime.now() - timedelta(days=730)
+
+    try:
+        rows = sh.get_all_values()
+        if len(rows) <= 1:
+            return
+
+        keep = [rows[0]]  # заголовок завжди лишаємо
+        removed = 0
+
+        for row in rows[1:]:
+            if not row or not row[0]:
+                continue
+            week_val = row[0]
+
+            # Видаляємо старий формат YYYY-W## (наприклад 2026-W22)
+            if len(week_val) <= 8 and "-W" in week_val:
+                removed += 1
+                continue
+
+            # Парсимо формат DD.MM-DD.MM.YYYY
+            try:
+                end_part = week_val.split("-")[-1]  # DD.MM.YYYY
+                row_date = datetime.strptime(end_part, "%d.%m.%Y")
+                if row_date < cutoff:
+                    removed += 1
+                    continue
+            except ValueError:
+                pass  # невідомий формат — лишаємо
+
+            keep.append(row)
+
+        if removed > 0:
+            sh.clear()
+            sh.update(keep, "A1")
+            print(f"  🧹 Placement Analysis: видалено {removed} застарілих/некоректних рядків")
+    except Exception as e:
+        print(f"  ⚠️ _cleanup_placement: {e}")
+
+
 def write_placement_analysis(placement_data: list[dict],
                               issues: list[dict],
                               week: str, market: str):
@@ -417,7 +460,19 @@ def write_placement_analysis(placement_data: list[dict],
             round(spend / sales * 100 if sales > 0 else 0, 1),
             status, issue_text,
         ])
-    append(sheets["placement_analysis"], rows, headers)
+    sheet_name = sheets["placement_analysis"]
+
+    # Гарантуємо заголовки
+    sh = get_sheet(sheet_name)
+    first_row = sh.row_values(1)
+    if not first_row or first_row[0] != "Week":
+        sh.update([headers], "A1")
+        print(f"  📝 Заголовки додано в '{sheet_name}'")
+
+    # Ротація: видаляємо записи старші 730 днів
+    _cleanup_placement(sh, headers)
+
+    append(sheet_name, rows, headers)
     print(f"  ✅ Placement Analysis {market}: {len(rows)} рядків")
 
 
