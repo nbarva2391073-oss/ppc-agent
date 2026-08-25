@@ -31,7 +31,8 @@ COLS_SEARCH_TERM = [
     "cost", "sales7d", "purchases7d", "costPerClick",
 ]
 COLS_PLACEMENT = [
-    "campaignName", "impressions", "clicks",
+    "campaignName", "placementClassification",
+    "impressions", "clicks",
     "cost", "sales7d", "purchases7d",
 ]
 COLS_TARGETING = [

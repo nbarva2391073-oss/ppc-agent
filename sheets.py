@@ -439,10 +439,6 @@ def write_placement_analysis(placement_data: list[dict],
     rows = []
     issue_camps = {i["campaign"] for i in issues}
 
-    if placement_data:
-        print(f"  🔍 DEBUG перший запис placement: {list(placement_data[0].keys())}")
-        print(f"  🔍 DEBUG значення: {placement_data[0]}")
-
     for r in placement_data:
         camp = r.get("campaignName", "")
         spend = float(r.get("spend", 0))
@@ -455,7 +451,7 @@ def write_placement_analysis(placement_data: list[dict],
                           f"{issue['tos_adj']}%")
         rows.append([
             week, camp,
-            r.get("placement") or r.get("campaignPlacement", ""),
+            r.get("placementClassification") or r.get("placement") or r.get("campaignPlacement", ""),
             r.get("impressions", 0),
             r.get("clicks", 0),
             round(float(r.get("clickThroughRate", 0)) * 100, 2),

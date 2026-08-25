@@ -393,7 +393,7 @@ def analyze_placement_issues(placement_data, campaigns):
     by_campaign = {}
     for row in placement_data:
         name = row.get("campaignName", "")
-        pl   = row.get("placement") or row.get("campaignPlacement", "")
+        pl   = row.get("placementClassification") or row.get("placement") or row.get("campaignPlacement", "")
         if name not in by_campaign:
             by_campaign[name] = {}
         by_campaign[name][pl] = {
