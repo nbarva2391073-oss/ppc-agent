@@ -171,6 +171,61 @@ def write_raw_data(data: list[dict], week: str, market: str):
     print(f"  ✅ Raw Data {market}: {len(rows)} рядків")
 
 
+# ── Suggested Bids (читання з Sheets) ───────────────────────────
+
+def read_suggested_bids(market: str) -> dict:
+    """
+    Читає suggested bids з аркуша 'Suggested Bids USA/CA'.
+    Повертає dict {keyword_text|match_type: {suggested, min, max}}.
+    Ключ: 'keyword_text|EXACT' — однозначна ідентифікація.
+    """
+    sheet_name = f"Suggested Bids {market}"
+    try:
+        rows = read_all(sheet_name)
+        if len(rows) <= 1:
+            print(f"  ⚠️ Suggested Bids {market}: аркуш порожній")
+            return {}
+        header = rows[0]
+        try:
+            col_kw        = header.index("Keyword")
+            col_match     = header.index("MatchType")
+            col_suggested = header.index("SuggestedBid")
+            col_min       = header.index("BidRangeMin")
+            col_max       = header.index("BidRangeMax")
+        except ValueError as e:
+            print(f"  ⚠️ Suggested Bids {market}: колонка не знайдена — {e}")
+            return {}
+
+        result = {}
+        for row in rows[1:]:
+            if len(row) <= max(col_kw, col_match, col_suggested):
+                continue
+            kw        = row[col_kw]
+            match     = row[col_match]
+            suggested = row[col_suggested]
+            bid_min   = row[col_min] if len(row) > col_min else ""
+            bid_max   = row[col_max] if len(row) > col_max else ""
+
+            def _f(v):
+                try:
+                    return float(str(v).replace(",", ".")) if v else 0.0
+                except ValueError:
+                    return 0.0
+
+            key = f"{kw}|{match}"
+            result[key] = {
+                "suggested": _f(suggested),
+                "min":       _f(bid_min),
+                "max":       _f(bid_max),
+            }
+
+        print(f"  ✅ Suggested Bids {market}: {len(result)} ключів завантажено")
+        return result
+    except Exception as e:
+        print(f"  ⚠️ Не вдалось прочитати Suggested Bids {market}: {e}")
+        return {}
+
+
 # ── Bid History ───────────────────────────────────────────────
 
 BID_HEADERS = [
@@ -278,7 +333,9 @@ def write_bid_snapshot(campaigns: list, keywords: list,
             old_acos = last.get("acos", 0.0)
             old_imp  = last.get("imp", 0.0)
 
-            sb_data   = suggested_bids.get(kw_id, {})
+            # Ключ для пошуку: keyword_text|match_type
+            sb_key    = f"{kw_text}|{match_type}"
+            sb_data   = suggested_bids.get(sb_key, {})
             suggested = sb_data.get("suggested", 0.0)
             bid_min   = sb_data.get("min", 0.0)
             bid_max   = sb_data.get("max", 0.0)

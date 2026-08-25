@@ -15,6 +15,7 @@ from sheets import (
     write_bid_snapshot, write_placement_analysis,
     write_keyword_intelligence, write_weekly_summary,
     cleanup_bid_history, cleanup_raw_data,
+    read_suggested_bids,
 )
 from amazon_ads import get_suggested_bids
 
@@ -145,13 +146,13 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
     # Bid Snapshot — з suggested bids і raw_data для market_shift
     if campaigns:
         try:
-            # Suggested bids читаються з Sheets окремим workflow (suggested_bids.yml)
-            suggested = {}
+            # Читаємо suggested bids з Sheets (заповнюється suggested_bids.yml кожні 2 дні)
+            suggested_raw = read_suggested_bids(market)
 
             # raw_data для перевірки market_shift (якщо вже завантажено)
             write_bid_snapshot(
                 campaigns, keywords, week, market,
-                suggested_bids=suggested,
+                suggested_bids=suggested_raw,
                 raw_data=metrics.get("_raw_data", []),
             )
         except Exception as e:
