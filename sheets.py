@@ -439,6 +439,10 @@ def write_placement_analysis(placement_data: list[dict],
     rows = []
     issue_camps = {i["campaign"] for i in issues}
 
+    if placement_data:
+        print(f"  🔍 DEBUG перший запис placement: {list(placement_data[0].keys())}")
+        print(f"  🔍 DEBUG значення: {placement_data[0]}")
+
     for r in placement_data:
         camp = r.get("campaignName", "")
         spend = float(r.get("spend", 0))
