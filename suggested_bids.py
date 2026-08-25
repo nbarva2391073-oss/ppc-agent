@@ -129,31 +129,40 @@ def fetch_bid_recommendations(token: str, profile_id: str,
                                 first_val = str(list(data.values())[0])[:200]
                                 print(f"  🔍 Перше значення: {first_val}")
 
-                        for rec in data.get("recommendations", []):
-                            expr       = rec.get("targetingExpression", {})
-                            kw_text    = expr.get("value", "")
-                            expr_type  = expr.get("type", "")
-                            match_type = reverse_map.get(expr_type, "")
+                        # Правильна структура відповіді:
+                        # bidRecommendations → [{bidRecommendationsForTargetingExpressions: [{
+                        #   targetingExpression: {type, value},
+                        #   bidValues: [{suggestedBid, rangeStart, rangeEnd}]
+                        # }]}]
+                        for theme_rec in data.get("bidRecommendations", []):
+                            for target_rec in theme_rec.get("bidRecommendationsForTargetingExpressions", []):
+                                expr       = target_rec.get("targetingExpression", {})
+                                kw_text    = expr.get("value", "")
+                                expr_type  = expr.get("type", "")
+                                match_type = reverse_map.get(expr_type, "")
 
-                            theme     = rec.get("themeBasedBidRecommendation", {})
-                            suggested = float(theme.get("recommendedBid", 0) or 0)
-                            bid_min   = float(theme.get("rangeStart", 0) or 0)
-                            bid_max   = float(theme.get("rangeEnd", 0) or 0)
+                                bid_values = target_rec.get("bidValues", [{}])
+                                first_bid  = bid_values[0] if bid_values else {}
+                                suggested  = float(first_bid.get("suggestedBid", 0) or 0)
+                                bid_min    = float(first_bid.get("rangeStart", 0) or 0)
+                                bid_max    = float(first_bid.get("rangeEnd", 0) or 0)
 
-                            # Знаходимо відповідний keyword
-                            for kw in chunk:
-                                if (kw["kw_text"] == kw_text and
-                                        kw["match_type"] == match_type):
-                                    rows.append([
-                                        campaign_id, camp_name,
-                                        adgroup_id, adgroup_name,
-                                        kw_text, match_type,
-                                        round(suggested, 2),
-                                        round(bid_min, 2),
-                                        round(bid_max, 2),
-                                        updated_at,
-                                    ])
-                                    break
+                                if suggested == 0:
+                                    continue
+
+                                for kw in chunk:
+                                    if (kw["kw_text"] == kw_text and
+                                            kw["match_type"] == match_type):
+                                        rows.append([
+                                            campaign_id, camp_name,
+                                            adgroup_id, adgroup_name,
+                                            kw_text, match_type,
+                                            round(suggested, 2),
+                                            round(bid_min, 2),
+                                            round(bid_max, 2),
+                                            updated_at,
+                                        ])
+                                        break
                         break  # успіх — виходимо з retry
 
                     elif r.status_code == 429:
