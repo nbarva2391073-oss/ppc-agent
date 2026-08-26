@@ -68,7 +68,13 @@ def test_date(date, token):
     )
     parsed = json.loads(content)
     print(f"🔍 Ключі верхнього рівня: {list(parsed.keys())}")
-    print(f"🔍 Повний JSON (перші 2000 символів):\n{json.dumps(parsed, indent=2)[:2000]}")
+
+    by_asin = parsed.get("salesAndTrafficByAsin", [])
+    print(f"🔍 salesAndTrafficByAsin: {len(by_asin)} записів")
+    if by_asin:
+        print(f"🔍 Перший запис: {json.dumps(by_asin[0], indent=2)}")
+    else:
+        print("🔍 salesAndTrafficByAsin ПОРОЖНІЙ")
 
 
 if __name__ == "__main__":
