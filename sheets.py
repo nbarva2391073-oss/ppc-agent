@@ -780,13 +780,15 @@ def cleanup_raw_data(market: str):
 
 # ── Advertised Product ──────────────────────────────────────
 
-def write_advertised_product(data: list[dict], week: str, market: str):
+def write_advertised_product(data: list[dict], date: str, market: str):
     """
     Продажі окремо по ASIN через рекламу (Advertised Product Report).
-    Основа для розрахунку TACoS та порівняння органіка/реклама.
+    date — конкретний день (YYYY-MM-DD), НЕ тиждень — звіт фактично
+    містить дані за один день, і date потрібен для точного зіставлення
+    з Business Report при розрахунку TACoS.
     """
     sheets = SHEETS_USA if market == "USA" else SHEETS_CA
-    headers = ["Week", "Campaign", "Ad Group", "ASIN",
+    headers = ["Date", "Campaign", "Ad Group", "ASIN",
                "Impressions", "Clicks", "Spend",
                "Orders (Ad)", "Sales (Ad)", "ACoS%", "CPC"]
     rows = []
@@ -795,7 +797,7 @@ def write_advertised_product(data: list[dict], week: str, market: str):
         sales = float(r.get("sales14d", 0))
         clicks = int(r.get("clicks", 0))
         rows.append([
-            week,
+            date,
             r.get("campaignName", ""),
             r.get("adGroupName", ""),
             r.get("advertisedAsin", ""),
@@ -818,3 +820,155 @@ def write_advertised_product(data: list[dict], week: str, market: str):
 
     append(sheet_name, rows, headers)
     print(f"  ✅ Advertised Product {market}: {len(rows)} рядків")
+
+
+# ── TACoS (Total ACoS) — органіка vs реклама по ASIN ──────────
+
+def calculate_tacos(market: str, date: str):
+    """
+    Зводить Advertised Product і Business Report по ASIN за конкретний день.
+    Пише результат у TACoS_USA/CA.
+
+    Edge cases:
+    - ASIN є в Business Report, немає в Advertised Product → Ad_Spend=0, Ad_Sales=0, Organic_Share=100%
+    - ASIN є в Advertised Product, немає в Business Report → Total_Sales=0, TACoS%=None, Organic_Share%=None
+    """
+    sheets = SHEETS_USA if market == "USA" else SHEETS_CA
+    adv_sheet_name = sheets.get("advertised_product", f"Advertised Product {market}")
+    biz_sheet_name = f"Business_Report_{market}"
+    tacos_sheet_name = f"TACoS_{market}"
+
+    # Читаємо Advertised Product за цей день
+    adv_by_asin = {}
+    try:
+        rows = read_all(adv_sheet_name)
+        if len(rows) > 1:
+            header = rows[0]
+            col_date = header.index("Date")
+            col_asin = header.index("ASIN")
+            col_spend = header.index("Spend")
+            col_sales = header.index("Sales (Ad)")
+            for row in rows[1:]:
+                if len(row) <= max(col_date, col_asin, col_spend, col_sales):
+                    continue
+                if row[col_date] != date:
+                    continue
+                asin = row[col_asin]
+                if not asin:
+                    continue
+                if asin not in adv_by_asin:
+                    adv_by_asin[asin] = {"spend": 0.0, "sales": 0.0}
+                try:
+                    adv_by_asin[asin]["spend"] += float(str(row[col_spend]).replace(",", "."))
+                except ValueError:
+                    pass
+                try:
+                    adv_by_asin[asin]["sales"] += float(str(row[col_sales]).replace(",", "."))
+                except ValueError:
+                    pass
+    except Exception as e:
+        print(f"  ⚠️ TACoS: не вдалось прочитати {adv_sheet_name}: {e}")
+
+    # Читаємо Business Report за цей день
+    total_sales_by_asin = {}
+    try:
+        rows = read_all(biz_sheet_name)
+        if len(rows) > 1:
+            header = rows[0]
+            col_date = header.index("Дата")
+            col_asin = header.index("ASIN")
+            col_sales = header.index("Ordered Product Sales")
+            for row in rows[1:]:
+                if len(row) <= max(col_date, col_asin, col_sales):
+                    continue
+                if row[col_date] != date:
+                    continue
+                asin = row[col_asin]
+                if not asin:
+                    continue
+                try:
+                    val = float(str(row[col_sales]).replace(",", "."))
+                except ValueError:
+                    val = 0.0
+                total_sales_by_asin[asin] = total_sales_by_asin.get(asin, 0.0) + val
+    except Exception as e:
+        print(f"  ⚠️ TACoS: не вдалось прочитати {biz_sheet_name}: {e}")
+
+    # Об'єднуємо всі ASIN з обох джерел
+    all_asins = set(adv_by_asin.keys()) | set(total_sales_by_asin.keys())
+    if not all_asins:
+        print(f"  ℹ️ TACoS {market}: немає даних за {date}")
+        return
+
+    headers = ["Date", "ASIN", "Ad_Spend", "Ad_Sales",
+               "Total_Sales", "Organic_Sales",
+               "TACoS%", "ACoS%", "Organic_Share%"]
+    rows_out = []
+
+    for asin in sorted(all_asins):
+        ad_spend = round(adv_by_asin.get(asin, {}).get("spend", 0.0), 2)
+        ad_sales = round(adv_by_asin.get(asin, {}).get("sales", 0.0), 2)
+        total_sales = total_sales_by_asin.get(asin)  # None якщо ASIN не в Business Report
+
+        if total_sales is None:
+            # Edge case: є в Advertised Product, немає в Business Report
+            total_sales_val = ""
+            organic_sales = ""
+            tacos_pct = ""
+            organic_share_pct = ""
+        else:
+            total_sales_val = round(total_sales, 2)
+            organic_sales = round(total_sales - ad_sales, 2)
+            tacos_pct = round(ad_spend / total_sales * 100, 1) if total_sales > 0 else ""
+            organic_share_pct = round(organic_sales / total_sales * 100, 1) if total_sales > 0 else ""
+
+        acos_pct = round(ad_spend / ad_sales * 100, 1) if ad_sales > 0 else ""
+
+        rows_out.append([
+            date, asin, ad_spend, ad_sales,
+            total_sales_val, organic_sales,
+            tacos_pct, acos_pct, organic_share_pct,
+        ])
+
+    sh = get_sheet(tacos_sheet_name)
+    first_row = sh.row_values(1)
+    if not first_row or first_row[0] != "Date":
+        sh.update([headers], "A1")
+        print(f"  📝 Заголовки додано в '{tacos_sheet_name}'")
+
+    append(tacos_sheet_name, rows_out, headers)
+    print(f"  ✅ TACoS {market}: {len(rows_out)} ASIN оброблено")
+
+
+def cleanup_tacos(market: str):
+    """Видаляє записи TACoS старші 730 днів (24 місяці)."""
+    from datetime import datetime, timedelta
+    cutoff = datetime.now() - timedelta(days=730)
+    sheet_name = f"TACoS_{market}"
+
+    try:
+        sh = get_sheet(sheet_name)
+        rows = sh.get_all_values()
+        if len(rows) <= 1:
+            return
+
+        keep = [rows[0]]
+        removed = 0
+        for row in rows[1:]:
+            if not row or not row[0]:
+                continue
+            try:
+                row_date = datetime.strptime(row[0], "%Y-%m-%d")
+                if row_date < cutoff:
+                    removed += 1
+                    continue
+            except ValueError:
+                pass  # невідомий формат — лишаємо
+            keep.append(row)
+
+        if removed > 0:
+            sh.clear()
+            sh.update(keep, "A1")
+            print(f"  🧹 TACoS {market}: видалено {removed} записів старших 730 днів")
+    except Exception as e:
+        print(f"  ⚠️ cleanup_tacos {market}: {e}")
