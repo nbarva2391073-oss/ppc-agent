@@ -214,7 +214,7 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             t = get_access_token()
             data = wait_and_download(t, profile_id, report_ids["advertised_product"],
                                      token_fn=get_access_token)
-            write_advertised_product(data, week, market)
+            write_advertised_product(data, start_date, market)
         except Exception as e:
             print(f"  ❌ Advertised Product: {e}")
 
