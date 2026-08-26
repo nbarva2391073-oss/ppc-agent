@@ -79,5 +79,4 @@ def test_date(date, token):
 
 if __name__ == "__main__":
     token = get_token()
-    test_date("2026-07-06", token)  # день коли точно були дані
     test_date("2026-08-25", token)  # вчора, де 0 записів
