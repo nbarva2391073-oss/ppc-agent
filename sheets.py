@@ -935,7 +935,7 @@ def calculate_tacos(market: str, date: str):
     sh = get_sheet(tacos_sheet_name)
     existing = sh.get_all_values()
 
-    if not existing or existing[0][0] != "Date":
+    if not existing or not existing[0] or existing[0][0] != "Date":
         sh.clear()
         sh.update([headers] + rows_out, "A1")
         print(f"  📝 Заголовки додано в '{tacos_sheet_name}'")
