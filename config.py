@@ -72,6 +72,7 @@ SHEETS_USA = {
     "ai_recommendations":   "AI Recommendations USA",
     "dayparting":           "Dayparting USA",
     "competitor_tracker":   "Competitor Tracker USA",
+    "advertised_product":   "Advertised Product USA",
 }
 
 SHEETS_CA = {
@@ -83,6 +84,7 @@ SHEETS_CA = {
     "ai_recommendations":   "AI Recommendations CA",
     "dayparting":           "Dayparting CA",
     "competitor_tracker":   "Competitor Tracker CA",
+    "advertised_product":   "Advertised Product CA",
 }
 
 SHEETS_COMMON = {

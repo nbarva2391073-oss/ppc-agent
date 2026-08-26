@@ -776,3 +776,45 @@ def cleanup_raw_data(market: str):
 
     except Exception as e:
         print(f"  ❌ cleanup_raw_data {market}: {e}")
+
+
+# ── Advertised Product ──────────────────────────────────────
+
+def write_advertised_product(data: list[dict], week: str, market: str):
+    """
+    Продажі окремо по ASIN через рекламу (Advertised Product Report).
+    Основа для розрахунку TACoS та порівняння органіка/реклама.
+    """
+    sheets = SHEETS_USA if market == "USA" else SHEETS_CA
+    headers = ["Week", "Campaign", "Ad Group", "ASIN",
+               "Impressions", "Clicks", "Spend",
+               "Orders (Ad)", "Sales (Ad)", "ACoS%", "CPC"]
+    rows = []
+    for r in data:
+        spend = float(r.get("cost", 0))
+        sales = float(r.get("sales14d", 0))
+        clicks = int(r.get("clicks", 0))
+        rows.append([
+            week,
+            r.get("campaignName", ""),
+            r.get("adGroupName", ""),
+            r.get("advertisedAsin", ""),
+            r.get("impressions", 0),
+            clicks,
+            round(spend, 2),
+            r.get("purchases14d", 0),
+            round(sales, 2),
+            round(spend / sales * 100 if sales > 0 else 0, 1),
+            round(spend / clicks if clicks > 0 else 0, 2),
+        ])
+
+    sheet_name = sheets.get("advertised_product", f"Advertised Product {market}")
+    ensure_headers = _ensure_headers if "_ensure_headers" in globals() else None
+    sh = get_sheet(sheet_name)
+    first_row = sh.row_values(1)
+    if not first_row or first_row[0] != "Week":
+        sh.update([headers], "A1")
+        print(f"  📝 Заголовки додано в '{sheet_name}'")
+
+    append(sheet_name, rows, headers)
+    print(f"  ✅ Advertised Product {market}: {len(rows)} рядків")

@@ -15,7 +15,7 @@ from sheets import (
     write_bid_snapshot, write_placement_analysis,
     write_keyword_intelligence, write_weekly_summary,
     cleanup_bid_history, cleanup_raw_data,
-    read_suggested_bids,
+    read_suggested_bids, write_advertised_product,
 )
 from amazon_ads import get_suggested_bids
 
@@ -39,6 +39,11 @@ COLS_TARGETING = [
     "campaignName", "adGroupName", "matchType",
     "impressions", "clicks",
     "cost", "sales7d", "purchases7d", "costPerClick",
+]
+COLS_ADVERTISED_PRODUCT = [
+    "campaignName", "adGroupName", "advertisedAsin",
+    "impressions", "clicks",
+    "cost", "purchases14d", "sales14d",
 ]
 
 
@@ -109,6 +114,7 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
         ("search_term", "spSearchTerm", COLS_SEARCH_TERM, ["searchTerm"]),
         ("placement",   "spCampaigns",  COLS_PLACEMENT,   ["campaignPlacement"]),
         ("targeting",   "spTargeting",  COLS_TARGETING,   ["targeting"]),
+        ("advertised_product", "spAdvertisedProduct", COLS_ADVERTISED_PRODUCT, ["advertiser"]),
     ]:
         try:
             rid = submit_report(
@@ -200,6 +206,17 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             write_keyword_intelligence(kw_analysis, week, market)
         except Exception as e:
             print(f"  ❌ Targeting: {e}")
+
+    # Advertised Product → продажі по ASIN через рекламу
+    if "advertised_product" in report_ids:
+        try:
+            print(f"  → Чекаємо Advertised Product report...")
+            t = get_access_token()
+            data = wait_and_download(t, profile_id, report_ids["advertised_product"],
+                                     token_fn=get_access_token)
+            write_advertised_product(data, week, market)
+        except Exception as e:
+            print(f"  ❌ Advertised Product: {e}")
 
     return metrics
 
