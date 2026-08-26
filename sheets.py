@@ -933,13 +933,30 @@ def calculate_tacos(market: str, date: str):
         ])
 
     sh = get_sheet(tacos_sheet_name)
-    first_row = sh.row_values(1)
-    if not first_row or first_row[0] != "Date":
-        sh.update([headers], "A1")
-        print(f"  📝 Заголовки додано в '{tacos_sheet_name}'")
+    existing = sh.get_all_values()
 
-    append(tacos_sheet_name, rows_out, headers)
-    print(f"  ✅ TACoS {market}: {len(rows_out)} ASIN оброблено")
+    if not existing or existing[0][0] != "Date":
+        sh.clear()
+        sh.update([headers] + rows_out, "A1")
+        print(f"  📝 Заголовки додано в '{tacos_sheet_name}'")
+        print(f"  ✅ TACoS {market}: {len(rows_out)} ASIN записано")
+        return
+
+    kept = [existing[0]]
+    removed = 0
+    for row in existing[1:]:
+        if row and row[0] == date:
+            removed += 1
+            continue
+        kept.append(row)
+
+    if removed > 0:
+        print(f"  🔄 TACoS {market}: замінено {removed} старих рядків за {date}")
+
+    final_rows = kept + rows_out
+    sh.clear()
+    sh.update(final_rows, "A1")
+    print(f"  ✅ TACoS {market}: {len(rows_out)} ASIN записано")
 
 
 def cleanup_tacos(market: str):
