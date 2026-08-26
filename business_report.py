@@ -140,8 +140,6 @@ def download_and_parse(market: str, token: str, document_id: str) -> list:
             print(f"  🔍 Ключі відповіді: {list(data.keys())}")
             return []
         print(f"  ✅ Завантажено {len(records)} записів [{market}]")
-        if len(records) == 0:
-            print(f"  🔍 DEBUG: records порожній список. Повний JSON preview: {content[:1000]}")
         return records
     except Exception as e:
         print(f"  ❌ Помилка парсингу [{market}]: {e}")
