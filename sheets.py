@@ -894,8 +894,10 @@ def calculate_tacos(market: str, date: str):
     except Exception as e:
         print(f"  ⚠️ TACoS: не вдалось прочитати {biz_sheet_name}: {e}")
 
-    # Об'єднуємо всі ASIN з обох джерел
-    all_asins = set(adv_by_asin.keys()) | set(total_sales_by_asin.keys())
+    # Об'єднуємо всі ASIN з обох джерел — тільки наші активні ASIN
+    from amazon_ads import ASIN_PRICE_CONFIG
+    our_asins = set(ASIN_PRICE_CONFIG.keys())
+    all_asins = (set(adv_by_asin.keys()) | set(total_sales_by_asin.keys())) & our_asins
     if not all_asins:
         print(f"  ℹ️ TACoS {market}: немає даних за {date}")
         return
