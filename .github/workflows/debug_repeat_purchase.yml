@@ -1,0 +1,47 @@
+name: Debug Repeat Purchase
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Test Repeat Purchase request
+        env:
+          AMAZON_CLIENT_ID:         ${{ secrets.AMAZON_CLIENT_ID }}
+          AMAZON_CLIENT_SECRET:     ${{ secrets.AMAZON_CLIENT_SECRET }}
+          AMAZON_REFRESH_TOKEN_USA: ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
+          AMAZON_REFRESH_TOKEN_CA:  ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
+          GOOGLE_CREDENTIALS_JSON:  ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        run: |
+          python3 << 'PYEOF'
+          import time
+          from brand_analytics import get_access_token, request_repeat_purchase_report, check_report_status
+
+          market = "USA"
+          token = get_access_token(market)
+          report_id = request_repeat_purchase_report(market, token)
+
+          if report_id:
+              print(f"\n⏳ Чекаємо перед першою перевіркою...")
+              for i in range(6):
+                  time.sleep(15)
+                  result = check_report_status(market, token, report_id)
+                  if result["status"] in ("DONE", "FATAL", "CANCELLED"):
+                      break
+              print(f"\nФінальний результат: {result}")
+          PYEOF
