@@ -154,7 +154,9 @@ def format_rows(records: list, market: str, date: str) -> list:
         if not isinstance(r, dict):
             continue
 
-        asin         = r.get("parentAsin") or r.get("childAsin") or ""
+        # childAsin — реальний товар з конкретною ціною (те що в ASIN_PRICE_CONFIG).
+        # parentAsin — "парасолька" для варіацій, ним ніхто не торгує напряму.
+        asin         = r.get("childAsin") or r.get("parentAsin") or ""
         traffic      = r.get("trafficByAsin") or {}
         sales        = r.get("salesByAsin") or {}
 
