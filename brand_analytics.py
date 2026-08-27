@@ -272,6 +272,8 @@ def check_report_status(market: str, token: str, report_id: str) -> dict:
     status = data.get("processingStatus")
     document_id = data.get("reportDocumentId")
     print(f"⏳ Статус [{market}] report_id={report_id}: {status}")
+    if status in ("FATAL", "CANCELLED"):
+        print(f"🔍 DEBUG повна відповідь Amazon: {json.dumps(data, indent=2)}")
     return {"status": status, "document_id": document_id}
 
 
