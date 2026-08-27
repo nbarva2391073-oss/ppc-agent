@@ -393,7 +393,7 @@ def request_repeat_purchase_report(market: str, token: str) -> str:
     start, end = get_previous_month_dates()
 
     print(f"📅 Repeat Purchase період (попередній місяць): {start.strftime('%Y-%m-%d')} → {end.strftime('%Y-%m-%d')}")
-    print(f"🎯 {market}: запит по {len(REPEAT_PURCHASE_ASINS.split())} ASIN")
+    print(f"ℹ️ {market}: звіт по всьому бренду (asin параметр не підтримується цим reportType)")
 
     payload = {
         "reportType": "GET_BRAND_ANALYTICS_REPEAT_PURCHASE_REPORT",
@@ -401,7 +401,6 @@ def request_repeat_purchase_report(market: str, token: str) -> str:
         "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
         "reportOptions": {
             "reportPeriod": "MONTH",
-            "asin": REPEAT_PURCHASE_ASINS,
         },
         "marketplaceIds": [marketplace_id],
     }
