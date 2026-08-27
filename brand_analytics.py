@@ -371,3 +371,97 @@ def format_search_catalog_for_sheets(records: list, market: str) -> tuple:
         ])
 
     return headers, rows
+
+
+# ASIN для Repeat Purchase Report — всі 14 активних товарів (флагмани нестабільні,
+# тому беремо повний список замість жорсткого хардкоду 2-3 ASIN)
+REPEAT_PURCHASE_ASINS = (
+    "B0GYSJC1PM B0GYSB85SH B07TJW4Y94 B0G6VRGTPR B09NBB4QP7 "
+    "B07ZTJM5WJ B0GCBCW8RK B0G5QB4W6N B0FGJVGNTK B0FGJST2KJ "
+    "B0DHCR7D4W B09RBGJYXX B081T6QGD9 B07PTQKZ82"
+)
+
+
+def request_repeat_purchase_report(market: str, token: str) -> str:
+    """Запросити Repeat Purchase Behaviour звіт для всіх 14 активних ASIN.
+    reportPeriod=MONTH (порівняння QoQ/YoY робимо розрахунком поверх
+    накопичених місячних даних, не окремим API-запитом).
+    Повертає reportId."""
+    marketplace_id = MARKETPLACE_IDS[market]
+    start, end = get_previous_month_dates()
+
+    print(f"📅 Repeat Purchase період (попередній місяць): {start.strftime('%Y-%m-%d')} → {end.strftime('%Y-%m-%d')}")
+    print(f"🎯 {market}: запит по {len(REPEAT_PURCHASE_ASINS.split())} ASIN")
+
+    payload = {
+        "reportType": "GET_BRAND_ANALYTICS_REPEAT_PURCHASE_REPORT",
+        "dataStartTime": start.strftime("%Y-%m-%dT00:00:00Z"),
+        "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
+        "reportOptions": {
+            "reportPeriod": "MONTH",
+            "asin": REPEAT_PURCHASE_ASINS,
+        },
+        "marketplaceIds": [marketplace_id],
+    }
+
+    resp = requests.post(
+        f"{SP_API_BASE}/reports/2021-06-30/reports",
+        headers={
+            "x-amz-access-token": token,
+            "Content-Type": "application/json",
+        },
+        json=payload,
+    )
+
+    if resp.status_code != 202:
+        print(f"❌ Помилка запиту Repeat Purchase [{market}]: {resp.status_code} {resp.text}")
+        return None
+
+    report_id = resp.json().get("reportId")
+    print(f"📋 Repeat Purchase звіт запрошено [{market}]: {report_id}")
+    return report_id
+
+
+def format_repeat_purchase_for_sheets(records: list, market: str) -> tuple:
+    """Форматувати Repeat Purchase Behaviour для Google Sheets."""
+    headers = [
+        "Період", "ASIN",
+        "Purchases (Total)", "Purchases (Repeat)",
+        "Repeat Purchase %", "Purchasers (Total)", "Purchasers (Repeat)",
+        "Ринок"
+    ]
+
+    rows = []
+
+    for r in records:
+        if not isinstance(r, dict):
+            continue
+
+        start = r.get("startDate", "")
+        end = r.get("endDate", "")
+        try:
+            s = datetime.strptime(start, "%Y-%m-%d").strftime("%d.%m.%Y")
+            e = datetime.strptime(end, "%Y-%m-%d").strftime("%d.%m.%Y")
+            period = f"{s}-{e}"
+        except Exception:
+            period = f"{start}-{end}"
+
+        asin = r.get("asin", "")
+
+        # Структура полів може відрізнятись — беремо декілька можливих назв
+        purchase_data = r.get("repeatPurchaseData") or r.get("purchaseData") or {}
+
+        total_orders    = purchase_data.get("orderedProductSalesUnits") or purchase_data.get("totalPurchases", "")
+        repeat_orders    = purchase_data.get("repeatPurchases", "")
+        repeat_pct       = purchase_data.get("repeatPurchasePercentage", "")
+        total_purchasers = purchase_data.get("totalPurchasers", "")
+        repeat_purchasers = purchase_data.get("repeatPurchasers", "")
+
+        rows.append([
+            period, asin,
+            total_orders, repeat_orders,
+            repeat_pct, total_purchasers, repeat_purchasers,
+            market
+        ])
+
+    return headers, rows

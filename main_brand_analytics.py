@@ -4,6 +4,7 @@ from brand_analytics import (
     get_access_token,
     request_sqp_report, format_for_sheets,
     request_search_catalog_report, format_search_catalog_for_sheets,
+    request_repeat_purchase_report, format_repeat_purchase_for_sheets,
     check_report_status, download_report
 )
 from sheets import append, get_sheet, SHEETS_USA, SHEETS_CA
@@ -23,6 +24,7 @@ SHEETS_BY_MARKET = {"USA": SHEETS_USA, "CA": SHEETS_CA}
 
 SQP_SHEET = "keyword_intelligence"  # старий аркуш для SQP (як і раніше)
 SEARCH_CATALOG_SHEETS = {"USA": "BA_SearchCatalog_USA", "CA": "BA_SearchCatalog_CA"}
+REPEAT_PURCHASE_SHEETS = {"USA": "BA_RepeatPurchase_USA", "CA": "BA_RepeatPurchase_CA"}
 
 # Типи звітів, які ми збираємо. Кожен — окрема функція запиту і форматування.
 REPORT_TYPES = {
@@ -33,6 +35,10 @@ REPORT_TYPES = {
     "SEARCH_CATALOG": {
         "request_fn": request_search_catalog_report,
         "format_fn": format_search_catalog_for_sheets,
+    },
+    "REPEAT_PURCHASE": {
+        "request_fn": request_repeat_purchase_report,
+        "format_fn": format_repeat_purchase_for_sheets,
     },
 }
 
@@ -135,6 +141,9 @@ def run_fetch():
                     if report_type == "SEARCH_CATALOG":
                         headers, rows = format_search_catalog_for_sheets(records, market)
                         target_sheet = SEARCH_CATALOG_SHEETS[market]
+                    elif report_type == "REPEAT_PURCHASE":
+                        headers, rows = format_repeat_purchase_for_sheets(records, market)
+                        target_sheet = REPEAT_PURCHASE_SHEETS[market]
                     else:  # SQP
                         headers, rows = format_for_sheets(records, market)
                         target_sheet = SHEETS_BY_MARKET[market][SQP_SHEET]
