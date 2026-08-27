@@ -47,7 +47,7 @@ def get_access_token(market: str) -> str:
 
 
 def get_yesterday() -> str:
-    return "2026-08-25"  # TEMP: ручний перезапуск для конкретної дати
+    return (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
 
 
 def request_business_report(market: str, token: str, date: str) -> str:
