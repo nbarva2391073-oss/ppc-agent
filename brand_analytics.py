@@ -424,11 +424,17 @@ def request_repeat_purchase_report(market: str, token: str) -> str:
 
 
 def format_repeat_purchase_for_sheets(records: list, market: str) -> tuple:
-    """Форматувати Repeat Purchase Behaviour для Google Sheets."""
+    """Форматувати Repeat Purchase Behaviour для Google Sheets.
+    Реальна структура запису (перевірено на живих даних):
+    {startDate, endDate, asin, orders, uniqueCustomers,
+     repeatCustomersPctTotal, repeatPurchaseRevenue:{amount,currencyCode},
+     repeatPurchaseRevenuePctTotal}
+    """
     headers = [
         "Період", "ASIN",
-        "Purchases (Total)", "Purchases (Repeat)",
-        "Repeat Purchase %", "Purchasers (Total)", "Purchasers (Repeat)",
+        "Orders", "Unique Customers",
+        "Repeat Customers %", "Repeat Purchase Revenue",
+        "Repeat Purchase Revenue %",
         "Ринок"
     ]
 
@@ -448,20 +454,24 @@ def format_repeat_purchase_for_sheets(records: list, market: str) -> tuple:
             period = f"{start}-{end}"
 
         asin = r.get("asin", "")
+        orders = r.get("orders", "")
+        unique_customers = r.get("uniqueCustomers", "")
 
-        # Структура полів може відрізнятись — беремо декілька можливих назв
-        purchase_data = r.get("repeatPurchaseData") or r.get("purchaseData") or {}
+        repeat_pct = r.get("repeatCustomersPctTotal", "")
+        if isinstance(repeat_pct, (int, float)):
+            repeat_pct = round(repeat_pct * 100, 2)  # частка → відсоток
 
-        total_orders    = purchase_data.get("orderedProductSalesUnits") or purchase_data.get("totalPurchases", "")
-        repeat_orders    = purchase_data.get("repeatPurchases", "")
-        repeat_pct       = purchase_data.get("repeatPurchasePercentage", "")
-        total_purchasers = purchase_data.get("totalPurchasers", "")
-        repeat_purchasers = purchase_data.get("repeatPurchasers", "")
+        revenue_data = r.get("repeatPurchaseRevenue") or {}
+        revenue = revenue_data.get("amount", "") if isinstance(revenue_data, dict) else ""
+
+        revenue_pct = r.get("repeatPurchaseRevenuePctTotal", "")
+        if isinstance(revenue_pct, (int, float)):
+            revenue_pct = round(revenue_pct * 100, 2)
 
         rows.append([
             period, asin,
-            total_orders, repeat_orders,
-            repeat_pct, total_purchasers, repeat_purchasers,
+            orders, unique_customers,
+            repeat_pct, revenue, revenue_pct,
             market
         ])
 
