@@ -58,7 +58,13 @@ jobs:
                   print(f"Document metadata: {json.dumps(doc_data, indent=2)}")
 
                   if doc_data.get("url"):
+                      import gzip
                       file_resp = requests.get(doc_data["url"])
+                      compression = doc_data.get("compressionAlgorithm", "")
+                      if compression == "GZIP":
+                          content_text = gzip.decompress(file_resp.content).decode("utf-8")
+                      else:
+                          content_text = file_resp.text
                       print(f"\n🔍 Вміст документа (перші 2000 символів):")
-                      print(file_resp.text[:2000])
+                      print(content_text[:2000])
           PYEOF
