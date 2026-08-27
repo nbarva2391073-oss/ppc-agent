@@ -9,7 +9,7 @@ from sheets import calculate_tacos, cleanup_tacos
 
 
 def get_yesterday() -> str:
-    return "2026-08-25"  # TEMP: ручний перерахунок з правильними child ASIN
+    return (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
 
 
 def run_tacos():
