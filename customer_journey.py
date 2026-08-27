@@ -61,8 +61,6 @@ def list_files_recursive(folder_id: str, token: str) -> list:
             "pageSize": 200,
         },
     )
-    if resp.status_code != 200:
-        print(f"❌ Drive API помилка {resp.status_code}: {resp.text}")
     resp.raise_for_status()
     entries = resp.json().get("files", [])
 
