@@ -29,8 +29,8 @@ jobs:
           GOOGLE_CREDENTIALS_JSON:  ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
         run: |
           python3 << 'PYEOF'
-          import time
-          from brand_analytics import get_access_token, request_repeat_purchase_report, check_report_status
+          import time, requests, json
+          from brand_analytics import get_access_token, request_repeat_purchase_report, check_report_status, SP_API_BASE
 
           market = "USA"
           token = get_access_token(market)
@@ -38,10 +38,27 @@ jobs:
 
           if report_id:
               print(f"\n⏳ Чекаємо перед першою перевіркою...")
+              result = None
               for i in range(6):
                   time.sleep(15)
                   result = check_report_status(market, token, report_id)
                   if result["status"] in ("DONE", "FATAL", "CANCELLED"):
                       break
               print(f"\nФінальний результат: {result}")
+
+              doc_id = result.get("document_id")
+              if doc_id:
+                  print(f"\n🔍 Завантажуємо документ помилки: {doc_id}")
+                  resp = requests.get(
+                      f"{SP_API_BASE}/reports/2021-06-30/documents/{doc_id}",
+                      headers={"x-amz-access-token": token},
+                  )
+                  print(f"Document metadata status: {resp.status_code}")
+                  doc_data = resp.json()
+                  print(f"Document metadata: {json.dumps(doc_data, indent=2)}")
+
+                  if doc_data.get("url"):
+                      file_resp = requests.get(doc_data["url"])
+                      print(f"\n🔍 Вміст документа (перші 2000 символів):")
+                      print(file_resp.text[:2000])
           PYEOF
