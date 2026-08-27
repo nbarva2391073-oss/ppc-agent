@@ -476,3 +476,86 @@ def format_repeat_purchase_for_sheets(records: list, market: str) -> tuple:
         ])
 
     return headers, rows
+
+
+def request_market_basket_report(market: str, token: str) -> str:
+    """Запросити Market Basket Analysis звіт.
+    reportOptions приймає ТІЛЬКИ reportPeriod (без asin/asins —
+    Amazon поверне помилку, як і для Repeat Purchase).
+    Повертає reportId."""
+    marketplace_id = MARKETPLACE_IDS[market]
+    start, end = get_previous_month_dates()
+
+    print(f"📅 Market Basket період (попередній місяць): {start.strftime('%Y-%m-%d')} → {end.strftime('%Y-%m-%d')}")
+    print(f"ℹ️ {market}: звіт по всьому бренду (asin параметр не підтримується цим reportType)")
+
+    payload = {
+        "reportType": "GET_BRAND_ANALYTICS_MARKET_BASKET_REPORT",
+        "dataStartTime": start.strftime("%Y-%m-%dT00:00:00Z"),
+        "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
+        "reportOptions": {
+            "reportPeriod": "MONTH",
+        },
+        "marketplaceIds": [marketplace_id],
+    }
+
+    resp = requests.post(
+        f"{SP_API_BASE}/reports/2021-06-30/reports",
+        headers={
+            "x-amz-access-token": token,
+            "Content-Type": "application/json",
+        },
+        json=payload,
+    )
+
+    if resp.status_code != 202:
+        print(f"❌ Помилка запиту Market Basket [{market}]: {resp.status_code} {resp.text}")
+        return None
+
+    report_id = resp.json().get("reportId")
+    print(f"📋 Market Basket звіт запрошено [{market}]: {report_id}")
+    return report_id
+
+
+def format_market_basket_for_sheets(records: list, market: str) -> tuple:
+    """Форматувати Market Basket Analysis для Google Sheets.
+    Реальна структура запису (з офіційної схеми Amazon):
+    {startDate, endDate, asin, purchasedWithAsin, purchasedWithRank, combinationPct}
+    По одному рядку на кожну комбінацію товарів (ранг 1-3 на ASIN).
+    """
+    headers = [
+        "Період", "ASIN",
+        "Purchased With ASIN", "Rank", "Combination %",
+        "Ринок"
+    ]
+
+    rows = []
+
+    for r in records:
+        if not isinstance(r, dict):
+            continue
+
+        start = r.get("startDate", "")
+        end = r.get("endDate", "")
+        try:
+            s = datetime.strptime(start, "%Y-%m-%d").strftime("%d.%m.%Y")
+            e = datetime.strptime(end, "%Y-%m-%d").strftime("%d.%m.%Y")
+            period = f"{s}-{e}"
+        except Exception:
+            period = f"{start}-{end}"
+
+        asin = r.get("asin", "")
+        purchased_with = r.get("purchasedWithAsin", "")
+        rank = r.get("purchasedWithRank", "")
+
+        combo_pct = r.get("combinationPct", "")
+        if isinstance(combo_pct, (int, float)):
+            combo_pct = round(combo_pct * 100, 2)
+
+        rows.append([
+            period, asin,
+            purchased_with, rank, combo_pct,
+            market
+        ])
+
+    return headers, rows
