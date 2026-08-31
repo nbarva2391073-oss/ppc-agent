@@ -200,33 +200,50 @@ def run_business_report():
 
     for market in ["USA", "CA"]:
         print(f"\n🌎 {market}...")
-        try:
-            token     = get_access_token(market)
-            report_id = request_business_report(market, token, date)
-            if not report_id:
-                continue
 
-            document_id = wait_for_report(market, token, report_id)
-            if not document_id:
-                continue
+        # До 2 повторних спроб, якщо Amazon повертає DONE з 0 записів
+        # (транзієнтна поведінка Amazon API — не наш баг, підтверджено
+        # спостереженнями за 25.08 і 28.08: перша спроба 0 записів,
+        # повторна — реальні дані)
+        max_attempts = 3
+        records = []
+        for attempt in range(1, max_attempts + 1):
+            try:
+                token     = get_access_token(market)
+                report_id = request_business_report(market, token, date)
+                if not report_id:
+                    break
 
-            # Оновлюємо токен після очікування
-            token   = get_access_token(market)
-            records = download_and_parse(market, token, document_id)
-            if not records:
-                print(f"  ⚠️ [{market}] даних немає")
-                continue
+                document_id = wait_for_report(market, token, report_id)
+                if not document_id:
+                    break
 
-            rows        = format_rows(records, market, date)
-            sheet_name  = BUSINESS_REPORT_SHEETS[market]
-            ensure_headers(sheet_name, HEADERS_BR)
-            append(sheet_name, rows, HEADERS_BR)
-            print(f"  ✅ {market}: {len(rows)} записів збережено в '{sheet_name}'")
+                token   = get_access_token(market)
+                records = download_and_parse(market, token, document_id)
 
-        except Exception as e:
-            import traceback
-            print(f"  ❌ {market} помилка: {e}")
-            traceback.print_exc()
+                if records:
+                    break
+
+                if attempt < max_attempts:
+                    print(f"  ⚠️ [{market}] спроба {attempt}/{max_attempts}: 0 записів, повторюємо через 2 хв...")
+                    import time
+                    time.sleep(120)
+                else:
+                    print(f"  ⚠️ [{market}] всі {max_attempts} спроби дали 0 записів — даних дійсно немає")
+
+            except Exception as e:
+                import traceback
+                print(f"  ❌ {market} помилка (спроба {attempt}): {e}")
+                traceback.print_exc()
+
+        if not records:
+            continue
+
+        rows        = format_rows(records, market, date)
+        sheet_name  = BUSINESS_REPORT_SHEETS[market]
+        ensure_headers(sheet_name, HEADERS_BR)
+        append(sheet_name, rows, HEADERS_BR)
+        print(f"  ✅ {market}: {len(rows)} записів збережено в '{sheet_name}'")
 
     print("\n✅ BUSINESS REPORT ЗАВЕРШЕНО")
 
