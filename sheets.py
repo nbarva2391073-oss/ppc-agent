@@ -147,8 +147,11 @@ def write_raw_data(data: list[dict], week: str, market: str):
                "Orders", "CPC"]
     rows = []
     for r in data:
-        spend = float(r.get("spend", 0))
+        # ВИПРАВЛЕНО: Amazon Reporting API повертає 'cost', не 'spend'.
+        # Через це поле раніше завжди читалось як 0, попри реальні Clicks.
+        spend = float(r.get("cost") or r.get("spend") or 0)
         sales = float(r.get("sales7d", 0))
+        ctr_raw = r.get("clickThroughRate")
         rows.append([
             week,
             r.get("campaignName", ""),
@@ -159,7 +162,7 @@ def write_raw_data(data: list[dict], week: str, market: str):
             r.get("matchType", ""),
             r.get("impressions", 0),
             r.get("clicks", 0),
-            round(float(r.get("clickThroughRate", 0)) * 100, 2),
+            round(float(ctr_raw) * 100, 2) if ctr_raw else 0,
             round(spend, 2),
             round(sales, 2),
             round(spend / sales * 100 if sales > 0 else 0, 1),
