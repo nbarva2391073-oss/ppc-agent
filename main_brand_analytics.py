@@ -129,6 +129,9 @@ def run_fetch():
 
         pending_found += 1
         report_id = row[col_report_id]
+        # Прибираємо суфікс "-retry", доданий нашою retry-логікою —
+        # Amazon API має отримувати чистий report_id
+        clean_report_id = report_id[:-6] if report_id.endswith("-retry") else report_id
         market = row[col_market]
         report_type = row[col_report_type] if col_report_type is not None and len(row) > col_report_type and row[col_report_type] else "SQP"
 
@@ -136,7 +139,7 @@ def run_fetch():
 
         try:
             token = get_access_token(market)
-            result = check_report_status(market, token, report_id)
+            result = check_report_status(market, token, clean_report_id)
             report_status = result["status"]
 
             if report_status == "DONE":
@@ -170,8 +173,31 @@ def run_fetch():
                 sh.update_cell(i, col_done_date + 1, done_date)
 
             elif report_status in ("FATAL", "CANCELLED"):
-                sh.update_cell(i, col_status + 1, "помилка")
-                print(f"❌ {market}/{report_type}: звіт завершився статусом {report_status}")
+                # Retry: перезапитуємо той самий тип звіту замість того,
+                # щоб мовчки позначати "помилка" назавжди (як сталось
+                # 27.08 з REPEAT_PURCHASE — врятував лише ручний тригер).
+                # Ліміт спроб рахуємо по колонці "Дата запиту" — якщо
+                # цей рядок вже сам є результатом retry (позначено в
+                # Report ID суфіксом), більше не повторюємо.
+                already_retried = str(report_id).endswith("-retry")
+                if already_retried:
+                    sh.update_cell(i, col_status + 1, "помилка")
+                    print(f"❌ {market}/{report_type}: звіт завершився статусом {report_status} (retry вже був, більше не повторюємо)")
+                else:
+                    print(f"⚠️ {market}/{report_type}: звіт завершився {report_status}, повторюємо запит...")
+                    try:
+                        retry_id = REPORT_TYPES[report_type]["request_fn"](market, token)
+                        if retry_id:
+                            today_retry = datetime.utcnow().strftime("%Y-%m-%d %H:%M")
+                            sh.update_cell(i, col_report_id + 1, f"{retry_id}-retry")
+                            sh.update_cell(i, header.index("Дата запиту") + 1, today_retry)
+                            print(f"🔄 {market}/{report_type}: новий report_id={retry_id}, статус лишається 'очікує'")
+                        else:
+                            sh.update_cell(i, col_status + 1, "помилка")
+                            print(f"❌ {market}/{report_type}: retry не вдався запросити новий звіт")
+                    except Exception as retry_e:
+                        sh.update_cell(i, col_status + 1, "помилка")
+                        print(f"❌ {market}/{report_type}: retry помилка: {retry_e}")
 
             else:
                 print(f"⏳ {market}/{report_type}: ще не готовий ({report_status}), чекаємо наступного запуску")
