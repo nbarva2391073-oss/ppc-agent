@@ -180,14 +180,15 @@ def get_negative_keywords(token: str, profile_id: str) -> list[dict]:
 def _request_report(token: str, profile_id: str,
                     name: str, report_type: str,
                     columns: list, group_by: list,
-                    start_date: str, end_date: str) -> str:
+                    start_date: str, end_date: str,
+                    ad_product: str = "SPONSORED_PRODUCTS") -> str:
     url     = f"{ADS_BASE_URL}/reporting/reports"
     payload = {
         "name":      name,
         "startDate": start_date,
         "endDate":   end_date,
         "configuration": {
-            "adProduct":    "SPONSORED_PRODUCTS",
+            "adProduct":    ad_product,
             "groupBy":      group_by,
             "columns":      columns,
             "reportTypeId": report_type,
@@ -207,12 +208,14 @@ def _request_report(token: str, profile_id: str,
 def submit_report(token: str, profile_id: str,
                   name: str, report_type: str,
                   columns: list, group_by: list,
-                  start_date: str, end_date: str = None) -> str:
+                  start_date: str, end_date: str = None,
+                  ad_product: str = "SPONSORED_PRODUCTS") -> str:
     """Запустити звіт і одразу повернути report_id (без очікування)."""
     if end_date is None:
         end_date = start_date
     return _request_report(token, profile_id, name, report_type,
-                           columns, group_by, start_date, end_date)
+                           columns, group_by, start_date, end_date,
+                           ad_product=ad_product)
 
 
 def wait_and_download(token: str, profile_id: str,
