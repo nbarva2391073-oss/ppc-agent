@@ -81,7 +81,7 @@ if __name__ == "__main__":
 
     rid1 = test_report(
         "SB Campaign Test", "sbCampaigns",
-        ["campaignId", "campaignName", "impressions", "clicks", "cost", "sales14d", "purchases14d"],
+        ["campaignId", "campaignName", "campaignStatus", "impressions", "clicks", "cost", "sales", "purchases", "unitsSold", "newToBrandSales", "newToBrandPurchases"],
         ["campaign"], token,
     )
     if rid1:
@@ -89,7 +89,7 @@ if __name__ == "__main__":
 
     rid2 = test_report(
         "SB Search Term Test", "sbSearchTerm",
-        ["campaignId", "campaignName", "searchTerm", "impressions", "clicks", "cost", "sales14d", "purchases14d"],
+        ["campaignId", "campaignName", "adGroupName", "keywordText", "matchType", "searchTerm", "impressions", "clicks", "cost", "sales", "purchases", "unitsSold"],
         ["searchTerm"], token,
     )
     if rid2:
