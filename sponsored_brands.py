@@ -149,6 +149,10 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
         print(f"  ❌ SB Campaign {market}: {e}")
         traceback.print_exc()
 
+    # Пауза перед другим запитом, щоб зменшити ризик 429 Throttled
+    import time
+    time.sleep(65)
+
     # Search Term report
     try:
         report_id = submit_report(
