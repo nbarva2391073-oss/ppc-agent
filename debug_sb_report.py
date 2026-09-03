@@ -48,7 +48,7 @@ def test_report(name, report_type_id, columns, group_by, token):
         json=payload,
     )
     print(f"📥 Submit status: {resp.status_code}")
-    print(f"   Body: {resp.text[:300]}")
+    print(f"   Body: {resp.text}")
 
     if resp.status_code != 202:
         return None
