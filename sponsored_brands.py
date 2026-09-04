@@ -139,7 +139,7 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
             ad_product="SPONSORED_BRANDS",
         )
         t = get_access_token()
-        data = wait_and_download(t, profile_id, report_id, token_fn=get_access_token)
+        data = wait_and_download(t, profile_id, report_id, max_wait=600, token_fn=get_access_token)
         headers_out, rows = format_sb_campaign_for_sheets(data, week, market)
         ensure_headers(SB_CAMPAIGN_SHEET, headers_out)
         append(SB_CAMPAIGN_SHEET, rows, headers_out)
@@ -163,7 +163,7 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
             ad_product="SPONSORED_BRANDS",
         )
         t = get_access_token()
-        data = wait_and_download(t, profile_id, report_id, token_fn=get_access_token)
+        data = wait_and_download(t, profile_id, report_id, max_wait=600, token_fn=get_access_token)
         headers_out, rows = format_sb_search_term_for_sheets(data, week, market)
         ensure_headers(SB_SEARCH_TERM_SHEET, headers_out)
         append(SB_SEARCH_TERM_SHEET, rows, headers_out)
