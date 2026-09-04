@@ -36,7 +36,16 @@ for rid in OLD_REPORT_IDS:
             "Amazon-Advertising-API-Scope": str(ADS_PROFILE_ID_USA),
         },
     )
+    import json
     print(f"report_id={rid}")
     print(f"  status_code={resp.status_code}")
-    print(f"  body={resp.text[:400]}")
+    try:
+        data = resp.json()
+        print(f"  status={data.get('status')}")
+        print(f"  failureReason={data.get('failureReason')}")
+        print(f"  url={'є' if data.get('url') else 'немає'}")
+        print(f"  fileSize={data.get('fileSize')}")
+        print(f"  generatedAt={data.get('generatedAt')}")
+    except Exception as e:
+        print(f"  parse error: {e}, raw: {resp.text[:400]}")
     print()
