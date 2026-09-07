@@ -131,13 +131,25 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
 
     # Campaign report
     try:
-        report_id = submit_report(
-            token, profile_id,
-            f"SB Campaign {start_date}", "sbCampaigns",
-            COLS_SB_CAMPAIGN, ["campaign"],
-            start_date, end_date,
-            ad_product="SPONSORED_BRANDS",
-        )
+        try:
+            report_id = submit_report(
+                token, profile_id,
+                f"SB Campaign {start_date}", "sbCampaigns",
+                COLS_SB_CAMPAIGN, ["campaign"],
+                start_date, end_date,
+                ad_product="SPONSORED_BRANDS",
+            )
+        except Exception as submit_e:
+            # 425 duplicate — Amazon вже має звіт за цей самий період,
+            # витягуємо його report_id і перевикористовуємо замість помилки
+            import re
+            m = re.search(r"duplicate of\s*:\s*([\w-]+)", str(submit_e))
+            if m:
+                report_id = m.group(1)
+                print(f"  ℹ️ SB Campaign {market}: duplicate, перевикористовуємо report_id={report_id}")
+            else:
+                raise
+
         t = get_access_token()
         data = wait_and_download(t, profile_id, report_id, max_wait=2700, token_fn=get_access_token)
         headers_out, rows = format_sb_campaign_for_sheets(data, week, market)
