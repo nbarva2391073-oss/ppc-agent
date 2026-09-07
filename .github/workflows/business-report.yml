@@ -3,7 +3,7 @@ name: Business Report
 on:
   schedule:
     # Щодня о 09:00 UTC (після того як Amazon оновлює дані за вчора)
-    - cron: '0 9 * * *'
+    - cron: '0 14 * * *'
   workflow_dispatch: {}
 
 jobs:
