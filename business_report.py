@@ -221,15 +221,38 @@ def run_business_report():
                 token   = get_access_token(market)
                 records = download_and_parse(market, token, document_id)
 
+                # Перевіряємо чи звіт "неповний": є записи (продажі вже
+                # консолідовані), але трафік (Sessions) ще не встиг
+                # обробитись на боці Amazon — це той самий клас транзієнтної
+                # проблеми, що й "0 записів", просто виявляється пізніше
+                # в циклі. Умова навмисно сувора: ВСІ рядки одночасно
+                # мають Sessions=0 — один ASIN з натуральним 0 сесій
+                # (є не рідкість) не повинен тригерити retry.
+                traffic_incomplete = False
                 if records:
+                    sessions_values = [
+                        r.get("trafficByAsin", {}).get("sessions", 0)
+                        for r in records
+                    ]
+                    if sessions_values and all(v == 0 for v in sessions_values):
+                        traffic_incomplete = True
+
+                if records and not traffic_incomplete:
                     break
 
                 if attempt < max_attempts:
-                    print(f"  ⚠️ [{market}] спроба {attempt}/{max_attempts}: 0 записів, повторюємо через 2 хв...")
+                    if not records:
+                        print(f"  ⚠️ [{market}] спроба {attempt}/{max_attempts}: 0 записів, повторюємо через 2 хв...")
+                    else:
+                        print(f"  ⚠️ [{market}] спроба {attempt}/{max_attempts}: всі Sessions=0 (трафік ще не консолідовано), повторюємо через 2 хв...")
                     import time
                     time.sleep(120)
+                    records = []
                 else:
-                    print(f"  ⚠️ [{market}] всі {max_attempts} спроби дали 0 записів — даних дійсно немає")
+                    if not records:
+                        print(f"  ⚠️ [{market}] всі {max_attempts} спроби дали 0 записів — даних дійсно немає")
+                    else:
+                        print(f"  ⚠️ [{market}] всі {max_attempts} спроби мають Sessions=0 — зберігаємо як є (можливо реальний день без трафіку)")
 
             except Exception as e:
                 import traceback
