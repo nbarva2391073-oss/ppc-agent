@@ -47,7 +47,7 @@ def get_access_token(market: str) -> str:
 
 
 def get_yesterday() -> str:
-    return (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
+    return "2026-09-07"  # TEMP: перезапит через неповний трафік (Sessions=0)
 
 
 def request_business_report(market: str, token: str, date: str) -> str:
