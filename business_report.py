@@ -296,6 +296,7 @@ def run_business_report():
         fetch_and_store_day(market, target_date)
 
     print("\n🔄 Catch-up: перевіряємо попередні дні на неповноту...")
+    import time
     for market in ["USA", "CA"]:
         for date in get_catchup_dates():
             if date == target_date:
@@ -303,6 +304,7 @@ def run_business_report():
             if sheet_date_is_incomplete(market, date):
                 print(f"\n  🔁 [{market}] {date}: неповний/відсутній, пробуємо дозаповнити")
                 fetch_and_store_day(market, date)
+                time.sleep(70)  # уникаємо 429 QuotaExceeded між запитами
 
     print("\n✅ BUSINESS REPORT ЗАВЕРШЕНО")
 
