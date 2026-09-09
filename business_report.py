@@ -46,8 +46,38 @@ def get_access_token(market: str) -> str:
     return resp.json()["access_token"]
 
 
-def get_yesterday() -> str:
-    return "2026-09-07"  # TEMP: перезапит через неповний трафік (Sessions=0)
+def get_target_date() -> str:
+    """
+    Amazon консолідує Sales and Traffic Report із затримкою ~1-2 доби
+    (підтверджено емпірично: дані за день D ще мають Sessions=0 навіть
+    через добу, стають повними тільки через 2 доби). Тому основний
+    щоденний запит йде за ПОЗАВЧОРА, не вчора.
+    """
+    return (datetime.utcnow() - timedelta(days=2)).strftime("%Y-%m-%d")
+
+
+def get_catchup_dates(days_back: int = 5) -> list:
+    """Останні N днів (окрім today і target_date) — кандидати на catch-up,
+    якщо раніше записались неповними (Sessions=0) чи не записались зовсім."""
+    today = datetime.utcnow()
+    return [(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(2, days_back + 2)]
+
+
+def sheet_date_is_incomplete(market: str, date: str) -> bool:
+    """True якщо дня немає в Sheets, або він є але ВСІ рядки мають Sessions=0."""
+    sheet_name = BUSINESS_REPORT_SHEETS[market]
+    try:
+        sh = get_sheet(sheet_name)
+        rows = sh.get_all_values()
+    except Exception:
+        return True
+
+    day_rows = [r for r in rows[1:] if r and r[0] == date]
+    if not day_rows:
+        return True  # дня взагалі немає
+
+    sessions_col = HEADERS_BR.index("Sessions")
+    return all(r[sessions_col] == "0" for r in day_rows if len(r) > sessions_col)
 
 
 def request_business_report(market: str, token: str, date: str) -> str:
@@ -188,85 +218,91 @@ def ensure_headers(sheet_name: str, headers: list):
         print(f"  📝 Заголовки додано в '{sheet_name}'")
 
 
+def fetch_and_store_day(market: str, date: str) -> bool:
+    """
+    Запитує Business Report за ОДИН день, і якщо результат повний
+    (є записи, не всі Sessions=0) — записує в Sheets з upsert
+    (видаляє старі рядки цього дня перед додаванням нових).
+    Повертає True якщо день записано як повний.
+    """
+    try:
+        token     = get_access_token(market)
+        report_id = request_business_report(market, token, date)
+        if not report_id:
+            print(f"  ❌ [{market}] {date}: не вдалось запросити звіт")
+            return False
+
+        document_id = wait_for_report(market, token, report_id)
+        if not document_id:
+            print(f"  ❌ [{market}] {date}: звіт не готовий")
+            return False
+
+        token   = get_access_token(market)
+        records = download_and_parse(market, token, document_id)
+
+        if not records:
+            print(f"  ⚠️ [{market}] {date}: 0 записів")
+            return False
+
+        sessions_values = [r.get("trafficByAsin", {}).get("sessions", 0) for r in records]
+        is_complete = not (sessions_values and all(v == 0 for v in sessions_values))
+
+        rows       = format_rows(records, market, date)
+        sheet_name = BUSINESS_REPORT_SHEETS[market]
+        ensure_headers(sheet_name, HEADERS_BR)
+
+        # Upsert: видаляємо старі рядки цього дня (якщо були неповні
+        # з попереднього запуску), записуємо нові
+        sh = get_sheet(sheet_name)
+        existing = sh.get_all_values()
+        kept = [existing[0]] if existing else [HEADERS_BR]
+        for r in existing[1:]:
+            if r and r[0] == date:
+                continue
+            kept.append(r)
+        kept.extend(rows)
+        sh.clear()
+        sh.update(kept, "A1")
+
+        status = "повні" if is_complete else "Sessions=0 (неповні, дозаповнимо пізніше)"
+        print(f"  ✅ [{market}] {date}: {len(rows)} записів ({status})")
+        return is_complete
+
+    except Exception as e:
+        import traceback
+        print(f"  ❌ [{market}] {date} помилка: {e}")
+        traceback.print_exc()
+        return False
+
+
 def run_business_report():
-    """Головна функція — запускається з GitHub Actions щодня."""
+    """
+    Головна функція — запускається з GitHub Actions щодня.
+    Amazon консолідує Sales and Traffic Report із затримкою ~1-2 доби,
+    тому: (1) основний запит іде за ПОЗАВЧОРА, не вчора; (2) додатково
+    catch-up перевіряє останні кілька днів і дозаповнює ті, що раніше
+    записались неповними (Sessions=0) чи не записались зовсім.
+    """
     print("=" * 60)
     print(f"📊 BUSINESS REPORT — ЗБІР ДАНИХ")
     print(f"   {datetime.now().strftime('%d.%m.%Y %H:%M')}")
     print("=" * 60)
 
-    date = get_yesterday()
-    print(f"📅 Дата: {date}")
+    target_date = get_target_date()
+    print(f"📅 Основна дата (позавчора): {target_date}")
 
     for market in ["USA", "CA"]:
         print(f"\n🌎 {market}...")
+        fetch_and_store_day(market, target_date)
 
-        # До 2 повторних спроб, якщо Amazon повертає DONE з 0 записів
-        # (транзієнтна поведінка Amazon API — не наш баг, підтверджено
-        # спостереженнями за 25.08 і 28.08: перша спроба 0 записів,
-        # повторна — реальні дані)
-        max_attempts = 3
-        records = []
-        for attempt in range(1, max_attempts + 1):
-            try:
-                token     = get_access_token(market)
-                report_id = request_business_report(market, token, date)
-                if not report_id:
-                    break
-
-                document_id = wait_for_report(market, token, report_id)
-                if not document_id:
-                    break
-
-                token   = get_access_token(market)
-                records = download_and_parse(market, token, document_id)
-
-                # Перевіряємо чи звіт "неповний": є записи (продажі вже
-                # консолідовані), але трафік (Sessions) ще не встиг
-                # обробитись на боці Amazon — це той самий клас транзієнтної
-                # проблеми, що й "0 записів", просто виявляється пізніше
-                # в циклі. Умова навмисно сувора: ВСІ рядки одночасно
-                # мають Sessions=0 — один ASIN з натуральним 0 сесій
-                # (є не рідкість) не повинен тригерити retry.
-                traffic_incomplete = False
-                if records:
-                    sessions_values = [
-                        r.get("trafficByAsin", {}).get("sessions", 0)
-                        for r in records
-                    ]
-                    if sessions_values and all(v == 0 for v in sessions_values):
-                        traffic_incomplete = True
-
-                if records and not traffic_incomplete:
-                    break
-
-                if attempt < max_attempts:
-                    if not records:
-                        print(f"  ⚠️ [{market}] спроба {attempt}/{max_attempts}: 0 записів, повторюємо через 2 хв...")
-                    else:
-                        print(f"  ⚠️ [{market}] спроба {attempt}/{max_attempts}: всі Sessions=0 (трафік ще не консолідовано), повторюємо через 2 хв...")
-                    import time
-                    time.sleep(120)
-                    records = []
-                else:
-                    if not records:
-                        print(f"  ⚠️ [{market}] всі {max_attempts} спроби дали 0 записів — даних дійсно немає")
-                    else:
-                        print(f"  ⚠️ [{market}] всі {max_attempts} спроби мають Sessions=0 — зберігаємо як є (можливо реальний день без трафіку)")
-
-            except Exception as e:
-                import traceback
-                print(f"  ❌ {market} помилка (спроба {attempt}): {e}")
-                traceback.print_exc()
-
-        if not records:
-            continue
-
-        rows        = format_rows(records, market, date)
-        sheet_name  = BUSINESS_REPORT_SHEETS[market]
-        ensure_headers(sheet_name, HEADERS_BR)
-        append(sheet_name, rows, HEADERS_BR)
-        print(f"  ✅ {market}: {len(rows)} записів збережено в '{sheet_name}'")
+    print("\n🔄 Catch-up: перевіряємо попередні дні на неповноту...")
+    for market in ["USA", "CA"]:
+        for date in get_catchup_dates():
+            if date == target_date:
+                continue
+            if sheet_date_is_incomplete(market, date):
+                print(f"\n  🔁 [{market}] {date}: неповний/відсутній, пробуємо дозаповнити")
+                fetch_and_store_day(market, date)
 
     print("\n✅ BUSINESS REPORT ЗАВЕРШЕНО")
 
