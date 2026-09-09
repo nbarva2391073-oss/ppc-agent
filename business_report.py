@@ -291,12 +291,13 @@ def run_business_report():
     target_date = get_target_date()
     print(f"📅 Основна дата (позавчора): {target_date}")
 
+    import time
     for market in ["USA", "CA"]:
         print(f"\n🌎 {market}...")
         fetch_and_store_day(market, target_date)
+        time.sleep(70)  # уникаємо 429 QuotaExceeded між ринками
 
     print("\n🔄 Catch-up: перевіряємо попередні дні на неповноту...")
-    import time
     for market in ["USA", "CA"]:
         for date in get_catchup_dates():
             if date == target_date:
