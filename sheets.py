@@ -582,10 +582,18 @@ def write_keyword_intelligence(keywords_analysis: list[dict],
 
     header_row = existing[0]
     if "Run Date" not in header_row:
-        # Старий формат без Run Date — не можемо коректно робити upsert,
-        # просто дописуємо (backward compatibility для вже існуючих даних)
-        append(sheet_name, rows, headers)
-        return
+        # Старий формат без Run Date — мігруємо: додаємо порожню колонку
+        # Run Date до всіх існуючих рядків, оновлюємо заголовок, тоді
+        # продовжуємо upsert як звичайно. НІКОЛИ просто не append'имо
+        # нові 18-колонкові рядки в старий 17-колонковий аркуш — зсуває
+        # всі значення на одну позицію.
+        migrated = [headers]
+        for row in existing[1:]:
+            # вставляємо порожній Run Date на позицію 4 (після Campaign)
+            migrated_row = row[:4] + [""] + row[4:]
+            migrated.append(migrated_row)
+        existing = migrated
+        header_row = headers
 
     idx_week   = header_row.index("Week")
     idx_kw     = header_row.index("Keyword")
