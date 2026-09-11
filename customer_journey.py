@@ -168,7 +168,20 @@ def upsert_rows(sheet_name: str, headers: list, rows: list, key_cols: list):
 
 
 def process_trends(name: str, content: str):
-    headers, rows = parse_csv_skip_meta(content)
+    """
+    На відміну від Demographics/TopSearchTerms, Trends CSV НЕ має
+    мета-рядка попереду — заголовок одразу на рядку 1. Використання
+    parse_csv_skip_meta() тут раніше з'їдало справжній заголовок
+    (Date, Total Customers, ...) і підставляло замість нього перший
+    рядок даних — назавжди ламало структуру BA_Trends_USA.
+    """
+    import csv, io
+    reader = list(csv.reader(io.StringIO(content)))
+    if len(reader) < 2:
+        print(f"  ⚠️ '{name}': порожній файл")
+        return
+    headers = reader[0]
+    rows = reader[1:]
     if not headers or not rows:
         print(f"  ⚠️ '{name}': порожній файл")
         return
