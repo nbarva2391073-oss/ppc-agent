@@ -526,14 +526,27 @@ def write_campaign_analysis(metrics: dict, week: str, market: str):
 # ── Keyword Intelligence ──────────────────────────────────────
 
 def write_keyword_intelligence(keywords_analysis: list[dict],
-                                week: str, market: str):
+                                week: str, market: str, run_date: str = None):
+    """
+    Кожен виклик передає дані ОДНОГО дня (targeting-звіт monitor.py
+    запитує тільки за вчора). Щоб повторний запуск того самого дня
+    (ручний тест, retry) не дублював рядки і не накручував Sales/Orders
+    у тижневому підсумку — робимо upsert по (Week, Keyword, Match Type,
+    Campaign, Run Date): видаляємо старий рядок з тим самим ключем
+    перед записом нового.
+    """
     sheets = SHEETS_USA if market == "USA" else SHEETS_CA
-    headers = ["Week", "Keyword", "Match Type", "Campaign",
+    headers = ["Week", "Keyword", "Match Type", "Campaign", "Run Date",
                "Impressions", "Clicks", "Orders",
                "Spend", "Sales", "ACoS%", "ROAS",
                "Lifetime Sales", "Weeks Active",
                "Status", "Recommendation",
                "Listing Indexed", "Action"]
+
+    if run_date is None:
+        from datetime import datetime
+        run_date = datetime.utcnow().strftime("%Y-%m-%d")
+
     rows = []
     for kw in keywords_analysis:
         rows.append([
@@ -541,6 +554,7 @@ def write_keyword_intelligence(keywords_analysis: list[dict],
             kw.get("keyword", ""),
             kw.get("match_type", ""),
             kw.get("campaign", ""),
+            run_date,
             kw.get("impressions", 0),
             kw.get("clicks", 0),
             kw.get("orders", 0),
@@ -555,7 +569,50 @@ def write_keyword_intelligence(keywords_analysis: list[dict],
             kw.get("listing_indexed", ""),
             kw.get("action", ""),
         ])
-    append(sheets["keyword_intelligence"], rows, headers)
+
+    sheet_name = sheets["keyword_intelligence"]
+    sh = get_sheet(sheet_name)
+    existing = sh.get_all_values()
+
+    if not existing or not existing[0] or existing[0][0] != "Week":
+        sh.clear()
+        sh.update([headers] + rows, "A1")
+        print(f"  📝 '{sheet_name}': заголовки (з Run Date) + {len(rows)} рядків записано")
+        return
+
+    header_row = existing[0]
+    if "Run Date" not in header_row:
+        # Старий формат без Run Date — не можемо коректно робити upsert,
+        # просто дописуємо (backward compatibility для вже існуючих даних)
+        append(sheet_name, rows, headers)
+        return
+
+    idx_week   = header_row.index("Week")
+    idx_kw     = header_row.index("Keyword")
+    idx_match  = header_row.index("Match Type")
+    idx_camp   = header_row.index("Campaign")
+    idx_rundate = header_row.index("Run Date")
+
+    def key_of(row):
+        return (row[idx_week], row[idx_kw], row[idx_match], row[idx_camp], row[idx_rundate])
+
+    new_keys = {(week, r[1], r[2], r[3], run_date) for r in rows}
+
+    kept = [header_row]
+    removed = 0
+    for row in existing[1:]:
+        if len(row) > idx_rundate and key_of(row) in new_keys:
+            removed += 1
+            continue
+        kept.append(row)
+
+    if removed:
+        print(f"  🔄 '{sheet_name}': замінено {removed} рядків за {run_date} (upsert)")
+
+    final_rows = kept + rows
+    sh.clear()
+    sh.update(final_rows, "A1")
+    print(f"  ✅ '{sheet_name}': {len(rows)} рядків записано")
     print(f"  ✅ Keyword Intelligence {market}: {len(rows)} рядків")
 
 

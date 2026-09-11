@@ -203,7 +203,7 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             data        = wait_and_download(t, profile_id, report_ids["targeting"],
                                             token_fn=get_access_token)
             kw_analysis = _build_keyword_rows(data)
-            write_keyword_intelligence(kw_analysis, week, market)
+            write_keyword_intelligence(kw_analysis, week, market, run_date=start_date)
         except Exception as e:
             print(f"  ❌ Targeting: {e}")
 
