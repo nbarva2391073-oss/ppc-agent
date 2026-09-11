@@ -54,6 +54,45 @@ def get_sb_campaigns(token: str, profile_id: str) -> list:
     return campaigns
 
 
+def upsert_rows(sheet_name: str, headers_row: list, new_rows: list, key_cols: list):
+    """
+    Видаляє старі рядки з тим самим ключем (key_cols) перед записом
+    нових — запобігає дублюванню при повторному запуску того самого
+    тижня (ручний тест, workflow rerun, 425-duplicate reuse).
+    """
+    sh = get_sheet(sheet_name)
+    existing = sh.get_all_values()
+
+    if not existing or not existing[0] or existing[0] != headers_row:
+        sh.clear()
+        sh.update([headers_row] + new_rows, "A1")
+        print(f"  📝 '{sheet_name}': заголовки + {len(new_rows)} рядків записано")
+        return
+
+    idxs = [headers_row.index(c) for c in key_cols]
+
+    def key_of(row):
+        return tuple(row[i] if i < len(row) else "" for i in idxs)
+
+    new_keys = {key_of(r) for r in new_rows}
+
+    kept = [existing[0]]
+    removed = 0
+    for row in existing[1:]:
+        if key_of(row) in new_keys:
+            removed += 1
+            continue
+        kept.append(row)
+
+    if removed:
+        print(f"  🔄 '{sheet_name}': замінено {removed} старих рядків (upsert)")
+
+    final_rows = kept + new_rows
+    sh.clear()
+    sh.update(final_rows, "A1")
+    print(f"  ✅ '{sheet_name}': {len(new_rows)} рядків записано")
+
+
 def ensure_headers(sheet_name: str, headers_row: list):
     sh = get_sheet(sheet_name)
     first_row = sh.row_values(1)
@@ -153,9 +192,7 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
         t = get_access_token()
         data = wait_and_download(t, profile_id, report_id, max_wait=2700, token_fn=get_access_token)
         headers_out, rows = format_sb_campaign_for_sheets(data, week, market)
-        ensure_headers(SB_CAMPAIGN_SHEET, headers_out)
-        append(SB_CAMPAIGN_SHEET, rows, headers_out)
-        print(f"  ✅ SB Campaign {market}: {len(rows)} рядків")
+        upsert_rows(SB_CAMPAIGN_SHEET, headers_out, rows, key_cols=["Week", "Campaign"])
     except Exception as e:
         import traceback
         print(f"  ❌ SB Campaign {market}: {e}")
@@ -177,9 +214,8 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
         t = get_access_token()
         data = wait_and_download(t, profile_id, report_id, max_wait=2700, token_fn=get_access_token)
         headers_out, rows = format_sb_search_term_for_sheets(data, week, market)
-        ensure_headers(SB_SEARCH_TERM_SHEET, headers_out)
-        append(SB_SEARCH_TERM_SHEET, rows, headers_out)
-        print(f"  ✅ SB Search Term {market}: {len(rows)} рядків")
+        upsert_rows(SB_SEARCH_TERM_SHEET, headers_out, rows,
+                    key_cols=["Week", "Campaign", "Ad Group", "Search Term"])
     except Exception as e:
         import traceback
         print(f"  ❌ SB Search Term {market}: {e}")
