@@ -37,6 +37,7 @@ COLS_PLACEMENT = [
 ]
 COLS_TARGETING = [
     "campaignName", "adGroupName", "matchType",
+    "keyword", "targeting",
     "impressions", "clicks",
     "cost", "sales7d", "purchases7d", "costPerClick",
 ]
@@ -226,7 +227,7 @@ def _build_keyword_rows(targeting_data: list) -> list:
     by_kw = {}
     for r in targeting_data:
         key = (
-            r.get("keyword") or r.get("targetingExpression", ""),
+            r.get("keyword") or r.get("targeting", ""),
             r.get("matchType", ""),
             r.get("campaignName", ""),
         )
