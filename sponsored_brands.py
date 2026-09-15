@@ -190,7 +190,7 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
                 raise
 
         t = get_access_token()
-        data = wait_and_download(t, profile_id, report_id, max_wait=2700, token_fn=get_access_token)
+        data = wait_and_download(t, profile_id, report_id, max_wait=2400, token_fn=get_access_token)
         headers_out, rows = format_sb_campaign_for_sheets(data, week, market)
         upsert_rows(SB_CAMPAIGN_SHEET, headers_out, rows, key_cols=["Week", "Campaign"])
     except Exception as e:
@@ -212,7 +212,7 @@ def collect_sponsored_brands(profile_id: str, market: str, week: str,
             ad_product="SPONSORED_BRANDS",
         )
         t = get_access_token()
-        data = wait_and_download(t, profile_id, report_id, max_wait=2700, token_fn=get_access_token)
+        data = wait_and_download(t, profile_id, report_id, max_wait=2400, token_fn=get_access_token)
         headers_out, rows = format_sb_search_term_for_sheets(data, week, market)
         upsert_rows(SB_SEARCH_TERM_SHEET, headers_out, rows,
                     key_cols=["Week", "Campaign", "Ad Group", "Search Term"])

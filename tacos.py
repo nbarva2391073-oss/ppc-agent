@@ -16,7 +16,7 @@ def get_target_date() -> str:
     return (datetime.utcnow() - timedelta(days=2)).strftime("%Y-%m-%d")
 
 
-def get_catchup_dates(days_back: int = 5) -> list:
+def get_catchup_dates(days_back: int = 2) -> list:
     today = datetime.utcnow()
     return [(today - timedelta(days=i)).strftime("%Y-%m-%d") for i in range(2, days_back + 2)]
 

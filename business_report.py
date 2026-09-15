@@ -56,7 +56,7 @@ def get_target_date() -> str:
     return (datetime.utcnow() - timedelta(days=2)).strftime("%Y-%m-%d")
 
 
-def get_catchup_dates(days_back: int = 5) -> list:
+def get_catchup_dates(days_back: int = 2) -> list:
     """Останні N днів (окрім today і target_date) — кандидати на catch-up,
     якщо раніше записались неповними (Sessions=0) чи не записались зовсім."""
     today = datetime.utcnow()
