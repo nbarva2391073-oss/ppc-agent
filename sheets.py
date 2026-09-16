@@ -519,8 +519,37 @@ def write_campaign_analysis(metrics: dict, week: str, market: str):
             status,
             "⚠️ Бюджет вичерпано" if name in budget_issues else "",
         ])
-    append(sheets["campaign_analysis"], rows, headers)
-    print(f"  ✅ Campaign Analysis {market}: {len(rows)} рядків")
+
+    # Upsert по (Week, Campaign) — щоденний виклик monitor.py пише під
+    # тижневою міткою, чистий append дублював рядки при кожному запуску
+    # (навіть штатному щоденному) замість накопичення в один фінальний
+    # тижневий рядок.
+    sheet_name = sheets["campaign_analysis"]
+    sh = get_sheet(sheet_name)
+    existing = sh.get_all_values()
+
+    if not existing or not existing[0] or existing[0] != headers:
+        sh.clear()
+        sh.update([headers] + rows, "A1")
+        print(f"  📝 Campaign Analysis {market}: заголовки + {len(rows)} рядків записано")
+        return
+
+    new_keys = {(week, r[1]) for r in rows}
+    kept = [existing[0]]
+    removed = 0
+    for row in existing[1:]:
+        if len(row) > 1 and (row[0], row[1]) in new_keys:
+            removed += 1
+            continue
+        kept.append(row)
+
+    if removed:
+        print(f"  🔄 Campaign Analysis {market}: замінено {removed} старих рядків (upsert)")
+
+    final_rows = kept + rows
+    sh.clear()
+    sh.update(final_rows, "A1")
+    print(f"  ✅ Campaign Analysis {market}: {len(rows)} рядків записано")
 
 
 # ── Keyword Intelligence ──────────────────────────────────────
