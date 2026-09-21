@@ -667,6 +667,23 @@ def write_ai_recommendations(text: str, week: str, market: str):
     print(f"  ✅ AI Recommendations {market}: збережено")
 
 
+# ── Claude Daily Review ─────────────────────────────────────────
+# Незалежний щоденний тактичний огляд Claude — окрема вкладка,
+# щоб не змішувати з тижневим AI Recommendations (analyzer.py) і не
+# читати/переписувати рекомендації ChatGPT. Claude тут працює лише
+# з сирими даними цієї ж таблиці.
+
+def write_claude_daily_review(text: str, date: str, market: str):
+    sheets = SHEETS_USA if market == "USA" else SHEETS_CA
+    headers = ["Date", "Market", "Claude Analysis"]
+    sh = get_sheet(sheets["claude_daily_review"])
+    existing = sh.get_all_values()
+    if not existing:
+        sh.append_row(headers)
+    sh.append_row([date, market, text])
+    print(f"  ✅ Claude Daily Review {market}: збережено")
+
+
 # ── Weekly Summary ────────────────────────────────────────────
 
 def write_weekly_summary(usa_metrics: dict, ca_metrics: dict,

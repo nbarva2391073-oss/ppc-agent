@@ -73,6 +73,7 @@ SHEETS_USA = {
     "dayparting":           "Dayparting USA",
     "competitor_tracker":   "Competitor Tracker USA",
     "advertised_product":   "Advertised Product USA",
+    "claude_daily_review":  "Claude Daily Review USA",
 }
 
 SHEETS_CA = {
@@ -85,6 +86,7 @@ SHEETS_CA = {
     "dayparting":           "Dayparting CA",
     "competitor_tracker":   "Competitor Tracker CA",
     "advertised_product":   "Advertised Product CA",
+    "claude_daily_review":  "Claude Daily Review CA",
 }
 
 SHEETS_COMMON = {

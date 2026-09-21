@@ -76,6 +76,23 @@ def send_weekly_summary(market: str, summary: dict):
     send_message(text)
 
 
+def send_claude_daily_review(market: str, date: str, text: str):
+    """
+    Окреме повідомлення — незалежний щоденний тактичний огляд Claude.
+    Навмисно відділене від send_daily_ok (сирий моніторинг без AI) і
+    від тижневого send_weekly_summary, щоб було видно, що це саме
+    Claude-думка, а не ChatGPT чи звичайний збір даних.
+    """
+    MAX_LEN = 3500
+    body = text if len(text) <= MAX_LEN else (
+        text[:MAX_LEN] + "\n\n…(повний текст → Google Sheets, "
+        "вкладка Claude Daily Review)")
+    header = (f"🧠 <b>CLAUDE — незалежний огляд, {market}</b> {date}\n"
+              f"(окремо від інших звітів)\n"
+              f"━━━━━━━━━━━━━━━━━━━━\n\n")
+    send_message(header + body)
+
+
 def send_daily_ok(market: str, campaign_data: list = None,
                   breakeven: float = 25):
     """

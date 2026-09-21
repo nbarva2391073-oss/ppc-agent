@@ -18,6 +18,7 @@ from sheets import (
     read_suggested_bids, write_advertised_product,
 )
 from amazon_ads import get_suggested_bids
+from claude_daily_review import run_daily_review
 
 # ── Колонки звітів ────────────────────────────────────────────
 COLS_CAMPAIGN = [
@@ -80,6 +81,13 @@ def run_daily_monitor(market_filter: str = None):
         token = get_access_token()
         metrics = collect_market(token, profile_id, market, start_date, end_date, week)
         all_metrics[market] = metrics
+
+        # Незалежний щоденний AI-огляд (Claude) — окремо від ChatGPT,
+        # працює з уже записаними вище даними цієї ж таблиці.
+        try:
+            run_daily_review(market)
+        except Exception as e:
+            print(f"  ❌ Claude Daily Review {market}: {e}")
 
     # Weekly Summary
     try:
