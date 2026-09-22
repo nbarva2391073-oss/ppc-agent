@@ -90,6 +90,24 @@ def send_claude_daily_review(market: str, date: str, text: str):
     header = (f"🧠 <b>CLAUDE — незалежний огляд, {market}</b> {date}\n"
               f"(окремо від інших звітів)\n"
               f"━━━━━━━━━━━━━━━━━━━━\n\n")
+    send_message(header + body) 
+
+
+def send_claude_weekly_x2_review(market: str, date: str, text: str):
+    """
+    Окреме повідомлення — незалежний щотижневий стратегічний X2-огляд
+    Claude. Відділене і від send_claude_daily_review (щоденна тактика
+    ставок), і від send_weekly_summary (цифри тижневого ChatGPT-звіту),
+    щоб було видно, що це саме окремий, самостійний X2-погляд раз на
+    7 днів.
+    """
+    MAX_LEN = 3500
+    body = text if len(text) <= MAX_LEN else (
+        text[:MAX_LEN] + "\n\n…(повний текст → Google Sheets, "
+        "вкладка Claude Weekly X2 Review)")
+    header = (f"🧠🎯 <b>CLAUDE — WEEKLY X2 REVIEW, {market}</b> {date}\n"
+              f"(окремо від ChatGPT і від щоденного тактичного огляду)\n"
+              f"━━━━━━━━━━━━━━━━━━━━\n\n")
     send_message(header + body)
 
 

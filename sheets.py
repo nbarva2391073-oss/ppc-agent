@@ -681,7 +681,24 @@ def write_claude_daily_review(text: str, date: str, market: str):
     if not existing:
         sh.append_row(headers)
     sh.append_row([date, market, text])
-    print(f"  ✅ Claude Daily Review {market}: збережено")
+    print(f"  ✅ Claude Daily Review {market}: збережено") 
+
+# ── Claude Weekly X2 Review ──────────────────────────────────────
+# Незалежний щотижневий стратегічний огляд ходу до X2 — окрема
+# вкладка, щоб не змішувати ні з тижневим AI Recommendations
+# (analyzer.py/ChatGPT), ні зі щоденним Claude Daily Review
+# (тактика ставок). Назва вкладки не винесена в SHEETS_USA/CA,
+# бо read_all/get_sheet приймають довільну назву напряму.
+
+def write_claude_weekly_x2_review(text: str, date: str, market: str):
+    sheet_name = f"Claude Weekly X2 Review {market}"
+    headers = ["Date", "Market", "Claude X2 Analysis"]
+    sh = get_sheet(sheet_name)
+    existing = sh.get_all_values()
+    if not existing:
+        sh.append_row(headers)
+    sh.append_row([date, market, text])
+    print(f"  ✅ Claude Weekly X2 Review {market}: збережено")
 
 
 # ── Weekly Summary ────────────────────────────────────────────
