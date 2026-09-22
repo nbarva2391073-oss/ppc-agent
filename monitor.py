@@ -160,17 +160,34 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
         except Exception as e:
             print(f"  ❌ Campaign: {e}")
 
-    # Bid Snapshot — з suggested bids і raw_data для market_shift
+    # Targeting → Keyword Intelligence (завантажуємо РАНІШЕ за Bid Snapshot,
+    # бо саме тут є per-keyword impressions/cost/sales7d, потрібні для
+    # ACoS_before/Impressions_before у Bid History. Раніше Bid Snapshot
+    # викликався до цього блоку і читав неіснуючий metrics["_raw_data"]
+    # (calculate_metrics() такого ключа ніколи не повертає) — тому
+    # ACoS_before/Impressions_before завжди писались нулями.
+    targeting_data = []
+    if "targeting" in report_ids:
+        try:
+            print(f"  → Чекаємо Targeting report...")
+            t = get_access_token()
+            targeting_data = wait_and_download(t, profile_id, report_ids["targeting"],
+                                               token_fn=get_access_token)
+            kw_analysis = _build_keyword_rows(targeting_data)
+            write_keyword_intelligence(kw_analysis, week, market, run_date=start_date)
+        except Exception as e:
+            print(f"  ❌ Targeting: {e}")
+
+    # Bid Snapshot — з suggested bids і raw_data (targeting-звіт) для market_shift
     if campaigns:
         try:
             # Читаємо suggested bids з Sheets (заповнюється suggested_bids.yml кожні 2 дні)
             suggested_raw = read_suggested_bids(market)
 
-            # raw_data для перевірки market_shift (якщо вже завантажено)
             write_bid_snapshot(
                 campaigns, keywords, week, market,
                 suggested_bids=suggested_raw,
-                raw_data=metrics.get("_raw_data", []),
+                raw_data=targeting_data,
             )
         except Exception as e:
             print(f"  ❌ Bid Snapshot: {e}")
@@ -203,18 +220,6 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             write_placement_analysis(data, issues, week, market)
         except Exception as e:
             print(f"  ❌ Placement: {e}")
-
-    # Targeting → Keyword Intelligence
-    if "targeting" in report_ids:
-        try:
-            print(f"  → Чекаємо Targeting report...")
-            t = get_access_token()
-            data        = wait_and_download(t, profile_id, report_ids["targeting"],
-                                            token_fn=get_access_token)
-            kw_analysis = _build_keyword_rows(data)
-            write_keyword_intelligence(kw_analysis, week, market, run_date=start_date)
-        except Exception as e:
-            print(f"  ❌ Targeting: {e}")
 
     # Advertised Product → продажі по ASIN через рекламу
     if "advertised_product" in report_ids:

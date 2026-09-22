@@ -295,11 +295,14 @@ def write_bid_snapshot(campaigns: list, keywords: list,
 
     last_bids = _get_last_bids(sheet_name)
 
-    # ACoS і покази з raw_data по ключовому слову
+    # ACoS і покази з raw_data по ключовому слову (raw_data — targeting-звіт
+    # spTargeting: "keyword" для manual keyword-таргетингу, "targeting" для
+    # auto/product-таргетингу; searchTerm лишаємо як фолбек для сумісності,
+    # якщо колись передадуть search_term-звіт замість targeting)
     recent_metrics = {}
     if raw_data:
         for r in raw_data:
-            kw = r.get("keyword") or r.get("searchTerm", "")
+            kw = r.get("keyword") or r.get("targeting") or r.get("searchTerm", "")
             if not kw:
                 continue
             recent_metrics.setdefault(kw, {"spend": 0.0, "sales": 0.0, "impressions": 0})
