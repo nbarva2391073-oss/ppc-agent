@@ -18,6 +18,10 @@
 #     Analysis, Brand Event Log. НЕ починає з Search Terms/Keyword
 #     Intelligence/raw campaign dumps — той самий принцип, що і в
 #     ручному X2-аналізі.
+#   - Додано 21.09.2026 (за "X2 Analyst — Data Source Update —
+#     2026-09-21"): Sellerise Daily Sales USA + Sellerise ASIN Daily
+#     USA як швидкий/попередній bridge, коли Business Report відстає
+#     (див. правила в промпті нижче) — тільки USA, не колектор.
 #   - Пише результат в окрему вкладку "Claude Weekly X2 Review
 #     {market}" і шле окреме Telegram-повідомлення — так само, як
 #     Claude Daily Review відділений від AI Recommendations.
@@ -49,6 +53,14 @@ from claude_daily_review import _format_table, _tail
 # УВАГА: "Campaign Performance History US" — без "A" на кінці, це
 # підтверджена в документі назва, не помилка.
 
+#   Sellerise-вкладки нижче — додано 21.09.2026 за оновленням
+#   "X2 Analyst — Data Source Update — 2026-09-21" (окрема вкладка в
+#   таблиці, інструкція ТІЛЬКИ для X2-аналітика, не для колектора).
+#   Точні назви звірені напряму з вмісту цієї вкладки — не вгадані.
+#   Наразі підтверджено лише для USA; для CA такі вкладки не заявлені,
+#   тому їх немає в CA-словнику нижче (get_sheet() створює нову пусту
+#   вкладку при неточній назві — тому нізвідки не вгадуємо CA-варіант).
+
 X2_TAB_NAMES = {
     "USA": {
         "monthly_sales_history": "Monthly Sales History USA",
@@ -60,6 +72,8 @@ X2_TAB_NAMES = {
         "placement_analysis":    "Placement Analysis USA",
         "brand_event_log":       "Brand Event Log",
         "prev_reviews":          "Claude Weekly X2 Review USA",
+        "sellerise_daily_sales": "Sellerise Daily Sales USA",
+        "sellerise_asin_daily":  "Sellerise ASIN Daily USA",
     },
     "CA": {
         "monthly_sales_history": "Monthly Sales History CA",
@@ -80,7 +94,7 @@ X2_TAB_NAMES = {
 def build_weekly_x2_context(market: str) -> dict:
     tabs = X2_TAB_NAMES.get(market, X2_TAB_NAMES["USA"])
 
-    return {
+    ctx = {
         "monthly_sales_history": read_all(tabs["monthly_sales_history"]),
         "asin_control":          read_all(tabs["asin_control"]),
         "business_report_tail":  _tail(read_all(tabs["business_report"]), 90),
@@ -91,6 +105,21 @@ def build_weekly_x2_context(market: str) -> dict:
         "brand_event_log":       _tail(read_all(tabs["brand_event_log"]), 40),
         "prev_review_tail":      _tail(read_all(tabs["prev_reviews"]), 2),
     }
+
+    # Sellerise fast/provisional bridge (додано 21.09.2026, тільки USA
+    # поки що) — читаємо ТІЛЬКИ якщо назва вкладки прописана в словнику
+    # вище, щоб не створити випадкову пусту вкладку для CA через
+    # get_sheet()'s auto-create-on-typo поведінку.
+    ctx["sellerise_daily_sales_tail"] = (
+        _tail(read_all(tabs["sellerise_daily_sales"]), 14)
+        if "sellerise_daily_sales" in tabs else []
+    )
+    ctx["sellerise_asin_daily_tail"] = (
+        _tail(read_all(tabs["sellerise_asin_daily"]), 60)
+        if "sellerise_asin_daily" in tabs else []
+    )
+
+    return ctx
 
 
 # ── AI аналіз ─────────────────────────────────────────────────────
@@ -146,6 +175,34 @@ ALFAMARKER ({market}). Поруч є інший інструмент аналі�
 - Не вигадуй цифр, яких немає в даних нижче. Якщо конкретної таблиці
   немає або вона порожня — прямо напиши "даних немає", а не імітуй
   висновок із порожніх рядків.
+- Sellerise vs Amazon (додано 21.09.2026, "X2 Analyst — Data Source
+  Update"): Sellerise — швидкий/попередній операційний шар, корисний
+  для найновіших днів, поки Amazon-звіти/колектор ще не дозріли.
+  Amazon-колектор/сирі Amazon-звіти — авторитетний консолідований шар
+  для Amazon-нативних метрик (Sessions, Page Views, Unit Session %,
+  ordered product sales/units) як тільки та сама дата там завершена.
+  НІКОЛИ не складай Sellerise і Amazon за одну й ту саму дату — це
+  альтернативні джерела, а не додаткові продажі. Якщо джерела
+  розходяться — не усереднюй мовчки, прямо зазнач розбіжність.
+- Business Report lag fallback: якщо Business Report відстає і
+  здається, що вирівняний 7д vs 7д неможливий — це вже НЕ автоматична
+  відповідь. Спочатку перевір Sellerise Daily Sales USA та Sellerise
+  ASIN Daily USA нижче: використай їх для Sales/Units/Orders та
+  операційного profit за відсутні дні, з явним позначенням джерела.
+  НЕ вигадуй Amazon Sessions/CVR із Sellerise, якщо цих полів там
+  немає чи вони неповні — це залишається обмеженням, поки Amazon
+  Business Report не наздожене (тоді organic/CVR-висновки треба
+  перевірити ще раз на Amazon Sessions/Unit Session %).
+- R039 (ASIN-специфічна PPC-атрибуція): не прирівнюй змішані (blended)
+  7 Day Total Orders/Sales до продажів саме рекламованого ASIN у
+  мультипродуктовому акаунті. Де є Advertised SKU Units/Sales окремо
+  від Other SKU Units/Sales — використовуй Advertised SKU як основний
+  доказ для ASIN-специфічних висновків; blended можна згадати лише як
+  account-рівневий контекст з явним позначенням "blended".
+- Функціональна лійка для аналізу росту: demand → visibility → click →
+  intent/cart → purchase → PPC → organic → profit. Використовуй її як
+  орієнтир, де саме в лійці конкретний ASIN/тест застряг, а не тільки
+  фінальні Sales/ACoS цифри.
 
 {'='*60}
 MONTHLY SALES HISTORY — продажі по ASIN, помісячно
@@ -186,6 +243,18 @@ PLACEMENT ANALYSIS — останні рядки
 BRAND EVENT LOG — структурні події (ціна/rebuild/baseline), останні
 {'='*60}
 {_format_table(ctx['brand_event_log'], max_rows=40)}
+
+{'='*60}
+SELLERISE DAILY SALES USA — швидкий/попередній account-рівневий шар,
+останні дні (не сумувати з Amazon за ту саму дату)
+{'='*60}
+{_format_table(ctx['sellerise_daily_sales_tail'], max_rows=14)}
+
+{'='*60}
+SELLERISE ASIN DAILY USA — швидкий/попередній ASIN-рівневий шар,
+останні дні (не сумувати з Amazon за ту саму дату)
+{'='*60}
+{_format_table(ctx['sellerise_asin_daily_tail'], max_rows=60)}
 
 {'='*60}
 ТВОЇ ОСТАННІ 2 ЩОТИЖНЕВІ X2-ОГЛЯДИ (контекст тренду — не повторюй
