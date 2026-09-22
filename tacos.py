@@ -22,13 +22,26 @@ def get_catchup_dates(days_back: int = 2) -> list:
 
 
 def tacos_date_missing(market: str, date: str) -> bool:
+    """
+    Дата вважається "відсутньою" (потребує (пере)розрахунку), якщо:
+    - за неї взагалі немає рядків у TACoS-таблиці, АБО
+    - є рядки, але хоча б в одному з них Total_Sales порожній
+      (Business Report на момент першого запуску ще не мав даних —
+      типова ситуація через консолідаційну затримку Amazon).
+    Без другої умови такі рядки лишались порожніми назавжди: раз
+    рядок за дату вже написаний, catch-up більше не намагався його
+    оновити, навіть коли Business Report дані пізніше з'являлись.
+    """
     sheet_name = f"TACoS_{market}"
     try:
         sh = get_sheet(sheet_name)
         rows = sh.get_all_values()
     except Exception:
         return True
-    return not any(r and r[0] == date for r in rows[1:])
+    matching = [r for r in rows[1:] if r and r[0] == date]
+    if not matching:
+        return True
+    return any(len(r) > 4 and r[4] == "" for r in matching)
 
 
 def run_tacos():
