@@ -739,6 +739,7 @@ JOINT_QUEUE_HEADERS = [
 ]
 
 
+@_retry_sheets(max_retries=5, base_delay=5)
 def _jrq_sheet():
     """Відкрити (чи створити з заголовками) вкладку Joint Review Queue."""
     sh = get_sheet(JOINT_QUEUE_SHEET)
@@ -755,6 +756,7 @@ def _jrq_header_map(sh) -> dict:
     return {name: i + 1 for i, name in enumerate(header_row) if name}
 
 
+@_retry_sheets(max_retries=5, base_delay=5)
 def read_joint_review_queue() -> list[dict]:
     """Усі рядки черги як список dict (ключі — точні заголовки колонок)."""
     sh = _jrq_sheet()
