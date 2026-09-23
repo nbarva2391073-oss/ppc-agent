@@ -1,0 +1,39 @@
+name: Claude Dual-AI Review (Joint Review Queue)
+
+on:
+  schedule:
+    # Раз на день — підхоплює нові вагомі питання (Round 1) і звіряє
+    # ті, де обидва Round 1 вже готові (Round 2). Не для щоденної
+    # тактики — це стосується тільки рядків з Material = YES.
+    - cron: '0 10 * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'round1 / round2 / both'
+        required: false
+        default: 'both'
+
+jobs:
+  dual-ai-review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Claude Dual-AI Review
+        env:
+          ANTHROPIC_API_KEY:       ${{ secrets.ANTHROPIC_API_KEY }}
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          TELEGRAM_BOT_TOKEN:      ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_IDS:       ${{ secrets.TELEGRAM_CHAT_IDS }}
+        run: python claude_dual_ai_review.py ${{ github.event.inputs.mode || 'both' }}
