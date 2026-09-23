@@ -704,6 +704,181 @@ def write_claude_weekly_x2_review(text: str, date: str, market: str):
     print(f"  ✅ Claude Weekly X2 Review {market}: збережено")
 
 
+# ── Joint Review Queue (dual-AI Round 1 / Round 2, додано 23.09.2026) ──
+# Координація незалежних висновків Claude і ChatGPT для ВАГОМИХ
+# (Material = YES) стратегічних рішень — не для щоденної тактики.
+# Nataly сама додає рядок (Decision ID, Created, Question, Shared
+# Evidence, Material) — жоден AI новий рядок не створює.
+# Round 1 має бути справді сліпим: код читає для свого Round 1 ТІЛЬКИ
+# Question + Shared Evidence (+ сирі дані з інших вкладок), і НІКОЛИ не
+# включає в запит вміст колонок "ChatGPT R1 *", навіть якщо вони вже
+# заповнені на момент читання. Round 2 дозволений лише коли ОБИДВІ
+# сторони мають "R1 Status" = DONE — це перевіряється прямо в коді
+# (не через формулу R2 Gate, яка є тільки візуальною підказкою в самій
+# таблиці для Nataly).
+# Назва вкладки і точні заголовки узгоджені з Nataly + ChatGPT
+# 22-23.09.2026 — обидві сторони пишуть у ТІ САМІ назви колонок, кожна
+# тільки у свої (Claude ніколи не пише в "ChatGPT *" колонки і навпаки).
+
+JOINT_QUEUE_SHEET = "Joint Review Queue"
+
+JOINT_QUEUE_HEADERS = [
+    "Decision ID", "Created", "Question", "Shared Evidence", "Material",
+    "Claude R1 Status", "Claude R1 Conclusion", "Claude R1 Evidence",
+    "Claude R1 Confidence", "Claude R1 Change-Mind", "Claude R1 Limitations",
+    "Claude R1 Timestamp",
+    "ChatGPT R1 Status", "ChatGPT R1 Conclusion", "ChatGPT R1 Evidence",
+    "ChatGPT R1 Confidence", "ChatGPT R1 Change-Mind", "ChatGPT R1 Limitations",
+    "ChatGPT R1 Timestamp",
+    "R2 Gate",
+    "Claude R2 Status", "Claude R2 Position", "Claude R2 Reason",
+    "Claude R2 Changed", "Claude R2 Timestamp",
+    "ChatGPT R2 Status", "ChatGPT R2 Position", "ChatGPT R2 Reason",
+    "ChatGPT R2 Changed", "ChatGPT R2 Timestamp",
+    "Final Summary", "Nataly Decision",
+]
+
+
+def _jrq_sheet():
+    """Відкрити (чи створити з заголовками) вкладку Joint Review Queue."""
+    sh = get_sheet(JOINT_QUEUE_SHEET)
+    existing = sh.get_all_values()
+    if not existing:
+        sh.append_row(JOINT_QUEUE_HEADERS)
+    return sh
+
+
+def _jrq_header_map(sh) -> dict:
+    """Назва колонки → 1-based індекс, за фактичним рядком 1 в таблиці
+    (стійко до того, що Nataly могла трохи змінити порядок колонок)."""
+    header_row = sh.row_values(1)
+    return {name: i + 1 for i, name in enumerate(header_row) if name}
+
+
+def read_joint_review_queue() -> list[dict]:
+    """Усі рядки черги як список dict (ключі — точні заголовки колонок)."""
+    sh = _jrq_sheet()
+    rows = sh.get_all_values()
+    if len(rows) < 2:
+        return []
+    header = rows[0]
+    out = []
+    for r in rows[1:]:
+        row = {header[i]: (r[i] if i < len(r) else "") for i in range(len(header))}
+        out.append(row)
+    return out
+
+
+@_retry_sheets(max_retries=5, base_delay=5)
+def _jrq_find_row_number(sh, decision_id: str, id_col: int) -> int | None:
+    """Номер рядка (1-based, з урахуванням заголовка) для Decision ID,
+    або None якщо не знайдено. Рядок мусить уже існувати — жоден AI
+    новий рядок в черзі не створює, тільки Nataly."""
+    col_values = sh.col_values(id_col)
+    for i, v in enumerate(col_values):
+        if i == 0:
+            continue  # заголовок
+        if v.strip() == decision_id.strip():
+            return i + 1
+    return None
+
+
+@_retry_sheets(max_retries=5, base_delay=5)
+def _jrq_write_fields(decision_id: str, fields: dict) -> bool:
+    """Записати {назва_колонки: значення} для конкретного Decision ID.
+    Пише ТІЛЬКИ передані колонки — ніколи не чіпає чужі (ChatGPT-колонки
+    з боку Claude-коду просто ніколи не передаються в fields)."""
+    sh = _jrq_sheet()
+    hmap = _jrq_header_map(sh)
+    id_col = hmap.get("Decision ID")
+    if not id_col:
+        print("  ⚠️ Joint Review Queue: немає колонки 'Decision ID'")
+        return False
+    row_num = _jrq_find_row_number(sh, decision_id, id_col)
+    if not row_num:
+        print(f"  ⚠️ Joint Review Queue: Decision ID '{decision_id}' не знайдено — "
+              f"рядок має спочатку створити Nataly")
+        return False
+    for field_name, value in fields.items():
+        col = hmap.get(field_name)
+        if not col:
+            print(f"  ⚠️ Joint Review Queue: невідома колонка '{field_name}', пропускаю")
+            continue
+        sh.update_cell(row_num, col, value)
+        _sheets_time.sleep(1.2)  # уникаємо Google Sheets rate limit при кількох update_cell поспіль
+    return True
+
+
+def get_claude_round1_queue() -> list[dict]:
+    """Рядки, де Material == YES і Claude R1 Status ще не DONE — це і є
+    сліпий вхід для Round 1: беремо ТІЛЬКИ Decision ID / Question /
+    Shared Evidence з кожного такого рядка, свідомо ігноруючи будь-які
+    ChatGPT-колонки, навіть якщо вони вже заповнені."""
+    out = []
+    for row in read_joint_review_queue():
+        material = (row.get("Material") or "").strip().upper()
+        claude_status = (row.get("Claude R1 Status") or "").strip().upper()
+        if material == "YES" and claude_status != "DONE":
+            out.append({
+                "decision_id": row.get("Decision ID", ""),
+                "question": row.get("Question", ""),
+                "shared_evidence": row.get("Shared Evidence", ""),
+            })
+    return out
+
+
+def get_claude_round2_queue() -> list[dict]:
+    """Рядки, де обидва Round 1 (Claude і ChatGPT) вже DONE, а Claude
+    Round 2 ще ні — саме тут дозволено вперше прочитати ChatGPT R1."""
+    out = []
+    for row in read_joint_review_queue():
+        claude_r1 = (row.get("Claude R1 Status") or "").strip().upper()
+        chatgpt_r1 = (row.get("ChatGPT R1 Status") or "").strip().upper()
+        claude_r2 = (row.get("Claude R2 Status") or "").strip().upper()
+        if claude_r1 == "DONE" and chatgpt_r1 == "DONE" and claude_r2 != "DONE":
+            out.append({
+                "decision_id": row.get("Decision ID", ""),
+                "question": row.get("Question", ""),
+                "shared_evidence": row.get("Shared Evidence", ""),
+                "claude_r1_conclusion": row.get("Claude R1 Conclusion", ""),
+                "claude_r1_evidence": row.get("Claude R1 Evidence", ""),
+                "chatgpt_r1_conclusion": row.get("ChatGPT R1 Conclusion", ""),
+                "chatgpt_r1_evidence": row.get("ChatGPT R1 Evidence", ""),
+                "chatgpt_r1_confidence": row.get("ChatGPT R1 Confidence", ""),
+                "chatgpt_r1_limitations": row.get("ChatGPT R1 Limitations", ""),
+            })
+    return out
+
+
+def write_claude_round1_result(decision_id: str, conclusion: str, evidence: str,
+                                confidence: str, change_mind: str, limitations: str):
+    ok = _jrq_write_fields(decision_id, {
+        "Claude R1 Conclusion": conclusion,
+        "Claude R1 Evidence": evidence,
+        "Claude R1 Confidence": confidence,
+        "Claude R1 Change-Mind": change_mind,
+        "Claude R1 Limitations": limitations,
+        "Claude R1 Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "Claude R1 Status": "DONE",
+    })
+    if ok:
+        print(f"  ✅ Joint Review Queue {decision_id}: Claude R1 записано")
+    return ok
+
+
+def write_claude_round2_result(decision_id: str, position: str, reason: str, changed: str):
+    ok = _jrq_write_fields(decision_id, {
+        "Claude R2 Position": position,
+        "Claude R2 Reason": reason,
+        "Claude R2 Changed": changed,
+        "Claude R2 Timestamp": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        "Claude R2 Status": "DONE",
+    })
+    if ok:
+        print(f"  ✅ Joint Review Queue {decision_id}: Claude R2 записано")
+    return ok
+
+
 # ── Weekly Summary ────────────────────────────────────────────
 
 def write_weekly_summary(usa_metrics: dict, ca_metrics: dict,
