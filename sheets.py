@@ -447,8 +447,27 @@ def write_placement_analysis(placement_data: list[dict],
 
     for r in placement_data:
         camp = r.get("campaignName", "")
-        spend = float(r.get("spend", 0))
+
+        # ВИПРАВЛЕНО: report API повертає поле 'cost', а не 'spend' —
+        # раніше spend завжди читався як 0 (бо ключа 'spend' у сирих
+        # даних немає), тому рядки з реальними кліками/orders
+        # показували Spend=$0, хоча витрати насправді були.
+        raw_spend = r.get("cost")
+        if raw_spend is None:
+            raw_spend = r.get("spend")
+        spend_missing = raw_spend is None
+        spend = float(raw_spend) if raw_spend is not None else 0.0
+
         sales = float(r.get("sales7d", 0))
+
+        placement = (r.get("placementClassification")
+                     or r.get("placement")
+                     or r.get("campaignPlacement"))
+        # ВИПРАВЛЕНО: невідомий placement записуємо як "missing",
+        # а не як порожній рядок — порожній рядок у таблиці виглядає
+        # як валідне (нульове) значення, а не як відсутність даних.
+        placement_out = placement if placement else "missing"
+
         status = "⚠️ Проблема" if camp in issue_camps else "✅"
         issue_text = ""
         if camp in issue_camps:
@@ -457,11 +476,11 @@ def write_placement_analysis(placement_data: list[dict],
                           f"{issue['tos_adj']}%")
         rows.append([
             week, camp,
-            r.get("placementClassification") or r.get("placement") or r.get("campaignPlacement", ""),
+            placement_out,
             r.get("impressions", 0),
             r.get("clicks", 0),
             round(float(r.get("clickThroughRate", 0)) * 100, 2),
-            round(spend, 2),
+            "missing" if spend_missing else round(spend, 2),
             round(sales, 2),
             round(spend / sales * 100 if sales > 0 else 0, 1),
             status, issue_text,
