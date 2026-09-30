@@ -1122,14 +1122,33 @@ def write_advertised_product(data: list[dict], date: str, market: str):
         ])
 
     sheet_name = sheets.get("advertised_product", f"Advertised Product {market}")
-    ensure_headers = _ensure_headers if "_ensure_headers" in globals() else None
     sh = get_sheet(sheet_name)
     first_row = sh.row_values(1)
-    if not first_row or first_row[0] != "Week":
+    # ВИПРАВЛЕНО: раніше порівнювалось first_row[0] != "Week", хоча
+    # заголовок цієї вкладки починається з "Date" — умова була завжди
+    # істинною і заголовки переписувались щоразу без потреби.
+    if not first_row or first_row[0] != "Date":
         sh.update([headers], "A1")
         print(f"  📝 Заголовки додано в '{sheet_name}'")
 
-    append(sheet_name, rows, headers)
+    # Upsert по Date: видаляємо старі рядки цього дня перед записом
+    # нових — раніше plain append() створював точні дублікати при
+    # будь-якому повторному запуску за той самий день (ручний ретрай,
+    # подвійний workflow_dispatch тощо).
+    existing = sh.get_all_values()
+    kept = [existing[0]] if existing else [headers]
+    removed = 0
+    for r in existing[1:]:
+        if r and r[0] == date:
+            removed += 1
+            continue
+        kept.append(r)
+    if removed:
+        print(f"  🔄 Advertised Product {market}: замінено {removed} старих рядків за {date}")
+
+    final_rows = kept + rows
+    sh.clear()
+    sh.update(final_rows, "A1")
     print(f"  ✅ Advertised Product {market}: {len(rows)} рядків")
 
 
