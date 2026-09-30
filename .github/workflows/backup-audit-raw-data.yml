@@ -1,0 +1,33 @@
+name: Backup & Audit Raw Data (one-off)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install gspread google-auth
+
+      - name: Backup + audit
+        env:
+          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        run: python backup_and_audit_raw_data.py
+
+      - name: Commit backup
+        run: |
+          git config user.name "ppc-agent-bot"
+          git config user.email "bot@ppc-agent"
+          git add backups/
+          git commit -m "Backup + audit: control week 21-27.09 USA (one-off)" || echo "nothing to commit"
+          git push
