@@ -138,13 +138,23 @@ def read_all(sheet_name: str) -> list[list]:
 
 # ── Raw Data ─────────────────────────────────────────────────
 
-def write_raw_data(data: list[dict], week: str, market: str):
+def write_raw_data(data: list[dict], week: str, market: str, date: str = None):
+    """
+    date — фактична дата рекламної активності (YYYY-MM-DD), НЕ дата
+    запуску collector. Якщо передано, увімкнено upsert-режим: рядки з
+    таким самим (Date, Campaign, Ad Group, Search Term, Keyword,
+    Match Type) замінюються, а не дублюються при повторному запуску
+    того самого дня. Якщо date не передано (наприклад, стара weekly-
+    логіка), пишемо тільки append — дату для таких рядків не вигадуємо.
+    """
     sheets = SHEETS_USA if market == "USA" else SHEETS_CA
+    # ВИПРАВЛЕНО: колонку Date додано ПРАВОРУЧ після існуючих полів —
+    # без вставки всередину і без зсуву позицій наявних колонок.
     headers = ["Week", "Campaign", "Ad Group", "ASIN",
                "Search Term", "Keyword", "Match Type",
                "Impressions", "Clicks", "CTR%",
                "Spend", "Sales", "ACoS%", "ROAS",
-               "Orders", "CPC"]
+               "Orders", "CPC", "Date"]
     rows = []
     for r in data:
         # ВИПРАВЛЕНО: Amazon Reporting API повертає 'cost', не 'spend'.
@@ -169,8 +179,74 @@ def write_raw_data(data: list[dict], week: str, market: str):
             round(sales / spend if spend > 0 else 0, 2),
             r.get("purchases7d", 0),
             round(float(r.get("costPerClick", 0)), 2),
+            date or "",
         ])
-    append(sheets["raw_data"], rows, headers)
+
+    sheet_name = sheets["raw_data"]
+    sh = get_sheet(sheet_name)
+    _remove_tables(sh)
+
+    header_row = sh.row_values(1)
+    if not header_row:
+        sh.update([headers], "A1")
+        header_row = headers
+        print(f"  📝 Заголовки додано в '{sheet_name}'")
+    elif "Date" not in header_row:
+        # Міграція: додаємо колонку Date як ОСТАННЮ, наявні колонки і
+        # дані в них не рухаємо.
+        col_letter = gspread.utils.rowcol_to_a1(1, len(header_row) + 1)
+        col_letter = "".join(ch for ch in col_letter if ch.isalpha())
+        sh.update(f"{col_letter}1", [["Date"]])
+        header_row = header_row + ["Date"]
+        print(f"  📝 {sheet_name}: додано колонку 'Date' праворуч (без зсуву існуючих полів)")
+
+    # Читаємо/пишемо за НАЗВАМИ колонок, а не за позицією.
+    col_idx = {name: i for i, name in enumerate(header_row)}
+
+    def _cell(row, name):
+        i = col_idx.get(name)
+        return row[i] if i is not None and i < len(row) else ""
+
+    if date:
+        new_keys = set()
+        for r in data:
+            new_keys.add((
+                date,
+                r.get("campaignName", ""),
+                r.get("adGroupName", ""),
+                r.get("searchTerm", ""),
+                r.get("keyword", ""),
+                r.get("matchType", ""),
+            ))
+
+        existing = sh.get_all_values()
+        kept = [existing[0]] if existing else [header_row]
+        removed = 0
+        for r in (existing[1:] if existing else []):
+            key = (
+                _cell(r, "Date"), _cell(r, "Campaign"), _cell(r, "Ad Group"),
+                _cell(r, "Search Term"), _cell(r, "Keyword"), _cell(r, "Match Type"),
+            )
+            if key in new_keys:
+                removed += 1
+                continue
+            # Старі рядки можуть бути коротшими (без Date) — доповнюємо
+            # порожніми клітинками до поточної кількості колонок, щоб
+            # нічого не зсунути при записі назад.
+            if len(r) < len(header_row):
+                r = r + [""] * (len(header_row) - len(r))
+            kept.append(r)
+        if removed:
+            print(f"  🔄 {sheet_name}: замінено {removed} рядків за {date} (upsert, без дублів)")
+
+        final_rows = kept + rows
+        sh.clear()
+        sh.update(final_rows, "A1")
+    else:
+        # Без date (напр. стара weekly-логіка) — просто додаємо,
+        # дату заднім числом не вигадуємо.
+        append(sheet_name, rows, headers)
+
     print(f"  ✅ Raw Data {market}: {len(rows)} рядків")
 
 

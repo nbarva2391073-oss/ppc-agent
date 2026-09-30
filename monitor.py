@@ -211,7 +211,7 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             t = get_access_token()
             data = wait_and_download(t, profile_id, report_ids["search_term"],
                                      token_fn=get_access_token)
-            write_raw_data(data, week, market)
+            write_raw_data(data, week, market, date=start_date)
         except Exception as e:
             print(f"  ❌ Search Term: {e}")
 
