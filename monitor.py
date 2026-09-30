@@ -56,13 +56,19 @@ def run_daily_monitor(market_filter: str = None):
 
     today = datetime.now()
     # start=вчора end=сьогодні — як в старому коді що працював
-    start_date = (today - timedelta(days=1)).strftime("%Y-%m-%d")
-    end_date   = today.strftime("%Y-%m-%d")
+    report_date = today - timedelta(days=1)   # день, чиї дані реально збираються
+    start_date  = report_date.strftime("%Y-%m-%d")
+    end_date    = today.strftime("%Y-%m-%d")
     # Формат тижня: DD.MM-DD.MM.YYYY (як в старих даних)
-    from datetime import timedelta as _td
-    # Попередній завершений тиждень (Mon-Sun) як мітка в Sheets
-    monday = today - _td(days=today.weekday() + 7)
-    sunday = monday + _td(days=6)
+    #
+    # КРИТИЧНО: мітка тижня рахується від report_date (=start_date,
+    # день чиї дані реально прийшли), а НЕ від today. Стара версія
+    # рахувала Mon-Sun від today, через що 6 з 7 щоденних запусків
+    # (Вт-Нд) писали дані в мітку ПОПЕРЕДНЬОГО тижня — той тиждень,
+    # де report_date фактично лежить, отримував лише один день
+    # (з понеділкового запуску, start_date=неділя) замість усіх 7.
+    monday = report_date - timedelta(days=report_date.weekday())
+    sunday = monday + timedelta(days=6)
     week   = f"{monday.strftime('%d.%m')}-{sunday.strftime('%d.%m.%Y')}"
 
     all_metrics = {}
