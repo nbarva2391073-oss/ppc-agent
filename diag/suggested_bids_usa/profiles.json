@@ -1,0 +1,57 @@
+[
+  {
+    "profileId": 1118018616805522,
+    "countryCode": "CA",
+    "currencyCode": "CAD",
+    "dailyBudget": 999999999.0,
+    "timezone": "America/Los_Angeles",
+    "accountInfo": {
+      "marketplaceStringId": "A2EUQ1WTGCTBG2",
+      "id": "A1J988JD73DHMG",
+      "type": "seller",
+      "name": "Intuicia Tights",
+      "validPaymentMethod": true
+    }
+  },
+  {
+    "profileId": 4206532064093411,
+    "countryCode": "MX",
+    "currencyCode": "MXN",
+    "dailyBudget": 999999999.0,
+    "timezone": "America/Los_Angeles",
+    "accountInfo": {
+      "marketplaceStringId": "A1AM78C64UM0Y8",
+      "id": "A1J988JD73DHMG",
+      "type": "seller",
+      "name": "Intuicia Tights",
+      "validPaymentMethod": true
+    }
+  },
+  {
+    "profileId": 1532168920834570,
+    "countryCode": "US",
+    "currencyCode": "USD",
+    "timezone": "America/Los_Angeles",
+    "accountInfo": {
+      "marketplaceStringId": "ATVPDKIKX0DER",
+      "id": "ENTITYEJS8MUFUUCCW",
+      "type": "agency",
+      "name": "Attribution: Alfamarker (US)",
+      "subType": "AMAZON_ATTRIBUTION"
+    }
+  },
+  {
+    "profileId": 1998821627987595,
+    "countryCode": "US",
+    "currencyCode": "USD",
+    "dailyBudget": 21000000.0,
+    "timezone": "America/Los_Angeles",
+    "accountInfo": {
+      "marketplaceStringId": "ATVPDKIKX0DER",
+      "id": "A1J988JD73DHMG",
+      "type": "seller",
+      "name": "Intuicia Tights",
+      "validPaymentMethod": true
+    }
+  }
+]

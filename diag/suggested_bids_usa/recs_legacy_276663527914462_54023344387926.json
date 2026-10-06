@@ -1,0 +1,23 @@
+{
+  "default_json": {
+    "status": 422,
+    "body": {
+      "code": "422",
+      "details": "No recommendations can be provided as the input ad group 54023344387926 does not have any asins."
+    }
+  },
+  "theme_v4": {
+    "status": 422,
+    "body": {
+      "code": "422",
+      "details": "No recommendations can be provided as the input ad group 54023344387926 does not have any asins."
+    }
+  },
+  "theme_v5": {
+    "status": 422,
+    "body": {
+      "code": "422",
+      "details": "No recommendations can be provided as the input ad group 200011256769921 does not have any asins."
+    }
+  }
+}

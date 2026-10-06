@@ -1,0 +1,268 @@
+{
+  "current_code_returns": 100,
+  "current_has_nextToken": true,
+  "all_states_paginated": 304,
+  "error": null,
+  "state_counts": {
+    "ARCHIVED": 68,
+    "ENABLED": 19,
+    "PAUSED": 217
+  },
+  "target_campaigns": [
+    {
+      "budget": {
+        "budget": 3.0,
+        "budgetType": "DAILY"
+      },
+      "campaignId": "12947793733689",
+      "dynamicBidding": {
+        "placementBidding": [
+          {
+            "percentage": 250,
+            "placement": "PLACEMENT_TOP"
+          },
+          {
+            "percentage": 195,
+            "placement": "PLACEMENT_REST_OF_SEARCH"
+          }
+        ],
+        "strategy": "LEGACY_FOR_SALES"
+      },
+      "marketplaceBudgetAllocation": "MANUAL",
+      "name": "Inside X2 Exact diagnostic",
+      "offAmazonSettings": {},
+      "startDate": "2026-09-30",
+      "state": "ENABLED",
+      "tags": {},
+      "targetingType": "MANUAL"
+    }
+  ],
+  "target_in_current_code_result": [
+    false
+  ],
+  "keywords_current_code_returns": 1000,
+  "keywords_current_has_nextToken": true,
+  "keywords_all_paginated": 5310,
+  "keywords_error": null,
+  "target_keywords": [
+    {
+      "adGroupId": "201042540889638",
+      "bid": 0.33,
+      "campaignId": "12947793733689",
+      "keywordId": "35020857295419",
+      "keywordText": "pheromones perfumes for women",
+      "matchType": "EXACT",
+      "state": "PAUSED"
+    },
+    {
+      "adGroupId": "201042540889638",
+      "bid": 0.28,
+      "campaignId": "12947793733689",
+      "keywordId": "38296385703324",
+      "keywordText": "pheromone perfume for woman",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "201042540889638",
+      "bid": 0.19,
+      "campaignId": "12947793733689",
+      "keywordId": "168987840064767",
+      "keywordText": "pheromone perfume women",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "201042540889638",
+      "bid": 0.27,
+      "campaignId": "12947793733689",
+      "keywordId": "20289989787181",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    }
+  ],
+  "target_keywords_in_current_code_result": 3,
+  "legacy_same_keywords": [
+    {
+      "adGroupId": "341758792671",
+      "bid": 0.63,
+      "campaignId": "77407261945389",
+      "keywordId": "88403230063329",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "54023344387926",
+      "bid": 0.77,
+      "campaignId": "276663527914462",
+      "keywordId": "121978430985458",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "46402924253697",
+      "bid": 0.77,
+      "campaignId": "214051433537794",
+      "keywordId": "40546476756396",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "251948897639530",
+      "bid": 0.78,
+      "campaignId": "37347166721078",
+      "keywordId": "213410088958166",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "120982405233435",
+      "bid": 0.77,
+      "campaignId": "117269632701542",
+      "keywordId": "102518314651266",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "233556073022822",
+      "bid": 0.82,
+      "campaignId": "264844422135516",
+      "keywordId": "139836959721529",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "48192853911843",
+      "bid": 0.64,
+      "campaignId": "264844422135516",
+      "keywordId": "264417056823257",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "257120729775945",
+      "bid": 1.52,
+      "campaignId": "111816842787195",
+      "keywordId": "8883078566518",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "65534092412410",
+      "bid": 0.85,
+      "campaignId": "3398304651321",
+      "keywordId": "2133874071194",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "167281902591560",
+      "bid": 0.64,
+      "campaignId": "222026246012611",
+      "keywordId": "151320121880064",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "132402054824896",
+      "bid": 0.85,
+      "campaignId": "46536195607807",
+      "keywordId": "112828627803790",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "20783392825055",
+      "bid": 0.39,
+      "campaignId": "108049356351410",
+      "keywordId": "59233253887040",
+      "keywordText": "pheromone perfume for woman",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "128779189598617",
+      "bid": 0.46,
+      "campaignId": "25176364166458",
+      "keywordId": "261368101015227",
+      "keywordText": "pheromone perfume for woman",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "128779189598617",
+      "bid": 0.58,
+      "campaignId": "25176364166458",
+      "keywordId": "230937274080841",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "20783392825055",
+      "bid": 1.32,
+      "campaignId": "108049356351410",
+      "keywordId": "77255116170205",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ENABLED"
+    },
+    {
+      "adGroupId": "167281902591560",
+      "bid": 0.4,
+      "campaignId": "222026246012611",
+      "keywordId": "141759421013289",
+      "keywordText": "pheromone perfume for woman",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "52597526615418",
+      "bid": 0.92,
+      "campaignId": "88627189551132",
+      "keywordId": "153569959115752",
+      "keywordText": "pheromone perfume for woman",
+      "matchType": "EXACT",
+      "state": "PAUSED"
+    },
+    {
+      "adGroupId": "52597526615418",
+      "bid": 0.88,
+      "campaignId": "88627189551132",
+      "keywordId": "45750741570426",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "PAUSED"
+    },
+    {
+      "adGroupId": "190636551837840",
+      "bid": 0.96,
+      "campaignId": "155201163568548",
+      "keywordId": "102201722587474",
+      "keywordText": "pheromone perfume for woman",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    },
+    {
+      "adGroupId": "190636551837840",
+      "bid": 1.54,
+      "campaignId": "155201163568548",
+      "keywordId": "143075969659433",
+      "keywordText": "pheromone perfume",
+      "matchType": "EXACT",
+      "state": "ARCHIVED"
+    }
+  ]
+}

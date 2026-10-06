@@ -1,0 +1,6825 @@
+[
+  {
+    "budget": {
+      "budget": 20.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "123617569785138",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-03-03",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Androstenon 1",
+    "offAmazonSettings": {},
+    "startDate": "2019-03-01",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 20.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "3146353525956",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-03-03",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "first andro",
+    "offAmazonSettings": {},
+    "startDate": "2019-03-01",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 15.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "111711286832394",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-04-26",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "COPULINOL",
+    "offAmazonSettings": {},
+    "startDate": "2019-03-21",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "180328356961110",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-04-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Holllyday 26-04-19",
+    "offAmazonSettings": {},
+    "startDate": "2019-04-26",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "141720223282775",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-06-10",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "may day 2019",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-30",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "200962625427071",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 32,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-06-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "may11-18/2019",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-11",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "78010309028376",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-05-29",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Women 2",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-22",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "31653839014673",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-05-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Hand Pheromone 1",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-21",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "238748508407385",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-05-19",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "pheromone aut",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-17",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "67238761213642",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 60,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-05-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Phero 5 Women",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-22",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "131760635023161",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-05-19",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "PH2",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-17",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "92968982729175",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-06-15",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "stockings hand",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-28",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "71057702731371",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-07-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Tights hand",
+    "offAmazonSettings": {},
+    "startDate": "2019-05-28",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "145481496793770",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "perfume-cologne",
+    "offAmazonSettings": {},
+    "startDate": "2019-06-07",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 20.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "270627742506383",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "UKR",
+    "offAmazonSettings": {},
+    "startDate": "2019-06-25",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "70996853324787",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SUMMER Tights",
+    "offAmazonSettings": {},
+    "startDate": "2019-07-09",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "102501905720975",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-07-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "sample hand",
+    "offAmazonSettings": {},
+    "startDate": "2019-07-09",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 20.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "193922666319447",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-07-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "sample automatic",
+    "offAmazonSettings": {},
+    "startDate": "2019-07-09",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "148624198637537",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-08-15",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "oil",
+    "offAmazonSettings": {},
+    "startDate": "2019-07-24",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "22733992885107",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-09-15",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SILHOUETTE",
+    "offAmazonSettings": {},
+    "startDate": "2019-08-10",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "47180860870693",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Light - cologne",
+    "offAmazonSettings": {},
+    "startDate": "2019-08-19",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "272910705215002",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-09-15",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "GOLD STAR",
+    "offAmazonSettings": {},
+    "startDate": "2019-08-23",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "49865078382939",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 200,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-09-10",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "ALFA men 20 ml",
+    "offAmazonSettings": {},
+    "startDate": "2019-08-29",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "269422014397484",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2019-09-10",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Alfa POWER",
+    "offAmazonSettings": {},
+    "startDate": "2019-08-30",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "73809857112308",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2020-03-15",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "GOLD STAR 2",
+    "offAmazonSettings": {},
+    "startDate": "2019-09-05",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "51817251750283",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-09-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Concurent",
+    "offAmazonSettings": {},
+    "startDate": "2019-09-13",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "188380129294505",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-09",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "WIDE tights",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "176876400949219",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lingerie stockings",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "255360300724431",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Stockings",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "22996883790125",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Control Top uz",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "64827828026085",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "sheer new test",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "206845665806462",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Top pheromone",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "60862454315848",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "gold star",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "130766761070209",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-10-31",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "power",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-21",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "122251438879079",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Light wide",
+    "offAmazonSettings": {},
+    "startDate": "2019-10-30",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "63869940285539",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Instinct thin",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "149398536549528",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Men Pheromone CROOKE",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2019-11-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "114307170698336",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame Wide",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-01",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "222026246012611",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 300,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame exact",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "68574389108764",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-11-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Instinct wide",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "95271178839331",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Men phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "200431569422067",
+    "startDate": "2019-11-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "214051433537794",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2021-03-20",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "LIGHT thin",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-01",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "280293784775813",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2020-06-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "POWER auto",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-06",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "265162085889902",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "sheer auto",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-06",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "185188998728161",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "1.1 40 DEN AUTO",
+    "offAmazonSettings": {},
+    "portfolioId": "153641875131948",
+    "startDate": "2019-11-09",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "205182738953395",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "1.3 40 DEN Main Phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "153641875131948",
+    "startDate": "2019-11-16",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "202036130808193",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "1.2 40 DEN Main Broad",
+    "offAmazonSettings": {},
+    "portfolioId": "153641875131948",
+    "startDate": "2019-11-16",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "3156633669807",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "endDate": "2026-12-27",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Parfume 25 ml",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-21",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "67693816902590",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "1.4 40 DEN SW",
+    "offAmazonSettings": {},
+    "portfolioId": "153641875131948",
+    "startDate": "2019-11-24",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "419758554732",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "40 DEN MODELING",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-25",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "6549144331597",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "BEAUTY",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-25",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "128855204441004",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-12-20",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame 1 seach term",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-26",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "267177167462544",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 60,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2019-12-20",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Power 1 seach terms",
+    "offAmazonSettings": {},
+    "startDate": "2019-11-26",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "28365117609690",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "C.T. 20, 40",
+    "offAmazonSettings": {},
+    "startDate": "2019-12-03",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "28481661508719",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "EFFECT",
+    "offAmazonSettings": {},
+    "startDate": "2019-12-03",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "4233630200175",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "insular soft",
+    "offAmazonSettings": {},
+    "startDate": "2019-12-04",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "77407261945389",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Power thin key",
+    "offAmazonSettings": {},
+    "startDate": "2019-12-04",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "206100745248868",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "effect phrase",
+    "offAmazonSettings": {},
+    "startDate": "2019-12-19",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "268513189104677",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MANUAL XSIZE",
+    "offAmazonSettings": {},
+    "startDate": "2020-01-09",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "208547034234201",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Campaign - 1/27/2020 15:47:15",
+    "offAmazonSettings": {},
+    "startDate": "2020-01-27",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "166156903138082",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "INSTINCT broad-pr-exact",
+    "offAmazonSettings": {},
+    "startDate": "2020-01-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "127327914602558",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "inside w",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2020-02-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "38194095052556",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men oil exact",
+    "offAmazonSettings": {},
+    "startDate": "2020-02-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "74218191533099",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "20 ml women exact",
+    "offAmazonSettings": {},
+    "startDate": "2020-02-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "56869058649889",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Diffuser Phrase",
+    "offAmazonSettings": {},
+    "startDate": "2020-03-17",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "270830209260187",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "pheromone kye diffuser",
+    "offAmazonSettings": {},
+    "startDate": "2020-03-31",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "101493903634059",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Light",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-02",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "31273254735932",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Light 1",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "111662486425933",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Power",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-02",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "276663527914462",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Powe Exact many keywords",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-02",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "37347166721078",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame new 300 key",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-02",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "111816842787195",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame broad-ph-exact",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "152159512160442",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Oil men product",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "274919288978509",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "oil men display audien",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-28",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "79865599918141",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "POWER",
+    "offAmazonSettings": {},
+    "startDate": "2020-04-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "40815687086558",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "ALPHA Q",
+    "offAmazonSettings": {},
+    "startDate": "2020-05-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "203915819723569",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2020-05-07",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "117269632701542",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside ACH",
+    "offAmazonSettings": {},
+    "startDate": "2020-06-10",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "257740363387254",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Campaign - 7/14/2020 17:26:45",
+    "offAmazonSettings": {},
+    "startDate": "2020-07-14",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "162753874182456",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "diffusser automat",
+    "offAmazonSettings": {},
+    "startDate": "2020-08-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "13884016025142",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Product target",
+    "offAmazonSettings": {},
+    "portfolioId": "200431569422067",
+    "startDate": "2020-08-25",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "274374751851002",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "V.CH PRODUCT",
+    "offAmazonSettings": {},
+    "startDate": "2020-08-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "264844422135516",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame-Inside Top of  search",
+    "offAmazonSettings": {},
+    "startDate": "2020-09-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "160452391683867",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Effect",
+    "offAmazonSettings": {},
+    "startDate": "2020-09-07",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "3398304651321",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame broad",
+    "offAmazonSettings": {},
+    "startDate": "2020-09-21",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "62408825782124",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MenAMarker  to MenAMarker",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2020-10-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "49419037831915",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Men Set 5 keys",
+    "offAmazonSettings": {},
+    "startDate": "2020-10-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "46536195607807",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame exact",
+    "offAmazonSettings": {},
+    "startDate": "2020-10-20",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "129854866876221",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 70,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside exact",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2020-10-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "187723184831528",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "UNLIMIT WOMEN EXACT",
+    "offAmazonSettings": {},
+    "startDate": "2020-10-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "94802143195221",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "unlimit men exact",
+    "offAmazonSettings": {},
+    "startDate": "2020-10-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "104699464595239",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "light",
+    "offAmazonSettings": {},
+    "startDate": "2020-11-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "199687640869192",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame product",
+    "offAmazonSettings": {},
+    "startDate": "2020-12-15",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "257208811569045",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "water women product",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2020-12-15",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "126456855915811",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MAN OIL product",
+    "offAmazonSettings": {},
+    "startDate": "2020-12-15",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "219493639696784",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MAN WATER product",
+    "offAmazonSettings": {},
+    "startDate": "2020-12-15",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "147920809866082",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MEN UNLIM+COVER product",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2020-12-15",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "117666448285576",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "diffuser product",
+    "offAmazonSettings": {},
+    "startDate": "2020-12-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "53129615316155",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "flame, ins, inside -pure inst exact",
+    "offAmazonSettings": {},
+    "startDate": "2021-01-11",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "86013400004634",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 25,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "oil man exact",
+    "offAmazonSettings": {},
+    "startDate": "2021-01-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "48443601885770",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "oil man broad",
+    "offAmazonSettings": {},
+    "startDate": "2021-01-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "242586280318092",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Sens key words",
+    "offAmazonSettings": {},
+    "startDate": "2021-03-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "25176364166458",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "cover women exact",
+    "offAmazonSettings": {},
+    "startDate": "2021-03-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "88627189551132",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "cover women broad",
+    "offAmazonSettings": {},
+    "startDate": "2021-03-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "108049356351410",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside - exact",
+    "offAmazonSettings": {},
+    "startDate": "2021-04-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "273389191266451",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Pure Inst prod- flame, inside",
+    "offAmazonSettings": {},
+    "startDate": "2022-08-30",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "272290318917595",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "POWER phrase",
+    "offAmazonSettings": {},
+    "startDate": "2022-10-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "107211580184406",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "flame set 2",
+    "offAmazonSettings": {},
+    "startDate": "2023-02-05",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "276208563263548",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 9,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame - set 1+1",
+    "offAmazonSettings": {},
+    "startDate": "2023-03-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "149040256733278",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "PURE INSTINCT",
+    "offAmazonSettings": {},
+    "startDate": "2021-09-23",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "155201163568548",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "FLAME broad-ph-exac",
+    "offAmazonSettings": {},
+    "startDate": "2021-09-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "257887998847022",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "women smaller rank",
+    "offAmazonSettings": {},
+    "startDate": "2021-09-27",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "223570016001608",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men smaller rank",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2021-09-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "40284056558876",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2021-12-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "GIFT FLAME 2021",
+    "offAmazonSettings": {},
+    "startDate": "2021-11-12",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "46771876008816",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2021-12-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "gift instinct 2021",
+    "offAmazonSettings": {},
+    "startDate": "2021-11-12",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "156080837555596",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2021-12-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "gift inside 2021",
+    "offAmazonSettings": {},
+    "startDate": "2021-11-12",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "276147277123416",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2021-12-30",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Gift Cover women",
+    "offAmazonSettings": {},
+    "startDate": "2021-11-12",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "240755924413152",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MEN OIL SET-1+1",
+    "offAmazonSettings": {},
+    "startDate": "2022-01-04",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "249654329850575",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "flame set",
+    "offAmazonSettings": {},
+    "startDate": "2022-01-04",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "118091502802917",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SENS NEW",
+    "offAmazonSettings": {},
+    "startDate": "2022-01-04",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "32990441836181",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Alfamarker to Alfamarker",
+    "offAmazonSettings": {},
+    "startDate": "2022-01-10",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "137941292979199",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2022-01-19",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "1+1 men 1 key exact",
+    "offAmazonSettings": {},
+    "startDate": "2022-01-13",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "275435949412511",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "endDate": "2022-01-19",
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "1+1 flame 1 key exact",
+    "offAmazonSettings": {},
+    "startDate": "2022-01-13",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "28710361342995",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "inside new wide",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2022-01-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "132388697403644",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 5,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "All to All Wom",
+    "offAmazonSettings": {},
+    "portfolioId": "113045704805691",
+    "startDate": "2026-01-26",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "78470913162631",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 330,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame new auto",
+    "offAmazonSettings": {},
+    "portfolioId": "157483380127072",
+    "startDate": "2026-01-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "43444302487020",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Product Raw",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2026-01-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "139332044307531",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 180,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 210,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "shopperCohortBidding": [
+        {
+          "audienceSegments": [
+            {
+              "audienceId": "413580582382876358",
+              "audienceSegmentType": "BEHAVIOR_DYNAMIC"
+            }
+          ],
+          "percentage": 25,
+          "shopperCohortType": "AUDIENCE_SEGMENT"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "new power auto",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-02-10",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "153965829786812",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+    "offAmazonSettings": {},
+    "startDate": "2026-02-10",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "42176185687165",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 120,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings auto subse",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "176811266333083",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 200,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings exact rest",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "98408837672143",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings auto close",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "255063733864880",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 95,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 120,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings exact top",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "197547157145878",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 415,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings auto loose",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "188601695650581",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 435,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "BUTERFLY AUTO close top",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2026-03-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "122211048814380",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 200,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "inside auto loose",
+    "offAmazonSettings": {},
+    "portfolioId": "170122107970815",
+    "startDate": "2026-03-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "243289690074558",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 120,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Men phrase PH perfume",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2026-03-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "226224325728421",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 85,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 105,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Men phrase PH cologne",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2026-03-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "40185296999250",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 105,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 115,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "WINGS CATEGORY",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "234898071570570",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 120,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Men phrase PH perfume feromonas",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2026-03-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "172461460309222",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 410,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings phrase",
+    "offAmazonSettings": {
+      "offAmazonBudgetControlStrategy": "MINIMIZE_SPEND"
+    },
+    "portfolioId": "72859441739633",
+    "startDate": "2026-03-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "90845638993555",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 165,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 235,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame new phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "157483380127072",
+    "startDate": "2026-03-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "97981712583213",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 160,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 400,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "INSIDE BROAD",
+    "offAmazonSettings": {},
+    "portfolioId": "170122107970815",
+    "startDate": "2026-03-25",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "39852663302647",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings product",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-04-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "114324652017889",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 322,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 433,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "2026 intense auto CLOSE",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-04-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "25134719260729",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 45,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "2026 - Intense broad",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-04-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "121727286998182",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 40,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 60,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "MANUAL"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "2026-Intense phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-04-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "145259879400860",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 70,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "2026-Intense spaine",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-04-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "9985321578614",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 150,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 200,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "2026 Intense Ioose",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-04-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "73430526516580",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 70,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "2026 Intense exact top-rest",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-04-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "248424490947534",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 270,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 325,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "flame new spanish",
+    "offAmazonSettings": {},
+    "portfolioId": "157483380127072",
+    "startDate": "2026-05-04",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "229055366856444",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 300,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 250,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame new phrase 2",
+    "offAmazonSettings": {
+      "offAmazonBudgetControlStrategy": "MINIMIZE_SPEND"
+    },
+    "portfolioId": "157483380127072",
+    "startDate": "2026-05-04",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "36164570509429",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 180,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 280,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame old auto",
+    "offAmazonSettings": {},
+    "portfolioId": "132017667868083",
+    "startDate": "2026-05-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "122940525563558",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Intense Product",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-05-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "277484207418098",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 170,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 300,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "INSIDE pheromone perfume",
+    "offAmazonSettings": {},
+    "portfolioId": "170122107970815",
+    "startDate": "2026-05-14",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "129267461447392",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 220,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "flame new spanish exact",
+    "offAmazonSettings": {},
+    "portfolioId": "157483380127072",
+    "startDate": "2026-05-20",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "220539081651716",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 150,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 230,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Butterfly Brand Exact",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2026-05-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "4539436498098",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 390,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 450,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard phrase new",
+    "offAmazonSettings": {},
+    "portfolioId": "279450512957310",
+    "startDate": "2026-05-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "104199037535083",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 400,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 550,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard auto new",
+    "offAmazonSettings": {},
+    "portfolioId": "279450512957310",
+    "startDate": "2026-05-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "74384986139262",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 190,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 210,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "ph auto men 125 CLOSE",
+    "offAmazonSettings": {},
+    "portfolioId": "200431569422067",
+    "startDate": "2026-05-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "10623471903909",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 250,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "INTENSE AUTO LOOSE",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2026-05-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "35005614225646",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 132,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 194,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Wings exact pher oil",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2026-06-03",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "19618457109937",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "To All Men",
+    "offAmazonSettings": {},
+    "portfolioId": "279450512957310",
+    "startDate": "2026-06-07",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "75056692210024",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 325,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 500,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "flame velvet exact",
+    "offAmazonSettings": {},
+    "portfolioId": "62980734510055",
+    "startDate": "2026-06-05",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "133652138700282",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 450,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame velvet auto",
+    "offAmazonSettings": {},
+    "portfolioId": "62980734510055",
+    "startDate": "2026-06-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "74887735723131",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 72,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 198,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "INTENSE PHEROMONE PHRASE",
+    "offAmazonSettings": {},
+    "startDate": "2026-09-09",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "133339544286002",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 300,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "MANUAL"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Old Flame X2 experiment Exact",
+    "offAmazonSettings": {},
+    "startDate": "2026-09-14",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "104147896929176",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 200,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 150,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Flame NEW X2 Exact test",
+    "offAmazonSettings": {},
+    "startDate": "2026-09-30",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "12947793733689",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 250,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 195,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside X2 Exact diagnostic",
+    "offAmazonSettings": {},
+    "startDate": "2026-09-30",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "427311881751778",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men rollon phrase",
+    "offAmazonSettings": {},
+    "startDate": "2023-06-16",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "339217033521386",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Campaign - 6/19/2023 18:04:32.960",
+    "offAmazonSettings": {},
+    "startDate": "2023-06-19",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "314403862022739",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "water men 2023 mixed keys",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2023-07-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "475481608461727",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Mixed women 2023",
+    "offAmazonSettings": {},
+    "startDate": "2023-07-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "338164656745768",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "inside mixed keys",
+    "offAmazonSettings": {},
+    "startDate": "2023-07-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "522347218821479",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "WomAMarker to WomAMarker",
+    "offAmazonSettings": {},
+    "portfolioId": "113045704805691",
+    "startDate": "2023-10-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "420277587922457",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "rol men auto",
+    "offAmazonSettings": {},
+    "startDate": "2023-10-08",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "447382106060102",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "rollon men auto-broad",
+    "offAmazonSettings": {},
+    "startDate": "2023-10-09",
+    "state": "ARCHIVED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "539825905600499",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 55,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "rol men broad",
+    "offAmazonSettings": {},
+    "startDate": "2023-10-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "462007177442133",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "MenAlf-to-MenAlf",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2023-10-16",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "400858852311435",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 12,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "rolon exact",
+    "offAmazonSettings": {},
+    "startDate": "2023-10-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "500982461010824",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "TEST ROLON MEN EXACT",
+    "offAmazonSettings": {},
+    "startDate": "2023-10-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "296940695247748",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "high women",
+    "offAmazonSettings": {},
+    "startDate": "2024-02-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "291688262532564",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 25,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 40,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "VIOLET 1",
+    "offAmazonSettings": {},
+    "startDate": "2024-03-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "299193200402890",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "new men keywords",
+    "offAmazonSettings": {},
+    "startDate": "2024-03-12",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "472847036746993",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_PRODUCT_PAGE"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "VIOLET Target oil perfume",
+    "offAmazonSettings": {},
+    "startDate": "2024-03-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "384490097986189",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard - intrnse",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2024-06-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "294226829962920",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard phrase",
+    "offAmazonSettings": {},
+    "startDate": "2024-06-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "505426298785277",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "intens to alfamarker",
+    "offAmazonSettings": {},
+    "startDate": "2024-08-08",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "353242235471026",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Campaign - 8/8/2024 12:59:41.960",
+    "offAmazonSettings": {},
+    "startDate": "2024-08-08",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "432581590576276",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "LIZARD PRODUCT",
+    "offAmazonSettings": {},
+    "startDate": "2024-08-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "330691740404933",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "FLAME 1+1",
+    "offAmazonSettings": {},
+    "startDate": "2024-08-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "308624021073144",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard product exact",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2024-09-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "377181843889519",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 150,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "violet 1 key",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2024-10-12",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "347056946830950",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL baccar key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "307701956544717",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Lanc Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "347190897713501",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS Killia",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "355517820056044",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS good g",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "377450426627166",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Arman Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "373715057497140",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "soul product all",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "427158221231921",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Versac Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "294222153137950",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 8,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL gucc key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "418060628493128",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS Brigth Cryst",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "376568662807580",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL G Girl Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "291261050179883",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Killia Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 15.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "309772846251338",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Perf Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "401797057624453",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL All to ALL",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2024-10-24",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "415656464406070",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS flowerBom",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "333741403119402",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "SITE_AMAZON_BUSINESS"
+        },
+        {
+          "percentage": 12,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "soul automat",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "512534022751380",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 7,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Chane Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "432178008627240",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Miris Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "537626031813613",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS Bacca",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "318638952834306",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 25,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL TF Cherry key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "288522259146747",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 7,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Dio-r key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "520271251919451",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS Cherry",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "493924630732026",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 25,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Dupe Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "513299682275163",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS Bl Opiu",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "338732168024726",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOSS Key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "302447250905196",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL DOS Jad",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "440599167341243",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL bacc exact 2 key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-25",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "285793164459980",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 150,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Dossie 1 key ex",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "439111750684453",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL ligh Blue - 2Key ex",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "475471171520702",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 40,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL GOOD GIRL EXACT",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-30",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "358489339337524",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL BRIGHT CRIST EXACT",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-10-30",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "539974202333982",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL BLACK OPIUM EXACT",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "312349541664403",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL BR CRYSTAL EXACT",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "309112185038684",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL JADORE EXACT",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "295112825359689",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL COCO MADEM EXACT",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "480086693712472",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PRODUCT TOP",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-13",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "288509131147706",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Mist keywords",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-14",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "391176564001250",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL coco Madem Exact",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "373297971705779",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL lost cherry Exact",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-11-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "361092405279032",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "SITE_AMAZON_BUSINESS"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Lost cherry",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "405859711722106",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Bright crystall",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "496406723630942",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "PH butterfly exact 1k",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2024-12-01",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "529599996653284",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Mademuiselle",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "296585014568551",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Soul Flowerbomb phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "339431780196743",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "SITE_AMAZON_BUSINESS"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Black opium",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "537015592634410",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH MD Blooming Buq",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-02",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "317374953283984",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Baccara",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 2.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "552974721111167",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "july",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2024-12-17",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "385322867789904",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "phero new",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2024-12-17",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "489136203317018",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Jo Malo",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "539971563280259",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH Jadore",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2024-12-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "488123149803346",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Jo Malo exact",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2024-12-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "368720397743920",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL NEW AUTO",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2025-01-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "487969374680575",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Women auto",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-01-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "391275448796010",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men auto Loose match",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-01-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "423208809310791",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men auto Close match",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-01-20",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "317301267724383",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL Baccarat Phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-01-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "538206746344781",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "cologne new",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-01-25",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "505727922866942",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 20,
+          "placement": "SITE_AMAZON_BUSINESS"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "AUTOMAT 1.2",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2025-02-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "522580252071432",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "AUTOMAT 1.1",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2025-02-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "351074119898401",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "mens water",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-02-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "345846037986639",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 44,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Violet new",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-03-11",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "416065450331813",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "women water",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-03-11",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "307740971482800",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Campaign - 3/11/2025 15:31:32.038",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-03-11",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "487027226769538",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "AUTOMAT COMPLIMENTS MATCH",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "516373182302467",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 35,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "PH women 03-25",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-03-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "445565140855466",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "AUTOMAT Substitutes MATCH",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "384183046971208",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Perfume 4 key",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2025-03-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "424726931843556",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Goda",
+    "offAmazonSettings": {},
+    "portfolioId": "39808432344951",
+    "startDate": "2025-03-23",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "305979618859855",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "phero new women",
+    "offAmazonSettings": {},
+    "portfolioId": "113045704805691",
+    "startDate": "2025-03-24",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "427076592490706",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "AUTOMAT CLOSE MATCH",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "480431700676206",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "AUTOMAT LOSE MATCH",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "406882935452692",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Lizard frase",
+    "offAmazonSettings": {
+      "offAmazonBudgetControlStrategy": "MINIMIZE_SPEND"
+    },
+    "portfolioId": "279450512957310",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "281894321012777",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Intense frase",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "554769624943491",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men frase",
+    "offAmazonSettings": {},
+    "portfolioId": "200431569422067",
+    "startDate": "2025-03-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "439898669883504",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Bacc-twins, duo, miris",
+    "offAmazonSettings": {},
+    "portfolioId": "12939801075789",
+    "startDate": "2025-03-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "328599638846302",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 5,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "new men 125 ml",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2025-04-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "363583538318469",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "SITE_AMAZON_BUSINESS"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard exact",
+    "offAmazonSettings": {
+      "offAmazonBudgetControlStrategy": "MINIMIZE_SPEND"
+    },
+    "portfolioId": "279450512957310",
+    "startDate": "2025-04-25",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "461357030902815",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 180,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 250,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "shopperCohortBidding": [
+        {
+          "audienceSegments": [
+            {
+              "audienceId": "412978094962770620",
+              "audienceSegmentType": "BEHAVIOR_DYNAMIC"
+            }
+          ],
+          "percentage": 5,
+          "shopperCohortType": "AUDIENCE_SEGMENT"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "ph auto new men 125",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2025-04-28",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "349997448987382",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PH to AlfaMen",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2025-04-28",
+    "state": "ENABLED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "330298056376590",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "LIZARD 1 KEY",
+    "offAmazonSettings": {
+      "offAmazonBudgetControlStrategy": "MINIMIZE_SPEND"
+    },
+    "portfolioId": "279450512957310",
+    "startDate": "2025-06-09",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "370986018583256",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 20,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard auto",
+    "offAmazonSettings": {},
+    "portfolioId": "279450512957310",
+    "startDate": "2025-07-04",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "293127029268331",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PHR 7-27 lightn blue",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-04",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "382982780934780",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PHR 7-25 Sisil",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-07",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "544552430968756",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PHR 7-25 Mamselle",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-07",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "523077902169693",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL 7-25 love bella",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-04",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "310311361455857",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PHR 7-25 B540",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-11",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "332794837256160",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PHR 7-25 change cannel",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-07",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "416835637202368",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL PHR 7-25 Way",
+    "offAmazonSettings": {},
+    "portfolioId": "22837774426883",
+    "startDate": "2025-07-07",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "319377428380635",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside 7-25",
+    "offAmazonSettings": {},
+    "portfolioId": "170122107970815",
+    "startDate": "2025-07-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "418514051513055",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "violet 7-25",
+    "offAmazonSettings": {},
+    "portfolioId": "113045704805691",
+    "startDate": "2025-07-18",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "544345203731330",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "goda",
+    "offAmazonSettings": {},
+    "startDate": "2025-08-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "442872091001680",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "lizard ex 2",
+    "offAmazonSettings": {},
+    "portfolioId": "279450512957310",
+    "startDate": "2025-08-21",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "330325599554870",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "new instinct auto",
+    "offAmazonSettings": {},
+    "portfolioId": "72859441739633",
+    "startDate": "2025-08-30",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 12.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "489092924120893",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "BUTERFLY AUTO",
+    "offAmazonSettings": {},
+    "startDate": "2025-08-30",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "508113323316099",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 50,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "MANUAL"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "buterfly+instinct new",
+    "offAmazonSettings": {},
+    "portfolioId": "113045704805691",
+    "startDate": "2025-09-10",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "472707323061354",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Butterfly Product Target",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2025-09-14",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 7.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "456325213341556",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men oil",
+    "offAmazonSettings": {},
+    "portfolioId": "200431569422067",
+    "startDate": "2025-09-14",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "327021142024769",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Inside 09-25",
+    "offAmazonSettings": {},
+    "portfolioId": "170122107970815",
+    "startDate": "2025-09-15",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "367683608499996",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 30,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "buterfly auto",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2025-09-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "371900085212493",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "SOUL AUTO 10-25",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-10-13",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 11.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "386074922194241",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "ph men 125 ml",
+    "offAmazonSettings": {},
+    "portfolioId": "90466853393126",
+    "startDate": "2025-10-06",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "326388927563248",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 10,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 15,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 10,
+          "placement": "SITE_AMAZON_BUSINESS"
+        }
+      ],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "men oil auto",
+    "offAmazonSettings": {},
+    "portfolioId": "200431569422067",
+    "startDate": "2025-10-13",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "497191775432939",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        },
+        {
+          "percentage": 180,
+          "placement": "PLACEMENT_TOP"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "inside auto close",
+    "offAmazonSettings": {},
+    "portfolioId": "170122107970815",
+    "startDate": "2025-10-15",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 5.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "431858612356402",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Baccar",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-10-16",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "539044927609315",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Butterfly Br-PHr",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2025-10-26",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 1.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "541186299594852",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Intens broad",
+    "offAmazonSettings": {},
+    "portfolioId": "50376443574685",
+    "startDate": "2025-10-27",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 10.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "394650722388842",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "Lizard to AlfaMen",
+    "offAmazonSettings": {},
+    "portfolioId": "279450512957310",
+    "startDate": "2025-11-19",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 4.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "523637465097738",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 100,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "soul auto 11-25",
+    "offAmazonSettings": {},
+    "portfolioId": "223960385187137",
+    "startDate": "2025-11-22",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "AUTO"
+  },
+  {
+    "budget": {
+      "budget": 8.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "445054452464100",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "goda12-25",
+    "offAmazonSettings": {},
+    "portfolioId": "113045704805691",
+    "startDate": "2025-12-03",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 6.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "291191985790294",
+    "dynamicBidding": {
+      "placementBidding": [],
+      "strategy": "AUTO_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "butterfly phrase",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2025-11-29",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  },
+  {
+    "budget": {
+      "budget": 3.0,
+      "budgetType": "DAILY"
+    },
+    "campaignId": "324461317005854",
+    "dynamicBidding": {
+      "placementBidding": [
+        {
+          "percentage": 350,
+          "placement": "PLACEMENT_TOP"
+        },
+        {
+          "percentage": 300,
+          "placement": "PLACEMENT_REST_OF_SEARCH"
+        }
+      ],
+      "strategy": "LEGACY_FOR_SALES"
+    },
+    "marketplaceBudgetAllocation": "MANUAL",
+    "name": "BUTTERFLY Generic Exact.",
+    "offAmazonSettings": {},
+    "portfolioId": "49212266068359",
+    "startDate": "2026-01-05",
+    "state": "PAUSED",
+    "tags": {},
+    "targetingType": "MANUAL"
+  }
+]
