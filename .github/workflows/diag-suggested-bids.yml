@@ -1,0 +1,32 @@
+name: Diag Suggested Bids (one-off)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Diag
+        env:
+          ADS_CLIENT_ID:      ${{ secrets.ADS_CLIENT_ID }}
+          ADS_CLIENT_SECRET:  ${{ secrets.ADS_CLIENT_SECRET }}
+          ADS_REFRESH_TOKEN:  ${{ secrets.ADS_REFRESH_TOKEN }}
+          ADS_PROFILE_ID_USA: ${{ secrets.ADS_PROFILE_ID_USA }}
+          ADS_PROFILE_ID_CA:  ${{ secrets.ADS_PROFILE_ID_CA }}
+        run: python diag_suggested_bids.py
+      - name: Commit
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"
+          git config user.email "bot@ppc-agent"
+          git add diag/
+          git commit -m "Diag suggested bids USA (raw API responses)" || echo "nothing"
+          git pull --rebase origin main
+          git push
