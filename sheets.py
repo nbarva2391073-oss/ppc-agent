@@ -282,6 +282,10 @@ def read_suggested_bids(market: str) -> dict:
             kw        = row[col_kw]
             match     = row[col_match]
             suggested = row[col_suggested]
+            # Порожня рекомендація = "немає даних", не 0: пропускаємо,
+            # щоб не затирати попередню валідну і не вигадувати нуль.
+            if str(suggested).strip() == "":
+                continue
             bid_min   = row[col_min] if len(row) > col_min else ""
             bid_max   = row[col_max] if len(row) > col_max else ""
 
