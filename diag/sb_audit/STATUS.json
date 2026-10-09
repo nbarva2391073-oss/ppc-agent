@@ -1,0 +1,108 @@
+{
+ "camp_daily": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "41310c0a-32cb-4bc0-95a7-b6164dd13a4b",
+  "window": [
+   "2026-09-14",
+   "2026-10-08"
+  ],
+  "timeUnit": "DAILY",
+  "final": "COMPLETED",
+  "rows": 100
+ },
+ "camp_summary_collector_window": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "915b3791-e1b6-45ae-bc4d-21b90470ed47",
+  "window": [
+   "2026-10-05",
+   "2026-10-06"
+  ],
+  "timeUnit": "SUMMARY",
+  "final": "COMPLETED",
+  "rows": 4
+ },
+ "camp_summary_single_day": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "046451a7-9ac7-42b9-a34c-e57258645dd2",
+  "window": [
+   "2026-10-05",
+   "2026-10-05"
+  ],
+  "timeUnit": "SUMMARY",
+  "final": "COMPLETED",
+  "rows": 4
+ },
+ "st_daily_A": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "b798ea79-f4fa-4f43-a4bd-ac95b4f589c0",
+  "window": [
+   "2026-09-14",
+   "2026-10-08"
+  ],
+  "timeUnit": "DAILY",
+  "final": "COMPLETED",
+  "rows": 305
+ },
+ "st_daily_B": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "5e264aca-5830-4f96-9f47-a0c2f2c7425e",
+  "window": [
+   "2026-09-14",
+   "2026-10-08"
+  ],
+  "timeUnit": "DAILY",
+  "final": "COMPLETED",
+  "rows": 305
+ },
+ "st_summary_period": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "ea8e7a33-4620-452c-a4ae-50c15392049e",
+  "window": [
+   "2026-09-14",
+   "2026-10-04"
+  ],
+  "timeUnit": "SUMMARY",
+  "final": "COMPLETED",
+  "rows": 198
+ },
+ "tg_daily_A": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "a2e6dca5-c1a6-475b-a4fb-db611b7b00b7",
+  "window": [
+   "2026-09-14",
+   "2026-10-08"
+  ],
+  "timeUnit": "DAILY",
+  "final": "COMPLETED",
+  "rows": 456
+ },
+ "tg_daily_B": {
+  "submit_http": 400,
+  "submit_body": "{\"code\":\"400\",\"detail\":\"configuration columns includes invalid values: (targetId). Allowed values: (keywordId, keywordBid, adKeywordStatus, keywordText, keywordType, matchType, targetingId, targetingExpression, targetingText, targetingType, adGroupId, adGroupName, campaignId, campaignName, campaignStatus, impressions, clicks, cost, date, startDate, endDate, brandedSearches, purchases, purchasesPromoted, detailPageViews, newToBrandPurchasesRate, newToBrandPurchases, newToBrandPurchasesPercentage, sales, salesPromoted, newToBrandSales, newToBrandSalesPercentage, newToBrandUnitsSold, newToBrandUn",
+  "report_id": null,
+  "window": [
+   "2026-09-14",
+   "2026-10-08"
+  ],
+  "timeUnit": "DAILY"
+ },
+ "tg_daily_C": {
+  "submit_http": 200,
+  "submit_body": null,
+  "report_id": "5cbff2e4-e0e5-4e1f-822d-a07b4cc8fa9d",
+  "window": [
+   "2026-09-14",
+   "2026-10-08"
+  ],
+  "timeUnit": "DAILY",
+  "final": "COMPLETED",
+  "rows": 456
+ }
+}

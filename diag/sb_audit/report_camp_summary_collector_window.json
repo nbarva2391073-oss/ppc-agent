@@ -1,0 +1,54 @@
+[
+ {
+  "newToBrandSales": 0,
+  "cost": 2.54,
+  "purchases": 0,
+  "campaignId": 262399142052207,
+  "unitsSold": 0,
+  "campaignStatus": "ENABLED",
+  "clicks": 2,
+  "newToBrandPurchases": 0,
+  "impressions": 125,
+  "campaignName": "Brand violet+4women",
+  "sales": 0
+ },
+ {
+  "newToBrandSales": 0,
+  "cost": 6.82,
+  "purchases": 0,
+  "campaignId": 183689225849794,
+  "unitsSold": 0,
+  "campaignStatus": "ENABLED",
+  "clicks": 8,
+  "newToBrandPurchases": 0,
+  "impressions": 602,
+  "campaignName": "Velvet Brand Video",
+  "sales": 0
+ },
+ {
+  "newToBrandSales": 0,
+  "cost": 2.44,
+  "purchases": 0,
+  "campaignId": 86598341140569,
+  "unitsSold": 0,
+  "campaignStatus": "ENABLED",
+  "clicks": 2,
+  "newToBrandPurchases": 0,
+  "impressions": 298,
+  "campaignName": "Intense Video",
+  "sales": 0
+ },
+ {
+  "newToBrandSales": 0,
+  "cost": 6.11,
+  "purchases": 0,
+  "campaignId": 97585559551282,
+  "unitsSold": 0,
+  "campaignStatus": "ENABLED",
+  "clicks": 6,
+  "newToBrandPurchases": 0,
+  "impressions": 160,
+  "campaignName": "Video Wings",
+  "sales": 0
+ }
+]

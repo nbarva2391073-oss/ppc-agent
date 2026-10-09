@@ -1,0 +1,501 @@
+[
+ {
+  "bidding": {
+   "bidAdjustmentsByPlacement": [
+    {
+     "percentage": 0,
+     "placement": "DETAIL_PAGE"
+    },
+    {
+     "percentage": 750,
+     "placement": "TOP_OF_SEARCH"
+    },
+    {
+     "percentage": 0,
+     "placement": "HOME"
+    },
+    {
+     "percentage": 0,
+     "placement": "OTHER"
+    }
+   ],
+   "bidOptimization": false,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 5.0,
+  "budgetType": "DAILY",
+  "campaignId": "262399142052207",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "Brand violet+4women",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2026-06-06",
+  "state": "ENABLED"
+ },
+ {
+  "bidding": {
+   "bidAdjustmentsByPlacement": [
+    {
+     "percentage": 220,
+     "placement": "OTHER"
+    },
+    {
+     "percentage": 300,
+     "placement": "TOP_OF_SEARCH"
+    },
+    {
+     "percentage": 0,
+     "placement": "DETAIL_PAGE"
+    },
+    {
+     "percentage": 0,
+     "placement": "HOME"
+    }
+   ],
+   "bidOptimization": false,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES",
+   "shopperCohortBidAdjustments": [
+    {
+     "audienceSegments": [
+      {
+       "audienceId": "396797785589391180",
+       "audienceSegmentType": "BEHAVIOR_DYNAMIC"
+      }
+     ],
+     "percentage": 0,
+     "shopperCohortType": "AUDIENCE_SEGMENT"
+    }
+   ]
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 4.0,
+  "budgetType": "DAILY",
+  "campaignId": "183689225849794",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "Velvet Brand Video",
+  "portfolioId": "62980734510055",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2026-06-06",
+  "state": "ENABLED"
+ },
+ {
+  "bidding": {
+   "bidAdjustmentsByPlacement": [
+    {
+     "percentage": 0,
+     "placement": "HOME"
+    },
+    {
+     "percentage": 250,
+     "placement": "OTHER"
+    },
+    {
+     "percentage": 365,
+     "placement": "TOP_OF_SEARCH"
+    },
+    {
+     "percentage": 0,
+     "placement": "DETAIL_PAGE"
+    }
+   ],
+   "bidOptimization": false,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES",
+   "shopperCohortBidAdjustments": [
+    {
+     "audienceSegments": [
+      {
+       "audienceId": "396797785589391180",
+       "audienceSegmentType": "BEHAVIOR_DYNAMIC"
+      }
+     ],
+     "percentage": 0,
+     "shopperCohortType": "AUDIENCE_SEGMENT"
+    }
+   ]
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 5.0,
+  "budgetType": "DAILY",
+  "campaignId": "86598341140569",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "Intense Video",
+  "portfolioId": "50376443574685",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2026-06-06",
+  "state": "ENABLED"
+ },
+ {
+  "bidding": {
+   "bidAdjustmentsByPlacement": [
+    {
+     "percentage": 0,
+     "placement": "DETAIL_PAGE"
+    },
+    {
+     "percentage": 350,
+     "placement": "OTHER"
+    },
+    {
+     "percentage": 0,
+     "placement": "HOME"
+    },
+    {
+     "percentage": 450,
+     "placement": "TOP_OF_SEARCH"
+    }
+   ],
+   "bidOptimization": false,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES",
+   "shopperCohortBidAdjustments": [
+    {
+     "audienceSegments": [
+      {
+       "audienceId": "396797785589391180",
+       "audienceSegmentType": "BEHAVIOR_DYNAMIC"
+      }
+     ],
+     "percentage": 0,
+     "shopperCohortType": "AUDIENCE_SEGMENT"
+    }
+   ]
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 3.0,
+  "budgetType": "DAILY",
+  "campaignId": "97585559551282",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "Video Wings",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2026-06-11",
+  "state": "ENABLED"
+ },
+ {
+  "bidding": {
+   "bidAdjustmentsByPlacement": [
+    {
+     "percentage": 0,
+     "placement": "TOP_OF_SEARCH"
+    },
+    {
+     "percentage": 0,
+     "placement": "OTHER"
+    }
+   ],
+   "bidOptimization": false,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 8.0,
+  "budgetType": "DAILY",
+  "campaignId": "233437241974305",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "man brand",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2026-07-28",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 3.0,
+  "budgetType": "DAILY",
+  "campaignId": "361872819161233",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "women brand new 2023",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2023-07-16",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 2.0,
+  "budgetType": "DAILY",
+  "campaignId": "286615709994700",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "Men Brand 2023",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2023-07-16",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 1.0,
+  "budgetType": "DAILY",
+  "campaignId": "324502573054045",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "women brand -2 -2023",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2023-07-16",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 2.0,
+  "budgetType": "DAILY",
+  "campaignId": "309403128647887",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "Soul brand perf key",
+  "portfolioId": "12939801075789",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-21",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 10.0,
+  "budgetType": "DAILY",
+  "campaignId": "322002433557894",
+  "costType": "VCPM",
+  "goal": "BRAND_IMPRESSION_SHARE",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "TOP_OF_SEARCH_IMPRESSION_SHARE",
+  "name": "SOUL Brand auto",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-24",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 5.0,
+  "budgetType": "DAILY",
+  "campaignId": "381143246133635",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "SOUL video- Miri",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-23",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 4.0,
+  "budgetType": "DAILY",
+  "campaignId": "373405752738171",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "SOUL video perfume key",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-21",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 3.0,
+  "budgetType": "DAILY",
+  "campaignId": "345780588884488",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "SOUL VIDEO GOOD GIRL",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-23",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 3.0,
+  "budgetType": "DAILY",
+  "campaignId": "557140102180599",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "SOUL video baccarat",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-21",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 2.0,
+  "budgetType": "DAILY",
+  "campaignId": "383173288544742",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "SOUL brand 4 key",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2024-10-29",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 2.0,
+  "budgetType": "DAILY",
+  "campaignId": "442530815658839",
+  "costType": "VCPM",
+  "goal": "BRAND_IMPRESSION_SHARE",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "TOP_OF_SEARCH_IMPRESSION_SHARE",
+  "name": "br 3-25",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2025-03-02",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 10.0,
+  "budgetType": "DAILY",
+  "campaignId": "446220724457590",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "video bacc micro-p 1",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2025-03-14",
+  "state": "PAUSED"
+ },
+ {
+  "bidding": {
+   "bidOptimization": true,
+   "bidOptimizationStrategy": "MAXIMIZE_IMMEDIATE_SALES"
+  },
+  "brandEntityId": "ENTITY2E231PHXNSJO5",
+  "budget": 10.0,
+  "budgetType": "DAILY",
+  "campaignId": "448083721327792",
+  "costType": "CPC",
+  "goal": "PAGE_VISIT",
+  "isMultiAdGroupsEnabled": true,
+  "kpi": "CLICKS",
+  "name": "br 540 video",
+  "portfolioId": "12939801075789",
+  "productLocation": "SOLD_ON_AMAZON",
+  "smartDefault": [
+   "MANUAL"
+  ],
+  "startDate": "2025-06-17",
+  "state": "PAUSED"
+ }
+]
