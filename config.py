@@ -74,6 +74,8 @@ SHEETS_USA = {
     "competitor_tracker":   "Competitor Tracker USA",
     "advertised_product":   "Advertised Product USA",
     "claude_daily_review":  "Claude Daily Review USA",
+    "campaign_control":     "Campaign Control USA",
+    "review_queue":         "Review Queue USA",
 }
 
 SHEETS_CA = {
@@ -95,3 +97,23 @@ SHEETS_COMMON = {
     "inventory_tracker": "Inventory Tracker",
     "alert_log":        "Alert Log",
 }
+
+
+# --- Кампанії, виключені зі збору і аналізу ---
+# Матч за campaignId АБО за точною назвою (без регістру). Існуючі рядки в
+# вкладках НЕ видаляються (лише не збираються нові) — видалення тільки
+# за окремим підтвердженням Nataly.
+EXCLUDED_CAMPAIGN_IDS = {
+    "64827828026085",   # «sheer new test» — стара кампанія (2020), колготки,
+                        # знята з продажу; не стосується феромонового ядра
+                        # (підтвердила Nataly 2026-10-10). Archive в Amazon — за Nataly.
+}
+EXCLUDED_CAMPAIGN_NAMES = {"sheer new test"}
+
+
+def is_excluded_campaign(campaign_id=None, name=None) -> bool:
+    if campaign_id is not None and str(campaign_id).strip() in EXCLUDED_CAMPAIGN_IDS:
+        return True
+    if name is not None and str(name).strip().lower() in EXCLUDED_CAMPAIGN_NAMES:
+        return True
+    return False

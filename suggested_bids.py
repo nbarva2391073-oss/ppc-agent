@@ -18,6 +18,7 @@ import time
 import requests
 from datetime import datetime, timezone
 from config import (
+    is_excluded_campaign,
     ADS_CLIENT_ID, ADS_PROFILE_ID_USA, ADS_PROFILE_ID_CA,
 )
 from amazon_ads import get_access_token, headers, ADS_BASE_URL
@@ -122,6 +123,10 @@ def fetch_bid_recommendations(token, profile_id):
                        "application/vnd.spCampaign.v3+json", {"maxResults": 100}, "campaigns")
     camp_names = {str(c["campaignId"]): c.get("name", "") for c in campaigns}
     camp_state = {str(c["campaignId"]): str(c.get("state", "")).upper() for c in campaigns}
+    excluded_ids = {str(c["campaignId"]) for c in campaigns
+                    if is_excluded_campaign(c.get("campaignId"), c.get("name"))}
+    if excluded_ids:
+        print(f"  ⛔ Виключені кампанії (не збираємо): {sorted(excluded_ids)}")
 
     adgroups = _paged(token, profile_id, f"{ADS_BASE_URL}/sp/adGroups/list",
                       "application/vnd.spAdGroup.v3+json", {"maxResults": 100}, "adGroups")
@@ -136,6 +141,8 @@ def fetch_bid_recommendations(token, profile_id):
     for kw in keywords:
         cid = str(kw.get("campaignId", ""))
         if camp_state.get(cid) == "ARCHIVED":
+            continue
+        if cid in excluded_ids or is_excluded_campaign(cid):
             continue
         key = (str(kw["adGroupId"]), cid)
         by_adgroup.setdefault(key, []).append(kw)

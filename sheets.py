@@ -30,7 +30,8 @@ from datetime import datetime, timedelta
 import gspread
 from google.oauth2.service_account import Credentials
 from config import (SPREADSHEET_ID, SHEETS_USA, SHEETS_CA,
-                    SHEETS_COMMON, GOOGLE_CREDENTIALS_JSON)
+                    SHEETS_COMMON, GOOGLE_CREDENTIALS_JSON,
+                    is_excluded_campaign)
 
 SCOPES = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -132,6 +133,15 @@ def read_all(sheet_name: str) -> list[list]:
     """Прочитати всі дані з аркуша."""
     try:
         return get_sheet(sheet_name).get_all_values()
+    except Exception:
+        return []
+
+
+def read_all_optional(sheet_name: str) -> list[list]:
+    """Читає аркуш, якщо він існує. НЕ створює порожній аркуш (на відміну від get_sheet)."""
+    try:
+        ss = client().open_by_key(SPREADSHEET_ID)
+        return ss.worksheet(sheet_name).get_all_values()
     except Exception:
         return []
 
@@ -311,51 +321,93 @@ def read_suggested_bids(market: str) -> dict:
 
 # ── Bid History ───────────────────────────────────────────────
 
+# Нові колонки (праворуч, без зсуву старих): ID для зіставлення «ключ у
+# кампанії» замість «текст ключа». "over_breakeven" перейменовано на
+# "above_comfort_cpc": це евристика suggested > max_cpc по ASIN, а НЕ
+# справжній беззбитковий поріг (беззбитковий ACoS одиниці ≈ 50%).
 BID_HEADERS = [
     "Date", "Campaign", "AdGroup", "Keyword",
     "OldBid", "NewBid", "SuggestedBid",
     "BidRangeMin", "BidRangeMax", "Reason",
-    "ACoS_before", "Impressions_before", "over_breakeven",
+    "ACoS_before", "Impressions_before", "above_comfort_cpc",
+    "CampaignId", "AdGroupId", "KeywordId", "MatchType",
+    "TopAdj%", "RestAdj%",
 ]
 
 
+def _f(v):
+    try:
+        return float(str(v).replace(",", ".")) if v not in ("", None) else 0.0
+    except ValueError:
+        return 0.0
+
+
+def _ensure_bid_headers(sh):
+    """Дописує відсутні колонки праворуч; перейменовує over_breakeven на місці."""
+    header = sh.row_values(1)
+    if not header:
+        sh.update([BID_HEADERS], "A1")
+        return list(BID_HEADERS)
+    if "over_breakeven" in header and "above_comfort_cpc" not in header:
+        header[header.index("over_breakeven")] = "above_comfort_cpc"
+        sh.update([header], "A1")
+        print("  📝 Bid History: over_breakeven → above_comfort_cpc (на місці)")
+    missing = [h for h in BID_HEADERS if h not in header]
+    if missing:
+        start = gspread.utils.rowcol_to_a1(1, len(header) + 1)
+        sh.update([missing], start)
+        header = header + missing
+        print(f"  📝 Bid History: додано колонки праворуч: {missing}")
+    return header
+
+
 def _get_last_bids(sheet_name: str) -> dict:
-    """Читає останню записану ставку по кожному ключу з Bid History."""
+    """
+    Остання записана ставка по кожному ключу. Повертає два індекси:
+      {"id":  {KeywordId: {...}},
+       "txt": {(campaign, keyword) lower: {...}}}   — лише для старих рядків
+    без KeywordId. Раніше ключем був ТІЛЬКИ текст ключа, через що однакові
+    тексти в різних кампаніях порівнювались між собою (фантомні зміни).
+    """
+    empty = {"id": {}, "txt": {}}
     try:
         rows = read_all(sheet_name)
         if len(rows) <= 1:
-            return {}
-        headers_row = rows[0]
-        try:
-            col_kw   = headers_row.index("Keyword")
-            col_bid  = headers_row.index("NewBid")
-            col_acos = headers_row.index("ACoS_before")
-            col_imp  = headers_row.index("Impressions_before")
-        except ValueError:
-            return {}
-        last = {}
+            return empty
+        h = rows[0]
+        idx = {n: i for i, n in enumerate(h)}
+        need = ("Keyword", "NewBid", "Campaign")
+        if any(n not in idx for n in need):
+            return empty
+        g = lambda row, n: row[idx[n]] if n in idx and idx[n] < len(row) else ""
+        by_id, by_txt = {}, {}
         for row in rows[1:]:
-            if len(row) <= max(col_kw, col_bid):
+            kw = g(row, "Keyword")
+            if not kw:
                 continue
-            kw   = row[col_kw]
-            bid  = row[col_bid]
-            acos = row[col_acos] if len(row) > col_acos else ""
-            imp  = row[col_imp]  if len(row) > col_imp  else ""
-            if kw:
-                def _f(v):
-                    try:
-                        return float(str(v).replace(",", ".")) if v else 0.0
-                    except ValueError:
-                        return 0.0
-                last[kw] = {
-                    "bid":  _f(bid),
-                    "acos": _f(acos),
-                    "imp":  _f(imp),
-                }
-        return last
+            rec = {"bid": _f(g(row, "NewBid")), "acos": _f(g(row, "ACoS_before")),
+                   "imp": _f(g(row, "Impressions_before"))}
+            kid = str(g(row, "KeywordId")).strip().lstrip("'")
+            if kid:
+                by_id[kid] = rec
+            else:
+                by_txt[(g(row, "Campaign").strip().lower(), kw.strip().lower())] = rec
+        return {"id": by_id, "txt": by_txt}
     except Exception as e:
         print(f"  ⚠️ Не вдалось прочитати Bid History: {e}")
-        return {}
+        return empty
+
+
+def _placement_adjustments(campaign: dict) -> tuple:
+    """(Top%, Rest%) із налаштувань кампанії; None якщо API не повернув."""
+    top = rest = None
+    for adj in (campaign.get("bidding", {}) or {}).get("adjustments", []) or []:
+        pl = str(adj.get("placement", "")).upper()
+        if pl == "PLACEMENT_TOP":
+            top = adj.get("percentage")
+        elif pl == "PLACEMENT_REST_OF_SEARCH":
+            rest = adj.get("percentage")
+    return top, rest
 
 
 def write_bid_snapshot(campaigns: list, keywords: list,
@@ -364,8 +416,10 @@ def write_bid_snapshot(campaigns: list, keywords: list,
                        raw_data: list = None):
     """
     Записує зміни ставок в Bid History.
-    Умова А: ставка змінилась порівняно з останнім записом.
-    Умова Б: ACoS виріс >20% або покази впали >30% за останні 7 днів.
+    Зіставлення — за KeywordId (не за текстом ключа): OldBid береться з
+    попереднього запису ТОГО САМОГО ключа тієї самої кампанії.
+    bid_changed пишеться лише при OldBid != NewBid; новий ключ без історії
+    пишеться як new_keyword. Кампанії зі списку виключень не збираються.
     """
     from amazon_ads import ASIN_PRICE_CONFIG, BID_CONFIG
 
@@ -373,86 +427,94 @@ def write_bid_snapshot(campaigns: list, keywords: list,
     sheet_name = sheets["bid_history"]
     today      = datetime.now().strftime("%Y-%m-%d")
 
+    _ensure_bid_headers(get_sheet(sheet_name))
     last_bids = _get_last_bids(sheet_name)
 
-    # ACoS і покази з raw_data по ключовому слову (raw_data — targeting-звіт
-    # spTargeting: "keyword" для manual keyword-таргетингу, "targeting" для
-    # auto/product-таргетингу; searchTerm лишаємо як фолбек для сумісності,
-    # якщо колись передадуть search_term-звіт замість targeting)
-    recent_metrics = {}
-    if raw_data:
-        for r in raw_data:
-            kw = r.get("keyword") or r.get("targeting") or r.get("searchTerm", "")
-            if not kw:
-                continue
-            recent_metrics.setdefault(kw, {"spend": 0.0, "sales": 0.0, "impressions": 0})
-            recent_metrics[kw]["spend"]       += float(r.get("cost") or r.get("spend") or 0)
-            recent_metrics[kw]["sales"]       += float(r.get("sales7d", 0))
-            recent_metrics[kw]["impressions"] += int(r.get("impressions", 0))
+    # ACoS і покази з targeting-звіту: ключ — (кампанія, текст, matchType),
+    # щоб метрики різних кампаній з однаковим текстом не змішувались.
+    metrics_full, metrics_loose = {}, {}
+    for r in (raw_data or []):
+        txt = r.get("keyword") or r.get("targeting") or r.get("searchTerm", "")
+        camp = str(r.get("campaignName", "")).strip().lower()
+        if not txt:
+            continue
+        spend = float(r.get("cost") or r.get("spend") or 0)
+        sales = float(r.get("sales7d", 0))
+        imp   = int(r.get("impressions", 0))
+        for store, key in (
+            (metrics_full,  (camp, txt.strip().lower(), str(r.get("matchType", "")).upper())),
+            (metrics_loose, (camp, txt.strip().lower())),
+        ):
+            m = store.setdefault(key, {"spend": 0.0, "sales": 0.0, "impressions": 0})
+            m["spend"] += spend; m["sales"] += sales; m["impressions"] += imp
 
-    # Тільки активні кампанії
     active_campaigns = [c for c in campaigns
-                        if str(c.get("state", "")).upper() == "ENABLED"]
-    print(f"  📊 Bid History: {len(active_campaigns)} активних з {len(campaigns)} кампаній")
+                        if str(c.get("state", "")).upper() == "ENABLED"
+                        and not is_excluded_campaign(c.get("campaignId"), c.get("name"))]
+    excluded = [c.get("name") for c in campaigns
+                if is_excluded_campaign(c.get("campaignId"), c.get("name"))]
+    print(f"  📊 Bid History: {len(active_campaigns)} активних з {len(campaigns)} кампаній"
+          + (f" (виключено: {excluded})" if excluded else ""))
 
     kw_by_camp = {}
     for kw in keywords:
-        cid = str(kw.get("campaignId", ""))
-        kw_by_camp.setdefault(cid, []).append(kw)
+        kw_by_camp.setdefault(str(kw.get("campaignId", "")), []).append(kw)
 
     suggested_bids = suggested_bids or {}
     rows = []
-
     for c in active_campaigns:
         camp_name = c.get("name", "")
         camp_id   = str(c.get("campaignId", ""))
-        camp_kws  = kw_by_camp.get(camp_id, [])
+        top_adj, rest_adj = _placement_adjustments(c)
 
-        for kw in camp_kws:
+        for kw in kw_by_camp.get(camp_id, []):
             kw_text     = kw.get("keywordText", "")
             kw_id       = str(kw.get("keywordId", ""))
+            ag_id       = str(kw.get("adGroupId", ""))
             adgroup     = kw.get("adGroupName", "")
             current_bid = float(kw.get("bid", 0))
+            match_type  = str(kw.get("matchType", kw.get("match_type", ""))).upper()
 
-            last    = last_bids.get(kw_text, {})
-            old_bid = last.get("bid", 0.0)
-            old_acos = last.get("acos", 0.0)
-            old_imp  = last.get("imp", 0.0)
+            last = last_bids["id"].get(kw_id) or \
+                   last_bids["txt"].get((camp_name.strip().lower(), kw_text.strip().lower()))
+            is_new   = last is None
+            old_bid  = last["bid"]  if last else 0.0
+            old_acos = last["acos"] if last else 0.0
+            old_imp  = last["imp"]  if last else 0.0
 
-            # Ключ для пошуку: keyword_text|match_type
-            match_type = str(kw.get("matchType", kw.get("match_type", ""))).upper()
-            sb_key    = f"{kw_text}|{match_type}"
-            sb_data   = suggested_bids.get(sb_key, {})
+            sb_data   = suggested_bids.get(f"{kw_text}|{match_type}", {})
             suggested = sb_data.get("suggested", 0.0)
             bid_min   = sb_data.get("min", 0.0)
             bid_max   = sb_data.get("max", 0.0)
 
-            metrics    = recent_metrics.get(kw_text, {})
-            curr_spend = metrics.get("spend", 0.0)
-            curr_sales = metrics.get("sales", 0.0)
-            curr_imp   = metrics.get("impressions", 0)
-            curr_acos  = round(curr_spend / curr_sales * 100
-                               if curr_sales > 0 else 0, 1)
+            mk = (camp_name.strip().lower(), kw_text.strip().lower())
+            m  = metrics_full.get(mk + (match_type,)) or metrics_loose.get(mk) or {}
+            curr_spend, curr_sales = m.get("spend", 0.0), m.get("sales", 0.0)
+            curr_imp  = m.get("impressions", 0)
+            curr_acos = round(curr_spend / curr_sales * 100 if curr_sales > 0 else 0, 1)
 
-            # Умова А або Б
+            # Нульовий «порожній» рядок (ставка 0, рекомендації немає) не пишемо.
+            if current_bid == 0 and old_bid == 0 and suggested == 0:
+                continue
+
             reason = None
-            if old_bid == 0 or abs(current_bid - old_bid) > 0.001:
+            if is_new:
+                reason = "new_keyword"
+            elif abs(current_bid - old_bid) > 0.001:
                 reason = "bid_changed"
             elif old_acos > 0 and curr_acos > old_acos * 1.20:
                 reason = "market_shift"
             elif old_imp > 0 and curr_imp < old_imp * 0.70:
                 reason = "market_shift"
-
             if reason is None:
                 continue
 
-            # over_breakeven по ASIN з назви кампанії
             max_cpc = 0.55
             for asin, cfg in ASIN_PRICE_CONFIG.items():
                 if asin in camp_name:
                     max_cpc = cfg["max_cpc"]
                     break
-            over_breakeven = suggested > max_cpc if suggested > 0 else False
+            above_comfort = suggested > max_cpc if suggested > 0 else False
 
             rows.append([
                 today, camp_name, adgroup, kw_text,
@@ -460,12 +522,36 @@ def write_bid_snapshot(campaigns: list, keywords: list,
                 round(suggested, 2), round(bid_min, 2), round(bid_max, 2),
                 reason,
                 round(curr_acos, 1), curr_imp,
-                "true" if over_breakeven else "false",
+                "true" if above_comfort else "false",
+                "'" + camp_id, "'" + ag_id, "'" + kw_id, match_type,
+                "" if top_adj is None else top_adj,
+                "" if rest_adj is None else rest_adj,
             ])
 
+    # Перевірка DATA ISSUE: той самий текст ключа «міняється місцями» у двох
+    # кампаніях (A: x→y, B: y→x) — ознака хибного зіставлення за текстом.
+    by_text = {}
+    for i, r in enumerate(rows):
+        if r[9] == "bid_changed":
+            by_text.setdefault(r[3].lower(), []).append(i)
+    flagged = 0
+    for text, ids in by_text.items():
+        for a in ids:
+            for b in ids:
+                if a < b and rows[a][1] != rows[b][1] and \
+                   rows[a][4] == rows[b][5] and rows[a][5] == rows[b][4]:
+                    rows[a][9] = rows[b][9] = "DATA ISSUE: cross-campaign key"
+                    flagged += 1
+    if flagged:
+        print(f"  ⚠️ Bid History: {flagged} пар «туди-сюди» між кампаніями → DATA ISSUE")
+
     if rows:
-        append(sheet_name, rows, BID_HEADERS)
-        print(f"  ✅ Bid History {market}: {len(rows)} змін записано")
+        sh = get_sheet(sheet_name)
+        _remove_tables(sh)
+        before = len(sh.get_all_values())
+        sh.update(f"A{before + 1}", rows, value_input_option="USER_ENTERED")
+        _sheets_time.sleep(5)
+        print(f"  ✅ Bid History {market}: {len(rows)} записів")
     else:
         print(f"  ℹ️ Bid History {market}: змін ставок не виявлено")
 
@@ -782,8 +868,14 @@ def write_claude_daily_review(text: str, date: str, market: str):
     existing = sh.get_all_values()
     if not existing:
         sh.append_row(headers)
-    sh.append_row([date, market, text])
-    print(f"  ✅ Claude Daily Review {market}: збережено") 
+    # Ліміт клітинки Google Sheets — 50 000 символів: довший текст ділимо
+    # на частини в окремих рядках (з позначкою), а не обрізаємо.
+    LIM = 45000
+    parts = [text[i:i + LIM] for i in range(0, len(text), LIM)] or [""]
+    for n, part in enumerate(parts, 1):
+        label = part if len(parts) == 1 else f"[частина {n}/{len(parts)}]\n{part}"
+        sh.append_row([date, market, label])
+    print(f"  ✅ Claude Daily Review {market}: збережено ({len(text)} символів, {len(parts)} клітинок)")
 
 # ── Claude Weekly X2 Review ──────────────────────────────────────
 # Незалежний щотижневий стратегічний огляд ходу до X2 — окрема

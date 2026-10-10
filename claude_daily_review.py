@@ -20,8 +20,9 @@ from datetime import datetime
 
 import anthropic
 
-from config import ANTHROPIC_API_KEY, CLAUDE_MODEL, MARGIN, SHEETS_USA, SHEETS_CA
-from sheets import read_all, write_claude_daily_review
+from config import (ANTHROPIC_API_KEY, CLAUDE_MODEL, SHEETS_USA, SHEETS_CA,
+                    EXCLUDED_CAMPAIGN_IDS, EXCLUDED_CAMPAIGN_NAMES)
+from sheets import read_all, read_all_optional, write_claude_daily_review
 from telegram_bot import send_claude_daily_review
 
 
@@ -38,6 +39,23 @@ def _rows_for_value(rows: list, col_name: str, value: str) -> list:
     idx = header.index(col_name)
     matched = [r for r in rows[1:] if len(r) > idx and r[idx] == value]
     return [header] + matched
+
+
+def _drop_excluded(rows: list) -> list:
+    """Прибирає рядки виключених кампаній (за CampaignId або назвою) з вхідних даних огляду."""
+    if not rows or len(rows) <= 1:
+        return rows
+    h = rows[0]
+    i_id = h.index("CampaignId") if "CampaignId" in h else None
+    i_nm = next((h.index(c) for c in ("Campaign", "CampaignName", "Campaign Name") if c in h), None)
+    out = [h]
+    for r in rows[1:]:
+        cid = str(r[i_id]).strip().lstrip("'") if i_id is not None and len(r) > i_id else ""
+        nm = str(r[i_nm]).strip().lower() if i_nm is not None and len(r) > i_nm else ""
+        if cid in EXCLUDED_CAMPAIGN_IDS or nm in EXCLUDED_CAMPAIGN_NAMES:
+            continue
+        out.append(r)
+    return out
 
 
 def _tail(rows: list, n: int) -> list:
@@ -67,21 +85,26 @@ def build_daily_context(market: str, today: str) -> dict:
     sheets = SHEETS_USA if market == "USA" else SHEETS_CA
 
     bid_history = read_all(sheets["bid_history"])
-    bid_today = _rows_for_value(bid_history, "Date", today)
+    bid_today = _drop_excluded(_rows_for_value(bid_history, "Date", today))
 
     # Campaign Analysis — це живий знімок поточного тижня (upsert щодня),
     # не історія по днях, тому беремо весь аркуш як є.
-    campaign_analysis = read_all(sheets["campaign_analysis"])
+    campaign_analysis = _drop_excluded(read_all(sheets["campaign_analysis"]))
 
-    placement_tail = _tail(read_all(sheets["placement_analysis"]), 40)
+    placement_tail = _tail(_drop_excluded(read_all(sheets["placement_analysis"])), 40)
 
     keyword_intel = read_all(sheets["keyword_intelligence"])
-    kw_today = _rows_for_value(keyword_intel, "Run Date", today)
+    kw_today = _drop_excluded(_rows_for_value(keyword_intel, "Run Date", today))
 
     advertised = read_all(sheets["advertised_product"])
     advertised_today = _rows_for_value(advertised, "Date", today)
 
     prev_reviews_tail = _tail(read_all(sheets["claude_daily_review"]), 3)
+
+    # Ручні аркуші Nataly: захищені тести / дати review. Лише читання,
+    # аркуш не створюється, якщо його немає.
+    control = _drop_excluded(read_all_optional(sheets.get("campaign_control", "Campaign Control USA")))
+    review_queue = _drop_excluded(read_all_optional(sheets.get("review_queue", "Review Queue USA")))
 
     return {
         "bid_today":         bid_today,
@@ -90,6 +113,9 @@ def build_daily_context(market: str, today: str) -> dict:
         "kw_today":          kw_today,
         "advertised_today":  advertised_today,
         "prev_tail":         prev_reviews_tail,
+        "control":           control,
+        "review_queue":      review_queue,
+        "has_today_data":    len(kw_today) > 1 or len(advertised_today) > 1,
     }
 
 
@@ -98,8 +124,6 @@ def build_daily_context(market: str, today: str) -> dict:
 def deep_daily_review(market: str) -> str:
     today = datetime.now().strftime("%Y-%m-%d")
     ctx = build_daily_context(market, today)
-    margin = MARGIN.get(market, 0.25)
-    breakeven = margin * 100
 
     ai_client = anthropic.Anthropic(api_key=ANTHROPIC_API_KEY)
 
@@ -113,7 +137,30 @@ def deep_daily_review(market: str) -> str:
 бюджет. Не давай загальних порад — тільки те, що підтверджено цифрами
 нижче.
 
-Break-even ACoS: {breakeven:.1f}%
+ЕКОНОМІКА (використовуй саме ці пороги, інших не вигадуй):
+- Беззбитковий ACoS одиниці товару ≈ 50% при ціні ~$25 (беззбитковий CPA ≈ $13).
+- Червона лінія для акаунта в цілому: ACoS 35–40%. Комфортна зона: 25–30%.
+- ACoS вище 30%, але нижче 50% по окремому таргету — «вище комфортної зони», а НЕ збитковість.
+  Збитковість — лише при ACoS > 50% (або CPA > $13) на достатній вибірці кліків.
+- Колонка above_comfort_cpc у Bid History — груба евристика (Suggested > max CPC по ASIN),
+  не беззбитковість.
+
+ПРАВИЛА ПОВЕДІНКИ:
+1. Не радь паузу чи зміну ставки там, де в Campaign Control / Review Queue є захищений тест
+   із датою review, яка ще не настала. Натомість напиши «захищений тест до <дата>, спостерігати».
+2. Не повторюй ту саму пораду (особливо паузу) кілька днів поспіль без НОВИХ даних.
+   Якщо порада вже була в попередніх оглядах, а нових даних немає — не повторюй.
+   Якщо повторюєш — поясни, що саме нового.
+3. Порівнюй ефективні ставки: база × (1 + TopAdj%/100) для Top of Search і
+   база × (1 + RestAdj%/100) для Rest of Search (колонки TopAdj%/RestAdj% у Bid History,
+   якщо порожні — корекцій невідомо, не припускай їх), а не лише базову ставку проти Suggested.
+4. Suggested bid — НЕ ціль. Це орієнтир; джерела розходяться (напр., «pheromone oil»:
+   $0.53 / $1.01 / $1.16 у Bid History проти $3.81 у Bid Monitor). Завжди вказуй
+   джерело числа і не радь підняти ставку лише тому, що вона нижча за Suggested.
+5. Рядки з reason, що починається з «DATA ISSUE», — проблема даних, не зміна ставки:
+   не роби з них висновків про ставки, лише згадай як проблему даних.
+6. Кампанії зі списку виключень у даних відсутні; не згадуй їх і не пропонуй для них дій.
+{"7. СЬОГОДНІ ДАНИХ НЕМАЄ (Keyword Intelligence і Advertised Product порожні): розділ «Негайні дії» має містити лише «Немає — даних за сьогодні немає», усі спостереження — тільки в «Спостерігати»." if not ctx['has_today_data'] else ""}
 
 {'='*60}
 ЗМІНИ СТАВОК СЬОГОДНІ (Bid History, {today})
@@ -141,7 +188,17 @@ ADVERTISED PRODUCT СЬОГОДНІ (продажі по ASIN через рек�
 {_format_table(ctx['advertised_today'])}
 
 {'='*60}
-ТВОЇ ОСТАННІ 3 ЩОДЕННІ ОГЛЯДИ (контекст тренду — не повторюй дослівно)
+CAMPAIGN CONTROL (ручний аркуш Nataly — захищені тести, статуси)
+{'='*60}
+{_format_table(ctx['control'], max_rows=60)}
+
+{'='*60}
+REVIEW QUEUE (ручний аркуш Nataly — дати review)
+{'='*60}
+{_format_table(ctx['review_queue'], max_rows=60)}
+
+{'='*60}
+ТВОЇ ОСТАННІ 3 ЩОДЕННІ ОГЛЯДИ (контекст тренду — не повторюй дослівно і не повторюй поради без нових даних)
 {'='*60}
 {_format_table(ctx['prev_tail'])}
 
@@ -166,12 +223,17 @@ ADVERTISED PRODUCT СЬОГОДНІ (продажі по ASIN через рек�
 — прямо напиши, що аналізувати нічого, а не імітуй висновок з порожніх
 таблиць. Не вигадуй цифр, яких немає у наведених даних."""
 
+    # 2000 токенів обривали бриф посеред речення (≈4 400 символів, 09.10).
     response = ai_client.messages.create(
         model=CLAUDE_MODEL,
-        max_tokens=2000,
+        max_tokens=6000,
         messages=[{"role": "user", "content": prompt}],
     )
-    return response.content[0].text
+    text = "".join(b.text for b in response.content if getattr(b, "type", "") == "text")
+    if getattr(response, "stop_reason", "") == "max_tokens":
+        text += "\n\n⚠️ Огляд обрізано за ліміту довжини (max_tokens) — частину висновків може бракувати."
+        print("  ⚠️ Claude Daily Review: stop_reason=max_tokens")
+    return text
 
 
 # ── Запуск ─────────────────────────────────────────────────────────
