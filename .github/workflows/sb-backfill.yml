@@ -1,0 +1,44 @@
+name: SB Backfill (one-off)
+on:
+  workflow_dispatch:
+    inputs:
+      date_from:
+        description: "Початок (YYYY-MM-DD)"
+        default: "2026-08-24"
+      date_to:
+        description: "Кінець (YYYY-MM-DD)"
+        default: "2026-10-08"
+permissions:
+  contents: write
+concurrency:
+  group: sb-write
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 170
+    env:
+      ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
+      ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
+      ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
+      ADS_PROFILE_ID_USA:      ${{ secrets.ADS_PROFILE_ID_USA }}
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Backup current SB tabs
+        run: python sponsored_brands.py --backup-only
+      - name: Commit backup (before any write)
+        run: |
+          git config user.name "ppc-agent-bot"
+          git config user.email "bot@ppc-agent"
+          git add backups/
+          git commit -m "Backup SB_Campaign_USA / SB_SearchTerm_USA before backfill" || echo nothing
+          git pull --rebase origin main
+          git push
+      - name: Backfill from Amazon DAILY reports
+        env:
+          SB_BACKUP_DONE: "1"
+        run: python sponsored_brands.py --backfill "${{ inputs.date_from }}" "${{ inputs.date_to }}"
