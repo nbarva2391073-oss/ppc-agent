@@ -68,14 +68,16 @@ def _autogrow(sh):
             vals = next((a for a in args if isinstance(a, list)), kwargs.get("values"))
             rng = next((a for a in args if isinstance(a, str)), kwargs.get("range_name"))
             if vals and isinstance(vals, list) and isinstance(vals[0], list):
-                m = _re.search(r"(\d+)", rng or "A1")
-                start = int(m.group(1)) if m else 1
+                try:
+                    start, start_col = gspread.utils.a1_to_rowcol((rng or "A1").split("!")[-1].split(":")[0])
+                except Exception:
+                    start, start_col = 1, 1
                 need = start + len(vals) + 100
                 if need > sh.row_count:
                     sh.add_rows(need - sh.row_count)
-                width = max(len(r) for r in vals[:200])
-                if width > sh.col_count:
-                    sh.add_cols(width - sh.col_count + 2)
+                width = max(len(r) for r in vals[:200]) + start_col - 1
+                if width + 2 > sh.col_count:
+                    sh.add_cols(width + 4 - sh.col_count)
         except Exception as e:
             print(f"  ⚠️ autogrow: {e}")
         return orig(*args, **kwargs)
