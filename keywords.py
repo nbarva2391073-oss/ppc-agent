@@ -39,7 +39,7 @@ def analyze_keywords(search_term_data: list[dict],
         kw = kw_data[term]
         kw["impressions"] += int(r.get("impressions", 0))
         kw["clicks"]      += int(r.get("clicks", 0))
-        kw["spend"]       += float(r.get("spend", 0))
+        kw["spend"]       += float(r.get("cost") or r.get("spend") or 0)
         kw["sales"]       += float(r.get("sales7d", 0))
         kw["orders"]      += int(r.get("purchases7d", 0))
         camp = r.get("campaignName", "")
@@ -260,7 +260,7 @@ def find_negative_candidates(search_term_data: list[dict],
                                   "campaign": r.get("campaignName", "")}
         term_stats[term]["clicks"] += int(r.get("clicks", 0))
         term_stats[term]["orders"] += int(r.get("purchases7d", 0))
-        term_stats[term]["spend"]  += float(r.get("spend", 0))
+        term_stats[term]["spend"]  += float(r.get("cost") or r.get("spend") or 0)
         term_stats[term]["sales"]  += float(r.get("sales7d", 0))
 
     for term, s in term_stats.items():

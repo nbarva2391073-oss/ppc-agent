@@ -132,7 +132,7 @@ def send_daily_ok(market: str, campaign_data: list = None,
         if name not in by_camp:
             by_camp[name] = {"spend": 0, "sales": 0,
                              "orders": 0, "impressions": 0}
-        by_camp[name]["spend"]       += float(r.get("spend", 0))
+        by_camp[name]["spend"]       += float(r.get("cost") or r.get("spend") or 0)
         by_camp[name]["sales"]       += float(r.get("sales7d", 0))
         by_camp[name]["orders"]      += int(r.get("purchases7d", 0))
         by_camp[name]["impressions"] += int(r.get("impressions", 0))
