@@ -53,12 +53,43 @@ def client():
 
 
 @_retry_sheets(max_retries=5, base_delay=5)
+def _autogrow(sh):
+    """
+    Обгортка над sh.update: якщо дані виходять за поточну кількість рядків
+    аркуша — спершу додаємо рядки. Без цього запис довшого за сітку масиву
+    (Placement Analysis USA: 4761 з 5000 рядків, Raw Data: 5000) падав би з
+    'exceeds grid limits' і дані мовчки не записувались.
+    """
+    import re as _re
+    orig = sh.update
+
+    def upd(*args, **kwargs):
+        try:
+            vals = next((a for a in args if isinstance(a, list)), kwargs.get("values"))
+            rng = next((a for a in args if isinstance(a, str)), kwargs.get("range_name"))
+            if vals and isinstance(vals, list) and isinstance(vals[0], list):
+                m = _re.search(r"(\d+)", rng or "A1")
+                start = int(m.group(1)) if m else 1
+                need = start + len(vals) + 100
+                if need > sh.row_count:
+                    sh.add_rows(need - sh.row_count)
+                width = max(len(r) for r in vals[:200])
+                if width > sh.col_count:
+                    sh.add_cols(width - sh.col_count + 2)
+        except Exception as e:
+            print(f"  ⚠️ autogrow: {e}")
+        return orig(*args, **kwargs)
+
+    sh.update = upd
+    return sh
+
+
 def get_sheet(name: str):
     ss = client().open_by_key(SPREADSHEET_ID)
     try:
-        return ss.worksheet(name)
+        return _autogrow(ss.worksheet(name))
     except gspread.WorksheetNotFound:
-        return ss.add_worksheet(title=name, rows=2000, cols=60)
+        return _autogrow(ss.add_worksheet(title=name, rows=2000, cols=60))
 
 
 
