@@ -54,6 +54,8 @@ def main():
     plan = [("search_term", "spSearchTerm", COLS_SEARCH_TERM, ["searchTerm"], RAW_KI_FROM, LAST),
             ("targeting", "spTargeting", COLS_TARGETING, ["targeting"], RAW_KI_FROM, LAST),
             ("advertised", "spAdvertisedProduct", COLS_ADVERTISED_PRODUCT, ["advertiser"], adv_from, LAST)]
+    if os.environ.get("ONLY_RAW_KI") == "1":      # Advertised/TACoS вже перевірені → тільки Raw Data і KI
+        plan = plan[:2]
     for kind, rtype, cols, grp, a, b in plan:
         for cs, ce in chunks(a, b):
             for attempt in range(6):
@@ -108,6 +110,7 @@ def main():
         return False
 
     for d, rows in sorted(_split_by_date(data["advertised"]).items()):
+        if os.environ.get("ONLY_RAW_KI") == "1": break
         safe(f"adv {d}", write_advertised_product, rows, d, MARKET); time.sleep(2)
     for d, rows in sorted(_split_by_date(data["search_term"]).items()):
         safe(f"raw {d}", write_raw_data, rows, _week_label_for(date.fromisoformat(d)), MARKET, date=d); time.sleep(2)
@@ -117,7 +120,7 @@ def main():
     status["written"] = True; dump("STATUS.json", status)
 
     # TACoS для дат, що мають Business Report (останні 2 дні ще можуть бути без BR → порожньо, не нуль)
-    for d in sorted(adv_d):
+    for d in ([] if os.environ.get("ONLY_RAW_KI") == "1" else sorted(adv_d)):
         try:
             calculate_tacos(MARKET, d)
         except Exception as e:

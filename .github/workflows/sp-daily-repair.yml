@@ -33,6 +33,8 @@ jobs:
               print(n, len(v)); time.sleep(3)
           PY
       - name: Repair
+        env:
+          ONLY_RAW_KI: "1"
         run: python repair_sp_daily.py
       - name: Commit result (always)
         if: always()

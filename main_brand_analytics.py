@@ -23,8 +23,17 @@ def append_dedup(sheet_name: str, rows: list, headers: list):
     """Додає лише ті рядки, яких ще немає в аркуші (повторне завантаження того самого звіту не дублює)."""
     sh = get_sheet(sheet_name)
     existing = sh.get_all_values()
-    seen = {tuple(str(c) for c in r[:len(headers)]) for r in existing[1:]} if existing else set()
-    fresh = [r for r in rows if tuple(str(c) for c in r[:len(headers)]) not in seen]
+    def norm(c):
+        t = str(c).strip().replace(",", ".")
+        try: return repr(round(float(t), 6))
+        except ValueError: return t
+    key = lambda r: tuple(norm(c) for c in (list(r) + [""] * len(headers))[:len(headers)])
+    seen = {key(r) for r in existing[1:]} if existing else set()
+    fresh = []
+    for r in rows:
+        k = key(r)
+        if k not in seen:
+            seen.add(k); fresh.append(r)
     print(f"   ↪ {sheet_name}: нових {len(fresh)} з {len(rows)} (решта вже є)")
     if fresh:
         append(sheet_name, fresh, headers)

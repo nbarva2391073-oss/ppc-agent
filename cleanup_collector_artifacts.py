@@ -30,7 +30,7 @@ res["ki_blank_rows_removed"] = drop
 if drop: rewrite(sh, keep)
 
 # 2) BA exact duplicates
-for t in ("BA_SearchCatalog_USA", "BA_RepeatPurchase_USA"):
+for t in ("BA_SearchCatalog_USA", "BA_RepeatPurchase_USA", "BA_MarketBasket_USA"):
     sh = get_sheet(t); rows = sh.get_all_values(); backup(t, rows)
     seen = set(); keep = [rows[0]]; drop = 0
     for r in rows[1:]:

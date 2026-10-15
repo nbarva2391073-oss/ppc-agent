@@ -270,7 +270,10 @@ def write_raw_data(data: list[dict], week: str, market: str, date: str = None):
                 _cell(r, "Date"), _cell(r, "Campaign"), _cell(r, "Ad Group"),
                 _cell(r, "Search Term"), _cell(r, "Keyword"), _cell(r, "Match Type"),
             )
-            if key in new_keys:
+            # ВИПРАВЛЕНО: знімок за дату — повний. Замінюємо ВСІ рядки цієї дати,
+            # а не лише ті, чий ключ збігся: старий monitor писав «вчора+сьогодні»
+            # під міткою «вчора», і зайві пошукові запити лишались як залишки.
+            if key in new_keys or _cell(r, "Date") == date:
                 removed += 1
                 continue
             # Старі рядки можуть бути коротшими (без Date) — доповнюємо
@@ -855,11 +858,14 @@ def write_keyword_intelligence(keywords_analysis: list[dict],
         return (row[idx_week], row[idx_kw], row[idx_match], row[idx_camp], row[idx_rundate])
 
     new_keys = {(week, r[1], r[2], r[3], run_date) for r in rows}
+    # ВИПРАВЛЕНО: знімок (Week, Run Date) повний → замінюємо всі його рядки, а не лише збіг ключів
+    new_snap = {(week, run_date)} if rows else set()
 
     kept = [header_row]
     removed = 0
     for row in existing[1:]:
-        if len(row) > idx_rundate and key_of(row) in new_keys:
+        if len(row) > idx_rundate and (key_of(row) in new_keys or
+                                       (row[idx_week], row[idx_rundate]) in new_snap):
             removed += 1
             continue
         kept.append(row)
