@@ -189,70 +189,54 @@ def get_brand_analytics(market: str) -> list:
 
 
 def format_for_sheets(records: list, market: str) -> tuple:
-    """Форматувати для Google Sheets."""
+    """SQP (Search Query Performance, MONTH, по ASIN) → рядки для BA_SQP_<ринок>.
+    ВИПРАВЛЕНО: Amazon повертає ВКЛАДЕНУ структуру (searchQueryData / impressionData /
+    clickData / cartAddData / purchaseData). Попередня версія читала пласкі ключі
+    (searchTerm, topClickedAsins…), тому всі значення були порожніми."""
     headers = [
-        "Період", "Search Term", "Search Frequency Rank",
-        "Impressions", "Clicks", "Cart Adds", "Purchases",
-        "Click Rate", "Purchase Rate",
-        "#1 ASIN", "#1 Click Share", "#1 Conv Share",
-        "#2 ASIN", "#2 Click Share", "#2 Conv Share",
-        "#3 ASIN", "#3 Click Share", "#3 Conv Share",
-        "Ринок"
+        "Період", "ASIN", "Search Query", "Query Score", "Query Volume",
+        "Total Impressions", "ASIN Impressions", "ASIN Impression Share",
+        "Total Clicks", "ASIN Clicks", "ASIN Click Share",
+        "Total Cart Adds", "ASIN Cart Adds", "ASIN Cart Add Share",
+        "Total Purchases", "ASIN Purchases", "ASIN Purchase Share",
+        "Ринок",
     ]
 
-    def format_period(rec):
-        start = rec.get("startDate", "")
-        end = rec.get("endDate", "")
+    def period(rec):
+        start = rec.get("startDate", ""); end = rec.get("endDate", "")
         try:
             s = datetime.strptime(start, "%Y-%m-%d").strftime("%d.%m.%Y")
             e = datetime.strptime(end, "%Y-%m-%d").strftime("%d.%m.%Y")
             return f"{s}-{e}"
         except Exception:
-            return f"{start}-{end}"
+            return f"{start}-{end}" if (start or end) else ""
+
+    def g(d, k, alt=""):
+        v = d.get(k) if isinstance(d, dict) else None
+        return alt if v is None else v
 
     rows = []
-
     for r in records:
         if not isinstance(r, dict):
             continue
-
-        week = format_period(r)
-        search_term = r.get("searchTerm") or r.get("query") or ""
-        rank        = r.get("searchFrequencyRank") or r.get("rank") or ""
-        impressions = r.get("impressions") or ""
-        clicks      = r.get("clicks") or ""
-        cart_adds   = r.get("cartAdds") or ""
-        purchases   = r.get("purchases") or ""
-        click_rate  = r.get("clickRate") or ""
-        purch_rate  = r.get("purchaseRate") or ""
-
-        top_asins = (r.get("topClickedAsins") or
-                    r.get("topAsins") or
-                    r.get("asins") or [])
-
-        def get_asin(idx):
-            if idx < len(top_asins) and isinstance(top_asins[idx], dict):
-                a = top_asins[idx]
-                return (
-                    a.get("clickedAsin") or a.get("asin") or "",
-                    a.get("clickSharePercentage") or a.get("clickShare") or "",
-                    a.get("conversionSharePercentage") or a.get("conversionShare") or "",
-                )
-            return ("", "", "")
-
-        a1, a2, a3 = get_asin(0), get_asin(1), get_asin(2)
-
+        q = r.get("searchQueryData") or {}
+        imp = r.get("impressionData") or {}
+        clk = r.get("clickData") or {}
+        crt = r.get("cartAddData") or {}
+        pur = r.get("purchaseData") or {}
+        query = g(q, "searchQuery") or r.get("searchTerm") or r.get("query") or ""
+        if not query:
+            continue   # порожні рядки не пишемо (раніше створювали пусті рядки в аркуші)
         rows.append([
-            week, search_term, rank,
-            impressions, clicks, cart_adds, purchases,
-            click_rate, purch_rate,
-            a1[0], a1[1], a1[2],
-            a2[0], a2[1], a2[2],
-            a3[0], a3[1], a3[2],
-            market
+            period(r), r.get("asin", ""), query, g(q, "searchQueryScore"), g(q, "searchQueryVolume"),
+            g(imp, "totalQueryImpressionCount"), g(imp, "asinImpressionCount"), g(imp, "asinImpressionShare"),
+            g(clk, "totalClickCount"), g(clk, "asinClickCount"), g(clk, "asinClickShare"),
+            g(crt, "totalCartAddCount"), g(crt, "asinCartAddCount"), g(crt, "asinCartAddShare"),
+            g(pur, "totalPurchaseCount"), g(pur, "asinPurchaseCount"), g(pur, "asinPurchaseShare"),
+            market,
         ])
 
-    rows.sort(key=lambda x: int(x[2]) if str(x[2]).isdigit() else 999999)
+    rows.sort(key=lambda x: (str(x[1]), int(x[3]) if str(x[3]).isdigit() else 999999))
     return headers, rows
 
 

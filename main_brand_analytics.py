@@ -19,11 +19,22 @@ def ensure_headers(sheet_name: str, headers: list):
         sh.update([headers], "A1")
         print(f"📝 Заголовки додано в '{sheet_name}'")
 
+def append_dedup(sheet_name: str, rows: list, headers: list):
+    """Додає лише ті рядки, яких ще немає в аркуші (повторне завантаження того самого звіту не дублює)."""
+    sh = get_sheet(sheet_name)
+    existing = sh.get_all_values()
+    seen = {tuple(str(c) for c in r[:len(headers)]) for r in existing[1:]} if existing else set()
+    fresh = [r for r in rows if tuple(str(c) for c in r[:len(headers)]) not in seen]
+    print(f"   ↪ {sheet_name}: нових {len(fresh)} з {len(rows)} (решта вже є)")
+    if fresh:
+        append(sheet_name, fresh, headers)
+    return len(fresh)
+
 PENDING_SHEET = "BA_Pending_Reports"
 MARKETS = ["USA", "CA"]
 SHEETS_BY_MARKET = {"USA": SHEETS_USA, "CA": SHEETS_CA}
 
-SQP_SHEET = "keyword_intelligence"  # старий аркуш для SQP (як і раніше)
+SQP_SHEETS = {"USA": "BA_SQP_USA", "CA": "BA_SQP_CA"}  # окремий аркуш (раніше SQP писався в Keyword Intelligence і забруднював його)
 SEARCH_CATALOG_SHEETS = {"USA": "BA_SearchCatalog_USA", "CA": "BA_SearchCatalog_CA"}
 REPEAT_PURCHASE_SHEETS = {"USA": "BA_RepeatPurchase_USA", "CA": "BA_RepeatPurchase_CA"}
 MARKET_BASKET_SHEETS = {"USA": "BA_MarketBasket_USA", "CA": "BA_MarketBasket_CA"}
@@ -158,13 +169,17 @@ def run_fetch():
                         target_sheet = MARKET_BASKET_SHEETS[market]
                     else:  # SQP
                         headers, rows = format_for_sheets(records, market)
-                        target_sheet = SHEETS_BY_MARKET[market][SQP_SHEET]
+                        target_sheet = SQP_SHEETS[market]
 
+                    if not rows:
+                        print(f"❌ {market}/{report_type}: звіт отримано ({len(records)} записів), але жодного змістовного рядка після розбору — НЕ пишу в аркуш, статус «помилка»")
+                        sh.update_cell(i, col_status + 1, "помилка")
+                        continue
                     ensure_headers(target_sheet, headers)
-                    append(target_sheet, rows, headers)
+                    added = append_dedup(target_sheet, rows, headers)
                     key = f"{market}/{report_type}"
-                    fetched_count[key] = fetched_count.get(key, 0) + len(rows)
-                    print(f"✅ {market}/{report_type}: {len(rows)} записів збережено в '{target_sheet}'")
+                    fetched_count[key] = fetched_count.get(key, 0) + added
+                    print(f"✅ {market}/{report_type}: {added} нових записів збережено в '{target_sheet}'")
                 else:
                     print(f"⚠️ {market}/{report_type}: звіт готовий, але даних немає")
 
