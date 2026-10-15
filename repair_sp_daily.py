@@ -92,14 +92,28 @@ def main():
                  "campaign_daily": (truth.get(d) or [None])[0]} for d in sorted(adv_d)}
     status["source_check"] = check; dump("STATUS.json", status)
 
-    # Запис (upsert за датою)
+    # Запис (upsert за датою). Кожен запис — з повторами (квоти Sheets API) і журналом помилок.
+    import traceback
+    status["write_errors"] = []
+
+    def safe(label, fn, *a, **kw):
+        for attempt in range(1, 7):
+            try:
+                fn(*a, **kw); status.setdefault("write_ok", []).append(label); return True
+            except Exception as e:
+                status["write_errors"].append({"op": label, "try": attempt, "err": str(e)[:300],
+                                               "tb": traceback.format_exc()[-600:]})
+                dump("STATUS.json", status)
+                time.sleep(20 * attempt)
+        return False
+
     for d, rows in sorted(_split_by_date(data["advertised"]).items()):
-        write_advertised_product(rows, d, MARKET)
+        safe(f"adv {d}", write_advertised_product, rows, d, MARKET); time.sleep(2)
     for d, rows in sorted(_split_by_date(data["search_term"]).items()):
-        write_raw_data(rows, _week_label_for(date.fromisoformat(d)), MARKET, date=d)
+        safe(f"raw {d}", write_raw_data, rows, _week_label_for(date.fromisoformat(d)), MARKET, date=d); time.sleep(2)
     for d, rows in sorted(_split_by_date(data["targeting"]).items()):
-        write_keyword_intelligence(_build_keyword_rows(rows), _week_label_for(date.fromisoformat(d)),
-                                   MARKET, run_date=d)
+        safe(f"ki {d}", write_keyword_intelligence, _build_keyword_rows(rows),
+             _week_label_for(date.fromisoformat(d)), MARKET, run_date=d); time.sleep(2)
     status["written"] = True; dump("STATUS.json", status)
 
     # TACoS для дат, що мають Business Report (останні 2 дні ще можуть бути без BR → порожньо, не нуль)
