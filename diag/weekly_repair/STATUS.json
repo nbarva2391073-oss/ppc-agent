@@ -1,0 +1,145 @@
+{
+ "weeks": [
+  {
+   "week": "17.08-23.08.2026",
+   "campaign_rows": 22,
+   "placement_rows": 44,
+   "camp_cost": 152.14,
+   "plc_cost": 152.14,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "24.08-30.08.2026",
+   "campaign_rows": 22,
+   "placement_rows": 47,
+   "camp_cost": 131.78,
+   "plc_cost": 131.78,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "31.08-06.09.2026",
+   "campaign_rows": 22,
+   "placement_rows": 44,
+   "camp_cost": 131.46,
+   "plc_cost": 131.46,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "07.09-13.09.2026",
+   "campaign_rows": 23,
+   "placement_rows": 51,
+   "camp_cost": 119.32,
+   "plc_cost": 119.32,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "14.09-20.09.2026",
+   "campaign_rows": 23,
+   "placement_rows": 42,
+   "camp_cost": 118.71,
+   "plc_cost": 118.71,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "21.09-27.09.2026",
+   "campaign_rows": 21,
+   "placement_rows": 42,
+   "camp_cost": 93.72,
+   "plc_cost": 93.72,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "28.09-04.10.2026",
+   "campaign_rows": 21,
+   "placement_rows": 42,
+   "camp_cost": 99.12,
+   "plc_cost": 99.12,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "05.10-11.10.2026",
+   "campaign_rows": 20,
+   "placement_rows": 42,
+   "camp_cost": 102.21,
+   "plc_cost": 102.21,
+   "match": true,
+   "written": true
+  },
+  {
+   "week": "12.10-14.10.2026",
+   "campaign_rows": 12,
+   "placement_rows": 37,
+   "camp_cost": 60.32,
+   "plc_cost": 60.32,
+   "match": true,
+   "written": true
+  }
+ ],
+ "last": "2026-10-14",
+ "submitted": [
+  [
+   "17.08-23.08.2026",
+   "2103597d-5a3c-4446-9562-a87e4b9459a3",
+   "64b15746-7632-4232-8783-ac94821a5881"
+  ],
+  [
+   "24.08-30.08.2026",
+   "9e028a97-7637-4377-8726-db2d3838b302",
+   "de825237-3b50-4aa2-964c-4e199ffdb534"
+  ],
+  [
+   "31.08-06.09.2026",
+   "bf57c135-da3b-4a9d-8c8a-19b5d830854b",
+   "4d23c54b-4857-417e-8d4a-98ac5a204f4d"
+  ],
+  [
+   "07.09-13.09.2026",
+   "cf372e3b-0f1e-4be8-9646-04dbdc58792b",
+   "af2b3666-b58a-4fcd-b92c-b7d37be69456"
+  ],
+  [
+   "14.09-20.09.2026",
+   "2815d18f-7e2e-4fdd-9461-1630e58918d7",
+   "feb24917-e33c-46ee-80a7-f1353694de91"
+  ],
+  [
+   "21.09-27.09.2026",
+   "ca01b5d7-bf7f-43ef-be0a-6c70247c19d6",
+   "640c8390-7a31-42f9-b0ba-b1bf9ea7ce76"
+  ],
+  [
+   "28.09-04.10.2026",
+   "10893bc5-f1dc-47c2-aca7-eabf0b7d57b4",
+   "b8700f49-e166-48af-8df1-2eeff384d2a4"
+  ],
+  [
+   "05.10-11.10.2026",
+   "1a23477d-232c-40ff-9c3e-2d92988cb792",
+   "8375713e-c2ef-423f-bb86-cdee5ebc4e3f"
+  ],
+  [
+   "12.10-14.10.2026",
+   "c562e76c-229a-458b-bf64-5711a589eca3",
+   "96758e90-759d-483f-8197-407ae86029fc"
+  ]
+ ],
+ "placement_written_rows": 391,
+ "placement_weeks": [
+  "05.10-11.10.2026",
+  "07.09-13.09.2026",
+  "12.10-14.10.2026",
+  "14.09-20.09.2026",
+  "17.08-23.08.2026",
+  "21.09-27.09.2026",
+  "24.08-30.08.2026",
+  "28.09-04.10.2026",
+  "31.08-06.09.2026"
+ ]
+}
