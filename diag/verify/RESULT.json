@@ -1589,6 +1589,218 @@
    "4.94"
   ]
  },
+ "BA_SQP_USA": {
+  "rows": 185,
+  "header": [
+   "Період",
+   "ASIN",
+   "Search Query",
+   "Query Score",
+   "Query Volume",
+   "Total Impressions",
+   "ASIN Impressions",
+   "ASIN Impression Share",
+   "Total Clicks",
+   "ASIN Clicks",
+   "ASIN Click Share",
+   "Total Cart Adds",
+   "ASIN Cart Adds",
+   "ASIN Cart Add Share",
+   "Total Purchases",
+   "ASIN Purchases",
+   "ASIN Purchase Share",
+   "Ринок"
+  ],
+  "date_cols": [],
+  "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
+  "dup_samples_recent": [],
+  "last_rows": [
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "pheromones perfumes for women spray",
+    "87",
+    "336",
+    "7574",
+    "47",
+    "0,62",
+    "178",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "perfume con fenómenos pqrq mujer",
+    "88",
+    "4",
+    "76",
+    "4",
+    "5,26",
+    "3",
+    "3"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "pheromone oil for her",
+    "89",
+    "68",
+    "1480",
+    "38",
+    "2,57",
+    "39",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "best pheromones perfume",
+    "90",
+    "38",
+    "854",
+    "33",
+    "3,86",
+    "10",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "unscented pheromones for women attract men",
+    "91",
+    "56",
+    "1214",
+    "33",
+    "2,72",
+    "21",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "perfume feromonas atraer mujeres",
+    "92",
+    "127",
+    "2729",
+    "29",
+    "1,06",
+    "37",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "cruelty-free pheromone perfume",
+    "93",
+    "42",
+    "1007",
+    "27",
+    "2,68",
+    "15",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "women pheromone perfume",
+    "94",
+    "763",
+    "13051",
+    "64",
+    "0,49",
+    "318",
+    "1"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "pheromone oil for women attract men",
+    "95",
+    "239",
+    "4156",
+    "60",
+    "1,44",
+    "108",
+    "1"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "goda for her pheromone perfume spray",
+    "96",
+    "197",
+    "4806",
+    "56",
+    "1,17",
+    "110",
+    "1"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "non toxic pheromone perfume",
+    "97",
+    "25",
+    "616",
+    "18",
+    "2,92",
+    "16",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "pheromone infused vanilla perfume",
+    "98",
+    "19",
+    "427",
+    "16",
+    "3,75",
+    "7",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "humor perfume",
+    "99",
+    "82",
+    "1613",
+    "11",
+    "0,68",
+    "36",
+    "2"
+   ],
+   [
+    "01.09.2026-30.09.2026",
+    "B0G5QB4W6N",
+    "feromonas para perfumes",
+    "100",
+    "37",
+    "820",
+    "7",
+    "0,85",
+    "12",
+    "2"
+   ]
+  ],
+  "tail": [
+   "01.09.2026-30.09.2026",
+   "B0G5QB4W6N",
+   "feromonas para perfumes",
+   "100",
+   "37",
+   "820",
+   "7",
+   "0,85",
+   "12",
+   "2",
+   "16,67",
+   "5"
+  ]
+ },
  "Weekly Summary": {
   "rows": 308,
   "header": [
@@ -1894,5 +2106,37 @@
   "dup_by_first_col": {},
   "dup_samples_recent": [],
   "tail": []
+ },
+ "_week_vs_amazon": {
+  "28.09-04.10.2026": {
+   "days_in_truth": 7,
+   "amazon_cost": 99.12,
+   "campaign_analysis": 99.12,
+   "placement": 193.02
+  },
+  "05.10-11.10.2026": {
+   "days_in_truth": 7,
+   "amazon_cost": 102.21,
+   "campaign_analysis": 102.21,
+   "placement": 231.55
+  },
+  "12.10-18.10.2026": {
+   "days_in_truth": 3,
+   "amazon_cost": 60.32,
+   "campaign_analysis": 60.32,
+   "placement": 110.66
+  },
+  "14.09-20.09.2026": {
+   "days_in_truth": 7,
+   "amazon_cost": 118.71,
+   "campaign_analysis": 20.53,
+   "placement": 0.0
+  },
+  "21.09-27.09.2026": {
+   "days_in_truth": 7,
+   "amazon_cost": 93.72,
+   "campaign_analysis": 32.37,
+   "placement": 0.0
+  }
  }
 }
