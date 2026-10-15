@@ -41,6 +41,9 @@ for t in TABS:
     dups = [(k, v) for k, v in full.items() if v > 1]
     r["dup_samples"] = [{"count": v, "row": list(k)[:14]} for k, v in dups[:4]]
     r["dup_by_first_col"] = dict(collections.Counter(k[0] for k, v in dups).most_common(12))
+    r["dup_samples_recent"] = [{"count": v, "row": list(k)[:14]} for k, v in dups if str(k[0]).endswith(".10.2026")][:6]
+    if t in ("BA_Pending_Reports", "BA_Trends_USA", "Weekly Summary"):
+        r["last_rows"] = [x[:10] for x in rows[-14:]]
     r["tail"] = rows[-1][:12]
     res[t] = r
     json.dump(res, open(os.path.join(OUT, "RESULT.json"), "w"), ensure_ascii=False, indent=1)
