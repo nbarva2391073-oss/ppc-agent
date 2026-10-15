@@ -6,9 +6,96 @@
     "kind": "search_term",
     "from": "2026-09-30",
     "to": "2026-10-14",
-    "id": "c43167bd-9e97-4e80-acb1-2d137fa0aa87"
+    "id": "654856f6-396b-4086-8710-a986110f29ec"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "targeting",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "d9395dcc-1cb8-47b6-b14f-39a26e665994"
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "search_term",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "654856f6-396b-4086-8710-a986110f29ec",
+    "rows": 233
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "targeting",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "d9395dcc-1cb8-47b6-b14f-39a26e665994",
+    "rows": 594
    }
   }
  ],
- "adv_from": "2026-08-25"
+ "adv_from": "2026-08-25",
+ "source_check": {},
+ "write_errors": [
+  {
+   "op": "ki 2026-09-30",
+   "try": 1,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "ki 2026-09-30",
+   "try": 2,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "ki 2026-09-30",
+   "try": 3,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "ki 2026-10-02",
+   "try": 1,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  }
+ ],
+ "write_ok": [
+  "raw 2026-09-30",
+  "raw 2026-10-01",
+  "raw 2026-10-02",
+  "raw 2026-10-03",
+  "raw 2026-10-04",
+  "raw 2026-10-05",
+  "raw 2026-10-06",
+  "raw 2026-10-07",
+  "raw 2026-10-08",
+  "raw 2026-10-09",
+  "raw 2026-10-10",
+  "raw 2026-10-11",
+  "raw 2026-10-12",
+  "raw 2026-10-13",
+  "raw 2026-10-14",
+  "ki 2026-09-30",
+  "ki 2026-10-01",
+  "ki 2026-10-02",
+  "ki 2026-10-03",
+  "ki 2026-10-04",
+  "ki 2026-10-05",
+  "ki 2026-10-06",
+  "ki 2026-10-07",
+  "ki 2026-10-08",
+  "ki 2026-10-09",
+  "ki 2026-10-10",
+  "ki 2026-10-11",
+  "ki 2026-10-12",
+  "ki 2026-10-13",
+  "ki 2026-10-14"
+ ],
+ "written": true,
+ "tacos_done": true
 }
