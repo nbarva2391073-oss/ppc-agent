@@ -101,7 +101,8 @@ def process_market(token: str, profile_id: str,
 
     # ── 6. Записуємо в Google Sheets ─────────────────────────
     print("\n📝 Записуємо в Google Sheets...")
-    write_raw_data(search_term_data, week_label, market)
+    # write_raw_data тут більше НЕ викликається: щоденний monitor.py вже пише ті самі
+    # search term-рядки по днях (з Date); тижневий append без Date дублював їх.
     write_bid_snapshot(campaigns, keywords, week_label, market)
     write_placement_analysis(placement_data, placement_issues,
                               week_label, market)

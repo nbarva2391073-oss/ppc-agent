@@ -1,0 +1,43 @@
+name: SP Daily Repair (one-off)
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: sheets-sp-write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
+      ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
+      ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
+      ADS_PROFILE_ID_USA:      ${{ secrets.ADS_PROFILE_ID_USA }}
+      ADS_PROFILE_ID_CA:       ${{ secrets.ADS_PROFILE_ID_CA }}
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - name: Backup tabs before repair
+        run: |
+          python - <<'PY'
+          import csv, os, time
+          from sheets import get_sheet
+          os.makedirs("backups/sp_pre_repair", exist_ok=True)
+          for n in ["Raw Data USA", "Advertised Product USA", "Keyword Intelligence USA", "TACoS_USA"]:
+              v = get_sheet(n).get_all_values()
+              csv.writer(open(f"backups/sp_pre_repair/{n.replace(' ','_')}.csv", "w", newline="", encoding="utf-8")).writerows(v)
+              print(n, len(v)); time.sleep(3)
+          PY
+      - name: Repair
+        run: python repair_sp_daily.py
+      - name: Commit result (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add backups/sp_pre_repair diag/sp_repair || true
+          git commit -m "SP daily repair result" || echo nothing
+          git pull --rebase origin main; git push

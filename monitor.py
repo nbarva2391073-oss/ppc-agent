@@ -49,16 +49,38 @@ COLS_ADVERTISED_PRODUCT = [
 ]
 
 
+# Скільки останніх днів перезбираємо щодня (атрибуція Amazon "доїжджає" ще
+# кілька днів: sales7d/purchases14d за вчора ще неповні). Рядки за дату
+# замінюються (upsert), тому перезбір ідемпотентний.
+REFRESH_DAYS = 3
+
+
+def _week_label_for(d) -> str:
+    """Мітка тижня Пн–Нд для дати d (datetime.date), формат DD.MM-DD.MM.YYYY."""
+    monday = d - timedelta(days=d.weekday())
+    sunday = monday + timedelta(days=6)
+    return f"{monday.strftime('%d.%m')}-{sunday.strftime('%d.%m.%Y')}"
+
+
+def _split_by_date(rows: list) -> dict:
+    out = {}
+    for r in rows:
+        out.setdefault(r.get("date", ""), []).append(r)
+    return out
+
+
 def run_daily_monitor(market_filter: str = None):
     print("=" * 60)
     print(f"📦 ЗБІР ДАНИХ: {datetime.now()}")
     print("=" * 60)
 
-    today = datetime.now()
-    # start=вчора end=сьогодні — як в старому коді що працював
-    report_date = today - timedelta(days=1)   # день, чиї дані реально збираються
+    today = datetime.utcnow()
+    # ВАЖЛИВО: endDate у Reporting API ВКЛЮЧНИЙ. Раніше start=вчора,end=сьогодні
+    # забирало ДВА дні (вчора + неповний сьогодні) під міткою «вчора» —
+    # завищувало Raw Data / Advertised Product / Keyword Intelligence.
+    report_date = today - timedelta(days=1)   # останній повний день (UTC)
     start_date  = report_date.strftime("%Y-%m-%d")
-    end_date    = today.strftime("%Y-%m-%d")
+    end_date    = start_date
     # Формат тижня: DD.MM-DD.MM.YYYY (як в старих даних)
     #
     # КРИТИЧНО: мітка тижня рахується від report_date (=start_date,
@@ -124,20 +146,27 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
     print(f"  → Запускаємо звіти {start_date}...")
     report_ids = {}
 
-    for rname, rtype, cols, grp in [
-        ("campaign",    "spCampaigns",  COLS_CAMPAIGN,    ["campaign"]),
-        ("search_term", "spSearchTerm", COLS_SEARCH_TERM, ["searchTerm"]),
-        ("placement",   "spCampaigns",  COLS_PLACEMENT,   ["campaignPlacement"]),
-        ("targeting",   "spTargeting",  COLS_TARGETING,   ["targeting"]),
-        ("advertised_product", "spAdvertisedProduct", COLS_ADVERTISED_PRODUCT, ["advertiser"]),
+    report_day = datetime.strptime(start_date, "%Y-%m-%d").date()
+    week_start = (report_day - timedelta(days=report_day.weekday())).isoformat()
+    refresh_start = (report_day - timedelta(days=REFRESH_DAYS - 1)).isoformat()
+    # (назва, тип, колонки, groupBy, start, end, timeUnit)
+    for rname, rtype, cols, grp, r_start, r_end, unit in [
+        # тижневі накопичувальні: тиждень-до-вчора (рядок тижня перезаписується)
+        ("campaign",    "spCampaigns",  COLS_CAMPAIGN,    ["campaign"],          week_start,    start_date, "SUMMARY"),
+        ("placement",   "spCampaigns",  COLS_PLACEMENT,   ["campaignPlacement"], week_start,    start_date, "SUMMARY"),
+        # денні: останні REFRESH_DAYS днів по днях (перезбір атрибуції)
+        ("search_term", "spSearchTerm", COLS_SEARCH_TERM + ["date"], ["searchTerm"], refresh_start, start_date, "DAILY"),
+        ("targeting",   "spTargeting",  COLS_TARGETING + ["date"],   ["targeting"],  refresh_start, start_date, "DAILY"),
+        ("advertised_product", "spAdvertisedProduct", COLS_ADVERTISED_PRODUCT + ["date"], ["advertiser"], refresh_start, start_date, "DAILY"),
     ]:
         try:
             rid = submit_report(
                 token, profile_id,
-                f"{rname} {start_date}", rtype, cols, grp, start_date, end_date,
+                f"{rname} {r_start}..{r_end}", rtype, cols, grp, r_start, r_end,
+                time_unit=unit,
             )
             report_ids[rname] = rid
-            print(f"  📋 {rname}: {rid[:8]}...")
+            print(f"  📋 {rname} [{r_start}..{r_end} {unit}]: {rid[:8]}...")
         except Exception as e:
             print(f"  ❌ Submit {rname}: {e}")
 
@@ -179,8 +208,14 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             t = get_access_token()
             targeting_data = wait_and_download(t, profile_id, report_ids["targeting"],
                                                token_fn=get_access_token)
-            kw_analysis = _build_keyword_rows(targeting_data)
-            write_keyword_intelligence(kw_analysis, week, market, run_date=start_date)
+            for d, d_rows in sorted(_split_by_date(targeting_data).items()):
+                if not d:
+                    continue
+                d_date = datetime.strptime(d, "%Y-%m-%d").date()
+                kw_analysis = _build_keyword_rows(d_rows)
+                write_keyword_intelligence(kw_analysis, _week_label_for(d_date), market, run_date=d)
+            # Bid History бере метрики лише за останній повний день
+            targeting_data = [r for r in targeting_data if r.get("date") == start_date]
         except Exception as e:
             print(f"  ❌ Targeting: {e}")
 
@@ -211,7 +246,11 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             t = get_access_token()
             data = wait_and_download(t, profile_id, report_ids["search_term"],
                                      token_fn=get_access_token)
-            write_raw_data(data, week, market, date=start_date)
+            for d, d_rows in sorted(_split_by_date(data).items()):
+                if not d:
+                    continue
+                d_date = datetime.strptime(d, "%Y-%m-%d").date()
+                write_raw_data(d_rows, _week_label_for(d_date), market, date=d)
         except Exception as e:
             print(f"  ❌ Search Term: {e}")
 
@@ -234,7 +273,9 @@ def collect_market(token, profile_id, market, start_date, end_date, week):
             t = get_access_token()
             data = wait_and_download(t, profile_id, report_ids["advertised_product"],
                                      token_fn=get_access_token)
-            write_advertised_product(data, start_date, market)
+            for d, d_rows in sorted(_split_by_date(data).items()):
+                if d:
+                    write_advertised_product(d_rows, d, market)
         except Exception as e:
             print(f"  ❌ Advertised Product: {e}")
 
