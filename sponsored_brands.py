@@ -19,6 +19,7 @@
 # ============================================================
 
 import csv
+import json
 import os
 import re
 import sys
@@ -305,25 +306,102 @@ def run_daily():
     write_range(camp, st, start, end, drop_undated=False)
 
 
+BACKFILL_CHUNK_DAYS = 7   # малі звіти генеруються швидше; 31-денний завис >55 хв (10.10)
+STATUS_FILE = os.path.join("backups", "sb_backfill_status.json")
+
+
+def _write_status(status: dict):
+    os.makedirs("backups", exist_ok=True)
+    with open(STATUS_FILE, "w", encoding="utf-8") as f:
+        json.dump(status, f, ensure_ascii=False, indent=2, default=str)
+
+
+def _backfill_chunks(start, end):
+    s, e = _date.fromisoformat(start), _date.fromisoformat(end)
+    while s <= e:
+        c_end = min(s + timedelta(days=BACKFILL_CHUNK_DAYS - 1), e)
+        yield s.isoformat(), c_end.isoformat()
+        s = c_end + timedelta(days=1)
+
+
+def _drop_undated_rows():
+    """Прибирає лише старі тижневі рядки без Date (хибні, перекриті backfill)."""
+    for name in (SB_CAMPAIGN_SHEET, SB_SEARCH_TERM_SHEET):
+        sh = get_sheet(name)
+        vals = sh.get_all_values()
+        if not vals or "Date" not in vals[0]:
+            continue
+        di = vals[0].index("Date")
+        keep = [r for r in vals[1:] if len(r) > di and r[di].strip()]
+        removed = len(vals) - 1 - len(keep)
+        if removed:
+            sh.update([vals[0]] + keep, "A1", value_input_option="USER_ENTERED")
+            sh.batch_clear([f"A{len(keep) + 2}:Z{len(vals)}"])
+        print(f"  🧹 {name}: прибрано старих рядків без Date: {removed}")
+        time.sleep(3)
+
+
 def run_backfill(start: str, end: str):
+    """
+    Усі звіти подаються наперед (65с між запитами проти 429), далі чекаємо
+    паралельно. Кожен тижневий шматок звіряється (Campaign↔SearchTerm) і
+    пишеться окремо (upsert за діапазоном — ідемпотентно). Старі рядки без
+    Date прибираються ТІЛЬКИ якщо всі шматки успішні. Статус — у
+    backups/sb_backfill_status.json (workflow комітить його навіть при збої).
+    """
     from config import ADS_PROFILE_ID_USA
-    backup_dir = "(зроблено окремим кроком workflow)"
-    if not os.environ.get("SB_BACKUP_DONE"):
-        backup_dir = backup_sheets(datetime.utcnow().strftime("%Y-%m-%d_%H%M%S"))
-    camp_all, st_all = [], []
-    for s, e in chunks(start, end):
-        print(f"📥 Backfill {s}..{e}")
-        c, t = fetch_range(ADS_PROFILE_ID_USA, s, e)
-        camp_all += c
-        st_all += t
-        time.sleep(65)
-    if not camp_all or sanity_check(camp_all, st_all):
-        print("❌ Джерело неповне або не сходиться — вкладки НЕ змінено, бекап лишається")
+    status = {"start": start, "end": end, "chunks": [], "finished": False}
+    _write_status(status)
+    try:
+        if not os.environ.get("SB_BACKUP_DONE"):
+            backup_sheets(datetime.utcnow().strftime("%Y-%m-%d_%H%M%S"))
+        token = get_access_token()
+        jobs = []
+        for cs, ce in _backfill_chunks(start, end):
+            entry = {"from": cs, "to": ce}
+            try:
+                entry["camp_id"] = submit_daily(token, ADS_PROFILE_ID_USA, f"SB Campaign {cs}..{ce}",
+                                                "sbCampaigns", COLS_SB_CAMPAIGN, ["campaign"], cs, ce)
+                time.sleep(65)
+                entry["st_id"] = submit_daily(token, ADS_PROFILE_ID_USA, f"SB SearchTerm {cs}..{ce}",
+                                              "sbSearchTerm", COLS_SB_SEARCH_TERM, ["searchTerm"], cs, ce)
+                time.sleep(65)
+            except Exception as e:
+                entry["error"] = f"submit: {e}"
+            jobs.append(entry)
+            status["chunks"] = jobs
+            _write_status(status)
+        for entry in jobs:
+            if "error" in entry:
+                continue
+            cs, ce = entry["from"], entry["to"]
+            try:
+                camp = wait_and_download(get_access_token(), ADS_PROFILE_ID_USA, entry["camp_id"],
+                                         max_wait=5400, token_fn=get_access_token)
+                st = wait_and_download(get_access_token(), ADS_PROFILE_ID_USA, entry["st_id"],
+                                       max_wait=5400, token_fn=get_access_token)
+                entry["rows"] = {"campaign": len(camp), "searchterm": len(st)}
+                bad = sanity_check(camp, st)
+                if not camp or bad:
+                    entry["error"] = f"sanity: camp={len(camp)} mismatches={bad[:5]}"
+                else:
+                    write_range(camp, st, cs, ce, drop_undated=False)
+                    entry["written"] = True
+            except Exception as e:
+                entry["error"] = str(e)[:500]
+            _write_status(status)
+        if jobs and all(j.get("written") for j in jobs):
+            _drop_undated_rows()
+            status["finished"] = True
+        _write_status(status)
+    except Exception as e:
+        status["fatal"] = str(e)[:500]
+        _write_status(status)
+        raise
+    if not status["finished"]:
+        print("❌ Backfill неповний — див. backups/sb_backfill_status.json")
         sys.exit(1)
-    # Усі старі рядки без Date відомо хибні (мітка тижня зсунута, затирання
-    # по ключу) і повністю перекриті backfill-діапазоном → замінюємо.
-    write_range(camp_all, st_all, start, end, drop_undated=True)
-    print(f"✅ Backfill завершено. Бекап старих вкладок: {backup_dir}")
+    print("✅ Backfill завершено")
 
 
 if __name__ == "__main__":

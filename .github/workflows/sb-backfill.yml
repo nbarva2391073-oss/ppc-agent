@@ -7,7 +7,7 @@ on:
         default: "2026-08-24"
       date_to:
         description: "Кінець (YYYY-MM-DD)"
-        default: "2026-10-08"
+        default: "2026-10-11"
 permissions:
   contents: write
 concurrency:
@@ -15,7 +15,7 @@ concurrency:
 jobs:
   backfill:
     runs-on: ubuntu-latest
-    timeout-minutes: 170
+    timeout-minutes: 350
     env:
       ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
       ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
@@ -42,3 +42,12 @@ jobs:
         env:
           SB_BACKUP_DONE: "1"
         run: python sponsored_brands.py --backfill "${{ inputs.date_from }}" "${{ inputs.date_to }}"
+      - name: Commit status (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"
+          git config user.email "bot@ppc-agent"
+          git add backups/sb_backfill_status.json || true
+          git commit -m "SB backfill status" || echo nothing
+          git pull --rebase origin main
+          git push
