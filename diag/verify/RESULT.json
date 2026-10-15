@@ -143,7 +143,7 @@
   ]
  },
  "Campaign Analysis USA": {
-  "rows": 421,
+  "rows": 482,
   "header": [
    "Week",
    "Campaign",
@@ -163,7 +163,7 @@
   "dup_by_first_col": {},
   "dup_samples_recent": [],
   "tail": [
-   "12.10-18.10.2026",
+   "12.10-14.10.2026",
    "SOUL PH to AlfaMen",
    "6,65",
    "0",
@@ -311,7 +311,7 @@
   ]
  },
  "Placement Analysis USA": {
-  "rows": 4798,
+  "rows": 2434,
   "header": [
    "Week",
    "Campaign",
@@ -326,7 +326,7 @@
    "Issue"
   ],
   "date_cols": [],
-  "exact_duplicate_rows": 955,
+  "exact_duplicate_rows": 391,
   "dup_samples": [
    {
     "count": 2,
@@ -394,26 +394,24 @@
    }
   ],
   "dup_by_first_col": {
-   "17.08-23.08.2026": 155,
-   "24.08-30.08.2026": 49,
    "08.06-14.06.2026": 40,
    "15.06-21.06.2026": 39,
    "06.07-12.07.2026": 34,
-   "31.08-06.09.2026": 33,
    "22.06-28.06.2026": 31,
    "29.06-05.07.2026": 31,
    "13.07-19.07.2026": 28,
    "20.07-26.07.2026": 28,
-   "05.10-11.10.2026": 21,
-   "07.09-13.09.2026": 14
+   "01.06-07.06.2026": 10,
+   "27.07-02.08.2026": 6,
+   "12.10-18.10.2026": 5
   },
   "dup_samples_recent": [
    {
     "count": 2,
     "row": [
-     "28.09-04.10.2026",
-     "flame new spanish exact",
-     "Top of Search on-Amazon",
+     "12.10-18.10.2026",
+     "Wings exact pher oil",
+     "Off Amazon",
      "2",
      "0",
      "0",
@@ -427,74 +425,58 @@
    {
     "count": 2,
     "row": [
-     "28.09-04.10.2026",
-     "INTENSE PHEROMONE PHRASE",
-     "Detail Page on-Amazon",
-     "1",
-     "0",
-     "0",
-     "0",
-     "0",
-     "0",
-     "✅",
-     ""
-    ]
-   },
-   {
-    "count": 2,
-    "row": [
-     "28.09-04.10.2026",
-     "Old Flame X2 experiment Exact",
-     "Other on-Amazon",
-     "21",
-     "0",
-     "0",
-     "0",
-     "0",
-     "0",
-     "✅",
-     ""
-    ]
-   },
-   {
-    "count": 2,
-    "row": [
-     "28.09-04.10.2026",
-     "Old Flame X2 experiment Exact",
-     "Top of Search on-Amazon",
-     "1",
-     "0",
-     "0",
-     "0",
-     "0",
-     "0",
-     "✅",
-     ""
-    ]
-   },
-   {
-    "count": 2,
-    "row": [
-     "28.09-04.10.2026",
-     "flame new spanish",
-     "Top of Search on-Amazon",
-     "0",
-     "0",
-     "0",
-     "0",
-     "0",
-     "0",
-     "✅",
-     ""
-    ]
-   },
-   {
-    "count": 2,
-    "row": [
-     "28.09-04.10.2026",
+     "12.10-18.10.2026",
      "flame velvet exact",
-     "Other on-Amazon",
+     "Off Amazon",
      "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "12.10-18.10.2026",
+     "flame velvet exact",
+     "Top of Search on-Amazon",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "12.10-18.10.2026",
+     "INTENSE PHEROMONE PHRASE",
+     "Top of Search on-Amazon",
+     "5",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "12.10-18.10.2026",
+     "INTENSE PHEROMONE PHRASE",
+     "Other on-Amazon",
+     "5",
      "0",
      "0",
      "0",
@@ -506,12 +488,12 @@
    }
   ],
   "tail": [
-   "12.10-18.10.2026",
+   "12.10-14.10.2026",
    "SOUL PH to AlfaMen",
    "Top of Search on-Amazon",
    "23",
    "2",
-   "0",
+   "8,7",
    "3,69",
    "0",
    "0",
@@ -1165,32 +1147,32 @@
     "2026-10-15 14:18",
     "649087020741",
     "CA",
-    "очікує",
-    "",
+    "виконано",
+    "2026-10-15 15:29",
     "SQP"
    ],
    [
     "2026-10-15 14:18",
     "649088020741",
     "CA",
-    "очікує",
-    "",
+    "виконано",
+    "2026-10-15 15:29",
     "SEARCH_CATALOG"
    ],
    [
     "2026-10-15 14:18",
     "649089020741",
     "CA",
-    "очікує",
-    "",
+    "виконано",
+    "2026-10-15 15:29",
     "REPEAT_PURCHASE"
    ],
    [
     "2026-10-15 14:18",
     "649090020741",
     "CA",
-    "очікує",
-    "",
+    "виконано",
+    "2026-10-15 15:29",
     "MARKET_BASKET"
    ]
   ],
@@ -1198,8 +1180,8 @@
    "2026-10-15 14:18",
    "649090020741",
    "CA",
-   "очікує",
-   "",
+   "виконано",
+   "2026-10-15 15:29",
    "MARKET_BASKET"
   ]
  },
@@ -2147,13 +2129,13 @@
    "days_in_truth": 7,
    "amazon_cost": 99.12,
    "campaign_analysis": 99.12,
-   "placement": 193.02
+   "placement": 99.12
   },
   "05.10-11.10.2026": {
    "days_in_truth": 7,
    "amazon_cost": 102.21,
    "campaign_analysis": 102.21,
-   "placement": 231.55
+   "placement": 102.21
   },
   "12.10-18.10.2026": {
    "days_in_truth": 3,
@@ -2164,14 +2146,14 @@
   "14.09-20.09.2026": {
    "days_in_truth": 7,
    "amazon_cost": 118.71,
-   "campaign_analysis": 20.53,
-   "placement": 0.0
+   "campaign_analysis": 118.71,
+   "placement": 118.71
   },
   "21.09-27.09.2026": {
    "days_in_truth": 7,
    "amazon_cost": 93.72,
-   "campaign_analysis": 32.37,
-   "placement": 0.0
+   "campaign_analysis": 93.72,
+   "placement": 93.72
   }
  }
 }
