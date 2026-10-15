@@ -6,7 +6,7 @@ TABS = ["Raw Data USA", "Campaign Analysis USA", "Bid History USA", "Placement A
         "Keyword Intelligence USA", "Advertised Product USA", "Suggested Bids USA", "SB_Campaign_USA",
         "SB_SearchTerm_USA", "Business_Report_USA", "TACoS_USA", "BA_Pending_Reports", "BA_SearchCatalog_USA",
         "BA_RepeatPurchase_USA", "BA_MarketBasket_USA", "BA_Demographics_USA", "BA_TopSearchTerms_USA",
-        "BA_Trends_USA", "Weekly Summary", "Monthly Summary USA", "Monthly Summary"]
+        "BA_Trends_USA", "BA_SQP_USA", "Weekly Summary", "Monthly Summary USA", "Monthly Summary"]
 DATE_NAMES = ("date", "дата", "run date", "snapshot date", "report date")
 SPEND = ("spend", "cost", "ad_spend")
 def num(x):
@@ -42,9 +42,40 @@ for t in TABS:
     r["dup_samples"] = [{"count": v, "row": list(k)[:14]} for k, v in dups[:4]]
     r["dup_by_first_col"] = dict(collections.Counter(k[0] for k, v in dups).most_common(12))
     r["dup_samples_recent"] = [{"count": v, "row": list(k)[:14]} for k, v in dups if str(k[0]).endswith(".10.2026")][:6]
-    if t in ("BA_Pending_Reports", "BA_Trends_USA", "Weekly Summary"):
+    if t in ("BA_Pending_Reports", "BA_Trends_USA", "BA_SQP_USA", "Weekly Summary"):
         r["last_rows"] = [x[:10] for x in rows[-14:]]
     r["tail"] = rows[-1][:12]
     res[t] = r
     json.dump(res, open(os.path.join(OUT, "RESULT.json"), "w"), ensure_ascii=False, indent=1)
 print("done")
+
+
+# ── Звірка тижневих вкладок з істиною Amazon (diag/sp_audit/camp_daily.json, DAILY по кампаніях) ──
+try:
+    from datetime import date as _d, timedelta as _td
+    truth = json.load(open("diag/sp_audit/camp_daily.json"))
+    def wlabel(ds):
+        d = _d.fromisoformat(ds); s = d - _td(days=d.weekday()); e = s + _td(days=6)
+        return f"{s.strftime('%d.%m')}-{e.strftime('%d.%m.%Y')}"
+    T = collections.defaultdict(float); days = collections.defaultdict(set)
+    for r in truth:
+        T[(wlabel(r["date"]), r["campaignName"])] += float(r.get("cost") or 0); days[wlabel(r["date"])].add(r["date"])
+    comp = {}
+    ca = read_all_optional("Campaign Analysis USA"); hc = ca[0]; iw, ic, isp = hc.index("Week"), hc.index("Campaign"), hc.index("Spend")
+    CA = collections.defaultdict(float)
+    for r in ca[1:]:
+        if len(r) > isp: CA[(r[iw], r[ic])] += num(r[isp])
+    pl = read_all_optional("Placement Analysis USA"); hp = pl[0]; pw, pc, ps = hp.index("Week"), hp.index("Campaign"), hp.index("Spend")
+    PL = collections.defaultdict(float)
+    for r in pl[1:]:
+        if len(r) > ps: PL[(r[pw], r[pc])] += num(r[ps])
+    for wk in sorted(days, key=lambda x: x[6:10] + x[3:5] + x[:2]):
+        tw = round(sum(v for (w, c), v in T.items() if w == wk), 2)
+        cw = round(sum(v for (w, c), v in CA.items() if w == wk), 2)
+        pw_ = round(sum(v for (w, c), v in PL.items() if w == wk), 2)
+        comp[wk] = {"days_in_truth": len(days[wk]), "amazon_cost": tw, "campaign_analysis": cw, "placement": pw_}
+    res["_week_vs_amazon"] = comp
+    json.dump(res, open(os.path.join(OUT, "RESULT.json"), "w"), ensure_ascii=False, indent=1)
+except Exception as ex:
+    res["_week_vs_amazon_error"] = str(ex)[:300]
+    json.dump(res, open(os.path.join(OUT, "RESULT.json"), "w"), ensure_ascii=False, indent=1)

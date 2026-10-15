@@ -699,6 +699,21 @@ def write_placement_analysis(placement_data: list[dict],
     # Ротація: видаляємо записи старші 730 днів
     _cleanup_placement(sh, headers)
 
+    # ВИПРАВЛЕНО: monitor тепер дає тиждень-до-вчора (накопичувально). Чистий append
+    # дублював би тиждень щодня → замінюємо ВСІ рядки цього тижня (upsert за Week).
+    if rows:
+        _remove_tables(sh)
+        existing = sh.get_all_values()
+        if existing and existing[0] and existing[0][0] == "Week":
+            kept = [r for r in existing if not (r and r[0] == week and r is not existing[0])]
+            removed = len(existing) - len(kept)
+            if removed:
+                print(f"  🔄 Placement {market}: замінено {removed} рядків тижня {week} (upsert)")
+            sh.clear()
+            sh.update(kept + rows, "A1")
+            print(f"  ✅ Placement Analysis {market}: {len(rows)} рядків")
+            return
+
     append(sheet_name, rows, headers)
     print(f"  ✅ Placement Analysis {market}: {len(rows)} рядків")
 
