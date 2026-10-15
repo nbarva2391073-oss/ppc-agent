@@ -1,0 +1,38 @@
+name: Monthly Summary
+on:
+  schedule:
+    - cron: "17 9 8 * *"     # 8-го числа: атрибуція 7d за останні дні місяця вже стабільна, BR є
+  workflow_dispatch:
+    inputs:
+      month:
+        description: "YYYY-MM (порожньо = попередній місяць)"
+        required: false
+permissions:
+  contents: write
+concurrency:
+  group: monthly-summary
+jobs:
+  summary:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
+      ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
+      ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
+      ADS_PROFILE_ID_USA:      ${{ secrets.ADS_PROFILE_ID_USA }}
+      ADS_PROFILE_ID_CA:       ${{ secrets.ADS_PROFILE_ID_CA }}
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+      MONTH: ${{ github.event.inputs.month }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python monthly_summary.py
+      - name: Commit result (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add diag/monthly_summary || true
+          git commit -m "Monthly summary result" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
