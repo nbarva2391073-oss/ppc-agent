@@ -1,0 +1,84 @@
+{
+  "start": "2026-08-24",
+  "end": "2026-10-11",
+  "chunks": [
+    {
+      "from": "2026-08-24",
+      "to": "2026-08-30",
+      "camp_id": "0160ad27-8606-4e39-8916-a0650dc35fc0",
+      "st_id": "847cae76-9248-48b5-be40-207a774168cc",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 87
+      },
+      "written": true
+    },
+    {
+      "from": "2026-08-31",
+      "to": "2026-09-06",
+      "camp_id": "bb25c165-b3c9-4a1a-9ad8-6860d839551c",
+      "st_id": "07c664e0-45a7-474a-8f01-b45d301d6a28",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 70
+      },
+      "written": true
+    },
+    {
+      "from": "2026-09-07",
+      "to": "2026-09-13",
+      "camp_id": "a2027264-c540-4a6a-86f5-6b7a9fb32922",
+      "st_id": "5220493a-a398-4332-9bca-bbfc25b006b7",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 78
+      },
+      "written": true
+    },
+    {
+      "from": "2026-09-14",
+      "to": "2026-09-20",
+      "camp_id": "337b6001-c377-4e59-8af4-5a5222f1e73c",
+      "st_id": "78fa5bdc-3e0c-496d-a5a3-c9f29437ef2e",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 85
+      },
+      "written": true
+    },
+    {
+      "from": "2026-09-21",
+      "to": "2026-09-27",
+      "camp_id": "6785f569-9821-4080-9d40-96f285646b98",
+      "st_id": "8301669b-cfbc-45b6-a199-df59da35cedc",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 87
+      },
+      "written": true
+    },
+    {
+      "from": "2026-09-28",
+      "to": "2026-10-04",
+      "camp_id": "5d671cda-582e-4ce6-b782-f5f5f0656b5f",
+      "st_id": "b11e29f5-aa56-4100-a865-3b59fe865bce",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 92
+      },
+      "written": true
+    },
+    {
+      "from": "2026-10-05",
+      "to": "2026-10-11",
+      "camp_id": "54df93ed-8e96-467e-b44f-3d720437815d",
+      "st_id": "7088d41e-083d-411f-9ff8-35d679385761",
+      "rows": {
+        "campaign": 28,
+        "searchterm": 81
+      },
+      "written": true
+    }
+  ],
+  "finished": true
+}
