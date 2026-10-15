@@ -8,11 +8,11 @@
 # складає diag/ki_repair/RESULT.json зі звіркою сум з Amazon.
 # Нічого не видаляє з інших рядків, ставки/кампанії не чіпає.
 # ============================================================
-import json, os, sys
+import json, os, re, sys, time
 from datetime import date, timedelta
 
 from config import ADS_PROFILE_ID_USA, SHEETS_USA
-from amazon_ads import get_access_token, get_search_term_report, get_targeting_report
+from amazon_ads import get_access_token, submit_report, wait_and_download
 from keywords import analyze_keywords
 from sheets import read_all, write_keyword_intelligence
 
@@ -29,13 +29,42 @@ def main():
     pending = []
     os.makedirs("diag/ki_repair", exist_ok=True)
     history = {"raw_data": read_all(SHEETS_USA["raw_data"])}
+    ST_COLS = ["campaignName", "adGroupName", "keyword", "matchType", "searchTerm", "impressions",
+               "clicks", "cost", "sales7d", "purchases7d", "costPerClick"]
+    TG_COLS = ["campaignName", "adGroupName", "matchType", "impressions", "clicks",
+               "cost", "sales7d", "purchases7d", "costPerClick"]
+
+    def submit(kind, rtype, cols, grp, s_, e_):
+        for _ in range(8):
+            try:
+                return submit_report(get_access_token(), ADS_PROFILE_ID_USA, f"{kind} {s_}..{e_}",
+                                     rtype, cols, grp, s_, e_)
+            except Exception as ex:
+                m = re.search(r"duplicate of\s*:\s*([\w-]+)", str(ex))
+                if m: return m.group(1)
+                if "429" in str(ex): time.sleep(65); continue
+                raise
+        raise RuntimeError("submit failed")
+
+    # 1) Одразу ставимо ВСІ звіти в чергу (Amazon генерує паралельно) — послідовно було б >2 год.
+    jobs = []
     for ws in WEEK_STARTS:
         s = date.fromisoformat(ws); e = s + timedelta(days=6)
+        jobs.append((ws, s, e,
+                     submit("st", "spSearchTerm", ST_COLS, ["searchTerm"], s.isoformat(), e.isoformat()),
+                     None))
+        time.sleep(65)
+        jobs[-1] = jobs[-1][:4] + (submit("tg", "spTargeting", TG_COLS, ["targeting"], s.isoformat(), e.isoformat()),)
+        time.sleep(65)
+    out["submitted"] = [(j[0], j[3], j[4]) for j in jobs]
+    json.dump(out, open("diag/ki_repair/RESULT.json", "w"), ensure_ascii=False, indent=2)
+
+    # 2) Завантажуємо і рахуємо
+    for ws, s, e, st_id, tg_id in jobs:
         label = f"{s.strftime('%d.%m')}-{e.strftime('%d.%m.%Y')}"
         run_date = (e + timedelta(days=1)).isoformat()   # як у weekly: понеділок
-        token = get_access_token()
-        st = get_search_term_report(token, ADS_PROFILE_ID_USA, s.isoformat(), e.isoformat())
-        tg = get_targeting_report(get_access_token(), ADS_PROFILE_ID_USA, s.isoformat(), e.isoformat())
+        st = wait_and_download(get_access_token(), ADS_PROFILE_ID_USA, st_id, max_wait=5400, token_fn=get_access_token)
+        tg = wait_and_download(get_access_token(), ADS_PROFILE_ID_USA, tg_id, max_wait=5400, token_fn=get_access_token)
         rows = analyze_keywords(st, tg, history, MARKET)
         amazon_cost = round(sum(cost(r) for r in st), 2)
         amazon_sales = round(sum(float(r.get("sales7d", 0)) for r in st), 2)

@@ -8,7 +8,7 @@ concurrency:
 jobs:
   repair:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 240
     env:
       ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
       ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
