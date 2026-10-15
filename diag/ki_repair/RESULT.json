@@ -1,0 +1,26 @@
+{
+  "weeks": [
+    {
+      "week": "07.09-13.09.2026",
+      "run_date": "2026-09-14",
+      "searchterm_rows": 110,
+      "kw_rows": 104,
+      "amazon_cost": 119.32,
+      "kw_cost": 119.32,
+      "amazon_sales": 276.72,
+      "kw_sales": 276.72,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Flame new phrase 2",
+          "clicks": 3,
+          "spend": 2.74,
+          "sales": 0.0,
+          "acos": 0
+        }
+      ],
+      "written": false
+    }
+  ]
+}
