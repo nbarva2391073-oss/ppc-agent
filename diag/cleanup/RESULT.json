@@ -1,0 +1,11 @@
+{
+ "ki_blank_rows_removed": 185,
+ "BA_SearchCatalog_USA": {
+  "before": 126,
+  "duplicates_removed": 42
+ },
+ "BA_RepeatPurchase_USA": {
+  "before": 147,
+  "duplicates_removed": 37
+ }
+}
