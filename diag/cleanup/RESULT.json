@@ -1,15 +1,10 @@
 {
- "ki_blank_rows_removed": 0,
- "BA_SearchCatalog_USA": {
-  "before": 98,
-  "duplicates_removed": 14
+ "Campaign Analysis USA": {
+  "before": 483,
+  "after": 471
  },
- "BA_RepeatPurchase_USA": {
-  "before": 145,
-  "duplicates_removed": 35
- },
- "BA_MarketBasket_USA": {
-  "before": 230,
-  "duplicates_removed": 54
+ "Placement Analysis USA": {
+  "before": 2435,
+  "after": 2334
  }
 }
