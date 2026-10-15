@@ -1100,8 +1100,32 @@ def write_weekly_summary(usa_metrics: dict, ca_metrics: dict,
             m.get("worst_campaign", ""),
             ", ".join(m.get("budget_issues", [])),
         ])
-    append(SHEETS_COMMON["weekly_summary"], rows, headers)
-    print(f"  ✅ Weekly Summary: збережено")
+    # Upsert за (Week, Market): раніше кожен щоденний запуск ДОДАВАВ рядок, тому
+    # одна й та сама неділя мала до 10+ дублікатів. Старі рядки не чіпаємо
+    # (історію чистимо окремо за підтвердженням) — заміняємо лише попередній
+    # запис цього ж ключа, залишаючи один актуальний.
+    if rows:
+        sh = get_sheet(SHEETS_COMMON["weekly_summary"])
+        existing = sh.get_all_values()
+        if not existing or not existing[0] or existing[0][0] != "Week":
+            append(SHEETS_COMMON["weekly_summary"], rows, headers)
+        else:
+            keys = {(r[0], r[1]) for r in rows}
+            # шукаємо ОСТАННІЙ рядок з таким ключем і замінюємо його на місці
+            last_idx = {}
+            for i, r in enumerate(existing[1:], start=2):
+                if len(r) > 1 and (r[0], r[1]) in keys:
+                    last_idx[(r[0], r[1])] = i
+            to_append = []
+            for r in rows:
+                k = (r[0], r[1])
+                if k in last_idx:
+                    sh.update(f"A{last_idx[k]}", [r], value_input_option="USER_ENTERED")
+                else:
+                    to_append.append(r)
+            if to_append:
+                sh.append_rows(to_append, value_input_option="USER_ENTERED", table_range="A1")
+    print(f"  ✅ Weekly Summary: збережено (upsert)")
 
 
 # ── Alert Log ─────────────────────────────────────────────────

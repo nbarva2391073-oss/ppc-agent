@@ -4,7 +4,15 @@ on:
   schedule:
     # Щодня о 09:00 UTC (після того як Amazon оновлює дані за вчора)
     - cron: '0 14 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      dates:
+        description: "Ручний дозабір днів (YYYY-MM-DD, через кому). Порожньо = звичайний запуск"
+        default: ""
+      markets:
+        description: "Ринки для ручного дозабору"
+        default: "USA"
+
 
 jobs:
   business-report:
@@ -30,4 +38,6 @@ jobs:
           AMAZON_REFRESH_TOKEN_USA:   ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
           AMAZON_REFRESH_TOKEN_CA:    ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
           GOOGLE_CREDENTIALS_JSON:    ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+          BR_DATES:                   ${{ inputs.dates }}
+          BR_MARKETS:                 ${{ inputs.markets }}
         run: python business_report.py

@@ -288,10 +288,23 @@ def run_business_report():
     print(f"   {datetime.now().strftime('%d.%m.%Y %H:%M')}")
     print("=" * 60)
 
+    import os
+    import time
+    # Ручний дозабір конкретних днів (workflow_dispatch input): BR_DATES=2026-07-06,2026-07-07
+    manual = [d.strip() for d in os.environ.get("BR_DATES", "").split(",") if d.strip()]
+    if manual:
+        markets = [m.strip() for m in os.environ.get("BR_MARKETS", "USA").split(",") if m.strip()]
+        for market in markets:
+            for date in manual:
+                print(f"\n🔧 [{market}] ручний дозабір {date}")
+                fetch_and_store_day(market, date)
+                time.sleep(70)
+        print("\n✅ Ручний дозабір завершено")
+        return
+
     target_date = get_target_date()
     print(f"📅 Основна дата (позавчора): {target_date}")
 
-    import time
     for market in ["USA", "CA"]:
         print(f"\n🌎 {market}...")
         fetch_and_store_day(market, target_date)
