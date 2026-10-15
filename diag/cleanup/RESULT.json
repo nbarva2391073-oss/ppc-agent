@@ -1,11 +1,15 @@
 {
- "ki_blank_rows_removed": 185,
+ "ki_blank_rows_removed": 0,
  "BA_SearchCatalog_USA": {
-  "before": 126,
-  "duplicates_removed": 42
+  "before": 98,
+  "duplicates_removed": 14
  },
  "BA_RepeatPurchase_USA": {
-  "before": 147,
-  "duplicates_removed": 37
+  "before": 145,
+  "duplicates_removed": 35
+ },
+ "BA_MarketBasket_USA": {
+  "before": 230,
+  "duplicates_removed": 54
  }
 }
