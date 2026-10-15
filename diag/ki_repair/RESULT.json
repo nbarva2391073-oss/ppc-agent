@@ -20,7 +20,123 @@
           "acos": 0
         }
       ],
-      "written": false
+      "written": true
+    },
+    {
+      "week": "14.09-20.09.2026",
+      "run_date": "2026-09-21",
+      "searchterm_rows": 87,
+      "kw_rows": 77,
+      "amazon_cost": 118.71,
+      "kw_cost": 118.71,
+      "amazon_sales": 194.92,
+      "kw_sales": 194.92,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Flame new phrase 2",
+          "clicks": 3,
+          "spend": 2.61,
+          "sales": 0.0,
+          "acos": 0
+        }
+      ],
+      "written": true
+    },
+    {
+      "week": "21.09-27.09.2026",
+      "run_date": "2026-09-28",
+      "searchterm_rows": 62,
+      "kw_rows": 56,
+      "amazon_cost": 93.72,
+      "kw_cost": 93.72,
+      "amazon_sales": 249.66,
+      "kw_sales": 249.66,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Flame new phrase 2",
+          "clicks": 8,
+          "spend": 7.35,
+          "sales": 24.97,
+          "acos": 29.4
+        }
+      ],
+      "written": true
+    },
+    {
+      "week": "28.09-04.10.2026",
+      "run_date": "2026-10-05",
+      "searchterm_rows": 60,
+      "kw_rows": 52,
+      "amazon_cost": 99.12,
+      "kw_cost": 99.12,
+      "amazon_sales": 229.63,
+      "kw_sales": 229.63,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Flame new phrase 2",
+          "clicks": 18,
+          "spend": 15.14,
+          "sales": 49.94,
+          "acos": 30.3
+        }
+      ],
+      "written": true
+    },
+    {
+      "week": "05.10-11.10.2026",
+      "run_date": "2026-10-12",
+      "searchterm_rows": 62,
+      "kw_rows": 56,
+      "amazon_cost": 102.21,
+      "kw_cost": 102.21,
+      "amazon_sales": 173.72,
+      "kw_sales": 173.72,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Flame new phrase 2",
+          "clicks": 14,
+          "spend": 12.67,
+          "sales": 24.97,
+          "acos": 50.7
+        }
+      ],
+      "written": true
     }
-  ]
+  ],
+  "submitted": [
+    [
+      "2026-09-07",
+      "93a31e1a-f813-4410-bbc4-14f44f38b102",
+      "943b882b-be65-4184-a7f2-7336b0ac548f"
+    ],
+    [
+      "2026-09-14",
+      "12c4b5b7-af4e-4f00-ad44-dc7c88cdcbc6",
+      "f1011240-daac-4719-bfcb-b95154cc481d"
+    ],
+    [
+      "2026-09-21",
+      "7008c99e-eb5e-4e32-9c76-370df02eb38c",
+      "e1a8064e-2128-4c87-8cfb-7c6ba3ebf6a5"
+    ],
+    [
+      "2026-09-28",
+      "5578f934-f27a-475e-a952-41a8162f59a6",
+      "ba5aad72-3ab3-4c41-afd0-26624c932167"
+    ],
+    [
+      "2026-10-05",
+      "a7ef0f5e-734d-4cca-a73b-58fb45646a1c",
+      "772e0480-9e8a-4c08-84a4-4f64b55d744b"
+    ]
+  ],
+  "all_ok": true
 }
