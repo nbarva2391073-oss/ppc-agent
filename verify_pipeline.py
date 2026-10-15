@@ -38,6 +38,9 @@ for t in TABS:
         # якщо дата + набір перших колонок задають запис: дублі повних рядків
     full = collections.Counter(tuple(x) for x in rows[1:])
     r["exact_duplicate_rows"] = sum(v - 1 for v in full.values() if v > 1)
+    dups = [(k, v) for k, v in full.items() if v > 1]
+    r["dup_samples"] = [{"count": v, "row": list(k)[:14]} for k, v in dups[:4]]
+    r["dup_by_first_col"] = dict(collections.Counter(k[0] for k, v in dups).most_common(12))
     r["tail"] = rows[-1][:12]
     res[t] = r
     json.dump(res, open(os.path.join(OUT, "RESULT.json"), "w"), ensure_ascii=False, indent=1)
