@@ -4,7 +4,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: sheets-sp-write
+  group: sheets-weekly-tabs
 jobs:
   repair:
     runs-on: ubuntu-latest
