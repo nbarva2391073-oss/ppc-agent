@@ -1,0 +1,382 @@
+{
+ "last": "2026-10-14",
+ "steps": [
+  {
+   "submitted": {
+    "kind": "search_term",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "70fb1a34-eb92-48c4-bf3f-937a905feaa1"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "targeting",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "14fa5f2e-6238-4df7-be48-1ddb387a02e8"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "advertised",
+    "from": "2026-08-25",
+    "to": "2026-09-24",
+    "id": "5d493137-d56e-4130-9264-2bf95c3cc086"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "advertised",
+    "from": "2026-09-25",
+    "to": "2026-10-14",
+    "id": "1da32723-7087-4553-9247-2787e8c062f3"
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "search_term",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "70fb1a34-eb92-48c4-bf3f-937a905feaa1",
+    "rows": 233
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "targeting",
+    "from": "2026-09-30",
+    "to": "2026-10-14",
+    "id": "14fa5f2e-6238-4df7-be48-1ddb387a02e8",
+    "rows": 594
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "advertised",
+    "from": "2026-08-25",
+    "to": "2026-09-24",
+    "id": "5d493137-d56e-4130-9264-2bf95c3cc086",
+    "rows": 962
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "advertised",
+    "from": "2026-09-25",
+    "to": "2026-10-14",
+    "id": "1da32723-7087-4553-9247-2787e8c062f3",
+    "rows": 514
+   }
+  }
+ ],
+ "adv_from": "2026-08-25",
+ "source_check": {
+  "2026-08-25": {
+   "adv": 20.4,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-26": {
+   "adv": 17.55,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-27": {
+   "adv": 14.31,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-28": {
+   "adv": 18.25,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-29": {
+   "adv": 18.88,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-30": {
+   "adv": 20.79,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-31": {
+   "adv": 18.09,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-01": {
+   "adv": 14.13,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-02": {
+   "adv": 16.79,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-03": {
+   "adv": 20.54,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-04": {
+   "adv": 20.8,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-05": {
+   "adv": 17.65,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-06": {
+   "adv": 23.46,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-07": {
+   "adv": 25.68,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-08": {
+   "adv": 11.32,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-09": {
+   "adv": 20.21,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-10": {
+   "adv": 17.3,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-11": {
+   "adv": 15.86,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-12": {
+   "adv": 7.78,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-13": {
+   "adv": 21.17,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-14": {
+   "adv": 22.93,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 22.93
+  },
+  "2026-09-15": {
+   "adv": 20.21,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 20.21
+  },
+  "2026-09-16": {
+   "adv": 16.47,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 16.47
+  },
+  "2026-09-17": {
+   "adv": 16.23,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 16.23
+  },
+  "2026-09-18": {
+   "adv": 14.93,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 14.93
+  },
+  "2026-09-19": {
+   "adv": 11.96,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 11.96
+  },
+  "2026-09-20": {
+   "adv": 15.98,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 15.98
+  },
+  "2026-09-21": {
+   "adv": 14.1,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 14.1
+  },
+  "2026-09-22": {
+   "adv": 14.53,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 14.53
+  },
+  "2026-09-23": {
+   "adv": 17.18,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 17.18
+  },
+  "2026-09-24": {
+   "adv": 12.0,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 12.0
+  },
+  "2026-09-25": {
+   "adv": 10.94,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 10.94
+  },
+  "2026-09-26": {
+   "adv": 12.09,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 12.09
+  },
+  "2026-09-27": {
+   "adv": 12.88,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 12.88
+  },
+  "2026-09-28": {
+   "adv": 13.95,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 13.95
+  },
+  "2026-09-29": {
+   "adv": 10.73,
+   "st": null,
+   "tg": null,
+   "campaign_daily": 10.73
+  },
+  "2026-09-30": {
+   "adv": 17.38,
+   "st": 17.38,
+   "tg": 17.38,
+   "campaign_daily": 17.38
+  },
+  "2026-10-01": {
+   "adv": 11.47,
+   "st": 11.47,
+   "tg": 11.47,
+   "campaign_daily": 11.47
+  },
+  "2026-10-02": {
+   "adv": 14.93,
+   "st": 14.93,
+   "tg": 14.93,
+   "campaign_daily": 14.93
+  },
+  "2026-10-03": {
+   "adv": 12.85,
+   "st": 12.85,
+   "tg": 12.85,
+   "campaign_daily": 12.85
+  },
+  "2026-10-04": {
+   "adv": 17.81,
+   "st": 17.81,
+   "tg": 17.81,
+   "campaign_daily": 17.81
+  },
+  "2026-10-05": {
+   "adv": 12.66,
+   "st": 12.66,
+   "tg": 12.66,
+   "campaign_daily": 12.66
+  },
+  "2026-10-06": {
+   "adv": 13.35,
+   "st": 13.35,
+   "tg": 13.35,
+   "campaign_daily": 13.35
+  },
+  "2026-10-07": {
+   "adv": 11.82,
+   "st": 11.82,
+   "tg": 11.82,
+   "campaign_daily": 11.82
+  },
+  "2026-10-08": {
+   "adv": 19.1,
+   "st": 19.1,
+   "tg": 19.1,
+   "campaign_daily": 19.1
+  },
+  "2026-10-09": {
+   "adv": 17.72,
+   "st": 17.72,
+   "tg": 17.72,
+   "campaign_daily": 17.72
+  },
+  "2026-10-10": {
+   "adv": 13.56,
+   "st": 13.56,
+   "tg": 13.56,
+   "campaign_daily": 13.56
+  },
+  "2026-10-11": {
+   "adv": 14.0,
+   "st": 14.0,
+   "tg": 14.0,
+   "campaign_daily": 14.0
+  },
+  "2026-10-12": {
+   "adv": 15.86,
+   "st": 15.86,
+   "tg": 15.86,
+   "campaign_daily": 15.86
+  },
+  "2026-10-13": {
+   "adv": 21.47,
+   "st": 21.47,
+   "tg": 21.47,
+   "campaign_daily": 21.47
+  },
+  "2026-10-14": {
+   "adv": 22.99,
+   "st": 22.99,
+   "tg": 22.99,
+   "campaign_daily": 22.99
+  }
+ }
+}
