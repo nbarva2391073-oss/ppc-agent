@@ -1,0 +1,31 @@
+name: Weekly tabs repair (one-off)
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: sheets-sp-write
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
+      ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
+      ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
+      ADS_PROFILE_ID_USA:      ${{ secrets.ADS_PROFILE_ID_USA }}
+      ADS_PROFILE_ID_CA:       ${{ secrets.ADS_PROFILE_ID_CA }}
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python repair_weekly_tabs.py
+      - name: Commit result (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add backups/weekly_pre_repair diag/weekly_repair || true
+          git commit -m "Weekly tabs repair result" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
