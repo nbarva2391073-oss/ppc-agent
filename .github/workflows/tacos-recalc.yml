@@ -1,0 +1,26 @@
+name: TACoS recalc (one-off)
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: sheets-sp-write
+jobs:
+  recalc:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python tacos_recalc.py
+      - name: Commit result (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add backups/tacos_pre_recalc diag/tacos_recalc || true
+          git commit -m "TACoS recalc result" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
