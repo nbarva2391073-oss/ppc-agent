@@ -40,4 +40,4 @@ jobs:
           git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
           git add backups/sp_pre_repair diag/sp_repair || true
           git commit -m "SP daily repair result" || echo nothing
-          git pull --rebase origin main; git push
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done

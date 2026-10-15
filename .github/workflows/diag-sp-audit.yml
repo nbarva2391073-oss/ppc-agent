@@ -24,4 +24,4 @@ jobs:
           git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
           git add diag/sp_audit || true
           git commit -m "Diag SP audit USA (raw API responses, read-only)" || echo nothing
-          git pull --rebase origin main; git push
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
