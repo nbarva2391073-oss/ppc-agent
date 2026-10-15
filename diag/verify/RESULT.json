@@ -45,6 +45,87 @@
    "2026-10-14": 22.99
   },
   "exact_duplicate_rows": 6,
+  "dup_samples": [
+   {
+    "count": 2,
+    "row": [
+     "14.09-20.09.2026",
+     "Flame new phrase 2",
+     "Ad Group - 5/4/2026 19:34:26.529",
+     "",
+     "pheromones perfume for women",
+     "pheromone perfume",
+     "PHRASE",
+     "6",
+     "1",
+     "0",
+     "0,87",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "14.09-20.09.2026",
+     "Flame new phrase 2",
+     "Ad Group - 5/4/2026 19:34:26.529",
+     "",
+     "pheromones perfume",
+     "pheromone perfume",
+     "PHRASE",
+     "1",
+     "1",
+     "0",
+     "0,87",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "14.09-20.09.2026",
+     "Flame new phrase 2",
+     "Ad Group - 5/4/2026 19:34:26.529",
+     "",
+     "skin scent pheromone perfume women",
+     "pheromone perfume",
+     "PHRASE",
+     "2",
+     "1",
+     "0",
+     "0,87",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "14.09-20.09.2026",
+     "Flame new phrase 2",
+     "Ad Group - 5/4/2026 19:34:26.529",
+     "",
+     "floral pheromone perfume women",
+     "pheromone perfume",
+     "PHRASE",
+     "6",
+     "1",
+     "0",
+     "0,87",
+     "0",
+     "0",
+     "0"
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "14.09-20.09.2026": 6
+  },
   "tail": [
    "12.10-18.10.2026",
    "Flame new phrase 2",
@@ -77,6 +158,8 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "12.10-18.10.2026",
    "SOUL PH to AlfaMen",
@@ -116,6 +199,89 @@
   "last_date": "2026-10-14",
   "distinct_dates": 57,
   "exact_duplicate_rows": 123,
+  "dup_samples": [
+   {
+    "count": 2,
+    "row": [
+     "2026-08-18",
+     "flame new spanish",
+     "",
+     "feromonas para mujer",
+     "0",
+     "0,18",
+     "0",
+     "0",
+     "0",
+     "bid_changed",
+     "0",
+     "0",
+     "false"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "2026-08-18",
+     "flame new spanish",
+     "",
+     "perfume de feromonas",
+     "0",
+     "0,2",
+     "0",
+     "0",
+     "0",
+     "bid_changed",
+     "0",
+     "0",
+     "false"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "2026-08-18",
+     "Flame new phrase 2",
+     "",
+     "pheromone perfume",
+     "0",
+     "0,25",
+     "0",
+     "0",
+     "0",
+     "bid_changed",
+     "0",
+     "0",
+     "false"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "2026-08-18",
+     "flame new spanish exact",
+     "",
+     "perfume con feromonas para mujeres",
+     "0",
+     "0,3",
+     "0",
+     "0",
+     "0",
+     "bid_changed",
+     "0",
+     "0",
+     "false"
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "2026-08-18": 42,
+   "2026-08-20": 18,
+   "2026-08-25": 18,
+   "2026-08-26": 18,
+   "2026-08-19": 9,
+   "2026-08-31": 5,
+   "2026-09-11": 4
+  },
   "tail": [
    "2026-10-14",
    "flame velvet exact",
@@ -148,6 +314,86 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 952,
+  "dup_samples": [
+   {
+    "count": 2,
+    "row": [
+     "01.06-07.06.2026",
+     "flame new spanish",
+     "",
+     "3",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "01.06-07.06.2026",
+     "Flame old auto",
+     "",
+     "97",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "01.06-07.06.2026",
+     "INSIDE pheromone perfume",
+     "",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "01.06-07.06.2026",
+     "Butterfly Exact",
+     "",
+     "8",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "✅",
+     ""
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "17.08-23.08.2026": 155,
+   "24.08-30.08.2026": 49,
+   "08.06-14.06.2026": 40,
+   "15.06-21.06.2026": 39,
+   "06.07-12.07.2026": 34,
+   "31.08-06.09.2026": 33,
+   "22.06-28.06.2026": 31,
+   "29.06-05.07.2026": 31,
+   "13.07-19.07.2026": 28,
+   "20.07-26.07.2026": 28,
+   "05.10-11.10.2026": 21,
+   "07.09-13.09.2026": 14
+  },
   "tail": [
    "12.10-18.10.2026",
    "SOUL PH to AlfaMen",
@@ -226,6 +472,30 @@
    "2026-10-14": 22.99
   },
   "exact_duplicate_rows": 184,
+  "dup_samples": [
+   {
+    "count": 185,
+    "row": [
+     "01.09.2026-30.09.2026",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "01.09.2026-30.09.2026": 1
+  },
   "tail": [
    "05.10-11.10.2026",
    "pheromones perfumes for women 4 to 5 star ratings",
@@ -306,6 +576,61 @@
    "2026-10-14": 22.99
   },
   "exact_duplicate_rows": 3,
+  "dup_samples": [
+   {
+    "count": 2,
+    "row": [
+     "2026-10-08",
+     "To All Men",
+     "Cologne",
+     "B07ZTJM5WJ",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "2026-10-10",
+     "To All Men",
+     "Cologne",
+     "B07ZTJM5WJ",
+     "1",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "2026-10-14",
+     "To All Men",
+     "Cologne",
+     "B07ZTJM5WJ",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0",
+     "0"
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "2026-10-08": 1,
+   "2026-10-10": 1,
+   "2026-10-14": 1
+  },
   "tail": [
    "2026-10-14",
    "new men oil",
@@ -341,6 +666,8 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "90845638993555",
    "Flame new phrase",
@@ -425,6 +752,8 @@
    "2026-10-13": 9.28
   },
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "12.10-18.10.2026",
    "Video Wings",
@@ -512,6 +841,8 @@
    "2026-10-13": 9.28
   },
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "12.10-18.10.2026",
    "Video Wings",
@@ -548,6 +879,8 @@
   "last_date": "2026-10-12",
   "distinct_dates": 99,
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "2026-07-07",
    "B0F1ZK167K",
@@ -623,6 +956,8 @@
    "2026-10-13": 25.27
   },
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "2026-08-28",
    "B0GYSJC1PM",
@@ -647,6 +982,8 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "2026-10-10 13:15",
    "647801020736",
@@ -671,6 +1008,67 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 42,
+  "dup_samples": [
+   {
+    "count": 4,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B07PTQKZ82",
+     "9737",
+     "27",
+     "0,0028",
+     "7",
+     "1",
+     "0,037",
+     "USA"
+    ]
+   },
+   {
+    "count": 4,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B07TJW4Y94",
+     "15236",
+     "52",
+     "0,0034",
+     "15",
+     "5",
+     "0,0962",
+     "USA"
+    ]
+   },
+   {
+    "count": 4,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B07ZTJM5WJ",
+     "4560",
+     "16",
+     "0,0035",
+     "5",
+     "1",
+     "0,0625",
+     "USA"
+    ]
+   },
+   {
+    "count": 4,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B081T6QGD9",
+     "21772",
+     "55",
+     "0,0025",
+     "18",
+     "2",
+     "0,0364",
+     "USA"
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "01.07.2026-31.07.2026": 14
+  },
   "tail": [
    "01.09.2026-30.09.2026",
    "B0GYSJC1PM",
@@ -697,6 +1095,63 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 37,
+  "dup_samples": [
+   {
+    "count": 2,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B07PTQKZ82",
+     "28",
+     "24",
+     "16,67",
+     "136,71",
+     "13,73",
+     "USA"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B07TJW4Y94",
+     "20",
+     "18",
+     "11,11",
+     "49,8",
+     "9,91",
+     "USA"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B07ZTJM5WJ",
+     "10",
+     "9",
+     "11,11",
+     "59,98",
+     "15,38",
+     "USA"
+    ]
+   },
+   {
+    "count": 2,
+    "row": [
+     "01.07.2026-31.07.2026",
+     "B081T6QGD9",
+     "18",
+     "15",
+     "13,33",
+     "180",
+     "17,24",
+     "USA"
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "01.07.2026-31.07.2026": 37
+  },
   "tail": [
    "01.09.2026-30.09.2026",
    "B0DNMWN4W7",
@@ -720,6 +1175,8 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "01.09.2026-30.09.2026",
    "B0DHCRF914",
@@ -748,6 +1205,8 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "2026-01-31",
    "ALFAMARKER",
@@ -792,6 +1251,8 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "2026-01-31",
    "pheromone",
@@ -839,6 +1300,8 @@
   "last_date": null,
   "distinct_dates": 0,
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": [
    "January 31, 2026",
    "194",
@@ -874,6 +1337,93 @@
   ],
   "date_cols": [],
   "exact_duplicate_rows": 41,
+  "dup_samples": [
+   {
+    "count": 10,
+    "row": [
+     "26.04-02.05.2026",
+     "USA",
+     "156,21",
+     "245,78",
+     "-94,76",
+     "8",
+     "63,56",
+     "1,57",
+     "63,56",
+     "25",
+     "26",
+     "BUTERFLY AUTO close top",
+     "Product target",
+     ""
+    ]
+   },
+   {
+    "count": 10,
+    "row": [
+     "26.04-02.05.2026",
+     "CA",
+     "19,16",
+     "119,71",
+     "10,77",
+     "4",
+     "16,01",
+     "6,25",
+     "16,01",
+     "25",
+     "5",
+     "Instinct wigs phrase",
+     "all women",
+     ""
+    ]
+   },
+   {
+    "count": 4,
+    "row": [
+     "27.04-03.05.2026",
+     "USA",
+     "161,54",
+     "179,83",
+     "-116,58",
+     "6",
+     "89,83",
+     "1,11",
+     "89,83",
+     "25",
+     "26",
+     "BUTERFLY AUTO close top",
+     "2026 intense auto CLOSE",
+     ""
+    ]
+   },
+   {
+    "count": 4,
+    "row": [
+     "27.04-03.05.2026",
+     "CA",
+     "18,14",
+     "119,71",
+     "11,79",
+     "4",
+     "15,15",
+     "6,6",
+     "15,15",
+     "25",
+     "5",
+     "Instinct wigs phrase",
+     "all women",
+     ""
+    ]
+   }
+  ],
+  "dup_by_first_col": {
+   "17.08-23.08.2026": 6,
+   "26.04-02.05.2026": 2,
+   "27.04-03.05.2026": 2,
+   "2026-W22": 2,
+   "31.08-06.09.2026": 2,
+   "22.06-28.06.2026": 1,
+   "20.07-26.07.2026": 1
+  },
   "tail": [
    "12.10-18.10.2026",
    "USA",
@@ -897,6 +1447,8 @@
   "header": [],
   "date_cols": [],
   "exact_duplicate_rows": 0,
+  "dup_samples": [],
+  "dup_by_first_col": {},
   "tail": []
  }
 }
