@@ -1,0 +1,342 @@
+{
+ "before_total": 9777338,
+ "tabs": [
+  {
+   "tab": "Campaigns",
+   "rows": 1000,
+   "cols_before": 51,
+   "last_used_col": 35,
+   "cols_after": 38
+  },
+  {
+   "tab": "Raw Data USA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 17,
+   "cols_after": 20
+  },
+  {
+   "tab": "Campaign Analysis USA",
+   "rows": 4940,
+   "cols_before": 60,
+   "last_used_col": 11,
+   "cols_after": 14
+  },
+  {
+   "tab": "Bid History USA",
+   "rows": 4540,
+   "cols_before": 60,
+   "last_used_col": 13,
+   "cols_after": 16
+  },
+  {
+   "tab": "Placement Analysis USA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 11,
+   "cols_after": 14
+  },
+  {
+   "tab": "Keyword Intelligence USA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 19,
+   "cols_after": 22
+  },
+  {
+   "tab": "AI Recommendations USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 4,
+   "cols_after": 8
+  },
+  {
+   "tab": "Dayparting USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Competitor Tracker USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Weekly Summary",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 14,
+   "cols_after": 17
+  },
+  {
+   "tab": "Monthly Summary",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Raw Data CA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 17,
+   "cols_after": 20
+  },
+  {
+   "tab": "Campaign Analysis CA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 11,
+   "cols_after": 14
+  },
+  {
+   "tab": "Bid History CA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 13,
+   "cols_after": 16
+  },
+  {
+   "tab": "Placement Analysis CA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 11,
+   "cols_after": 14
+  },
+  {
+   "tab": "Keyword Intelligence CA",
+   "rows": 5000,
+   "cols_before": 60,
+   "last_used_col": 20,
+   "cols_after": 23
+  },
+  {
+   "tab": "AI Recommendations CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 4,
+   "cols_after": 8
+  },
+  {
+   "tab": "Dayparting CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Competitor Tracker CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Alert Log",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 6,
+   "cols_after": 9
+  },
+  {
+   "tab": "BA_Pending_Reports",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 6,
+   "cols_after": 9
+  },
+  {
+   "tab": "BA_SearchCatalog_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 9,
+   "cols_after": 12
+  },
+  {
+   "tab": "BA_SearchCatalog_CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 9,
+   "cols_after": 12
+  },
+  {
+   "tab": "Business_Report_USA",
+   "rows": 3834,
+   "cols_before": 60,
+   "last_used_col": 9,
+   "cols_after": 12
+  },
+  {
+   "tab": "Business_Report_CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 9,
+   "cols_after": 12
+  },
+  {
+   "tab": "Suggested Bids USA",
+   "rows": 17881,
+   "cols_before": 60,
+   "last_used_col": 15,
+   "cols_after": 18
+  },
+  {
+   "tab": "Suggested Bids CA",
+   "rows": 2331,
+   "cols_before": 60,
+   "last_used_col": 15,
+   "cols_after": 18
+  },
+  {
+   "tab": "Advertised Product USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 11,
+   "cols_after": 14
+  },
+  {
+   "tab": "TACoS_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 9,
+   "cols_after": 12
+  },
+  {
+   "tab": "Advertised Product CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 11,
+   "cols_after": 14
+  },
+  {
+   "tab": "TACoS_CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 9,
+   "cols_after": 12
+  },
+  {
+   "tab": "BA_RepeatPurchase_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 8,
+   "cols_after": 11
+  },
+  {
+   "tab": "BA_RepeatPurchase_CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 8,
+   "cols_after": 11
+  },
+  {
+   "tab": "BA_MarketBasket_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 6,
+   "cols_after": 9
+  },
+  {
+   "tab": "BA_MarketBasket_CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 6,
+   "cols_after": 9
+  },
+  {
+   "tab": "BA_Demographics_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 13,
+   "cols_after": 16
+  },
+  {
+   "tab": "BA_TopSearchTerms_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 23,
+   "cols_after": 26
+  },
+  {
+   "tab": "BA_Trends_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 20,
+   "cols_after": 23
+  },
+  {
+   "tab": "SB_Campaign_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 15,
+   "cols_after": 18
+  },
+  {
+   "tab": "SB_SearchTerm_USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 18,
+   "cols_after": 21
+  },
+  {
+   "tab": "Campaign Performance History US",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Claude Weekly X2 Review USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 3,
+   "cols_after": 8
+  },
+  {
+   "tab": "Monthly Sales History CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "ASIN Control CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Campaign Performance History CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 0,
+   "cols_after": 8
+  },
+  {
+   "tab": "Claude Weekly X2 Review CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 3,
+   "cols_after": 8
+  },
+  {
+   "tab": "Claude Daily Review USA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 3,
+   "cols_after": 8
+  },
+  {
+   "tab": "Claude Daily Review CA",
+   "rows": 2000,
+   "cols_before": 60,
+   "last_used_col": 3,
+   "cols_after": 8
+  }
+ ],
+ "after_total": 3313402
+}
