@@ -5,6 +5,10 @@ on:
     - cron: '0 9 * * *'
   workflow_dispatch: {}
 
+concurrency:
+  group: sheets-sp-write
+  cancel-in-progress: false
+
 jobs:
   monitor-ca:
     runs-on: ubuntu-latest
