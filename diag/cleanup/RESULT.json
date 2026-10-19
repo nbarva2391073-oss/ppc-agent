@@ -1,10 +1,50 @@
 {
- "Campaign Analysis USA": {
-  "before": 483,
-  "after": 471
+ "Bid History USA": {
+  "before": 578,
+  "after": 455,
+  "dups_removed": 123,
+  "undated_overlap_removed": 0
  },
  "Placement Analysis USA": {
-  "before": 2435,
-  "after": 2334
+  "before": 2334,
+  "after": 1948,
+  "dups_removed": 386,
+  "undated_overlap_removed": 0
+ },
+ "Weekly Summary": {
+  "before": 308,
+  "after": 267,
+  "dups_removed": 41,
+  "undated_overlap_removed": 0
+ },
+ "Campaign Analysis CA": {
+  "before": 585,
+  "after": 508,
+  "dups_removed": 77,
+  "undated_overlap_removed": 0
+ },
+ "Bid History CA": {
+  "before": 2156,
+  "after": 1994,
+  "dups_removed": 162,
+  "undated_overlap_removed": 0
+ },
+ "Raw Data USA": {
+  "before": 671,
+  "after": 543,
+  "dups_removed": 6,
+  "undated_overlap_removed": 122
+ },
+ "Raw Data CA": {
+  "before": 355,
+  "after": 267,
+  "dups_removed": 0,
+  "undated_overlap_removed": 88
+ },
+ "Advertised Product USA": {
+  "before": 1609,
+  "after": 1603,
+  "dups_removed": 6,
+  "undated_overlap_removed": 0
  }
 }
