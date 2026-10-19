@@ -1,0 +1,580 @@
+{
+ "last": "2026-10-18",
+ "steps": [
+  {
+   "submitted": {
+    "kind": "search_term",
+    "from": "2026-09-30",
+    "to": "2026-10-18",
+    "id": "9fa3b0e3-8364-45c4-870c-ba9b5bde0521"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "targeting",
+    "from": "2026-09-30",
+    "to": "2026-10-18",
+    "id": "2bf310d8-bef9-4ef1-9233-22c57a2d7ecb"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "advertised",
+    "from": "2026-08-26",
+    "to": "2026-09-25",
+    "id": "a78ead6a-9414-4150-a09b-e898d00cec54"
+   }
+  },
+  {
+   "submitted": {
+    "kind": "advertised",
+    "from": "2026-09-26",
+    "to": "2026-10-18",
+    "id": "0d0e44b5-a4b5-4e66-9406-7b2cdaa628c8"
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "search_term",
+    "from": "2026-09-30",
+    "to": "2026-10-18",
+    "id": "9fa3b0e3-8364-45c4-870c-ba9b5bde0521",
+    "rows": 156
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "targeting",
+    "from": "2026-09-30",
+    "to": "2026-10-18",
+    "id": "2bf310d8-bef9-4ef1-9233-22c57a2d7ecb",
+    "rows": 301
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "advertised",
+    "from": "2026-08-26",
+    "to": "2026-09-25",
+    "id": "a78ead6a-9414-4150-a09b-e898d00cec54",
+    "rows": 125
+   }
+  },
+  {
+   "downloaded": {
+    "kind": "advertised",
+    "from": "2026-09-26",
+    "to": "2026-10-18",
+    "id": "0d0e44b5-a4b5-4e66-9406-7b2cdaa628c8",
+    "rows": 114
+   }
+  }
+ ],
+ "adv_from": "2026-08-26",
+ "source_check": {
+  "2026-08-26": {
+   "adv": 2.86,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-27": {
+   "adv": 0.92,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-28": {
+   "adv": 0.58,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-29": {
+   "adv": 2.32,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-30": {
+   "adv": 6.98,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-08-31": {
+   "adv": 1.14,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-01": {
+   "adv": 0.3,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-02": {
+   "adv": 4.79,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-03": {
+   "adv": 1.51,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-04": {
+   "adv": 1.49,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-05": {
+   "adv": 1.42,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-06": {
+   "adv": 3.4,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-07": {
+   "adv": 3.13,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-08": {
+   "adv": 2.3,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-09": {
+   "adv": 1.85,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-10": {
+   "adv": 0.99,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-11": {
+   "adv": 1.58,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-12": {
+   "adv": 2.47,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-13": {
+   "adv": 2.4,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-14": {
+   "adv": 2.61,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-15": {
+   "adv": 1.63,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-16": {
+   "adv": 1.14,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-17": {
+   "adv": 3.27,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-18": {
+   "adv": 3.83,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-19": {
+   "adv": 2.68,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-20": {
+   "adv": 0.74,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-21": {
+   "adv": 1.64,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-22": {
+   "adv": 2.29,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-23": {
+   "adv": 1.28,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-24": {
+   "adv": 2.92,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-25": {
+   "adv": 2.64,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-26": {
+   "adv": 3.26,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-27": {
+   "adv": 5.83,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-28": {
+   "adv": 4.31,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-29": {
+   "adv": 3.53,
+   "st": null,
+   "tg": null,
+   "campaign_daily": null
+  },
+  "2026-09-30": {
+   "adv": 2.46,
+   "st": 2.46,
+   "tg": 2.46,
+   "campaign_daily": null
+  },
+  "2026-10-01": {
+   "adv": 3.59,
+   "st": 3.59,
+   "tg": 3.59,
+   "campaign_daily": null
+  },
+  "2026-10-02": {
+   "adv": 4.24,
+   "st": 4.24,
+   "tg": 4.24,
+   "campaign_daily": null
+  },
+  "2026-10-03": {
+   "adv": 4.26,
+   "st": 4.26,
+   "tg": 4.26,
+   "campaign_daily": null
+  },
+  "2026-10-04": {
+   "adv": 6.46,
+   "st": 6.46,
+   "tg": 6.46,
+   "campaign_daily": null
+  },
+  "2026-10-05": {
+   "adv": 3.13,
+   "st": 3.13,
+   "tg": 3.13,
+   "campaign_daily": null
+  },
+  "2026-10-06": {
+   "adv": 11.59,
+   "st": 11.59,
+   "tg": 11.59,
+   "campaign_daily": null
+  },
+  "2026-10-07": {
+   "adv": 4.31,
+   "st": 4.31,
+   "tg": 4.31,
+   "campaign_daily": null
+  },
+  "2026-10-08": {
+   "adv": 2.74,
+   "st": 2.74,
+   "tg": 2.74,
+   "campaign_daily": null
+  },
+  "2026-10-09": {
+   "adv": 2.31,
+   "st": 2.31,
+   "tg": 2.31,
+   "campaign_daily": null
+  },
+  "2026-10-10": {
+   "adv": 5.9,
+   "st": 5.9,
+   "tg": 5.9,
+   "campaign_daily": null
+  },
+  "2026-10-11": {
+   "adv": 1.75,
+   "st": 1.75,
+   "tg": 1.75,
+   "campaign_daily": null
+  },
+  "2026-10-12": {
+   "adv": 4.33,
+   "st": 4.33,
+   "tg": 4.33,
+   "campaign_daily": null
+  },
+  "2026-10-13": {
+   "adv": 2.01,
+   "st": 2.01,
+   "tg": 2.01,
+   "campaign_daily": null
+  },
+  "2026-10-14": {
+   "adv": 5.68,
+   "st": 5.68,
+   "tg": 5.68,
+   "campaign_daily": null
+  },
+  "2026-10-15": {
+   "adv": 4.31,
+   "st": 4.31,
+   "tg": 4.31,
+   "campaign_daily": null
+  },
+  "2026-10-16": {
+   "adv": 3.41,
+   "st": 3.41,
+   "tg": 3.41,
+   "campaign_daily": null
+  },
+  "2026-10-17": {
+   "adv": 4.59,
+   "st": 4.59,
+   "tg": 4.59,
+   "campaign_daily": null
+  },
+  "2026-10-18": {
+   "adv": 4.6,
+   "st": 4.6,
+   "tg": 4.6,
+   "campaign_daily": null
+  }
+ },
+ "write_errors": [
+  {
+   "op": "adv 2026-09-11",
+   "try": 1,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-09-11",
+   "try": 2,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-09-11",
+   "try": 3,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-09-11",
+   "try": 4,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-10-12",
+   "try": 1,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-10-12",
+   "try": 2,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-10-12",
+   "try": 3,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "adv 2026-10-12",
+   "try": 4,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "raw 2026-10-06",
+   "try": 1,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "raw 2026-10-06",
+   "try": 2,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "raw 2026-10-06",
+   "try": 3,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 236, in values_get\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "ki 2026-10-06",
+   "try": 1,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  },
+  {
+   "op": "ki 2026-10-06",
+   "try": 2,
+   "err": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+   "tb": "ile \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 305, in fetch_sheet_metadata\n    r = self.request(\"get\", url, params=params)\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/site-packages/gspread/http_client.py\", line 128, in request\n    raise APIError(response)\ngspread.exceptions.APIError: APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.\n"
+  }
+ ],
+ "write_ok": [
+  "adv 2026-08-26",
+  "adv 2026-08-27",
+  "adv 2026-08-28",
+  "adv 2026-08-29",
+  "adv 2026-08-30",
+  "adv 2026-08-31",
+  "adv 2026-09-01",
+  "adv 2026-09-02",
+  "adv 2026-09-03",
+  "adv 2026-09-04",
+  "adv 2026-09-05",
+  "adv 2026-09-06",
+  "adv 2026-09-07",
+  "adv 2026-09-08",
+  "adv 2026-09-09",
+  "adv 2026-09-10",
+  "adv 2026-09-11",
+  "adv 2026-09-12",
+  "adv 2026-09-13",
+  "adv 2026-09-14",
+  "adv 2026-09-15",
+  "adv 2026-09-16",
+  "adv 2026-09-17",
+  "adv 2026-09-18",
+  "adv 2026-09-19",
+  "adv 2026-09-20",
+  "adv 2026-09-21",
+  "adv 2026-09-22",
+  "adv 2026-09-23",
+  "adv 2026-09-24",
+  "adv 2026-09-25",
+  "adv 2026-09-26",
+  "adv 2026-09-27",
+  "adv 2026-09-28",
+  "adv 2026-09-29",
+  "adv 2026-09-30",
+  "adv 2026-10-01",
+  "adv 2026-10-02",
+  "adv 2026-10-03",
+  "adv 2026-10-04",
+  "adv 2026-10-05",
+  "adv 2026-10-06",
+  "adv 2026-10-07",
+  "adv 2026-10-08",
+  "adv 2026-10-09",
+  "adv 2026-10-10",
+  "adv 2026-10-11",
+  "adv 2026-10-12",
+  "adv 2026-10-13",
+  "adv 2026-10-14",
+  "adv 2026-10-15",
+  "adv 2026-10-16",
+  "adv 2026-10-17",
+  "adv 2026-10-18",
+  "raw 2026-09-30",
+  "raw 2026-10-01",
+  "raw 2026-10-02",
+  "raw 2026-10-03",
+  "raw 2026-10-04",
+  "raw 2026-10-05",
+  "raw 2026-10-06",
+  "raw 2026-10-07",
+  "raw 2026-10-08",
+  "raw 2026-10-09",
+  "raw 2026-10-10",
+  "raw 2026-10-11",
+  "raw 2026-10-12",
+  "raw 2026-10-13",
+  "raw 2026-10-14",
+  "raw 2026-10-15",
+  "raw 2026-10-16",
+  "raw 2026-10-17",
+  "raw 2026-10-18",
+  "ki 2026-09-30",
+  "ki 2026-10-01",
+  "ki 2026-10-02",
+  "ki 2026-10-03",
+  "ki 2026-10-04",
+  "ki 2026-10-05",
+  "ki 2026-10-06",
+  "ki 2026-10-07",
+  "ki 2026-10-08",
+  "ki 2026-10-09",
+  "ki 2026-10-10",
+  "ki 2026-10-11",
+  "ki 2026-10-12",
+  "ki 2026-10-13",
+  "ki 2026-10-14",
+  "ki 2026-10-15",
+  "ki 2026-10-16",
+  "ki 2026-10-17",
+  "ki 2026-10-18"
+ ],
+ "written": true,
+ "tacos_errors": {
+  "2026-08-30": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'.",
+  "2026-09-01": "APIError: [429]: Quota exceeded for quota metric 'Read requests' and limit 'Read requests per minute per user' of service 'sheets.googleapis.com' for consumer 'project_number:146429355253'."
+ },
+ "tacos_done": true
+}
