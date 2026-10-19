@@ -25,7 +25,6 @@ jobs:
       ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
       ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
       ADS_PROFILE_ID_USA:      ${{ secrets.ADS_PROFILE_ID_USA }}
-      ADS_PROFILE_ID_CA:       ${{ secrets.ADS_PROFILE_ID_CA }}
       GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
       MONTH: ${{ github.event.inputs.month }}
     steps:
