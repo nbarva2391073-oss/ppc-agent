@@ -7,8 +7,11 @@ import requests
 from config import ADS_PROFILE_ID_USA
 from amazon_ads import get_access_token, headers, ADS_BASE_URL, wait_and_download
 
-OUT = "diag/sp_audit"; os.makedirs(OUT, exist_ok=True)
-PID = ADS_PROFILE_ID_USA
+MARKET = os.environ.get("MARKET", "USA")
+SFX = "" if MARKET == "USA" else "_" + MARKET
+OUT = "diag/sp_audit" + SFX; os.makedirs(OUT, exist_ok=True)
+import config
+PID = config.ADS_PROFILE_ID_CA if MARKET == "CA" else config.ADS_PROFILE_ID_USA
 today = date.today()
 D_END = (today - timedelta(days=1)).isoformat()
 D_START = (today - timedelta(days=31)).isoformat()

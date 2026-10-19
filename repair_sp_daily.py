@@ -20,11 +20,12 @@ from sheets import (get_sheet, write_raw_data, write_advertised_product,
 from monitor import (COLS_SEARCH_TERM, COLS_TARGETING, COLS_ADVERTISED_PRODUCT,
                      _split_by_date, _week_label_for, _build_keyword_rows)
 
-MARKET = "USA"
-PID = ADS_PROFILE_ID_USA
+MARKET = os.environ.get("MARKET", "USA")
+SFX = "" if MARKET == "USA" else "_" + MARKET
+PID = __import__("config").ADS_PROFILE_ID_CA if MARKET == "CA" else __import__("config").ADS_PROFILE_ID_USA
 LAST = (date.today() - timedelta(days=1)).isoformat()      # останній повний день
 RAW_KI_FROM = "2026-09-30"
-OUT = "diag/sp_repair"; os.makedirs(OUT, exist_ok=True)
+OUT = "diag/sp_repair" + SFX; os.makedirs(OUT, exist_ok=True)
 
 
 def dump(n, o):
@@ -32,7 +33,7 @@ def dump(n, o):
 
 
 def adv_first_date():
-    rows = get_sheet("Advertised Product USA").get_all_values()
+    rows = get_sheet(f"Advertised Product {MARKET}").get_all_values()
     ds = sorted({r[0] for r in rows[1:] if r and r[0][:2] == "20"})
     return max(ds[0], (date.today() - timedelta(days=58)).isoformat())
 
@@ -87,7 +88,7 @@ def main():
     adv_d, st_d, tg_d = per_date(data["advertised"]), per_date(data["search_term"]), per_date(data["targeting"])
     truth = {}
     try:
-        truth = json.load(open("diag/sp_audit/STATUS.json"))["camp_daily"]["by_date"]
+        truth = json.load(open(f"diag/sp_audit{SFX}/STATUS.json"))["camp_daily"]["by_date"]
     except Exception:
         pass
     check = {d: {"adv": adv_d.get(d), "st": st_d.get(d), "tg": tg_d.get(d),

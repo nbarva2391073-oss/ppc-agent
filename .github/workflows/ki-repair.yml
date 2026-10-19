@@ -1,6 +1,10 @@
 name: KI Repair (one-off)
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      market:
+        description: "USA або CA"
+        default: "USA"
 permissions:
   contents: write
 concurrency:
@@ -10,6 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 240
     env:
+      MARKET: ${{ github.event.inputs.market || 'USA' }}
+      ADS_PROFILE_ID_CA: ${{ secrets.ADS_PROFILE_ID_CA }}
       ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
       ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
       ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
@@ -26,9 +32,9 @@ jobs:
           python - <<'PY'
           import csv, os
           from sheets import get_sheet
-          os.makedirs("backups/ki_pre_repair", exist_ok=True)
-          v = get_sheet("Keyword Intelligence USA").get_all_values()
-          csv.writer(open("backups/ki_pre_repair/Keyword_Intelligence_USA.csv", "w", newline="", encoding="utf-8")).writerows(v)
+          M=os.environ["MARKET"]; D="backups/ki_pre_repair"+("" if M=="USA" else "_"+M); os.makedirs(D, exist_ok=True)
+          v = get_sheet(f"Keyword Intelligence {M}").get_all_values()
+          csv.writer(open(f"{D}/Keyword_Intelligence_{M}.csv", "w", newline="", encoding="utf-8")).writerows(v)
           print("backup rows", len(v))
           PY
       - name: Repair weekly KI rows from Amazon reports
@@ -38,6 +44,6 @@ jobs:
         run: |
           git config user.name "ppc-agent-bot"
           git config user.email "bot@ppc-agent"
-          git add backups/ki_pre_repair diag/ki_repair || true
+          git add backups/ki_pre_repair* diag/ki_repair* || true
           git commit -m "KI repair result" || echo nothing
           for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done

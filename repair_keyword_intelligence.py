@@ -5,7 +5,7 @@
 # Скрипт перебирає тижні (пн–нд), тягне ПЕРВИННІ звіти Amazon
 # (search term + targeting), перераховує з виправленою логікою,
 # записує upsert-ом (ключ Week/Keyword/Match/Campaign/Run Date) і
-# складає diag/ki_repair/RESULT.json зі звіркою сум з Amazon.
+# складає diag/ki_repair" + SFX + "/RESULT.json зі звіркою сум з Amazon.
 # Нічого не видаляє з інших рядків, ставки/кампанії не чіпає.
 # ============================================================
 import json, os, re, sys, time
@@ -16,7 +16,9 @@ from amazon_ads import get_access_token, submit_report, wait_and_download
 from keywords import analyze_keywords
 from sheets import read_all, write_keyword_intelligence
 
-MARKET = "USA"
+MARKET = os.environ.get("MARKET", "USA")
+SFX = "" if MARKET == "USA" else "_" + MARKET
+ADS_PROFILE_ID_USA = __import__("config").ADS_PROFILE_ID_CA if MARKET == "CA" else ADS_PROFILE_ID_USA
 WEEK_STARTS = ["2026-09-07", "2026-09-14", "2026-09-21", "2026-09-28", "2026-10-05"]
 
 
@@ -27,8 +29,8 @@ def cost(r):
 def main():
     out = {"weeks": []}
     pending = []
-    os.makedirs("diag/ki_repair", exist_ok=True)
-    history = {"raw_data": read_all(SHEETS_USA["raw_data"])}
+    os.makedirs("diag/ki_repair" + SFX + "", exist_ok=True)
+    history = {"raw_data": read_all(f"Raw Data {MARKET}")}
     ST_COLS = ["campaignName", "adGroupName", "keyword", "matchType", "searchTerm", "impressions",
                "clicks", "cost", "sales7d", "purchases7d", "costPerClick"]
     TG_COLS = ["campaignName", "adGroupName", "matchType", "impressions", "clicks",
@@ -57,7 +59,7 @@ def main():
         jobs[-1] = jobs[-1][:4] + (submit("tg", "spTargeting", TG_COLS, ["targeting"], s.isoformat(), e.isoformat()),)
         time.sleep(65)
     out["submitted"] = [(j[0], j[3], j[4]) for j in jobs]
-    json.dump(out, open("diag/ki_repair/RESULT.json", "w"), ensure_ascii=False, indent=2)
+    json.dump(out, open("diag/ki_repair" + SFX + "/RESULT.json", "w"), ensure_ascii=False, indent=2)
 
     # 2) Завантажуємо і рахуємо
     for ws, s, e, st_id, tg_id in jobs:
@@ -80,7 +82,7 @@ def main():
         rec["written"] = False
         pending.append((rows, label, run_date, rec))
         out["weeks"].append(rec)
-        json.dump(out, open("diag/ki_repair/RESULT.json", "w"), ensure_ascii=False, indent=2)
+        json.dump(out, open("diag/ki_repair" + SFX + "/RESULT.json", "w"), ensure_ascii=False, indent=2)
         print(rec)
     # Усі звіти вже отримано → записуємо швидко одним проходом (мінімум
     # вікна гонки з monitor.py, який теж переписує цей аркуш).
@@ -89,7 +91,7 @@ def main():
             write_keyword_intelligence(rows, label, MARKET, run_date=run_date)
             rec["written"] = True
     out["all_ok"] = all(w["written"] for w in out["weeks"])
-    json.dump(out, open("diag/ki_repair/RESULT.json", "w"), ensure_ascii=False, indent=2)
+    json.dump(out, open("diag/ki_repair" + SFX + "/RESULT.json", "w"), ensure_ascii=False, indent=2)
     if not out["all_ok"]:
         sys.exit(1)
 

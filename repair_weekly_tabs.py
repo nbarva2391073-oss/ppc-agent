@@ -16,8 +16,10 @@ from amazon_ads import get_access_token, submit_report, wait_and_download, calcu
 from monitor import COLS_CAMPAIGN, COLS_PLACEMENT
 from sheets import get_sheet, write_campaign_analysis
 
-MARKET = "USA"; PID = ADS_PROFILE_ID_USA
-OUT = "diag/weekly_repair"; os.makedirs(OUT, exist_ok=True); BK = "backups/weekly_pre_repair"; os.makedirs(BK, exist_ok=True)
+MARKET = os.environ.get("MARKET", "USA")
+SFX = "" if MARKET == "USA" else "_" + MARKET
+PID = __import__("config").ADS_PROFILE_ID_CA if MARKET == "CA" else __import__("config").ADS_PROFILE_ID_USA
+OUT = "diag/weekly_repair" + SFX; os.makedirs(OUT, exist_ok=True); BK = "backups/weekly_pre_repair" + SFX; os.makedirs(BK, exist_ok=True)
 FIRST_MONDAY = date(2026, 8, 17)
 LAST = date.today() - timedelta(days=1)
 
@@ -40,7 +42,7 @@ def submit(kind, rtype, cols, grp, s, e):
 
 def main():
     import csv
-    for n in ("Campaign Analysis USA", "Placement Analysis USA"):
+    for n in (f"Campaign Analysis {MARKET}", f"Placement Analysis {MARKET}"):
         v = get_sheet(n).get_all_values()
         csv.writer(open(f"{BK}/{n.replace(' ', '_')}.csv", "w", newline="", encoding="utf-8")).writerows(v)
         time.sleep(3)
@@ -67,7 +69,7 @@ def main():
         pending.append((s, e, camp, plc, rec))
 
     # Існуючі статуси Placement → переносимо
-    plsh = get_sheet("Placement Analysis USA"); ex = plsh.get_all_values()
+    plsh = get_sheet(f"Placement Analysis {MARKET}"); ex = plsh.get_all_values()
     hdr = ex[0]; iw, ic, ip = hdr.index("Week"), hdr.index("Campaign"), hdr.index("Placement")
     ist, iis = hdr.index("Status"), hdr.index("Issue")
     keep_status = {}

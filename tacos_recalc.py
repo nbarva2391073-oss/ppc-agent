@@ -12,11 +12,12 @@ from config import SHEETS_USA
 from sheets import get_sheet
 from amazon_ads import ASIN_PRICE_CONFIG
 
-MARKET = "USA"
+MARKET = os.environ.get("MARKET", "USA")
+SFX = "" if MARKET == "USA" else "_" + MARKET
 FROM = os.environ.get("TACOS_FROM", "2026-08-25")
 TO = os.environ.get("TACOS_TO") or (date.today() - timedelta(days=1)).isoformat()
-OUT = "diag/tacos_recalc"; os.makedirs(OUT, exist_ok=True)
-BK = "backups/tacos_pre_recalc"; os.makedirs(BK, exist_ok=True)
+OUT = "diag/tacos_recalc" + SFX; os.makedirs(OUT, exist_ok=True)
+BK = "backups/tacos_pre_recalc" + SFX; os.makedirs(BK, exist_ok=True)
 
 
 def num(x):
@@ -33,11 +34,11 @@ def retry(fn, *a):
 
 
 def main():
-    adv = retry(lambda: get_sheet(SHEETS_USA.get("advertised_product", "Advertised Product USA")).get_all_values())
-    br = retry(lambda: get_sheet("Business_Report_USA").get_all_values())
-    tc_sh = get_sheet("TACoS_USA")
+    adv = retry(lambda: get_sheet(f"Advertised Product {MARKET}").get_all_values())
+    br = retry(lambda: get_sheet(f"Business_Report_{MARKET}").get_all_values())
+    tc_sh = get_sheet(f"TACoS_{MARKET}")
     tc = retry(lambda: tc_sh.get_all_values())
-    with open(os.path.join(BK, "TACoS_USA.csv"), "w", newline="", encoding="utf-8") as f:
+    with open(os.path.join(BK, f"TACoS_{MARKET}.csv"), "w", newline="", encoding="utf-8") as f:
         csv.writer(f).writerows(tc)
 
     h = adv[0]; cd, ca, cs, csl = h.index("Date"), h.index("ASIN"), h.index("Spend"), h.index("Sales (Ad)")

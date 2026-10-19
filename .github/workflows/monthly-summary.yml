@@ -4,6 +4,9 @@ on:
     - cron: "17 9 8 * *"     # 8-го числа: атрибуція 7d за останні дні місяця вже стабільна, BR є
   workflow_dispatch:
     inputs:
+      market:
+        description: "USA або CA"
+        default: "USA"
       month:
         description: "YYYY-MM (порожньо = попередній місяць)"
         required: false
@@ -16,6 +19,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
     env:
+      MARKET: ${{ github.event.inputs.market || 'USA' }}
+      ADS_PROFILE_ID_CA: ${{ secrets.ADS_PROFILE_ID_CA }}
       ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
       ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
       ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
@@ -33,6 +38,6 @@ jobs:
         if: always()
         run: |
           git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
-          git add diag/monthly_summary || true
+          git add diag/monthly_summary* || true
           git commit -m "Monthly summary result" || echo nothing
           for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done

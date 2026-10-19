@@ -14,8 +14,10 @@ from config import ADS_PROFILE_ID_USA
 from amazon_ads import get_access_token, headers, ADS_BASE_URL, wait_and_download
 from sheets import get_sheet
 
-MARKET = "USA"; PID = ADS_PROFILE_ID_USA
-OUT = "diag/monthly_summary"; os.makedirs(OUT, exist_ok=True)
+MARKET = os.environ.get("MARKET", "USA")
+SFX = "" if MARKET == "USA" else "_" + MARKET
+PID = __import__("config").ADS_PROFILE_ID_CA if MARKET == "CA" else __import__("config").ADS_PROFILE_ID_USA
+OUT = "diag/monthly_summary" + SFX; os.makedirs(OUT, exist_ok=True)
 HEAD = ["Month", "Market", "Impressions", "Clicks", "CTR%", "Spend", "CPC", "Ad Sales (7d)", "Orders (7d)", "ACoS%", "ROAS",
         "Sessions", "Page Views", "Units Ordered", "Ordered Product Sales", "Unit Session %", "TACoS%",
         "PPC days", "BR days", "Source check", "Generated (UTC)"]
@@ -58,7 +60,7 @@ def main():
     spend = round(sum(v[2] for v in by.values()), 2); sales = round(sum(v[3] for v in by.values()), 2)
     orders = sum(v[4] for v in by.values())
     # звірка з Advertised Product
-    adv = get_sheet("Advertised Product USA").get_all_values()
+    adv = get_sheet(f"Advertised Product {MARKET}").get_all_values()
     h = adv[0]; cd, ci, ck, cs = h.index("Date"), h.index("Impressions"), h.index("Clicks"), h.index("Spend")
     A = {}
     for r in adv[1:]:
@@ -67,7 +69,7 @@ def main():
     diffs = {d: {"campaign": round(by[d][2], 2), "adv": round(A.get(d, [0, 0, None])[2], 2) if d in A else None}
              for d in sorted(by) if d not in A or abs(by[d][2] - A[d][2]) > 0.05}
     # Business Report
-    br = get_sheet("Business_Report_USA").get_all_values(); hb = br[0]
+    br = get_sheet(f"Business_Report_{MARKET}").get_all_values(); hb = br[0]
     bd, bs, bp, bu, bo = (hb.index(x) for x in ("Дата", "Sessions", "Page Views", "Units Ordered", "Ordered Product Sales"))
     B = {"s": 0.0, "p": 0.0, "u": 0.0, "o": 0.0}; bdays = set()
     for r in br[1:]:
