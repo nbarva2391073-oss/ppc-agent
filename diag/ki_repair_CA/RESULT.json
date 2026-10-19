@@ -1,0 +1,126 @@
+{
+  "weeks": [
+    {
+      "week": "07.09-13.09.2026",
+      "run_date": "2026-09-14",
+      "searchterm_rows": 28,
+      "kw_rows": 27,
+      "amazon_cost": 14.72,
+      "kw_cost": 14.72,
+      "amazon_sales": 29.95,
+      "kw_sales": 29.95,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Instinct wigs phrase",
+          "clicks": 1,
+          "spend": 0.2,
+          "sales": 0.0,
+          "acos": 0
+        }
+      ],
+      "written": true
+    },
+    {
+      "week": "14.09-20.09.2026",
+      "run_date": "2026-09-21",
+      "searchterm_rows": 26,
+      "kw_rows": 25,
+      "amazon_cost": 15.9,
+      "kw_cost": 15.9,
+      "amazon_sales": 86.92,
+      "kw_sales": 86.92,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [],
+      "written": true
+    },
+    {
+      "week": "21.09-27.09.2026",
+      "run_date": "2026-09-28",
+      "searchterm_rows": 37,
+      "kw_rows": 34,
+      "amazon_cost": 19.86,
+      "kw_cost": 19.86,
+      "amazon_sales": 67.93,
+      "kw_sales": 67.93,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [],
+      "written": true
+    },
+    {
+      "week": "28.09-04.10.2026",
+      "run_date": "2026-10-05",
+      "searchterm_rows": 40,
+      "kw_rows": 35,
+      "amazon_cost": 28.85,
+      "kw_cost": 28.85,
+      "amazon_sales": 217.53,
+      "kw_sales": 217.53,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Instinct wigs phrase",
+          "clicks": 1,
+          "spend": 0.64,
+          "sales": 0.0,
+          "acos": 0
+        }
+      ],
+      "written": true
+    },
+    {
+      "week": "05.10-11.10.2026",
+      "run_date": "2026-10-12",
+      "searchterm_rows": 48,
+      "kw_rows": 44,
+      "amazon_cost": 31.73,
+      "kw_cost": 31.73,
+      "amazon_sales": 97.83,
+      "kw_sales": 97.83,
+      "cost_match": true,
+      "sales_match": true,
+      "goda": [
+        {
+          "campaign": "Instinct wigs phrase",
+          "clicks": 1,
+          "spend": 0.58,
+          "sales": 0.0,
+          "acos": 0
+        }
+      ],
+      "written": true
+    }
+  ],
+  "submitted": [
+    [
+      "2026-09-07",
+      "38a6c536-e4b9-4774-8b2e-8aaf12a1bc7b",
+      "a9222476-d01b-4b0a-83cc-0ec9b2f6e3dc"
+    ],
+    [
+      "2026-09-14",
+      "e537287e-c379-4f04-8a93-ca90548de0c9",
+      "1ea7e69d-0a86-4c29-9aef-4f2d9385d401"
+    ],
+    [
+      "2026-09-21",
+      "6c2d23c8-2de7-4283-99c9-27ae7236fe28",
+      "b4664172-5e0e-4bd8-89cf-4c8b76f4e70d"
+    ],
+    [
+      "2026-09-28",
+      "199cb6c9-6492-4179-87e2-f473165203b5",
+      "600b7217-7d73-4faa-9a49-e22378cdf2fe"
+    ],
+    [
+      "2026-10-05",
+      "c407ca25-593a-4754-85cc-ae5881919184",
+      "c848a287-b59a-41c3-a6e6-858beff61cd7"
+    ]
+  ],
+  "all_ok": true
+}
