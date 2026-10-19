@@ -6,7 +6,7 @@ TABS = ["Raw Data USA", "Campaign Analysis USA", "Bid History USA", "Placement A
         "Keyword Intelligence USA", "Advertised Product USA", "Suggested Bids USA", "SB_Campaign_USA",
         "SB_SearchTerm_USA", "Business_Report_USA", "TACoS_USA", "BA_Pending_Reports", "BA_SearchCatalog_USA",
         "BA_RepeatPurchase_USA", "BA_MarketBasket_USA", "BA_Demographics_USA", "BA_TopSearchTerms_USA",
-        "BA_Trends_USA", "BA_SQP_USA", "Weekly Summary", "Monthly Summary USA", "Monthly Summary"]
+        "BA_Trends_USA", "BA_SQP_USA", "Weekly Summary", "Raw Data CA", "Campaign Analysis CA", "Bid History CA", "Placement Analysis CA", "Keyword Intelligence CA", "Advertised Product CA", "Suggested Bids CA", "SB_Campaign_CA", "SB_SearchTerm_CA", "Business_Report_CA", "TACoS_CA", "BA_SearchCatalog_CA", "BA_RepeatPurchase_CA", "BA_MarketBasket_CA", "BA_SQP_CA", "BA_Demographics_CA", "BA_TopSearchTerms_CA", "BA_Trends_CA", "Monthly Summary USA", "Monthly Summary"]
 DATE_NAMES = ("date", "дата", "run date", "snapshot date", "report date")
 SPEND = ("spend", "cost", "ad_spend")
 def num(x):
@@ -42,8 +42,11 @@ for t in TABS:
     r["dup_samples"] = [{"count": v, "row": list(k)[:14]} for k, v in dups[:4]]
     r["dup_by_first_col"] = dict(collections.Counter(k[0] for k, v in dups).most_common(12))
     r["dup_samples_recent"] = [{"count": v, "row": list(k)[:14]} for k, v in dups if str(k[0]).endswith(".10.2026")][:6]
-    if t in ("BA_Pending_Reports", "BA_Trends_USA", "BA_SQP_USA", "Weekly Summary"):
+    if t in ("BA_Pending_Reports", "BA_Trends_USA", "BA_SQP_USA", "Weekly Summary", "Raw Data CA", "Campaign Analysis CA", "Bid History CA", "Placement Analysis CA", "Keyword Intelligence CA", "Advertised Product CA", "Suggested Bids CA", "SB_Campaign_CA", "SB_SearchTerm_CA", "Business_Report_CA", "TACoS_CA", "BA_SearchCatalog_CA", "BA_RepeatPurchase_CA", "BA_MarketBasket_CA", "BA_SQP_CA", "BA_Demographics_CA", "BA_TopSearchTerms_CA", "BA_Trends_CA"):
         r["last_rows"] = [x[:10] for x in rows[-14:]]
+    if t in ("Raw Data USA", "Raw Data CA", "Advertised Product USA", "Advertised Product CA", "Weekly Summary"):
+        und = [x for x in rows[1:] if not (len(x) > (dcols[0] if dcols else 0) and dcols and x[dcols[0]][:2] == "20")] if dcols else rows[1:]
+        r["undated_by_first_col"] = dict(collections.Counter(x[0] for x in und).most_common(40))
     r["tail"] = rows[-1][:12]
     res[t] = r
     json.dump(res, open(os.path.join(OUT, "RESULT.json"), "w"), ensure_ascii=False, indent=1)
