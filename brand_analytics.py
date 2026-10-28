@@ -49,46 +49,51 @@ def get_previous_month_dates():
     return first_day_prev_month, last_day_prev_month
 
 
-def request_sqp_report(market: str, token: str) -> str:
-    """Запросити Search Query Performance звіт. Повертає reportId."""
+SQP_OVERRIDE = None   # (start_date, end_date, period) для backfill; None = стандартний попередній місяць
+
+
+def request_sqp(market: str, token: str, group: str = "CORE", period: str = "MONTH") -> str:
+    """SQP для групи ASIN з ba_asins.py. period MONTH (попередній місяць) або WEEK (попередній повний тиждень нд–сб).
+    Повертає reportId."""
+    from ba_asins import asin_str
     marketplace_id = MARKETPLACE_IDS[market]
-    start, end = get_previous_month_dates()
-
-    print(f"📅 SQP період (попередній місяць): {start.strftime('%Y-%m-%d')} → {end.strftime('%Y-%m-%d')}")
-
-    # Флагманські ASIN для SQP звіту
-    FLAGSHIP_ASINS = {
-        "USA": "B081T6QGD9 B0G5QB4W6N B09NBB4QP7",
-        "CA":  "B081T6QGD9 B0G5QB4W6N B09NBB4QP7",
-    }
+    if SQP_OVERRIDE:
+        start, end, period = SQP_OVERRIDE
+    elif period == "WEEK":
+        today = datetime.utcnow().date()
+        end = today - timedelta(days=(today.weekday() + 2) % 7 or 7)   # остання субота
+        start = end - timedelta(days=6)
+    else:
+        start, end = get_previous_month_dates()
+    s_str = start.strftime("%Y-%m-%d") if hasattr(start, "strftime") else str(start)
+    e_str = end.strftime("%Y-%m-%d") if hasattr(end, "strftime") else str(end)
+    print(f"📅 SQP {period} [{group}] {s_str} → {e_str}")
 
     payload = {
         "reportType": "GET_BRAND_ANALYTICS_SEARCH_QUERY_PERFORMANCE_REPORT",
-        "dataStartTime": start.strftime("%Y-%m-%dT00:00:00Z"),
-        "dataEndTime":   end.strftime("%Y-%m-%dT23:59:59Z"),
-        "reportOptions": {
-            "reportPeriod": "MONTH",
-            "asin": FLAGSHIP_ASINS[market],
-        },
+        "dataStartTime": f"{s_str}T00:00:00Z",
+        "dataEndTime":   f"{e_str}T23:59:59Z",
+        "reportOptions": {"reportPeriod": period, "asin": asin_str(group)},
         "marketplaceIds": [marketplace_id],
     }
 
     resp = requests.post(
         f"{SP_API_BASE}/reports/2021-06-30/reports",
-        headers={
-            "x-amz-access-token": token,
-            "Content-Type": "application/json",
-        },
+        headers={"x-amz-access-token": token, "Content-Type": "application/json"},
         json=payload,
     )
-
     if resp.status_code != 202:
         print(f"❌ Помилка запиту [{market}]: {resp.status_code} {resp.text}")
         return None
-
     report_id = resp.json().get("reportId")
     print(f"📋 Звіт запрошено [{market}]: {report_id}")
     return report_id
+
+
+def request_sqp_report(market, token):        return request_sqp(market, token, "CORE", "MONTH")
+def request_sqp_other_report(market, token):  return request_sqp(market, token, "OTHER", "MONTH")
+def request_sqp_week_report(market, token):   return request_sqp(market, token, "CORE", "WEEK")
+def request_sqp_week_other_report(market, token): return request_sqp(market, token, "OTHER", "WEEK")
 
 
 def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 600) -> str:
@@ -117,10 +122,14 @@ def wait_for_report(market: str, token: str, report_id: str, max_wait: int = 600
 def download_report(market: str, token: str, document_id: str) -> list:
     """Завантажити і розпарсити звіт."""
     # Отримати URL
-    resp = requests.get(
-        f"{SP_API_BASE}/reports/2021-06-30/documents/{document_id}",
-        headers={"x-amz-access-token": token},
-    )
+    for _try in range(8):
+        resp = requests.get(
+            f"{SP_API_BASE}/reports/2021-06-30/documents/{document_id}",
+            headers={"x-amz-access-token": token},
+        )
+        if resp.status_code == 429:
+            time.sleep(30 + 15 * _try); continue
+        break
     resp.raise_for_status()
     doc_data = resp.json()
 

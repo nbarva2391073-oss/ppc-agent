@@ -1,0 +1,24 @@
+name: BA Request Weekly (SQP)
+on:
+  schedule:
+    - cron: '0 7 * * 3'     # середа: попередній повний тиждень нд–сб
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  ba-request-weekly:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt
+      - name: Request weekly SQP
+        env:
+          AMAZON_CLIENT_ID:         ${{ secrets.AMAZON_CLIENT_ID }}
+          AMAZON_CLIENT_SECRET:     ${{ secrets.AMAZON_CLIENT_SECRET }}
+          AMAZON_REFRESH_TOKEN_USA: ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
+          AMAZON_REFRESH_TOKEN_CA:  ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
+          GOOGLE_CREDENTIALS_JSON:  ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+        run: python main_brand_analytics.py --request-weekly

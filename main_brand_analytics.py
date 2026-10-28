@@ -2,7 +2,7 @@ import sys
 from datetime import datetime
 from brand_analytics import (
     get_access_token,
-    request_sqp_report, format_for_sheets,
+    request_sqp_report, request_sqp_other_report, request_sqp_week_report, request_sqp_week_other_report, format_for_sheets,
     request_search_catalog_report, format_search_catalog_for_sheets,
     request_repeat_purchase_report, format_repeat_purchase_for_sheets,
     request_market_basket_report, format_market_basket_for_sheets,
@@ -19,7 +19,7 @@ def ensure_headers(sheet_name: str, headers: list):
         sh.update([headers], "A1")
         print(f"📝 Заголовки додано в '{sheet_name}'")
 
-def append_dedup(sheet_name: str, rows: list, headers: list):
+def append_dedup(sheet_name: str, rows: list, headers: list, key_cols=None):
     """Додає лише ті рядки, яких ще немає в аркуші (повторне завантаження того самого звіту не дублює)."""
     sh = get_sheet(sheet_name)
     existing = sh.get_all_values()
@@ -27,7 +27,8 @@ def append_dedup(sheet_name: str, rows: list, headers: list):
         t = str(c).strip().replace(",", ".")
         try: return repr(round(float(t), 6))
         except ValueError: return t
-    key = lambda r: tuple(norm(c) for c in (list(r) + [""] * len(headers))[:len(headers)])
+    n = key_cols or len(headers)
+    key = lambda r: tuple(norm(c) for c in (list(r) + [""] * len(headers))[:n])
     seen = {key(r) for r in existing[1:]} if existing else set()
     fresh = []
     for r in rows:
@@ -49,11 +50,15 @@ REPEAT_PURCHASE_SHEETS = {"USA": "BA_RepeatPurchase_USA", "CA": "BA_RepeatPurcha
 MARKET_BASKET_SHEETS = {"USA": "BA_MarketBasket_USA", "CA": "BA_MarketBasket_CA"}
 
 # Типи звітів, які ми збираємо. Кожен — окрема функція запиту і форматування.
+SQP_TYPES = ("SQP", "SQP_OTHER", "SQP_WEEK", "SQP_WEEK_OTHER")   # усі пишуться в BA_SQP_<ринок>
 REPORT_TYPES = {
     "SQP": {
         "request_fn": request_sqp_report,
         "format_fn": format_for_sheets,
     },
+    "SQP_OTHER": {"request_fn": request_sqp_other_report, "format_fn": format_for_sheets},
+    "SQP_WEEK": {"request_fn": request_sqp_week_report, "format_fn": format_for_sheets},
+    "SQP_WEEK_OTHER": {"request_fn": request_sqp_week_other_report, "format_fn": format_for_sheets},
     "SEARCH_CATALOG": {
         "request_fn": request_search_catalog_report,
         "format_fn": format_search_catalog_for_sheets,
@@ -72,7 +77,7 @@ REPORT_TYPES = {
 # ============================================================
 # РЕЖИМ 1: --request — тільки запитати звіти, нічого не чекати
 # ============================================================
-def run_request():
+def run_request(only_types=None, skip_types=("SQP_WEEK", "SQP_WEEK_OTHER")):
     print("=" * 60)
     print(f"📋 BRAND ANALYTICS — ЗАПИТ ЗВІТІВ")
     print(f"   {datetime.now().strftime('%d.%m.%Y %H:%M')}")
@@ -84,6 +89,8 @@ def run_request():
     for market in MARKETS:
         token = None
         for report_type, funcs in REPORT_TYPES.items():
+            if (only_types and report_type not in only_types) or (not only_types and report_type in skip_types):
+                continue
             print(f"\n🌎 {market} / {report_type}...")
             try:
                 if token is None:
@@ -176,7 +183,7 @@ def run_fetch():
                     elif report_type == "MARKET_BASKET":
                         headers, rows = format_market_basket_for_sheets(records, market)
                         target_sheet = MARKET_BASKET_SHEETS[market]
-                    else:  # SQP
+                    else:  # SQP, SQP_OTHER, SQP_WEEK, SQP_WEEK_OTHER
                         headers, rows = format_for_sheets(records, market)
                         target_sheet = SQP_SHEETS[market]
 
@@ -185,7 +192,7 @@ def run_fetch():
                         sh.update_cell(i, col_status + 1, "помилка")
                         continue
                     ensure_headers(target_sheet, headers)
-                    added = append_dedup(target_sheet, rows, headers)
+                    added = append_dedup(target_sheet, rows, headers, key_cols=3 if report_type in SQP_TYPES else None)
                     key = f"{market}/{report_type}"
                     fetched_count[key] = fetched_count.get(key, 0) + added
                     print(f"✅ {market}/{report_type}: {added} нових записів збережено в '{target_sheet}'")
@@ -242,7 +249,9 @@ def run_fetch():
 
 
 if __name__ == "__main__":
-    if "--request" in sys.argv:
+    if "--request-weekly" in sys.argv:
+        run_request(only_types=("SQP_WEEK", "SQP_WEEK_OTHER"))
+    elif "--request" in sys.argv:
         run_request()
     elif "--fetch" in sys.argv:
         run_fetch()

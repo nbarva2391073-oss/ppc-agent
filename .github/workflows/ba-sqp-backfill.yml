@@ -1,0 +1,30 @@
+name: BA SQP backfill (one-off)
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: ba-sheets
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      AMAZON_CLIENT_ID:         ${{ secrets.AMAZON_CLIENT_ID }}
+      AMAZON_CLIENT_SECRET:     ${{ secrets.AMAZON_CLIENT_SECRET }}
+      AMAZON_REFRESH_TOKEN_USA: ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
+      AMAZON_REFRESH_TOKEN_CA:  ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
+      GOOGLE_CREDENTIALS_JSON:  ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python ba_sqp_backfill.py
+      - name: Commit result (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add diag/ba_backfill* || true
+          git commit -m "BA SQP backfill result" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done

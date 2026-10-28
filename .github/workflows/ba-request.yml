@@ -6,6 +6,10 @@ on:
     - cron: '0 7 10 * *'
   workflow_dispatch: {}
 
+concurrency:
+  group: ba-sheets
+  cancel-in-progress: false
+
 jobs:
   ba-request:
     runs-on: ubuntu-latest
