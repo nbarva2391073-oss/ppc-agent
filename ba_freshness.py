@@ -36,5 +36,17 @@ for t in TABS:
     ai = hdr.index("ASIN") if "ASIN" in hdr else None
     n_asin = len({r[ai] for _, r in lastrows if len(r) > ai and r[ai]}) if ai is not None else ""
     out.append([t, lastrows[0][0], len(lastrows), n_asin, len(body), first.isoformat(), now, note])
+# SQP: розріз по періодах (щоб одразу бачити, які ASIN є в кожному періоді)
+out.append([]); out.append(["SQP за періодами", "Період", "Рядків", "ASIN (кількість)", "ASIN"])
+for t in ("BA_SQP_USA", "BA_SQP_CA"):
+    try: vals = ss.worksheet(t).get_all_values()
+    except gspread.WorksheetNotFound: continue
+    if len(vals) < 2: continue
+    h = vals[0]; ai, pi = h.index("ASIN"), h.index("Період")
+    per = {}
+    for r in vals[1:]:
+        if len(r) > ai and r[pi]: per.setdefault(r[pi], []).append(r[ai])
+    for p in sorted(per, key=lambda x: (start_of(x)[0] or datetime(1970, 1, 1).date())):
+        a = sorted(set(per[p])); out.append([t, p, len(per[p]), len(a), " ".join(a)])
 sh = get_sheet("BA Data Freshness"); sh.clear(); sh.update(out, "A1")
 for r in out: print(r)
