@@ -34,4 +34,6 @@ jobs:
           AMAZON_REFRESH_TOKEN_USA:   ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
           AMAZON_REFRESH_TOKEN_CA:    ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
           GOOGLE_CREDENTIALS_JSON:    ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
-        run: python main_brand_analytics.py --fetch
+        run: |
+          python main_brand_analytics.py --fetch
+          python ba_freshness.py || echo "freshness failed"

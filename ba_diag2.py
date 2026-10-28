@@ -25,17 +25,23 @@ cat = requests.post(f"{SP_API_BASE}/reports/2021-06-30/reports", headers=H(), js
     "dataEndTime": "2026-06-27T23:59:59Z", "reportOptions": {"reportPeriod": "WEEK", "asins": "B0G5QB4W6N B09NBB4QP7 B07TJW4Y94"},
     "marketplaceIds": [MARKETPLACE_IDS["USA"]]})
 res["catalog_probe_request"] = {"http": cat.status_code, "body": cat.text[:300]}; dump()
-# (1) Search Terms
+# (1) Search Terms: потоково, без повного завантаження в пам'ять
+import zlib, re
 try:
-    size, j = doc_info = doc(get(f"{SP_API_BASE}/reports/2021-06-30/reports/652423020754").json()["reportDocumentId"])
-    recs = j if isinstance(j, list) else (j.get("dataByDepartmentAndSearchTerm") or j.get("data") or [])
-    res["search_terms"] = {"bytes": size, "top_keys": list(j.keys()) if isinstance(j, dict) else "list",
-                           "spec": j.get("reportSpecification") if isinstance(j, dict) else None,
-                           "records": len(recs), "sample": recs[:2],
-                           "pheromone_exact": sum(1 for r in recs if str(r.get("searchTerm", "")).lower() == "pheromone"),
-                           "pheromones_exact": sum(1 for r in recs if str(r.get("searchTerm", "")).lower() == "pheromones"),
-                           "pheromone_contains": sum(1 for r in recs if "pheromone" in str(r.get("searchTerm", "")).lower()),
-                           "pheromone_examples": [r for r in recs if str(r.get("searchTerm", "")).lower() in ("pheromone", "pheromones")][:4]}
+    d = get(f"{SP_API_BASE}/reports/2021-06-30/documents/" + get(f"{SP_API_BASE}/reports/2021-06-30/reports/652423020754").json()["reportDocumentId"]).json()
+    r = requests.get(d["url"], stream=True)
+    total_c = int(r.headers.get("Content-Length") or 0)
+    dec = zlib.decompressobj(31) if d.get("compressionAlgorithm") == "GZIP" else None
+    head, tail, got, hits, nbytes, t0 = "", "", 0, [], 0, time.time()
+    for chunk in r.iter_content(1 << 20):
+        got += len(chunk); txt = (dec.decompress(chunk) if dec else chunk).decode("utf-8", "ignore"); nbytes += len(txt)
+        if len(head) < 3000: head += txt[: 3000 - len(head)]
+        buf = tail + txt
+        for m in re.finditer(r'"searchTerm"\s*:\s*"(pheromones?)"', buf, re.I):
+            hits.append(buf[max(0, m.start() - 200): m.end() + 400])
+        tail = buf[-600:]
+        if time.time() - t0 > 480 or nbytes > 1_500_000_000: break
+    res["search_terms"] = {"compressed_bytes": total_c, "decompressed_scanned": nbytes, "head": head, "exact_hits": len(hits), "hit_examples": hits[:3], "stopped_early": time.time() - t0 > 480}
 except Exception as e:
     res["search_terms"] = {"error": str(e)[:300]}
 dump()
