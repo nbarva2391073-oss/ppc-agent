@@ -4,6 +4,7 @@ on:
   schedule:
     # Щодня о 08:00 UTC
     - cron: '0 8 * * *'
+    - cron: '40 */3 * * *'   # частіше: SQP-звіти Amazon обробляє по одному (≈10 хв/звіт)
   workflow_dispatch: {}
 
 concurrency:
