@@ -10,6 +10,8 @@ plan = [("2026-07-01", "2026-07-31", "MONTH"), ("2026-08-01", "2026-08-31", "MON
 d = date(2026, 8, 23)
 while d + timedelta(days=6) <= date(2026, 10, 24):
     plan.append((d.isoformat(), (d + timedelta(days=6)).isoformat(), "WEEK")); d += timedelta(days=7)
+if os.environ.get("PERIODS"):   # "2026-09-01:2026-09-30:MONTH,..."
+    plan = [tuple(p.split(":")) for p in os.environ["PERIODS"].split(",")]
 log = []
 tok = ba.get_access_token(MARKET); t0 = time.time(); rows = []
 for s, e, per in plan:

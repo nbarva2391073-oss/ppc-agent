@@ -1,6 +1,10 @@
 name: BA SQP backfill (one-off)
 on:
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      periods:
+        description: 'start:end:MONTH|WEEK через кому (порожньо = повний backfill)'
+        default: ''
 permissions:
   contents: write
 concurrency:
@@ -10,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 90
     env:
+      PERIODS: ${{ github.event.inputs.periods }}
       AMAZON_CLIENT_ID:         ${{ secrets.AMAZON_CLIENT_ID }}
       AMAZON_CLIENT_SECRET:     ${{ secrets.AMAZON_CLIENT_SECRET }}
       AMAZON_REFRESH_TOKEN_USA: ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
