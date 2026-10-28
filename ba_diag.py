@@ -1,6 +1,11 @@
 # Read-only діагностика Brand Analytics (SP-API). Нічого не пише в Sheets, нічого не змінює в Amazon
 # (probe-запити лише створюють звіти для читання). Результат: diag/ba_diag/RESULT.json
-import json, os, time, gzip, requests, collections
+import json, os, sys, time, gzip, requests, collections
+_g, _p = requests.get, requests.post
+requests.get = lambda *a, **k: _g(*a, timeout=k.pop('timeout', 60), **k)
+requests.post = lambda *a, **k: _p(*a, timeout=k.pop('timeout', 60), **k)
+T0 = time.time()
+def log(*a): print(f'[{int(time.time()-T0)}s]', *a, flush=True)
 from datetime import datetime, timedelta
 from brand_analytics import get_access_token, SP_API_BASE
 from config import MARKETPLACE_IDS
@@ -20,11 +25,14 @@ def doc_records(tok, doc_id):
 for market in ("USA", "CA"):
     tok = get_access_token(market); res["reports"][market] = {}
     for rt in KNOWN:
+        log(market, 'list', rt)
         items, nxt = [], None
         since = (datetime.utcnow() - timedelta(days=89)).strftime("%Y-%m-%dT00:00:00Z")
-        for _ in range(10):
+        for _ in range(12):
             params = {"reportTypes": rt, "pageSize": 100, "createdSince": since} if not nxt else {"nextToken": nxt}
             r = requests.get(f"{SP_API_BASE}/reports/2021-06-30/reports", headers=H(tok), params=params)
+            log('  http', r.status_code)
+            if r.status_code == 429: time.sleep(30); continue
             if r.status_code != 200: items.append({"err": r.status_code, "body": r.text[:200]}); break
             j = r.json(); items += j.get("reports", []); nxt = j.get("nextToken")
             if not nxt: break
