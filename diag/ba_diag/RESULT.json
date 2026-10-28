@@ -1,0 +1,4372 @@
+{
+ "reports": {
+  "USA": {
+   "GET_BRAND_ANALYTICS_SEARCH_QUERY_PERFORMANCE_REPORT": [
+    {
+     "reportId": "652419020754",
+     "createdTime": "2026-10-28T17:04:17+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.447eca58-fdb2-44c1-89fc-68264b8a919c.T290POEKQUIZV7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652381020754",
+     "createdTime": "2026-10-28T13:25:11+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f878df23-e0d7-4d3c-8326-1b79e790465f.T3CMY34NHWQ4Z9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652373020754",
+     "createdTime": "2026-10-28T12:58:07+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.15f18722-2cb0-4498-ac9e-70417191418e.TWXV6S45OGYPL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652370020754",
+     "createdTime": "2026-10-28T12:34:01+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e858fc8d-be9f-40d4-8943-1a478c92b98e.TBEH4Q1CHCU6U.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652356020754",
+     "createdTime": "2026-10-28T11:08:21+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0863273f-bc5b-4865-a484-bb19a05e1bf5.T1Q03C0HM8QKKK.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652350020754",
+     "createdTime": "2026-10-28T10:45:50+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c9539890-301d-400c-90c6-2f28d49059ff.T2V5ZNB6D7KFWU.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650615020747",
+     "createdTime": "2026-10-21T14:21:55+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.551a70f6-6687-4c57-845f-593c460bd777.TOTARS5T6FWUC.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650604020747",
+     "createdTime": "2026-10-21T13:48:49+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.581260d4-aa5d-4bd2-af92-34fd4094656f.T3LLHELDYETSLF.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650601020747",
+     "createdTime": "2026-10-21T13:20:02+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.af229e78-be72-4c19-b05f-07e9de866769.TLYXWO12XRJ73.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650576020747",
+     "createdTime": "2026-10-21T10:41:13+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.394192b0-d44d-4b88-915c-db5080295997.T6356LRF8DOS8.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650573020747",
+     "createdTime": "2026-10-21T10:36:46+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6d0ba308-6705-4c45-aba6-0f4133a4d7a7.T1LRZ1OUM1FO5I.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649087020741",
+     "createdTime": "2026-10-15T14:18:35+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.58c5ceb3-025b-46b9-81aa-e5bae22c35ab.T15A9T0B3F5QIZ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649083020741",
+     "createdTime": "2026-10-15T14:18:33+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.50309650-9d4a-4b7c-88ba-321fa33535ad.TXM8P2LG5EP2C.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648835020740",
+     "createdTime": "2026-10-14T15:06:03+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7a271f06-e219-4663-a19a-49bc12da430d.T2KXQCBJ4Y7L3L.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648827020740",
+     "createdTime": "2026-10-14T14:31:28+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fd5078ec-cdd7-4336-9af3-940bb8f20e16.T18U1EPL3H4G9V.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648820020740",
+     "createdTime": "2026-10-14T13:58:19+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a7cd733c-a68c-4f99-9b7c-d54ee47b9dac.TETBAHFW966MR.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648799020740",
+     "createdTime": "2026-10-14T12:17:05+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ebfc8e47-d96d-422b-8c16-ac3daf2962dd.T11YJ8Z66DA6HL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648775020740",
+     "createdTime": "2026-10-14T10:08:09+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fe460a21-11aa-4ab6-b6de-346c40335228.T3JEC9C3TA570C.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647798020736",
+     "createdTime": "2026-10-10T13:15:48+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ebc94558-ae00-44b2-8742-87acaa2c92b6.T2UYUP4UY8L79U.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647794020736",
+     "createdTime": "2026-10-10T13:15:46+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ea72fde4-0883-46c0-9822-f211792d0695.TC1YHVJGN17LY.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647055020733",
+     "createdTime": "2026-10-07T15:22:12+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.068d2f2b-eade-4309-8ccc-4acec4bfad38.T3ODT5D1JCII7F.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647031020733",
+     "createdTime": "2026-10-07T13:32:28+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7c0ee9d7-af6d-4c23-bb81-c56ab3020876.T2DZNYSERM1ZH4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647012020733",
+     "createdTime": "2026-10-07T11:15:07+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a6899e06-6df4-4122-b5fa-4ce986ffd2c9.T2GQYB3ZSWBSLK.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647005020733",
+     "createdTime": "2026-10-07T11:00:35+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.59d518a5-f959-4a6c-98a0-d5c5ad9b19c1.T2OPNTV1DVGBEL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647000020733",
+     "createdTime": "2026-10-07T10:36:26+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.04cc37be-ee6d-40b0-89e3-54e155835bbf.T3XD8PNC0WQ8Y.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645249020726",
+     "createdTime": "2026-09-30T12:42:29+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.16cc3f20-bc17-4724-8dd4-ce147a5d3591.TB3CNFTMSRK0A.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645245020726",
+     "createdTime": "2026-09-30T12:09:25+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4f29475b-c79b-4cfd-8ea9-0886633a394c.T20LWMBHSZUXAH.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645239020726",
+     "createdTime": "2026-09-30T11:39:16+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7cb2f9dc-361f-479d-8617-4f9900e01f5c.T3TKINXJ8NSB7C.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645231020726",
+     "createdTime": "2026-09-30T11:01:32+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.21f52dd4-e628-498c-995f-8a9f7ae3d62c.T1Y2KCI7I2ZVJO.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645225020726",
+     "createdTime": "2026-09-30T10:16:49+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.556d5ef0-7246-444c-8b62-3848d1682bf5.T2N3P0UBDFEHQY.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643461020719",
+     "createdTime": "2026-09-23T11:58:44+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ecc3a55a-d3bc-406c-af30-2a469ae101ca.TEHANUSA9GLG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643457020719",
+     "createdTime": "2026-09-23T11:27:11+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e6360e3e-e7f0-4111-8e07-eb42a97c99b6.T1YXVEUGURDF5A.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643448020719",
+     "createdTime": "2026-09-23T10:52:35+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.455f948d-ce45-4ff3-88f8-70a53a81ff1d.T2EZ3HLF3J4QQP.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643446020719",
+     "createdTime": "2026-09-23T10:31:22+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9149cc31-7dd6-4b19-bad0-c359db550eff.T2LKV62H33M7X7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643442020719",
+     "createdTime": "2026-09-23T10:17:57+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.dca68371-0710-48c8-816b-185b192f1781.T3V88JOHA58FAY.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641662020712",
+     "createdTime": "2026-09-16T11:59:51+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.32cd44de-c3ca-4f42-93b0-f57d379e4d85.T1OF7EHZ0VQ3AJ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641659020712",
+     "createdTime": "2026-09-16T11:37:39+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d01b440d-43d3-4374-abca-9240d1626d04.T1UB3MUO855FEG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641658020712",
+     "createdTime": "2026-09-16T11:31:17+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7d496ad4-7fac-44a7-98d1-8660c3ee9ba2.T2ULE4JRT55TT8.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641649020712",
+     "createdTime": "2026-09-16T10:56:37+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b4a3f8f-4b16-48a6-8527-bd0ca48b0323.TLN4VWKPASD5V.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641642020712",
+     "createdTime": "2026-09-16T10:10:15+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.526e19de-c351-45ac-a84e-8c688cd729b4.T33GMJIDZG03JM.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640087020706",
+     "createdTime": "2026-09-10T12:01:49+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.65a29752-9d65-44c8-b72b-43dce5c8db85.T16LSO701KDG9M.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640083020706",
+     "createdTime": "2026-09-10T12:01:47+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b648cff2-0f56-4fa5-a0dd-f93c11fe0ac5.T3M746HNHG57Q9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639950020705",
+     "createdTime": "2026-09-09T23:25:34+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7d929f6c-6e22-4fec-89c6-ec8f3e54e947.TMXCW0R35TIAL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639938020705",
+     "createdTime": "2026-09-09T22:40:02+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.74c59b3d-570d-432d-a369-c1622dc58f98.T1O3ZFBB6ZJ7G1.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639931020705",
+     "createdTime": "2026-09-09T21:56:25+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c493a586-69ed-48f8-af0c-ddd0dc1022dc.T3IFBDKGHFZF3V.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639926020705",
+     "createdTime": "2026-09-09T21:28:05+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.15865bc0-4ae0-480b-9a52-a5304a6c1c93.T2FC4W8013GKBH.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639925020705",
+     "createdTime": "2026-09-09T21:26:16+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b85fa092-c283-4c52-ae87-bf82f70b411f.T1NAPUOHBJN1ZF.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637919020698",
+     "createdTime": "2026-09-02T11:05:09+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.87a736b2-82c4-44fc-8e60-f56c4938f653.T20N9VV7BP9ZMK.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637900020698",
+     "createdTime": "2026-09-02T10:24:30+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c547db94-614a-4cab-9ab9-d066572cce1d.T1MNNAX8D5L83X.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637891020698",
+     "createdTime": "2026-09-02T09:31:47+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b6798260-99a6-4796-ac8b-bd078e7ba7be.TM53HEJ2DEKD2.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637876020698",
+     "createdTime": "2026-09-02T07:53:57+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3937b836-70ba-475e-bdf6-7fa393214421.T2IHNCROIZHVAO.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637858020698",
+     "createdTime": "2026-09-02T05:59:27+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7eab3905-99e6-4de0-8bae-03305ac0716f.T2486WN9A3C3CA.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636347020692",
+     "createdTime": "2026-08-27T15:07:23+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636343020692",
+     "createdTime": "2026-08-27T15:07:20+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636331020692",
+     "createdTime": "2026-08-27T14:35:45+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636328020692",
+     "createdTime": "2026-08-27T14:35:44+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636317020692",
+     "createdTime": "2026-08-27T13:55:20+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636314020692",
+     "createdTime": "2026-08-27T13:55:19+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635991020691",
+     "createdTime": "2026-08-26T08:57:06+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ddb94608-88e3-44b6-a7bf-b0ef83a9899d.TPLPVLR337BVI.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635984020691",
+     "createdTime": "2026-08-26T08:24:00+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0ae70b91-2fc1-4e2e-bc9b-b9063874ddb0.T34GN7NCEM8SI1.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635979020691",
+     "createdTime": "2026-08-26T07:50:49+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8102c75b-bed3-4891-b379-6be8a14fb437.TT9GRAUX7AUZ9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635974020691",
+     "createdTime": "2026-08-26T07:28:20+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.80e6a320-a930-4b94-acfd-a1b1d9282398.T2H41EZ9F547YZ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635939020691",
+     "createdTime": "2026-08-26T05:30:50+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.acbc59a6-65ee-466c-922c-99ddb5b6b871.T1O0V18XPNC7WJ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634130020684",
+     "createdTime": "2026-08-19T06:59:42+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9460d0dd-2b56-4c4e-a29a-1f874fd92f40.T3F0DWQUG13URV.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634125020684",
+     "createdTime": "2026-08-19T06:31:07+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b5568615-921b-410f-abfe-2fdf22e303ba.TG7VVIS2199SP.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634121020684",
+     "createdTime": "2026-08-19T06:16:05+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.40b2fa01-a58d-47df-be0d-607f3b3dae65.T10K6EQJ8CPPQ4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634106020684",
+     "createdTime": "2026-08-19T05:17:25+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.891a0ade-3100-45a3-93c7-766b9dcf2e5d.T2V51RHCBM3508.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634093020684",
+     "createdTime": "2026-08-19T04:02:05+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b61f00a6-e855-4978-bffb-3537d6e72fdb.T3QBW1U3BWCWC7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634091020684",
+     "createdTime": "2026-08-19T03:39:33+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.aff6c2fe-6a76-4175-9459-693e8ff8604b.T3H71XGNJH2QTG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632295020677",
+     "createdTime": "2026-08-12T06:07:01+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4231303b-2fb7-4647-a7b3-dd8f0d11351e.T327BEJ5L0K68I.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632264020677",
+     "createdTime": "2026-08-12T03:19:51+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4d00318b-ee2d-4cdb-b0db-e3a5ed0e84da.TDJ4FM9OFCPQ9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632261020677",
+     "createdTime": "2026-08-12T03:16:57+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9bb39183-acaa-4287-bee1-ef46c6e0d177.T36YRGAASUGVTX.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632249020677",
+     "createdTime": "2026-08-12T02:39:22+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0dc7d839-6fc8-4811-b73f-8fbf0da6d02e.T31LY3C69ABKGI.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632241020677",
+     "createdTime": "2026-08-12T02:01:46+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.82fe4e4f-2a3e-42bc-9f04-9c251d101e9c.T31MTCMUXWITI8.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632238020677",
+     "createdTime": "2026-08-12T01:22:27+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0fb6c7ad-312c-47e9-a520-aa196cc510ab.T3U9N5AZLY7VO1.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631782020675",
+     "createdTime": "2026-08-10T08:24:39+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7dfbe100-b734-4e63-a6c2-ee67e906bd0d.T31WL7DZ5LVUO2.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631780020675",
+     "createdTime": "2026-08-10T08:24:38+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a458cd62-1265-4028-ad84-2ea8024e876d.T2EGINM9P5GQ6Q.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630941020672",
+     "createdTime": "2026-08-07T03:18:18+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.de9e2e2e-46c7-48f1-80ee-347d05ecdfcf.T1353TG9E4GHUX.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630918020672",
+     "createdTime": "2026-08-07T01:20:56+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9b550a69-36ec-42d8-997b-ff53b36bb758.T303D3DPQFPQP6.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630913020672",
+     "createdTime": "2026-08-07T01:05:28+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a25f4be3-d3be-4e29-878d-172a5acd6be3.T3HNFMQLYFXAEG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630912020672",
+     "createdTime": "2026-08-07T01:04:22+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d79ae3d2-84e6-41de-8e86-e3e61e0f4237.T3MD0QICYGXTXN.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630904020672",
+     "createdTime": "2026-08-07T00:31:17+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6c17134b-358b-409a-884e-246c5e625550.T3O4U2CLSXDJLU.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630901020672",
+     "createdTime": "2026-08-07T00:11:36+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0ab9baf9-2e7f-43b1-a1ac-540d003217a4.T29M2QGKXX6WZ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_SEARCH_CATALOG_PERFORMANCE_REPORT": [
+    {
+     "reportId": "652339020754",
+     "createdTime": "2026-10-28T10:04:35+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fbcecefe-88a3-403d-be9a-95004166b778.TCNPAWCVIJA1U.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652335020754",
+     "createdTime": "2026-10-28T09:37:30+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9fa47aa4-c17f-48a4-ab0b-38c7bc45b355.TR8M6AX8MS5QA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652332020754",
+     "createdTime": "2026-10-28T09:08:33+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b7afe165-df41-48ce-aa34-280d65dbeead.T38Y0L2OQH1ID7.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650567020747",
+     "createdTime": "2026-10-21T10:03:03+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.aa707db7-b2d2-45bd-bb05-4e2e98ab510d.T2S6G6XC73RZWS.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650557020747",
+     "createdTime": "2026-10-21T09:35:57+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.89000d42-7b34-424d-8080-4f9c7ff7ac85.T3YZM6DW9T78N.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650553020747",
+     "createdTime": "2026-10-21T09:05:30+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6a7e467a-942e-46d0-be7e-accef624ad37.TCPDB4RIWC27P.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649088020741",
+     "createdTime": "2026-10-15T14:18:35+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.718e86b2-8687-4aeb-80f7-753137cc54d9.TSHV2L3P6NSDN.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649084020741",
+     "createdTime": "2026-10-15T14:18:34+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.45900152-729e-4d2a-ac0f-6a3bf73fedfc.T17ADZTO77Z69K.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648772020740",
+     "createdTime": "2026-10-14T10:01:29+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.51186da2-39f6-4573-b163-4abd76213747.T29J2TRCSC937V.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648767020740",
+     "createdTime": "2026-10-14T09:34:25+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ef1e49a6-7e75-4774-8834-00051c7020fd.T1P9I8H4IEYEEC.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648758020740",
+     "createdTime": "2026-10-14T09:03:58+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a61b1c1f-d7cb-457d-acbf-92ec21b95ea6.TGYZRVNQDZEC5.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647799020736",
+     "createdTime": "2026-10-10T13:15:48+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1e4f2fd0-2307-4a37-8b3c-ae8a8c6a5029.T3UE66F83C11BE.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647795020736",
+     "createdTime": "2026-10-10T13:15:46+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0f091fe5-7c1e-48fe-9ccf-8baa1fbddcad.TC1YHVJGN17LY.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "646981020733",
+     "createdTime": "2026-10-07T08:46:18+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9c1fbca4-031f-46e8-9390-1cc6121d45b6.T10BQCBN5PRN51.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "646978020733",
+     "createdTime": "2026-10-07T08:32:47+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8aacb4f5-2047-4ec8-8322-afe897c4eaef.T3VI9DRRWB7VWZ.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "646974020733",
+     "createdTime": "2026-10-07T08:26:20+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3ddecf48-e14d-4493-90a7-4a29624ef36b.T3D4027FOLJIEV.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645211020726",
+     "createdTime": "2026-09-30T08:44:46+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e3a47123-02e9-4ed8-b8e8-4ad6b2a8d21c.T1K8ZZ5IRRCJY0.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645206020726",
+     "createdTime": "2026-09-30T08:31:15+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d6bbfcc0-f946-428d-a53f-044b3bc571b1.TQ0MY80LIX5T.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645205020726",
+     "createdTime": "2026-09-30T08:24:46+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.eec0ce64-25c4-438a-9e47-f218aa3367a2.T3F91ASYB8P8V2.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643428020719",
+     "createdTime": "2026-09-23T08:43:13+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2b06663c-5476-4432-9482-e319807af2e9.T1CSN1WH5MJLAG.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643426020719",
+     "createdTime": "2026-09-23T08:29:42+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.05c9a765-4f13-47f8-a0a2-fde2985a0391.T3UD7W6AVUCIAV.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643424020719",
+     "createdTime": "2026-09-23T08:23:13+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d153e7cf-a26a-4ea6-8bcb-0d7fcb3c5d64.T1WIANOQLNYY6I.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641629020712",
+     "createdTime": "2026-09-16T08:41:41+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.12b497bc-cea7-45e9-b975-caf9821ef14e.T1ERZV4UMKTR2Q.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641625020712",
+     "createdTime": "2026-09-16T08:28:10+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3f774cb0-6c25-47c3-8cb2-5b34987fec0f.T3R19CLK5267Q4.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641624020712",
+     "createdTime": "2026-09-16T08:21:40+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c1b002c5-87f4-420f-8de0-0b1281fb7377.T3M1O1HCWYF4DU.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640088020706",
+     "createdTime": "2026-09-10T12:01:49+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.29386786-474a-4225-b5a8-01af21914456.T2C3GDNRHLB0H8.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640084020706",
+     "createdTime": "2026-09-10T12:01:47+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a7b60bb1-1bdb-4348-a6f7-d74f4701add9.TDELLX6DH96U5.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639915020705",
+     "createdTime": "2026-09-09T20:40:08+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3022216a-87b6-4497-bdbe-00273019e5ac.TCVZXGTY8CLXU.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639912020705",
+     "createdTime": "2026-09-09T20:25:06+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.60be0502-e3eb-4b04-82b1-450a63bb8b3d.T2ODNL4U2EWOR1.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639911020705",
+     "createdTime": "2026-09-09T20:20:07+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e0c3cfa2-6ed5-4611-ba1f-45945d606b54.T14JQRR8INSUXN.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639699020705",
+     "createdTime": "2026-09-09T02:33:41+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.08f7a49c-831e-4a80-b553-412a49b6886a.TEYB06ALP0BY5.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639697020705",
+     "createdTime": "2026-09-09T02:21:55+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a4cb8fac-31f3-45da-9844-0c1c1fa9dff0.T72542IN92HZ6.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639695020705",
+     "createdTime": "2026-09-09T02:14:43+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.64b14942-cf18-4e54-9f1b-cec901fc476e.T1V7CPRTQ72R8O.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637815020698",
+     "createdTime": "2026-09-02T02:29:07+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.16b1907a-71aa-4db1-8a62-896ac6db377d.T91TJ78UIH5D0.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637812020698",
+     "createdTime": "2026-09-02T02:20:22+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d5810390-2b9e-43b6-a444-ca6042989b63.T1WEE7A99A4WFT.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637811020698",
+     "createdTime": "2026-09-02T02:13:07+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3a54a95d-bc68-4e39-ad4c-032013577694.T1IWHIGW405LPF.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636348020692",
+     "createdTime": "2026-08-27T15:07:23+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b8ca778-aa02-4441-96e7-ed3f3c8045b6.T29XBPVITOZEGA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636344020692",
+     "createdTime": "2026-08-27T15:07:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f27d1be3-5aed-4a75-b46e-391efc782a76.T2W6XLVN5GU8W3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636332020692",
+     "createdTime": "2026-08-27T14:35:46+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b8ca778-aa02-4441-96e7-ed3f3c8045b6.T29XBPVITOZEGA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636329020692",
+     "createdTime": "2026-08-27T14:35:44+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f27d1be3-5aed-4a75-b46e-391efc782a76.T2W6XLVN5GU8W3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636318020692",
+     "createdTime": "2026-08-27T13:55:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b8ca778-aa02-4441-96e7-ed3f3c8045b6.T29XBPVITOZEGA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636315020692",
+     "createdTime": "2026-08-27T13:55:19+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f27d1be3-5aed-4a75-b46e-391efc782a76.T2W6XLVN5GU8W3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635903020691",
+     "createdTime": "2026-08-26T02:27:34+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4a715e72-dca3-4430-bccf-4377e6165f72.TTQS50P9G1SII.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635901020691",
+     "createdTime": "2026-08-26T02:18:49+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.116bfbfd-9140-445c-96aa-fb5f8f76d375.T1455NMM4T02UY.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635899020691",
+     "createdTime": "2026-08-26T02:11:34+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1ccf0696-b442-4361-aeff-285bcdd60526.TS71C8K1FNEBT.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634050020684",
+     "createdTime": "2026-08-19T01:18:22+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d9ac3d0d-9b82-46fd-ab2b-eba1a9928add.T2CW7BEFS1AMEW.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634043020684",
+     "createdTime": "2026-08-19T00:51:33+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.5a4620f5-d5f1-4f4f-bd4b-0b4e2e0fda7f.T2N92DLJVOHS02.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634040020684",
+     "createdTime": "2026-08-19T00:29:17+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b0bed6e1-fa50-4d21-88e4-348a1aa4b02e.T2FBQ6JB3214JI.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632220020677",
+     "createdTime": "2026-08-12T00:11:40+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.549b195c-2851-4b41-9f93-27428015c321.T371OS1BCB1BJT.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632218020677",
+     "createdTime": "2026-08-12T00:07:54+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6248324e-cfc0-46ce-b5a4-19d87e448ac4.T3NRSJXRMTQVOA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632217020677",
+     "createdTime": "2026-08-12T00:06:39+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c22fdae0-1e26-44e6-9188-99d45f97edaf.T2TCR4TP1BJOKU.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631783020675",
+     "createdTime": "2026-08-10T08:24:39+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.629e788f-d6d6-45a7-b263-87f274127611.T1TICB0LZ2AC7D.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631781020675",
+     "createdTime": "2026-08-10T08:24:38+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7c81260d-e3c3-4ec4-a9f7-3d7398010d0c.T3PDB30MHVC3ZI.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630900020672",
+     "createdTime": "2026-08-07T00:10:07+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fe5b3ec3-2f4d-4a35-9464-9b8cf86b0a7a.T2MXLYMINXM7TD.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630899020672",
+     "createdTime": "2026-08-07T00:06:22+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c10b6116-20b3-495d-ba86-746fd1fce6af.T3GVBCM7SBU4N3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630896020672",
+     "createdTime": "2026-08-07T00:05:07+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.192d9d37-4ac5-49dc-b5c9-bf06a374a6f1.T805VYQJJDP0B.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630702020671",
+     "createdTime": "2026-08-06T06:05:06+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.23e828fa-4af1-4fd9-9290-961d01ba8a50.T1LOQRWESEOV9Z.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630701020671",
+     "createdTime": "2026-08-06T06:01:34+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.5af926e9-6ec3-46ee-9bdd-83f716182e0c.T3GFM0Q9IW8HBM.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630699020671",
+     "createdTime": "2026-08-06T06:00:19+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.68973c03-776c-4fbb-86b1-307f1c078103.T3O6DKESMNT47Y.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630501020670",
+     "createdTime": "2026-08-05T11:59:11+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8c702d3d-aa34-4df4-a5ad-69d722a0522e.TR9SUBUJ4AD1L.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630500020670",
+     "createdTime": "2026-08-05T11:56:41+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.af845dca-7260-4a46-af20-a5abb7f7917c.T17IREC69MO01B.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630499020670",
+     "createdTime": "2026-08-05T11:54:24+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c3572f29-c372-4c74-848e-8de92260931f.T3CGQ0ZALFOFLS.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_REPEAT_PURCHASE_REPORT": [
+    {
+     "reportId": "649089020741",
+     "createdTime": "2026-10-15T14:18:36+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8095a8ad-e2bb-4bec-b423-8948601ead1d.TRMSJ3L1XF8A9.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649085020741",
+     "createdTime": "2026-10-15T14:18:34+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.923a4b84-d850-40fb-b939-2679430bf727.T14NON0MALCQN1.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647800020736",
+     "createdTime": "2026-10-10T13:15:48+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.69195a72-0a92-4c5f-b538-cc95aa750a33.T8HUHPJ083S5I.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647796020736",
+     "createdTime": "2026-10-10T13:15:46+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.837221e0-0efe-4caf-8c89-e69d01d7d290.TS1XAAF3INX36.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640089020706",
+     "createdTime": "2026-09-10T12:01:50+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9808b6b8-6844-4a37-908f-a77dc2bc9211.TAZZ1B3MYW93A.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640085020706",
+     "createdTime": "2026-09-10T12:01:48+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.28ffcafe-dafd-4f84-8613-7e89733638b4.T2UQ7SVNN37OPX.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636349020692",
+     "createdTime": "2026-08-27T15:07:24+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4f2b1212-f54a-4721-8bd3-cff0d0d533e2.T2DJVFD22A2ORF.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636345020692",
+     "createdTime": "2026-08-27T15:07:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2edd1ec0-0a40-4f9a-aa33-88fb98638a61.TO34182GZ9F5G.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636333020692",
+     "createdTime": "2026-08-27T14:35:46+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4f2b1212-f54a-4721-8bd3-cff0d0d533e2.T2DJVFD22A2ORF.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636330020692",
+     "createdTime": "2026-08-27T14:35:45+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2edd1ec0-0a40-4f9a-aa33-88fb98638a61.TO34182GZ9F5G.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636326020692",
+     "createdTime": "2026-08-27T14:23:46+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2edd1ec0-0a40-4f9a-aa33-88fb98638a61.TO34182GZ9F5G.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636325020692",
+     "createdTime": "2026-08-27T14:15:16+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2c2d1ae6-7fa1-4eb2-8000-b41ff6423d66.T32F2XVRVR7SW4.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636324020692",
+     "createdTime": "2026-08-27T14:12:30+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ca2faf73-34f1-4d98-8e9c-0f0f391304cd.T3ID2XFKU0RTJ7.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636321020692",
+     "createdTime": "2026-08-27T14:07:47+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c3078528-84dd-4b0a-8495-6135687addb0.T2O692F27UW1U.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636319020692",
+     "createdTime": "2026-08-27T13:55:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.976748e3-7419-4b26-8400-7fa887370eb5.T2DDKYIXCO3TNL.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636316020692",
+     "createdTime": "2026-08-27T13:55:20+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f192346e-7e2a-4f6a-9c3a-4c61d116ea3e.T1FTL790PX6N6D.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_MARKET_BASKET_REPORT": [
+    {
+     "reportId": "649090020741",
+     "createdTime": "2026-10-15T14:18:36+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ba54ff87-f39e-480b-b432-5d72f2dcaefd.T3EP6ICOCRQFRJ.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649086020741",
+     "createdTime": "2026-10-15T14:18:35+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e1710c52-a140-4a70-9b93-a875dbc1a2b8.T14NON0MALCQN1.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647801020736",
+     "createdTime": "2026-10-10T13:15:49+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ec88a6da-51ca-4d64-b199-1a661a1ecbcf.TPR8J0IGHP200.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647797020736",
+     "createdTime": "2026-10-10T13:15:47+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2ea8eb00-5090-48b7-ab74-ac0acc051739.TE8KUQ5YEOOZI.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640090020706",
+     "createdTime": "2026-09-10T12:01:50+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b7e808e3-3f50-4c11-8cdd-30b71e0f7a7c.T2G558JIJW8NB0.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640086020706",
+     "createdTime": "2026-09-10T12:01:48+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.452f8645-b4b2-44fd-ab5e-a51d366f1a74.T176T8H94ABYYD.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636350020692",
+     "createdTime": "2026-08-27T15:07:24+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4d5d4a7a-e796-4d6c-8c0b-2d5ed033d9c8.T1DTMKV4SSCKL2.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636346020692",
+     "createdTime": "2026-08-27T15:07:22+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e6bec3e3-9edf-4683-be0a-5627589f67ed.T1KN234ZXNY4AZ.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT": [
+    {
+     "reportId": "652418020754",
+     "createdTime": "2026-10-28T17:04:13+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8653a0db-e590-4a5e-9012-08741b46678b.T2FY9FMLSEGNBO.5600",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ]
+  },
+  "CA": {
+   "GET_BRAND_ANALYTICS_SEARCH_QUERY_PERFORMANCE_REPORT": [
+    {
+     "reportId": "652424020754",
+     "createdTime": "2026-10-28T17:21:52+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.447eca58-fdb2-44c1-89fc-68264b8a919c.T290POEKQUIZV7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652419020754",
+     "createdTime": "2026-10-28T17:04:17+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.447eca58-fdb2-44c1-89fc-68264b8a919c.T290POEKQUIZV7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652381020754",
+     "createdTime": "2026-10-28T13:25:11+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f878df23-e0d7-4d3c-8326-1b79e790465f.T3CMY34NHWQ4Z9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652373020754",
+     "createdTime": "2026-10-28T12:58:07+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.15f18722-2cb0-4498-ac9e-70417191418e.TWXV6S45OGYPL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652370020754",
+     "createdTime": "2026-10-28T12:34:01+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e858fc8d-be9f-40d4-8943-1a478c92b98e.TBEH4Q1CHCU6U.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652356020754",
+     "createdTime": "2026-10-28T11:08:21+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0863273f-bc5b-4865-a484-bb19a05e1bf5.T1Q03C0HM8QKKK.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652350020754",
+     "createdTime": "2026-10-28T10:45:50+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c9539890-301d-400c-90c6-2f28d49059ff.T2V5ZNB6D7KFWU.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650615020747",
+     "createdTime": "2026-10-21T14:21:55+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.551a70f6-6687-4c57-845f-593c460bd777.TOTARS5T6FWUC.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650604020747",
+     "createdTime": "2026-10-21T13:48:49+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.581260d4-aa5d-4bd2-af92-34fd4094656f.T3LLHELDYETSLF.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650601020747",
+     "createdTime": "2026-10-21T13:20:02+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.af229e78-be72-4c19-b05f-07e9de866769.TLYXWO12XRJ73.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650576020747",
+     "createdTime": "2026-10-21T10:41:13+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.394192b0-d44d-4b88-915c-db5080295997.T6356LRF8DOS8.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650573020747",
+     "createdTime": "2026-10-21T10:36:46+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6d0ba308-6705-4c45-aba6-0f4133a4d7a7.T1LRZ1OUM1FO5I.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649087020741",
+     "createdTime": "2026-10-15T14:18:35+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.58c5ceb3-025b-46b9-81aa-e5bae22c35ab.T15A9T0B3F5QIZ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649083020741",
+     "createdTime": "2026-10-15T14:18:33+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.50309650-9d4a-4b7c-88ba-321fa33535ad.TXM8P2LG5EP2C.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648835020740",
+     "createdTime": "2026-10-14T15:06:03+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7a271f06-e219-4663-a19a-49bc12da430d.T2KXQCBJ4Y7L3L.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648827020740",
+     "createdTime": "2026-10-14T14:31:28+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fd5078ec-cdd7-4336-9af3-940bb8f20e16.T18U1EPL3H4G9V.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648820020740",
+     "createdTime": "2026-10-14T13:58:19+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a7cd733c-a68c-4f99-9b7c-d54ee47b9dac.TETBAHFW966MR.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648799020740",
+     "createdTime": "2026-10-14T12:17:05+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ebfc8e47-d96d-422b-8c16-ac3daf2962dd.T11YJ8Z66DA6HL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648775020740",
+     "createdTime": "2026-10-14T10:08:09+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fe460a21-11aa-4ab6-b6de-346c40335228.T3JEC9C3TA570C.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647798020736",
+     "createdTime": "2026-10-10T13:15:48+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ebc94558-ae00-44b2-8742-87acaa2c92b6.T2UYUP4UY8L79U.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647794020736",
+     "createdTime": "2026-10-10T13:15:46+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ea72fde4-0883-46c0-9822-f211792d0695.TC1YHVJGN17LY.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647055020733",
+     "createdTime": "2026-10-07T15:22:12+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.068d2f2b-eade-4309-8ccc-4acec4bfad38.T3ODT5D1JCII7F.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647031020733",
+     "createdTime": "2026-10-07T13:32:28+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7c0ee9d7-af6d-4c23-bb81-c56ab3020876.T2DZNYSERM1ZH4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647012020733",
+     "createdTime": "2026-10-07T11:15:07+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a6899e06-6df4-4122-b5fa-4ce986ffd2c9.T2GQYB3ZSWBSLK.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647005020733",
+     "createdTime": "2026-10-07T11:00:35+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.59d518a5-f959-4a6c-98a0-d5c5ad9b19c1.T2OPNTV1DVGBEL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647000020733",
+     "createdTime": "2026-10-07T10:36:26+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.04cc37be-ee6d-40b0-89e3-54e155835bbf.T3XD8PNC0WQ8Y.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645249020726",
+     "createdTime": "2026-09-30T12:42:29+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.16cc3f20-bc17-4724-8dd4-ce147a5d3591.TB3CNFTMSRK0A.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645245020726",
+     "createdTime": "2026-09-30T12:09:25+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4f29475b-c79b-4cfd-8ea9-0886633a394c.T20LWMBHSZUXAH.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645239020726",
+     "createdTime": "2026-09-30T11:39:16+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7cb2f9dc-361f-479d-8617-4f9900e01f5c.T3TKINXJ8NSB7C.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645231020726",
+     "createdTime": "2026-09-30T11:01:32+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.21f52dd4-e628-498c-995f-8a9f7ae3d62c.T1Y2KCI7I2ZVJO.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645225020726",
+     "createdTime": "2026-09-30T10:16:49+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.556d5ef0-7246-444c-8b62-3848d1682bf5.T2N3P0UBDFEHQY.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643461020719",
+     "createdTime": "2026-09-23T11:58:44+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ecc3a55a-d3bc-406c-af30-2a469ae101ca.TEHANUSA9GLG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643457020719",
+     "createdTime": "2026-09-23T11:27:11+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e6360e3e-e7f0-4111-8e07-eb42a97c99b6.T1YXVEUGURDF5A.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643448020719",
+     "createdTime": "2026-09-23T10:52:35+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.455f948d-ce45-4ff3-88f8-70a53a81ff1d.T2EZ3HLF3J4QQP.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643446020719",
+     "createdTime": "2026-09-23T10:31:22+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9149cc31-7dd6-4b19-bad0-c359db550eff.T2LKV62H33M7X7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643442020719",
+     "createdTime": "2026-09-23T10:17:57+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.dca68371-0710-48c8-816b-185b192f1781.T3V88JOHA58FAY.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641662020712",
+     "createdTime": "2026-09-16T11:59:51+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.32cd44de-c3ca-4f42-93b0-f57d379e4d85.T1OF7EHZ0VQ3AJ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641659020712",
+     "createdTime": "2026-09-16T11:37:39+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d01b440d-43d3-4374-abca-9240d1626d04.T1UB3MUO855FEG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641658020712",
+     "createdTime": "2026-09-16T11:31:17+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7d496ad4-7fac-44a7-98d1-8660c3ee9ba2.T2ULE4JRT55TT8.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641649020712",
+     "createdTime": "2026-09-16T10:56:37+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b4a3f8f-4b16-48a6-8527-bd0ca48b0323.TLN4VWKPASD5V.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641642020712",
+     "createdTime": "2026-09-16T10:10:15+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.526e19de-c351-45ac-a84e-8c688cd729b4.T33GMJIDZG03JM.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640087020706",
+     "createdTime": "2026-09-10T12:01:49+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.65a29752-9d65-44c8-b72b-43dce5c8db85.T16LSO701KDG9M.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640083020706",
+     "createdTime": "2026-09-10T12:01:47+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b648cff2-0f56-4fa5-a0dd-f93c11fe0ac5.T3M746HNHG57Q9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639950020705",
+     "createdTime": "2026-09-09T23:25:34+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7d929f6c-6e22-4fec-89c6-ec8f3e54e947.TMXCW0R35TIAL.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639938020705",
+     "createdTime": "2026-09-09T22:40:02+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.74c59b3d-570d-432d-a369-c1622dc58f98.T1O3ZFBB6ZJ7G1.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639931020705",
+     "createdTime": "2026-09-09T21:56:25+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c493a586-69ed-48f8-af0c-ddd0dc1022dc.T3IFBDKGHFZF3V.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639926020705",
+     "createdTime": "2026-09-09T21:28:05+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.15865bc0-4ae0-480b-9a52-a5304a6c1c93.T2FC4W8013GKBH.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639925020705",
+     "createdTime": "2026-09-09T21:26:16+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b85fa092-c283-4c52-ae87-bf82f70b411f.T1NAPUOHBJN1ZF.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637919020698",
+     "createdTime": "2026-09-02T11:05:09+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.87a736b2-82c4-44fc-8e60-f56c4938f653.T20N9VV7BP9ZMK.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637900020698",
+     "createdTime": "2026-09-02T10:24:30+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c547db94-614a-4cab-9ab9-d066572cce1d.T1MNNAX8D5L83X.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637891020698",
+     "createdTime": "2026-09-02T09:31:47+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b6798260-99a6-4796-ac8b-bd078e7ba7be.TM53HEJ2DEKD2.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637876020698",
+     "createdTime": "2026-09-02T07:53:57+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3937b836-70ba-475e-bdf6-7fa393214421.T2IHNCROIZHVAO.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637858020698",
+     "createdTime": "2026-09-02T05:59:27+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7eab3905-99e6-4de0-8bae-03305ac0716f.T2486WN9A3C3CA.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636347020692",
+     "createdTime": "2026-08-27T15:07:23+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636343020692",
+     "createdTime": "2026-08-27T15:07:20+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636331020692",
+     "createdTime": "2026-08-27T14:35:45+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636328020692",
+     "createdTime": "2026-08-27T14:35:44+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636317020692",
+     "createdTime": "2026-08-27T13:55:20+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636314020692",
+     "createdTime": "2026-08-27T13:55:19+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635991020691",
+     "createdTime": "2026-08-26T08:57:06+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ddb94608-88e3-44b6-a7bf-b0ef83a9899d.TPLPVLR337BVI.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635984020691",
+     "createdTime": "2026-08-26T08:24:00+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0ae70b91-2fc1-4e2e-bc9b-b9063874ddb0.T34GN7NCEM8SI1.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635979020691",
+     "createdTime": "2026-08-26T07:50:49+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8102c75b-bed3-4891-b379-6be8a14fb437.TT9GRAUX7AUZ9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635974020691",
+     "createdTime": "2026-08-26T07:28:20+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.80e6a320-a930-4b94-acfd-a1b1d9282398.T2H41EZ9F547YZ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635939020691",
+     "createdTime": "2026-08-26T05:30:50+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.acbc59a6-65ee-466c-922c-99ddb5b6b871.T1O0V18XPNC7WJ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634130020684",
+     "createdTime": "2026-08-19T06:59:42+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9460d0dd-2b56-4c4e-a29a-1f874fd92f40.T3F0DWQUG13URV.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634125020684",
+     "createdTime": "2026-08-19T06:31:07+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b5568615-921b-410f-abfe-2fdf22e303ba.TG7VVIS2199SP.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634121020684",
+     "createdTime": "2026-08-19T06:16:05+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.40b2fa01-a58d-47df-be0d-607f3b3dae65.T10K6EQJ8CPPQ4.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634106020684",
+     "createdTime": "2026-08-19T05:17:25+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.891a0ade-3100-45a3-93c7-766b9dcf2e5d.T2V51RHCBM3508.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634093020684",
+     "createdTime": "2026-08-19T04:02:05+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b61f00a6-e855-4978-bffb-3537d6e72fdb.T3QBW1U3BWCWC7.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634091020684",
+     "createdTime": "2026-08-19T03:39:33+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.aff6c2fe-6a76-4175-9459-693e8ff8604b.T3H71XGNJH2QTG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632295020677",
+     "createdTime": "2026-08-12T06:07:01+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4231303b-2fb7-4647-a7b3-dd8f0d11351e.T327BEJ5L0K68I.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632264020677",
+     "createdTime": "2026-08-12T03:19:51+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4d00318b-ee2d-4cdb-b0db-e3a5ed0e84da.TDJ4FM9OFCPQ9.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632261020677",
+     "createdTime": "2026-08-12T03:16:57+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9bb39183-acaa-4287-bee1-ef46c6e0d177.T36YRGAASUGVTX.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632249020677",
+     "createdTime": "2026-08-12T02:39:22+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0dc7d839-6fc8-4811-b73f-8fbf0da6d02e.T31LY3C69ABKGI.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632241020677",
+     "createdTime": "2026-08-12T02:01:46+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.82fe4e4f-2a3e-42bc-9f04-9c251d101e9c.T31MTCMUXWITI8.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632238020677",
+     "createdTime": "2026-08-12T01:22:27+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0fb6c7ad-312c-47e9-a520-aa196cc510ab.T3U9N5AZLY7VO1.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631782020675",
+     "createdTime": "2026-08-10T08:24:39+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7dfbe100-b734-4e63-a6c2-ee67e906bd0d.T31WL7DZ5LVUO2.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631780020675",
+     "createdTime": "2026-08-10T08:24:38+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a458cd62-1265-4028-ad84-2ea8024e876d.T2EGINM9P5GQ6Q.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630941020672",
+     "createdTime": "2026-08-07T03:18:18+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.de9e2e2e-46c7-48f1-80ee-347d05ecdfcf.T1353TG9E4GHUX.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630918020672",
+     "createdTime": "2026-08-07T01:20:56+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9b550a69-36ec-42d8-997b-ff53b36bb758.T303D3DPQFPQP6.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630913020672",
+     "createdTime": "2026-08-07T01:05:28+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a25f4be3-d3be-4e29-878d-172a5acd6be3.T3HNFMQLYFXAEG.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630912020672",
+     "createdTime": "2026-08-07T01:04:22+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d79ae3d2-84e6-41de-8e86-e3e61e0f4237.T3MD0QICYGXTXN.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630904020672",
+     "createdTime": "2026-08-07T00:31:17+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6c17134b-358b-409a-884e-246c5e625550.T3O4U2CLSXDJLU.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630901020672",
+     "createdTime": "2026-08-07T00:11:36+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0ab9baf9-2e7f-43b1-a1ac-540d003217a4.T29M2QGKXX6WZ.23000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_SEARCH_CATALOG_PERFORMANCE_REPORT": [
+    {
+     "reportId": "652339020754",
+     "createdTime": "2026-10-28T10:04:35+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fbcecefe-88a3-403d-be9a-95004166b778.TCNPAWCVIJA1U.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652335020754",
+     "createdTime": "2026-10-28T09:37:30+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9fa47aa4-c17f-48a4-ab0b-38c7bc45b355.TR8M6AX8MS5QA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652332020754",
+     "createdTime": "2026-10-28T09:08:33+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b7afe165-df41-48ce-aa34-280d65dbeead.T38Y0L2OQH1ID7.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650567020747",
+     "createdTime": "2026-10-21T10:03:03+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.aa707db7-b2d2-45bd-bb05-4e2e98ab510d.T2S6G6XC73RZWS.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650557020747",
+     "createdTime": "2026-10-21T09:35:57+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.89000d42-7b34-424d-8080-4f9c7ff7ac85.T3YZM6DW9T78N.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "650553020747",
+     "createdTime": "2026-10-21T09:05:30+00:00",
+     "dataStartTime": "2026-10-11T00:00:00+00:00",
+     "dataEndTime": "2026-10-17T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6a7e467a-942e-46d0-be7e-accef624ad37.TCPDB4RIWC27P.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649088020741",
+     "createdTime": "2026-10-15T14:18:35+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.718e86b2-8687-4aeb-80f7-753137cc54d9.TSHV2L3P6NSDN.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649084020741",
+     "createdTime": "2026-10-15T14:18:34+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.45900152-729e-4d2a-ac0f-6a3bf73fedfc.T17ADZTO77Z69K.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648772020740",
+     "createdTime": "2026-10-14T10:01:29+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.51186da2-39f6-4573-b163-4abd76213747.T29J2TRCSC937V.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648767020740",
+     "createdTime": "2026-10-14T09:34:25+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ef1e49a6-7e75-4774-8834-00051c7020fd.T1P9I8H4IEYEEC.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "648758020740",
+     "createdTime": "2026-10-14T09:03:58+00:00",
+     "dataStartTime": "2026-10-04T00:00:00+00:00",
+     "dataEndTime": "2026-10-10T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a61b1c1f-d7cb-457d-acbf-92ec21b95ea6.TGYZRVNQDZEC5.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647799020736",
+     "createdTime": "2026-10-10T13:15:48+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1e4f2fd0-2307-4a37-8b3c-ae8a8c6a5029.T3UE66F83C11BE.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647795020736",
+     "createdTime": "2026-10-10T13:15:46+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.0f091fe5-7c1e-48fe-9ccf-8baa1fbddcad.TC1YHVJGN17LY.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "646981020733",
+     "createdTime": "2026-10-07T08:46:18+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9c1fbca4-031f-46e8-9390-1cc6121d45b6.T10BQCBN5PRN51.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "646978020733",
+     "createdTime": "2026-10-07T08:32:47+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8aacb4f5-2047-4ec8-8322-afe897c4eaef.T3VI9DRRWB7VWZ.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "646974020733",
+     "createdTime": "2026-10-07T08:26:20+00:00",
+     "dataStartTime": "2026-09-27T00:00:00+00:00",
+     "dataEndTime": "2026-10-03T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3ddecf48-e14d-4493-90a7-4a29624ef36b.T3D4027FOLJIEV.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645211020726",
+     "createdTime": "2026-09-30T08:44:46+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e3a47123-02e9-4ed8-b8e8-4ad6b2a8d21c.T1K8ZZ5IRRCJY0.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645206020726",
+     "createdTime": "2026-09-30T08:31:15+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d6bbfcc0-f946-428d-a53f-044b3bc571b1.TQ0MY80LIX5T.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "645205020726",
+     "createdTime": "2026-09-30T08:24:46+00:00",
+     "dataStartTime": "2026-09-20T00:00:00+00:00",
+     "dataEndTime": "2026-09-26T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.eec0ce64-25c4-438a-9e47-f218aa3367a2.T3F91ASYB8P8V2.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643428020719",
+     "createdTime": "2026-09-23T08:43:13+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2b06663c-5476-4432-9482-e319807af2e9.T1CSN1WH5MJLAG.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643426020719",
+     "createdTime": "2026-09-23T08:29:42+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.05c9a765-4f13-47f8-a0a2-fde2985a0391.T3UD7W6AVUCIAV.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "643424020719",
+     "createdTime": "2026-09-23T08:23:13+00:00",
+     "dataStartTime": "2026-09-13T00:00:00+00:00",
+     "dataEndTime": "2026-09-19T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d153e7cf-a26a-4ea6-8bcb-0d7fcb3c5d64.T1WIANOQLNYY6I.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641629020712",
+     "createdTime": "2026-09-16T08:41:41+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.12b497bc-cea7-45e9-b975-caf9821ef14e.T1ERZV4UMKTR2Q.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641625020712",
+     "createdTime": "2026-09-16T08:28:10+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3f774cb0-6c25-47c3-8cb2-5b34987fec0f.T3R19CLK5267Q4.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "641624020712",
+     "createdTime": "2026-09-16T08:21:40+00:00",
+     "dataStartTime": "2026-09-06T00:00:00+00:00",
+     "dataEndTime": "2026-09-12T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c1b002c5-87f4-420f-8de0-0b1281fb7377.T3M1O1HCWYF4DU.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640088020706",
+     "createdTime": "2026-09-10T12:01:49+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.29386786-474a-4225-b5a8-01af21914456.T2C3GDNRHLB0H8.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640084020706",
+     "createdTime": "2026-09-10T12:01:47+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a7b60bb1-1bdb-4348-a6f7-d74f4701add9.TDELLX6DH96U5.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639915020705",
+     "createdTime": "2026-09-09T20:40:08+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3022216a-87b6-4497-bdbe-00273019e5ac.TCVZXGTY8CLXU.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639912020705",
+     "createdTime": "2026-09-09T20:25:06+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.60be0502-e3eb-4b04-82b1-450a63bb8b3d.T2ODNL4U2EWOR1.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639911020705",
+     "createdTime": "2026-09-09T20:20:07+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e0c3cfa2-6ed5-4611-ba1f-45945d606b54.T14JQRR8INSUXN.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639699020705",
+     "createdTime": "2026-09-09T02:33:41+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.08f7a49c-831e-4a80-b553-412a49b6886a.TEYB06ALP0BY5.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639697020705",
+     "createdTime": "2026-09-09T02:21:55+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.a4cb8fac-31f3-45da-9844-0c1c1fa9dff0.T72542IN92HZ6.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "639695020705",
+     "createdTime": "2026-09-09T02:14:43+00:00",
+     "dataStartTime": "2026-08-30T00:00:00+00:00",
+     "dataEndTime": "2026-09-05T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.64b14942-cf18-4e54-9f1b-cec901fc476e.T1V7CPRTQ72R8O.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637815020698",
+     "createdTime": "2026-09-02T02:29:07+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.16b1907a-71aa-4db1-8a62-896ac6db377d.T91TJ78UIH5D0.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637812020698",
+     "createdTime": "2026-09-02T02:20:22+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d5810390-2b9e-43b6-a444-ca6042989b63.T1WEE7A99A4WFT.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "637811020698",
+     "createdTime": "2026-09-02T02:13:07+00:00",
+     "dataStartTime": "2026-08-23T00:00:00+00:00",
+     "dataEndTime": "2026-08-29T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.3a54a95d-bc68-4e39-ad4c-032013577694.T1IWHIGW405LPF.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636348020692",
+     "createdTime": "2026-08-27T15:07:23+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b8ca778-aa02-4441-96e7-ed3f3c8045b6.T29XBPVITOZEGA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636344020692",
+     "createdTime": "2026-08-27T15:07:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f27d1be3-5aed-4a75-b46e-391efc782a76.T2W6XLVN5GU8W3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636332020692",
+     "createdTime": "2026-08-27T14:35:46+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b8ca778-aa02-4441-96e7-ed3f3c8045b6.T29XBPVITOZEGA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636329020692",
+     "createdTime": "2026-08-27T14:35:44+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f27d1be3-5aed-4a75-b46e-391efc782a76.T2W6XLVN5GU8W3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636318020692",
+     "createdTime": "2026-08-27T13:55:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1b8ca778-aa02-4441-96e7-ed3f3c8045b6.T29XBPVITOZEGA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636315020692",
+     "createdTime": "2026-08-27T13:55:19+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f27d1be3-5aed-4a75-b46e-391efc782a76.T2W6XLVN5GU8W3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635903020691",
+     "createdTime": "2026-08-26T02:27:34+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4a715e72-dca3-4430-bccf-4377e6165f72.TTQS50P9G1SII.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635901020691",
+     "createdTime": "2026-08-26T02:18:49+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.116bfbfd-9140-445c-96aa-fb5f8f76d375.T1455NMM4T02UY.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "635899020691",
+     "createdTime": "2026-08-26T02:11:34+00:00",
+     "dataStartTime": "2026-08-16T00:00:00+00:00",
+     "dataEndTime": "2026-08-22T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.1ccf0696-b442-4361-aeff-285bcdd60526.TS71C8K1FNEBT.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634050020684",
+     "createdTime": "2026-08-19T01:18:22+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.d9ac3d0d-9b82-46fd-ab2b-eba1a9928add.T2CW7BEFS1AMEW.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634043020684",
+     "createdTime": "2026-08-19T00:51:33+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.5a4620f5-d5f1-4f4f-bd4b-0b4e2e0fda7f.T2N92DLJVOHS02.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "634040020684",
+     "createdTime": "2026-08-19T00:29:17+00:00",
+     "dataStartTime": "2026-08-09T00:00:00+00:00",
+     "dataEndTime": "2026-08-15T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b0bed6e1-fa50-4d21-88e4-348a1aa4b02e.T2FBQ6JB3214JI.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632220020677",
+     "createdTime": "2026-08-12T00:11:40+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.549b195c-2851-4b41-9f93-27428015c321.T371OS1BCB1BJT.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632218020677",
+     "createdTime": "2026-08-12T00:07:54+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.6248324e-cfc0-46ce-b5a4-19d87e448ac4.T3NRSJXRMTQVOA.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "632217020677",
+     "createdTime": "2026-08-12T00:06:39+00:00",
+     "dataStartTime": "2026-08-02T00:00:00+00:00",
+     "dataEndTime": "2026-08-08T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c22fdae0-1e26-44e6-9188-99d45f97edaf.T2TCR4TP1BJOKU.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631783020675",
+     "createdTime": "2026-08-10T08:24:39+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.629e788f-d6d6-45a7-b263-87f274127611.T1TICB0LZ2AC7D.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "631781020675",
+     "createdTime": "2026-08-10T08:24:38+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.7c81260d-e3c3-4ec4-a9f7-3d7398010d0c.T3PDB30MHVC3ZI.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630900020672",
+     "createdTime": "2026-08-07T00:10:07+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.fe5b3ec3-2f4d-4a35-9464-9b8cf86b0a7a.T2MXLYMINXM7TD.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630899020672",
+     "createdTime": "2026-08-07T00:06:22+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c10b6116-20b3-495d-ba86-746fd1fce6af.T3GVBCM7SBU4N3.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630896020672",
+     "createdTime": "2026-08-07T00:05:07+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.192d9d37-4ac5-49dc-b5c9-bf06a374a6f1.T805VYQJJDP0B.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630702020671",
+     "createdTime": "2026-08-06T06:05:06+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.23e828fa-4af1-4fd9-9290-961d01ba8a50.T1LOQRWESEOV9Z.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630701020671",
+     "createdTime": "2026-08-06T06:01:34+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.5af926e9-6ec3-46ee-9bdd-83f716182e0c.T3GFM0Q9IW8HBM.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630699020671",
+     "createdTime": "2026-08-06T06:00:19+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.68973c03-776c-4fbb-86b1-307f1c078103.T3O6DKESMNT47Y.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630501020670",
+     "createdTime": "2026-08-05T11:59:11+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8c702d3d-aa34-4df4-a5ad-69d722a0522e.TR9SUBUJ4AD1L.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630500020670",
+     "createdTime": "2026-08-05T11:56:41+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.af845dca-7260-4a46-af20-a5abb7f7917c.T17IREC69MO01B.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "630499020670",
+     "createdTime": "2026-08-05T11:54:24+00:00",
+     "dataStartTime": "2026-07-26T00:00:00+00:00",
+     "dataEndTime": "2026-08-01T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c3572f29-c372-4c74-848e-8de92260931f.T3CGQ0ZALFOFLS.45000",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_REPEAT_PURCHASE_REPORT": [
+    {
+     "reportId": "649089020741",
+     "createdTime": "2026-10-15T14:18:36+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8095a8ad-e2bb-4bec-b423-8948601ead1d.TRMSJ3L1XF8A9.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649085020741",
+     "createdTime": "2026-10-15T14:18:34+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.923a4b84-d850-40fb-b939-2679430bf727.T14NON0MALCQN1.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647800020736",
+     "createdTime": "2026-10-10T13:15:48+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.69195a72-0a92-4c5f-b538-cc95aa750a33.T8HUHPJ083S5I.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647796020736",
+     "createdTime": "2026-10-10T13:15:46+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.837221e0-0efe-4caf-8c89-e69d01d7d290.TS1XAAF3INX36.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640089020706",
+     "createdTime": "2026-09-10T12:01:50+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.9808b6b8-6844-4a37-908f-a77dc2bc9211.TAZZ1B3MYW93A.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640085020706",
+     "createdTime": "2026-09-10T12:01:48+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.28ffcafe-dafd-4f84-8613-7e89733638b4.T2UQ7SVNN37OPX.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636349020692",
+     "createdTime": "2026-08-27T15:07:24+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4f2b1212-f54a-4721-8bd3-cff0d0d533e2.T2DJVFD22A2ORF.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636345020692",
+     "createdTime": "2026-08-27T15:07:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2edd1ec0-0a40-4f9a-aa33-88fb98638a61.TO34182GZ9F5G.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636333020692",
+     "createdTime": "2026-08-27T14:35:46+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4f2b1212-f54a-4721-8bd3-cff0d0d533e2.T2DJVFD22A2ORF.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636330020692",
+     "createdTime": "2026-08-27T14:35:45+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2edd1ec0-0a40-4f9a-aa33-88fb98638a61.TO34182GZ9F5G.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636326020692",
+     "createdTime": "2026-08-27T14:23:46+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2edd1ec0-0a40-4f9a-aa33-88fb98638a61.TO34182GZ9F5G.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636325020692",
+     "createdTime": "2026-08-27T14:15:16+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2c2d1ae6-7fa1-4eb2-8000-b41ff6423d66.T32F2XVRVR7SW4.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636324020692",
+     "createdTime": "2026-08-27T14:12:30+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ca2faf73-34f1-4d98-8e9c-0f0f391304cd.T3ID2XFKU0RTJ7.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636321020692",
+     "createdTime": "2026-08-27T14:07:47+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.c3078528-84dd-4b0a-8495-6135687addb0.T2O692F27UW1U.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636319020692",
+     "createdTime": "2026-08-27T13:55:21+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.976748e3-7419-4b26-8400-7fa887370eb5.T2DDKYIXCO3TNL.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636316020692",
+     "createdTime": "2026-08-27T13:55:20+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "FATAL",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.f192346e-7e2a-4f6a-9c3a-4c61d116ea3e.T1FTL790PX6N6D.2900",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_MARKET_BASKET_REPORT": [
+    {
+     "reportId": "649090020741",
+     "createdTime": "2026-10-15T14:18:36+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ba54ff87-f39e-480b-b432-5d72f2dcaefd.T3EP6ICOCRQFRJ.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "649086020741",
+     "createdTime": "2026-10-15T14:18:35+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e1710c52-a140-4a70-9b93-a875dbc1a2b8.T14NON0MALCQN1.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647801020736",
+     "createdTime": "2026-10-10T13:15:49+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.ec88a6da-51ca-4d64-b199-1a661a1ecbcf.TPR8J0IGHP200.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "647797020736",
+     "createdTime": "2026-10-10T13:15:47+00:00",
+     "dataStartTime": "2026-09-01T00:00:00+00:00",
+     "dataEndTime": "2026-09-30T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.2ea8eb00-5090-48b7-ab74-ac0acc051739.TE8KUQ5YEOOZI.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640090020706",
+     "createdTime": "2026-09-10T12:01:50+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.b7e808e3-3f50-4c11-8cdd-30b71e0f7a7c.T2G558JIJW8NB0.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "640086020706",
+     "createdTime": "2026-09-10T12:01:48+00:00",
+     "dataStartTime": "2026-08-01T00:00:00+00:00",
+     "dataEndTime": "2026-08-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.452f8645-b4b2-44fd-ab5e-a51d366f1a74.T176T8H94ABYYD.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636350020692",
+     "createdTime": "2026-08-27T15:07:24+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.4d5d4a7a-e796-4d6c-8c0b-2d5ed033d9c8.T1DTMKV4SSCKL2.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "636346020692",
+     "createdTime": "2026-08-27T15:07:22+00:00",
+     "dataStartTime": "2026-07-01T00:00:00+00:00",
+     "dataEndTime": "2026-07-31T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.e6bec3e3-9edf-4683-be0a-5627589f67ed.T1KN234ZXNY4AZ.88700",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ],
+   "GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT": [
+    {
+     "reportId": "652423020754",
+     "createdTime": "2026-10-28T17:21:47+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8653a0db-e590-4a5e-9012-08741b46678b.T2FY9FMLSEGNBO.5600",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    },
+    {
+     "reportId": "652418020754",
+     "createdTime": "2026-10-28T17:04:13+00:00",
+     "dataStartTime": "2026-10-18T00:00:00+00:00",
+     "dataEndTime": "2026-10-24T23:59:59+00:00",
+     "processingStatus": "DONE",
+     "reportDocumentId": "amzn1.spdoc.1.4.na.8653a0db-e590-4a5e-9012-08741b46678b.T2FY9FMLSEGNBO.5600",
+     "reportSpecification": null,
+     "err": null,
+     "body": null
+    }
+   ]
+  }
+ },
+ "sqp_docs": {
+  "652419020754": {
+   "spec": null,
+   "records": 218,
+   "by_period_asin": {
+    "2026-10-18..2026-10-24 B0GCBCW8RK": 2,
+    "2026-10-18..2026-10-24 B081T6QGD9": 11,
+    "2026-10-18..2026-10-24 B07PTQKZ82": 8,
+    "2026-10-18..2026-10-24 B09NBB4QP7": 10,
+    "2026-10-18..2026-10-24 B07ZTJM5WJ": 4,
+    "2026-10-18..2026-10-24 B07TJW4Y94": 13,
+    "2026-10-18..2026-10-24 B0G5QB4W6N": 100,
+    "2026-10-18..2026-10-24 B0G6VRGTPR": 5,
+    "2026-10-18..2026-10-24 B0GYSB85SH": 59,
+    "2026-10-18..2026-10-24 B0GYSJC1PM": 6
+   }
+  },
+  "652381020754": {
+   "spec": null,
+   "records": 5,
+   "by_period_asin": {
+    "2026-10-18..2026-10-24 B0F1ZG69J6": 1,
+    "2026-10-18..2026-10-24 B0DLWS1CLR": 1,
+    "2026-10-18..2026-10-24 B0DHCRN4J4": 1,
+    "2026-10-18..2026-10-24 B0DHCR5FTZ": 1,
+    "2026-10-18..2026-10-24 B0DHCQYP3M": 1
+   }
+  },
+  "652373020754": {
+   "spec": null,
+   "records": 29,
+   "by_period_asin": {
+    "2026-10-18..2026-10-24 B0DHCQ4PVG": 1,
+    "2026-10-18..2026-10-24 B0DHCQ7NBY": 2,
+    "2026-10-18..2026-10-24 B0DHCRR4DK": 2,
+    "2026-10-18..2026-10-24 B0DHCQB7W8": 1,
+    "2026-10-18..2026-10-24 B0F2GNNJ9J": 2,
+    "2026-10-18..2026-10-24 B0H46BMW1W": 1,
+    "2026-10-18..2026-10-24 B0F1P1C3RV": 1,
+    "2026-10-18..2026-10-24 B0G6VRGTPR": 5,
+    "2026-10-18..2026-10-24 B0DHCQ6RG3": 2,
+    "2026-10-18..2026-10-24 B0DHCR9WFD": 3,
+    "2026-10-18..2026-10-24 B0DHCQ4FPV": 2,
+    "2026-10-18..2026-10-24 B0F761QL6S": 1,
+    "2026-10-18..2026-10-24 B0GYSJC1PM": 6
+   }
+  },
+  "652370020754": {
+   "spec": null,
+   "records": 258,
+   "by_period_asin": {
+    "2026-10-18..2026-10-24 B081T6QGD9": 11,
+    "2026-10-18..2026-10-24 B09RBGJYXX": 10,
+    "2026-10-18..2026-10-24 B0GCBCW8RK": 2,
+    "2026-10-18..2026-10-24 B0DHCPX9W2": 11,
+    "2026-10-18..2026-10-24 B0DHCQ2RXY": 4,
+    "2026-10-18..2026-10-24 B0C1CYWSGD": 1,
+    "2026-10-18..2026-10-24 B0C8G3YZD4": 1,
+    "2026-10-18..2026-10-24 B07PTQKZ82": 8,
+    "2026-10-18..2026-10-24 B0DHCRL996": 11,
+    "2026-10-18..2026-10-24 B0FGJVGNTK": 1,
+    "2026-10-18..2026-10-24 B0DHCR7D4W": 6,
+    "2026-10-18..2026-10-24 B07TJW4Y94": 13,
+    "2026-10-18..2026-10-24 B0GYSB85SH": 59,
+    "2026-10-18..2026-10-24 B09NBB4QP7": 10,
+    "2026-10-18..2026-10-24 B0FGJST2KJ": 6,
+    "2026-10-18..2026-10-24 B07ZTJM5WJ": 4,
+    "2026-10-18..2026-10-24 B0G5QB4W6N": 100
+   }
+  },
+  "652356020754": {
+   "spec": null,
+   "records": 56,
+   "by_period_asin": {
+    "2026-10-18..2026-10-24 B0C1D1Y2C6": 4,
+    "2026-10-18..2026-10-24 B07TJW4Y94": 5,
+    "2026-10-18..2026-10-24 B09NBB4QP7": 22,
+    "2026-10-18..2026-10-24 B0C1CYWSGD": 3,
+    "2026-10-18..2026-10-24 B07PTQKZ82": 22
+   }
+  },
+  "652350020754": {
+   "spec": null,
+   "records": 0,
+   "by_period_asin": {}
+  },
+  "650615020747": {
+   "spec": null,
+   "records": 9,
+   "by_period_asin": {
+    "2026-10-11..2026-10-17 B0DHCR52YL": 1,
+    "2026-10-11..2026-10-17 B0DHCPX298": 2,
+    "2026-10-11..2026-10-17 B0GYSJC1PM": 2,
+    "2026-10-11..2026-10-17 B0DHCRR4DK": 2,
+    "2026-10-11..2026-10-17 B0DHCNQV22": 2
+   }
+  },
+  "650604020747": {
+   "spec": null,
+   "records": 32,
+   "by_period_asin": {
+    "2026-10-11..2026-10-17 B0DHCQ6RG3": 5,
+    "2026-10-11..2026-10-17 B0DHCQ3G2X": 6,
+    "2026-10-11..2026-10-17 B0F761QL6S": 1,
+    "2026-10-11..2026-10-17 B0DHCSFB2B": 3,
+    "2026-10-11..2026-10-17 B0DHCQB7W8": 2,
+    "2026-10-11..2026-10-17 B0G6VRGTPR": 7,
+    "2026-10-11..2026-10-17 B0DHCQ7NBY": 3,
+    "2026-10-11..2026-10-17 B0F2GNNJ9J": 1,
+    "2026-10-11..2026-10-17 B0GCBCW8RK": 4
+   }
+  },
+  "650601020747": {
+   "spec": null,
+   "records": 263,
+   "by_period_asin": {
+    "2026-10-11..2026-10-17 B09NBB4QP7": 14,
+    "2026-10-11..2026-10-17 B0DHCQ5WDK": 1,
+    "2026-10-11..2026-10-17 B07ZTJM5WJ": 4,
+    "2026-10-11..2026-10-17 B0DHCR7D4W": 2,
+    "2026-10-11..2026-10-17 B081T6QGD9": 12,
+    "2026-10-11..2026-10-17 B09RBGJYXX": 6,
+    "2026-10-11..2026-10-17 B07TJW4Y94": 10,
+    "2026-10-11..2026-10-17 B0C8G3YZD4": 1,
+    "2026-10-11..2026-10-17 B07PTQKZ82": 11,
+    "2026-10-11..2026-10-17 B0GYSB85SH": 61,
+    "2026-10-11..2026-10-17 B0DHCRF914": 3,
+    "2026-10-11..2026-10-17 B0DHCPX9W2": 8,
+    "2026-10-11..2026-10-17 B0FGJVGNTK": 5,
+    "2026-10-11..2026-10-17 B0DHCRL996": 18,
+    "2026-10-11..2026-10-17 B0G5QB4W6N": 100,
+    "2026-10-11..2026-10-17 B0FGJST2KJ": 7
+   }
+  },
+  "650576020747": {
+   "spec": null,
+   "records": 85,
+   "by_period_asin": {
+    "2026-10-11..2026-10-17 B09RBGJYXX": 1,
+    "2026-10-11..2026-10-17 B0C1CYWSGD": 15,
+    "2026-10-11..2026-10-17 B07PTQKZ82": 26,
+    "2026-10-11..2026-10-17 B09NBB4QP7": 30,
+    "2026-10-11..2026-10-17 B07TJW4Y94": 11,
+    "2026-10-11..2026-10-17 B0C1D1Y2C6": 2
+   }
+  },
+  "650573020747": {
+   "spec": null,
+   "records": 1,
+   "by_period_asin": {
+    "2026-10-11..2026-10-17 B07TJW4Y94": 1
+   }
+  },
+  "649087020741": {
+   "spec": null,
+   "records": 76,
+   "by_period_asin": {
+    "2026-09-01..2026-09-30 B09NBB4QP7": 76
+   }
+  },
+  "649083020741": {
+   "spec": null,
+   "records": 185,
+   "by_period_asin": {
+    "2026-09-01..2026-09-30 B0G5QB4W6N": 100,
+    "2026-09-01..2026-09-30 B081T6QGD9": 33,
+    "2026-09-01..2026-09-30 B09NBB4QP7": 52
+   }
+  },
+  "648835020740": {
+   "spec": null,
+   "records": 9,
+   "by_period_asin": {
+    "2026-10-04..2026-10-10 B0F1ZK167K": 1,
+    "2026-10-04..2026-10-10 B0DHCQYP3M": 2,
+    "2026-10-04..2026-10-10 B0DHCRR4DK": 1,
+    "2026-10-04..2026-10-10 B0F761QL6S": 1,
+    "2026-10-04..2026-10-10 B0GYSJC1PM": 3,
+    "2026-10-04..2026-10-10 B0DHCPZPBV": 1
+   }
+  },
+  "648827020740": {
+   "spec": null,
+   "records": 30,
+   "by_period_asin": {
+    "2026-10-04..2026-10-10 B0DHCSFB2B": 3,
+    "2026-10-04..2026-10-10 B0DHCRCW3J": 1,
+    "2026-10-04..2026-10-10 B0DHCQ7NBY": 1,
+    "2026-10-04..2026-10-10 B0F1P1C3RV": 1,
+    "2026-10-04..2026-10-10 B0G6VRGTPR": 4,
+    "2026-10-04..2026-10-10 B0DHCQ4FPV": 2,
+    "2026-10-04..2026-10-10 B0F2GNNJ9J": 1,
+    "2026-10-04..2026-10-10 B0DHCQB7W8": 5,
+    "2026-10-04..2026-10-10 B0DHCR52YL": 1,
+    "2026-10-04..2026-10-10 B0DHCQ6RG3": 1,
+    "2026-10-04..2026-10-10 B0DHCR9WFD": 3,
+    "2026-10-04..2026-10-10 B0DHCQ2RXY": 3,
+    "2026-10-04..2026-10-10 B0DHCQ3G2X": 4
+   }
+  },
+  "648820020740": {
+   "spec": null,
+   "records": 297,
+   "by_period_asin": {
+    "2026-10-04..2026-10-10 B0DHCR7D4W": 6,
+    "2026-10-04..2026-10-10 B0DHCRL996": 10,
+    "2026-10-04..2026-10-10 B07ZTJM5WJ": 8,
+    "2026-10-04..2026-10-10 B07TJW4Y94": 17,
+    "2026-10-04..2026-10-10 B09NBB4QP7": 19,
+    "2026-10-04..2026-10-10 B081T6QGD9": 11,
+    "2026-10-04..2026-10-10 B09RBGJYXX": 14,
+    "2026-10-04..2026-10-10 B0DHCPX9W2": 22,
+    "2026-10-04..2026-10-10 B0FGJVGNTK": 1,
+    "2026-10-04..2026-10-10 B0C8G3YZD4": 1,
+    "2026-10-04..2026-10-10 B0GCBCW8RK": 2,
+    "2026-10-04..2026-10-10 B0GYSB85SH": 53,
+    "2026-10-04..2026-10-10 B07PTQKZ82": 16,
+    "2026-10-04..2026-10-10 B0G5QB4W6N": 100,
+    "2026-10-04..2026-10-10 B0FGJST2KJ": 10,
+    "2026-10-04..2026-10-10 B0C1CYWSGD": 2,
+    "2026-10-04..2026-10-10 B0DHCRF914": 5
+   }
+  },
+  "648799020740": {
+   "spec": null,
+   "records": 96,
+   "by_period_asin": {
+    "2026-10-04..2026-10-10 B0C1D1Y2C6": 3,
+    "2026-10-04..2026-10-10 B09RBGJYXX": 3,
+    "2026-10-04..2026-10-10 B09NBB4QP7": 48,
+    "2026-10-04..2026-10-10 B07TJW4Y94": 9,
+    "2026-10-04..2026-10-10 B07PTQKZ82": 14,
+    "2026-10-04..2026-10-10 B0C1CYWSGD": 19
+   }
+  },
+  "648775020740": {
+   "spec": null,
+   "records": 4,
+   "by_period_asin": {
+    "2026-10-04..2026-10-10 B07TJW4Y94": 4
+   }
+  },
+  "647798020736": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.ebc94558-ae00-44b2-8742-87acaa2c92b6.T2UYUP4UY8L79U.23000"
+  },
+  "647794020736": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.ea72fde4-0883-46c0-9822-f211792d0695.TC1YHVJGN17LY.23000"
+  },
+  "647055020733": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.068d2f2b-eade-4309-8ccc-4acec4bfad38.T3ODT5D1JCII7F.23000"
+  },
+  "647031020733": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.7c0ee9d7-af6d-4c23-bb81-c56ab3020876.T2DZNYSERM1ZH4.23000"
+  },
+  "647012020733": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.a6899e06-6df4-4122-b5fa-4ce986ffd2c9.T2GQYB3ZSWBSLK.23000"
+  },
+  "647005020733": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.59d518a5-f959-4a6c-98a0-d5c5ad9b19c1.T2OPNTV1DVGBEL.23000"
+  },
+  "647000020733": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.04cc37be-ee6d-40b0-89e3-54e155835bbf.T3XD8PNC0WQ8Y.23000"
+  },
+  "645249020726": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.16cc3f20-bc17-4724-8dd4-ce147a5d3591.TB3CNFTMSRK0A.23000"
+  },
+  "645245020726": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.4f29475b-c79b-4cfd-8ea9-0886633a394c.T20LWMBHSZUXAH.23000"
+  },
+  "645239020726": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.7cb2f9dc-361f-479d-8617-4f9900e01f5c.T3TKINXJ8NSB7C.23000"
+  },
+  "645231020726": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.21f52dd4-e628-498c-995f-8a9f7ae3d62c.T1Y2KCI7I2ZVJO.23000"
+  },
+  "645225020726": {
+   "spec": null,
+   "records": 1,
+   "by_period_asin": {
+    "2026-09-20..2026-09-26 B07TJW4Y94": 1
+   }
+  },
+  "643461020719": {
+   "spec": null,
+   "records": 2,
+   "by_period_asin": {
+    "2026-09-13..2026-09-19 B07TJW4Y94": 1,
+    "2026-09-13..2026-09-19 B09RBGJYXX": 1
+   }
+  },
+  "643457020719": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.e6360e3e-e7f0-4111-8e07-eb42a97c99b6.T1YXVEUGURDF5A.23000"
+  },
+  "643448020719": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.455f948d-ce45-4ff3-88f8-70a53a81ff1d.T2EZ3HLF3J4QQP.23000"
+  },
+  "643446020719": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.9149cc31-7dd6-4b19-bad0-c359db550eff.T2LKV62H33M7X7.23000"
+  },
+  "643442020719": {
+   "spec": null,
+   "records": 318,
+   "by_period_asin": {
+    "2026-09-13..2026-09-19 B0FGJST2KJ": 33,
+    "2026-09-13..2026-09-19 B081T6QGD9": 9,
+    "2026-09-13..2026-09-19 B07PTQKZ82": 7,
+    "2026-09-13..2026-09-19 B09RBGJYXX": 7,
+    "2026-09-13..2026-09-19 B0C8G3YZD4": 2,
+    "2026-09-13..2026-09-19 B09NBB4QP7": 13,
+    "2026-09-13..2026-09-19 B0DHCRF914": 9,
+    "2026-09-13..2026-09-19 B07ZTJM5WJ": 6,
+    "2026-09-13..2026-09-19 B0GCBCW8RK": 6,
+    "2026-09-13..2026-09-19 B0DHCQ6RG3": 1,
+    "2026-09-13..2026-09-19 B07TJW4Y94": 17,
+    "2026-09-13..2026-09-19 B0DHCPX9W2": 19,
+    "2026-09-13..2026-09-19 B0DHCRL996": 9,
+    "2026-09-13..2026-09-19 B0FGJVGNTK": 2,
+    "2026-09-13..2026-09-19 B0G5QB4W6N": 100,
+    "2026-09-13..2026-09-19 B0DHCR7D4W": 11,
+    "2026-09-13..2026-09-19 B0GYSB85SH": 67
+   }
+  },
+  "641662020712": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.32cd44de-c3ca-4f42-93b0-f57d379e4d85.T1OF7EHZ0VQ3AJ.23000"
+  },
+  "641659020712": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.d01b440d-43d3-4374-abca-9240d1626d04.T1UB3MUO855FEG.23000"
+  },
+  "641658020712": {
+   "spec": null,
+   "records": 24,
+   "by_period_asin": {
+    "2026-09-06..2026-09-12 B0DHCR52YL": 1,
+    "2026-09-06..2026-09-12 B0DHCQ4FPV": 2,
+    "2026-09-06..2026-09-12 B0DHCQ6RG3": 5,
+    "2026-09-06..2026-09-12 B0DHCR9WFD": 3,
+    "2026-09-06..2026-09-12 B0DHCQ2RXY": 2,
+    "2026-09-06..2026-09-12 B0DHCRR4DK": 1,
+    "2026-09-06..2026-09-12 B0DHCQ5WDK": 3,
+    "2026-09-06..2026-09-12 B0G6VRGTPR": 2,
+    "2026-09-06..2026-09-12 B0DHCQ3G2X": 2,
+    "2026-09-06..2026-09-12 B0H46GS7CC": 1,
+    "2026-09-06..2026-09-12 B0C1CYWSGD": 1,
+    "2026-09-06..2026-09-12 B0H46BMW1W": 1
+   }
+  },
+  "641649020712": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.1b4a3f8f-4b16-48a6-8527-bd0ca48b0323.TLN4VWKPASD5V.23000"
+  },
+  "641642020712": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.526e19de-c351-45ac-a84e-8c688cd729b4.T33GMJIDZG03JM.23000"
+  },
+  "640087020706": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.65a29752-9d65-44c8-b72b-43dce5c8db85.T16LSO701KDG9M.23000"
+  },
+  "640083020706": {
+   "spec": null,
+   "records": 191,
+   "by_period_asin": {
+    "2026-08-01..2026-08-31 B081T6QGD9": 39,
+    "2026-08-01..2026-08-31 B09NBB4QP7": 52,
+    "2026-08-01..2026-08-31 B0G5QB4W6N": 100
+   }
+  },
+  "639950020705": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.7d929f6c-6e22-4fec-89c6-ec8f3e54e947.TMXCW0R35TIAL.23000"
+  },
+  "639938020705": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.74c59b3d-570d-432d-a369-c1622dc58f98.T1O3ZFBB6ZJ7G1.23000"
+  },
+  "639931020705": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.c493a586-69ed-48f8-af0c-ddd0dc1022dc.T3IFBDKGHFZF3V.23000"
+  },
+  "639926020705": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.15865bc0-4ae0-480b-9a52-a5304a6c1c93.T2FC4W8013GKBH.23000"
+  },
+  "639925020705": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.b85fa092-c283-4c52-ae87-bf82f70b411f.T1NAPUOHBJN1ZF.23000"
+  },
+  "637919020698": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.87a736b2-82c4-44fc-8e60-f56c4938f653.T20N9VV7BP9ZMK.23000"
+  },
+  "637900020698": {
+   "spec": null,
+   "records": 62,
+   "by_period_asin": {
+    "2026-08-23..2026-08-29 B0DHCR52YL": 5,
+    "2026-08-23..2026-08-29 B0DHCQ6RG3": 4,
+    "2026-08-23..2026-08-29 B0DHCQ2RXY": 4,
+    "2026-08-23..2026-08-29 B0DHCQ4FPV": 1,
+    "2026-08-23..2026-08-29 B0DHCQ4PVG": 6,
+    "2026-08-23..2026-08-29 B0FGJVGNTK": 2,
+    "2026-08-23..2026-08-29 B0DHCQ7NBY": 1,
+    "2026-08-23..2026-08-29 B0DHCQ5WDK": 4,
+    "2026-08-23..2026-08-29 B0DHCRR4DK": 1,
+    "2026-08-23..2026-08-29 B0DHCRJ52S": 2,
+    "2026-08-23..2026-08-29 B0H46BMW1W": 22,
+    "2026-08-23..2026-08-29 B0GCBCW8RK": 4,
+    "2026-08-23..2026-08-29 B0DHCQ3G2X": 3,
+    "2026-08-23..2026-08-29 B0DHCQB7W8": 3
+   }
+  },
+  "637891020698": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.b6798260-99a6-4796-ac8b-bd078e7ba7be.TM53HEJ2DEKD2.23000"
+  },
+  "637876020698": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.3937b836-70ba-475e-bdf6-7fa393214421.T2IHNCROIZHVAO.23000"
+  },
+  "637858020698": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.7eab3905-99e6-4de0-8bae-03305ac0716f.T2486WN9A3C3CA.23000"
+  },
+  "636347020692": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000"
+  },
+  "636343020692": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000"
+  },
+  "636331020692": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000"
+  },
+  "636328020692": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000"
+  },
+  "636317020692": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.d2f45c54-3f92-4caf-aef2-57ca5d0d671b.T1RJF7SZ3XQ6O.23000"
+  },
+  "636314020692": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.747b21de-4550-433d-9036-38f2fbde4f1a.THQW37T0Y28V4.23000"
+  },
+  "635991020691": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.ddb94608-88e3-44b6-a7bf-b0ef83a9899d.TPLPVLR337BVI.23000"
+  },
+  "635984020691": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.0ae70b91-2fc1-4e2e-bc9b-b9063874ddb0.T34GN7NCEM8SI1.23000"
+  },
+  "635979020691": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.8102c75b-bed3-4891-b379-6be8a14fb437.TT9GRAUX7AUZ9.23000"
+  },
+  "635974020691": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.80e6a320-a930-4b94-acfd-a1b1d9282398.T2H41EZ9F547YZ.23000"
+  },
+  "635939020691": {
+   "spec": null,
+   "records": 58,
+   "by_period_asin": {
+    "2026-08-16..2026-08-22 B0C1CYWSGD": 17,
+    "2026-08-16..2026-08-22 B09RBGJYXX": 3,
+    "2026-08-16..2026-08-22 B09NBB4QP7": 18,
+    "2026-08-16..2026-08-22 B07TJW4Y94": 20
+   }
+  },
+  "634130020684": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.9460d0dd-2b56-4c4e-a29a-1f874fd92f40.T3F0DWQUG13URV.23000"
+  },
+  "634125020684": {
+   "spec": null,
+   "records": 2,
+   "by_period_asin": {
+    "2026-08-09..2026-08-15 B07TJW4Y94": 2
+   }
+  },
+  "634121020684": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.40b2fa01-a58d-47df-be0d-607f3b3dae65.T10K6EQJ8CPPQ4.23000"
+  },
+  "634106020684": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.891a0ade-3100-45a3-93c7-766b9dcf2e5d.T2V51RHCBM3508.23000"
+  },
+  "634093020684": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.b61f00a6-e855-4978-bffb-3537d6e72fdb.T3QBW1U3BWCWC7.23000"
+  },
+  "634091020684": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.aff6c2fe-6a76-4175-9459-693e8ff8604b.T3H71XGNJH2QTG.23000"
+  },
+  "632295020677": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.4231303b-2fb7-4647-a7b3-dd8f0d11351e.T327BEJ5L0K68I.23000"
+  },
+  "632264020677": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.4d00318b-ee2d-4cdb-b0db-e3a5ed0e84da.TDJ4FM9OFCPQ9.23000"
+  },
+  "632261020677": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.9bb39183-acaa-4287-bee1-ef46c6e0d177.T36YRGAASUGVTX.23000"
+  },
+  "632249020677": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.0dc7d839-6fc8-4811-b73f-8fbf0da6d02e.T31LY3C69ABKGI.23000"
+  },
+  "632241020677": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.82fe4e4f-2a3e-42bc-9f04-9c251d101e9c.T31MTCMUXWITI8.23000"
+  },
+  "632238020677": {
+   "spec": null,
+   "records": 303,
+   "by_period_asin": {
+    "2026-08-02..2026-08-08 B09NBB4QP7": 12,
+    "2026-08-02..2026-08-08 B07TJW4Y94": 8,
+    "2026-08-02..2026-08-08 B081T6QGD9": 14,
+    "2026-08-02..2026-08-08 B07ZTJM5WJ": 1,
+    "2026-08-02..2026-08-08 B0GYSB85SH": 60,
+    "2026-08-02..2026-08-08 B0DHCR7D4W": 9,
+    "2026-08-02..2026-08-08 B0G5QB4W6N": 84,
+    "2026-08-02..2026-08-08 B09RBGJYXX": 3,
+    "2026-08-02..2026-08-08 B07PTQKZ82": 9,
+    "2026-08-02..2026-08-08 B0DHCNMVV1": 1,
+    "2026-08-02..2026-08-08 B0DHCPX9W2": 18,
+    "2026-08-02..2026-08-08 B0FGJST2KJ": 27,
+    "2026-08-02..2026-08-08 B08WX27F7F": 2,
+    "2026-08-02..2026-08-08 B0FGJVGNTK": 1,
+    "2026-08-02..2026-08-08 B0H46BMW1W": 13,
+    "2026-08-02..2026-08-08 B0GYSJC1PM": 1,
+    "2026-08-02..2026-08-08 B0H46GS7CC": 40
+   }
+  },
+  "631782020675": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.7dfbe100-b734-4e63-a6c2-ee67e906bd0d.T31WL7DZ5LVUO2.23000"
+  },
+  "631780020675": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.a458cd62-1265-4028-ad84-2ea8024e876d.T2EGINM9P5GQ6Q.23000"
+  },
+  "630941020672": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.de9e2e2e-46c7-48f1-80ee-347d05ecdfcf.T1353TG9E4GHUX.23000"
+  },
+  "630918020672": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.9b550a69-36ec-42d8-997b-ff53b36bb758.T303D3DPQFPQP6.23000"
+  },
+  "630913020672": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.a25f4be3-d3be-4e29-878d-172a5acd6be3.T3HNFMQLYFXAEG.23000"
+  },
+  "630912020672": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.d79ae3d2-84e6-41de-8e86-e3e61e0f4237.T3MD0QICYGXTXN.23000"
+  },
+  "630904020672": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.6c17134b-358b-409a-884e-246c5e625550.T3O4U2CLSXDJLU.23000"
+  },
+  "630901020672": {
+   "error": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.0ab9baf9-2e7f-43b1-a1ac-540d003217a4.T29M2QGKXX6WZ.23000"
+  }
+ },
+ "probes": {
+  "USA": {
+   "SEARCH_TERMS_WEEK": {
+    "type": "GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT",
+    "http": 202,
+    "body": "{\"reportId\":\"652423020754\"}",
+    "final": "DONE",
+    "doc_err": "429 Client Error:  for url: https://sellingpartnerapi-na.amazon.com/reports/2021-06-30/documents/amzn1.spdoc.1.4.na.8653a0db-e590-4a5e-9012-08741b46678b.T2FY9FMLSEGNBO.5600"
+   },
+   "SQP_WEEK_10ASIN": {
+    "type": "GET_BRAND_ANALYTICS_SEARCH_QUERY_PERFORMANCE_REPORT",
+    "http": 202,
+    "body": "{\"reportId\":\"652424020754\"}"
+   },
+   "DEMOGRAPHICS": {
+    "type": "GET_BRAND_ANALYTICS_DEMOGRAPHICS_REPORT",
+    "http": 400,
+    "body": "{\n  \"errors\": [\n    {\n      \"code\": \"InvalidInput\",\n      \"message\": \"Invalid Report Type _GET_BRAND_ANALYTICS_DEMOGRAPHICS_REPORT_\",\n      \"details\": \"\"\n    }\n  ]\n}"
+   },
+   "CUSTOMER_LOYALTY": {
+    "type": "GET_BRAND_ANALYTICS_CUSTOMER_LOYALTY_REPORT",
+    "http": 400,
+    "body": "{\n  \"errors\": [\n    {\n      \"code\": \"InvalidInput\",\n      \"message\": \"Invalid Report Type _GET_BRAND_ANALYTICS_CUSTOMER_LOYALTY_REPORT_\",\n      \"details\": \"\"\n    }\n  ]\n}"
+   },
+   "CUSTOMER_JOURNEY": {
+    "type": "GET_BRAND_ANALYTICS_CUSTOMER_JOURNEY_REPORT",
+    "http": 400,
+    "body": "{\n  \"errors\": [\n    {\n      \"code\": \"InvalidInput\",\n      \"message\": \"Invalid Report Type _GET_BRAND_ANALYTICS_CUSTOMER_JOURNEY_REPORT_\",\n      \"details\": \"\"\n    }\n  ]\n}"
+   },
+   "SQP_BRAND_VIEW": {
+    "type": "GET_BRAND_ANALYTICS_SQP_BRAND_VIEW_REPORT",
+    "http": 400,
+    "body": "{\n  \"errors\": [\n    {\n      \"code\": \"InvalidInput\",\n      \"message\": \"Invalid Report Type _GET_BRAND_ANALYTICS_SQP_BRAND_VIEW_REPORT_\",\n      \"details\": \"\"\n    }\n  ]\n}"
+   },
+   "SEARCH_FUNNEL_OUTLIERS": {
+    "type": "GET_BRAND_ANALYTICS_SEARCH_FUNNEL_OUTLIERS_REPORT",
+    "http": 400,
+    "body": "{\n  \"errors\": [\n    {\n      \"code\": \"InvalidInput\",\n      \"message\": \"Invalid Report Type _GET_BRAND_ANALYTICS_SEARCH_FUNNEL_OUTLIERS_REPORT_\",\n      \"details\": \"\"\n    }\n  ]\n}"
+   },
+   "AMAZONS_CHOICE": {
+    "type": "GET_BRAND_ANALYTICS_AMAZONS_CHOICE_BADGE_REPORT",
+    "http": 400,
+    "body": "{\n  \"errors\": [\n    {\n      \"code\": \"InvalidInput\",\n      \"message\": \"Invalid Report Type _GET_BRAND_ANALYTICS_AMAZONS_CHOICE_BADGE_REPORT_\",\n      \"details\": \"\"\n    }\n  ]\n}"
+   }
+  }
+ }
+}
