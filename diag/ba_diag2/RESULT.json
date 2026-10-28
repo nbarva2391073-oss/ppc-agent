@@ -1,0 +1,56 @@
+{
+ "catalog_probe_request": {
+  "http": 202,
+  "body": "{\"reportId\":\"652438020754\"}"
+ },
+ "search_terms": {
+  "compressed_bytes": 690890080,
+  "decompressed_scanned": 1505435211,
+  "head": "{\n  \"reportSpecification\" : {\n    \"reportType\" : \"GET_BRAND_ANALYTICS_SEARCH_TERMS_REPORT\",\n    \"reportOptions\" : {\n      \"reportPeriod\" : \"WEEK\"\n    },\n    \"dataStartTime\" : \"2026-10-18\",\n    \"dataEndTime\" : \"2026-10-24\",\n    \"marketplaceIds\" : [ \"ATVPDKIKX0DER\" ]\n  },\n  \"dataByDepartmentAndSearchTerm\" : [ {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"needoh\",\n    \"searchFrequencyRank\" : 1,\n    \"clickedAsin\" : \"B0DXRKN7KY\",\n    \"clickedItemName\" : \"Schylling NeeDoh Teenie 10-Pack - Variety of Mini Squish Toys | Includes Original, Swirl, Ripples, Glow, Nice Ice Baby\",\n    \"clickShareRank\" : 1,\n    \"clickShare\" : 0.2121,\n    \"conversionShare\" : 0.0329\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"needoh\",\n    \"searchFrequencyRank\" : 1,\n    \"clickedAsin\" : \"B0GPY41JGK\",\n    \"clickedItemName\" : \"Schylling NeeDoh Squishmas Advent Calendar (Pack of 1) | Christmas Countdown with 24 Mini Squeeze Toys\",\n    \"clickShareRank\" : 2,\n    \"clickShare\" : 0.1118,\n    \"conversionShare\" : 0.0352\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"needoh\",\n    \"searchFrequencyRank\" : 1,\n    \"clickedAsin\" : \"B0DV4BD3H2\",\n    \"clickedItemName\" : \"Schylling NeeDoh Nice Cube Swirl - Color May Vary (1 Per Pack) | Sensory Toy with a Super Solid Squish - Unique, Swirling Color Blend\",\n    \"clickShareRank\" : 3,\n    \"clickShare\" : 0.0508,\n    \"conversionShare\" : 0.0230\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"halloween costumes for women\",\n    \"searchFrequencyRank\" : 2,\n    \"clickedAsin\" : \"B0BF4X9752\",\n    \"clickedItemName\" : \"ReneeCho Mona lisa Famous Paintings Costume Halloween Adult Women Funny Cerative\",\n    \"clickShareRank\" : 1,\n    \"clickShare\" : 0.0125,\n    \"conversionShare\" : 0.0068\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"halloween costumes for women\",\n    \"searchFrequencyRank\" : 2,\n    \"clickedAsin\" : \"B004UULK7S\",\n    \"clickedItemName\" : \"CARDIAC ARREST / ADULT\",\n    \"clickShareRank\" : 2,\n    \"clickShare\" : 0.0109,\n    \"conversionShare\" : 0.0008\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"halloween costumes for women\",\n    \"searchFrequencyRank\" : 2,\n    \"clickedAsin\" : \"B0D9NGP8GB\",\n    \"clickedItemName\" : \"GALLETY Bat Costume Women, Glow-in-the-Dark Bat Wings Adult with Headband and Mask for Halloween Parties\",\n    \"clickShareRank\" : 3,\n    \"clickShare\" : 0.0105,\n    \"conversionShare\" : 0.0018\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"carrie\",\n    \"searchFrequencyRank\" : 3,\n    \"clickedAsin\" : \"B0H8V6XRQJ\",\n    \"clickedItemName\" : \"Carrie - Season 1\",\n    \"clickShareRank\" : 1,\n    \"clickShare\" : 0.3538,\n    \"conversionShare\" : 0.0000\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"carrie\",\n    \"searchFrequencyRank\" : 3,\n    \"clickedAsin\" : \"B0HHRP3JDN\",\n    \"clickedItemName\" : \"FIRST PERIOD\",\n    \"clickShareRank\" : 2,\n    \"clickShare\" : 0.2325,\n    \"conversionShare\" : 0.0000\n  }, {\n    \"departmentName\" : \"Amazon.com\"",
+  "exact_hits": 6,
+  "hit_examples": [
+   " Reversible Cape Gloves Bowtie Rose Gothic Cosplay Dress up Party\",\n    \"clickShareRank\" : 3,\n    \"clickShare\" : 0.0719,\n    \"conversionShare\" : 0.0500\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"pheromone\",\n    \"searchFrequencyRank\" : 483023,\n    \"clickedAsin\" : \"B0F31DCL4S\",\n    \"clickedItemName\" : \"Pheromones Perfumes for Women,Long Lasting Roll on Perfume Oil 0.34 fl.oz | (10ml)\",\n    \"clickShareRank\" : 1,\n    \"clickShare\" : 0.1176,\n    \"conversionShare\" : 0.1000\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"pheromone\",\n    \"searchFrequencyRank\" : 483023,\n    \"clickedAsin\" : \"B",
+   "es for Women,Long Lasting Roll on Perfume Oil 0.34 fl.oz | (10ml)\",\n    \"clickShareRank\" : 1,\n    \"clickShare\" : 0.1176,\n    \"conversionShare\" : 0.1000\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"pheromone\",\n    \"searchFrequencyRank\" : 483023,\n    \"clickedAsin\" : \"B00EJDG7XI\",\n    \"clickedItemName\" : \"Pure Instinct Roll-On - The Original Pheromone Infused Essential Oil Perfume Cologne - Unisex For Men and Women - TSA Ready\",\n    \"clickShareRank\" : 2,\n    \"clickShare\" : 0.0654,\n    \"conversionShare\" : 0.0500\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"pheromone\",\n    \"searchFreque",
+   "ential Oil Perfume Cologne - Unisex For Men and Women - TSA Ready\",\n    \"clickShareRank\" : 2,\n    \"clickShare\" : 0.0654,\n    \"conversionShare\" : 0.0500\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"pheromone\",\n    \"searchFrequencyRank\" : 483023,\n    \"clickedAsin\" : \"B096LB7G9L\",\n    \"clickedItemName\" : \"Pure Instinct Roll-On - The Original Pheromone Infused Essential Oil Perfume Cologne - TSA Ready (Crave - Women)\",\n    \"clickShareRank\" : 3,\n    \"clickShare\" : 0.0588,\n    \"conversionShare\" : 0.1000\n  }, {\n    \"departmentName\" : \"Amazon.com\",\n    \"searchTerm\" : \"philips advent bottles\",\n    \"searchFreq"
+  ],
+  "stopped_early": false
+ },
+ "catalog_probe_status": "DONE",
+ "catalog_probe_rows": [
+  {
+   "asin": "B07TJW4Y94",
+   "start": "2026-06-21",
+   "end": "2026-06-27",
+   "impr": 1900,
+   "clicks": 7
+  },
+  {
+   "asin": "B09NBB4QP7",
+   "start": "2026-06-21",
+   "end": "2026-06-27",
+   "impr": 1987,
+   "clicks": 11
+  },
+  {
+   "asin": "B0G5QB4W6N",
+   "start": "2026-06-21",
+   "end": "2026-06-27",
+   "impr": 7933,
+   "clicks": 43
+  }
+ ],
+ "sheet_2026_26_expected": {
+  "B0G5QB4W6N": [
+   6878,
+   37
+  ],
+  "B09NBB4QP7": [
+   1688,
+   16
+  ],
+  "B07TJW4Y94": [
+   1652,
+   2
+  ]
+ }
+}
