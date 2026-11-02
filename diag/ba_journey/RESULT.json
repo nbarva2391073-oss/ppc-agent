@@ -1,0 +1,3940 @@
+{
+ "files": [
+  {
+   "path": "april/Trends_United_States_ALFAMARKER_Monthly_2026_April.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/Trends_United_States_Monthly_ALFAMARKER_2026_April.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "april/US_Demographics_Simple_Month_2026_04_30.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]"
+   ]
+  },
+  {
+   "path": "april/US_Market_Basket_Analysis_Simple_Month_2026_04_30.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 21,
+   "meta": []
+  },
+  {
+   "path": "april/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_04_30.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "april/US_Search_Catalog_Performance_Simple_Month_2026_04_30.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 57,
+   "meta": []
+  },
+  {
+   "path": "april/US_Search_Query_Performance_Brand_View_Simple_Month_2026_04_30.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "april/US_Top_Search_Terms_Simple_Month_2026_04_30 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 44,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]"
+   ]
+  },
+  {
+   "path": "april/US_Top_Search_Terms_Simple_Month_2026_04_30.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 27,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"April\"]"
+   ]
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_2026_August (1).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "New to Brand Customers",
+    "Repeat Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_2026_August (2).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Consideration",
+    "Customers in Intent",
+    "Customers Viewed Detail Page",
+    "Customers Visited Brand Store",
+    "High Potential Consideration Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_2026_August (3).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Branded Search Customers",
+    "Branded Search Ratio"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_2026_August (4).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Intent",
+    "New to Brand Customers",
+    "Customers Added to Cart",
+    "Customers Added to Wish List",
+    "Customers Saved for Later"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_2026_August.csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Branded Search Customers",
+    "Branded Search Ratio"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_At_Risk_customers_2026_August.csv",
+   "type": null,
+   "headers": [
+    "Date",
+    "Segment Customers",
+    "Segment Sales",
+    "Segment Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders"
+   ],
+   "rows": 0,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_Hibernating_customers_2026_August.csv",
+   "type": null,
+   "headers": [
+    "Date",
+    "Segment Customers",
+    "Segment Sales",
+    "Segment Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders"
+   ],
+   "rows": 0,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_Promising_customers_2026_August.csv",
+   "type": null,
+   "headers": [
+    "Date",
+    "Segment Customers",
+    "Segment Sales",
+    "Segment Orders",
+    "Average Sales per Customer",
+    "Average Orders per Customer",
+    "Average Order Value per Customer",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_ALFAMARKER_Monthly_Top_Tier_customers_2026_August.csv",
+   "type": null,
+   "headers": [
+    "Date",
+    "Segment Customers",
+    "Segment Sales",
+    "Segment Orders",
+    "Average Sales per Customer",
+    "Average Orders per Customer",
+    "Average Order Value per Customer",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/Trends_United_States_Monthly_ALFAMARKER_2026_August.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "august/US_Demographics_Simple_Month_2026_08_31.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ]
+  },
+  {
+   "path": "august/US_Market_Basket_Analysis_Simple_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 24,
+   "meta": []
+  },
+  {
+   "path": "august/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "august/US_Search_Catalog_Performance_Simple_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 56,
+   "meta": []
+  },
+  {
+   "path": "august/US_Search_Query_Performance_Brand_View_Amazons_Choice_Badge_Data_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ],
+   "rows": 4,
+   "meta": []
+  },
+  {
+   "path": "august/US_Search_Query_Performance_Brand_View_Comprehensive_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ],
+   "rows": 1508,
+   "meta": []
+  },
+  {
+   "path": "august/US_Search_Query_Performance_Brand_View_Search_Funnel_Outliers_Data_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ],
+   "rows": 21,
+   "meta": []
+  },
+  {
+   "path": "august/US_Search_Query_Performance_Brand_View_Simple_Month_2026_08_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "august/US_Top_Search_Terms_Simple_Month_2026_08_31 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 24,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ]
+  },
+  {
+   "path": "august/US_Top_Search_Terms_Simple_Month_2026_08_31.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 41,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"August\"]"
+   ]
+  },
+  {
+   "path": "february/Trends_United_States_ALFAMARKER_Monthly_2026_February.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/Trends_United_States_Monthly_ALFAMARKER_2026_February.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "february/US_Demographics_Simple_Month_2026_02_28.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]"
+   ]
+  },
+  {
+   "path": "february/US_Market_Basket_Analysis_Simple_Month_2026_02_28.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]"
+   ],
+   "rows": 47,
+   "meta": []
+  },
+  {
+   "path": "february/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_02_28.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "february/US_Search_Catalog_Performance_Simple_Month_2026_02_28.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 56,
+   "meta": []
+  },
+  {
+   "path": "february/US_Search_Query_Performance_Brand_View_Simple_Month_2026_02_28.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "february/US_Top_Search_Terms_Simple_Month_2026_02_28 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 31,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]"
+   ]
+  },
+  {
+   "path": "february/US_Top_Search_Terms_Simple_Month_2026_02_28.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 48,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"February\"]"
+   ]
+  },
+  {
+   "path": "january 2026/Trends_United_States_ALFAMARKER_Monthly_2026_January (1).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Branded Search Customers",
+    "Branded Search Ratio"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_ALFAMARKER_Monthly_2026_January (2).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Branded Search Customers",
+    "Branded Search Ratio"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_ALFAMARKER_Monthly_2026_January.csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Branded Search Customers",
+    "Branded Search Ratio"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/Trends_United_States_Monthly_ALFAMARKER_2026_January.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "january 2026/US_Demographics_Simple_Month_2026_01_31.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]"
+   ]
+  },
+  {
+   "path": "january 2026/US_Market_Basket_Analysis_Simple_Month_2026_01_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]"
+   ],
+   "rows": 31,
+   "meta": []
+  },
+  {
+   "path": "january 2026/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_01_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "january 2026/US_Search_Catalog_Performance_Simple_Month_2026_01_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 56,
+   "meta": []
+  },
+  {
+   "path": "january 2026/US_Search_Query_Performance_Brand_View_Comprehensive_Month_2026_01_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]"
+   ],
+   "rows": 1061,
+   "meta": []
+  },
+  {
+   "path": "january 2026/US_Top_Search_Terms_pheromone_Month_2026_01_31.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 49,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]"
+   ]
+  },
+  {
+   "path": "january 2026/US_Top_Search_Terms_pheromones_Month_2026_01_31.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 32,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"January\"]"
+   ]
+  },
+  {
+   "path": "julay/Trends_United_States_ALFAMARKER_Monthly_2026_July.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/Trends_United_States_Monthly_ALFAMARKER_2026_July.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "julay/US_Demographics_Simple_Month_2026_07_31.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]"
+   ]
+  },
+  {
+   "path": "julay/US_Market_Basket_Analysis_Simple_Month_2026_07_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 26,
+   "meta": []
+  },
+  {
+   "path": "julay/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_07_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "julay/US_Search_Catalog_Performance_Simple_Month_2026_07_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 59,
+   "meta": []
+  },
+  {
+   "path": "julay/US_Search_Query_Performance_Brand_View_Simple_Month_2026_07_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "julay/US_Top_Search_Terms_Simple_Month_2026_07_31 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 22,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]"
+   ]
+  },
+  {
+   "path": "julay/US_Top_Search_Terms_Simple_Month_2026_07_31.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 40,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"July\"]"
+   ]
+  },
+  {
+   "path": "june/Trends_United_States_ALFAMARKER_Monthly_2026_June.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/Trends_United_States_Monthly_ALFAMARKER_2026_June.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "june/US_Demographics_Simple_Month_2026_06_30.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]"
+   ]
+  },
+  {
+   "path": "june/US_Market_Basket_Analysis_Simple_Month_2026_06_30.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 27,
+   "meta": []
+  },
+  {
+   "path": "june/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_06_30.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "june/US_Search_Catalog_Performance_Simple_Month_2026_06_30.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 60,
+   "meta": []
+  },
+  {
+   "path": "june/US_Search_Query_Performance_Brand_View_Simple_Month_2026_06_30.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "june/US_Top_Search_Terms_Simple_Month_2026_06_30 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 38,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]"
+   ]
+  },
+  {
+   "path": "june/US_Top_Search_Terms_Simple_Month_2026_06_30.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 21,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"June\"]"
+   ]
+  },
+  {
+   "path": "march/Trends_United_States_ALFAMARKER_Monthly_2026_March.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/Trends_United_States_Monthly_ALFAMARKER_2026_March.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "march/US_Demographics_Simple_Month_2026_03_31.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]"
+   ]
+  },
+  {
+   "path": "march/US_Market_Basket_Analysis_Simple_Month_2026_03_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 23,
+   "meta": []
+  },
+  {
+   "path": "march/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_03_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "march/US_Search_Catalog_Performance_Simple_Month_2026_03_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 57,
+   "meta": []
+  },
+  {
+   "path": "march/US_Search_Query_Performance_Brand_View_Simple_Month_2026_03_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "march/US_Top_Search_Terms_Simple_Month_2026_03_31 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 52,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]"
+   ]
+  },
+  {
+   "path": "march/US_Top_Search_Terms_Simple_Month_2026_03_31.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 52,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"March\"]"
+   ]
+  },
+  {
+   "path": "may/Trends_United_States_ALFAMARKER_Monthly_2026_May.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (10).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (2).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (3).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (4).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (5).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (6).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (7).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (8).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May (9).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/Trends_United_States_Monthly_ALFAMARKER_2026_May.csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "may/US_Demographics_Simple_Month_2026_05_31.csv",
+   "type": "DEMOGRAPHICS",
+   "headers": [
+    "Brand Name",
+    "Demographic Type",
+    "Demographic",
+    "Unique Customers: # in this Demographic",
+    "Total # of Customers",
+    "Unique Customers: % of Total in this Demographic",
+    "Unique Customers: % of Total Change in this Demographic vs. Prior Period",
+    "Ordered Units: # from this Demographic",
+    "Total # of Ordered Units",
+    "Ordered Units: % of Total from this Demographic",
+    "Ordered Units: % of Total Change from this Demographic vs. Prior Period",
+    "Reporting Date"
+   ],
+   "rows": 28,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]"
+   ]
+  },
+  {
+   "path": "may/US_Market_Basket_Analysis_Simple_Month_2026_05_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 31,
+   "meta": []
+  },
+  {
+   "path": "may/US_Repeat_Purchase_Behavior_Brand_View_Simple_Month_2026_05_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 2,
+   "meta": []
+  },
+  {
+   "path": "may/US_Search_Catalog_Performance_Simple_Month_2026_05_31.csv",
+   "type": null,
+   "headers": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]",
+    "Brand=[\"ALFAMARKER\"]"
+   ],
+   "rows": 60,
+   "meta": []
+  },
+  {
+   "path": "may/US_Search_Query_Performance_Brand_View_Simple_Month_2026_05_31.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  },
+  {
+   "path": "may/US_Top_Search_Terms_Simple_Month_2026_05_31 (1).csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 26,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]"
+   ]
+  },
+  {
+   "path": "may/US_Top_Search_Terms_Simple_Month_2026_05_31.csv",
+   "type": "TOP_SEARCH_TERMS",
+   "headers": [
+    "Search Frequency Rank",
+    "Search Term",
+    "Top Clicked Brand #1",
+    "Top Clicked Brands #2",
+    "Top Clicked Brands #3",
+    "Top Clicked Category #1",
+    "Top Clicked Category #2",
+    "Top Clicked Category #3",
+    "Top Clicked Product #1: ASIN",
+    "Top Clicked Product #1: Product Title",
+    "Top Clicked Product #1: Click Share",
+    "Top Clicked Product #1: Conversion Share",
+    "Top Clicked Product #2: ASIN",
+    "Top Clicked Product #2: Product Title",
+    "Top Clicked Product #2: Click Share",
+    "Top Clicked Product #2: Conversion Share",
+    "Top Clicked Product #3: ASIN",
+    "Top Clicked Product #3: Product Title",
+    "Top Clicked Product #3: Click Share",
+    "Top Clicked Product #3: Conversion Share",
+    "Reporting Date"
+   ],
+   "rows": 38,
+   "meta": [
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"May\"]"
+   ]
+  },
+  {
+   "path": "september/Trends_United_States_ALFAMARKER_Monthly_2026_September (1).csv",
+   "type": "LOYALTY",
+   "headers": [
+    "Date",
+    "Total Customers",
+    "Total Sales",
+    "Total Orders",
+    "New to Brand Customers",
+    "New to Brand Customer Sales",
+    "New to Brand Customer Orders",
+    "Repeat Customers",
+    "Repeat Sales",
+    "Repeat Orders",
+    "Repeat Purchase Rate",
+    "Average Repeat Purchase Interval",
+    "Potential New Customers"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "september/Trends_United_States_ALFAMARKER_Monthly_2026_September (2).csv",
+   "type": "JOURNEY",
+   "headers": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Branded Search Customers",
+    "Branded Search Ratio"
+   ],
+   "rows": 12,
+   "meta": []
+  },
+  {
+   "path": "september/US_Search_Query_Performance_Brand_View_Amazons_Choice_Badge_Data_Month_2026_09_30.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"September\"]"
+   ],
+   "rows": 4,
+   "meta": []
+  },
+  {
+   "path": "september/US_Search_Query_Performance_Brand_View_Comprehensive_Month_2026_09_30.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"September\"]"
+   ],
+   "rows": 1447,
+   "meta": []
+  },
+  {
+   "path": "september/US_Search_Query_Performance_Brand_View_Search_Funnel_Outliers_Data_Month_2026_09_30.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"September\"]"
+   ],
+   "rows": 32,
+   "meta": []
+  },
+  {
+   "path": "september/US_Search_Query_Performance_Brand_View_Simple_Month_2026_09_30.csv",
+   "type": null,
+   "headers": [
+    "Brand=[\"ALFAMARKER\"]",
+    "Reporting Range=[\"Monthly\"]",
+    "Select year=[\"2026\"]",
+    "Select month=[\"September\"]"
+   ],
+   "rows": 1001,
+   "meta": []
+  }
+ ],
+ "actions": [
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Demographics_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_TopSearchTerms_USA",
+   "cells_updated": 0,
+   "rows_updated": 0,
+   "rows_added": 0,
+   "sample_updates": []
+  },
+  {
+   "sheet": "BA_Trends_USA",
+   "cells_updated": 12,
+   "rows_updated": 1,
+   "rows_added": 0,
+   "sample_updates": [
+    {
+     "range": "'BA_Trends_USA'!B4",
+     "values": [
+      [
+       "267"
+      ]
+     ]
+    },
+    {
+     "range": "'BA_Trends_USA'!C4",
+     "values": [
+      [
+       "8192.2"
+      ]
+     ]
+    },
+    {
+     "range": "'BA_Trends_USA'!D4",
+     "values": [
+      [
+       "289"
+      ]
+     ]
+    },
+    {
+     "range": "'BA_Trends_USA'!E4",
+     "values": [
+      [
+       "180"
+      ]
+     ]
+    },
+    {
+     "range": "'BA_Trends_USA'!F4",
+     "values": [
+      [
+       "5004.97"
+      ]
+     ]
+    },
+    {
+     "range": "'BA_Trends_USA'!G4",
+     "values": [
+      [
+       "188"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "sheet": "BA_Journey_USA",
+   "created_header": [
+    "Date",
+    "Customers in Awareness",
+    "Customers in Consideration",
+    "Customers in Intent",
+    "Branded Search Customers",
+    "Branded Search Ratio",
+    "Customers Viewed Detail Page",
+    "Customers Visited Brand Store",
+    "High Potential Consideration Customers",
+    "New to Brand Customers",
+    "Customers Added to Cart",
+    "Customers Added to Wish List",
+    "Customers Saved for Later",
+    "Repeat Customers"
+   ],
+   "rows": 20
+  }
+ ],
+ "warnings": [
+  "Journey February 28, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey March 31, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey April 30, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey May 31, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey June 30, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey July 31, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey August 31, 2025: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']",
+  "Journey September 30, 2026: немає колонок ['Customers in Intent', 'Customers Viewed Detail Page', 'Customers Visited Brand Store', 'High Potential Consideration Customers', 'New to Brand Customers', 'Customers Added to Cart', 'Customers Added to Wish List', 'Customers Saved for Later', 'Repeat Customers']"
+ ],
+ "trends_result": {
+  "updated": 1,
+  "added": 0
+ },
+ "journey_result": {
+  "updated": 0,
+  "added": 20
+ },
+ "parsed": {
+  "loyalty": {
+   "May 31, 2025": {
+    "Total Customers": "341",
+    "Total Sales": "11147.54",
+    "Total Orders": "388",
+    "New to Brand Customers": "225",
+    "New to Brand Customer Sales": "6558.32",
+    "New to Brand Customer Orders": "234",
+    "Repeat Customers": "30",
+    "Repeat Sales": "1263.47",
+    "Repeat Orders": "47",
+    "Repeat Purchase Rate": "0.08800000000000001",
+    "Average Repeat Purchase Interval": "4.98",
+    "Potential New Customers": "1108"
+   },
+   "June 30, 2025": {
+    "Total Customers": "277",
+    "Total Sales": "9656.89",
+    "Total Orders": "309",
+    "New to Brand Customers": "165",
+    "New to Brand Customer Sales": "5179",
+    "New to Brand Customer Orders": "173",
+    "Repeat Customers": "25",
+    "Repeat Sales": "891.18",
+    "Repeat Orders": "32",
+    "Repeat Purchase Rate": "0.09029999999999999",
+    "Average Repeat Purchase Interval": "5.84",
+    "Potential New Customers": "706"
+   },
+   "July 31, 2025": {
+    "Total Customers": "231",
+    "Total Sales": "8303.91",
+    "Total Orders": "264",
+    "New to Brand Customers": "140",
+    "New to Brand Customer Sales": "4398.15",
+    "New to Brand Customer Orders": "149",
+    "Repeat Customers": "22",
+    "Repeat Sales": "1101.17",
+    "Repeat Orders": "33",
+    "Repeat Purchase Rate": "0.09519999999999999",
+    "Average Repeat Purchase Interval": "5",
+    "Potential New Customers": "754"
+   },
+   "August 31, 2025": {
+    "Total Customers": "255",
+    "Total Sales": "8515.77",
+    "Total Orders": "285",
+    "New to Brand Customers": "150",
+    "New to Brand Customer Sales": "4547.13",
+    "New to Brand Customer Orders": "157",
+    "Repeat Customers": "20",
+    "Repeat Sales": "916.68",
+    "Repeat Orders": "30",
+    "Repeat Purchase Rate": "0.0784",
+    "Average Repeat Purchase Interval": "4.83",
+    "Potential New Customers": "693"
+   },
+   "September 30, 2025": {
+    "Total Customers": "260",
+    "Total Sales": "9919.37",
+    "Total Orders": "307",
+    "New to Brand Customers": "135",
+    "New to Brand Customer Sales": "4889.65",
+    "New to Brand Customer Orders": "145",
+    "Repeat Customers": "24",
+    "Repeat Sales": "1490.08",
+    "Repeat Orders": "47",
+    "Repeat Purchase Rate": "0.09230000000000001",
+    "Average Repeat Purchase Interval": "5.6",
+    "Potential New Customers": "602"
+   },
+   "October 31, 2025": {
+    "Total Customers": "296",
+    "Total Sales": "8720.37",
+    "Total Orders": "331",
+    "New to Brand Customers": "190",
+    "New to Brand Customer Sales": "5073.28",
+    "New to Brand Customer Orders": "200",
+    "Repeat Customers": "25",
+    "Repeat Sales": "1048.11",
+    "Repeat Orders": "35",
+    "Repeat Purchase Rate": "0.08449999999999999",
+    "Average Repeat Purchase Interval": "6.51",
+    "Potential New Customers": "682"
+   },
+   "November 30, 2025": {
+    "Total Customers": "264",
+    "Total Sales": "8622.18",
+    "Total Orders": "292",
+    "New to Brand Customers": "173",
+    "New to Brand Customer Sales": "4903.46",
+    "New to Brand Customer Orders": "179",
+    "Repeat Customers": "17",
+    "Repeat Sales": "702.51",
+    "Repeat Orders": "28",
+    "Repeat Purchase Rate": "0.0644",
+    "Average Repeat Purchase Interval": "6.39",
+    "Potential New Customers": "567"
+   },
+   "December 31, 2025": {
+    "Total Customers": "296",
+    "Total Sales": "7894.84",
+    "Total Orders": "321",
+    "New to Brand Customers": "212",
+    "New to Brand Customer Sales": "5216.02",
+    "New to Brand Customer Orders": "219",
+    "Repeat Customers": "22",
+    "Repeat Sales": "572.42",
+    "Repeat Orders": "25",
+    "Repeat Purchase Rate": "0.07429999999999999",
+    "Average Repeat Purchase Interval": "8.44",
+    "Potential New Customers": "753"
+   },
+   "January 31, 2026": {
+    "Total Customers": "194",
+    "Total Sales": "5378.96",
+    "Total Orders": "210",
+    "New to Brand Customers": "116",
+    "New to Brand Customer Sales": "3008",
+    "New to Brand Customer Orders": "121",
+    "Repeat Customers": "13",
+    "Repeat Sales": "340.24",
+    "Repeat Orders": "16",
+    "Repeat Purchase Rate": "0.067",
+    "Average Repeat Purchase Interval": "4.94",
+    "Potential New Customers": "748"
+   },
+   "February 28, 2026": {
+    "Total Customers": "235",
+    "Total Sales": "8192.86",
+    "Total Orders": "266",
+    "New to Brand Customers": "138",
+    "New to Brand Customer Sales": "4066.4",
+    "New to Brand Customer Orders": "148",
+    "Repeat Customers": "22",
+    "Repeat Sales": "1374.59",
+    "Repeat Orders": "31",
+    "Repeat Purchase Rate": "0.09359999999999999",
+    "Average Repeat Purchase Interval": "5.97",
+    "Potential New Customers": "607"
+   },
+   "March 31, 2026": {
+    "Total Customers": "215",
+    "Total Sales": "6654.64",
+    "Total Orders": "229",
+    "New to Brand Customers": "129",
+    "New to Brand Customer Sales": "3625.06",
+    "New to Brand Customer Orders": "132",
+    "Repeat Customers": "10",
+    "Repeat Sales": "414.36",
+    "Repeat Orders": "14",
+    "Repeat Purchase Rate": "0.04650000000000001",
+    "Average Repeat Purchase Interval": "7.07",
+    "Potential New Customers": "604"
+   },
+   "April 30, 2026": {
+    "Total Customers": "184",
+    "Total Sales": "6132.95",
+    "Total Orders": "207",
+    "New to Brand Customers": "101",
+    "New to Brand Customer Sales": "2810.91",
+    "New to Brand Customer Orders": "106",
+    "Repeat Customers": "17",
+    "Repeat Sales": "790.2",
+    "Repeat Orders": "23",
+    "Repeat Purchase Rate": "0.0924",
+    "Average Repeat Purchase Interval": "9.96",
+    "Potential New Customers": "604"
+   },
+   "May 31, 2026": {
+    "Total Customers": "208",
+    "Total Sales": "5986.97",
+    "Total Orders": "230",
+    "New to Brand Customers": "115",
+    "New to Brand Customer Sales": "3169.16",
+    "New to Brand Customer Orders": "124",
+    "Repeat Customers": "16",
+    "Repeat Sales": "649.39",
+    "Repeat Orders": "22",
+    "Repeat Purchase Rate": "0.07690000000000001",
+    "Average Repeat Purchase Interval": "5.18",
+    "Potential New Customers": "604"
+   },
+   "June 30, 2026": {
+    "Total Customers": "210",
+    "Total Sales": "6180.76",
+    "Total Orders": "228",
+    "New to Brand Customers": "138",
+    "New to Brand Customer Sales": "3832.01",
+    "New to Brand Customer Orders": "148",
+    "Repeat Customers": "10",
+    "Repeat Sales": "474.18",
+    "Repeat Orders": "18",
+    "Repeat Purchase Rate": "0.047599999999999996",
+    "Average Repeat Purchase Interval": "2.72",
+    "Potential New Customers": "604"
+   },
+   "July 31, 2026": {
+    "Total Customers": "239",
+    "Total Sales": "7451.08",
+    "Total Orders": "263",
+    "New to Brand Customers": "164",
+    "New to Brand Customer Sales": "4237.9",
+    "New to Brand Customer Orders": "169",
+    "Repeat Customers": "17",
+    "Repeat Sales": "777.4",
+    "Repeat Orders": "24",
+    "Repeat Purchase Rate": "0.0711",
+    "Average Repeat Purchase Interval": "4.54",
+    "Potential New Customers": "605"
+   },
+   "August 31, 2026": {
+    "Total Customers": "267",
+    "Total Sales": "8192.2",
+    "Total Orders": "289",
+    "New to Brand Customers": "180",
+    "New to Brand Customer Sales": "5004.97",
+    "New to Brand Customer Orders": "188",
+    "Repeat Customers": "15",
+    "Repeat Sales": "697.52",
+    "Repeat Orders": "22",
+    "Repeat Purchase Rate": "0.0562",
+    "Average Repeat Purchase Interval": "5.27",
+    "Potential New Customers": "604"
+   },
+   "March 31, 2025": {
+    "Total Customers": "391",
+    "Total Sales": "12799.44",
+    "Total Orders": "433",
+    "New to Brand Customers": "268",
+    "New to Brand Customer Sales": "7895.68",
+    "New to Brand Customer Orders": "278",
+    "Repeat Customers": "27",
+    "Repeat Sales": "1256.22",
+    "Repeat Orders": "42",
+    "Repeat Purchase Rate": "0.0691",
+    "Average Repeat Purchase Interval": "6.33",
+    "Potential New Customers": "1152"
+   },
+   "April 30, 2025": {
+    "Total Customers": "417",
+    "Total Sales": "14376.82",
+    "Total Orders": "464",
+    "New to Brand Customers": "280",
+    "New to Brand Customer Sales": "8474.56",
+    "New to Brand Customer Orders": "289",
+    "Repeat Customers": "32",
+    "Repeat Sales": "1656.07",
+    "Repeat Orders": "47",
+    "Repeat Purchase Rate": "0.0767",
+    "Average Repeat Purchase Interval": "6.45",
+    "Potential New Customers": "1164"
+   },
+   "February 28, 2025": {
+    "Total Customers": "364",
+    "Total Sales": "12926.33",
+    "Total Orders": "408",
+    "New to Brand Customers": "237",
+    "New to Brand Customer Sales": "7438.65",
+    "New to Brand Customer Orders": "247",
+    "Repeat Customers": "31",
+    "Repeat Sales": "1463.16",
+    "Repeat Orders": "44",
+    "Repeat Purchase Rate": "0.0852",
+    "Average Repeat Purchase Interval": "5.77",
+    "Potential New Customers": "1596"
+   },
+   "September 30, 2026": {
+    "Total Customers": "300",
+    "Total Sales": "8941.75",
+    "Total Orders": "325",
+    "New to Brand Customers": "221",
+    "New to Brand Customer Sales": "5893.15",
+    "New to Brand Customer Orders": "229",
+    "Repeat Customers": "16",
+    "Repeat Sales": "678.67",
+    "Repeat Orders": "25",
+    "Repeat Purchase Rate": "0.0533",
+    "Average Repeat Purchase Interval": "5.68",
+    "Potential New Customers": "603"
+   }
+  },
+  "rfm": {},
+  "journey": {
+   "September 30, 2025": {
+    "New to Brand Customers": "133",
+    "Repeat Customers": "5",
+    "Customers in Consideration": "1997",
+    "Customers in Intent": "539",
+    "Customers Viewed Detail Page": "1997",
+    "Customers Visited Brand Store": "42",
+    "High Potential Consideration Customers": "433",
+    "Customers in Awareness": "203",
+    "Branded Search Customers": "17",
+    "Branded Search Ratio": "0.0837",
+    "Customers Added to Cart": "451",
+    "Customers Added to Wish List": "92",
+    "Customers Saved for Later": "99"
+   },
+   "October 31, 2025": {
+    "New to Brand Customers": "184",
+    "Repeat Customers": "10",
+    "Customers in Consideration": "3129",
+    "Customers in Intent": "924",
+    "Customers Viewed Detail Page": "3128",
+    "Customers Visited Brand Store": "71",
+    "High Potential Consideration Customers": "623",
+    "Customers in Awareness": "169",
+    "Branded Search Customers": "16",
+    "Branded Search Ratio": "0.0947",
+    "Customers Added to Cart": "715",
+    "Customers Added to Wish List": "215",
+    "Customers Saved for Later": "190"
+   },
+   "November 30, 2025": {
+    "New to Brand Customers": "166",
+    "Repeat Customers": "5",
+    "Customers in Consideration": "2190",
+    "Customers in Intent": "758",
+    "Customers Viewed Detail Page": "2190",
+    "Customers Visited Brand Store": "58",
+    "High Potential Consideration Customers": "641",
+    "Customers in Awareness": "123",
+    "Branded Search Customers": "23",
+    "Branded Search Ratio": "0.187",
+    "Customers Added to Cart": "624",
+    "Customers Added to Wish List": "117",
+    "Customers Saved for Later": "182"
+   },
+   "December 31, 2025": {
+    "New to Brand Customers": "211",
+    "Repeat Customers": "7",
+    "Customers in Consideration": "3240",
+    "Customers in Intent": "1022",
+    "Customers Viewed Detail Page": "3219",
+    "Customers Visited Brand Store": "61",
+    "High Potential Consideration Customers": "603",
+    "Customers in Awareness": "391",
+    "Branded Search Customers": "40",
+    "Branded Search Ratio": "0.1023",
+    "Customers Added to Cart": "798",
+    "Customers Added to Wish List": "236",
+    "Customers Saved for Later": "225"
+   },
+   "January 31, 2026": {
+    "New to Brand Customers": "111",
+    "Repeat Customers": "5",
+    "Customers in Consideration": "1818",
+    "Customers in Intent": "579",
+    "Customers Viewed Detail Page": "1818",
+    "Customers Visited Brand Store": "37",
+    "High Potential Consideration Customers": "417",
+    "Customers in Awareness": "86",
+    "Branded Search Customers": "27",
+    "Branded Search Ratio": "0.314",
+    "Customers Added to Cart": "448",
+    "Customers Added to Wish List": "124",
+    "Customers Saved for Later": "132"
+   },
+   "February 28, 2026": {
+    "New to Brand Customers": "131",
+    "Repeat Customers": "8",
+    "Customers in Consideration": "2205",
+    "Customers in Intent": "701",
+    "Customers Viewed Detail Page": "2109",
+    "Customers Visited Brand Store": "49",
+    "High Potential Consideration Customers": "414",
+    "Customers in Awareness": "2911",
+    "Branded Search Customers": "29",
+    "Branded Search Ratio": "0.01",
+    "Customers Added to Cart": "558",
+    "Customers Added to Wish List": "155",
+    "Customers Saved for Later": "137"
+   },
+   "March 31, 2026": {
+    "New to Brand Customers": "119",
+    "Repeat Customers": "2",
+    "Customers in Consideration": "1716",
+    "Customers in Intent": "544",
+    "Customers Viewed Detail Page": "1603",
+    "Customers Visited Brand Store": "43",
+    "High Potential Consideration Customers": "559",
+    "Customers in Awareness": "2468",
+    "Branded Search Customers": "24",
+    "Branded Search Ratio": "0.0097",
+    "Customers Added to Cart": "426",
+    "Customers Added to Wish List": "109",
+    "Customers Saved for Later": "119"
+   },
+   "April 30, 2026": {
+    "New to Brand Customers": "101",
+    "Repeat Customers": "4",
+    "Customers in Consideration": "1268",
+    "Customers in Intent": "427",
+    "Customers Viewed Detail Page": "1200",
+    "Customers Visited Brand Store": "28",
+    "High Potential Consideration Customers": "406",
+    "Customers in Awareness": "3768",
+    "Branded Search Customers": "20",
+    "Branded Search Ratio": "0.0053",
+    "Customers Added to Cart": "339",
+    "Customers Added to Wish List": "79",
+    "Customers Saved for Later": "94"
+   },
+   "May 31, 2026": {
+    "New to Brand Customers": "112",
+    "Repeat Customers": "6",
+    "Customers in Consideration": "1440",
+    "Customers in Intent": "447",
+    "Customers Viewed Detail Page": "1349",
+    "Customers Visited Brand Store": "32",
+    "High Potential Consideration Customers": "376",
+    "Customers in Awareness": "3656",
+    "Branded Search Customers": "32",
+    "Branded Search Ratio": "0.0088",
+    "Customers Added to Cart": "346",
+    "Customers Added to Wish List": "96",
+    "Customers Saved for Later": "81"
+   },
+   "June 30, 2026": {
+    "New to Brand Customers": "129",
+    "Repeat Customers": "4",
+    "Customers in Consideration": "12242",
+    "Customers in Intent": "538",
+    "Customers Viewed Detail Page": "12121",
+    "Customers Visited Brand Store": "35",
+    "High Potential Consideration Customers": "492",
+    "Customers in Awareness": "11396",
+    "Branded Search Customers": "19",
+    "Branded Search Ratio": "0.0017000000000000001",
+    "Customers Added to Cart": "436",
+    "Customers Added to Wish List": "112",
+    "Customers Saved for Later": "95"
+   },
+   "July 31, 2026": {
+    "New to Brand Customers": "166",
+    "Repeat Customers": "4",
+    "Customers in Consideration": "14397",
+    "Customers in Intent": "701",
+    "Customers Viewed Detail Page": "14291",
+    "Customers Visited Brand Store": "45",
+    "High Potential Consideration Customers": "560",
+    "Customers in Awareness": "14582",
+    "Branded Search Customers": "21",
+    "Branded Search Ratio": "0.0014000000000000002",
+    "Customers Added to Cart": "544",
+    "Customers Added to Wish List": "158",
+    "Customers Saved for Later": "104"
+   },
+   "August 31, 2026": {
+    "New to Brand Customers": "172",
+    "Repeat Customers": "6",
+    "Customers in Consideration": "36058",
+    "Customers in Intent": "1019",
+    "Customers Viewed Detail Page": "35929",
+    "Customers Visited Brand Store": "53",
+    "High Potential Consideration Customers": "713",
+    "Customers in Awareness": "10026",
+    "Branded Search Customers": "29",
+    "Branded Search Ratio": "0.0029",
+    "Customers Added to Cart": "658",
+    "Customers Added to Wish List": "376",
+    "Customers Saved for Later": "154"
+   },
+   "February 28, 2025": {
+    "Customers in Awareness": "18042",
+    "Customers in Consideration": "9341",
+    "Branded Search Customers": "23",
+    "Branded Search Ratio": "0.0013"
+   },
+   "March 31, 2025": {
+    "Customers in Awareness": "7266",
+    "Customers in Consideration": "6470",
+    "Branded Search Customers": "29",
+    "Branded Search Ratio": "0.004"
+   },
+   "April 30, 2025": {
+    "Customers in Awareness": "896",
+    "Customers in Consideration": "6420",
+    "Branded Search Customers": "18",
+    "Branded Search Ratio": "0.020099999999999996"
+   },
+   "May 31, 2025": {
+    "Customers in Awareness": "502",
+    "Customers in Consideration": "5220",
+    "Branded Search Customers": "18",
+    "Branded Search Ratio": "0.0359"
+   },
+   "June 30, 2025": {
+    "Customers in Awareness": "2343",
+    "Customers in Consideration": "2231",
+    "Branded Search Customers": "16",
+    "Branded Search Ratio": "0.0068000000000000005"
+   },
+   "July 31, 2025": {
+    "Customers in Awareness": "2162",
+    "Customers in Consideration": "1965",
+    "Branded Search Customers": "13",
+    "Branded Search Ratio": "0.006"
+   },
+   "August 31, 2025": {
+    "Customers in Awareness": "1948",
+    "Customers in Consideration": "2045",
+    "Branded Search Customers": "1",
+    "Branded Search Ratio": "0.0005"
+   },
+   "September 30, 2026": {
+    "Customers in Awareness": "10139",
+    "Customers in Consideration": "8922",
+    "Branded Search Customers": "25",
+    "Branded Search Ratio": "0.0025"
+   }
+  }
+ }
+}
