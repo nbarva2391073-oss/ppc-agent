@@ -249,7 +249,9 @@ def run_fetch():
 
 
 if __name__ == "__main__":
-    if "--request-weekly" in sys.argv:
+    if "--request-sqp-monthly" in sys.argv:
+        run_request(only_types=("SQP", "SQP_OTHER"))
+    elif "--request-weekly" in sys.argv:
         run_request(only_types=("SQP_WEEK", "SQP_WEEK_OTHER"))
     elif "--request" in sys.argv:
         run_request()
