@@ -1,156 +1,16 @@
 [
  {
-  "period": "2026-07-01..2026-07-31",
+  "period": "2026-09-01..2026-09-30",
   "per": "MONTH",
   "group": "CORE",
   "type": "SQP",
-  "report_id": "652425020754"
+  "report_id": "652455020754"
  },
  {
-  "period": "2026-07-01..2026-07-31",
+  "period": "2026-09-01..2026-09-30",
   "per": "MONTH",
   "group": "OTHER",
   "type": "SQP_OTHER",
-  "report_id": "652427020754"
- },
- {
-  "period": "2026-08-01..2026-08-31",
-  "per": "MONTH",
-  "group": "CORE",
-  "type": "SQP",
-  "report_id": "652428020754"
- },
- {
-  "period": "2026-08-01..2026-08-31",
-  "per": "MONTH",
-  "group": "OTHER",
-  "type": "SQP_OTHER",
-  "report_id": "652430020754"
- },
- {
-  "period": "2026-08-23..2026-08-29",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652431020754"
- },
- {
-  "period": "2026-08-23..2026-08-29",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652432020754"
- },
- {
-  "period": "2026-08-30..2026-09-05",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652433020754"
- },
- {
-  "period": "2026-08-30..2026-09-05",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652434020754"
- },
- {
-  "period": "2026-09-06..2026-09-12",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652435020754"
- },
- {
-  "period": "2026-09-06..2026-09-12",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652437020754"
- },
- {
-  "period": "2026-09-13..2026-09-19",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652439020754"
- },
- {
-  "period": "2026-09-13..2026-09-19",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652440020754"
- },
- {
-  "period": "2026-09-20..2026-09-26",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652441020754"
- },
- {
-  "period": "2026-09-20..2026-09-26",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652442020754"
- },
- {
-  "period": "2026-09-27..2026-10-03",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652446020754"
- },
- {
-  "period": "2026-09-27..2026-10-03",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652447020754"
- },
- {
-  "period": "2026-10-04..2026-10-10",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652448020754"
- },
- {
-  "period": "2026-10-04..2026-10-10",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652449020754"
- },
- {
-  "period": "2026-10-11..2026-10-17",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652450020754"
- },
- {
-  "period": "2026-10-11..2026-10-17",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652451020754"
- },
- {
-  "period": "2026-10-18..2026-10-24",
-  "per": "WEEK",
-  "group": "CORE",
-  "type": "SQP_WEEK",
-  "report_id": "652452020754"
- },
- {
-  "period": "2026-10-18..2026-10-24",
-  "per": "WEEK",
-  "group": "OTHER",
-  "type": "SQP_WEEK_OTHER",
-  "report_id": "652453020754"
+  "report_id": "652456020754"
  }
 ]
