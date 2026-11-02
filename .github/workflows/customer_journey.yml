@@ -1,28 +1,50 @@
-name: Customer Journey
+name: Customer Journey (CSV з Drive → BA_*)
 
 on:
   schedule:
-    - cron: '0 10 1 * *'
-  workflow_dispatch: {}
+    - cron: '30 9 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "1 = нічого не писати, лише діагностика"
+        default: "0"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ba-sheets
+  cancel-in-progress: false
 
 jobs:
   customer-journey:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-
+    timeout-minutes: 30
+    env:
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+      DRY_RUN: ${{ github.event.inputs.dry_run == '1' && '1' || '0' }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Python 3.11
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
-
-      - name: Run Customer Journey
-        env:
-          GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
-        run: python customer_journey.py
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -r requirements.txt
+      - name: Backup BA tabs
+        run: |
+          python - <<'PY'
+          import csv, os
+          from datetime import datetime
+          from sheets import get_sheet
+          D = "backups/ba_pre/" + datetime.utcnow().strftime("%Y%m%d_%H%M"); os.makedirs(D, exist_ok=True)
+          for n in ["BA_Trends_USA", "BA_Journey_USA", "BA_Demographics_USA", "BA_TopSearchTerms_USA"]:
+              try: v = get_sheet(n).get_all_values()
+              except Exception as e: print(n, e); continue
+              csv.writer(open(f"{D}/{n}.csv", "w", newline="", encoding="utf-8")).writerows(v); print(n, len(v))
+          PY
+      - run: python customer_journey.py
+      - name: Commit result (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add diag/ba_journey* backups/ba_pre* || true
+          git commit -m "BA journey/trends result" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
