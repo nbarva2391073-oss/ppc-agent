@@ -1,0 +1,21 @@
+{
+ "cutoff": "2026-10-09 17:10",
+ "days": 30,
+ "dry": true,
+ "tabs": [
+  {
+   "tab": "Suggested Bids USA",
+   "main_rows": 22496,
+   "old_prefix": 0,
+   "cutoff": "2026-10-09 17:10",
+   "status": "nothing_to_archive"
+  },
+  {
+   "tab": "Suggested Bids CA",
+   "main_rows": 1576,
+   "old_prefix": 0,
+   "cutoff": "2026-10-09 17:10",
+   "status": "nothing_to_archive"
+  }
+ ]
+}
