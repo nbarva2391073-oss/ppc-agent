@@ -41,6 +41,27 @@ def _rows_for_value(rows: list, col_name: str, value: str) -> list:
     return [header] + matched
 
 
+def _latest_rows(rows: list, col_name: str, today: str, max_age_days: int):
+    """Заголовок + рядки найсвіжішої дати в колонці col_name, якщо вона не
+    старша max_age_days від today. Повертає (rows, дата або None).
+    Amazon віддає день із запізненням, тож «рівно сьогодні» майже завжди порожньо."""
+    from datetime import datetime as _dt
+    if not rows or col_name not in rows[0]:
+        return (rows[:1] if rows else []), None
+    idx = rows[0].index(col_name)
+    best = ""
+    for r in rows[1:]:
+        v = r[idx][:10] if len(r) > idx else ""
+        if len(v) == 10 and v[4] == "-" and v > best:
+            best = v
+    if not best:
+        return rows[:1], None
+    age = (_dt.strptime(today, "%Y-%m-%d") - _dt.strptime(best, "%Y-%m-%d")).days
+    if age > max_age_days:
+        return rows[:1], None
+    return [rows[0]] + [r for r in rows[1:] if len(r) > idx and r[idx][:10] == best], best
+
+
 def _drop_excluded(rows: list) -> list:
     """Прибирає рядки виключених кампаній (за CampaignId або назвою) з вхідних даних огляду."""
     if not rows or len(rows) <= 1:
@@ -94,10 +115,11 @@ def build_daily_context(market: str, today: str) -> dict:
     placement_tail = _tail(_drop_excluded(read_all(sheets["placement_analysis"])), 40)
 
     keyword_intel = read_all(sheets["keyword_intelligence"])
-    kw_today = _drop_excluded(_rows_for_value(keyword_intel, "Run Date", today))
+    kw_today, kw_date = _latest_rows(keyword_intel, "Run Date", today, 8)
+    kw_today = _drop_excluded(kw_today)
 
     advertised = read_all(sheets["advertised_product"])
-    advertised_today = _rows_for_value(advertised, "Date", today)
+    advertised_today, adv_date = _latest_rows(advertised, "Date", today, 3)
 
     prev_reviews_tail = _tail(read_all(sheets["claude_daily_review"]), 3)
 
@@ -115,6 +137,8 @@ def build_daily_context(market: str, today: str) -> dict:
         "prev_tail":         prev_reviews_tail,
         "control":           control,
         "review_queue":      review_queue,
+        "kw_date":           kw_date,
+        "adv_date":          adv_date,
         "has_today_data":    len(kw_today) > 1 or len(advertised_today) > 1,
     }
 
@@ -160,7 +184,8 @@ def deep_daily_review(market: str) -> str:
 5. Рядки з reason, що починається з «DATA ISSUE», — проблема даних, не зміна ставки:
    не роби з них висновків про ставки, лише згадай як проблему даних.
 6. Кампанії зі списку виключень у даних відсутні; не згадуй їх і не пропонуй для них дій.
-{"7. СЬОГОДНІ ДАНИХ НЕМАЄ (Keyword Intelligence і Advertised Product порожні): розділ «Негайні дії» має містити лише «Немає — даних за сьогодні немає», усі спостереження — тільки в «Спостерігати»." if not ctx['has_today_data'] else ""}
+8. Bid History пишеться ЛИШЕ коли ставка змінилась або з'явилось нове ключове слово. Порожній розділ «Зміни ставок сьогодні» означає «змін ставок не було», а НЕ відсутність даних; не називай це проблемою якості даних.
+{"7. СВІЖИХ ДАНИХ НЕМАЄ (Keyword Intelligence і Advertised Product порожні): розділ «Негайні дії» має містити лише «Немає — даних за сьогодні немає», усі спостереження — тільки в «Спостерігати»." if not ctx['has_today_data'] else ""}
 
 {'='*60}
 ЗМІНИ СТАВОК СЬОГОДНІ (Bid History, {today})
@@ -178,12 +203,12 @@ PLACEMENT — ОСТАННІ ЗАПИСИ
 {_format_table(ctx['placement_tail'])}
 
 {'='*60}
-KEYWORD INTELLIGENCE СЬОГОДНІ
+KEYWORD INTELLIGENCE — НАЙСВІЖІША ДАТА ({ctx['kw_date']}; вкладка тижнева)
 {'='*60}
 {_format_table(ctx['kw_today'])}
 
 {'='*60}
-ADVERTISED PRODUCT СЬОГОДНІ (продажі по ASIN через рекламу)
+ADVERTISED PRODUCT — НАЙСВІЖІША ДАТА ({ctx['adv_date']}; Amazon віддає день із запізненням) (продажі по ASIN через рекламу)
 {'='*60}
 {_format_table(ctx['advertised_today'])}
 
