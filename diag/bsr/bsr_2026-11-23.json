@@ -1,16 +1,146 @@
 {
  "date": "2026-11-23",
- "rows": [],
- "errors": {
-  "B0G5QB4W6N": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B0GYSB85SH": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B081T6QGD9": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B07TJW4Y94": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B09NBB4QP7": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B0G6VRGTPR": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B0GYSJC1PM": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B0GCBCW8RK": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B07PTQKZ82": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}",
-  "B07ZTJM5WJ": "403 {\n  \"errors\": [\n    {\n      \"code\": \"Unauthorized\",\n      \"message\": \"Access to requested resource is denied.\",\n      \"details\": \"\"\n    }\n  ]\n}"
- }
+ "rows": [
+  [
+   "2026-11-23",
+   "B0G5QB4W6N",
+   "Beauty & Personal Care",
+   119609,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0G5QB4W6N",
+   "Women's Eau de Parfum",
+   1995,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0GYSB85SH",
+   "Beauty & Personal Care",
+   221266,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0GYSB85SH",
+   "Women's Eau de Parfum",
+   3943,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B081T6QGD9",
+   "Beauty & Personal Care",
+   233954,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B081T6QGD9",
+   "Women's Eau de Parfum",
+   4183,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B07TJW4Y94",
+   "Beauty & Personal Care",
+   218024,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B07TJW4Y94",
+   "Perfumes & Fragrances",
+   10220,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B09NBB4QP7",
+   "Beauty & Personal Care",
+   189153,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B09NBB4QP7",
+   "Women's Eau de Parfum",
+   3250,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0G6VRGTPR",
+   "Beauty & Personal Care",
+   189153,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0G6VRGTPR",
+   "Women's Eau de Parfum",
+   3250,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0GYSJC1PM",
+   "Beauty & Personal Care",
+   221418,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0GYSJC1PM",
+   "Women's Eau de Parfum",
+   3944,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0GCBCW8RK",
+   "Beauty & Personal Care",
+   253659,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B0GCBCW8RK",
+   "Men's Cologne",
+   991,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B07PTQKZ82",
+   "Beauty & Personal Care",
+   249871,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B07PTQKZ82",
+   "Men's Cologne",
+   981,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B07ZTJM5WJ",
+   "Beauty & Personal Care",
+   253659,
+   "2026-11-23 17:33:57"
+  ],
+  [
+   "2026-11-23",
+   "B07ZTJM5WJ",
+   "Men's Cologne",
+   991,
+   "2026-11-23 17:33:57"
+  ]
+ ],
+ "errors": {}
 }

@@ -1,92 +1,11 @@
-  ❌ B0G5QB4W6N: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B0GYSB85SH: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B081T6QGD9: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B07TJW4Y94: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B09NBB4QP7: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B0G6VRGTPR: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B0GYSJC1PM: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B0GCBCW8RK: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B07PTQKZ82: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-  ❌ B07ZTJM5WJ: 403 {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
-✍️ BSR History USA: додано 0, вже було 0, помилок ASIN: 10
-Усі ASIN повернули помилку
+  ✅ B0G5QB4W6N: [('Beauty & Personal Care', 119609), ("Women's Eau de Parfum", 1995)]
+  ✅ B0GYSB85SH: [('Beauty & Personal Care', 221266), ("Women's Eau de Parfum", 3943)]
+  ✅ B081T6QGD9: [('Beauty & Personal Care', 233954), ("Women's Eau de Parfum", 4183)]
+  ✅ B07TJW4Y94: [('Beauty & Personal Care', 218024), ('Perfumes & Fragrances', 10220)]
+  ✅ B09NBB4QP7: [('Beauty & Personal Care', 189153), ("Women's Eau de Parfum", 3250)]
+  ✅ B0G6VRGTPR: [('Beauty & Personal Care', 189153), ("Women's Eau de Parfum", 3250)]
+  ✅ B0GYSJC1PM: [('Beauty & Personal Care', 221418), ("Women's Eau de Parfum", 3944)]
+  ✅ B0GCBCW8RK: [('Beauty & Personal Care', 253659), ("Men's Cologne", 991)]
+  ✅ B07PTQKZ82: [('Beauty & Personal Care', 249871), ("Men's Cologne", 981)]
+  ✅ B07ZTJM5WJ: [('Beauty & Personal Care', 253659), ("Men's Cologne", 991)]
+✍️ BSR History USA: додано 20, вже було 0, помилок ASIN: 0
