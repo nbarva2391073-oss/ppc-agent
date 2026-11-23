@@ -5,5 +5,11 @@
  "catalog/2022 (summaries)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
  "fba/inventory summaries": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
  "reports (list)": "200 {\"reports\":[{\"reportType\":\"GET_SALES_AND_TRAFFIC_REPORT\",\"processingEndTime\":\"2026-11-22T20:33:59+00:00\",\"processingStatus\":\"DONE\",\"marketplaceIds\":[\"A2EUQ1WTGC",
- "orders v0": "200 {\"payload\":{\"Orders\":[{\"BuyerInfo\":{},\"AmazonOrderId\":\"114-8775601-0543413\",\"EarliestShipDate\":\"2026-11-20T07:59:59Z\",\"SalesChannel\":\"Amazon.com\",\"OrderStatus\":"
+ "pricing v0 competitivePrice (SalesRankings)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "pricing v0 price": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "catalog v0 item": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "orders v0": "200 {\"payload\":{\"Orders\":[{\"BuyerInfo\":{},\"AmazonOrderId\":\"114-8775601-0543413\",\"EarliestShipDate\":\"2026-11-20T07:59:59Z\",\"SalesChannel\":\"Amazon.com\",\"OrderStatus\":",
+ "createReport GET_AFN_INVENTORY_DATA": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to the resource is forbidden\",       \"details\": \"\"     }   ] }",
+ "createReport GET_FBA_MYI_UNSUPPRESSED_INVENTORY_DATA": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to the resource is forbidden\",       \"details\": \"\"     }   ] }",
+ "createReport GET_FBA_INVENTORY_PLANNING_DATA": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to the resource is forbidden\",       \"details\": \"\"     }   ] }"
 }
