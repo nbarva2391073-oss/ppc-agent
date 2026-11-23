@@ -9,7 +9,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: signals-write
+  group: fba-write
   cancel-in-progress: false
 jobs:
   fba:

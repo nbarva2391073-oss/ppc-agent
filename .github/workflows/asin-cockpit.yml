@@ -10,7 +10,7 @@ on:
 permissions:
   contents: write
 concurrency:
-  group: signals-write
+  group: cockpit-write
   cancel-in-progress: false
 jobs:
   cockpit:

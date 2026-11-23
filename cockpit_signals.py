@@ -72,7 +72,7 @@ def run_report(token, name, rtype, cols, group, start, end, unit="DAILY", fallba
     for attempt, c in enumerate([cols] + ([fallback] if fallback else [])):
         try:
             rid = submit_report(token, PROFILE, name, rtype, c, group, start, end, time_unit=unit)
-            return wait_and_download(get_access_token(), PROFILE, rid, max_wait=2400, token_fn=get_access_token)
+            return wait_and_download(get_access_token(), PROFILE, rid, max_wait=(900 if fallback and attempt == 0 else 2400), token_fn=get_access_token)
         except Exception as e:
             print(f"  ⚠️ {name}: спроба {attempt + 1} не вдалась: {str(e)[:200]}")
     return None
