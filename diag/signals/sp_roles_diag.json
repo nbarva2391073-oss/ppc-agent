@@ -1,9 +1,9 @@
 {
  "token CA": "ok",
  "sellers/marketplaceParticipations": "200 {                                                                 \"payload\" : [                                                                 {     \"marketpla",
- "catalog/2022 (salesRanks)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
- "catalog/2022 (summaries)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
- "fba/inventory summaries": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "catalog/2022 (salesRanks)": "200 {\"asin\":\"B0GYSB85SH\",\"salesRanks\":[{\"marketplaceId\":\"ATVPDKIKX0DER\",\"classificationRanks\":[{\"classificationId\":\"11057071\",\"title\":\"Women's Eau de Parfum\",\"link\"",
+ "catalog/2022 (summaries)": "200 {\"asin\":\"B0GYSB85SH\",\"summaries\":[{\"marketplaceId\":\"ATVPDKIKX0DER\",\"adultProduct\":false,\"autographed\":false,\"brand\":\"ALFAMARKER\",\"browseClassification\":{\"displa",
+ "fba/inventory summaries": "200  {         \"pagination\": {     \"nextToken\": \"ZXlKdWRXMWlaWEpQWmsxaGNITlNaWEYxWlhOMFpXUlViMUJ2Y0hWc1lYUmxJam8xTUN3aWJuVnRZbVZ5VDJaTllYQnpUR1ZtZEZSdlVHOXdkV3hoZEd",
  "reports (list)": "200 {\"reports\":[{\"reportType\":\"GET_SALES_AND_TRAFFIC_REPORT\",\"processingEndTime\":\"2026-11-22T20:33:59+00:00\",\"processingStatus\":\"DONE\",\"marketplaceIds\":[\"A2EUQ1WTGC",
  "pricing v0 competitivePrice (SalesRankings)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
  "pricing v0 price": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
