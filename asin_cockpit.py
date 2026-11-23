@@ -117,7 +117,7 @@ def main():
                 round(spend / tsales * 100, 2) if tsales else "", round(spend / asales * 100, 2) if asales else "",
                 chosen, top[si["Search Query"]] if top else "", num(top[si["Query Volume"]]) if top else "",
                 imp, clk, round(clk / imp * 100, 2) if imp else "",
-                round(num(top[si["ASIN Impression Share"]]) * 100, 2) if top else "",
+                round(num(top[si["ASIN Impression Share"]]), 2) if top else ""  # у BA_SQP частка вже у %,
                 len(camps), "; ".join(camps), fresh_br, fresh_tc, fresh_sqp, status_date])
     json.dump(out, open(f"{OUT}/cockpit_preview.json", "w"), ensure_ascii=False, indent=1)
     for r in out:
