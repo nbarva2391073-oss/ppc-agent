@@ -68,13 +68,40 @@ def fetch_structure(token):
     return camps, groups, ads
 
 
-def run_report(token, name, rtype, cols, group, start, end, unit="DAILY", fallback=None):
-    for attempt, c in enumerate([cols] + ([fallback] if fallback else [])):
+_PENDING = {}
+
+
+def start_report(key, token, name, rtype, cols, group, start, end, unit="DAILY", fallback=None):
+    """Одразу замовляє звіт (Amazon готує їх до ~години), не чекаючи. Результат — finish_report(key)."""
+    h = {"name": name, "rtype": rtype, "cols": cols, "group": group, "start": start, "end": end,
+         "unit": unit, "fallback": fallback, "rid": None}
+    try:
+        h["rid"] = submit_report(token, PROFILE, name, rtype, cols, group, start, end, time_unit=unit)
+    except Exception as e:
+        print(f"  ⚠️ {name}: замовлення не вдалось: {str(e)[:200]}")
+    _PENDING[key] = h
+
+
+def finish_report(key):
+    h = _PENDING.get(key)
+    if not h:
+        return None
+    for attempt in range(2):
         try:
-            rid = submit_report(token, PROFILE, name, rtype, c, group, start, end, time_unit=unit)
-            return wait_and_download(get_access_token(), PROFILE, rid, max_wait=(900 if fallback and attempt == 0 else 2400), token_fn=get_access_token)
+            if h["rid"] is None:
+                raise Exception("звіт не замовлено")
+            return wait_and_download(get_access_token(), PROFILE, h["rid"], max_wait=3600, token_fn=get_access_token)
         except Exception as e:
-            print(f"  ⚠️ {name}: спроба {attempt + 1} не вдалась: {str(e)[:200]}")
+            print(f"  ⚠️ {h['name']}: спроба {attempt + 1} не вдалась: {str(e)[:200]}")
+            if attempt == 0 and h["fallback"]:
+                try:
+                    h["rid"] = submit_report(get_access_token(), PROFILE, h["name"] + " (fb)", h["rtype"], h["fallback"],
+                                             h["group"], h["start"], h["end"], time_unit=h["unit"])
+                except Exception as e2:
+                    print(f"  ⚠️ fallback не замовлено: {str(e2)[:200]}")
+                    return None
+            else:
+                return None
     return None
 
 
@@ -115,11 +142,7 @@ def x(d, *path, default=""):
 def job_status(token, camps, groups, ads):
     now = today_utc()
     d1, d2 = dstr(now - timedelta(days=1)), dstr(now - timedelta(days=2))
-    rep = run_report(
-        token, f"adv_sku {d2}..{d1}", "spAdvertisedProduct",
-        ["date", "campaignName", "campaignId", "adGroupName", "adGroupId", "advertisedAsin", "advertisedSku",
-         "impressions", "clicks", "cost"], ["advertiser"], d2, d1,
-        fallback=["date", "campaignName", "campaignId", "adGroupId", "advertisedAsin", "impressions", "clicks", "cost"])
+    rep = finish_report("status")
     if rep is None:
         print("  ❌ Звіт показів недоступний — тривоги не рахуємо"); return
     impr = defaultdict(int); impr_c = defaultdict(int)
@@ -198,9 +221,7 @@ def map_place(raw):
 
 def job_placement(token):
     now = today_utc(); s, e = dstr(now - timedelta(days=3)), dstr(now - timedelta(days=1))
-    rep = run_report(token, f"placement_daily {s}..{e}", "spCampaigns",
-                     ["date", "campaignName", "campaignId", "placementClassification", "impressions", "clicks",
-                      "cost", "sales7d", "purchases7d"], ["campaignPlacement"], s, e)
+    rep = finish_report("placement")
     if rep is None:
         print("  ❌ Placement Daily: звіт недоступний"); return
     rows = [[r.get("date", ""), r.get("campaignName", ""), str(r.get("campaignId", "")),
@@ -216,10 +237,7 @@ def job_placement(token):
 # ── 4. Таргети SP по днях ─────────────────────────────────────────────────
 def job_targets(token):
     now = today_utc(); s, e = dstr(now - timedelta(days=3)), dstr(now - timedelta(days=1))
-    base = ["date", "campaignName", "campaignId", "adGroupName", "adGroupId", "keywordId", "targeting",
-            "keyword", "matchType", "impressions", "clicks", "cost", "sales7d", "purchases7d"]
-    rep = run_report(token, f"targets_daily {s}..{e}", "spTargeting", base + ["keywordBid", "topOfSearchImpressionShare"],
-                     ["targeting"], s, e, fallback=base)
+    rep = finish_report("targets")
     if rep is None:
         print("  ❌ SP Targets Daily: звіт недоступний"); return
     rows = [[r.get("date", ""), r.get("campaignName", ""), str(r.get("campaignId", "")), r.get("adGroupName", ""),
@@ -309,6 +327,23 @@ def main():
     camps = groups = ads = []
     if want("status") or want("bids"):
         camps, groups, ads = fetch_structure(token)
+    now = today_utc(); d1, d2 = dstr(now - timedelta(days=1)), dstr(now - timedelta(days=2))
+    s3 = dstr(now - timedelta(days=3))
+    if want("status"):
+        start_report("status", token, f"adv_sku {d2}..{d1}", "spAdvertisedProduct",
+                     ["date", "campaignName", "campaignId", "adGroupName", "adGroupId", "advertisedAsin", "advertisedSku",
+                      "impressions", "clicks", "cost"], ["advertiser"], d2, d1,
+                     fallback=["date", "campaignName", "campaignId", "adGroupId", "advertisedAsin", "impressions",
+                               "clicks", "cost"])
+    if want("placement"):
+        start_report("placement", token, f"placement_daily {s3}..{d1}", "spCampaigns",
+                     ["date", "campaignName", "campaignId", "placementClassification", "impressions", "clicks",
+                      "cost", "sales7d", "purchases7d"], ["campaignPlacement"], s3, d1)
+    if want("targets"):
+        base = ["date", "campaignName", "campaignId", "adGroupName", "adGroupId", "keywordId", "targeting",
+                "keyword", "matchType", "impressions", "clicks", "cost", "sales7d", "purchases7d"]
+        start_report("targets", token, f"targets_daily {s3}..{d1}", "spTargeting",
+                     base + ["keywordBid", "topOfSearchImpressionShare"], ["targeting"], s3, d1, fallback=base)
     for name, fn, args in (("status", job_status, (token, camps, groups, ads)), ("placement", job_placement, (token,)),
                            ("targets", job_targets, (token,)), ("bids", job_bids, (camps,))):
         if want(name):

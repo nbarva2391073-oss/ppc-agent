@@ -16,7 +16,7 @@ concurrency:
 jobs:
   signals:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 170
     env:
       ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
       ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
