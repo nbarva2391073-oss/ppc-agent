@@ -35,7 +35,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
       - run: pip install -r requirements.txt
-      - run: python cockpit_signals.py 2>&1 | tee diag/signals/last_run.log
+      - run: |
+          mkdir -p diag/signals
+          python cockpit_signals.py 2>&1 | tee diag/signals/last_run.log; test ${PIPESTATUS[0]} -eq 0
       - name: Commit evidence (always)
         if: always()
         run: |
