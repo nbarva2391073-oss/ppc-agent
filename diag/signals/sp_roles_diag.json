@@ -1,0 +1,9 @@
+{
+ "token CA": "ok",
+ "sellers/marketplaceParticipations": "200 {                                                                 \"payload\" : [                                                                 {     \"marketpla",
+ "catalog/2022 (salesRanks)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "catalog/2022 (summaries)": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "fba/inventory summaries": "403 {   \"errors\": [     {       \"code\": \"Unauthorized\",       \"message\": \"Access to requested resource is denied.\",       \"details\": \"\"     }   ] }",
+ "reports (list)": "200 {\"reports\":[{\"reportType\":\"GET_SALES_AND_TRAFFIC_REPORT\",\"processingEndTime\":\"2026-11-22T20:33:59+00:00\",\"processingStatus\":\"DONE\",\"marketplaceIds\":[\"A2EUQ1WTGC",
+ "orders v0": "200 {\"payload\":{\"Orders\":[{\"BuyerInfo\":{},\"AmazonOrderId\":\"114-8775601-0543413\",\"EarliestShipDate\":\"2026-11-20T07:59:59Z\",\"SalesChannel\":\"Amazon.com\",\"OrderStatus\":"
+}
