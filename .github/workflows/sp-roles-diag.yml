@@ -11,11 +11,12 @@ jobs:
       AMAZON_CLIENT_SECRET:     ${{ secrets.AMAZON_CLIENT_SECRET }}
       AMAZON_REFRESH_TOKEN_USA: ${{ secrets.AMAZON_REFRESH_TOKEN_USA }}
       AMAZON_REFRESH_TOKEN_CA:  ${{ secrets.AMAZON_REFRESH_TOKEN_CA }}
+      GOOGLE_CREDENTIALS_JSON:  ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: "3.11" }
-      - run: pip install requests
+      - run: pip install -r requirements.txt
       - run: python sp_roles_diag.py
       - name: Commit evidence (always)
         if: always()
