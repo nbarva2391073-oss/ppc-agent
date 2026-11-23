@@ -4,6 +4,7 @@
 # BA_SQP_USA (головний запит), Ad SKU Status USA (активні кампанії), Advertised Product USA (запасне джерело).
 # Колонки «Рішення» і «Дата перевірки» НЕ заповнюються і НЕ перезаписуються (їх веде AI/Nataly).
 # Upsert за (Week, ASIN): оновлюються лише розраховані колонки.
+# SQP Impression Share у BA_SQP вже у відсотках (не множимо на 100).
 # Env: ASINS="B0GYSB85SH" (список через кому або CORE), WEEKS=1 (скільки останніх повних тижнів), DRY_RUN=1
 # ============================================================
 import json, os
@@ -117,7 +118,7 @@ def main():
                 round(spend / tsales * 100, 2) if tsales else "", round(spend / asales * 100, 2) if asales else "",
                 chosen, top[si["Search Query"]] if top else "", num(top[si["Query Volume"]]) if top else "",
                 imp, clk, round(clk / imp * 100, 2) if imp else "",
-                round(num(top[si["ASIN Impression Share"]]), 2) if top else ""  # у BA_SQP частка вже у %,
+                round(num(top[si["ASIN Impression Share"]]), 2) if top else "",
                 len(camps), "; ".join(camps), fresh_br, fresh_tc, fresh_sqp, status_date])
     json.dump(out, open(f"{OUT}/cockpit_preview.json", "w"), ensure_ascii=False, indent=1)
     for r in out:
