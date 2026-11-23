@@ -1,0 +1,13788 @@
+{
+ "snapshot": "2026-11-21",
+ "prev": "2026-11-13",
+ "below_min": [
+  [
+   "Instinct thin",
+   "feromonas para atraer hombres",
+   "EXACT",
+   0.67,
+   0.73,
+   1.24,
+   0.67,
+   "250110110066161"
+  ],
+  [
+   "Instinct thin",
+   "feromonas para mujer",
+   "EXACT",
+   0.46,
+   0.52,
+   1.02,
+   0.46,
+   "272488772692196"
+  ],
+  [
+   "Instinct thin",
+   "perfume con feromonas para atraer hombres",
+   "EXACT",
+   0.49,
+   0.76,
+   1.14,
+   0.49,
+   "190125199275690"
+  ],
+  [
+   "Instinct thin",
+   "phermone oil",
+   "EXACT",
+   0.72,
+   0.94,
+   1.56,
+   0.72,
+   "1176423304388"
+  ],
+  [
+   "Instinct thin",
+   "pheromone for women",
+   "EXACT",
+   0.63,
+   1.02,
+   1.7,
+   0.63,
+   "261928745872875"
+  ],
+  [
+   "Instinct thin",
+   "pheromone oil to attract men",
+   "EXACT",
+   0.63,
+   0.89,
+   1.49,
+   0.63,
+   "155608890546529"
+  ],
+  [
+   "Instinct thin",
+   "pheromones for women",
+   "EXACT",
+   0.63,
+   1.02,
+   1.7,
+   0.63,
+   "31133400208348"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromones to attract men",
+   "PHRASE",
+   0.81,
+   1.0,
+   1.47,
+   0.97,
+   "239447522508711"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromone women",
+   "EXACT",
+   0.68,
+   1.02,
+   1.7,
+   0.82,
+   "76030777268452"
+  ],
+  [
+   "Diffuser Phrase",
+   "essential oil diffuser",
+   "PHRASE",
+   0.82,
+   0.92,
+   1.59,
+   0.9,
+   "238179904987707"
+  ],
+  [
+   "Diffuser Phrase",
+   "reed diffuser oil",
+   "PHRASE",
+   0.91,
+   1.06,
+   1.76,
+   1.0,
+   "102507835449509"
+  ],
+  [
+   "Diffuser Phrase",
+   "oil diffuser",
+   "EXACT",
+   0.77,
+   0.86,
+   1.42,
+   0.85,
+   "63974547652653"
+  ],
+  [
+   "Diffuser Phrase",
+   "fragrance diffuser",
+   "PHRASE",
+   0.7,
+   1.0,
+   1.6,
+   0.77,
+   "248353858528998"
+  ],
+  [
+   "Diffuser Phrase",
+   "aromatherapy diffuser reed",
+   "PHRASE",
+   0.79,
+   0.82,
+   1.36,
+   0.87,
+   "249540652066812"
+  ],
+  [
+   "pheromone kye diffuser",
+   "pheromones to attract men",
+   "EXACT",
+   1.0,
+   1.17,
+   2.0,
+   1.0,
+   "9647710020868"
+  ],
+  [
+   "Inside phrase",
+   "pheremones",
+   "PHRASE",
+   0.63,
+   0.74,
+   1.24,
+   0.63,
+   "139556444910463"
+  ],
+  [
+   "Inside phrase",
+   "perfume with pheromones women",
+   "PHRASE",
+   0.53,
+   0.85,
+   1.51,
+   0.53,
+   "158421990988899"
+  ],
+  [
+   "Inside phrase",
+   "phermones woman",
+   "PHRASE",
+   0.5,
+   0.65,
+   1.08,
+   0.5,
+   "107744071797694"
+  ],
+  [
+   "Inside phrase",
+   "perfume attract men",
+   "PHRASE",
+   0.63,
+   1.03,
+   1.49,
+   0.63,
+   "89193435990853"
+  ],
+  [
+   "Inside phrase",
+   "alfamarker",
+   "PHRASE",
+   0.59,
+   0.75,
+   1.32,
+   0.59,
+   "149798929306026"
+  ],
+  [
+   "Inside phrase",
+   "pheromone perfume women",
+   "PHRASE",
+   0.56,
+   0.58,
+   1.41,
+   0.56,
+   "266842110216229"
+  ],
+  [
+   "Inside phrase",
+   "pheromone attract men",
+   "PHRASE",
+   0.52,
+   1.0,
+   1.47,
+   0.52,
+   "79332317976612"
+  ],
+  [
+   "Inside phrase",
+   "pheromone perfume for women",
+   "PHRASE",
+   0.56,
+   0.58,
+   1.41,
+   0.56,
+   "225913468475904"
+  ],
+  [
+   "Inside phrase",
+   "pheromone perfume spray for women",
+   "PHRASE",
+   0.7,
+   0.84,
+   1.93,
+   0.7,
+   "215457704233850"
+  ],
+  [
+   "Effect",
+   "black pantyhose",
+   "EXACT",
+   0.67,
+   0.78,
+   1.18,
+   0.67,
+   "95227123949"
+  ],
+  [
+   "Effect",
+   "sheer pantyhose",
+   "EXACT",
+   0.62,
+   0.69,
+   1.13,
+   0.62,
+   "113019050140745"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromones",
+   "PHRASE",
+   1.85,
+   2.07,
+   3.29,
+   1.85,
+   "257563067595589"
+  ],
+  [
+   "Men Set 5 keys",
+   "fermonas.para atraer",
+   "PHRASE",
+   1.06,
+   1.14,
+   1.9,
+   1.06,
+   "236435053142188"
+  ],
+  [
+   "Men Set 5 keys",
+   "feromonas para atraer hombres",
+   "PHRASE",
+   0.82,
+   1.43,
+   2.36,
+   0.82,
+   "155739159520894"
+  ],
+  [
+   "Men Set 5 keys",
+   "faramones",
+   "PHRASE",
+   0.82,
+   1.37,
+   2.44,
+   0.82,
+   "98445437354188"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromones for men",
+   "EXACT",
+   1.03,
+   1.1,
+   1.84,
+   1.03,
+   "66718776638815"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromone cologne",
+   "EXACT",
+   1.26,
+   1.58,
+   2.63,
+   1.26,
+   "40335575848065"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromone cologne for men",
+   "PHRASE",
+   1.66,
+   2.07,
+   3.23,
+   1.66,
+   "160039598522549"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromones perfumes for men",
+   "PHRASE",
+   1.28,
+   1.51,
+   2.51,
+   1.28,
+   "547187247566579"
+  ],
+  [
+   "unlimit men exact",
+   "feromonas para atraer mujeres",
+   "EXACT",
+   0.35,
+   1.34,
+   2.23,
+   0.35,
+   "93620658347768"
+  ],
+  [
+   "unlimit men exact",
+   "feromonas para hombres",
+   "PHRASE",
+   0.85,
+   1.79,
+   2.99,
+   0.85,
+   "98248814476932"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone perfume set",
+   "PHRASE",
+   0.63,
+   0.9,
+   1.5,
+   0.63,
+   "82854357415523"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone perfume",
+   "PHRASE",
+   0.88,
+   1.06,
+   1.78,
+   0.88,
+   "147466217999705"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone cologne",
+   "EXACT",
+   1.01,
+   1.58,
+   2.63,
+   1.01,
+   "34208526887369"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "feromonas para atraer hombres",
+   "EXACT",
+   0.37,
+   0.84,
+   1.42,
+   0.37,
+   "199531189123086"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone oil for women to attract men",
+   "EXACT",
+   0.35,
+   0.43,
+   0.53,
+   0.35,
+   "126409728819052"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "phermone women",
+   "EXACT",
+   0.64,
+   0.66,
+   1.1,
+   0.64,
+   "214671131183477"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromones for women attract men",
+   "EXACT",
+   0.35,
+   0.38,
+   0.63,
+   0.35,
+   "130226291949388"
+  ],
+  [
+   "Sens key words",
+   "pheromone",
+   "EXACT",
+   1.78,
+   2.39,
+   3.98,
+   1.78,
+   "317257127666659"
+  ],
+  [
+   "Sens key words",
+   "phermones",
+   "PHRASE",
+   1.0,
+   1.39,
+   2.16,
+   1.0,
+   "443279974139161"
+  ],
+  [
+   "cover women broad",
+   "phermones",
+   "BROAD",
+   0.76,
+   1.65,
+   2.55,
+   0.76,
+   "230908537738613"
+  ],
+  [
+   "cover women broad",
+   "pharamon",
+   "BROAD",
+   0.65,
+   0.81,
+   1.91,
+   0.65,
+   "196134118124973"
+  ],
+  [
+   "cover women broad",
+   "pheromone perfume",
+   "BROAD",
+   0.69,
+   1.24,
+   2.06,
+   0.69,
+   "26130752384282"
+  ],
+  [
+   "cover women broad",
+   "pheromones perfumes for women",
+   "BROAD",
+   0.6,
+   1.24,
+   2.07,
+   0.6,
+   "116301838334603"
+  ],
+  [
+   "cover women broad",
+   "pheromones perfumes for women",
+   "PHRASE",
+   0.62,
+   1.22,
+   2.03,
+   0.62,
+   "108282777692321"
+  ],
+  [
+   "cover women exact",
+   "pheromone perfume spray for women",
+   "EXACT",
+   0.35,
+   0.38,
+   0.64,
+   0.35,
+   "78868806441385"
+  ],
+  [
+   "oil man exact",
+   "pheromone cologne",
+   "EXACT",
+   1.42,
+   1.56,
+   2.6,
+   1.77,
+   "153901362013091"
+  ],
+  [
+   "oil man exact",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   1.21,
+   1.41,
+   2.31,
+   1.51,
+   "178188962462081"
+  ],
+  [
+   "oil man exact",
+   "pheromones perfumes for men",
+   "EXACT",
+   1.61,
+   1.76,
+   2.93,
+   2.01,
+   "459198099719739"
+  ],
+  [
+   "oil man exact",
+   "perfume con feromonas",
+   "PHRASE",
+   1.2,
+   1.87,
+   3.11,
+   1.5,
+   "307774503440679"
+  ],
+  [
+   "oil man exact",
+   "feromonas perfume men",
+   "PHRASE",
+   1.33,
+   1.51,
+   2.51,
+   1.66,
+   "498250537565459"
+  ],
+  [
+   "oil man broad",
+   "pheromones",
+   "BROAD",
+   1.66,
+   2.32,
+   3.68,
+   2.16,
+   "41155246321163"
+  ],
+  [
+   "Inside - exact",
+   "pheromone perfume spray for women",
+   "EXACT",
+   0.35,
+   0.75,
+   2.0,
+   0.35,
+   "170958775936322"
+  ],
+  [
+   "Inside - exact",
+   "pheromone perfume for woman",
+   "EXACT",
+   0.39,
+   0.5,
+   1.15,
+   0.39,
+   "59233253887040"
+  ],
+  [
+   "2026-Intense phrase",
+   "pheromone cologne for men",
+   "PHRASE",
+   0.9,
+   2.35,
+   3.65,
+   1.44,
+   "240017318737542"
+  ],
+  [
+   "2026 Intense exact top-rest",
+   "pheromones cologne for men",
+   "EXACT",
+   0.7,
+   2.29,
+   3.39,
+   1.19,
+   "236104265864166"
+  ],
+  [
+   "2026 - Intense broad",
+   "men pheromone",
+   "BROAD",
+   0.65,
+   2.45,
+   3.73,
+   0.65,
+   "55560779753144"
+  ],
+  [
+   "gift instinct 2021",
+   "gift ideas for women",
+   "EXACT",
+   1.18,
+   1.91,
+   3.18,
+   1.18,
+   "263639991842055"
+  ],
+  [
+   "gift instinct 2021",
+   "christmas gifts",
+   "BROAD",
+   1.08,
+   1.69,
+   2.81,
+   1.08,
+   "114241601945257"
+  ],
+  [
+   "gift instinct 2021",
+   "christmas gifts for women",
+   "EXACT",
+   1.12,
+   1.65,
+   3.34,
+   1.12,
+   "264846834511437"
+  ],
+  [
+   "gift instinct 2021",
+   "christmas gift ideas",
+   "BROAD",
+   1.11,
+   1.47,
+   2.45,
+   1.11,
+   "235005279668757"
+  ],
+  [
+   "gift instinct 2021",
+   "gift for her",
+   "EXACT",
+   1.32,
+   2.56,
+   4.52,
+   1.32,
+   "122457282595055"
+  ],
+  [
+   "gift instinct 2021",
+   "best friend gifts for women",
+   "PHRASE",
+   1.08,
+   2.1,
+   3.5,
+   1.08,
+   "57244747142451"
+  ],
+  [
+   "gift instinct 2021",
+   "best friend gifts for women",
+   "EXACT",
+   1.02,
+   1.84,
+   3.06,
+   1.02,
+   "162057543993336"
+  ],
+  [
+   "gift instinct 2021",
+   "best friend gift",
+   "BROAD",
+   1.11,
+   2.24,
+   3.73,
+   1.11,
+   "158996982480504"
+  ],
+  [
+   "gift instinct 2021",
+   "gift cosmetics",
+   "BROAD",
+   1.0,
+   1.5,
+   2.5,
+   1.0,
+   "197134796654806"
+  ],
+  [
+   "gift instinct 2021",
+   "gift perfume",
+   "BROAD",
+   0.82,
+   1.38,
+   2.25,
+   0.82,
+   "197847899264870"
+  ],
+  [
+   "gift inside 2021",
+   "gift ideas for women",
+   "EXACT",
+   1.26,
+   1.91,
+   3.18,
+   1.26,
+   "128872040505178"
+  ],
+  [
+   "gift inside 2021",
+   "christmas gifts",
+   "BROAD",
+   1.17,
+   1.69,
+   2.81,
+   1.17,
+   "32437120621919"
+  ],
+  [
+   "gift inside 2021",
+   "christmas gifts for women",
+   "EXACT",
+   1.12,
+   1.65,
+   3.34,
+   1.12,
+   "86383582423909"
+  ],
+  [
+   "gift inside 2021",
+   "christmas gift ideas",
+   "PHRASE",
+   1.11,
+   1.64,
+   2.73,
+   1.11,
+   "5349556893866"
+  ],
+  [
+   "gift inside 2021",
+   "gift for her",
+   "EXACT",
+   1.45,
+   2.56,
+   4.52,
+   1.45,
+   "275327463268519"
+  ],
+  [
+   "gift inside 2021",
+   "best friend gifts for women",
+   "PHRASE",
+   1.8,
+   2.1,
+   3.5,
+   1.8,
+   "45818523763456"
+  ],
+  [
+   "gift inside 2021",
+   "best friend gifts for women",
+   "EXACT",
+   1.8,
+   1.84,
+   3.06,
+   1.8,
+   "71470979797220"
+  ],
+  [
+   "gift inside 2021",
+   "gift cosmetics",
+   "BROAD",
+   1.11,
+   1.5,
+   2.5,
+   1.11,
+   "276891980336481"
+  ],
+  [
+   "gift inside 2021",
+   "gift perfume",
+   "BROAD",
+   1.06,
+   1.38,
+   2.25,
+   1.06,
+   "98402651133705"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromone cologne for men",
+   "PHRASE",
+   1.0,
+   2.16,
+   3.35,
+   1.0,
+   "249623804384487"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromone oil",
+   "PHRASE",
+   1.0,
+   1.41,
+   2.0,
+   1.0,
+   "2973057951012"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromones",
+   "BROAD",
+   1.7,
+   2.32,
+   3.68,
+   1.7,
+   "213922762408227"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "feromone",
+   "BROAD",
+   0.85,
+   1.06,
+   1.97,
+   0.85,
+   "127524289837920"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "phermone",
+   "BROAD",
+   0.89,
+   0.9,
+   1.5,
+   0.89,
+   "103417274186888"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromone cologne for men",
+   "BROAD",
+   1.27,
+   2.32,
+   3.59,
+   1.27,
+   "261921042292203"
+  ],
+  [
+   "SENS NEW",
+   "pheromone cologne for men",
+   "PHRASE",
+   0.83,
+   0.87,
+   1.31,
+   0.83,
+   "48175347386193"
+  ],
+  [
+   "SENS NEW",
+   "pheromone",
+   "BROAD",
+   1.0,
+   1.42,
+   2.38,
+   1.0,
+   "213284905222850"
+  ],
+  [
+   "SENS NEW",
+   "pheromones",
+   "BROAD",
+   0.77,
+   1.42,
+   2.38,
+   0.77,
+   "256929134304390"
+  ],
+  [
+   "SENS NEW",
+   "feromone",
+   "BROAD",
+   0.95,
+   1.24,
+   1.92,
+   0.95,
+   "67438204770128"
+  ],
+  [
+   "SENS NEW",
+   "pheromone cologne for men",
+   "BROAD",
+   0.52,
+   1.02,
+   1.52,
+   0.52,
+   "257270185016478"
+  ],
+  [
+   "Men phrase",
+   "men pheromone",
+   "PHRASE",
+   1.0,
+   2.24,
+   3.74,
+   1.0,
+   "220877073581676"
+  ],
+  [
+   "Men phrase",
+   "mens pheromone",
+   "PHRASE",
+   1.0,
+   2.24,
+   3.74,
+   1.0,
+   "143736514943833"
+  ],
+  [
+   "Men phrase",
+   "pheromones for men",
+   "PHRASE",
+   1.0,
+   2.82,
+   4.09,
+   1.0,
+   "26536524855778"
+  ],
+  [
+   "Men phrase",
+   "pheromone for men",
+   "PHRASE",
+   1.0,
+   2.85,
+   4.21,
+   1.0,
+   "168671520322023"
+  ],
+  [
+   "Men phrase",
+   "pheromone perfume for men",
+   "PHRASE",
+   0.8,
+   1.57,
+   2.61,
+   0.8,
+   "234021873772082"
+  ],
+  [
+   "flame new spanish",
+   "feromonas para mujer",
+   "PHRASE",
+   0.16,
+   0.54,
+   0.76,
+   0.68,
+   "154945237879808"
+  ],
+  [
+   "flame new spanish",
+   "perfume de feromonas",
+   "PHRASE",
+   0.18,
+   0.62,
+   1.04,
+   0.77,
+   "254371983511988"
+  ],
+  [
+   "Flame new phrase 2",
+   "pheromone perfume",
+   "PHRASE",
+   0.25,
+   0.95,
+   1.67,
+   1.0,
+   "46726909048407"
+  ],
+  [
+   "Flame new phrase 2",
+   "pheromone oil",
+   "PHRASE",
+   0.23,
+   1.04,
+   1.72,
+   0.92,
+   "150156963005334"
+  ],
+  [
+   "INSIDE BROAD",
+   "pheromones perfume",
+   "BROAD",
+   0.3,
+   0.59,
+   1.5,
+   1.5,
+   "168629876195726"
+  ],
+  [
+   "flame new spanish exact",
+   "perfume con feromonas para mujeres",
+   "EXACT",
+   0.16,
+   1.04,
+   1.82,
+   0.72,
+   "200482915904995"
+  ],
+  [
+   "flame new spanish exact",
+   "feromonas para mujer para enamorar",
+   "EXACT",
+   0.1,
+   0.66,
+   1.1,
+   0.45,
+   "202607160657311"
+  ],
+  [
+   "flame new spanish exact",
+   "perfume de feromonas",
+   "EXACT",
+   0.1,
+   0.35,
+   0.59,
+   0.45,
+   "274378273658960"
+  ],
+  [
+   "INSIDE pheromone perfume",
+   "pheromone spray for women",
+   "PHRASE",
+   0.15,
+   0.71,
+   1.19,
+   0.6,
+   "238065691950810"
+  ],
+  [
+   "Wings exact pher oil",
+   "pheromone oil",
+   "EXACT",
+   0.41,
+   0.55,
+   1.09,
+   1.21,
+   "216600299759510"
+  ],
+  [
+   "Wings exact pher oil",
+   "pheromone oil for women to attract men",
+   "EXACT",
+   0.28,
+   0.82,
+   1.36,
+   0.82,
+   "228323560699138"
+  ],
+  [
+   "Wings exact pher oil",
+   "pheromone for women",
+   "EXACT",
+   0.41,
+   1.02,
+   1.7,
+   1.21,
+   "167691161032964"
+  ],
+  [
+   "Wings phrase",
+   "pheromone perfume oil",
+   "BROAD",
+   0.3,
+   0.74,
+   1.24,
+   1.53,
+   "112905595292560"
+  ],
+  [
+   "Wings phrase",
+   "pheromone for women",
+   "PHRASE",
+   0.3,
+   0.49,
+   1.1,
+   1.53,
+   "185532875288292"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alpha marker",
+   "PHRASE",
+   1.07,
+   1.1,
+   1.83,
+   1.07,
+   "108605644142223"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feramones",
+   "BROAD",
+   0.62,
+   1.64,
+   2.62,
+   0.62,
+   "131996413044934"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feramones",
+   "PHRASE",
+   1.0,
+   1.41,
+   2.26,
+   1.0,
+   "41093405093609"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "BROAD",
+   0.77,
+   1.96,
+   3.2,
+   0.77,
+   "219582961335650"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "PHRASE",
+   0.79,
+   1.69,
+   2.75,
+   0.79,
+   "44543352988655"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pharamone",
+   "BROAD",
+   0.86,
+   1.0,
+   1.66,
+   0.86,
+   "120588581304908"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremone",
+   "BROAD",
+   1.04,
+   1.59,
+   2.65,
+   1.04,
+   "195588329525137"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremone",
+   "PHRASE",
+   1.07,
+   1.37,
+   2.28,
+   1.07,
+   "4298041616536"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremones",
+   "BROAD",
+   1.04,
+   1.59,
+   2.65,
+   1.04,
+   "37029962384041"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremones",
+   "PHRASE",
+   1.07,
+   1.37,
+   2.28,
+   1.07,
+   "44538178081390"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "phermones",
+   "BROAD",
+   0.82,
+   1.62,
+   2.51,
+   0.82,
+   "8277902201174"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "phermones",
+   "PHRASE",
+   0.84,
+   1.39,
+   2.16,
+   0.84,
+   "207520706503078"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "BROAD",
+   1.5,
+   1.52,
+   2.53,
+   1.5,
+   "79908514783956"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "BROAD",
+   0.96,
+   1.01,
+   1.69,
+   0.96,
+   "242358260964931"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "raw chemistry men oil",
+   "BROAD",
+   0.69,
+   2.82,
+   4.7,
+   0.69,
+   "106275907220340"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone perfume for woman",
+   "PHRASE",
+   0.47,
+   1.22,
+   2.03,
+   0.47,
+   "191858499196686"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone oil",
+   "PHRASE",
+   0.2,
+   0.38,
+   0.64,
+   0.2,
+   "169974729938404"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone perfume",
+   "PHRASE",
+   1.14,
+   1.22,
+   2.03,
+   1.14,
+   "142508925730607"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromones for her",
+   "PHRASE",
+   0.52,
+   1.22,
+   2.03,
+   0.52,
+   "136070405729803"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "phermone",
+   "PHRASE",
+   0.44,
+   1.61,
+   2.5,
+   0.44,
+   "267678174552451"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromones perfumes for women",
+   "PHRASE",
+   0.85,
+   1.22,
+   2.03,
+   0.85,
+   "169232967354892"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "BROAD",
+   1.01,
+   1.49,
+   2.36,
+   1.01,
+   "66830403885587"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "PHRASE",
+   0.8,
+   1.31,
+   2.07,
+   0.8,
+   "202322948061022"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "androstadienone cologne",
+   "BROAD",
+   0.88,
+   0.91,
+   1.51,
+   0.88,
+   "87564353147762"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "BROAD",
+   1.08,
+   1.98,
+   3.22,
+   1.08,
+   "147240377147106"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "PHRASE",
+   1.08,
+   1.74,
+   2.83,
+   1.08,
+   "163857611229944"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   1.1,
+   1.79,
+   2.99,
+   1.1,
+   "281452288581683"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "BROAD",
+   1.27,
+   2.36,
+   3.66,
+   1.27,
+   "234760473534462"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "PHRASE",
+   0.88,
+   2.16,
+   3.6,
+   0.88,
+   "267023261827525"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "BROAD",
+   1.22,
+   2.36,
+   3.7,
+   1.22,
+   "198997421987758"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones attract women",
+   "BROAD",
+   1.33,
+   1.46,
+   2.43,
+   1.33,
+   "55091472093033"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "BROAD",
+   1.01,
+   1.53,
+   2.54,
+   1.01,
+   "221113271531557"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "PHRASE",
+   0.96,
+   1.33,
+   2.21,
+   0.96,
+   "223433255403930"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "raw chemistry men oil",
+   "BROAD",
+   0.94,
+   3.57,
+   5.95,
+   0.94,
+   "35085594497383"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "unscented pheromones men",
+   "BROAD",
+   1.45,
+   1.55,
+   2.55,
+   1.45,
+   "183025054899086"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "BROAD",
+   1.01,
+   1.47,
+   2.31,
+   1.01,
+   "241147252205250"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "PHRASE",
+   1.21,
+   1.29,
+   2.05,
+   1.21,
+   "204870858665713"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   1.16,
+   1.42,
+   2.33,
+   1.16,
+   "152465383588297"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "BROAD",
+   1.01,
+   1.49,
+   2.36,
+   1.01,
+   "174818455203796"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "PHRASE",
+   0.84,
+   1.31,
+   2.07,
+   0.84,
+   "176958080871675"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "androstadienone cologne",
+   "BROAD",
+   0.86,
+   0.91,
+   1.51,
+   0.86,
+   "29934130465138"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "cologne attract women",
+   "BROAD",
+   1.01,
+   1.35,
+   2.21,
+   1.01,
+   "32346920322052"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "cologne attract women",
+   "PHRASE",
+   1.0,
+   1.12,
+   1.8,
+   1.0,
+   "78604369782461"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "BROAD",
+   1.73,
+   1.98,
+   3.22,
+   1.73,
+   "100618203623731"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "PHRASE",
+   1.73,
+   1.74,
+   2.83,
+   1.73,
+   "161075976949600"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   1.1,
+   1.79,
+   2.99,
+   1.1,
+   "157658344711004"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "BROAD",
+   1.27,
+   2.36,
+   3.66,
+   1.27,
+   "76549361920176"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "PHRASE",
+   0.88,
+   2.16,
+   3.6,
+   0.88,
+   "178905093823006"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "BROAD",
+   1.29,
+   2.36,
+   3.7,
+   1.29,
+   "214963759505379"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones attract women",
+   "BROAD",
+   1.33,
+   1.46,
+   2.43,
+   1.33,
+   "260802941112931"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "BROAD",
+   1.01,
+   1.53,
+   2.54,
+   1.01,
+   "2180560755132"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "PHRASE",
+   0.96,
+   1.33,
+   2.21,
+   0.96,
+   "233885839729413"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "raw chemistry men oil",
+   "BROAD",
+   0.94,
+   3.57,
+   5.95,
+   0.94,
+   "120426867789721"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "unscented pheromones men",
+   "BROAD",
+   1.45,
+   1.55,
+   2.55,
+   1.45,
+   "184716964890028"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "BROAD",
+   1.01,
+   1.47,
+   2.31,
+   1.01,
+   "253324751634072"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "PHRASE",
+   1.12,
+   1.29,
+   2.05,
+   1.12,
+   "78475265757545"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   1.16,
+   1.42,
+   2.33,
+   1.16,
+   "134139219476112"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "BROAD",
+   0.85,
+   1.44,
+   2.28,
+   0.85,
+   "62166513226156"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "PHRASE",
+   0.85,
+   1.48,
+   2.35,
+   0.85,
+   "230952594596608"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "androstadienone cologne",
+   "BROAD",
+   0.86,
+   0.88,
+   1.46,
+   0.86,
+   "149573399292143"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "androstadienone cologne",
+   "PHRASE",
+   0.86,
+   0.9,
+   1.5,
+   0.86,
+   "98708289051865"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "BROAD",
+   1.67,
+   1.91,
+   3.12,
+   1.67,
+   "65823746979247"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "PHRASE",
+   1.67,
+   1.97,
+   3.21,
+   1.67,
+   "198488681554880"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   1.65,
+   2.03,
+   3.39,
+   1.65,
+   "17470133716408"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "BROAD",
+   1.38,
+   2.29,
+   3.54,
+   1.38,
+   "269553410652298"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "PHRASE",
+   0.88,
+   2.45,
+   4.09,
+   0.88,
+   "121684301334437"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "BROAD",
+   1.4,
+   2.29,
+   3.58,
+   1.4,
+   "148606215512510"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones attract women",
+   "BROAD",
+   1.3,
+   1.41,
+   2.35,
+   1.3,
+   "190605852887790"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones attract women",
+   "PHRASE",
+   1.11,
+   1.19,
+   2.06,
+   1.11,
+   "83069406363341"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "BROAD",
+   1.01,
+   1.48,
+   2.46,
+   1.01,
+   "155266290090720"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "PHRASE",
+   0.96,
+   1.51,
+   2.51,
+   0.96,
+   "180655152216522"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "raw chemistry men oil",
+   "BROAD",
+   0.94,
+   3.46,
+   5.76,
+   0.94,
+   "60838699360624"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "unscented pheromones men",
+   "BROAD",
+   1.05,
+   1.5,
+   2.47,
+   1.05,
+   "270350191245290"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "unscented pheromones men",
+   "PHRASE",
+   1.12,
+   1.2,
+   2.36,
+   1.12,
+   "81231659267157"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "BROAD",
+   1.01,
+   1.42,
+   2.24,
+   1.01,
+   "36856959933095"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "PHRASE",
+   1.13,
+   1.46,
+   2.32,
+   1.13,
+   "279530155358580"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   1.16,
+   1.4,
+   2.3,
+   1.16,
+   "86111118928795"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "BROAD",
+   1.0,
+   1.49,
+   2.36,
+   1.0,
+   "46368192688962"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "alfa marker",
+   "PHRASE",
+   1.0,
+   1.31,
+   2.07,
+   1.0,
+   "162900247025835"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "androstadienone cologne",
+   "BROAD",
+   0.86,
+   0.91,
+   1.51,
+   0.86,
+   "1622292927246"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "BROAD",
+   1.67,
+   1.98,
+   3.22,
+   1.67,
+   "124039858893189"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "fermones",
+   "PHRASE",
+   1.67,
+   1.74,
+   2.83,
+   1.67,
+   "128568722393306"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   1.1,
+   1.79,
+   2.99,
+   1.1,
+   "81888992475238"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "BROAD",
+   1.38,
+   2.36,
+   3.66,
+   1.38,
+   "159730287214336"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "PHRASE",
+   1.69,
+   2.16,
+   3.6,
+   1.69,
+   "268299916230176"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "BROAD",
+   1.77,
+   2.36,
+   3.7,
+   1.77,
+   "159052888135515"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones unscented",
+   "PHRASE",
+   1.18,
+   1.33,
+   2.21,
+   1.18,
+   "191329873980457"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "raw chemistry men oil",
+   "BROAD",
+   1.82,
+   3.57,
+   5.95,
+   1.82,
+   "239729471091077"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "BROAD",
+   1.33,
+   1.47,
+   2.31,
+   1.33,
+   "206389864355738"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "PHRASE",
+   1.24,
+   1.29,
+   2.05,
+   1.24,
+   "269898979174602"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   1.13,
+   1.42,
+   2.33,
+   1.13,
+   "113572509889581"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheromone perfume for woman",
+   "PHRASE",
+   0.66,
+   1.49,
+   2.48,
+   0.72,
+   "125072375427034"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheromones perfumes for women",
+   "PHRASE",
+   1.12,
+   1.49,
+   2.48,
+   1.22,
+   "238556852733817"
+  ],
+  [
+   "Flame - set 1+1",
+   "perfume con feromonas para mujeres",
+   "PHRASE",
+   0.29,
+   0.63,
+   1.1,
+   0.32,
+   "429785924565581"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheromone oil perfume women",
+   "PHRASE",
+   0.88,
+   1.04,
+   1.8,
+   0.96,
+   "476776621334653"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheromone perfume",
+   "PHRASE",
+   1.05,
+   1.49,
+   2.48,
+   1.14,
+   "418016420469324"
+  ],
+  [
+   "lizard phrase new",
+   "male pheromone cologne",
+   "PHRASE",
+   0.2,
+   1.3,
+   2.16,
+   1.1,
+   "9546975255032"
+  ],
+  [
+   "lizard phrase new",
+   "pheromone perfume for him",
+   "PHRASE",
+   0.2,
+   1.22,
+   2.08,
+   1.1,
+   "34918367073901"
+  ],
+  [
+   "BUTTERFLY Generic Exact.",
+   "perfume with pheromones for woman",
+   "EXACT",
+   0.16,
+   0.67,
+   1.1,
+   0.72,
+   "264397138651730"
+  ],
+  [
+   "BUTTERFLY Generic Exact.",
+   "pheromones perfumes for women",
+   "EXACT",
+   0.25,
+   0.46,
+   0.7,
+   1.12,
+   "475827994451738"
+  ],
+  [
+   "Butterfly Brand Exact",
+   "alfamarker perfume",
+   "EXACT",
+   0.16,
+   0.33,
+   0.88,
+   0.53,
+   "228975120399272"
+  ],
+  [
+   "flame velvet exact",
+   "pheromone oil",
+   "EXACT",
+   0.17,
+   0.61,
+   1.2,
+   1.02,
+   "261992378799918"
+  ],
+  [
+   "flame velvet exact",
+   "pheromone oil perfume women",
+   "EXACT",
+   0.22,
+   0.62,
+   0.95,
+   1.32,
+   "30083239977648"
+  ],
+  [
+   "INTENSE PHEROMONE PHRASE",
+   "pheromone perfume for men",
+   "PHRASE",
+   0.61,
+   1.51,
+   2.51,
+   1.82,
+   "16209894537391"
+  ],
+  [
+   "INTENSE PHEROMONE PHRASE",
+   "pheromone spray for men",
+   "PHRASE",
+   0.61,
+   1.17,
+   1.89,
+   1.82,
+   "276131803734256"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone perfume",
+   "EXACT",
+   0.16,
+   0.58,
+   1.11,
+   0.72,
+   "199387042274401"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone perfume for woman",
+   "EXACT",
+   0.18,
+   0.55,
+   1.26,
+   0.81,
+   "24409037858884"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone perfume for women attract men",
+   "EXACT",
+   0.18,
+   0.6,
+   0.79,
+   0.81,
+   "191025193877442"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone oil",
+   "EXACT",
+   0.19,
+   0.61,
+   1.2,
+   0.85,
+   "265852297272576"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone perfume oil",
+   "EXACT",
+   0.16,
+   0.46,
+   0.99,
+   0.72,
+   "149592169858653"
+  ],
+  [
+   "Inside X2 Exact diagnostic",
+   "pheromone perfume for woman",
+   "EXACT",
+   0.28,
+   0.73,
+   1.68,
+   0.98,
+   "38296385703324"
+  ],
+  [
+   "Inside X2 Exact diagnostic",
+   "pheromone perfume women",
+   "EXACT",
+   0.19,
+   0.74,
+   1.7,
+   0.67,
+   "168987840064767"
+  ],
+  [
+   "Inside X2 Exact diagnostic",
+   "pheromone perfume",
+   "EXACT",
+   0.27,
+   0.53,
+   1.01,
+   0.95,
+   "20289989787181"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "best pheromone perfume",
+   "EXACT",
+   0.18,
+   0.83,
+   1.14,
+   0.88,
+   "117744278040029"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "pheromone oil",
+   "EXACT",
+   0.19,
+   0.61,
+   1.2,
+   0.93,
+   "239826515803572"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "pheromone perfume oil",
+   "EXACT",
+   0.19,
+   0.46,
+   0.99,
+   0.93,
+   "267664428712742"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "pheromone perfume woman",
+   "EXACT",
+   0.2,
+   0.51,
+   0.77,
+   0.98,
+   "15365510952214"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "pheromone perfume",
+   "EXACT",
+   0.19,
+   0.58,
+   1.11,
+   0.93,
+   "269869203229310"
+  ],
+  [
+   "new men oil",
+   "best pheromone cologne for men",
+   "EXACT",
+   0.4,
+   2.18,
+   2.91,
+   1.0,
+   "43634417170451"
+  ],
+  [
+   "new men oil",
+   "pheromone cologne for men",
+   "EXACT",
+   0.4,
+   0.61,
+   1.01,
+   1.0,
+   "77202513157172"
+  ],
+  [
+   "velvet phrase High interest Audiences",
+   "pheromone perfume oil",
+   "PHRASE",
+   0.21,
+   0.74,
+   1.24,
+   0.94,
+   "118490220060139"
+  ],
+  [
+   "velvet phrase High interest Audiences",
+   "feromonas perfume women",
+   "PHRASE",
+   0.22,
+   0.78,
+   1.3,
+   0.99,
+   "124762504312765"
+  ],
+  [
+   "velvet phrase High interest Audiences",
+   "pheromones perfumes for women",
+   "PHRASE",
+   0.23,
+   0.59,
+   1.43,
+   1.04,
+   "4129048447525"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone oil",
+   "PHRASE",
+   1.0,
+   1.35,
+   1.93,
+   1.3,
+   "494546161748636"
+  ],
+  [
+   "men rollon phrase",
+   "feromonas",
+   "PHRASE",
+   0.88,
+   1.79,
+   2.99,
+   1.14,
+   "390541764979479"
+  ],
+  [
+   "men rollon phrase",
+   "pheromones",
+   "PHRASE",
+   1.73,
+   2.07,
+   3.29,
+   2.25,
+   "338919079544752"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone cologne for men",
+   "PHRASE",
+   1.51,
+   2.07,
+   3.23,
+   1.96,
+   "556354561243703"
+  ],
+  [
+   "men rollon phrase",
+   "feromonas perfume for men",
+   "PHRASE",
+   0.95,
+   1.29,
+   2.6,
+   1.23,
+   "505327033823569"
+  ],
+  [
+   "men rollon phrase",
+   "perfume con feromonas para hombres para atraer mujeres",
+   "PHRASE",
+   1.0,
+   1.5,
+   2.5,
+   1.3,
+   "333246497955774"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone perfume spray",
+   "PHRASE",
+   1.0,
+   1.18,
+   1.96,
+   1.3,
+   "300195360582688"
+  ],
+  [
+   "men rollon phrase",
+   "pheromones perfumes for men",
+   "EXACT",
+   0.62,
+   1.77,
+   2.95,
+   0.81,
+   "540299838563995"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone cologne for man",
+   "PHRASE",
+   1.51,
+   2.07,
+   3.23,
+   1.96,
+   "310250976390497"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone",
+   "BROAD",
+   0.78,
+   0.81,
+   1.4,
+   0.78,
+   "386350474739776"
+  ],
+  [
+   "unlimit men exact",
+   "pheromones",
+   "BROAD",
+   1.83,
+   2.36,
+   3.75,
+   1.83,
+   "446901220533041"
+  ],
+  [
+   "unlimit men exact",
+   "pure instinct roll on pheromone perfume",
+   "PHRASE",
+   1.13,
+   1.19,
+   1.99,
+   1.13,
+   "479452845941677"
+  ],
+  [
+   "unlimit men exact",
+   "pheromones",
+   "PHRASE",
+   1.91,
+   2.07,
+   3.29,
+   1.91,
+   "382129403333079"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone cologne for men",
+   "PHRASE",
+   1.91,
+   2.07,
+   3.23,
+   1.91,
+   "359139428906866"
+  ],
+  [
+   "unlimit men exact",
+   "love elixir pheromone perfume",
+   "PHRASE",
+   0.94,
+   1.42,
+   2.38,
+   0.94,
+   "539130813453700"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone oil",
+   "PHRASE",
+   1.18,
+   1.35,
+   1.93,
+   1.18,
+   "505458581685977"
+  ],
+  [
+   "unlimit men exact",
+   "pure instinct pheromone perfume",
+   "PHRASE",
+   1.0,
+   1.24,
+   2.07,
+   1.0,
+   "342395588035825"
+  ],
+  [
+   "unlimit men exact",
+   "venom pheromone perfume",
+   "PHRASE",
+   1.0,
+   1.05,
+   1.75,
+   1.0,
+   "464340978307420"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men",
+   "PHRASE",
+   1.38,
+   2.07,
+   3.23,
+   1.38,
+   "501729158179603"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "men's pheromone cologne",
+   "PHRASE",
+   1.69,
+   2.16,
+   3.6,
+   1.69,
+   "298374304455721"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone oil",
+   "PHRASE",
+   1.18,
+   1.35,
+   1.93,
+   1.18,
+   "527604419682910"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pure instinct pheromone perfume",
+   "PHRASE",
+   1.0,
+   1.24,
+   2.07,
+   1.0,
+   "375030054769722"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "venom pheromone perfume",
+   "PHRASE",
+   0.98,
+   1.05,
+   1.75,
+   0.98,
+   "357944061328746"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pure romance pheromone roll on",
+   "PHRASE",
+   0.87,
+   0.96,
+   1.6,
+   0.87,
+   "413392301596068"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "crave pheromone perfume",
+   "PHRASE",
+   0.78,
+   1.09,
+   1.81,
+   0.78,
+   "370592231856508"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "raw pheromone cologne for men",
+   "PHRASE",
+   1.86,
+   1.93,
+   3.21,
+   1.86,
+   "502164529157319"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "golden lure pheromone hair oil",
+   "PHRASE",
+   0.51,
+   0.53,
+   0.89,
+   0.51,
+   "424620294689557"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone perfume spray",
+   "PHRASE",
+   1.0,
+   1.18,
+   1.96,
+   1.0,
+   "381537139016972"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone perfume for woman vanilla",
+   "PHRASE",
+   0.95,
+   0.98,
+   1.63,
+   0.95,
+   "345250447898297"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for woman",
+   "PHRASE",
+   1.2,
+   1.54,
+   2.21,
+   1.2,
+   "500902168821679"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "lure pheromone",
+   "PHRASE",
+   0.98,
+   1.51,
+   2.04,
+   0.98,
+   "348453631741493"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "eye of love pheromone perfume",
+   "PHRASE",
+   0.65,
+   1.01,
+   1.56,
+   0.65,
+   "505826248911102"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "lust pheromone perfume",
+   "PHRASE",
+   0.91,
+   0.99,
+   1.65,
+   0.91,
+   "480764874515639"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone perfume spray for men",
+   "PHRASE",
+   0.89,
+   1.03,
+   1.41,
+   0.89,
+   "425712667175476"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone body",
+   "PHRASE",
+   0.98,
+   1.07,
+   1.44,
+   0.98,
+   "292118500183391"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone",
+   "PHRASE",
+   1.94,
+   2.15,
+   3.59,
+   1.94,
+   "560633846052534"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pure romance pheromone perfume",
+   "PHRASE",
+   0.89,
+   1.06,
+   1.76,
+   0.89,
+   "332802367078932"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "men pheromone",
+   "PHRASE",
+   1.9,
+   2.15,
+   3.59,
+   1.9,
+   "479039313813400"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "lure for him pheromone",
+   "PHRASE",
+   1.0,
+   1.49,
+   2.31,
+   1.0,
+   "473319246221735"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "original pheromone",
+   "PHRASE",
+   1.13,
+   1.25,
+   2.09,
+   1.13,
+   "550626229686451"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pure instinct crave roll on pheromone perfume",
+   "PHRASE",
+   0.88,
+   1.18,
+   1.96,
+   0.88,
+   "477835363742994"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "roll on pheromone perfume",
+   "PHRASE",
+   1.1,
+   1.19,
+   1.98,
+   1.1,
+   "286058095415710"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for him",
+   "PHRASE",
+   1.8,
+   2.55,
+   4.25,
+   1.8,
+   "468529989896348"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone for men",
+   "PHRASE",
+   1.87,
+   2.74,
+   4.05,
+   1.87,
+   "347676144559394"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "men pheromone cologne",
+   "PHRASE",
+   1.9,
+   2.19,
+   4.18,
+   1.9,
+   "358264300471682"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "lust pheromone",
+   "PHRASE",
+   1.0,
+   1.89,
+   3.08,
+   1.0,
+   "551763972348799"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones for women",
+   "PHRASE",
+   1.9,
+   2.37,
+   3.95,
+   1.9,
+   "460284464402181"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones perfumes for women vanilla",
+   "PHRASE",
+   0.94,
+   0.98,
+   1.63,
+   0.94,
+   "440440576875746"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "cologne with pheromones",
+   "PHRASE",
+   1.91,
+   1.94,
+   3.51,
+   1.91,
+   "354057833148055"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones perfume for men",
+   "PHRASE",
+   1.29,
+   1.51,
+   2.51,
+   1.29,
+   "493217040044626"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromones cologne for men",
+   "PHRASE",
+   1.37,
+   2.07,
+   3.23,
+   1.37,
+   "558501452579315"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pure romance pheromones",
+   "PHRASE",
+   1.0,
+   1.06,
+   1.76,
+   1.0,
+   "314226461447726"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone perfume for woman",
+   "PHRASE",
+   0.92,
+   0.98,
+   1.64,
+   0.92,
+   "482175475030174"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "lust pheromone perfume oil",
+   "PHRASE",
+   0.88,
+   0.99,
+   1.65,
+   0.88,
+   "484207236905277"
+  ],
+  [
+   "Mixed women 2023",
+   "pharamond perfume",
+   "PHRASE",
+   0.6,
+   0.7,
+   1.05,
+   0.6,
+   "547251875892896"
+  ],
+  [
+   "Mixed women 2023",
+   "fermonas.para atraer hombres",
+   "PHRASE",
+   0.35,
+   1.25,
+   2.09,
+   0.35,
+   "305770634269595"
+  ],
+  [
+   "Mixed women 2023",
+   "fermonee perfume women",
+   "PHRASE",
+   0.71,
+   1.1,
+   1.84,
+   0.71,
+   "288305264568845"
+  ],
+  [
+   "Mixed women 2023",
+   "perfume with pheromones",
+   "PHRASE",
+   0.92,
+   0.97,
+   1.68,
+   0.92,
+   "534087351282047"
+  ],
+  [
+   "Mixed women 2023",
+   "feromonas perfume women",
+   "PHRASE",
+   0.71,
+   0.8,
+   1.33,
+   0.71,
+   "366289953436118"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone oil perfume women",
+   "PHRASE",
+   0.61,
+   1.04,
+   1.8,
+   0.61,
+   "526628204713489"
+  ],
+  [
+   "Mixed women 2023",
+   "perfume con feromonas",
+   "PHRASE",
+   0.39,
+   0.79,
+   1.53,
+   0.39,
+   "495797871554790"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromones women attract men",
+   "PHRASE",
+   0.33,
+   0.81,
+   1.23,
+   0.33,
+   "483487929800543"
+  ],
+  [
+   "Mixed women 2023",
+   "phermones",
+   "PHRASE",
+   0.64,
+   1.62,
+   2.51,
+   0.64,
+   "420797352654424"
+  ],
+  [
+   "Mixed women 2023",
+   "phermones",
+   "BROAD",
+   0.45,
+   1.62,
+   2.51,
+   0.45,
+   "304976090514475"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone oil women",
+   "EXACT",
+   0.56,
+   0.78,
+   1.3,
+   0.56,
+   "505571347466079"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromones perfume oil",
+   "PHRASE",
+   0.74,
+   0.75,
+   1.25,
+   0.74,
+   "344961336059199"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone oil",
+   "EXACT",
+   0.45,
+   0.6,
+   1.05,
+   0.45,
+   "383839052075013"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone oil",
+   "PHRASE",
+   0.49,
+   0.8,
+   1.16,
+   0.49,
+   "322454982516103"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone oil",
+   "BROAD",
+   0.42,
+   0.84,
+   1.1,
+   0.42,
+   "371820457870420"
+  ],
+  [
+   "Mixed women 2023",
+   "feromonas para atraer hombres",
+   "EXACT",
+   0.47,
+   0.83,
+   1.41,
+   0.47,
+   "522809128940388"
+  ],
+  [
+   "Mixed women 2023",
+   "feromonas para atraer hombres",
+   "PHRASE",
+   0.46,
+   0.6,
+   1.0,
+   0.46,
+   "474853982151380"
+  ],
+  [
+   "Mixed women 2023",
+   "feromonas para atraer hombres",
+   "BROAD",
+   0.39,
+   0.6,
+   1.0,
+   0.39,
+   "453115678082242"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone perfume spray",
+   "PHRASE",
+   0.54,
+   0.8,
+   1.26,
+   0.54,
+   "556523610852119"
+  ],
+  [
+   "Mixed women 2023",
+   "feromona",
+   "PHRASE",
+   0.46,
+   0.8,
+   1.34,
+   0.46,
+   "327392994704240"
+  ],
+  [
+   "Mixed women 2023",
+   "feromona",
+   "BROAD",
+   0.39,
+   0.8,
+   1.34,
+   0.39,
+   "305895484481110"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone perfume",
+   "PHRASE",
+   0.91,
+   1.49,
+   2.48,
+   0.91,
+   "412466007933396"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone perfume",
+   "BROAD",
+   1.33,
+   1.49,
+   2.48,
+   1.33,
+   "451348123441287"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromones perfumes for women",
+   "PHRASE",
+   0.8,
+   1.49,
+   2.48,
+   0.8,
+   "529841861620303"
+  ],
+  [
+   "Mixed women 2023",
+   "female pheromones perfume",
+   "PHRASE",
+   1.01,
+   1.1,
+   1.84,
+   1.01,
+   "463797052385335"
+  ],
+  [
+   "inside mixed keys",
+   "perfume feromone",
+   "BROAD",
+   0.32,
+   0.44,
+   0.71,
+   0.32,
+   "530856619196820"
+  ],
+  [
+   "inside mixed keys",
+   "perfume women with pheromone",
+   "PHRASE",
+   0.42,
+   0.54,
+   0.9,
+   0.42,
+   "455248784210724"
+  ],
+  [
+   "inside mixed keys",
+   "pheromone fragrance",
+   "EXACT",
+   0.41,
+   0.44,
+   0.71,
+   0.41,
+   "358968767377046"
+  ],
+  [
+   "inside mixed keys",
+   "pheromone spray women",
+   "PHRASE",
+   0.45,
+   0.46,
+   0.76,
+   0.45,
+   "477862145148474"
+  ],
+  [
+   "inside mixed keys",
+   "pheremones",
+   "PHRASE",
+   0.39,
+   0.47,
+   0.79,
+   0.39,
+   "482220785473829"
+  ],
+  [
+   "inside mixed keys",
+   "pheremones",
+   "BROAD",
+   0.41,
+   0.49,
+   0.81,
+   0.41,
+   "524246556461800"
+  ],
+  [
+   "inside mixed keys",
+   "feromona perfume",
+   "BROAD",
+   0.48,
+   0.51,
+   0.85,
+   0.48,
+   "342770761136151"
+  ],
+  [
+   "inside mixed keys",
+   "pheromone women",
+   "EXACT",
+   0.4,
+   0.71,
+   1.19,
+   0.4,
+   "468802494945173"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromones",
+   "PHRASE",
+   1.81,
+   2.07,
+   3.29,
+   2.35,
+   "523442883707870"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromones perfumes for men",
+   "PHRASE",
+   1.15,
+   1.51,
+   2.51,
+   1.49,
+   "389026722396126"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "fermonas.para atraer mujeres",
+   "PHRASE",
+   0.2,
+   0.53,
+   0.89,
+   0.26,
+   "528450573316310"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromone cologne",
+   "BROAD",
+   0.56,
+   2.36,
+   3.7,
+   0.73,
+   "281820793334110"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "raw chemistry pheromone men",
+   "EXACT",
+   0.62,
+   2.66,
+   4.43,
+   0.81,
+   "477524887110530"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "raw chemistry pheromone men",
+   "PHRASE",
+   0.61,
+   2.34,
+   3.9,
+   0.79,
+   "406659344694624"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "feromonas",
+   "PHRASE",
+   0.6,
+   1.79,
+   2.99,
+   0.78,
+   "426218147082851"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "feromonas",
+   "BROAD",
+   0.56,
+   0.6,
+   1.0,
+   0.73,
+   "393375446114760"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "lure her cologne men",
+   "EXACT",
+   0.47,
+   1.22,
+   2.03,
+   0.61,
+   "472972123313924"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "lure her cologne men",
+   "PHRASE",
+   0.68,
+   1.07,
+   1.79,
+   0.88,
+   "415924913363487"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "lure her cologne men",
+   "BROAD",
+   0.61,
+   1.22,
+   2.03,
+   0.79,
+   "501852863364061"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromone perfume",
+   "BROAD",
+   0.46,
+   1.48,
+   2.2,
+   0.6,
+   "412885189437384"
+  ],
+  [
+   "water women product",
+   "true pheromones",
+   "PHRASE",
+   0.67,
+   0.89,
+   1.85,
+   0.67,
+   "431429540409130"
+  ],
+  [
+   "rol men broad",
+   "pheromones",
+   "BROAD",
+   1.29,
+   2.36,
+   3.75,
+   2.0,
+   "478909209614567"
+  ],
+  [
+   "rol men broad",
+   "phermone",
+   "BROAD",
+   0.28,
+   0.92,
+   1.53,
+   0.43,
+   "287447262641482"
+  ],
+  [
+   "rolon exact",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   0.59,
+   0.92,
+   1.51,
+   0.77,
+   "291147665185721"
+  ],
+  [
+   "rolon exact",
+   "pheromone cologne",
+   "EXACT",
+   0.91,
+   1.02,
+   1.7,
+   1.18,
+   "378711378405494"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones perfumes for men",
+   "EXACT",
+   0.74,
+   1.15,
+   1.91,
+   1.11,
+   "533770043441409"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne",
+   "EXACT",
+   0.69,
+   1.02,
+   1.7,
+   1.03,
+   "508928870938163"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "mens pheromone cologne spray",
+   "EXACT",
+   0.64,
+   0.74,
+   1.24,
+   0.96,
+   "490550805406400"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone perfume for men",
+   "EXACT",
+   0.84,
+   1.15,
+   1.91,
+   1.26,
+   "355163587432601"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne for men lure her",
+   "EXACT",
+   0.6,
+   0.8,
+   1.14,
+   0.9,
+   "383552177662562"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "male pheromones to attract females",
+   "EXACT",
+   0.5,
+   0.78,
+   1.32,
+   0.75,
+   "541745572094915"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne for man",
+   "EXACT",
+   0.68,
+   1.49,
+   2.2,
+   1.02,
+   "419418576730298"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "feromonas perfume for men",
+   "EXACT",
+   0.48,
+   0.96,
+   1.93,
+   0.72,
+   "455151104988234"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone perfume for man",
+   "EXACT",
+   0.74,
+   1.15,
+   1.91,
+   1.11,
+   "403192058173224"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "men pheromone cologne to attract women",
+   "EXACT",
+   0.78,
+   0.99,
+   1.65,
+   1.17,
+   "440188546557862"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pure instinct pheromone cologne for men",
+   "EXACT",
+   0.59,
+   0.78,
+   1.38,
+   0.89,
+   "327312401184341"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "mens pheromone cologne",
+   "EXACT",
+   0.93,
+   1.62,
+   2.7,
+   1.4,
+   "452597962933602"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   0.89,
+   0.92,
+   1.51,
+   1.33,
+   "477393887843510"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "best pheromone cologne for men",
+   "EXACT",
+   0.79,
+   1.43,
+   1.91,
+   1.19,
+   "412873474854544"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "perfume con feromonas para hombres para atraer mujeres",
+   "EXACT",
+   0.73,
+   1.11,
+   1.85,
+   1.09,
+   "311408753472191"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones cologne",
+   "EXACT",
+   0.69,
+   1.02,
+   1.7,
+   1.03,
+   "396622931350168"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "male hormone cologne",
+   "EXACT",
+   0.61,
+   0.91,
+   1.51,
+   0.92,
+   "495090367758067"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "raw pheromone",
+   "EXACT",
+   0.51,
+   1.88,
+   2.64,
+   0.77,
+   "487477273189825"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "best pheromones",
+   "EXACT",
+   0.47,
+   0.63,
+   1.15,
+   0.7,
+   "392039287386152"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones for women attract men",
+   "EXACT",
+   0.7,
+   0.97,
+   1.69,
+   1.05,
+   "526987535625096"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "chikara pheromone cologne for men",
+   "EXACT",
+   0.57,
+   1.05,
+   1.67,
+   0.85,
+   "503652839358510"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones perfume for men",
+   "EXACT",
+   0.75,
+   1.15,
+   1.91,
+   1.12,
+   "466275746517350"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "men's pheromone cologne spray",
+   "EXACT",
+   0.58,
+   0.74,
+   1.24,
+   0.87,
+   "336648513512851"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones to attract women",
+   "EXACT",
+   0.41,
+   0.43,
+   0.73,
+   0.61,
+   "358759365813306"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone for men",
+   "EXACT",
+   0.64,
+   0.71,
+   1.2,
+   0.96,
+   "311828897143140"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones cologne for men",
+   "EXACT",
+   0.68,
+   1.49,
+   2.2,
+   1.02,
+   "430727587127429"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "alpha male pheromone cologne",
+   "EXACT",
+   0.81,
+   1.05,
+   1.41,
+   1.22,
+   "326657083813377"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "mens pheromone cologne to attract women",
+   "EXACT",
+   0.92,
+   0.99,
+   1.65,
+   1.38,
+   "513225323719434"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheromones",
+   "BROAD",
+   0.98,
+   2.82,
+   5.05,
+   1.07,
+   "461627619060967"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheremone",
+   "BROAD",
+   0.8,
+   1.59,
+   2.65,
+   0.87,
+   "483857092756090"
+  ],
+  [
+   "Flame - set 1+1",
+   "pheromone perfume",
+   "BROAD",
+   0.9,
+   1.49,
+   2.48,
+   0.98,
+   "518380009320665"
+  ],
+  [
+   "Flame - set 1+1",
+   "phermones",
+   "BROAD",
+   1.12,
+   1.62,
+   2.51,
+   1.22,
+   "526443830192196"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone perfume",
+   "BROAD",
+   0.95,
+   1.49,
+   2.48,
+   0.95,
+   "428632403286529"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone spray",
+   "BROAD",
+   0.99,
+   1.99,
+   3.38,
+   0.99,
+   "395129051700546"
+  ],
+  [
+   "Mixed women 2023",
+   "pheromone oil",
+   "BROAD",
+   0.61,
+   0.84,
+   1.1,
+   0.61,
+   "358938086972236"
+  ],
+  [
+   "Mixed women 2023",
+   "phermones",
+   "BROAD",
+   0.65,
+   1.62,
+   2.51,
+   0.65,
+   "419665502393856"
+  ],
+  [
+   "Mixed women 2023",
+   "pharamon",
+   "BROAD",
+   0.51,
+   0.8,
+   1.88,
+   0.51,
+   "538717062476720"
+  ],
+  [
+   "Mixed women 2023",
+   "pheremone",
+   "BROAD",
+   0.75,
+   1.59,
+   2.65,
+   0.75,
+   "365949029614614"
+  ],
+  [
+   "VIOLET 1",
+   "attractive perfume women",
+   "PHRASE",
+   0.26,
+   0.4,
+   0.71,
+   0.36,
+   "494892650721533"
+  ],
+  [
+   "VIOLET 1",
+   "fragrance oil perfume",
+   "EXACT",
+   0.35,
+   0.43,
+   0.71,
+   0.49,
+   "407095766414194"
+  ],
+  [
+   "VIOLET 1",
+   "perfume oils women",
+   "PHRASE",
+   0.2,
+   0.41,
+   0.7,
+   0.28,
+   "330501299148642"
+  ],
+  [
+   "VIOLET 1",
+   "boxrose pheromone perfume",
+   "PHRASE",
+   0.39,
+   0.58,
+   0.93,
+   0.55,
+   "473331842246434"
+  ],
+  [
+   "VIOLET 1",
+   "allure pheromone perfume",
+   "PHRASE",
+   0.39,
+   0.42,
+   0.99,
+   0.55,
+   "369809319972741"
+  ],
+  [
+   "VIOLET 1",
+   "venom perfume women",
+   "PHRASE",
+   0.33,
+   0.38,
+   0.61,
+   0.46,
+   "537334267435306"
+  ],
+  [
+   "VIOLET 1",
+   "enchanted scents",
+   "PHRASE",
+   0.22,
+   0.59,
+   0.99,
+   0.31,
+   "372568014905445"
+  ],
+  [
+   "VIOLET 1",
+   "pure instinct pheromone perfume",
+   "PHRASE",
+   0.4,
+   1.27,
+   2.13,
+   0.56,
+   "358700418900963"
+  ],
+  [
+   "VIOLET 1",
+   "phereau perfume for women",
+   "PHRASE",
+   0.21,
+   0.39,
+   0.65,
+   0.29,
+   "316802741344753"
+  ],
+  [
+   "VIOLET 1",
+   "pheromone lip gloss",
+   "PHRASE",
+   0.59,
+   0.89,
+   1.85,
+   0.83,
+   "496444491714207"
+  ],
+  [
+   "VIOLET 1",
+   "pure instinct",
+   "PHRASE",
+   0.46,
+   0.47,
+   0.78,
+   0.64,
+   "363030364346025"
+  ],
+  [
+   "VIOLET 1",
+   "pure instinct crave",
+   "PHRASE",
+   0.34,
+   0.47,
+   0.78,
+   0.48,
+   "458058232494187"
+  ],
+  [
+   "VIOLET 1",
+   "tiktok perfume",
+   "PHRASE",
+   0.24,
+   0.49,
+   0.81,
+   0.34,
+   "385068280268671"
+  ],
+  [
+   "new men keywords",
+   "cupid fragrances for men with pheromones",
+   "EXACT",
+   0.95,
+   1.24,
+   2.07,
+   1.42,
+   "332114904213559"
+  ],
+  [
+   "new men keywords",
+   "men's pheromone cologne",
+   "EXACT",
+   0.89,
+   1.47,
+   2.48,
+   1.33,
+   "330009699522750"
+  ],
+  [
+   "new men keywords",
+   "feromonas perfume for men",
+   "EXACT",
+   0.78,
+   0.89,
+   1.8,
+   1.17,
+   "520589251047724"
+  ],
+  [
+   "new men keywords",
+   "best pheromone cologne for men",
+   "EXACT",
+   0.87,
+   1.34,
+   1.78,
+   1.3,
+   "561068459723209"
+  ],
+  [
+   "new men keywords",
+   "pheromones perfumes for men",
+   "EXACT",
+   1.0,
+   1.07,
+   1.79,
+   1.5,
+   "393242917370212"
+  ],
+  [
+   "new men keywords",
+   "cupids pheromone cologne",
+   "EXACT",
+   0.85,
+   1.1,
+   1.84,
+   1.27,
+   "435892063234394"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromone cologne for men",
+   "EXACT",
+   0.6,
+   0.62,
+   1.02,
+   0.6,
+   "359479803665435"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromones perfumes for men",
+   "EXACT",
+   0.6,
+   1.77,
+   2.95,
+   0.6,
+   "425121758634853"
+  ],
+  [
+   "lizard - intrnse",
+   "cupids pheromone cologne for men",
+   "EXACT",
+   0.6,
+   1.1,
+   1.59,
+   0.6,
+   "373957139697405"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromone cologne",
+   "EXACT",
+   0.6,
+   1.58,
+   2.63,
+   0.6,
+   "362912410619365"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromone",
+   "PHRASE",
+   0.6,
+   0.71,
+   1.23,
+   0.6,
+   "330216733450136"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromones",
+   "PHRASE",
+   0.6,
+   2.07,
+   3.29,
+   0.6,
+   "332196210319626"
+  ],
+  [
+   "SOUL baccar key",
+   "aceite baccarat",
+   "PHRASE",
+   0.27,
+   0.45,
+   0.88,
+   0.35,
+   "478380558575163"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat roughe",
+   "PHRASE",
+   0.62,
+   1.24,
+   2.07,
+   0.81,
+   "420169735703564"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge",
+   "PHRASE",
+   0.64,
+   0.82,
+   1.69,
+   0.83,
+   "483003991702244"
+  ],
+  [
+   "SOUL baccar key",
+   "bacarrát rouge 540 perfume women",
+   "PHRASE",
+   0.41,
+   0.67,
+   1.46,
+   0.53,
+   "468367971632109"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat cologne",
+   "PHRASE",
+   0.23,
+   3.02,
+   5.04,
+   0.3,
+   "303531324194095"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume baccarat de mujer",
+   "PHRASE",
+   0.3,
+   0.98,
+   1.63,
+   0.39,
+   "479181280787494"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rush perfume",
+   "PHRASE",
+   0.32,
+   0.66,
+   1.1,
+   0.42,
+   "492012277788783"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge replica",
+   "PHRASE",
+   0.2,
+   0.64,
+   1.06,
+   0.26,
+   "368505141014903"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rush",
+   "PHRASE",
+   0.64,
+   0.74,
+   1.39,
+   0.83,
+   "496507829315509"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume baccarat rouge",
+   "PHRASE",
+   0.64,
+   0.73,
+   1.26,
+   0.83,
+   "470300368124697"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge extrait",
+   "PHRASE",
+   0.21,
+   1.23,
+   1.7,
+   0.27,
+   "536615431354887"
+  ],
+  [
+   "SOUL baccar key",
+   "maison baccarat rouge",
+   "PHRASE",
+   0.84,
+   1.04,
+   1.74,
+   1.09,
+   "423557657991314"
+  ],
+  [
+   "SOUL baccar key",
+   "maison francis kurkdjian paris baccarat rouge",
+   "PHRASE",
+   0.71,
+   0.87,
+   1.6,
+   0.92,
+   "416618623985105"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge extrait de parfum",
+   "PHRASE",
+   0.2,
+   1.22,
+   1.85,
+   0.26,
+   "334847455487782"
+  ],
+  [
+   "SOUL baccar key",
+   "miris baccarat rouge",
+   "PHRASE",
+   0.66,
+   0.93,
+   1.55,
+   0.86,
+   "352853341475984"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge sample size",
+   "PHRASE",
+   0.24,
+   0.68,
+   1.16,
+   0.31,
+   "468776385478613"
+  ],
+  [
+   "SOUL baccar key",
+   "alt perfume baccarat rouge",
+   "PHRASE",
+   0.94,
+   1.01,
+   1.68,
+   1.22,
+   "449746320455261"
+  ],
+  [
+   "SOUL baccar key",
+   "lattafa perfumes baccarat rouge",
+   "PHRASE",
+   0.63,
+   0.93,
+   1.55,
+   0.82,
+   "282095323940351"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge perfumes",
+   "PHRASE",
+   0.74,
+   0.8,
+   1.48,
+   0.96,
+   "333455992303418"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge maison francis kurkdjian",
+   "PHRASE",
+   0.2,
+   1.23,
+   2.05,
+   0.26,
+   "513278283996063"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat dupe",
+   "PHRASE",
+   0.23,
+   1.04,
+   1.74,
+   0.3,
+   "345609387573476"
+  ],
+  [
+   "SOUL baccar key",
+   "alt baccarat rouge",
+   "PHRASE",
+   0.66,
+   1.11,
+   1.56,
+   0.86,
+   "301567681952438"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume de mujer baccarat rouge",
+   "PHRASE",
+   0.79,
+   1.13,
+   1.89,
+   1.03,
+   "421359607264978"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge woman",
+   "PHRASE",
+   0.71,
+   1.11,
+   1.85,
+   0.92,
+   "425197493922040"
+  ],
+  [
+   "SOUL baccar key",
+   "maison francis baccarat rouge",
+   "PHRASE",
+   0.2,
+   0.83,
+   1.38,
+   0.26,
+   "424757590351449"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge room spray",
+   "PHRASE",
+   0.37,
+   0.9,
+   1.5,
+   0.48,
+   "454278836616137"
+  ],
+  [
+   "SOUL baccar key",
+   "dossier perfume baccarat rouge",
+   "PHRASE",
+   0.64,
+   0.8,
+   1.33,
+   0.83,
+   "484508109831034"
+  ],
+  [
+   "SOUL baccar key",
+   "ca perfume baccarat",
+   "PHRASE",
+   0.68,
+   1.01,
+   1.69,
+   0.88,
+   "401882957223458"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge roll on",
+   "PHRASE",
+   0.48,
+   0.54,
+   0.89,
+   0.62,
+   "353125451814599"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge oil",
+   "PHRASE",
+   0.63,
+   0.71,
+   1.29,
+   0.82,
+   "356106633134545"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge hair mist",
+   "PHRASE",
+   0.28,
+   0.89,
+   1.3,
+   0.36,
+   "510857173103363"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge linen spray",
+   "PHRASE",
+   0.2,
+   0.31,
+   0.54,
+   0.26,
+   "483115800323672"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge oil perfume",
+   "PHRASE",
+   0.62,
+   0.67,
+   1.67,
+   0.81,
+   "416012668738461"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge inspired",
+   "PHRASE",
+   0.2,
+   0.9,
+   1.5,
+   0.26,
+   "381854820767095"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge diffuser oil",
+   "PHRASE",
+   0.99,
+   1.53,
+   2.7,
+   1.29,
+   "293650725228232"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge clone",
+   "PHRASE",
+   0.25,
+   1.04,
+   1.74,
+   0.33,
+   "323602880266659"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume baccarat para hombre",
+   "PHRASE",
+   0.44,
+   0.85,
+   1.41,
+   0.57,
+   "553013197395342"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat amber",
+   "PHRASE",
+   0.2,
+   0.42,
+   0.7,
+   0.26,
+   "323378335594775"
+  ],
+  [
+   "SOUL baccar key",
+   "replica baccarat rouge",
+   "PHRASE",
+   0.78,
+   0.93,
+   1.55,
+   1.01,
+   "408950712635325"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge home fragrance",
+   "PHRASE",
+   0.78,
+   0.96,
+   1.4,
+   1.01,
+   "374122787158569"
+  ],
+  [
+   "SOUL baccar key",
+   "arabic perfume baccarat",
+   "PHRASE",
+   0.2,
+   0.7,
+   1.16,
+   0.26,
+   "498728140682348"
+  ],
+  [
+   "SOUL baccar key",
+   "arabian perfume baccarat",
+   "PHRASE",
+   0.39,
+   0.6,
+   1.0,
+   0.51,
+   "462309864883507"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge lattafa",
+   "PHRASE",
+   0.25,
+   0.46,
+   0.76,
+   0.33,
+   "322455917313736"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume arabe baccarat",
+   "PHRASE",
+   0.2,
+   0.54,
+   0.78,
+   0.26,
+   "336256505476599"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge home scent",
+   "PHRASE",
+   0.35,
+   1.84,
+   3.06,
+   0.45,
+   "349478608439562"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat fragrance world",
+   "PHRASE",
+   0.24,
+   0.95,
+   1.53,
+   0.31,
+   "347161184134314"
+  ],
+  [
+   "SOUL baccar key",
+   "micro perfumes baccarat rouge",
+   "PHRASE",
+   0.32,
+   0.92,
+   1.53,
+   0.42,
+   "416603701905978"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rogue",
+   "PHRASE",
+   0.2,
+   1.04,
+   1.74,
+   0.26,
+   "509171990581237"
+  ],
+  [
+   "SOUL baccar key",
+   "cologne baccarat",
+   "PHRASE",
+   0.56,
+   0.85,
+   1.28,
+   0.73,
+   "538177902614094"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume de mujer baccarat",
+   "PHRASE",
+   0.29,
+   0.49,
+   0.91,
+   0.38,
+   "533193163987558"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat fragrance",
+   "PHRASE",
+   0.23,
+   0.82,
+   1.67,
+   0.3,
+   "373004311175900"
+  ],
+  [
+   "SOUL baccar key",
+   "fragrance world baccarat rouge",
+   "PHRASE",
+   0.21,
+   0.68,
+   1.14,
+   0.27,
+   "469467915753659"
+  ],
+  [
+   "SOUL baccar key",
+   "alt fragrances baccarat rouge 540",
+   "PHRASE",
+   1.09,
+   1.15,
+   1.91,
+   1.42,
+   "314590735272856"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume dupes women",
+   "PHRASE",
+   0.45,
+   0.58,
+   1.08,
+   0.59,
+   "479923222646131"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat perfume women",
+   "PHRASE",
+   0.86,
+   1.44,
+   3.4,
+   1.12,
+   "317148248111949"
+  ],
+  [
+   "SOUL baccar key",
+   "bakara rogue 540 women",
+   "PHRASE",
+   0.49,
+   0.92,
+   1.54,
+   0.64,
+   "456478255717930"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge 540 perfume oil",
+   "PHRASE",
+   0.44,
+   0.7,
+   1.16,
+   0.57,
+   "282269990918136"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge 540 sample",
+   "PHRASE",
+   0.46,
+   0.77,
+   1.48,
+   0.6,
+   "330296968686710"
+  ],
+  [
+   "SOUL baccar key",
+   "mfk baccarat rouge 540",
+   "PHRASE",
+   0.95,
+   1.97,
+   3.28,
+   1.23,
+   "513117581596449"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge 540 dupe",
+   "PHRASE",
+   0.63,
+   0.77,
+   1.4,
+   0.82,
+   "335213863086125"
+  ],
+  [
+   "SOUL baccar key",
+   "rouge 540",
+   "PHRASE",
+   0.64,
+   0.81,
+   1.68,
+   0.83,
+   "369533187523205"
+  ],
+  [
+   "SOUL baccar key",
+   "bacarrát rouge 540 perfume",
+   "PHRASE",
+   1.01,
+   1.03,
+   1.73,
+   1.31,
+   "317576737365111"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge 540 perfume for women",
+   "PHRASE",
+   1.04,
+   1.38,
+   1.85,
+   1.35,
+   "295876972998467"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel allure perfume",
+   "PHRASE",
+   0.44,
+   0.64,
+   0.94,
+   0.48,
+   "428714359198517"
+  ],
+  [
+   "SOUL Chane Key",
+   "allure de chanel women",
+   "PHRASE",
+   0.73,
+   1.12,
+   1.86,
+   0.8,
+   "308934414956533"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel allure perfume women",
+   "PHRASE",
+   0.47,
+   0.57,
+   0.88,
+   0.52,
+   "560354586592842"
+  ],
+  [
+   "SOUL Chane Key",
+   "allure cologne women",
+   "PHRASE",
+   0.79,
+   0.85,
+   1.41,
+   0.87,
+   "505026593274134"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel gabrielle perfume for women",
+   "PHRASE",
+   0.87,
+   1.05,
+   1.75,
+   0.96,
+   "452466108016912"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel chance perfume for women",
+   "PHRASE",
+   1.4,
+   2.41,
+   4.65,
+   1.54,
+   "301187837717819"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance eau tendre eau de parfum",
+   "PHRASE",
+   0.68,
+   1.03,
+   1.92,
+   0.75,
+   "416785777160334"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance perfume eau tendre",
+   "PHRASE",
+   0.9,
+   3.17,
+   6.32,
+   0.99,
+   "514735429326681"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance sample",
+   "PHRASE",
+   0.65,
+   0.77,
+   1.14,
+   0.72,
+   "502097097641725"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel chance for women",
+   "PHRASE",
+   0.37,
+   2.69,
+   4.27,
+   0.41,
+   "363378301581683"
+  ],
+  [
+   "SOUL Chane Key",
+   "chance chanel perfume for women mini",
+   "PHRASE",
+   0.96,
+   0.98,
+   1.63,
+   1.06,
+   "489677500782851"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance travel size perfume",
+   "PHRASE",
+   1.36,
+   1.39,
+   3.17,
+   1.5,
+   "520113622398988"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel chance parfum",
+   "PHRASE",
+   0.3,
+   0.6,
+   1.72,
+   0.33,
+   "378502149159732"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance perfume small",
+   "PHRASE",
+   0.84,
+   1.49,
+   2.76,
+   0.92,
+   "543116812537694"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco channel chance",
+   "PHRASE",
+   0.38,
+   1.03,
+   1.71,
+   0.42,
+   "368076084138350"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel allure eau de parfum",
+   "PHRASE",
+   1.06,
+   1.08,
+   1.8,
+   1.17,
+   "416365381409560"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle",
+   "PHRASE",
+   0.67,
+   1.15,
+   2.31,
+   0.74,
+   "393792050778402"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel mademoiselle",
+   "PHRASE",
+   0.83,
+   1.61,
+   2.69,
+   0.91,
+   "349406766289194"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle chanel",
+   "PHRASE",
+   0.73,
+   1.2,
+   2.35,
+   0.8,
+   "520371704388164"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel coco mademoiselle",
+   "PHRASE",
+   0.76,
+   0.95,
+   1.81,
+   0.84,
+   "413047432924998"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel coco",
+   "PHRASE",
+   0.8,
+   0.85,
+   1.8,
+   0.88,
+   "403409696480099"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel mademoiselle",
+   "PHRASE",
+   0.86,
+   1.12,
+   2.5,
+   0.95,
+   "504701539884235"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfume para mujer coco chanel",
+   "PHRASE",
+   0.24,
+   0.38,
+   0.69,
+   0.26,
+   "502626189091756"
+  ],
+  [
+   "SOUL Chane Key",
+   "mademoiselle perfume",
+   "PHRASE",
+   0.83,
+   1.09,
+   1.99,
+   0.91,
+   "526624159154922"
+  ],
+  [
+   "SOUL Chane Key",
+   "mademoiselle",
+   "PHRASE",
+   0.87,
+   1.13,
+   2.52,
+   0.96,
+   "309566142966917"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel coco mademoiselle perfume",
+   "PHRASE",
+   0.3,
+   0.5,
+   0.94,
+   0.33,
+   "468061438869181"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume coco mademoiselle",
+   "PHRASE",
+   0.66,
+   0.69,
+   1.15,
+   0.73,
+   "391025185602241"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle chanel perfume sample",
+   "PHRASE",
+   0.68,
+   0.8,
+   1.33,
+   0.75,
+   "334845316839369"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel coco mademoiselle perfume",
+   "PHRASE",
+   0.82,
+   0.86,
+   1.79,
+   0.9,
+   "340483785018196"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume coco",
+   "PHRASE",
+   0.67,
+   0.77,
+   1.13,
+   0.74,
+   "413127391935063"
+  ],
+  [
+   "SOUL Chane Key",
+   "co co mademoiselle chanel",
+   "PHRASE",
+   0.88,
+   1.37,
+   2.1,
+   0.97,
+   "462037488588095"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel parfum",
+   "PHRASE",
+   0.84,
+   1.1,
+   1.83,
+   0.92,
+   "326075779707292"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle perfume intense",
+   "PHRASE",
+   0.36,
+   1.09,
+   1.81,
+   0.4,
+   "419113825080764"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume for women",
+   "PHRASE",
+   1.3,
+   1.34,
+   2.07,
+   1.43,
+   "499034320776127"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel mademoiselle perfume travel",
+   "PHRASE",
+   0.79,
+   0.95,
+   1.59,
+   0.87,
+   "517451572279118"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle intense",
+   "PHRASE",
+   0.52,
+   0.59,
+   0.8,
+   0.57,
+   "470648325591947"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume women",
+   "PHRASE",
+   0.95,
+   1.34,
+   2.07,
+   1.04,
+   "540890977910016"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel mademoiselle perfume gift set",
+   "PHRASE",
+   0.68,
+   1.03,
+   1.71,
+   0.75,
+   "480154081822535"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel coco mademoiselle body",
+   "PHRASE",
+   1.07,
+   1.37,
+   2.56,
+   1.18,
+   "281621311047052"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel mademoiselle parfum",
+   "PHRASE",
+   1.06,
+   1.07,
+   1.79,
+   1.17,
+   "503161327373118"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco channel mademoiselle perfume",
+   "PHRASE",
+   0.25,
+   0.97,
+   1.61,
+   0.28,
+   "414160454221384"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfume coco mademoiselle",
+   "PHRASE",
+   0.53,
+   0.61,
+   1.05,
+   0.58,
+   "346964710660885"
+  ],
+  [
+   "SOUL Chane Key",
+   "women perfume chanel",
+   "PHRASE",
+   0.82,
+   0.95,
+   1.43,
+   0.9,
+   "485964478598051"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume",
+   "PHRASE",
+   0.73,
+   0.93,
+   2.15,
+   0.8,
+   "505605680896439"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance",
+   "PHRASE",
+   1.09,
+   1.31,
+   2.17,
+   1.2,
+   "291818884023757"
+  ],
+  [
+   "SOUL G Girl Key",
+   "perfume carolina herrera mujer",
+   "PHRASE",
+   0.35,
+   0.64,
+   1.09,
+   0.45,
+   "292056867850317"
+  ],
+  [
+   "SOUL G Girl Key",
+   "perfume carolina herrera",
+   "PHRASE",
+   0.47,
+   0.65,
+   1.13,
+   0.61,
+   "294281940067022"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina good girl perfume",
+   "PHRASE",
+   0.88,
+   0.9,
+   1.5,
+   1.14,
+   "527089838326524"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera good gir",
+   "PHRASE",
+   0.2,
+   2.06,
+   3.43,
+   0.26,
+   "422571208095644"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera good girl classic",
+   "PHRASE",
+   0.78,
+   1.0,
+   1.96,
+   1.01,
+   "344892171750362"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera good girl fragrance",
+   "PHRASE",
+   0.78,
+   1.3,
+   2.16,
+   1.01,
+   "362138646890247"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera good girl women",
+   "PHRASE",
+   0.72,
+   3.58,
+   5.27,
+   0.94,
+   "438172475057441"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera very good girl perfume",
+   "PHRASE",
+   0.47,
+   0.74,
+   1.24,
+   0.61,
+   "311410220792626"
+  ],
+  [
+   "SOUL G Girl Key",
+   "caroline good girl",
+   "PHRASE",
+   0.31,
+   0.71,
+   1.17,
+   0.4,
+   "362259998660298"
+  ],
+  [
+   "SOUL G Girl Key",
+   "caroline good girl perfume",
+   "PHRASE",
+   0.31,
+   0.71,
+   1.17,
+   0.4,
+   "504597643216982"
+  ],
+  [
+   "SOUL G Girl Key",
+   "caroline herrera good girl",
+   "PHRASE",
+   0.84,
+   2.63,
+   4.28,
+   1.09,
+   "542488480696041"
+  ],
+  [
+   "SOUL G Girl Key",
+   "caroline herrera good girl perfume",
+   "PHRASE",
+   0.48,
+   0.57,
+   1.08,
+   0.62,
+   "398112081440949"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl ch",
+   "PHRASE",
+   0.26,
+   0.5,
+   0.81,
+   0.34,
+   "333518931504206"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl edp",
+   "PHRASE",
+   0.52,
+   0.73,
+   1.21,
+   0.68,
+   "389964424574403"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl fragrance women",
+   "PHRASE",
+   0.74,
+   1.0,
+   1.66,
+   0.96,
+   "475657669246907"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume carolina herrera",
+   "PHRASE",
+   0.72,
+   0.9,
+   1.5,
+   0.94,
+   "348911052135503"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume eau",
+   "PHRASE",
+   0.43,
+   0.47,
+   0.74,
+   0.56,
+   "432164371602138"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume full size",
+   "PHRASE",
+   0.61,
+   1.31,
+   3.07,
+   0.79,
+   "408204034591323"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume sample size",
+   "PHRASE",
+   0.2,
+   0.27,
+   0.45,
+   0.26,
+   "372589611515162"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume travel spray",
+   "PHRASE",
+   0.76,
+   1.65,
+   2.75,
+   0.99,
+   "401278183809398"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl pink perfume",
+   "PHRASE",
+   0.53,
+   0.59,
+   0.89,
+   0.69,
+   "518525396649290"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume set",
+   "PHRASE",
+   0.54,
+   0.57,
+   1.05,
+   0.7,
+   "469904716700348"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl supreme perfume",
+   "PHRASE",
+   0.53,
+   0.68,
+   1.14,
+   0.69,
+   "472813472310085"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome la vie est belle",
+   "PHRASE",
+   0.71,
+   2.4,
+   4.0,
+   0.92,
+   "459538349066363"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle",
+   "PHRASE",
+   1.1,
+   2.39,
+   3.99,
+   1.43,
+   "355121727101203"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome la vie est belle eau de parfum",
+   "PHRASE",
+   1.03,
+   2.6,
+   4.33,
+   1.34,
+   "482299352256692"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome la vie est belle perfume",
+   "PHRASE",
+   0.77,
+   2.39,
+   3.99,
+   1.0,
+   "284289375899678"
+  ],
+  [
+   "SOUL Lanc Key",
+   "perfumes for women la vie est belle",
+   "PHRASE",
+   1.02,
+   2.17,
+   3.63,
+   1.33,
+   "425721874983228"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle lancome perfume",
+   "PHRASE",
+   0.74,
+   2.46,
+   4.1,
+   0.96,
+   "484874259241312"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle perfume",
+   "PHRASE",
+   0.92,
+   2.39,
+   3.98,
+   1.2,
+   "540971516268829"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome perfume la vie est belle",
+   "PHRASE",
+   0.55,
+   2.2,
+   3.42,
+   0.72,
+   "376737536966958"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle perfume for women",
+   "PHRASE",
+   0.63,
+   2.56,
+   4.26,
+   0.82,
+   "444878446984658"
+  ],
+  [
+   "SOUL Lanc Key",
+   "parfum la vie est belle",
+   "PHRASE",
+   0.6,
+   2.58,
+   4.3,
+   0.78,
+   "361201538451633"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancôme la vie est belle",
+   "PHRASE",
+   0.89,
+   2.39,
+   3.99,
+   1.16,
+   "291340472848649"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancôme la vie est belle eau de parfum",
+   "PHRASE",
+   0.9,
+   2.49,
+   4.15,
+   1.17,
+   "382780902042367"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle eau de parfum",
+   "PHRASE",
+   1.03,
+   2.46,
+   4.1,
+   1.34,
+   "330502487349724"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie es belle",
+   "PHRASE",
+   0.25,
+   0.9,
+   1.5,
+   0.33,
+   "463211165980442"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle lancome perfume travel size",
+   "PHRASE",
+   0.74,
+   1.35,
+   2.25,
+   0.96,
+   "505877032889742"
+  ],
+  [
+   "SOUL Lanc Key",
+   "womens lancome perfume",
+   "PHRASE",
+   0.59,
+   1.3,
+   1.94,
+   0.77,
+   "305302818910061"
+  ],
+  [
+   "SOUL Lanc Key",
+   "idole nectar lancome perfume",
+   "PHRASE",
+   0.68,
+   2.65,
+   4.41,
+   0.88,
+   "423485804974551"
+  ],
+  [
+   "SOUL Lanc Key",
+   "idole intense lancome perfume",
+   "PHRASE",
+   0.61,
+   2.49,
+   4.15,
+   0.79,
+   "375136187249111"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome paris eau de parfum",
+   "PHRASE",
+   0.45,
+   0.54,
+   0.85,
+   0.59,
+   "314643165321357"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome idole aura",
+   "PHRASE",
+   0.88,
+   1.18,
+   1.96,
+   1.14,
+   "435037907720874"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome teint idole",
+   "PHRASE",
+   0.61,
+   1.18,
+   1.96,
+   0.79,
+   "494180451798802"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore de dior",
+   "PHRASE",
+   0.44,
+   2.19,
+   4.61,
+   0.51,
+   "432595551049040"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore 100ml",
+   "PHRASE",
+   0.63,
+   0.86,
+   1.32,
+   0.72,
+   "300414736656714"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume 5oz",
+   "PHRASE",
+   0.4,
+   0.56,
+   0.94,
+   0.46,
+   "420645390106360"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior jadore l'or",
+   "PHRASE",
+   0.74,
+   1.13,
+   1.99,
+   0.85,
+   "486245807911279"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume de mujer jadore",
+   "PHRASE",
+   0.42,
+   1.11,
+   1.85,
+   0.48,
+   "506469503134279"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume spray",
+   "PHRASE",
+   0.52,
+   1.78,
+   3.05,
+   0.6,
+   "382803835937720"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore spray",
+   "PHRASE",
+   0.32,
+   0.9,
+   1.5,
+   0.37,
+   "429056720081707"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume",
+   "PHRASE",
+   0.69,
+   0.99,
+   1.48,
+   0.79,
+   "327470322917431"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume",
+   "PHRASE",
+   1.0,
+   1.07,
+   1.79,
+   1.15,
+   "383677196393322"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior",
+   "PHRASE",
+   0.6,
+   1.04,
+   1.74,
+   0.69,
+   "399677709671231"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume for women",
+   "PHRASE",
+   1.01,
+   1.05,
+   1.75,
+   1.16,
+   "503833098943338"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior eau de parfum",
+   "PHRASE",
+   0.44,
+   1.36,
+   2.29,
+   0.51,
+   "367812188918243"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume mini",
+   "PHRASE",
+   0.72,
+   1.03,
+   1.71,
+   0.83,
+   "318400983170747"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume miss dior para mujer",
+   "PHRASE",
+   0.51,
+   1.01,
+   1.69,
+   0.59,
+   "352390524554134"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior rose n roses perfume",
+   "PHRASE",
+   0.75,
+   1.03,
+   1.71,
+   0.86,
+   "529811170344119"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior absolutely blooming perfume",
+   "PHRASE",
+   0.25,
+   0.58,
+   1.27,
+   0.29,
+   "421245396088879"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume miss dior",
+   "PHRASE",
+   0.61,
+   0.84,
+   1.56,
+   0.7,
+   "544906052629136"
+  ],
+  [
+   "SOUL Dio-r key",
+   "mini miss dior perfume",
+   "PHRASE",
+   0.53,
+   0.69,
+   1.39,
+   0.61,
+   "298546711751503"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming bouquet perfume",
+   "PHRASE",
+   0.72,
+   0.82,
+   1.58,
+   0.83,
+   "446676253255661"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior parfum",
+   "PHRASE",
+   0.76,
+   1.03,
+   1.73,
+   0.87,
+   "485603884430446"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior mini",
+   "PHRASE",
+   0.72,
+   0.77,
+   1.49,
+   0.83,
+   "501651649812628"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior cherie perfume",
+   "PHRASE",
+   0.71,
+   1.03,
+   1.71,
+   0.82,
+   "505198715869963"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume blooming bouquet",
+   "PHRASE",
+   0.74,
+   1.34,
+   1.99,
+   0.85,
+   "285193736314956"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior rollerball perfume",
+   "PHRASE",
+   0.61,
+   1.24,
+   1.94,
+   0.7,
+   "426101963158040"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior sample",
+   "PHRASE",
+   0.85,
+   1.03,
+   1.71,
+   0.98,
+   "493984808508028"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior eau de toilette",
+   "PHRASE",
+   0.85,
+   1.04,
+   1.74,
+   0.98,
+   "343437430361706"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior miss dior perfume",
+   "PHRASE",
+   0.92,
+   1.02,
+   1.7,
+   1.06,
+   "558099567503103"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior hair mist",
+   "PHRASE",
+   0.83,
+   1.02,
+   1.7,
+   0.95,
+   "555936400915067"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss doir",
+   "PHRASE",
+   0.25,
+   1.29,
+   1.98,
+   0.29,
+   "382813291450738"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming bouquet parfum",
+   "PHRASE",
+   0.89,
+   0.94,
+   1.56,
+   1.02,
+   "287712814889610"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume rollerball",
+   "PHRASE",
+   0.47,
+   2.0,
+   3.33,
+   0.54,
+   "392023264251711"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume miss dior para mujer original",
+   "PHRASE",
+   0.53,
+   1.01,
+   1.69,
+   0.61,
+   "474920769911249"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume miss dior for women",
+   "PHRASE",
+   0.34,
+   1.03,
+   1.71,
+   0.39,
+   "349112160094718"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior travel size perfume",
+   "PHRASE",
+   1.09,
+   1.34,
+   2.45,
+   1.25,
+   "342340636873618"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming bouquet eau de toilette",
+   "PHRASE",
+   0.84,
+   1.02,
+   1.7,
+   0.97,
+   "516290111366710"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming",
+   "PHRASE",
+   0.78,
+   1.02,
+   1.7,
+   0.9,
+   "451473054252732"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume set",
+   "PHRASE",
+   0.49,
+   0.77,
+   1.29,
+   0.56,
+   "531302746004819"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior parfum women",
+   "PHRASE",
+   0.6,
+   2.09,
+   3.99,
+   0.69,
+   "315465742532609"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior miss dior blooming bouquet",
+   "PHRASE",
+   0.73,
+   1.02,
+   1.7,
+   0.84,
+   "299745845119467"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume for women mini",
+   "PHRASE",
+   0.7,
+   1.03,
+   1.71,
+   0.8,
+   "309690295688926"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming bouquet set",
+   "PHRASE",
+   0.68,
+   0.96,
+   1.6,
+   0.78,
+   "347340361364520"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume eau de parfum",
+   "PHRASE",
+   1.18,
+   1.62,
+   3.26,
+   1.36,
+   "377692727132296"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior set",
+   "PHRASE",
+   0.7,
+   1.02,
+   1.7,
+   0.8,
+   "561302909752748"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior miss dior eau de parfum",
+   "PHRASE",
+   0.72,
+   1.03,
+   1.73,
+   0.83,
+   "499375246832671"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume gift set",
+   "PHRASE",
+   0.51,
+   1.07,
+   1.92,
+   0.59,
+   "430643167035871"
+  ],
+  [
+   "SOUL Dio-r key",
+   "parfum for women miss dior",
+   "PHRASE",
+   0.5,
+   1.01,
+   1.68,
+   0.57,
+   "538143343033814"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior body lotion",
+   "PHRASE",
+   0.23,
+   0.87,
+   1.45,
+   0.26,
+   "450153800292287"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior oil",
+   "PHRASE",
+   0.72,
+   1.02,
+   1.7,
+   0.83,
+   "389856636457095"
+  ],
+  [
+   "SOUL Dio-r key",
+   "women's fragrances miss dior",
+   "PHRASE",
+   0.49,
+   1.01,
+   1.69,
+   0.56,
+   "482845357642559"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior cherie eau de parfum",
+   "PHRASE",
+   0.32,
+   1.01,
+   1.69,
+   0.37,
+   "319114606171279"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfumes for women miss dior",
+   "PHRASE",
+   0.5,
+   0.98,
+   1.64,
+   0.57,
+   "445243180783685"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume sample",
+   "PHRASE",
+   0.48,
+   1.02,
+   1.7,
+   0.55,
+   "347087175088626"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior miss dior eau de parfum",
+   "PHRASE",
+   0.72,
+   1.33,
+   2.53,
+   0.83,
+   "559425955242687"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior oil perfume",
+   "PHRASE",
+   0.71,
+   1.0,
+   1.66,
+   0.82,
+   "303048277243637"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume rose n roses",
+   "PHRASE",
+   0.61,
+   1.3,
+   1.92,
+   0.7,
+   "554826545308662"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior miss",
+   "PHRASE",
+   0.82,
+   1.02,
+   1.7,
+   0.94,
+   "361402054335012"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior roses n roses",
+   "PHRASE",
+   0.74,
+   1.03,
+   1.71,
+   0.85,
+   "310033924736635"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior perfume miss dior",
+   "PHRASE",
+   0.55,
+   0.71,
+   1.25,
+   0.63,
+   "288795593083556"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume roller",
+   "PHRASE",
+   0.74,
+   1.02,
+   1.7,
+   0.85,
+   "395326324866575"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior hair mist perfume",
+   "PHRASE",
+   0.22,
+   0.39,
+   0.65,
+   0.25,
+   "414138921459791"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming bouquet roller pearl",
+   "PHRASE",
+   0.48,
+   0.96,
+   1.6,
+   0.55,
+   "350172379474176"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior gift set",
+   "PHRASE",
+   0.8,
+   0.96,
+   1.6,
+   0.92,
+   "450235908539597"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior miss dior",
+   "PHRASE",
+   0.72,
+   1.18,
+   1.5,
+   0.83,
+   "331703556841256"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior blooming bouquet gift set",
+   "PHRASE",
+   0.55,
+   0.99,
+   1.65,
+   0.63,
+   "526688824257852"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior miss",
+   "PHRASE",
+   0.72,
+   1.0,
+   1.66,
+   0.83,
+   "362415281520756"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume by jean patou",
+   "PHRASE",
+   0.66,
+   0.92,
+   1.54,
+   0.76,
+   "298276940478971"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior joy perfume for women",
+   "PHRASE",
+   0.63,
+   1.03,
+   1.73,
+   0.72,
+   "454475277763713"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy jean patou perfume",
+   "PHRASE",
+   0.58,
+   0.93,
+   1.55,
+   0.67,
+   "418398496913975"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior joy",
+   "PHRASE",
+   0.66,
+   1.02,
+   1.7,
+   0.76,
+   "297119904587775"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume samples",
+   "PHRASE",
+   0.44,
+   1.01,
+   1.69,
+   0.51,
+   "305414322816898"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior joy perfume",
+   "PHRASE",
+   0.64,
+   0.67,
+   1.11,
+   0.74,
+   "448046731171367"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume for women by jean patou",
+   "PHRASE",
+   0.63,
+   1.93,
+   3.4,
+   0.72,
+   "460618296583695"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy dior perfume",
+   "PHRASE",
+   0.66,
+   1.03,
+   1.73,
+   0.76,
+   "501552215758963"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume for women",
+   "PHRASE",
+   0.75,
+   1.37,
+   3.82,
+   0.86,
+   "410174444773994"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy fragrance",
+   "PHRASE",
+   0.54,
+   0.69,
+   1.15,
+   0.62,
+   "545913268429952"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy dior",
+   "PHRASE",
+   0.66,
+   1.02,
+   1.7,
+   0.76,
+   "518502133751273"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy dior perfume for women",
+   "PHRASE",
+   0.66,
+   1.03,
+   1.73,
+   0.76,
+   "342432394509263"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy by dior",
+   "PHRASE",
+   0.66,
+   1.02,
+   1.7,
+   0.76,
+   "487375910921924"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume for women",
+   "PHRASE",
+   0.86,
+   1.64,
+   2.73,
+   0.99,
+   "302267388639277"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior perfume for women",
+   "PHRASE",
+   1.13,
+   2.06,
+   3.43,
+   1.3,
+   "296681581397704"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior perfume woman",
+   "PHRASE",
+   1.0,
+   1.06,
+   1.76,
+   1.15,
+   "324160983446978"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume dior",
+   "PHRASE",
+   0.66,
+   1.19,
+   1.73,
+   0.76,
+   "424521850922371"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore",
+   "PHRASE",
+   1.01,
+   1.48,
+   2.17,
+   1.16,
+   "351212058590900"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior perfume for women",
+   "PHRASE",
+   0.76,
+   1.07,
+   1.93,
+   0.87,
+   "521685594153234"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume dior para mujer",
+   "PHRASE",
+   0.45,
+   1.45,
+   2.41,
+   0.52,
+   "485756452839708"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior jadore perfume for women",
+   "PHRASE",
+   0.36,
+   1.19,
+   1.98,
+   0.41,
+   "546488356339871"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior elixir",
+   "PHRASE",
+   0.29,
+   1.02,
+   1.7,
+   0.33,
+   "532487185237076"
+  ],
+  [
+   "SOUL Dio-r key",
+   "j adore dior perfume for women",
+   "PHRASE",
+   0.68,
+   1.07,
+   1.79,
+   0.78,
+   "383326702310915"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore eau de parfum",
+   "PHRASE",
+   0.63,
+   1.4,
+   2.34,
+   0.72,
+   "461936810938825"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior jadore eau de parfum",
+   "PHRASE",
+   1.04,
+   1.4,
+   2.34,
+   1.2,
+   "382487298162660"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior jadore",
+   "PHRASE",
+   0.4,
+   1.23,
+   2.05,
+   0.46,
+   "525992849247204"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior jadore",
+   "PHRASE",
+   0.71,
+   1.29,
+   2.02,
+   0.82,
+   "286425916743231"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume jadore",
+   "PHRASE",
+   0.75,
+   0.93,
+   2.24,
+   0.86,
+   "491856620784495"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume",
+   "PHRASE",
+   0.86,
+   1.63,
+   2.71,
+   0.99,
+   "309343239380678"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume jadore dior",
+   "PHRASE",
+   0.73,
+   0.91,
+   2.03,
+   0.84,
+   "385355170038860"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfumes for women jadore dior",
+   "PHRASE",
+   0.72,
+   0.76,
+   1.46,
+   0.83,
+   "406521754867605"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume for women original",
+   "PHRASE",
+   0.43,
+   1.06,
+   1.63,
+   0.49,
+   "382093920300644"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior jadore perfume",
+   "PHRASE",
+   0.36,
+   1.19,
+   1.98,
+   0.41,
+   "557425391769599"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior jadore perfume",
+   "PHRASE",
+   0.51,
+   0.98,
+   1.63,
+   0.59,
+   "399909312255736"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior perfume for women 5 oz",
+   "PHRASE",
+   0.73,
+   4.46,
+   6.04,
+   0.84,
+   "339776362465463"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore by christian dior for women",
+   "PHRASE",
+   0.7,
+   2.51,
+   4.86,
+   0.8,
+   "481884782817946"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior jadore perfume for women",
+   "PHRASE",
+   0.5,
+   0.72,
+   1.38,
+   0.57,
+   "508126343026808"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore lor perfume women",
+   "PHRASE",
+   0.91,
+   1.28,
+   2.24,
+   1.05,
+   "555820316545456"
+  ],
+  [
+   "SOUL Dio-r key",
+   "women perfume jadore",
+   "PHRASE",
+   0.63,
+   0.94,
+   1.56,
+   0.72,
+   "323001056587199"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior perfume set",
+   "PHRASE",
+   0.25,
+   0.48,
+   1.11,
+   0.29,
+   "288514018401438"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore l'or perfume",
+   "PHRASE",
+   0.86,
+   0.9,
+   1.5,
+   0.99,
+   "396180000321105"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore essence de parfum",
+   "PHRASE",
+   1.55,
+   1.79,
+   3.36,
+   1.78,
+   "452205491603644"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore parfum d'eau",
+   "PHRASE",
+   0.79,
+   1.03,
+   1.71,
+   0.91,
+   "552202395630645"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore new",
+   "PHRASE",
+   0.64,
+   1.48,
+   2.46,
+   0.74,
+   "558894549617135"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore intense perfume women",
+   "PHRASE",
+   0.32,
+   1.46,
+   2.42,
+   0.37,
+   "379517004760337"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dupe",
+   "PHRASE",
+   0.67,
+   0.87,
+   1.48,
+   0.77,
+   "405382744885645"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume jadore dior original",
+   "PHRASE",
+   0.66,
+   0.91,
+   2.06,
+   0.76,
+   "393906530436001"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume women 100ml",
+   "PHRASE",
+   0.29,
+   0.43,
+   0.77,
+   0.33,
+   "314616619081294"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior perfume samples",
+   "PHRASE",
+   0.45,
+   0.96,
+   1.2,
+   0.52,
+   "451464806138774"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior lor",
+   "PHRASE",
+   0.5,
+   0.95,
+   1.59,
+   0.57,
+   "548724722155258"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior perfume lotion",
+   "PHRASE",
+   0.51,
+   0.92,
+   1.54,
+   0.59,
+   "460905548069126"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore l",
+   "PHRASE",
+   0.48,
+   0.89,
+   1.49,
+   0.55,
+   "291988611439415"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore eau de parfum spray",
+   "PHRASE",
+   0.5,
+   1.1,
+   2.01,
+   0.57,
+   "477937632940029"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior original",
+   "PHRASE",
+   0.69,
+   0.91,
+   2.06,
+   0.79,
+   "438130427220059"
+  ],
+  [
+   "SOUL Dio-r key",
+   "christian dior jadore women",
+   "PHRASE",
+   1.05,
+   3.27,
+   5.45,
+   1.21,
+   "348387093228282"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore eau de parfum infinissime",
+   "PHRASE",
+   0.95,
+   1.42,
+   2.23,
+   1.09,
+   "418029637744855"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore absolu perfume women",
+   "PHRASE",
+   0.51,
+   0.83,
+   1.57,
+   0.59,
+   "514490681576460"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume jadore original",
+   "PHRASE",
+   0.42,
+   0.47,
+   0.79,
+   0.48,
+   "516999407325059"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume set women",
+   "PHRASE",
+   0.51,
+   0.67,
+   1.11,
+   0.59,
+   "282839539029505"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior jadore women",
+   "PHRASE",
+   0.95,
+   1.02,
+   1.7,
+   1.09,
+   "517426226261903"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume set",
+   "PHRASE",
+   0.51,
+   1.02,
+   1.7,
+   0.59,
+   "327945513158400"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior jadore",
+   "PHRASE",
+   0.45,
+   0.98,
+   1.64,
+   0.52,
+   "298734575100257"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore perfume women",
+   "PHRASE",
+   0.86,
+   1.64,
+   2.73,
+   0.99,
+   "478901154193258"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore absolu",
+   "PHRASE",
+   0.46,
+   0.83,
+   1.57,
+   0.53,
+   "315921304024324"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore cologne",
+   "PHRASE",
+   0.24,
+   0.78,
+   1.06,
+   0.28,
+   "321305499016455"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore edp",
+   "PHRASE",
+   0.52,
+   1.36,
+   2.4,
+   0.6,
+   "522532375320294"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore l'or",
+   "PHRASE",
+   0.78,
+   1.13,
+   1.97,
+   0.9,
+   "282602659927208"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore oil",
+   "PHRASE",
+   0.72,
+   1.84,
+   3.06,
+   0.83,
+   "552665818607109"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore parfum",
+   "PHRASE",
+   0.71,
+   1.02,
+   1.7,
+   0.82,
+   "362878192963681"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore set",
+   "PHRASE",
+   0.35,
+   0.79,
+   1.16,
+   0.4,
+   "548090783564959"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore women",
+   "PHRASE",
+   0.73,
+   1.01,
+   1.69,
+   0.84,
+   "552197159351275"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume dior jadore",
+   "PHRASE",
+   0.33,
+   0.86,
+   1.44,
+   0.38,
+   "281659155165970"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior",
+   "EXACT",
+   0.35,
+   0.92,
+   1.54,
+   0.4,
+   "482168247307188"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior perfume",
+   "EXACT",
+   0.63,
+   0.91,
+   1.51,
+   0.72,
+   "335402384392647"
+  ],
+  [
+   "SOUL gucc key",
+   "gucci bamboo perfume sample",
+   "PHRASE",
+   0.38,
+   0.75,
+   1.14,
+   0.46,
+   "397657437236083"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace bright crystal",
+   "PHRASE",
+   0.31,
+   0.67,
+   0.86,
+   0.37,
+   "464804863669937"
+  ],
+  [
+   "SOUL Versac Key",
+   "crystal bright versace perfume",
+   "PHRASE",
+   0.44,
+   0.71,
+   1.29,
+   0.53,
+   "472726066427527"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace bright crystal perfume",
+   "PHRASE",
+   0.51,
+   0.52,
+   0.88,
+   0.61,
+   "522768555130283"
+  ],
+  [
+   "SOUL Versac Key",
+   "bright crystal versace for women",
+   "PHRASE",
+   0.46,
+   0.57,
+   0.72,
+   0.55,
+   "534563901304581"
+  ],
+  [
+   "SOUL Versac Key",
+   "perfume para mujer versace",
+   "PHRASE",
+   0.42,
+   0.5,
+   0.84,
+   0.5,
+   "342648631612019"
+  ],
+  [
+   "SOUL DOS Cherry",
+   "dossier ambery cherry",
+   "EXACT",
+   0.35,
+   0.44,
+   0.9,
+   0.45,
+   "430765744180873"
+  ],
+  [
+   "SOUL DOS Cherry",
+   "ambery cherry perfume dossier",
+   "EXACT",
+   0.35,
+   0.46,
+   0.65,
+   0.45,
+   "382275057953893"
+  ],
+  [
+   "SOUL DOS Bacca",
+   "dossier ambery saffron",
+   "EXACT",
+   0.43,
+   0.55,
+   0.76,
+   0.56,
+   "536974861550376"
+  ],
+  [
+   "SOUL DOS Bacca",
+   "amberry saffron dossier",
+   "EXACT",
+   0.52,
+   0.55,
+   0.91,
+   0.68,
+   "549924137450257"
+  ],
+  [
+   "SOUL DOS Bacca",
+   "dossier baccarat rouge 540",
+   "EXACT",
+   0.39,
+   0.7,
+   1.04,
+   0.51,
+   "483031945615431"
+  ],
+  [
+   "SOUL DOS Bacca",
+   "ambry saffron dossier",
+   "EXACT",
+   0.42,
+   0.59,
+   0.99,
+   0.55,
+   "531893249033829"
+  ],
+  [
+   "SOUL DOS Bacca",
+   "ambrey saffron perfume dossier",
+   "EXACT",
+   0.59,
+   0.67,
+   0.85,
+   0.77,
+   "367955579616737"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford parfum",
+   "PHRASE",
+   0.47,
+   0.98,
+   1.66,
+   0.59,
+   "303521591227988"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "oud minerale tom ford",
+   "PHRASE",
+   0.58,
+   0.75,
+   1.25,
+   0.72,
+   "453696752198172"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "fragrance tom ford",
+   "PHRASE",
+   0.31,
+   0.56,
+   1.01,
+   0.39,
+   "560193324405933"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford clone",
+   "PHRASE",
+   0.7,
+   1.37,
+   2.06,
+   0.88,
+   "416289266723215"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford bitter peach",
+   "PHRASE",
+   0.25,
+   0.67,
+   1.26,
+   0.31,
+   "559457453761382"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "bitter peach tom ford perfume",
+   "PHRASE",
+   0.92,
+   0.95,
+   1.59,
+   1.15,
+   "549695343326759"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford bitter peach perfume for women",
+   "PHRASE",
+   0.64,
+   0.71,
+   1.44,
+   0.8,
+   "423244182359964"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford peach",
+   "PHRASE",
+   0.96,
+   1.04,
+   2.49,
+   1.2,
+   "465704956744795"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "bitter peach",
+   "PHRASE",
+   0.57,
+   0.62,
+   1.27,
+   0.71,
+   "555515871069537"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford golden peach",
+   "PHRASE",
+   0.66,
+   1.28,
+   1.96,
+   0.83,
+   "289244646419308"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford cologne for women",
+   "PHRASE",
+   0.81,
+   2.15,
+   3.58,
+   1.01,
+   "531787099014045"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford perfumes",
+   "PHRASE",
+   0.73,
+   0.83,
+   1.84,
+   0.91,
+   "321053498374068"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford electric cherry",
+   "PHRASE",
+   0.74,
+   1.45,
+   2.03,
+   0.93,
+   "480271296046256"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford women perfume",
+   "PHRASE",
+   0.92,
+   1.06,
+   2.14,
+   1.15,
+   "476656447483932"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tomford perfume",
+   "PHRASE",
+   0.69,
+   0.9,
+   1.95,
+   0.86,
+   "301579399349180"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "perfume tom ford",
+   "PHRASE",
+   0.41,
+   0.8,
+   1.84,
+   0.51,
+   "285619617126462"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "perfumes for women tom ford",
+   "PHRASE",
+   0.91,
+   1.86,
+   3.17,
+   1.14,
+   "496930208400510"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "perfume tom ford women",
+   "PHRASE",
+   0.43,
+   1.59,
+   2.65,
+   0.54,
+   "434767385607338"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford fragrances",
+   "PHRASE",
+   0.9,
+   1.01,
+   2.16,
+   1.12,
+   "454780054596867"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford fragrance",
+   "PHRASE",
+   0.31,
+   1.01,
+   2.16,
+   0.39,
+   "556139703366301"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "lost cherry tom ford",
+   "PHRASE",
+   0.75,
+   1.25,
+   3.26,
+   0.94,
+   "359275592559705"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford perfume",
+   "PHRASE",
+   0.73,
+   0.83,
+   1.84,
+   0.91,
+   "334839575774706"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "lost cherry tom ford dupes",
+   "PHRASE",
+   0.95,
+   1.19,
+   2.28,
+   1.19,
+   "353441234004435"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "cherry tom ford perfume",
+   "PHRASE",
+   0.96,
+   1.84,
+   3.06,
+   1.2,
+   "314267071015456"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "lost cherry dupe",
+   "PHRASE",
+   0.82,
+   1.13,
+   1.96,
+   1.02,
+   "338655198989100"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "lost cherry perfume",
+   "PHRASE",
+   0.84,
+   1.35,
+   2.6,
+   1.05,
+   "299314875055329"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford cherry smoke",
+   "PHRASE",
+   0.72,
+   1.3,
+   2.16,
+   0.9,
+   "323613337089981"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford lost cherry perfume for women",
+   "PHRASE",
+   0.83,
+   1.36,
+   3.2,
+   1.04,
+   "543762532013918"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford cherry lost",
+   "PHRASE",
+   1.01,
+   1.46,
+   2.44,
+   1.26,
+   "542565733958933"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "cherry smoke tom ford",
+   "PHRASE",
+   1.0,
+   1.33,
+   2.21,
+   1.25,
+   "320116247436518"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford cherry perfume for women",
+   "PHRASE",
+   1.24,
+   1.35,
+   2.5,
+   1.55,
+   "340964024561887"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford lost cherry perfume",
+   "PHRASE",
+   1.21,
+   1.36,
+   3.79,
+   1.51,
+   "291579374763868"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford cherry perfume",
+   "PHRASE",
+   1.13,
+   1.29,
+   2.11,
+   1.41,
+   "436191377578654"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford perfume cherry",
+   "PHRASE",
+   0.82,
+   1.39,
+   2.29,
+   1.02,
+   "546745299727705"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford perfume lost cherry",
+   "PHRASE",
+   0.79,
+   2.04,
+   3.16,
+   0.99,
+   "432813536049869"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "cherry scented perfume",
+   "PHRASE",
+   0.39,
+   0.82,
+   1.68,
+   0.49,
+   "384547952858940"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "cherry vanilla perfume for women",
+   "PHRASE",
+   0.64,
+   1.2,
+   2.0,
+   0.8,
+   "421398314937336"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "lost cherry perfume oil",
+   "PHRASE",
+   0.6,
+   1.27,
+   2.4,
+   0.75,
+   "535837901136428"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "tom ford velvet cherry",
+   "PHRASE",
+   0.37,
+   0.45,
+   0.75,
+   0.46,
+   "388844903725300"
+  ],
+  [
+   "SOUL TF Cherry key",
+   "cherry vanilla perfume",
+   "PHRASE",
+   0.79,
+   0.83,
+   1.6,
+   0.99,
+   "434806796912097"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian good girl gone bad perfume",
+   "PHRASE",
+   0.37,
+   0.51,
+   0.85,
+   0.37,
+   "454858600523914"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian paris perfume",
+   "PHRASE",
+   1.09,
+   3.34,
+   4.95,
+   1.09,
+   "526960420164952"
+  ],
+  [
+   "SOUL Killia Key",
+   "love by killian",
+   "PHRASE",
+   0.35,
+   1.52,
+   2.53,
+   0.35,
+   "513500816350107"
+  ],
+  [
+   "SOUL Killia Key",
+   "killian love dont be shy",
+   "PHRASE",
+   0.5,
+   2.04,
+   3.4,
+   0.5,
+   "401015402361936"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian angels share",
+   "PHRASE",
+   0.77,
+   0.86,
+   1.11,
+   0.77,
+   "535724556886496"
+  ],
+  [
+   "SOUL Killia Key",
+   "love don't be shy by kilian",
+   "PHRASE",
+   0.93,
+   1.06,
+   1.76,
+   0.93,
+   "368214182092959"
+  ],
+  [
+   "SOUL Killia Key",
+   "love dont be shy perfume",
+   "PHRASE",
+   0.9,
+   1.31,
+   2.43,
+   0.9,
+   "384371500711296"
+  ],
+  [
+   "SOUL Killia Key",
+   "dossier floral marshmallow",
+   "PHRASE",
+   0.24,
+   0.29,
+   0.49,
+   0.24,
+   "325435622034907"
+  ],
+  [
+   "SOUL Killia Key",
+   "love don't be shy perfume",
+   "PHRASE",
+   1.08,
+   1.24,
+   2.61,
+   1.08,
+   "496823116772461"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian love don t be shy",
+   "PHRASE",
+   1.0,
+   1.08,
+   1.8,
+   1.0,
+   "525101237818515"
+  ],
+  [
+   "SOUL DOS Bl Opiu",
+   "ambery vanilla perfume dossier",
+   "EXACT",
+   0.35,
+   0.65,
+   1.09,
+   0.45,
+   "382526303047489"
+  ],
+  [
+   "SOUL DOS Bl Opiu",
+   "dossier perfume ambery vanilla",
+   "EXACT",
+   0.35,
+   0.43,
+   0.71,
+   0.45,
+   "418672980055657"
+  ],
+  [
+   "SOUL DOS Bl Opiu",
+   "dossier ambery vanilla perfume",
+   "EXACT",
+   0.35,
+   0.51,
+   0.85,
+   0.45,
+   "287035328291892"
+  ],
+  [
+   "SOUL Perf Key",
+   "best smelling perfume for women",
+   "PHRASE",
+   0.65,
+   0.83,
+   1.38,
+   0.85,
+   "336110213701297"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia edp",
+   "PHRASE",
+   0.44,
+   2.16,
+   3.6,
+   0.44,
+   "534697783580249"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia fresh",
+   "PHRASE",
+   1.15,
+   1.82,
+   3.03,
+   1.15,
+   "536403763503175"
+  ],
+  [
+   "SOUL Arman Key",
+   "fragrance oil aqua di gio",
+   "PHRASE",
+   0.2,
+   0.5,
+   0.97,
+   0.2,
+   "433198475233971"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio intense",
+   "PHRASE",
+   0.26,
+   0.56,
+   0.94,
+   0.26,
+   "297049034326120"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio fragrance",
+   "PHRASE",
+   0.31,
+   0.43,
+   0.73,
+   0.31,
+   "288844076582525"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia fresh aquatics",
+   "PHRASE",
+   0.43,
+   1.82,
+   3.03,
+   0.43,
+   "320132254869480"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio ocean",
+   "PHRASE",
+   0.77,
+   0.89,
+   1.48,
+   0.77,
+   "385377021949843"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia ocean",
+   "PHRASE",
+   0.56,
+   1.01,
+   1.96,
+   0.56,
+   "396229196519051"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio roll",
+   "PHRASE",
+   0.73,
+   0.76,
+   1.03,
+   0.73,
+   "464991165443956"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia intense",
+   "PHRASE",
+   0.2,
+   0.46,
+   0.76,
+   0.2,
+   "387602745929419"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia mini",
+   "PHRASE",
+   0.4,
+   1.88,
+   3.14,
+   0.4,
+   "528448432417565"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia travel spray",
+   "PHRASE",
+   0.3,
+   0.42,
+   0.7,
+   0.3,
+   "452301416212436"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia rollerball",
+   "PHRASE",
+   0.44,
+   1.98,
+   3.3,
+   0.44,
+   "288458225382944"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio perfume",
+   "PHRASE",
+   0.2,
+   0.29,
+   0.48,
+   0.2,
+   "473648586992292"
+  ],
+  [
+   "SOUL Arman Key",
+   "sun di gioia perfume",
+   "PHRASE",
+   0.39,
+   0.93,
+   1.51,
+   0.39,
+   "330936337476608"
+  ],
+  [
+   "SOUL Arman Key",
+   "sky di gioia",
+   "PHRASE",
+   0.41,
+   0.62,
+   1.02,
+   0.41,
+   "438395646129450"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio air",
+   "PHRASE",
+   0.76,
+   1.17,
+   1.95,
+   0.76,
+   "548724579608918"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia sample",
+   "PHRASE",
+   0.33,
+   2.16,
+   3.6,
+   0.33,
+   "356004478450058"
+  ],
+  [
+   "SOUL Arman Key",
+   "perfume acqua di gioia",
+   "PHRASE",
+   0.33,
+   0.57,
+   0.95,
+   0.33,
+   "360733362168883"
+  ],
+  [
+   "SOUL Arman Key",
+   "air di gioia",
+   "PHRASE",
+   0.49,
+   1.97,
+   3.29,
+   0.49,
+   "460802505159295"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di perfume",
+   "PHRASE",
+   0.55,
+   2.59,
+   4.31,
+   0.55,
+   "380708843796244"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gia",
+   "PHRASE",
+   0.2,
+   2.11,
+   3.53,
+   0.2,
+   "293726626522843"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia eau",
+   "PHRASE",
+   0.68,
+   0.69,
+   1.03,
+   0.68,
+   "386899597497397"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di parisis venizia",
+   "PHRASE",
+   0.5,
+   0.52,
+   0.86,
+   0.5,
+   "424357464780960"
+  ],
+  [
+   "SOUL Arman Key",
+   "light di gioia",
+   "PHRASE",
+   0.36,
+   0.65,
+   1.08,
+   0.36,
+   "496305637892475"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio for women",
+   "PHRASE",
+   0.45,
+   0.5,
+   0.83,
+   0.45,
+   "283888372325670"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia eau de parfum",
+   "PHRASE",
+   0.68,
+   0.69,
+   1.09,
+   0.68,
+   "355717785227590"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia perfume",
+   "PHRASE",
+   0.53,
+   0.6,
+   1.07,
+   0.53,
+   "547558078015155"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio travel size",
+   "PHRASE",
+   0.35,
+   0.94,
+   1.56,
+   0.35,
+   "345625737765605"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio eau de parfum",
+   "PHRASE",
+   0.68,
+   0.7,
+   0.98,
+   0.68,
+   "432380082666210"
+  ],
+  [
+   "SOUL Arman Key",
+   "ocean di gioia eau de parfum",
+   "PHRASE",
+   0.68,
+   0.89,
+   1.48,
+   0.68,
+   "315337685647733"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia eau de toilette",
+   "PHRASE",
+   0.21,
+   1.53,
+   2.49,
+   0.21,
+   "363948865978610"
+  ],
+  [
+   "SOUL Arman Key",
+   "ocean di gioia",
+   "PHRASE",
+   0.68,
+   0.8,
+   1.21,
+   0.68,
+   "398559918954283"
+  ],
+  [
+   "SOUL Arman Key",
+   "aquia di gio parfum",
+   "PHRASE",
+   0.29,
+   0.44,
+   0.74,
+   0.29,
+   "358654466238104"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio profumo parfum",
+   "PHRASE",
+   0.22,
+   0.6,
+   1.06,
+   0.22,
+   "503366225031031"
+  ],
+  [
+   "SOUL Arman Key",
+   "gio acqua di",
+   "PHRASE",
+   0.66,
+   1.05,
+   1.66,
+   0.66,
+   "302759192205398"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio sample",
+   "PHRASE",
+   0.8,
+   0.86,
+   1.42,
+   0.8,
+   "422588026360757"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di parfum",
+   "PHRASE",
+   0.45,
+   2.1,
+   3.5,
+   0.45,
+   "501531380346731"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio essenza",
+   "PHRASE",
+   0.61,
+   0.83,
+   1.38,
+   0.61,
+   "431552883915080"
+  ],
+  [
+   "SOUL Arman Key",
+   "aquí di gio perfume",
+   "PHRASE",
+   0.6,
+   0.61,
+   1.01,
+   0.6,
+   "304416364385065"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio profondo parfum",
+   "PHRASE",
+   0.54,
+   0.72,
+   1.12,
+   0.54,
+   "523793999171678"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio edp",
+   "PHRASE",
+   0.8,
+   1.88,
+   3.13,
+   0.8,
+   "551968113240374"
+  ],
+  [
+   "SOUL Arman Key",
+   "perfume aqua di gio para hombre",
+   "PHRASE",
+   0.72,
+   1.61,
+   2.65,
+   0.72,
+   "415547610690161"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio sample",
+   "PHRASE",
+   0.2,
+   0.41,
+   0.78,
+   0.2,
+   "451501229434025"
+  ],
+  [
+   "SOUL Arman Key",
+   "agua di gio profumo",
+   "PHRASE",
+   0.39,
+   0.64,
+   1.06,
+   0.39,
+   "515476502357443"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio parfum profondo",
+   "PHRASE",
+   0.3,
+   2.23,
+   3.71,
+   0.3,
+   "559863835527387"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio absolu",
+   "PHRASE",
+   0.2,
+   0.23,
+   0.39,
+   0.2,
+   "438100330563573"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio aftershave balm",
+   "PHRASE",
+   2.63,
+   7.52,
+   11.0,
+   2.63,
+   "331193906042857"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio eau de toilette",
+   "PHRASE",
+   0.84,
+   2.1,
+   3.5,
+   0.84,
+   "345612434507253"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di giò eau de toilette",
+   "PHRASE",
+   0.55,
+   0.74,
+   1.24,
+   0.55,
+   "477053025797017"
+  ],
+  [
+   "SOUL Arman Key",
+   "cologne acqua di gio",
+   "PHRASE",
+   0.55,
+   0.92,
+   1.54,
+   0.55,
+   "489082226258398"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di profumo",
+   "PHRASE",
+   0.33,
+   0.57,
+   0.95,
+   0.33,
+   "318858449744391"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di parma parfum",
+   "PHRASE",
+   0.2,
+   0.44,
+   0.64,
+   0.2,
+   "399377342570457"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di parma colonia",
+   "PHRASE",
+   0.25,
+   1.32,
+   2.06,
+   0.25,
+   "503583663103932"
+  ],
+  [
+   "SOUL Arman Key",
+   "aqua di gio para mujer",
+   "PHRASE",
+   0.2,
+   0.26,
+   0.48,
+   0.2,
+   "321358328061881"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gio fragrance oil",
+   "PHRASE",
+   0.21,
+   0.43,
+   0.73,
+   0.21,
+   "460731149315361"
+  ],
+  [
+   "SOUL Dupe Key",
+   "black opium dupe",
+   "EXACT",
+   1.14,
+   1.34,
+   2.24,
+   1.71,
+   "432905210622309"
+  ],
+  [
+   "SOUL Dupe Key",
+   "baccarat dupe",
+   "EXACT",
+   1.7,
+   2.26,
+   3.76,
+   2.55,
+   "315840155530401"
+  ],
+  [
+   "SOUL Dupe Key",
+   "baccarat rouge dupe",
+   "EXACT",
+   1.74,
+   2.43,
+   3.07,
+   2.61,
+   "367627433138110"
+  ],
+  [
+   "SOUL Dupe Key",
+   "dupe perfume",
+   "EXACT",
+   0.64,
+   0.81,
+   1.47,
+   0.96,
+   "417441072688892"
+  ],
+  [
+   "SOUL Dupe Key",
+   "tom ford dupe",
+   "EXACT",
+   0.92,
+   1.18,
+   1.96,
+   1.38,
+   "553585356266620"
+  ],
+  [
+   "SOUL Dupe Key",
+   "tom ford dupes perfume",
+   "EXACT",
+   0.93,
+   1.11,
+   1.94,
+   1.4,
+   "433335499815143"
+  ],
+  [
+   "SOUL Dupe Key",
+   "fragrance dupes for women",
+   "EXACT",
+   0.35,
+   0.6,
+   0.84,
+   0.52,
+   "435515602772091"
+  ],
+  [
+   "SOUL Dupe Key",
+   "cologne dupes",
+   "EXACT",
+   0.58,
+   0.79,
+   1.33,
+   0.87,
+   "457892419661454"
+  ],
+  [
+   "SOUL Dupe Key",
+   "black opium inspired perfume",
+   "EXACT",
+   0.73,
+   1.14,
+   1.9,
+   1.09,
+   "434481524106958"
+  ],
+  [
+   "SOUL Dupe Key",
+   "perfume replica",
+   "EXACT",
+   0.49,
+   0.81,
+   1.35,
+   0.73,
+   "417408923826643"
+  ],
+  [
+   "SOUL Dupe Key",
+   "replica perfume",
+   "EXACT",
+   0.61,
+   0.88,
+   1.5,
+   0.92,
+   "505975340539424"
+  ],
+  [
+   "SOUL Dupe Key",
+   "replica perfume set",
+   "EXACT",
+   0.62,
+   0.73,
+   1.72,
+   0.93,
+   "356901977106367"
+  ],
+  [
+   "SOUL Dupe Key",
+   "replica perfumes",
+   "EXACT",
+   0.61,
+   0.79,
+   1.24,
+   0.92,
+   "339366682727234"
+  ],
+  [
+   "SOUL bacc exact 2 key",
+   "baccarat rouge 540 perfume for women",
+   "EXACT",
+   0.98,
+   1.1,
+   1.84,
+   0.98,
+   "351858520128894"
+  ],
+  [
+   "SOUL bacc exact 2 key",
+   "baccarat rouge 540",
+   "EXACT",
+   1.31,
+   1.78,
+   2.76,
+   1.31,
+   "350017631027553"
+  ],
+  [
+   "SOUL bacc exact 2 key",
+   "baccarat rouge",
+   "EXACT",
+   0.5,
+   1.01,
+   1.69,
+   0.5,
+   "475028241253275"
+  ],
+  [
+   "SOUL bacc exact 2 key",
+   "alt baccarat rouge 540 perfume for women",
+   "EXACT",
+   1.4,
+   1.94,
+   3.31,
+   1.4,
+   "371966439586087"
+  ],
+  [
+   "SOUL BRIGHT CRIST EXACT",
+   "versace bright crystal perfume",
+   "EXACT",
+   0.57,
+   0.79,
+   1.31,
+   0.74,
+   "304616968497095"
+  ],
+  [
+   "SOUL BRIGHT CRIST EXACT",
+   "versace bright crystal perfume for women",
+   "EXACT",
+   0.76,
+   0.77,
+   1.29,
+   0.99,
+   "519442837124397"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "black opium perfume for women",
+   "EXACT",
+   1.11,
+   1.27,
+   2.11,
+   1.44,
+   "561908274688665"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "black opium",
+   "EXACT",
+   0.59,
+   1.26,
+   1.8,
+   0.77,
+   "538531872125343"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "ysl black opium perfume",
+   "EXACT",
+   0.51,
+   1.58,
+   2.63,
+   0.66,
+   "458770969380662"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "black opium perfume",
+   "EXACT",
+   1.2,
+   1.28,
+   2.14,
+   1.56,
+   "292856715717260"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "ysl black opium perfume women",
+   "EXACT",
+   0.67,
+   1.42,
+   2.26,
+   0.87,
+   "469655608361078"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "opium perfume for women",
+   "EXACT",
+   0.95,
+   1.1,
+   2.11,
+   1.23,
+   "487342415493447"
+  ],
+  [
+   "SOUL BLACK OPIUM EXACT",
+   "ysl black opium",
+   "EXACT",
+   0.45,
+   1.22,
+   2.04,
+   0.59,
+   "349662291673149"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "jadore perfume for women",
+   "EXACT",
+   0.97,
+   1.63,
+   2.71,
+   1.26,
+   "339644466091250"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "jadore dior",
+   "EXACT",
+   0.49,
+   1.06,
+   1.76,
+   0.64,
+   "344957275202464"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "dior jadore perfume for women",
+   "EXACT",
+   0.75,
+   1.13,
+   2.17,
+   0.98,
+   "292190266958366"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "dior jadore",
+   "EXACT",
+   0.54,
+   1.03,
+   1.73,
+   0.7,
+   "472974376619758"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "dior jadore eau de parfum",
+   "EXACT",
+   0.7,
+   1.46,
+   2.42,
+   0.91,
+   "409332409360401"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "christian dior jadore perfume for women",
+   "EXACT",
+   0.74,
+   1.13,
+   1.82,
+   0.96,
+   "468060495842880"
+  ],
+  [
+   "SOUL JADORE EXACT",
+   "dior jadore perfume",
+   "EXACT",
+   0.75,
+   1.35,
+   2.72,
+   0.98,
+   "286176411519271"
+  ],
+  [
+   "SOUL BR CRYSTAL EXACT",
+   "bright crystal versace for women",
+   "EXACT",
+   0.42,
+   0.57,
+   0.72,
+   0.55,
+   "499658668733584"
+  ],
+  [
+   "SOUL BR CRYSTAL EXACT",
+   "bright crystal perfume",
+   "EXACT",
+   0.89,
+   0.95,
+   2.16,
+   1.16,
+   "553375763469309"
+  ],
+  [
+   "SOUL BR CRYSTAL EXACT",
+   "versace",
+   "EXACT",
+   0.39,
+   1.38,
+   2.3,
+   0.51,
+   "353697827992813"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "coco chanel perfume",
+   "EXACT",
+   0.65,
+   1.67,
+   2.79,
+   0.72,
+   "529556742012667"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "coco chanel mademoiselle",
+   "EXACT",
+   0.63,
+   1.04,
+   1.74,
+   0.69,
+   "429094197489088"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "chanel coco mademoiselle",
+   "EXACT",
+   0.59,
+   1.02,
+   1.75,
+   0.65,
+   "312068372591897"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "coco mademoiselle perfume for women",
+   "EXACT",
+   0.9,
+   0.99,
+   1.65,
+   0.99,
+   "537186126255803"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "chanel coco mademoiselle eau de parfum",
+   "EXACT",
+   0.9,
+   1.4,
+   2.91,
+   0.99,
+   "508490314620072"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "coco mademoiselle",
+   "EXACT",
+   0.75,
+   0.92,
+   1.68,
+   0.83,
+   "531457504561480"
+  ],
+  [
+   "SOUL COCO MADEM EXACT",
+   "mademoiselle coco chanel perfume",
+   "EXACT",
+   0.87,
+   1.55,
+   2.59,
+   0.96,
+   "510094017424897"
+  ],
+  [
+   "SOUL Mist keywords",
+   "vanilla body mist",
+   "EXACT",
+   0.85,
+   0.99,
+   1.65,
+   1.02,
+   "356840423573678"
+  ],
+  [
+   "SOUL Mist keywords",
+   "hair and body mist",
+   "EXACT",
+   0.51,
+   1.03,
+   2.32,
+   0.61,
+   "331260465743873"
+  ],
+  [
+   "SOUL Mist keywords",
+   "body spray",
+   "EXACT",
+   0.37,
+   1.04,
+   1.74,
+   0.44,
+   "369378145032951"
+  ],
+  [
+   "SOUL Mist keywords",
+   "body spray for women",
+   "EXACT",
+   0.54,
+   0.99,
+   2.47,
+   0.65,
+   "354432585844522"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "miris lost cherry 39702",
+   "EXACT",
+   0.8,
+   0.89,
+   1.4,
+   0.96,
+   "499164363284070"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "lost cherry tom ford",
+   "EXACT",
+   0.89,
+   1.28,
+   3.21,
+   1.07,
+   "454666625827117"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "lost cherry",
+   "EXACT",
+   1.5,
+   1.69,
+   2.83,
+   1.8,
+   "476109828191116"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "tom ford lost cherry cologne for men",
+   "EXACT",
+   2.07,
+   2.47,
+   4.11,
+   2.48,
+   "461791956111793"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "tom ford perfume lost cherry",
+   "EXACT",
+   2.01,
+   2.04,
+   3.16,
+   2.41,
+   "438494796352763"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "tom ford lost cherry dupe",
+   "EXACT",
+   0.88,
+   1.06,
+   2.23,
+   1.06,
+   "298280052576620"
+  ],
+  [
+   "SOUL lost cherry Exact",
+   "lost cherry tom ford sample",
+   "EXACT",
+   0.78,
+   1.42,
+   2.38,
+   0.94,
+   "499020122519444"
+  ],
+  [
+   "SOUL coco Madem Exact",
+   "coco chanel mademoiselle perfume",
+   "EXACT",
+   0.47,
+   1.14,
+   2.53,
+   0.61,
+   "498334057166491"
+  ],
+  [
+   "SOUL coco Madem Exact",
+   "coco mademoiselle chanel perfume",
+   "EXACT",
+   0.78,
+   1.15,
+   2.36,
+   1.01,
+   "390264805930977"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb perfume for women",
+   "PHRASE",
+   0.8,
+   1.02,
+   1.77,
+   0.8,
+   "561219811581361"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb perfume for women",
+   "EXACT",
+   0.6,
+   0.98,
+   1.41,
+   0.6,
+   "391016192305743"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb by viktor & rolf",
+   "PHRASE",
+   0.8,
+   0.85,
+   1.41,
+   0.8,
+   "442017576236860"
+  ],
+  [
+   "SOUL PH Mademuiselle",
+   "coco mademoiselle chanel perfume",
+   "EXACT",
+   0.67,
+   1.15,
+   2.36,
+   0.67,
+   "301160858776995"
+  ],
+  [
+   "SOUL PH Mademuiselle",
+   "coco mademoiselle eau de parfum",
+   "EXACT",
+   1.0,
+   1.69,
+   3.11,
+   1.0,
+   "557567117749771"
+  ],
+  [
+   "SOUL PH Mademuiselle",
+   "chanel coco mademoiselle eau de parfum",
+   "EXACT",
+   0.67,
+   1.4,
+   2.91,
+   0.67,
+   "337985869169109"
+  ],
+  [
+   "SOUL PH Mademuiselle",
+   "coco mademoiselle chanel perfume for women",
+   "EXACT",
+   0.67,
+   1.04,
+   1.74,
+   0.67,
+   "445468752099664"
+  ],
+  [
+   "SOUL PH Mademuiselle",
+   "coco mademoiselle chanel perfume",
+   "PHRASE",
+   1.0,
+   1.09,
+   2.33,
+   1.0,
+   "533535095475800"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal perfume",
+   "EXACT",
+   0.6,
+   1.44,
+   3.29,
+   0.6,
+   "515320417899503"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal perfume",
+   "PHRASE",
+   0.6,
+   0.79,
+   1.31,
+   0.6,
+   "393374526957065"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal versace for women",
+   "EXACT",
+   0.35,
+   0.87,
+   1.1,
+   0.35,
+   "523656338264741"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "versace bright crystal perfume",
+   "PHRASE",
+   0.75,
+   0.85,
+   1.41,
+   0.75,
+   "286991522083562"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "versace bright crystal perfume",
+   "EXACT",
+   0.75,
+   0.79,
+   1.31,
+   0.75,
+   "545588629708487"
+  ],
+  [
+   "SOUL PH Lost cherry",
+   "lost cherry",
+   "PHRASE",
+   1.0,
+   1.26,
+   2.59,
+   1.15,
+   "329706107911754"
+  ],
+  [
+   "SOUL PH Lost cherry",
+   "lost cherry dupe",
+   "EXACT",
+   0.8,
+   1.27,
+   2.11,
+   0.92,
+   "444229946255345"
+  ],
+  [
+   "SOUL PH Lost cherry",
+   "tom ford lost cherry",
+   "PHRASE",
+   0.8,
+   1.19,
+   2.9,
+   0.92,
+   "347773451635346"
+  ],
+  [
+   "SOUL PH Lost cherry",
+   "tom ford lost cherry",
+   "EXACT",
+   0.8,
+   1.08,
+   2.05,
+   0.92,
+   "524211971637097"
+  ],
+  [
+   "SOUL PH Lost cherry",
+   "tom ford lost cherry perfume for women",
+   "PHRASE",
+   0.8,
+   1.36,
+   3.2,
+   0.92,
+   "481147856270122"
+  ],
+  [
+   "SOUL PH Lost cherry",
+   "tom ford lost cherry perfume",
+   "EXACT",
+   0.75,
+   1.13,
+   2.28,
+   0.86,
+   "550966228515585"
+  ],
+  [
+   "SOUL PH Jadore",
+   "jadore",
+   "PHRASE",
+   0.75,
+   1.54,
+   2.56,
+   0.75,
+   "528880385740382"
+  ],
+  [
+   "SOUL PH Jadore",
+   "jadore perfume for women",
+   "PHRASE",
+   0.75,
+   1.64,
+   2.73,
+   0.75,
+   "380148540124729"
+  ],
+  [
+   "SOUL PH Jadore",
+   "jadore perfume for women",
+   "EXACT",
+   0.75,
+   1.63,
+   2.71,
+   0.75,
+   "473999224570357"
+  ],
+  [
+   "SOUL PH Jadore",
+   "jadore",
+   "BROAD",
+   0.75,
+   1.54,
+   2.56,
+   0.75,
+   "522906741224624"
+  ],
+  [
+   "SOUL PH Jadore",
+   "jadore dior perfume for women",
+   "EXACT",
+   0.75,
+   0.79,
+   1.74,
+   0.75,
+   "425546986229365"
+  ],
+  [
+   "SOUL PH Jo Malo",
+   "jo malone",
+   "PHRASE",
+   0.6,
+   0.98,
+   1.36,
+   0.6,
+   "417809817122289"
+  ],
+  [
+   "SOUL PH Jo Malo",
+   "jo malone sea salt and wood sage",
+   "PHRASE",
+   0.5,
+   0.59,
+   1.2,
+   0.5,
+   "323369528568520"
+  ],
+  [
+   "SOUL PH Jo Malo",
+   "jo malone sea salt and sage",
+   "PHRASE",
+   0.5,
+   0.69,
+   1.25,
+   0.5,
+   "334827119984103"
+  ],
+  [
+   "SOUL PH Jo Malo",
+   "jo malone wood sage and sea salt",
+   "PHRASE",
+   0.5,
+   2.58,
+   3.94,
+   0.5,
+   "419002153937626"
+  ],
+  [
+   "SOUL PH Jo Malo",
+   "jo malone wood sage and sea salt",
+   "EXACT",
+   0.5,
+   1.46,
+   2.42,
+   0.5,
+   "392649714146714"
+  ],
+  [
+   "SOUL Jo Malo exact",
+   "jo malone",
+   "EXACT",
+   0.7,
+   1.13,
+   2.16,
+   0.7,
+   "452325293498126"
+  ],
+  [
+   "SOUL Jo Malo exact",
+   "jo malone perfume",
+   "EXACT",
+   1.15,
+   1.2,
+   2.64,
+   1.15,
+   "287139743336804"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium dupe",
+   "PHRASE",
+   1.0,
+   1.47,
+   2.45,
+   1.1,
+   "334033771368589"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium dupe",
+   "EXACT",
+   0.7,
+   1.48,
+   2.46,
+   0.77,
+   "405801457276152"
+  ],
+  [
+   "SOUL PH Black opium",
+   "inspired by black opium",
+   "PHRASE",
+   1.0,
+   1.09,
+   1.74,
+   1.1,
+   "492414009222729"
+  ],
+  [
+   "SOUL PH Black opium",
+   "inspired by black opium",
+   "EXACT",
+   0.7,
+   1.3,
+   2.16,
+   0.77,
+   "381710673411693"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium inspired perfume",
+   "PHRASE",
+   0.69,
+   1.24,
+   2.07,
+   0.76,
+   "516643364369179"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium inspired perfume",
+   "EXACT",
+   1.0,
+   1.26,
+   2.1,
+   1.1,
+   "503834153658958"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium perfume",
+   "PHRASE",
+   1.0,
+   1.28,
+   2.14,
+   1.1,
+   "330716904717408"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium perfume",
+   "EXACT",
+   0.7,
+   1.28,
+   2.14,
+   0.77,
+   "345056064818357"
+  ],
+  [
+   "SOUL PH Black opium",
+   "ysl black opium perfume women",
+   "PHRASE",
+   0.7,
+   1.43,
+   2.26,
+   0.77,
+   "401716074660564"
+  ],
+  [
+   "SOUL PH Black opium",
+   "ysl black opium perfume women",
+   "EXACT",
+   0.7,
+   1.42,
+   2.26,
+   0.77,
+   "545659223777612"
+  ],
+  [
+   "SOUL PH Black opium",
+   "black opium perfume for women",
+   "EXACT",
+   1.0,
+   1.27,
+   2.11,
+   1.1,
+   "373561029305509"
+  ],
+  [
+   "cologne new",
+   "pheromone perfume",
+   "EXACT",
+   0.48,
+   0.55,
+   0.84,
+   0.48,
+   "540007836061869"
+  ],
+  [
+   "cologne new",
+   "venom pheromone perfume",
+   "PHRASE",
+   0.53,
+   1.05,
+   1.75,
+   0.53,
+   "445757458678942"
+  ],
+  [
+   "cologne new",
+   "enchanted scents pheromone perfume",
+   "PHRASE",
+   0.37,
+   0.91,
+   1.51,
+   0.37,
+   "526714947870616"
+  ],
+  [
+   "cologne new",
+   "enchanted scents pheromone perfume",
+   "EXACT",
+   0.41,
+   1.03,
+   1.73,
+   0.41,
+   "334967490295763"
+  ],
+  [
+   "cologne new",
+   "pheromone cologne",
+   "EXACT",
+   0.62,
+   1.58,
+   2.63,
+   0.62,
+   "488660060841300"
+  ],
+  [
+   "cologne new",
+   "pheromone",
+   "EXACT",
+   0.69,
+   0.75,
+   1.25,
+   0.69,
+   "348084599151317"
+  ],
+  [
+   "cologne new",
+   "alloura pheromone perfume",
+   "PHRASE",
+   0.55,
+   1.21,
+   2.26,
+   0.55,
+   "478283912405917"
+  ],
+  [
+   "cologne new",
+   "alloura pheromone perfume",
+   "EXACT",
+   0.43,
+   1.24,
+   2.06,
+   0.43,
+   "382065891582147"
+  ],
+  [
+   "cologne new",
+   "mens pheromone cologne spray",
+   "PHRASE",
+   0.58,
+   1.01,
+   1.68,
+   0.58,
+   "453459674329484"
+  ],
+  [
+   "cologne new",
+   "mens pheromone cologne spray",
+   "EXACT",
+   0.62,
+   1.14,
+   1.9,
+   0.62,
+   "357423577303570"
+  ],
+  [
+   "cologne new",
+   "pheromone oil",
+   "EXACT",
+   0.55,
+   1.22,
+   2.04,
+   0.55,
+   "482421940463990"
+  ],
+  [
+   "cologne new",
+   "tiktok pheromone perfume",
+   "PHRASE",
+   0.37,
+   0.76,
+   1.26,
+   0.37,
+   "531007211206874"
+  ],
+  [
+   "cologne new",
+   "tiktok pheromone perfume",
+   "EXACT",
+   0.41,
+   0.86,
+   1.42,
+   0.41,
+   "405842066117346"
+  ],
+  [
+   "cologne new",
+   "alloura pheromone",
+   "PHRASE",
+   0.6,
+   1.2,
+   2.25,
+   0.6,
+   "515303346013264"
+  ],
+  [
+   "cologne new",
+   "pheromone cologne for men lure her",
+   "PHRASE",
+   0.63,
+   1.06,
+   1.76,
+   0.63,
+   "419409198171966"
+  ],
+  [
+   "cologne new",
+   "1 pheromone perfume",
+   "PHRASE",
+   0.5,
+   0.61,
+   1.01,
+   0.5,
+   "429646422779943"
+  ],
+  [
+   "SOUL PH MD Blooming Buq",
+   "dior blooming bouquet perfume",
+   "PHRASE",
+   0.89,
+   1.07,
+   1.78,
+   0.89,
+   "413184081701842"
+  ],
+  [
+   "SOUL PH MD Blooming Buq",
+   "dior blooming bouquet",
+   "PHRASE",
+   0.88,
+   1.02,
+   1.7,
+   0.88,
+   "408552510487953"
+  ],
+  [
+   "SOUL PH MD Blooming Buq",
+   "miss dior blooming bouquet perfume",
+   "PHRASE",
+   0.8,
+   0.82,
+   1.58,
+   0.8,
+   "554065536675841"
+  ],
+  [
+   "SOUL PH MD Blooming Buq",
+   "miss dior blooming bouquet",
+   "PHRASE",
+   0.68,
+   1.02,
+   1.7,
+   0.68,
+   "527410505037862"
+  ],
+  [
+   "mens water",
+   "pheromone for men to attract woman",
+   "PHRASE",
+   0.49,
+   0.77,
+   1.59,
+   0.49,
+   "486480554462246"
+  ],
+  [
+   "mens water",
+   "cologne men pheromone",
+   "PHRASE",
+   0.7,
+   0.95,
+   1.59,
+   0.7,
+   "285731358610788"
+  ],
+  [
+   "mens water",
+   "pheromone scents",
+   "BROAD",
+   0.65,
+   0.68,
+   1.22,
+   0.65,
+   "342999982007487"
+  ],
+  [
+   "mens water",
+   "male pheromones",
+   "EXACT",
+   0.35,
+   0.44,
+   0.89,
+   0.35,
+   "425849014541787"
+  ],
+  [
+   "mens water",
+   "male pheromones spray",
+   "BROAD",
+   0.53,
+   0.71,
+   1.17,
+   0.53,
+   "415677133182618"
+  ],
+  [
+   "mens water",
+   "pheromone cologne",
+   "EXACT",
+   0.42,
+   1.02,
+   1.7,
+   0.42,
+   "505004429026096"
+  ],
+  [
+   "Campaign - 3/11/2025 15:31:32.038",
+   "alfamarker pheromone",
+   "PHRASE",
+   0.6,
+   0.79,
+   1.31,
+   0.66,
+   "529891381740586"
+  ],
+  [
+   "Campaign - 3/11/2025 15:31:32.038",
+   "pheromone spray",
+   "PHRASE",
+   0.61,
+   0.64,
+   1.46,
+   0.67,
+   "520611046648137"
+  ],
+  [
+   "Campaign - 3/11/2025 15:31:32.038",
+   "pheremones",
+   "BROAD",
+   0.45,
+   0.76,
+   1.26,
+   0.5,
+   "426720440013409"
+  ],
+  [
+   "Campaign - 3/11/2025 15:31:32.038",
+   "pheromone perfume women",
+   "PHRASE",
+   0.56,
+   0.58,
+   1.41,
+   0.62,
+   "289042291119852"
+  ],
+  [
+   "Goda",
+   "goda perfume for women",
+   "PHRASE",
+   0.51,
+   0.58,
+   1.22,
+   0.61,
+   "301302767156512"
+  ],
+  [
+   "Goda",
+   "goda perfume for women",
+   "EXACT",
+   0.5,
+   1.11,
+   2.1,
+   0.6,
+   "291726708740298"
+  ],
+  [
+   "Goda",
+   "goda perfume for her",
+   "EXACT",
+   0.35,
+   0.44,
+   0.74,
+   0.42,
+   "530111031960838"
+  ],
+  [
+   "Goda",
+   "goda for her",
+   "PHRASE",
+   0.5,
+   0.61,
+   1.01,
+   0.6,
+   "307582136499428"
+  ],
+  [
+   "Goda",
+   "goda for her",
+   "EXACT",
+   0.35,
+   0.79,
+   1.31,
+   0.42,
+   "442212774185447"
+  ],
+  [
+   "Goda",
+   "goda pheromone perfume oil for women",
+   "PHRASE",
+   0.24,
+   0.41,
+   0.69,
+   0.29,
+   "352660781784032"
+  ],
+  [
+   "Goda",
+   "goda pheromone perfume oil for women",
+   "EXACT",
+   0.35,
+   0.42,
+   0.7,
+   0.42,
+   "327626893940987"
+  ],
+  [
+   "Intense frase",
+   "pheromones+perfumes+men",
+   "BROAD",
+   0.8,
+   1.07,
+   1.78,
+   0.8,
+   "384375566134118"
+  ],
+  [
+   "Intense frase",
+   "pheromones+men",
+   "BROAD",
+   0.8,
+   1.53,
+   2.33,
+   0.8,
+   "555845263493396"
+  ],
+  [
+   "Intense frase",
+   "men+pheromone",
+   "BROAD",
+   0.8,
+   1.53,
+   2.33,
+   0.8,
+   "324170911031325"
+  ],
+  [
+   "Intense frase",
+   "pheromone+men",
+   "BROAD",
+   0.8,
+   1.53,
+   2.33,
+   0.8,
+   "511771669956047"
+  ],
+  [
+   "Intense frase",
+   "pheromone+perfume+men",
+   "BROAD",
+   0.8,
+   1.07,
+   1.78,
+   0.8,
+   "550388303000755"
+  ],
+  [
+   "Intense frase",
+   "cologne+pheromone",
+   "BROAD",
+   0.8,
+   1.47,
+   2.31,
+   0.8,
+   "307680604499939"
+  ],
+  [
+   "Intense frase",
+   "pheromone+cologne",
+   "BROAD",
+   0.8,
+   1.47,
+   2.31,
+   0.8,
+   "319491189171910"
+  ],
+  [
+   "Intense frase",
+   "perfume+pheromone",
+   "BROAD",
+   0.8,
+   0.92,
+   1.37,
+   0.8,
+   "400783663913757"
+  ],
+  [
+   "Intense frase",
+   "pheromone+perfume",
+   "BROAD",
+   0.8,
+   0.92,
+   1.37,
+   0.8,
+   "288897417440189"
+  ],
+  [
+   "Intense frase",
+   "feromonas+hombre",
+   "BROAD",
+   0.85,
+   1.27,
+   2.13,
+   0.85,
+   "505715648704809"
+  ],
+  [
+   "Intense frase",
+   "feromonas+hombres",
+   "BROAD",
+   0.85,
+   1.27,
+   2.13,
+   0.85,
+   "446040507548525"
+  ],
+  [
+   "Intense frase",
+   "feromonas",
+   "PHRASE",
+   0.8,
+   1.27,
+   2.11,
+   0.8,
+   "309475049207898"
+  ],
+  [
+   "men frase",
+   "feromonas",
+   "PHRASE",
+   0.89,
+   1.22,
+   2.03,
+   0.89,
+   "285008980773835"
+  ],
+  [
+   "men frase",
+   "pheromone cologne for men",
+   "PHRASE",
+   0.57,
+   1.41,
+   2.19,
+   0.57,
+   "447532294944781"
+  ],
+  [
+   "Lizard frase",
+   "pheromones+perfumes+men",
+   "BROAD",
+   0.65,
+   1.07,
+   1.78,
+   0.65,
+   "297824285921564"
+  ],
+  [
+   "Lizard frase",
+   "feromonas",
+   "PHRASE",
+   0.92,
+   1.27,
+   2.11,
+   0.92,
+   "302629469555968"
+  ],
+  [
+   "new men 125 ml",
+   "pheromone cologne",
+   "EXACT",
+   1.0,
+   1.02,
+   1.7,
+   1.1,
+   "455521327007476"
+  ],
+  [
+   "new men 125 ml",
+   "pheromone perfume",
+   "PHRASE",
+   0.63,
+   0.75,
+   1.26,
+   0.69,
+   "521692123518660"
+  ],
+  [
+   "new men 125 ml",
+   "pheromone cologne for men",
+   "PHRASE",
+   0.71,
+   1.47,
+   2.28,
+   0.78,
+   "318410471510864"
+  ],
+  [
+   "new men 125 ml",
+   "pheromones perfumes for men",
+   "EXACT",
+   1.0,
+   1.15,
+   1.91,
+   1.1,
+   "436951301175074"
+  ],
+  [
+   "new men 125 ml",
+   "feromonas perfume for men",
+   "PHRASE",
+   0.88,
+   0.91,
+   1.84,
+   0.97,
+   "371047862711875"
+  ],
+  [
+   "new men 125 ml",
+   "feromonas perfume for men",
+   "EXACT",
+   0.83,
+   0.96,
+   1.93,
+   0.91,
+   "319740639818693"
+  ],
+  [
+   "lizard exact",
+   "magnetic perfume con feromonas",
+   "EXACT",
+   0.53,
+   0.86,
+   1.44,
+   0.61,
+   "536536755029828"
+  ],
+  [
+   "lizard exact",
+   "perfume con feromonas para hombres",
+   "EXACT",
+   0.58,
+   0.9,
+   1.62,
+   0.67,
+   "388230976242065"
+  ],
+  [
+   "lizard exact",
+   "perfume de feromonas hombre",
+   "EXACT",
+   0.58,
+   0.97,
+   1.61,
+   0.67,
+   "390252251766494"
+  ],
+  [
+   "lizard exact",
+   "pheromone perfume for man",
+   "EXACT",
+   0.57,
+   1.15,
+   1.91,
+   0.66,
+   "447593626029175"
+  ],
+  [
+   "lizard exact",
+   "perfumes con feromonas para hombre",
+   "EXACT",
+   0.78,
+   0.9,
+   1.62,
+   0.9,
+   "389133362174765"
+  ],
+  [
+   "LIZARD 1 KEY",
+   "pheromone cologne for men",
+   "PHRASE",
+   0.95,
+   1.47,
+   2.28,
+   1.23,
+   "481078955215548"
+  ],
+  [
+   "SOUL 7-25 love bella",
+   "la vie est belle",
+   "PHRASE",
+   0.7,
+   1.52,
+   2.54,
+   0.7,
+   "415969150158057"
+  ],
+  [
+   "SOUL 7-25 love bella",
+   "la+vie+est",
+   "BROAD",
+   0.88,
+   1.56,
+   2.6,
+   0.88,
+   "537339592356986"
+  ],
+  [
+   "SOUL 7-25 love bella",
+   "vie+est+belle",
+   "BROAD",
+   0.9,
+   1.55,
+   2.59,
+   0.9,
+   "405219856177542"
+  ],
+  [
+   "SOUL 7-25 love bella",
+   "acqua di gioia",
+   "PHRASE",
+   0.32,
+   0.58,
+   0.96,
+   0.32,
+   "388619266556042"
+  ],
+  [
+   "SOUL PHR 7-27 lightn blue",
+   "dolce gabbana light blue",
+   "EXACT",
+   0.78,
+   1.02,
+   1.7,
+   0.78,
+   "545898011765486"
+  ],
+  [
+   "SOUL PHR 7-27 lightn blue",
+   "dulce and gabbana light blue",
+   "EXACT",
+   0.52,
+   0.54,
+   0.9,
+   0.52,
+   "511993104196576"
+  ],
+  [
+   "SOUL PHR 7-27 lightn blue",
+   "d&g light blue for women",
+   "EXACT",
+   0.35,
+   0.77,
+   1.27,
+   0.35,
+   "292450515688348"
+  ],
+  [
+   "SOUL PHR 7-25 Way",
+   "my+way",
+   "BROAD",
+   0.75,
+   0.84,
+   1.4,
+   0.75,
+   "470094113037097"
+  ],
+  [
+   "SOUL PHR 7-25 Way",
+   "armani+my+way",
+   "BROAD",
+   0.75,
+   0.84,
+   1.4,
+   0.75,
+   "394019384571462"
+  ],
+  [
+   "SOUL PHR 7-25 Way",
+   "my+way+armani",
+   "BROAD",
+   0.75,
+   0.84,
+   1.4,
+   0.75,
+   "505183120987058"
+  ],
+  [
+   "SOUL PHR 7-25 Way",
+   "my+way+perfume",
+   "BROAD",
+   0.7,
+   0.83,
+   1.39,
+   0.7,
+   "290163578271681"
+  ],
+  [
+   "SOUL PHR 7-25 B540",
+   "barakat rouge 540",
+   "PHRASE",
+   0.48,
+   0.78,
+   1.3,
+   0.48,
+   "520707294747551"
+  ],
+  [
+   "SOUL PHR 7-25 B540",
+   "bacarrát rouge 540",
+   "PHRASE",
+   0.6,
+   0.65,
+   1.08,
+   0.6,
+   "530098865245292"
+  ],
+  [
+   "lizard ex 2",
+   "men's pheromone cologne",
+   "EXACT",
+   1.0,
+   1.57,
+   2.66,
+   1.0,
+   "556223114530921"
+  ],
+  [
+   "lizard ex 2",
+   "pheromone perfume for men",
+   "EXACT",
+   1.0,
+   1.15,
+   1.91,
+   1.0,
+   "482777209995191"
+  ],
+  [
+   "lizard ex 2",
+   "best pheromone cologne for men",
+   "EXACT",
+   0.81,
+   1.43,
+   1.91,
+   0.81,
+   "544597149654260"
+  ],
+  [
+   "lizard ex 2",
+   "pheromone perfume for man",
+   "EXACT",
+   1.0,
+   1.15,
+   1.91,
+   1.0,
+   "302474130969081"
+  ],
+  [
+   "lizard ex 2",
+   "pheromone for men",
+   "EXACT",
+   0.65,
+   0.71,
+   1.2,
+   0.65,
+   "553422541202315"
+  ],
+  [
+   "lizard ex 2",
+   "top pheromone cologne for men",
+   "EXACT",
+   0.82,
+   1.23,
+   2.05,
+   0.82,
+   "401825273239510"
+  ],
+  [
+   "lizard ex 2",
+   "pheromone spray for men to attract women",
+   "EXACT",
+   0.72,
+   0.84,
+   1.4,
+   0.72,
+   "534842991563553"
+  ],
+  [
+   "lizard ex 2",
+   "mens pheromone cologne",
+   "EXACT",
+   1.0,
+   1.62,
+   2.7,
+   1.0,
+   "373195354115753"
+  ],
+  [
+   "lizard ex 2",
+   "best pheromone cologne for men to attract woman",
+   "EXACT",
+   0.77,
+   0.81,
+   1.17,
+   0.77,
+   "311037627807809"
+  ],
+  [
+   "lizard ex 2",
+   "men pheromone cologne",
+   "EXACT",
+   1.0,
+   1.57,
+   2.66,
+   1.0,
+   "434309134611398"
+  ],
+  [
+   "lizard ex 2",
+   "men's cologne pheromone",
+   "EXACT",
+   1.0,
+   1.53,
+   2.27,
+   1.0,
+   "317926037764415"
+  ],
+  [
+   "men oil",
+   "pheromone cologne for men",
+   "PHRASE",
+   0.57,
+   1.41,
+   2.19,
+   0.57,
+   "499788665835515"
+  ],
+  [
+   "men oil",
+   "men's pheromone cologne",
+   "PHRASE",
+   1.0,
+   1.46,
+   2.44,
+   1.0,
+   "468506816606034"
+  ],
+  [
+   "men oil",
+   "pheromone perfume for men",
+   "PHRASE",
+   1.0,
+   1.03,
+   1.71,
+   1.0,
+   "359909783933042"
+  ],
+  [
+   "men oil",
+   "best pheromone cologne for men",
+   "PHRASE",
+   0.85,
+   0.89,
+   1.48,
+   0.85,
+   "520940117768830"
+  ],
+  [
+   "men oil",
+   "pheromone perfume for man",
+   "PHRASE",
+   1.0,
+   1.03,
+   1.71,
+   1.0,
+   "313036861579342"
+  ],
+  [
+   "men oil",
+   "mens pheromone cologne",
+   "PHRASE",
+   1.0,
+   1.46,
+   2.44,
+   1.0,
+   "499382567006857"
+  ],
+  [
+   "men oil",
+   "pheromone cologne for man",
+   "PHRASE",
+   1.0,
+   1.41,
+   2.19,
+   1.0,
+   "348373448479944"
+  ],
+  [
+   "men oil",
+   "pheromone perfume for him",
+   "PHRASE",
+   0.61,
+   0.83,
+   1.41,
+   0.61,
+   "423433152034379"
+  ],
+  [
+   "men oil",
+   "male pheromone",
+   "PHRASE",
+   0.54,
+   0.73,
+   1.3,
+   0.54,
+   "304344026208342"
+  ],
+  [
+   "men oil",
+   "male pheromone cologne",
+   "PHRASE",
+   0.54,
+   0.89,
+   1.48,
+   0.54,
+   "334228848150534"
+  ],
+  [
+   "men oil",
+   "men pheromone cologne",
+   "PHRASE",
+   1.0,
+   1.49,
+   2.84,
+   1.0,
+   "439449776855130"
+  ],
+  [
+   "Intens broad",
+   "feromonas+hombre",
+   "BROAD",
+   0.7,
+   1.27,
+   2.13,
+   0.7,
+   "475153926151256"
+  ],
+  [
+   "butterfly phrase",
+   "perfume with pheromones",
+   "PHRASE",
+   0.48,
+   0.55,
+   0.95,
+   0.48,
+   "399970354697794"
+  ],
+  [
+   "goda12-25",
+   "goda perfume",
+   "PHRASE",
+   0.49,
+   0.5,
+   0.93,
+   0.49,
+   "337752740131204"
+  ],
+  [
+   "goda12-25",
+   "goda for her",
+   "PHRASE",
+   0.58,
+   0.61,
+   1.01,
+   0.58,
+   "354935514167147"
+  ],
+  [
+   "goda12-25",
+   "goda perfume for her",
+   "PHRASE",
+   0.48,
+   0.55,
+   0.77,
+   0.48,
+   "434818598494729"
+  ],
+  [
+   "goda12-25",
+   "for her by goda perfume",
+   "PHRASE",
+   0.53,
+   1.05,
+   1.62,
+   0.53,
+   "300466444881146"
+  ],
+  [
+   "goda12-25",
+   "goda for her body oil",
+   "PHRASE",
+   0.3,
+   0.93,
+   1.55,
+   0.3,
+   "470846543653515"
+  ],
+  [
+   "goda12-25",
+   "goda perfume for women for her",
+   "PHRASE",
+   0.41,
+   0.55,
+   0.91,
+   0.41,
+   "540559855478216"
+  ],
+  [
+   "goda12-25",
+   "goda perfume oil",
+   "PHRASE",
+   0.41,
+   0.55,
+   0.93,
+   0.41,
+   "404662125979217"
+  ],
+  [
+   "goda12-25",
+   "goda for her perfume for women oil",
+   "PHRASE",
+   0.48,
+   0.63,
+   1.05,
+   0.48,
+   "551829312612367"
+  ],
+  [
+   "goda12-25",
+   "goda perfume for women",
+   "PHRASE",
+   0.48,
+   0.58,
+   1.22,
+   0.48,
+   "360350663982326"
+  ],
+  [
+   "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+   "feromonas para hombre enamorar",
+   "BROAD",
+   0.56,
+   0.94,
+   1.56,
+   0.56,
+   "481175234484076"
+  ],
+  [
+   "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+   "perfume men",
+   "BROAD",
+   0.54,
+   0.65,
+   0.99,
+   0.54,
+   "356244052322981"
+  ],
+  [
+   "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+   "feromonas perfume men",
+   "BROAD",
+   0.63,
+   1.03,
+   1.73,
+   0.63,
+   "547299880531094"
+  ],
+  [
+   "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+   "pheromone perfume man",
+   "BROAD",
+   0.65,
+   1.07,
+   1.78,
+   0.65,
+   "536664405322564"
+  ],
+  [
+   "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+   "mens cologne sampler sets",
+   "BROAD",
+   0.28,
+   0.35,
+   0.59,
+   0.28,
+   "332978620243389"
+  ],
+  [
+   "New Product - B0GCBCW8RK - 2/10/2026 18:43:53.615",
+   "pheromone cologne",
+   "BROAD",
+   1.2,
+   1.47,
+   2.31,
+   1.2,
+   "449640636660251"
+  ],
+  [
+   "Wings exact rest",
+   "pheromones perfumes for women",
+   "EXACT",
+   0.25,
+   0.32,
+   0.49,
+   0.25,
+   "475683811291296"
+  ],
+  [
+   "SOUL Men phrase PH cologne",
+   "pheromone cologne for man",
+   "PHRASE",
+   0.5,
+   2.07,
+   3.23,
+   1.02,
+   "343643612165082"
+  ],
+  [
+   "SOUL Men phrase PH cologne",
+   "pheromone cologne",
+   "PHRASE",
+   0.5,
+   0.61,
+   0.95,
+   1.02,
+   "503279290867298"
+  ],
+  [
+   "SOUL Men phrase PH cologne",
+   "pheromones cologne for men",
+   "PHRASE",
+   0.5,
+   2.07,
+   3.23,
+   1.02,
+   "345574580840145"
+  ],
+  [
+   "SOUL Men phrase PH cologne",
+   "mens pheromone cologne",
+   "PHRASE",
+   0.5,
+   2.16,
+   3.6,
+   1.02,
+   "313466201683754"
+  ],
+  [
+   "SOUL Men phrase PH cologne",
+   "men pheromone cologne",
+   "PHRASE",
+   0.5,
+   2.19,
+   4.18,
+   1.02,
+   "471960216142217"
+  ],
+  [
+   "SOUL Men phrase PH perfume",
+   "men pheromone perfume",
+   "PHRASE",
+   0.4,
+   1.01,
+   1.54,
+   0.88,
+   "516153941287088"
+  ],
+  [
+   "SOUL Men phrase PH perfume",
+   "pheromone perfume for men",
+   "PHRASE",
+   0.4,
+   1.51,
+   2.51,
+   0.88,
+   "511431732425726"
+  ],
+  [
+   "SOUL Men phrase PH perfume",
+   "pheromones perfumes for men",
+   "PHRASE",
+   0.4,
+   1.51,
+   2.51,
+   0.88,
+   "347773564743653"
+  ],
+  [
+   "SOUL Men phrase PH perfume feromonas",
+   "feromonas para hombres",
+   "PHRASE",
+   0.45,
+   1.79,
+   2.99,
+   0.99,
+   "525505360852591"
+  ],
+  [
+   "Flame new phrase",
+   "phermone perfume",
+   "PHRASE",
+   0.33,
+   0.53,
+   0.89,
+   1.11,
+   "305646502891395"
+  ]
+ ],
+ "corridor_jump": [
+  [
+   "Instinct thin",
+   "pheromone perfume for women",
+   "EXACT",
+   "max",
+   0.7,
+   1.15,
+   64,
+   "169810017495242"
+  ],
+  [
+   "Instinct thin",
+   "pheromones for women",
+   "EXACT",
+   "min",
+   3.35,
+   1.02,
+   -70,
+   "31133400208348"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromones perfume",
+   "PHRASE",
+   "min",
+   2.07,
+   0.58,
+   -72,
+   "232994203884948"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromones for women",
+   "EXACT",
+   "min",
+   3.35,
+   1.02,
+   -70,
+   "168334830430434"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromones to attract men",
+   "PHRASE",
+   "min",
+   0.62,
+   1.0,
+   61,
+   "239447522508711"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromone perfume for women",
+   "PHRASE",
+   "min",
+   2.08,
+   0.58,
+   -72,
+   "8911120052524"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromone perfume for women",
+   "EXACT",
+   "max",
+   0.7,
+   1.15,
+   64,
+   "108553638240088"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   1.79,
+   0.5,
+   -72,
+   "250411627455816"
+  ],
+  [
+   "INSTINCT broad-pr-exact",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   1.15,
+   0.7,
+   -39,
+   "192410226048927"
+  ],
+  [
+   "men oil exact",
+   "best pheromones for men",
+   "EXACT",
+   "min",
+   0.38,
+   0.76,
+   100,
+   "115328581985917"
+  ],
+  [
+   "20 ml women exact",
+   "pheromone perfume for women",
+   "EXACT",
+   "max",
+   0.7,
+   1.15,
+   64,
+   "278958192243932"
+  ],
+  [
+   "Inside phrase",
+   "pheromone perfume for women",
+   "PHRASE",
+   "min",
+   2.08,
+   0.58,
+   -72,
+   "225913468475904"
+  ],
+  [
+   "Inside phrase",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   1.15,
+   0.7,
+   -39,
+   "171804920739705"
+  ],
+  [
+   "Effect",
+   "womens tights",
+   "EXACT",
+   "min",
+   1.19,
+   0.74,
+   -38,
+   "128963040781836"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromones",
+   "PHRASE",
+   "min",
+   1.39,
+   2.07,
+   49,
+   "257563067595589"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromone",
+   "PHRASE",
+   "min",
+   2.2,
+   0.71,
+   -68,
+   "71333439525694"
+  ],
+  [
+   "Men Set 5 keys",
+   "feromonas",
+   "PHRASE",
+   "max",
+   2.13,
+   2.99,
+   40,
+   "120463867566374"
+  ],
+  [
+   "Men Set 5 keys",
+   "feromonas para atraer hombres",
+   "PHRASE",
+   "min",
+   0.56,
+   1.43,
+   155,
+   "155739159520894"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheremones",
+   "PHRASE",
+   "min",
+   0.72,
+   1.08,
+   50,
+   "106760787987968"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.73,
+   0.61,
+   -65,
+   "107862458287240"
+  ],
+  [
+   "Men Set 5 keys",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   2.28,
+   0.62,
+   -73,
+   "43096300264313"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.67,
+   0.61,
+   -63,
+   "185271647843021"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone women",
+   "EXACT",
+   "max",
+   0.55,
+   0.38,
+   -31,
+   "212584620136452"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   0.32,
+   0.45,
+   41,
+   "30403637191586"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone perfume",
+   "EXACT",
+   "max",
+   0.58,
+   0.38,
+   -34,
+   "141630641877113"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromones perfumes for women",
+   "EXACT",
+   "min",
+   0.32,
+   0.45,
+   41,
+   "117671373775539"
+  ],
+  [
+   "Inside exact",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   1.15,
+   0.7,
+   -39,
+   "152875850306259"
+  ],
+  [
+   "cover women broad",
+   "pheromone",
+   "BROAD",
+   "min",
+   0.45,
+   0.17,
+   -62,
+   "27415845082546"
+  ],
+  [
+   "cover women broad",
+   "pheromone perfume",
+   "BROAD",
+   "min",
+   0.46,
+   1.24,
+   170,
+   "26130752384282"
+  ],
+  [
+   "cover women broad",
+   "pheromones perfumes for women",
+   "EXACT",
+   "min",
+   0.32,
+   0.45,
+   41,
+   "13474361371796"
+  ],
+  [
+   "cover women exact",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   0.32,
+   0.45,
+   41,
+   "261368101015227"
+  ],
+  [
+   "cover women exact",
+   "pheromone perfume",
+   "EXACT",
+   "max",
+   0.58,
+   0.38,
+   -34,
+   "230937274080841"
+  ],
+  [
+   "cover women exact",
+   "pheromones perfumes for women",
+   "EXACT",
+   "min",
+   0.32,
+   0.45,
+   41,
+   "249930149907750"
+  ],
+  [
+   "oil man exact",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   2.28,
+   0.61,
+   -73,
+   "280325416534172"
+  ],
+  [
+   "oil man exact",
+   "pheromone perfume",
+   "EXACT",
+   "min",
+   1.34,
+   0.55,
+   -59,
+   "424659392801363"
+  ],
+  [
+   "oil man exact",
+   "pheromone",
+   "PHRASE",
+   "min",
+   2.2,
+   0.74,
+   -66,
+   "367821081923605"
+  ],
+  [
+   "oil man broad",
+   "pheromone",
+   "BROAD",
+   "min",
+   1.46,
+   0.79,
+   -46,
+   "213443609213579"
+  ],
+  [
+   "oil man broad",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.47,
+   0.59,
+   -60,
+   "479390680248288"
+  ],
+  [
+   "Inside - exact",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   1.79,
+   0.5,
+   -72,
+   "59233253887040"
+  ],
+  [
+   "Inside - exact",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   1.15,
+   0.7,
+   -39,
+   "114729915662376"
+  ],
+  [
+   "2026 - Intense broad",
+   "men pheromone",
+   "BROAD",
+   "min",
+   0.69,
+   2.45,
+   255,
+   "55560779753144"
+  ],
+  [
+   "gift instinct 2021",
+   "gifts for women",
+   "BROAD",
+   "min",
+   2.5,
+   0.83,
+   -67,
+   "201211169434130"
+  ],
+  [
+   "gift instinct 2021",
+   "gifts for women",
+   "EXACT",
+   "min",
+   3.48,
+   0.75,
+   -78,
+   "83518146582307"
+  ],
+  [
+   "gift instinct 2021",
+   "christmas gifts for women",
+   "PHRASE",
+   "min",
+   1.58,
+   0.3,
+   -81,
+   "124988933261636"
+  ],
+  [
+   "gift instinct 2021",
+   "gift for her",
+   "BROAD",
+   "min",
+   3.0,
+   0.51,
+   -83,
+   "159346303216965"
+  ],
+  [
+   "gift inside 2021",
+   "gifts for women",
+   "BROAD",
+   "min",
+   2.5,
+   0.83,
+   -67,
+   "141807695202948"
+  ],
+  [
+   "gift inside 2021",
+   "gifts for women",
+   "EXACT",
+   "min",
+   3.48,
+   0.75,
+   -78,
+   "24505757098837"
+  ],
+  [
+   "gift inside 2021",
+   "christmas gifts for women",
+   "PHRASE",
+   "min",
+   1.58,
+   0.3,
+   -81,
+   "109959388126901"
+  ],
+  [
+   "gift inside 2021",
+   "gift for her",
+   "BROAD",
+   "min",
+   3.0,
+   0.51,
+   -83,
+   "116008374940083"
+  ],
+  [
+   "Gift Cover women",
+   "christmas gifts",
+   "BROAD",
+   "min",
+   0.31,
+   0.81,
+   161,
+   "106594599722547"
+  ],
+  [
+   "Gift Cover women",
+   "gift ideas",
+   "BROAD",
+   "min",
+   1.07,
+   0.25,
+   -77,
+   "208740835360745"
+  ],
+  [
+   "Gift Cover women",
+   "gift set for women",
+   "PHRASE",
+   "min",
+   0.49,
+   0.33,
+   -33,
+   "218081894627302"
+  ],
+  [
+   "Gift Cover women",
+   "gift set for women",
+   "EXACT",
+   "min",
+   0.6,
+   0.86,
+   43,
+   "14646706165416"
+  ],
+  [
+   "Gift Cover women",
+   "mini perfumes for women gift sets",
+   "EXACT",
+   "min",
+   0.51,
+   0.32,
+   -37,
+   "215855395507067"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   0.75,
+   1.41,
+   88,
+   "2973057951012"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromone",
+   "BROAD",
+   "min",
+   1.46,
+   0.79,
+   -46,
+   "229900974137529"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.47,
+   0.59,
+   -60,
+   "228251535824514"
+  ],
+  [
+   "MEN OIL SET-1+1",
+   "pheromone cologne for men",
+   "BROAD",
+   "min",
+   0.68,
+   2.32,
+   241,
+   "261921042292203"
+  ],
+  [
+   "Men phrase",
+   "pheromone oil for men",
+   "PHRASE",
+   "min",
+   1.14,
+   0.71,
+   -38,
+   "40588009786568"
+  ],
+  [
+   "Men phrase",
+   "men pheromone",
+   "PHRASE",
+   "min",
+   0.72,
+   2.24,
+   211,
+   "220877073581676"
+  ],
+  [
+   "Men phrase",
+   "mens pheromone",
+   "PHRASE",
+   "min",
+   1.42,
+   2.24,
+   58,
+   "143736514943833"
+  ],
+  [
+   "Men phrase",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.73,
+   0.63,
+   -64,
+   "259445143905443"
+  ],
+  [
+   "1+1 men 1 key exact",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   2.29,
+   0.62,
+   -73,
+   "27288609014381"
+  ],
+  [
+   "Flame new phrase 2",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   2.06,
+   1.04,
+   -50,
+   "150156963005334"
+  ],
+  [
+   "INSIDE BROAD",
+   "pheromones perfume",
+   "BROAD",
+   "min",
+   2.11,
+   0.59,
+   -72,
+   "168629876195726"
+  ],
+  [
+   "flame new spanish exact",
+   "feromonas para mujer para enamorar",
+   "EXACT",
+   "min",
+   0.96,
+   0.66,
+   -31,
+   "202607160657311"
+  ],
+  [
+   "Wings exact pher oil",
+   "pheromone oil",
+   "EXACT",
+   "min",
+   0.89,
+   0.55,
+   -38,
+   "216600299759510"
+  ],
+  [
+   "Wings exact pher oil",
+   "pheromone oil for women to attract men",
+   "EXACT",
+   "min",
+   0.49,
+   0.82,
+   67,
+   "228323560699138"
+  ],
+  [
+   "Wings phrase",
+   "pheromone perfume oil",
+   "BROAD",
+   "max",
+   1.88,
+   1.24,
+   -34,
+   "112905595292560"
+  ],
+  [
+   "Flame-Inside Top of  search",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   0.79,
+   0.49,
+   -38,
+   "192861355961906"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "BROAD",
+   "min",
+   1.52,
+   1.02,
+   -33,
+   "186293395383766"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone cologne",
+   "PHRASE",
+   "min",
+   0.46,
+   0.72,
+   57,
+   "240744600576448"
+  ],
+  [
+   "UNLIMIT WOMEN EXACT",
+   "pheromone women",
+   "PHRASE",
+   "min",
+   0.44,
+   0.18,
+   -59,
+   "175968453213332"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.49,
+   0.6,
+   -60,
+   "74185934515791"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   "min",
+   1.34,
+   1.79,
+   34,
+   "281452288581683"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremones",
+   "PHRASE",
+   "min",
+   0.7,
+   1.08,
+   54,
+   "68921082102300"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.67,
+   0.61,
+   -63,
+   "29009975817834"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.49,
+   0.6,
+   -60,
+   "82618012684652"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   "min",
+   1.34,
+   1.79,
+   34,
+   "157658344711004"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremones",
+   "PHRASE",
+   "min",
+   0.7,
+   1.08,
+   54,
+   "87202723781895"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.67,
+   0.61,
+   -63,
+   "34022303956461"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.46,
+   0.59,
+   -60,
+   "128090266951050"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   "min",
+   1.49,
+   2.03,
+   36,
+   "17470133716408"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremones",
+   "PHRASE",
+   "min",
+   0.77,
+   1.22,
+   58,
+   "239316029448865"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.85,
+   0.69,
+   -63,
+   "177178884997852"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne for men to attract woman",
+   "PHRASE",
+   "min",
+   1.12,
+   1.46,
+   30,
+   "279530155358580"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.49,
+   0.6,
+   -60,
+   "144961153216389"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "feromonas",
+   "PHRASE",
+   "min",
+   1.34,
+   1.79,
+   34,
+   "81888992475238"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheremones",
+   "PHRASE",
+   "min",
+   0.7,
+   1.08,
+   54,
+   "152237532732247"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.67,
+   0.61,
+   -63,
+   "3248854454925"
+  ],
+  [
+   "BUTTERFLY Generic Exact.",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   1.15,
+   0.7,
+   -39,
+   "475827994451738"
+  ],
+  [
+   "flame velvet exact",
+   "pheromone oil perfume women",
+   "EXACT",
+   "min",
+   1.63,
+   0.62,
+   -62,
+   "30083239977648"
+  ],
+  [
+   "INTENSE PHEROMONE PHRASE",
+   "pheromone perfume for men",
+   "PHRASE",
+   "min",
+   2.29,
+   1.51,
+   -34,
+   "16209894537391"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone perfume",
+   "EXACT",
+   "min",
+   0.9,
+   0.58,
+   -36,
+   "199387042274401"
+  ],
+  [
+   "Old Flame X2 experiment Exact",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   1.93,
+   0.55,
+   -72,
+   "24409037858884"
+  ],
+  [
+   "Inside X2 Exact diagnostic",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   1.79,
+   0.73,
+   -59,
+   "38296385703324"
+  ],
+  [
+   "Inside X2 Exact diagnostic",
+   "pheromone perfume",
+   "EXACT",
+   "min",
+   0.9,
+   0.53,
+   -41,
+   "20289989787181"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "pheromone oil",
+   "EXACT",
+   "min",
+   1.01,
+   0.61,
+   -40,
+   "239826515803572"
+  ],
+  [
+   "Flame NEW X2 Exact test",
+   "pheromone perfume oil",
+   "EXACT",
+   "min",
+   0.85,
+   0.46,
+   -46,
+   "267664428712742"
+  ],
+  [
+   "new men oil",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   2.27,
+   0.61,
+   -73,
+   "77202513157172"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   0.8,
+   1.35,
+   69,
+   "494546161748636"
+  ],
+  [
+   "men rollon phrase",
+   "feromonas",
+   "PHRASE",
+   "max",
+   2.28,
+   2.99,
+   31,
+   "390541764979479"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone",
+   "PHRASE",
+   "min",
+   2.35,
+   0.71,
+   -70,
+   "290241825964352"
+  ],
+  [
+   "men rollon phrase",
+   "pheromones",
+   "PHRASE",
+   "min",
+   1.48,
+   2.07,
+   40,
+   "338919079544752"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone cologne for men lure her",
+   "PHRASE",
+   "min",
+   0.41,
+   1.06,
+   159,
+   "470945907746397"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.85,
+   0.61,
+   -67,
+   "479324305391312"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone perfume spray",
+   "PHRASE",
+   "min",
+   0.6,
+   1.18,
+   97,
+   "300195360582688"
+  ],
+  [
+   "men rollon phrase",
+   "pheromone cologne for man",
+   "PHRASE",
+   "min",
+   0.69,
+   2.07,
+   200,
+   "310250976390497"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone",
+   "BROAD",
+   "min",
+   1.49,
+   0.81,
+   -46,
+   "386350474739776"
+  ],
+  [
+   "unlimit men exact",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.49,
+   0.6,
+   -60,
+   "380866457473225"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone cologne for men lure her",
+   "PHRASE",
+   "min",
+   0.37,
+   1.06,
+   186,
+   "462932417483259"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.67,
+   0.61,
+   -63,
+   "469142715983289"
+  ],
+  [
+   "unlimit men exact",
+   "pheromones",
+   "PHRASE",
+   "min",
+   1.34,
+   2.07,
+   54,
+   "382129403333079"
+  ],
+  [
+   "unlimit men exact",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   0.72,
+   1.35,
+   88,
+   "505458581685977"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   0.72,
+   1.35,
+   88,
+   "527604419682910"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "pheromone perfume spray",
+   "PHRASE",
+   "min",
+   0.54,
+   1.18,
+   119,
+   "381537139016972"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "mens pheromone",
+   "PHRASE",
+   "min",
+   1.37,
+   2.15,
+   57,
+   "560633846052534"
+  ],
+  [
+   "Men Pheromone CROOKE",
+   "men pheromone",
+   "PHRASE",
+   "min",
+   0.69,
+   2.15,
+   212,
+   "479039313813400"
+  ],
+  [
+   "inside mixed keys",
+   "pheromone oil perfume women",
+   "EXACT",
+   "min",
+   1.04,
+   0.39,
+   -62,
+   "443568829891898"
+  ],
+  [
+   "inside mixed keys",
+   "pheromone spray",
+   "BROAD",
+   "max",
+   0.7,
+   1.19,
+   70,
+   "474428124551066"
+  ],
+  [
+   "inside mixed keys",
+   "pheromone perfume oil",
+   "PHRASE",
+   "min",
+   0.34,
+   0.47,
+   38,
+   "282479870874570"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromones",
+   "PHRASE",
+   "min",
+   1.34,
+   2.07,
+   54,
+   "523442883707870"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromone men",
+   "PHRASE",
+   "min",
+   2.8,
+   0.57,
+   -80,
+   "325454350585584"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.67,
+   0.61,
+   -63,
+   "519919436841874"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "feromonas",
+   "PHRASE",
+   "min",
+   1.34,
+   1.79,
+   34,
+   "426218147082851"
+  ],
+  [
+   "water men 2023 mixed keys",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.49,
+   0.6,
+   -60,
+   "393375446114760"
+  ],
+  [
+   "water women product",
+   "pheromones perfumes for women",
+   "BROAD",
+   "max",
+   1.42,
+   0.98,
+   -31,
+   "522630725338319"
+  ],
+  [
+   "water women product",
+   "pheromone perfume oil",
+   "PHRASE",
+   "min",
+   0.53,
+   0.74,
+   40,
+   "440725730856341"
+  ],
+  [
+   "rol men broad",
+   "pheromone",
+   "BROAD",
+   "min",
+   1.45,
+   0.81,
+   -44,
+   "477841363896856"
+  ],
+  [
+   "rol men broad",
+   "feromonas",
+   "BROAD",
+   "min",
+   1.46,
+   0.6,
+   -59,
+   "285261266544571"
+  ],
+  [
+   "rolon exact",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   "min",
+   0.67,
+   0.92,
+   37,
+   "291147665185721"
+  ],
+  [
+   "rolon exact",
+   "pheromone perfume",
+   "EXACT",
+   "min",
+   0.82,
+   0.36,
+   -56,
+   "315184135177972"
+  ],
+  [
+   "rolon exact",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   1.39,
+   0.4,
+   -71,
+   "491498855159942"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "mens pheromone perfume",
+   "EXACT",
+   "min",
+   0.4,
+   0.65,
+   62,
+   "351520610223589"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   1.39,
+   0.4,
+   -71,
+   "399032434972315"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "men pheromone perfume",
+   "EXACT",
+   "min",
+   0.4,
+   0.65,
+   62,
+   "562733476119348"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "male pheromones to attract females",
+   "EXACT",
+   "min",
+   0.47,
+   0.78,
+   66,
+   "541745572094915"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne for man",
+   "EXACT",
+   "min",
+   0.38,
+   1.49,
+   292,
+   "419418576730298"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone perfume for man",
+   "EXACT",
+   "min",
+   0.42,
+   1.15,
+   174,
+   "403192058173224"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "male pheromone perfume",
+   "EXACT",
+   "max",
+   0.6,
+   0.38,
+   -37,
+   "289944782368868"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "men pheromone cologne to attract women",
+   "EXACT",
+   "min",
+   0.45,
+   0.99,
+   120,
+   "440188546557862"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pure instinct pheromone cologne for men",
+   "EXACT",
+   "min",
+   0.38,
+   0.78,
+   105,
+   "327312401184341"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "men's pheromone perfume",
+   "EXACT",
+   "min",
+   0.4,
+   0.65,
+   62,
+   "507105056241174"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromone cologne for men to attract woman",
+   "EXACT",
+   "min",
+   0.67,
+   0.92,
+   37,
+   "477393887843510"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones cologne",
+   "EXACT",
+   "min",
+   0.34,
+   1.02,
+   200,
+   "396622931350168"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "raw pheromone",
+   "EXACT",
+   "min",
+   0.44,
+   1.88,
+   327,
+   "487477273189825"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "best pheromones",
+   "EXACT",
+   "min",
+   0.32,
+   0.63,
+   97,
+   "392039287386152"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "xist pheromones",
+   "EXACT",
+   "min",
+   0.32,
+   0.49,
+   53,
+   "466355743988071"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones for women attract men",
+   "EXACT",
+   "min",
+   0.32,
+   0.97,
+   203,
+   "526987535625096"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "chikara pheromone cologne for men",
+   "EXACT",
+   "min",
+   0.35,
+   1.05,
+   200,
+   "503652839358510"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "pheromones perfume for men",
+   "EXACT",
+   "min",
+   0.42,
+   1.15,
+   174,
+   "466275746517350"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "men's pheromone cologne spray",
+   "EXACT",
+   "min",
+   0.54,
+   0.74,
+   37,
+   "336648513512851"
+  ],
+  [
+   "TEST ROLON MEN EXACT",
+   "mens pheromone cologne to attract women",
+   "EXACT",
+   "min",
+   0.45,
+   0.99,
+   120,
+   "513225323719434"
+  ],
+  [
+   "VIOLET 1",
+   "attraction perfume women",
+   "PHRASE",
+   "max",
+   0.74,
+   1.0,
+   35,
+   "550582034678797"
+  ],
+  [
+   "VIOLET 1",
+   "arabian perfume oil",
+   "PHRASE",
+   "max",
+   0.44,
+   0.61,
+   39,
+   "387527275205382"
+  ],
+  [
+   "VIOLET 1",
+   "pheromone perfume for woman",
+   "PHRASE",
+   "min",
+   1.32,
+   0.34,
+   -74,
+   "416963471245288"
+  ],
+  [
+   "VIOLET 1",
+   "attraction perfume women",
+   "PHRASE",
+   "max",
+   0.74,
+   1.0,
+   35,
+   "484184560858421"
+  ],
+  [
+   "VIOLET 1",
+   "allure pheromone perfume",
+   "PHRASE",
+   "max",
+   0.76,
+   0.99,
+   30,
+   "369809319972741"
+  ],
+  [
+   "VIOLET 1",
+   "enhanced scents original",
+   "PHRASE",
+   "min",
+   0.21,
+   0.35,
+   67,
+   "549872333033394"
+  ],
+  [
+   "VIOLET 1",
+   "venom scents pheromones women",
+   "PHRASE",
+   "max",
+   0.68,
+   0.4,
+   -41,
+   "404620215703596"
+  ],
+  [
+   "VIOLET 1",
+   "venom pheromone perfume",
+   "PHRASE",
+   "min",
+   0.41,
+   0.25,
+   -39,
+   "562220840148696"
+  ],
+  [
+   "VIOLET 1",
+   "pheromone perfume for women",
+   "PHRASE",
+   "min",
+   1.32,
+   0.36,
+   -73,
+   "524046973035535"
+  ],
+  [
+   "VIOLET 1",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   1.29,
+   0.38,
+   -71,
+   "536215944897014"
+  ],
+  [
+   "VIOLET 1",
+   "pheromone oil perfume for women",
+   "PHRASE",
+   "min",
+   1.07,
+   0.4,
+   -63,
+   "557458826308726"
+  ],
+  [
+   "VIOLET 1",
+   "feromonas para mujer para enamorar",
+   "PHRASE",
+   "min",
+   0.62,
+   0.43,
+   -31,
+   "451567303097694"
+  ],
+  [
+   "VIOLET 1",
+   "pure instinct",
+   "PHRASE",
+   "min",
+   1.11,
+   0.47,
+   -58,
+   "363030364346025"
+  ],
+  [
+   "VIOLET 1",
+   "pure romance",
+   "PHRASE",
+   "min",
+   2.39,
+   0.53,
+   -78,
+   "387483806597793"
+  ],
+  [
+   "VIOLET 1",
+   "venom perfume",
+   "PHRASE",
+   "min",
+   0.53,
+   0.28,
+   -47,
+   "386884107237440"
+  ],
+  [
+   "VIOLET 1",
+   "venom scents",
+   "PHRASE",
+   "max",
+   0.68,
+   0.4,
+   -41,
+   "302646913225462"
+  ],
+  [
+   "new men keywords",
+   "cupid cologne for men",
+   "EXACT",
+   "min",
+   1.17,
+   0.52,
+   -56,
+   "338411598371431"
+  ],
+  [
+   "new men keywords",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   1.42,
+   0.38,
+   -73,
+   "426816922833014"
+  ],
+  [
+   "new men keywords",
+   "cupid",
+   "EXACT",
+   "min",
+   1.39,
+   0.39,
+   -72,
+   "374730324002756"
+  ],
+  [
+   "new men keywords",
+   "cupid cologne",
+   "EXACT",
+   "min",
+   1.14,
+   0.46,
+   -60,
+   "289617193798065"
+  ],
+  [
+   "new men keywords",
+   "cupid hypnosis",
+   "EXACT",
+   "min",
+   1.69,
+   0.36,
+   -79,
+   "370859934796936"
+  ],
+  [
+   "new men keywords",
+   "cupid fragrances for men",
+   "EXACT",
+   "min",
+   0.71,
+   0.48,
+   -32,
+   "306012037163581"
+  ],
+  [
+   "new men keywords",
+   "cupids",
+   "EXACT",
+   "max",
+   0.65,
+   0.42,
+   -35,
+   "317401406403156"
+  ],
+  [
+   "new men keywords",
+   "pheromone",
+   "EXACT",
+   "min",
+   0.86,
+   0.46,
+   -47,
+   "383822970290871"
+  ],
+  [
+   "new men keywords",
+   "lure her cologne for men",
+   "EXACT",
+   "min",
+   0.76,
+   0.32,
+   -58,
+   "343711599861068"
+  ],
+  [
+   "new men keywords",
+   "pheromones",
+   "EXACT",
+   "min",
+   0.61,
+   0.9,
+   48,
+   "373559858551876"
+  ],
+  [
+   "new men keywords",
+   "cupid hypnosis cologne",
+   "EXACT",
+   "min",
+   0.59,
+   0.38,
+   -36,
+   "403891651459962"
+  ],
+  [
+   "new men keywords",
+   "gravity cologne for men",
+   "EXACT",
+   "min",
+   0.37,
+   0.5,
+   35,
+   "405632525409549"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   2.29,
+   0.62,
+   -73,
+   "359479803665435"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromone",
+   "PHRASE",
+   "min",
+   2.12,
+   0.71,
+   -67,
+   "330216733450136"
+  ],
+  [
+   "lizard - intrnse",
+   "pheromones",
+   "PHRASE",
+   "min",
+   1.34,
+   2.07,
+   54,
+   "332196210319626"
+  ],
+  [
+   "violet 1 key",
+   "pheromones perfumes for women",
+   "EXACT",
+   "max",
+   1.24,
+   0.77,
+   -38,
+   "428266615318888"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge",
+   "PHRASE",
+   "min",
+   1.9,
+   0.82,
+   -57,
+   "483003991702244"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat perfume",
+   "PHRASE",
+   "min",
+   2.06,
+   0.58,
+   -72,
+   "335411399678247"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat cologne",
+   "PHRASE",
+   "min",
+   0.83,
+   3.02,
+   264,
+   "303531324194095"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge perfume",
+   "PHRASE",
+   "min",
+   1.76,
+   0.8,
+   -55,
+   "353875684280903"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge cologne",
+   "PHRASE",
+   "max",
+   1.55,
+   2.02,
+   30,
+   "376704789941794"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat dupe",
+   "PHRASE",
+   "min",
+   2.48,
+   1.04,
+   -58,
+   "345609387573476"
+  ],
+  [
+   "SOUL baccar key",
+   "perfume dupe",
+   "PHRASE",
+   "max",
+   2.3,
+   1.4,
+   -39,
+   "427485685049427"
+  ],
+  [
+   "SOUL baccar key",
+   "mfk baccarat rouge 540",
+   "PHRASE",
+   "min",
+   1.0,
+   1.97,
+   97,
+   "513117581596449"
+  ],
+  [
+   "SOUL baccar key",
+   "bacarrát rouge 540 perfume",
+   "PHRASE",
+   "min",
+   2.11,
+   1.03,
+   -51,
+   "317576737365111"
+  ],
+  [
+   "SOUL baccar key",
+   "baccarat rouge 540",
+   "PHRASE",
+   "min",
+   1.89,
+   0.81,
+   -57,
+   "346196494538099"
+  ],
+  [
+   "SOUL Chane Key",
+   "chance chanel",
+   "PHRASE",
+   "min",
+   1.09,
+   0.32,
+   -71,
+   "511528559079445"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance eau tendre",
+   "PHRASE",
+   "min",
+   1.51,
+   0.55,
+   -64,
+   "448886541966965"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance eau fraiche",
+   "PHRASE",
+   "min",
+   0.72,
+   1.02,
+   42,
+   "538846030257089"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel chance eau de parfum",
+   "PHRASE",
+   "min",
+   0.95,
+   0.45,
+   -53,
+   "316313256281727"
+  ],
+  [
+   "SOUL Chane Key",
+   "chance perfume women",
+   "PHRASE",
+   "min",
+   0.32,
+   0.51,
+   59,
+   "389776739359976"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel allure",
+   "PHRASE",
+   "min",
+   1.55,
+   0.48,
+   -69,
+   "366519982311892"
+  ],
+  [
+   "SOUL Chane Key",
+   "allure by chanel for women",
+   "PHRASE",
+   "min",
+   0.76,
+   0.51,
+   -33,
+   "535295271206370"
+  ],
+  [
+   "SOUL Chane Key",
+   "allure chanel for women",
+   "PHRASE",
+   "min",
+   0.76,
+   0.51,
+   -33,
+   "484872663421642"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel allure perfume",
+   "PHRASE",
+   "min",
+   0.62,
+   0.42,
+   -32,
+   "466225751140167"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfume coco chanel",
+   "PHRASE",
+   "min",
+   1.4,
+   0.38,
+   -73,
+   "456859749476752"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfumes for women coco chanel",
+   "PHRASE",
+   "min",
+   0.52,
+   0.76,
+   46,
+   "298587290997100"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle chanel",
+   "PHRASE",
+   "min",
+   2.29,
+   1.2,
+   -48,
+   "520371704388164"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle chanel perfume",
+   "PHRASE",
+   "min",
+   2.61,
+   0.68,
+   -74,
+   "417587650860573"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel coco mademoiselle",
+   "PHRASE",
+   "max",
+   1.37,
+   1.81,
+   32,
+   "413047432924998"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle perfume",
+   "PHRASE",
+   "max",
+   1.8,
+   1.1,
+   -39,
+   "408436514875163"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel perfume mademoiselle",
+   "PHRASE",
+   "min",
+   0.31,
+   0.73,
+   135,
+   "424384403259802"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel mademoiselle perfume",
+   "PHRASE",
+   "max",
+   2.51,
+   1.45,
+   -42,
+   "418388114551475"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel coco perfume",
+   "PHRASE",
+   "min",
+   0.68,
+   0.46,
+   -32,
+   "363910551065533"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel coco",
+   "PHRASE",
+   "max",
+   1.33,
+   1.8,
+   35,
+   "403409696480099"
+  ],
+  [
+   "SOUL Chane Key",
+   "mademoiselle",
+   "PHRASE",
+   "min",
+   0.61,
+   1.13,
+   85,
+   "309566142966917"
+  ],
+  [
+   "SOUL Chane Key",
+   "cocoa chanel",
+   "PHRASE",
+   "min",
+   1.37,
+   0.4,
+   -71,
+   "506954582713787"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfume coco chanel mademoiselle original",
+   "PHRASE",
+   "min",
+   0.85,
+   0.34,
+   -60,
+   "482119610439728"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel",
+   "PHRASE",
+   "min",
+   1.7,
+   0.43,
+   -75,
+   "459675225399855"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco chanel perfume for women",
+   "PHRASE",
+   "min",
+   1.03,
+   0.35,
+   -66,
+   "526197101289991"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfumes for women chanel",
+   "PHRASE",
+   "min",
+   0.89,
+   0.39,
+   -56,
+   "476651388649169"
+  ],
+  [
+   "SOUL Chane Key",
+   "perfume chanel para mujer",
+   "PHRASE",
+   "max",
+   0.74,
+   0.4,
+   -46,
+   "359302088178060"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume women",
+   "PHRASE",
+   "min",
+   0.66,
+   1.34,
+   103,
+   "540890977910016"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco by chanel",
+   "PHRASE",
+   "min",
+   0.97,
+   0.43,
+   -56,
+   "513171940929059"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco mademoiselle eau de parfum",
+   "PHRASE",
+   "min",
+   1.38,
+   0.6,
+   -57,
+   "528742154911568"
+  ],
+  [
+   "SOUL Chane Key",
+   "coco channel mademoiselle perfume",
+   "PHRASE",
+   "min",
+   1.87,
+   0.97,
+   -48,
+   "414160454221384"
+  ],
+  [
+   "SOUL Chane Key",
+   "chanel perfume",
+   "PHRASE",
+   "min",
+   1.61,
+   0.93,
+   -42,
+   "505605680896439"
+  ],
+  [
+   "SOUL Chane Key",
+   "channel perfume women",
+   "PHRASE",
+   "min",
+   1.79,
+   0.75,
+   -58,
+   "396595938382362"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera perfume for women",
+   "PHRASE",
+   "min",
+   0.7,
+   0.45,
+   -36,
+   "367029672911647"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera good girl",
+   "PHRASE",
+   "min",
+   0.57,
+   0.39,
+   -32,
+   "354739164327557"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera perfume",
+   "PHRASE",
+   "min",
+   1.25,
+   0.43,
+   -66,
+   "380597570149160"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina good girl perfume",
+   "PHRASE",
+   "min",
+   0.61,
+   0.9,
+   48,
+   "527089838326524"
+  ],
+  [
+   "SOUL G Girl Key",
+   "carolina herrera good girl perfume",
+   "PHRASE",
+   "min",
+   0.56,
+   0.3,
+   -46,
+   "345217895776607"
+  ],
+  [
+   "SOUL G Girl Key",
+   "good girl perfume carolina herrera",
+   "PHRASE",
+   "min",
+   0.63,
+   0.9,
+   43,
+   "348911052135503"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome la vie est belle eau de parfum",
+   "PHRASE",
+   "min",
+   1.12,
+   2.6,
+   132,
+   "482299352256692"
+  ],
+  [
+   "SOUL Lanc Key",
+   "perfumes for women la vie est belle",
+   "PHRASE",
+   "min",
+   0.41,
+   2.17,
+   429,
+   "425721874983228"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle lancome perfume",
+   "PHRASE",
+   "min",
+   0.65,
+   2.46,
+   278,
+   "484874259241312"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome perfume la vie est belle",
+   "PHRASE",
+   "min",
+   0.8,
+   2.2,
+   175,
+   "376737536966958"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle perfume for women",
+   "PHRASE",
+   "min",
+   0.68,
+   2.56,
+   276,
+   "444878446984658"
+  ],
+  [
+   "SOUL Lanc Key",
+   "parfum la vie est belle",
+   "PHRASE",
+   "min",
+   0.23,
+   2.58,
+   1022,
+   "361201538451633"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancôme la vie est belle eau de parfum",
+   "PHRASE",
+   "min",
+   0.67,
+   2.49,
+   272,
+   "382780902042367"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle eau de parfum",
+   "PHRASE",
+   "min",
+   0.78,
+   2.46,
+   215,
+   "330502487349724"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie es belle",
+   "PHRASE",
+   "min",
+   0.34,
+   0.9,
+   165,
+   "463211165980442"
+  ],
+  [
+   "SOUL Lanc Key",
+   "la vie est belle lancome perfume travel size",
+   "PHRASE",
+   "max",
+   1.34,
+   2.25,
+   68,
+   "505877032889742"
+  ],
+  [
+   "SOUL Lanc Key",
+   "idole nectar lancome perfume",
+   "PHRASE",
+   "min",
+   0.66,
+   2.65,
+   302,
+   "423485804974551"
+  ],
+  [
+   "SOUL Lanc Key",
+   "idole intense lancome perfume",
+   "PHRASE",
+   "min",
+   0.65,
+   2.49,
+   283,
+   "375136187249111"
+  ],
+  [
+   "SOUL Lanc Key",
+   "lancome idole aura",
+   "PHRASE",
+   "min",
+   0.2,
+   1.18,
+   490,
+   "435037907720874"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume miss dior para mujer",
+   "PHRASE",
+   "min",
+   0.57,
+   1.01,
+   77,
+   "352390524554134"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume miss dior",
+   "PHRASE",
+   "min",
+   0.57,
+   0.84,
+   47,
+   "544906052629136"
+  ],
+  [
+   "SOUL Dio-r key",
+   "mini miss dior perfume",
+   "PHRASE",
+   "max",
+   0.98,
+   1.39,
+   42,
+   "298546711751503"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior parfum",
+   "PHRASE",
+   "min",
+   0.72,
+   1.03,
+   43,
+   "485603884430446"
+  ],
+  [
+   "SOUL Dio-r key",
+   "miss dior travel size perfume",
+   "PHRASE",
+   "min",
+   0.59,
+   1.34,
+   127,
+   "342340636873618"
+  ],
+  [
+   "SOUL Dio-r key",
+   "dior miss dior eau de parfum",
+   "PHRASE",
+   "min",
+   0.74,
+   1.33,
+   80,
+   "559425955242687"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume by dior",
+   "PHRASE",
+   "min",
+   1.09,
+   0.62,
+   -43,
+   "413001974957437"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume joy",
+   "PHRASE",
+   "min",
+   0.71,
+   0.44,
+   -38,
+   "441272170510072"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy perfume for women",
+   "PHRASE",
+   "min",
+   1.04,
+   1.37,
+   32,
+   "410174444773994"
+  ],
+  [
+   "SOUL Dio-r key",
+   "joy by dior perfume",
+   "PHRASE",
+   "min",
+   1.03,
+   0.63,
+   -39,
+   "506836830569572"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior perfume for women",
+   "PHRASE",
+   "min",
+   1.03,
+   2.06,
+   100,
+   "296681581397704"
+  ],
+  [
+   "SOUL Dio-r key",
+   "channel perfume women",
+   "PHRASE",
+   "min",
+   1.77,
+   0.74,
+   -58,
+   "393306579009833"
+  ],
+  [
+   "SOUL Dio-r key",
+   "perfume dior para mujer",
+   "PHRASE",
+   "min",
+   2.17,
+   1.45,
+   -33,
+   "485756452839708"
+  ],
+  [
+   "SOUL Dio-r key",
+   "jadore dior",
+   "PHRASE",
+   "min",
+   0.53,
+   1.03,
+   94,
+   "338347888241446"
+  ],
+  [
+   "SOUL gucc key",
+   "gucci bamboo perfume for women",
+   "PHRASE",
+   "min",
+   0.52,
+   0.32,
+   -38,
+   "424578737122146"
+  ],
+  [
+   "SOUL gucc key",
+   "gucci bamboo",
+   "PHRASE",
+   "min",
+   0.56,
+   0.32,
+   -43,
+   "453697301957138"
+  ],
+  [
+   "SOUL gucc key",
+   "gucci bamboo perfume",
+   "PHRASE",
+   "min",
+   0.52,
+   0.32,
+   -38,
+   "287972426994250"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace bright crystal",
+   "PHRASE",
+   "max",
+   2.33,
+   0.86,
+   -63,
+   "464804863669937"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace women perfume",
+   "PHRASE",
+   "min",
+   1.68,
+   0.51,
+   -70,
+   "374641580961511"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace for women perfume",
+   "PHRASE",
+   "min",
+   1.68,
+   0.51,
+   -70,
+   "500375519338848"
+  ],
+  [
+   "SOUL Versac Key",
+   "womens versace perfume",
+   "PHRASE",
+   "min",
+   1.6,
+   0.46,
+   -71,
+   "543795813391198"
+  ],
+  [
+   "SOUL Versac Key",
+   "bright crystal",
+   "PHRASE",
+   "min",
+   0.59,
+   0.21,
+   -64,
+   "424564588610894"
+  ],
+  [
+   "SOUL Versac Key",
+   "women versace perfume",
+   "PHRASE",
+   "min",
+   1.6,
+   0.46,
+   -71,
+   "376568606316033"
+  ],
+  [
+   "SOUL Versac Key",
+   "perfume versace",
+   "PHRASE",
+   "min",
+   1.27,
+   0.42,
+   -67,
+   "412242713196553"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace crystal",
+   "PHRASE",
+   "min",
+   0.52,
+   0.26,
+   -50,
+   "432844409561180"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace bright",
+   "PHRASE",
+   "min",
+   0.67,
+   0.21,
+   -69,
+   "415926359151938"
+  ],
+  [
+   "SOUL Versac Key",
+   "perfume versace para mujer",
+   "PHRASE",
+   "max",
+   0.26,
+   0.38,
+   46,
+   "551615053208064"
+  ],
+  [
+   "SOUL Versac Key",
+   "versace bright crystal absolu",
+   "PHRASE",
+   "min",
+   0.46,
+   0.23,
+   -50,
+   "388521713502271"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian perfume",
+   "PHRASE",
+   "min",
+   1.39,
+   0.79,
+   -43,
+   "336075364626944"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian paris perfume",
+   "PHRASE",
+   "min",
+   0.8,
+   3.34,
+   318,
+   "526960420164952"
+  ],
+  [
+   "SOUL Killia Key",
+   "love by kilian",
+   "PHRASE",
+   "min",
+   1.17,
+   0.71,
+   -39,
+   "352545433728376"
+  ],
+  [
+   "SOUL Killia Key",
+   "bad girl perfume for women",
+   "PHRASE",
+   "min",
+   0.45,
+   0.61,
+   36,
+   "470016905253298"
+  ],
+  [
+   "SOUL Killia Key",
+   "kilian don't be shy",
+   "PHRASE",
+   "min",
+   1.1,
+   0.77,
+   -30,
+   "287940917690363"
+  ],
+  [
+   "SOUL Killia Key",
+   "love dont be shy perfume",
+   "PHRASE",
+   "min",
+   0.5,
+   1.31,
+   162,
+   "384371500711296"
+  ],
+  [
+   "SOUL DOS Killia",
+   "dossier marshmallow perfume",
+   "EXACT",
+   "max",
+   0.38,
+   0.51,
+   34,
+   "285590348906668"
+  ],
+  [
+   "SOUL DOSS Key",
+   "perfume dossier para mujer",
+   "EXACT",
+   "max",
+   0.74,
+   0.38,
+   -49,
+   "309774474916415"
+  ],
+  [
+   "SOUL DOSS Key",
+   "perfumes dossier",
+   "EXACT",
+   "max",
+   0.38,
+   0.57,
+   50,
+   "339814314972616"
+  ],
+  [
+   "SOUL DOSS Key",
+   "dossier perfume travel size",
+   "EXACT",
+   "max",
+   0.4,
+   0.68,
+   70,
+   "455603820266070"
+  ],
+  [
+   "SOUL Miris Key",
+   "miris perfume for women",
+   "EXACT",
+   "min",
+   0.51,
+   0.67,
+   31,
+   "383006473214681"
+  ],
+  [
+   "SOUL Miris Key",
+   "miris perfume",
+   "EXACT",
+   "min",
+   0.51,
+   0.71,
+   39,
+   "470587574955591"
+  ],
+  [
+   "SOUL Perf Key",
+   "parfum for women",
+   "PHRASE",
+   "max",
+   0.87,
+   0.6,
+   -31,
+   "405931575010400"
+  ],
+  [
+   "SOUL Perf Key",
+   "fragrance",
+   "PHRASE",
+   "min",
+   1.05,
+   0.44,
+   -58,
+   "508906975160017"
+  ],
+  [
+   "SOUL Perf Key",
+   "ladies perfume for women",
+   "PHRASE",
+   "min",
+   0.44,
+   1.15,
+   161,
+   "545122280288670"
+  ],
+  [
+   "SOUL Perf Key",
+   "best smelling perfume for women",
+   "PHRASE",
+   "max",
+   2.44,
+   1.38,
+   -43,
+   "336110213701297"
+  ],
+  [
+   "SOUL Arman Key",
+   "acqua di gioia dupe",
+   "PHRASE",
+   "min",
+   0.67,
+   0.29,
+   -57,
+   "457551223384480"
+  ],
+  [
+   "SOUL Arman Key",
+   "armani perfume for woman",
+   "PHRASE",
+   "min",
+   2.16,
+   0.89,
+   -59,
+   "431375694969266"
+  ],
+  [
+   "SOUL Arman Key",
+   "aquia di gio parfum",
+   "PHRASE",
+   "min",
+   0.26,
+   0.44,
+   69,
+   "358654466238104"
+  ],
+  [
+   "SOUL Dupe Key",
+   "black opium dupe",
+   "EXACT",
+   "min",
+   0.92,
+   1.34,
+   46,
+   "432905210622309"
+  ],
+  [
+   "SOUL Dupe Key",
+   "perfume replica",
+   "EXACT",
+   "min",
+   0.54,
+   0.81,
+   50,
+   "417408923826643"
+  ],
+  [
+   "SOUL bacc exact 2 key",
+   "baccarat rouge 540 perfume for men",
+   "EXACT",
+   "min",
+   1.53,
+   0.86,
+   -44,
+   "344092608262598"
+  ],
+  [
+   "SOUL ligh Blue - 2Key ex",
+   "dolce and gabbana light blue",
+   "EXACT",
+   "min",
+   2.06,
+   0.75,
+   -64,
+   "340518467248975"
+  ],
+  [
+   "SOUL GOOD GIRL EXACT",
+   "good girl carolina herrera",
+   "EXACT",
+   "max",
+   1.6,
+   0.97,
+   -39,
+   "486989333956237"
+  ],
+  [
+   "SOUL GOOD GIRL EXACT",
+   "carolina herrera good girl",
+   "EXACT",
+   "min",
+   1.0,
+   0.44,
+   -56,
+   "497438280208862"
+  ],
+  [
+   "SOUL BRIGHT CRIST EXACT",
+   "bright crystal versace",
+   "EXACT",
+   "min",
+   1.97,
+   0.32,
+   -84,
+   "449325294916298"
+  ],
+  [
+   "SOUL BRIGHT CRIST EXACT",
+   "bright crystal versace for women parfum",
+   "EXACT",
+   "min",
+   1.58,
+   0.32,
+   -80,
+   "428304053091389"
+  ],
+  [
+   "SOUL Mist keywords",
+   "body mist",
+   "EXACT",
+   "min",
+   0.5,
+   0.34,
+   -32,
+   "494535678421100"
+  ],
+  [
+   "SOUL Mist keywords",
+   "vanilla body mist",
+   "EXACT",
+   "min",
+   0.33,
+   0.99,
+   200,
+   "356840423573678"
+  ],
+  [
+   "SOUL Mist keywords",
+   "hair mist perfume",
+   "EXACT",
+   "max",
+   0.46,
+   0.76,
+   65,
+   "286372251076729"
+  ],
+  [
+   "SOUL Mist keywords",
+   "body spray for women",
+   "EXACT",
+   "min",
+   0.37,
+   0.99,
+   168,
+   "354432585844522"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb nectar by viktor & rolf",
+   "EXACT",
+   "min",
+   0.63,
+   0.83,
+   32,
+   "531904673075143"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb perfume",
+   "PHRASE",
+   "min",
+   0.72,
+   0.99,
+   38,
+   "370310514961851"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb perfume for women",
+   "PHRASE",
+   "min",
+   0.57,
+   1.02,
+   79,
+   "561219811581361"
+  ],
+  [
+   "Soul Flowerbomb phrase",
+   "flowerbomb perfume for women",
+   "EXACT",
+   "min",
+   0.54,
+   0.98,
+   81,
+   "391016192305743"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal",
+   "PHRASE",
+   "min",
+   0.94,
+   0.33,
+   -65,
+   "430283678364833"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal versace",
+   "EXACT",
+   "min",
+   1.97,
+   0.32,
+   -84,
+   "372985707322591"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal perfume",
+   "EXACT",
+   "min",
+   0.64,
+   1.44,
+   125,
+   "515320417899503"
+  ],
+  [
+   "SOUL PH Bright crystall",
+   "bright crystal",
+   "EXACT",
+   "min",
+   0.86,
+   0.32,
+   -63,
+   "462730773808357"
+  ],
+  [
+   "phero new",
+   "pheromone perfume for woman",
+   "PHRASE",
+   "min",
+   2.08,
+   0.54,
+   -74,
+   "359399977670923"
+  ],
+  [
+   "SOUL Baccarat Phrase",
+   "baccarat perfume",
+   "PHRASE",
+   "min",
+   2.06,
+   0.58,
+   -72,
+   "532475252045166"
+  ],
+  [
+   "SOUL Baccarat Phrase",
+   "baccarat perfume",
+   "EXACT",
+   "min",
+   2.28,
+   0.38,
+   -83,
+   "338408309554965"
+  ],
+  [
+   "SOUL Baccarat Phrase",
+   "bacarrát rouge 540 perfume",
+   "PHRASE",
+   "min",
+   2.11,
+   1.03,
+   -51,
+   "360162438044646"
+  ],
+  [
+   "cologne new",
+   "pheromone cologne for men",
+   "EXACT",
+   "min",
+   2.29,
+   0.62,
+   -73,
+   "549880187952533"
+  ],
+  [
+   "cologne new",
+   "pheromone perfume",
+   "EXACT",
+   "min",
+   1.18,
+   0.55,
+   -53,
+   "540007836061869"
+  ],
+  [
+   "cologne new",
+   "pheromone perfume women",
+   "PHRASE",
+   "min",
+   1.01,
+   0.53,
+   -48,
+   "372067492199763"
+  ],
+  [
+   "cologne new",
+   "pheromone perfume women",
+   "EXACT",
+   "min",
+   1.13,
+   0.55,
+   -51,
+   "510577303980579"
+  ],
+  [
+   "cologne new",
+   "pheromone",
+   "PHRASE",
+   "min",
+   2.12,
+   0.71,
+   -67,
+   "517086452984563"
+  ],
+  [
+   "cologne new",
+   "pheromone",
+   "EXACT",
+   "min",
+   1.49,
+   0.75,
+   -50,
+   "348084599151317"
+  ],
+  [
+   "cologne new",
+   "pheromone oil",
+   "PHRASE",
+   "min",
+   0.72,
+   1.35,
+   88,
+   "432019351035243"
+  ],
+  [
+   "cologne new",
+   "pheromone cologne for men lure her",
+   "PHRASE",
+   "min",
+   0.37,
+   1.06,
+   186,
+   "419409198171966"
+  ],
+  [
+   "SOUL PH MD Blooming Buq",
+   "miss dior blooming bouquet",
+   "EXACT",
+   "max",
+   0.6,
+   1.03,
+   72,
+   "323060995439860"
+  ],
+  [
+   "mens water",
+   "pheromone cologne",
+   "PHRASE",
+   "min",
+   1.22,
+   0.43,
+   -65,
+   "412633093621530"
+  ],
+  [
+   "mens water",
+   "pheromone",
+   "EXACT",
+   "min",
+   0.96,
+   0.49,
+   -49,
+   "550493178331973"
+  ],
+  [
+   "mens water",
+   "pheromone perfume",
+   "EXACT",
+   "min",
+   0.76,
+   0.36,
+   -53,
+   "320598755198375"
+  ],
+  [
+   "Violet new",
+   "pheromone perfume for women",
+   "PHRASE",
+   "min",
+   1.32,
+   0.36,
+   -73,
+   "467785328129614"
+  ],
+  [
+   "Violet new",
+   "pheromone perfume for woman",
+   "PHRASE",
+   "min",
+   1.32,
+   0.34,
+   -74,
+   "440754020745297"
+  ],
+  [
+   "Goda",
+   "goda perfume",
+   "EXACT",
+   "min",
+   0.78,
+   0.33,
+   -58,
+   "487035405608881"
+  ],
+  [
+   "Goda",
+   "goda perfume for women",
+   "EXACT",
+   "min",
+   0.5,
+   1.11,
+   122,
+   "291726708740298"
+  ],
+  [
+   "Goda",
+   "goda pheromone perfume for women",
+   "EXACT",
+   "min",
+   1.01,
+   0.4,
+   -60,
+   "373807398466417"
+  ],
+  [
+   "Goda",
+   "goda for her",
+   "PHRASE",
+   "min",
+   0.3,
+   0.61,
+   103,
+   "307582136499428"
+  ],
+  [
+   "PH women 03-25",
+   "pheromone perfume for woman",
+   "PHRASE",
+   "min",
+   1.32,
+   0.34,
+   -74,
+   "513018562802981"
+  ],
+  [
+   "PH women 03-25",
+   "pheromone perfume for woman",
+   "EXACT",
+   "min",
+   1.26,
+   0.35,
+   -72,
+   "288718653719046"
+  ]
+ ]
+}
