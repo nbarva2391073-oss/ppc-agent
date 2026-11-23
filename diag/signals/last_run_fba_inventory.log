@@ -1,17 +1,2 @@
-Traceback (most recent call last):
-  File "/home/runner/work/ppc-agent/ppc-agent/fba_inventory.py", line 67, in <module>
-    main()
-  File "/home/runner/work/ppc-agent/ppc-agent/fba_inventory.py", line 45, in main
-    items = fetch()
-            ^^^^^^^
-  File "/home/runner/work/ppc-agent/ppc-agent/fba_inventory.py", line 36, in fetch
-    raise Exception(f"FBA Inventory {r.status_code}: {r.text[:300]}")
-Exception: FBA Inventory 403: {
-  "errors": [
-    {
-      "code": "Unauthorized",
-      "message": "Access to requested resource is denied.",
-      "details": ""
-    }
-  ]
-}
+  ℹ️ FBA USA: 258 SKU
+  ✍️ (0, 258)
