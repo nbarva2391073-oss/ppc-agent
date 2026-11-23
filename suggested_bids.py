@@ -209,6 +209,15 @@ def write_suggested_bids(market, rows):
     if not rows:
         print(f"  ⚠️ {market}: 0 результатів — нічого не пишемо")
         return
+    # Порожні коридори (Amazon не дав жодного значення) не пишемо: рядок без
+    # SuggestedBid/BidRangeMin/BidRangeMax не несе інформації і лише роздуває вкладку.
+    before = len(rows)
+    rows = [r for r in rows if not (r.get("SuggestedBid") is None and r.get("BidRangeMin") is None
+                                    and r.get("BidRangeMax") is None)]
+    print(f"  🧹 {market}: пропущено порожніх коридорів {before - len(rows)} з {before}")
+    if not rows:
+        print(f"  ⚠️ {market}: після фільтра порожніх коридорів рядків немає")
+        return
     sh = get_sheet(SUGGESTED_BID_SHEETS[market])
     header = sh.row_values(1)
     if not header:

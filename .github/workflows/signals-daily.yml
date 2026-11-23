@@ -1,0 +1,45 @@
+name: Cockpit Signals (daily)
+on:
+  schedule:
+    - cron: '40 10 * * *'
+  workflow_dispatch:
+    inputs:
+      market: { description: "USA або CA", default: "USA" }
+      as_of: { description: "Бектест: дата YYYY-MM-DD (без запису і Telegram)", default: "" }
+      dry_run: { description: "1 = нічого не писати і не слати", default: "" }
+      only: { description: "status,placement,targets,bids (порожньо = усе)", default: "" }
+permissions:
+  contents: write
+concurrency:
+  group: signals-write
+  cancel-in-progress: false
+jobs:
+  signals:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      ADS_CLIENT_ID:           ${{ secrets.ADS_CLIENT_ID }}
+      ADS_CLIENT_SECRET:       ${{ secrets.ADS_CLIENT_SECRET }}
+      ADS_REFRESH_TOKEN:       ${{ secrets.ADS_REFRESH_TOKEN }}
+      ADS_PROFILE_ID_USA:      ${{ secrets.ADS_PROFILE_ID_USA }}
+      ADS_PROFILE_ID_CA:       ${{ secrets.ADS_PROFILE_ID_CA }}
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+      TELEGRAM_BOT_TOKEN:      ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_IDS:       ${{ secrets.TELEGRAM_CHAT_IDS }}
+      MARKET:  ${{ github.event.inputs.market || 'USA' }}
+      AS_OF:   ${{ github.event.inputs.as_of }}
+      DRY_RUN: ${{ github.event.inputs.dry_run }}
+      ONLY:    ${{ github.event.inputs.only }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python cockpit_signals.py 2>&1 | tee diag/signals/last_run.log
+      - name: Commit evidence (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add diag/signals* || true
+          git commit -m "Cockpit signals evidence" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
