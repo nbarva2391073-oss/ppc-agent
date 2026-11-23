@@ -1,0 +1,36 @@
+name: ASIN Cockpit USA (weekly)
+on:
+  schedule:
+    - cron: '30 12 * * 1'
+  workflow_dispatch:
+    inputs:
+      asins: { description: "ASIN через кому або CORE", default: "B0GYSB85SH" }
+      weeks: { description: "Скільки останніх повних тижнів", default: "1" }
+      dry_run: { default: "" }
+permissions:
+  contents: write
+concurrency:
+  group: signals-write
+  cancel-in-progress: false
+jobs:
+  cockpit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      GOOGLE_CREDENTIALS_JSON: ${{ secrets.GOOGLE_CREDENTIALS_JSON }}
+      ASINS:   ${{ github.event.inputs.asins || 'CORE' }}
+      WEEKS:   ${{ github.event.inputs.weeks || '1' }}
+      DRY_RUN: ${{ github.event.inputs.dry_run }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.11" }
+      - run: pip install -r requirements.txt
+      - run: python asin_cockpit.py
+      - name: Commit evidence (always)
+        if: always()
+        run: |
+          git config user.name "ppc-agent-bot"; git config user.email "bot@ppc-agent"
+          git add diag/signals* || true
+          git commit -m "ASIN cockpit evidence" || echo nothing
+          for i in 1 2 3 4; do git fetch origin main && git rebase -X theirs origin/main && git push && break; git rebase --abort 2>/dev/null; sleep 5; done
