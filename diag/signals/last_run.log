@@ -6,35 +6,29 @@ Traceback (most recent call last):
           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: sequence item 0: expected str instance, dict found
 === COCKPIT SIGNALS USA as_of=today dry=False only=all ===
-  ✅ Кампаній 238, груп 248, оголошень 942
-  📡 Звіт adv_sku 2026-11-23..2026-11-24: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","advertisedAsin","advertisedSku","impressions","clicks","cost"],"filters":nul
-  ✅ Звіт запрошено: adv_sku 2026-11-23..2026-11-24 (e3a53e98-461d-4331-81dd-8d7836d9a695)
-  📡 Звіт placement_daily 2026-11-22..2026-11-24: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","placementClassification","impressions","clicks","cost","sales7d","purchases7d"],"filters":null,"format
-  ✅ Звіт запрошено: placement_daily 2026-11-22..2026-11-24 (bd76b48d-f078-4544-9de6-8ee840abe58c)
-  📡 Звіт targets_daily 2026-11-22..2026-11-24: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","keywordId","targeting","keyword","matchType","impressions","clicks","cost","
-  ✅ Звіт запрошено: targets_daily 2026-11-22..2026-11-24 (090bb487-f03e-43e1-b026-f643f8af5853)
+  ✅ Кампаній 238, груп 249, оголошень 942
+  📡 Звіт adv_sku 2026-11-24..2026-11-25: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","advertisedAsin","advertisedSku","impressions","clicks","cost"],"filters":nul
+  ✅ Звіт запрошено: adv_sku 2026-11-24..2026-11-25 (6a9a9857-e737-417c-a663-f3492e9e839a)
+  📡 Звіт placement_daily 2026-11-23..2026-11-25: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","placementClassification","impressions","clicks","cost","sales7d","purchases7d"],"filters":null,"format
+  ✅ Звіт запрошено: placement_daily 2026-11-23..2026-11-25 (b3a30f31-6053-4242-adc2-ec8f4709c542)
+  📡 Звіт targets_daily 2026-11-23..2026-11-25: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","keywordId","targeting","keyword","matchType","impressions","clicks","cost","
+  ✅ Звіт запрошено: targets_daily 2026-11-23..2026-11-25 (f8d1e757-7905-4542-a321-fdb5de3c9dc0)
 
 --- status ---
   ⏳ Очікуємо звіт [0s] (PENDING)...
   ⏳ Очікуємо звіт [30s] (PENDING)...
-  ⏳ Очікуємо звіт [60s] (PENDING)...
-  ⏳ Очікуємо звіт [90s] (PENDING)...
-  ⏳ Очікуємо звіт [120s] (PROCESSING)...
-  ⏳ Очікуємо звіт [150s] (PROCESSING)...
-  ✅ Завантажено: 64 рядків
+  ✅ Завантажено: 62 рядків
   ❌ status: sequence item 0: expected str instance, dict found
 
 --- placement ---
-  ✅ Завантажено: 107 рядків
-  ℹ️ Placement Daily: 107 рядків за ['2026-11-22', '2026-11-23', '2026-11-24']
-  ✍️ Placement Daily: (71, 107)
+  ✅ Завантажено: 109 рядків
+  ℹ️ Placement Daily: 109 рядків за ['2026-11-23', '2026-11-24', '2026-11-25']
+  ✍️ Placement Daily: (74, 109)
 
 --- targets ---
-  ✅ Завантажено: 131 рядків
-  ℹ️ SP Targets Daily: 131 рядків (без кліків: 107) за ['2026-11-22', '2026-11-23', '2026-11-24']
-  ✍️ SP Targets Daily: (86, 131)
+  ✅ Завантажено: 130 рядків
+  ℹ️ SP Targets Daily: 130 рядків (без кліків: 106) за ['2026-11-23', '2026-11-24', '2026-11-25']
+  ✍️ SP Targets Daily: (88, 130)
 
 --- bids ---
   ℹ️ Bids: знімок 2026-11-25 (порівняння з 2026-11-17): нижче мінімуму 956, коридор ±30% 1130
-❌ Telegram помилка для 403097788: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8662704078:AAEFMqfCcUchWzK2VKza-FTIFKPDok240rs/sendMessage
-❌ Telegram помилка для 724564293: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8662704078:AAEFMqfCcUchWzK2VKza-FTIFKPDok240rs/sendMessage
