@@ -7,28 +7,40 @@ Traceback (most recent call last):
 TypeError: sequence item 0: expected str instance, dict found
 === COCKPIT SIGNALS USA as_of=today dry=False only=all ===
   ✅ Кампаній 238, груп 249, оголошень 942
-  📡 Звіт adv_sku 2026-11-24..2026-11-25: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","advertisedAsin","advertisedSku","impressions","clicks","cost"],"filters":nul
-  ✅ Звіт запрошено: adv_sku 2026-11-24..2026-11-25 (6a9a9857-e737-417c-a663-f3492e9e839a)
-  📡 Звіт placement_daily 2026-11-23..2026-11-25: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","placementClassification","impressions","clicks","cost","sales7d","purchases7d"],"filters":null,"format
-  ✅ Звіт запрошено: placement_daily 2026-11-23..2026-11-25 (b3a30f31-6053-4242-adc2-ec8f4709c542)
-  📡 Звіт targets_daily 2026-11-23..2026-11-25: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","keywordId","targeting","keyword","matchType","impressions","clicks","cost","
-  ✅ Звіт запрошено: targets_daily 2026-11-23..2026-11-25 (f8d1e757-7905-4542-a321-fdb5de3c9dc0)
+  📡 Звіт adv_sku 2026-11-25..2026-11-26: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","advertisedAsin","advertisedSku","impressions","clicks","cost"],"filters":nul
+  ✅ Звіт запрошено: adv_sku 2026-11-25..2026-11-26 (87edc4b4-3752-471a-adba-353aa9350103)
+  📡 Звіт placement_daily 2026-11-24..2026-11-26: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","placementClassification","impressions","clicks","cost","sales7d","purchases7d"],"filters":null,"format
+  ✅ Звіт запрошено: placement_daily 2026-11-24..2026-11-26 (126e926f-b9fc-4909-b640-0d2fe6b94eb6)
+  📡 Звіт targets_daily 2026-11-24..2026-11-26: 200 {"configuration":{"adProduct":"SPONSORED_PRODUCTS","columns":["date","campaignName","campaignId","adGroupName","adGroupId","keywordId","targeting","keyword","matchType","impressions","clicks","cost","
+  ✅ Звіт запрошено: targets_daily 2026-11-24..2026-11-26 (4dd7d897-ccdf-48a1-b3f7-b2ea4db2a251)
 
 --- status ---
   ⏳ Очікуємо звіт [0s] (PENDING)...
   ⏳ Очікуємо звіт [30s] (PENDING)...
-  ✅ Завантажено: 62 рядків
+  ⏳ Очікуємо звіт [60s] (PROCESSING)...
+  ⏳ Очікуємо звіт [90s] (PROCESSING)...
+  ⏳ Очікуємо звіт [120s] (PROCESSING)...
+  ⏳ Очікуємо звіт [150s] (PROCESSING)...
+  ⏳ Очікуємо звіт [180s] (PROCESSING)...
+  ⏳ Очікуємо звіт [210s] (PROCESSING)...
+  ⏳ Очікуємо звіт [240s] (PROCESSING)...
+  ⏳ Очікуємо звіт [270s] (PROCESSING)...
+  ⏳ Очікуємо звіт [300s] (PROCESSING)...
+  ✅ Завантажено: 61 рядків
   ❌ status: sequence item 0: expected str instance, dict found
 
 --- placement ---
-  ✅ Завантажено: 109 рядків
-  ℹ️ Placement Daily: 109 рядків за ['2026-11-23', '2026-11-24', '2026-11-25']
-  ✍️ Placement Daily: (74, 109)
+  ⏳ Очікуємо звіт [0s] (PROCESSING)...
+  ✅ Завантажено: 106 рядків
+  ℹ️ Placement Daily: 106 рядків за ['2026-11-24', '2026-11-25', '2026-11-26']
+  ✍️ Placement Daily: (71, 106)
 
 --- targets ---
-  ✅ Завантажено: 130 рядків
-  ℹ️ SP Targets Daily: 130 рядків (без кліків: 106) за ['2026-11-23', '2026-11-24', '2026-11-25']
-  ✍️ SP Targets Daily: (88, 130)
+  ✅ Завантажено: 132 рядків
+  ℹ️ SP Targets Daily: 132 рядків (без кліків: 106) за ['2026-11-24', '2026-11-25', '2026-11-26']
+  ✍️ SP Targets Daily: (87, 132)
 
 --- bids ---
-  ℹ️ Bids: знімок 2026-11-25 (порівняння з 2026-11-17): нижче мінімуму 956, коридор ±30% 1130
+  ℹ️ Bids: знімок 2026-11-27 (порівняння з 2026-11-19): нижче мінімуму 48, коридор ±30% 41
+❌ Telegram помилка для 403097788: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8662704078:AAEFMqfCcUchWzK2VKza-FTIFKPDok240rs/sendMessage
+❌ Telegram помилка для 724564293: 400 Client Error: Bad Request for url: https://api.telegram.org/bot8662704078:AAEFMqfCcUchWzK2VKza-FTIFKPDok240rs/sendMessage
